@@ -3,7 +3,9 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     sass = require('gulp-ruby-sass'),
+    path = require('path'),
     autoprefixer = require('gulp-autoprefixer'),
+    less = require('gulp-less'),
     browserSync = require('browser-sync').create();
 
 var DEST = 'build/';
@@ -38,6 +40,13 @@ gulp.task('sass-minify', function() {
     return compileSASS('custom.min.css', {style: 'compressed'});
 });
 
+gulp.task('less', function () {
+    return gulp.src('src/less/*.less')
+        .pipe(less())
+        .pipe(concat('customstyle.css'))
+        .pipe(gulp.dest(DEST+'/css'))
+});
+
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
@@ -54,6 +63,8 @@ gulp.task('watch', function() {
   gulp.watch('src/js/*.js', ['scripts']);
   // Watch .scss files
   gulp.watch('src/scss/*.scss', ['sass', 'sass-minify']);
+  // Watch .less files
+  gulp.watch('src/less/*.less', ['less']);
 });
 
 // Default Task
