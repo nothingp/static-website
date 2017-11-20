@@ -43,7 +43,7 @@ gulp.task('sass-minify', function() {
 gulp.task('less', function () {
     return gulp.src('src/less/*.less')
         .pipe(less())
-        .pipe(concat('customstyle.css'))
+        .pipe(concat('customnew.css'))
         .pipe(gulp.dest(DEST+'/css'))
 });
 
@@ -62,7 +62,7 @@ gulp.task('watch', function() {
   // Watch .js files
   gulp.watch('src/js/*.js', ['scripts']);
   // Watch .scss files
-  gulp.watch('src/scss/*.scss', ['sass', 'sass-minify']);
+  //gulp.watch('src/scss/*.scss', ['sass', 'sass-minify']);
   // Watch .less files
   gulp.watch('src/less/*.less', ['less']);
 });
