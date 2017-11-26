@@ -2,55 +2,55 @@
 
 /*自定义的css*/
 .dropdown-submenu {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-submenu > .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  -webkit-border-radius: 0 6px 6px 6px;
-  -moz-border-radius: 0 6px 6px;
-  border-radius: 0 6px 6px 6px;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .dropdown-submenu > a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #ccc;
-  margin-top: 5px;
-  margin-right: -10px;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
 }
 
 .dropdown-submenu:hover > a:after {
-  border-left-color: #fff;
+    border-left-color: #fff;
 }
 
 .dropdown-submenu.pull-left {
-  float: none;
+    float: none;
 }
 
 .dropdown-submenu.pull-left > .dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  -webkit-border-radius: 6px 0 6px 6px;
-  -moz-border-radius: 6px 0 6px 6px;
-  border-radius: 6px 0 6px 6px;
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
 }
 
 @media screen and (min-width: @screen-lg-min) {
-  //1200
+    //1200
 
 }
 
@@ -60,81 +60,101 @@
 
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
-  .container-fluid{
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-
-  .nothing-navbar-brand {
-    img{
-      width: 105px;
-      height: 75px;
-    }
-  }
-
-  //992
-  .nothing-navbar-menu {
-    height: 100px;
-    padding-top: 40px;
-    font-size: 1.5rem;
-  }
-
-  .nothing-navbar-info {
-    > li {
-      a {
-        padding-top: 10px;
-        color: #007fab;
-        font-size: 10px;
-      }
-    }
-  }
-
-  .nothing-jumbotron {
-    background-image: url(../images/banner.png);
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    height: 400px;
-    margin-bottom: 0;
-  }
-
-  .nothing-icons {
-    height: 120px;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: #2f88c6;
-
-
-    .nothing-icon{
-      text-align: center;
-      padding-top: 10px;
-      img{
-        background: #fff;
-      }
-
-      p{
-        color: #fff;
-
-      }
+    .container-fluid {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
-  }
+    .nothing-navbar-brand {
+        img {
+            width: 105px;
+            height: 75px;
+        }
+    }
+
+    //992
+    .nothing-navbar-menu {
+        height: 100px;
+        padding-top: 40px;
+        font-size: 1.5rem;
+    }
+
+    .nothing-navbar-info {
+        > li {
+            a {
+                padding-top: 10px;
+                color: #007fab;
+                font-size: 10px;
+            }
+            &.line {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: 30%;
+                    right: 0;
+                    display: block;
+                    content: '';
+                    width: 2px;
+                    height: 30%;
+                    background: #007fab;
+                }
+            }
+        }
+    }
+
+    .nothing-jumbotron {
+        background-image: url(../images/banner.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        margin-bottom: 0;
+    }
+
+    .nothing-icons {
+        height: 120px;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #2f88c6;
+
+        .nothing-icon {
+            text-align: center;
+            padding-top: 10px;
+            img {
+                //background: #fff;
+                background: transparent;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+
+    }
+
+    .in-focus {
+        color: @brand-primary;
+    }
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-sm-max) {
-  .nothing-navbar-button {
-    float: left;
-    margin-left: 15px;
-  }
+    .nothing-navbar-button {
+        float: left;
+        margin-left: 15px;
+        .icon-bar {
+            color: #2f88c6;
+            background: #0b97c4;
+        }
+    }
 
-  .nothing-navbar-brand {
-    width: 200px;
-    margin: 0 auto;
-  }
+    .nothing-navbar-brand {
+        width: 200px;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: @screen-xs-min) and (max-width: @screen-sm-min) {
-  //480 - 768
+    //480 - 768
 
 }
 
