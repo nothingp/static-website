@@ -49,6 +49,10 @@
     border-radius: 6px 0 6px 6px;
 }
 
+.in-focus {
+    color: @brand-primary;
+}
+
 @media screen and (min-width: @screen-lg-min) {
     //1200
 
@@ -130,14 +134,15 @@
         }
 
     }
-
-    .in-focus {
-        color: @brand-primary;
-    }
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-sm-max) {
+    .container-fluid {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
     .nothing-navbar-button {
         float: left;
         margin-left: 15px;
@@ -147,10 +152,45 @@
         }
     }
 
+    .nothing-jumbotron {
+        background-image: url(../images/H5/banner.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 500px;
+        margin-bottom: 0;
+    }
+
     .nothing-navbar-brand {
         width: 200px;
         margin: 0 auto;
+        .navbar-brand {
+            float: none;
+            height: auto;
+            padding: 0;
+            line-height: normal;
+            img {
+                margin: auto;
+            }
+        }
     }
+
+    .nothing-icons {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #2f88c6;
+
+        .nothing-icon {
+            text-align: center;
+            p {
+                color: #fff;
+                font-size: 10px;
+            }
+        }
+
+    }
+
 }
 
 @media screen and (min-width: @screen-xs-min) and (max-width: @screen-sm-min) {
