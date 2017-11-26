@@ -44,7 +44,7 @@ gulp.task('less', function () {
     return gulp.src('src/less/*.less')
         .pipe(less())
         .pipe(concat('customnew.css'))
-        .pipe(gulp.dest(DEST+'/css'))
+        .pipe(gulp.dest('www/css'))
 });
 
 gulp.task('browser-sync', function() {

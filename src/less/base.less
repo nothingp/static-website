@@ -60,16 +60,23 @@
 
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
+  .container-fluid{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   .nothing-navbar-brand {
-    padding: 20px 20px;
-    height: 70px;
+    img{
+      width: 105px;
+      height: 75px;
+    }
   }
 
   //992
   .nothing-navbar-menu {
-    margin-top: 20px;
-    font-size: 16px;
+    height: 100px;
+    padding-top: 40px;
+    font-size: 1.5rem;
   }
 
   .nothing-navbar-info {
@@ -80,6 +87,36 @@
         font-size: 10px;
       }
     }
+  }
+
+  .nothing-jumbotron {
+    background-image: url(../images/banner.png);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    height: 400px;
+    margin-bottom: 0;
+  }
+
+  .nothing-icons {
+    height: 120px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #2f88c6;
+
+
+    .nothing-icon{
+      text-align: center;
+      padding-top: 10px;
+      img{
+        background: #fff;
+      }
+
+      p{
+        color: #fff;
+
+      }
+    }
+
   }
 }
 
