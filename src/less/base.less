@@ -1,223 +1,56 @@
 @import "variables.less";
 
 @media screen and (min-width: @screen-lg-min) {
-    //1200
+  //1200
 
 }
 
 @media screen and (min-width: @screen-md-min) {
-    //992
 
 }
 
+//pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
-    //> 768
-    .navbar {
-        background: #fff;
-    }
 
-    .navbar-header {
-        height: 110px;
-    }
+  .nothing-navbar-brand{
+    padding: 20px 20px;
+    height: 70px;
+  }
+  //992
+  .nothing-navbar-menu {
+    margin-top: 20px;
+    font-size: 16px;
+  }
 
-    .center-nav {
-        float: none;
-        width: 550px;
-        top: 50px;
-        position: absolute;
-        left: 50%;
-        margin-left: -275px;
+  .nothing-navbar-info {
+    > li {
+      a {
+        padding-top: 10px;
+        color: #007fab;
+        font-size: 10px;
+      }
     }
+  }
+}
 
-    .login-btn {
-        display: none;
-    }
+//手机展示开始。。。
+@media screen and (max-width: @screen-sm-max) {
+  .nothing-navbar-button {
+    float: left;
+    margin-left: 15px;
+  }
 
-    .navbar-brand {
-        padding: 0;
-        .logo-img {
-            margin-top: 15px;
-            margin-left: 25px;
-            width: 118px;
-            height: 85px;
-            background: url("../images/logo-pc.png") no-repeat center;
-        }
-    }
+  .nothing-navbar-brand{
 
-    .navbar-right {
-        position: absolute;
-        top: 60px;
-        right: 50px;
-        .search-btn {
-            width: 32px;
-            height: 32px;
-            background: url("../images/search.png") no-repeat center;
-        }
-    }
-
-    .other-nav1,
-    .other-nav2,
-    .other-nav3 {
-        position: absolute;
-        top: 0;
-    }
-
-    .other-nav1 {
-        right: 280px;
-    }
-
-    .other-nav2 {
-        right: 130px;
-    }
-
-    .other-nav3 {
-        right: 20px;
-        .glyphicon {
-            top: 3px;
-            color: #007fab;
-        }
-    }
-
-    .navbar-default {
-        .navbar-nav.other-nav1,
-        .navbar-nav.other-nav2,
-        .navbar-nav.other-nav3 {
-            > li {
-                a {
-                    color: #007fab;
-                }
-                a:hover {
-                    color: #007fab;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
+  }
 }
 
 @media screen and (min-width: @screen-xs-min) and (max-width: @screen-sm-min) {
-    //480 - 768
+  //480 - 768
 
 }
 
-@media screen and (max-width: @screen-sm-min) {
-    //< 768
-    .navbar {
-        background: #fff;
-    }
 
-    .navbar-nav {
-        margin: 0 -15px;
-    }
-
-    .navbar-header {
-        height: 90px;
-    }
-
-    .nav {
-        > li {
-            position: relative;
-            display: block;
-            border-bottom: 1px solid #e4e4e4;
-        }
-    }
-
-    .navbar-default {
-        .navbar-toggle {
-            padding: 0;
-            position: absolute;
-            top: 30px;
-            left: 25px;
-            background: transparent;
-            border: none;
-
-            .icon-bar {
-                display: block;
-                width: 30px;
-                height: 2px;
-                margin-left: 6px;
-                background: #007fab;
-            }
-            &:hover,
-            &:active {
-                background: transparent;
-                .icon-bar {
-                    background: #007fdd;
-                }
-            }
-        }
-    }
-
-    .navbar-right {
-        .dropdown {
-            display: none;
-        }
-    }
-
-    .login-btn {
-        position: absolute;
-        top: 35px;
-        right: 25px;
-
-        a {
-            font-size: 16px;
-        }
-    }
-
-    .navbar-brand {
-        display: block;
-        width: auto;
-        float: none;
-        text-align: center;
-        padding: 0;
-    }
-
-    .navbar-brand {
-        .logo-img {
-            margin-top: 15px;
-            width: 90px;
-            height: 65px;
-            background: url("../images/logo-phone.png") no-repeat center;
-            display: inline-block;
-        }
-    }
-
-    .other-nav1 {
-        margin-top: 40px;
-    }
-
-    .other-nav3 {
-        .glyphicon {
-            top: 3px;
-            color: #007fab;
-        }
-    }
-
-    .other-nav2 {
-        position: absolute;
-        top: 90px;
-        border-bottom: 1px solid #e4e4e4;
-        width: 100%;
-        > li {
-            float: left;
-            border: none;
-            &:first-child {
-                position: relative;
-                &:after {
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    width: 1px;
-                    background: #E4E4E4;
-                    height: 20px;
-                    top: 10px;
-                    right: 0;
-                }
-            }
-        }
-    }
-
-}
 
 
 
