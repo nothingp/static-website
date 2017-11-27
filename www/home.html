@@ -65,48 +65,48 @@
 
 <body>
 <div class="container-fluid ">
-    <nav class="navbar">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="nothing-navbar-button navbar-toggle collapsed " data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="nothing-navbar-brand">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Brand" src="./images/logo.png" class="hidden-xs">
-                        <img alt="Brand" src="./images/H5/logo.png" class="hidden-sm hidden-md hidden-lg">
-                    </a>
-                </div>
+    <nav class="navbar row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="nothing-navbar-button navbar-toggle collapsed " data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nothing-navbar-brand">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="./images/logo.png" class="hidden-xs">
+                    <img alt="Brand" src="./images/H5/logo.png" class="hidden-sm hidden-md hidden-lg">
+                </a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-
-                <ul class="nav navbar-nav navbar-right nothing-navbar-info">
-                    <li><a href="#"><img src="../build/images/cart-order.png" alt=""/> Order</a></li>
-                    <li class="line"><a href="#">Login</a></li>
-                    <li><a href="#">Register</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav nothing-navbar-menu">
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right nothing-navbar-info">
+                <li><a href="#"><img src="../build/images/cart-order.png" alt=""/> Order</a></li>
+                <li class="line"><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-submenu">
+                            <a href="#">主食</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">饭</a></li>
+                                <li><a href="#">饼</a></li>
+                                <li><a href="#">包子</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">肉类</a></li>
+                        <li><a href="#">水产</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="row nothing-navbar-menu">
+                <div class="col-md-7 col-md-offset-3 col-sm-7 col-sm-offset-3">
+                <ul class="nav navbar-nav ">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
                         <ul class="dropdown-menu" role="menu">
@@ -199,11 +199,12 @@
                             <li><a href="#">水产</a></li>
                         </ul>
                     </li>
-
                 </ul>
-                <div style="float: right;padding-top:15px;"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+                </div>
+                <div class="col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+            </div>
+        </div><!-- /.navbar-collapse -->
+
     </nav>
     <div class="nothing-jumbotron jumbotron">
 
