@@ -20,6 +20,8 @@
 @base-background-color: #f5f5f5;
 @hr-background-color: #eaf3f9;
 
+
+
 @font-family:CiscoSans,Arial,sans-serif;
 
 
@@ -96,70 +98,71 @@
   //768- sm->lg
   .container-fluid {
     font-family: @font-family;
-
     padding-left: 40px;
     padding-right: 40px;
   }
 
-  .navbar {
+  //菜单
+  .nothing-navbar {
     height: 120px;
     padding: 0;
     margin: 0px 8%;
-  }
 
-  .nothing-navbar-brand {
-    position: absolute;
-    margin-top: 20px;
-    img {
-      width: 100px;
-      height: 72px;
-    }
-  }
-
-  .nothing-navbar-brand-search{
-    position: absolute;
-    right: 0;
-    top:60px;
-    button{
-      width: 30px;
-      height: 30px;
-      text-align: center;
-      padding: 6px 0;
-      font-size: 12px;
-      line-height: 1.428571429;
-      border-radius: 15px;
-    }
-  }
-
-  .nothing-navbar-menu {
-    font-size: 1.4rem;
-    margin-top: 50px;
-  }
-
-  .nothing-navbar-info {
-    > li {
-      a {
-        padding-top: 10px;
-        padding-bottom: 0;
-        color: @base-color;
-        font-size: 10px;
+    .nothing-navbar-brand {
+      position: absolute;
+      margin-top: 20px;
+      img {
+        width: 100px;
+        height: 72px;
       }
-      &.line {
-        position: relative;
-        &:after {
-          position: absolute;
-          top: 30%;
-          right: 0;
-          display: block;
-          content: '';
-          width: 2px;
-          height: 70%;
-          background: @base-color;
+    }
+
+    .nothing-navbar-brand-search{
+      position: absolute;
+      right: 0;
+      top:60px;
+      button{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 6px 0;
+        font-size: 12px;
+        line-height: 1.428571429;
+        border-radius: 15px;
+      }
+    }
+
+    .nothing-navbar-menu {
+      font-size: 1.4rem;
+      margin-top: 50px;
+    }
+
+    .nothing-navbar-info {
+      > li {
+        a {
+          padding-top: 10px;
+          padding-bottom: 0;
+          color: @base-color;
+          font-size: 10px;
+        }
+        &.line {
+          position: relative;
+          &:after {
+            position: absolute;
+            top: 30%;
+            right: 0;
+            display: block;
+            content: '';
+            width: 2px;
+            height: 70%;
+            background: @base-color;
+          }
         }
       }
     }
   }
 
+  //首屏页面
   .nothing-jumbotron {
     background-image: url(../images/banner.png);
     background-repeat: no-repeat;
@@ -168,6 +171,7 @@
     margin-bottom: 0;
   }
 
+  //多个图片
   .nothing-icons {
     padding-bottom: 21px;
     margin-left: 0;
@@ -227,6 +231,7 @@
 
   }
 
+  //走马灯
   .nothing-carousel {
     height: 600px;
     .in-focus {
@@ -287,6 +292,7 @@
     }
   }
 
+  //tab
   .nothing-tab-list {
     .tab-title {
       margin-top: 82px;
@@ -356,6 +362,7 @@
 
   }
 
+  //图片展示
   .nothing-img-container {
     margin-top: 50px;
     .thumbnail {
@@ -409,6 +416,7 @@
     }
   }
 
+  //巨幕展示图标
   .nothing-jumbotron-phone {
     position: relative;
     background-image: url(../images/phone.png);
@@ -428,6 +436,7 @@
     }
   }
 
+  //解决方案
   .nothing-solution-container {
     margin: 50px auto;
     .solution-detail {
