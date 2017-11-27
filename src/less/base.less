@@ -130,42 +130,46 @@
 
         .nothing-icon {
             .div-img-circle {
+                width: 77px;
+                height: 77px;
+                border-radius: 77px;
+                border: 1px solid #fff;
+                margin: 0 auto 21px;
                 &.support {
                     background-image: url(../images/quick_nav/quick/support_center.png);
                     &:hover {
                         background-image: url(../images/quick_nav/hover/support_center.png);
+                        border-color: #2f88c6;
                     }
                 }
                 &.firmware {
                     background-image: url(../images/quick_nav/quick/firmware_status.png);
                     &:hover {
                         background-image: url(../images/quick_nav/hover/firmware_status.png);
+                        border-color: #2f88c6;
                     }
                 }
                 &.company {
                     background-image: url(../images/quick_nav/quick/company_news.png);
                     &:hover {
                         background-image: url(../images/quick_nav/hover/company_news.png);
+                        border-color: #2f88c6;
                     }
                 }
                 &.patent {
                     background-image: url(../images/quick_nav/quick/patent_center.png);
                     &:hover {
                         background-image: url(../images/quick_nav/hover/patent_center.png);
+                        border-color: #2f88c6;
                     }
                 }
                 &.subscribe {
                     background-image: url(../images/quick_nav/quick/subscribe.png);
                     &:hover {
                         background-image: url(../images/quick_nav/hover/subscribe.png);
+                        border-color: #2f88c6;
                     }
                 }
-
-                width: 77px;
-                height: 77px;
-                border-radius: 77px;
-                border: 1px solid #fff;
-                margin: 0 auto 21px;
             }
 
             p {
@@ -250,6 +254,54 @@
             font-size: 24px;
             color: #999999;
         }
+        #nothingTab {
+            li {
+                border-top: 3px solid #d0d0d0;
+                background: #f5f5f5;
+                a {
+                    height: 100px;
+                    line-height: 100px;
+                    padding: 0;
+                    font-size: 24px;
+                    color: #666666;
+                    border: none;
+                }
+                &.active {
+                    border-top: 4px solid #3088c6;
+                    background: #fff;
+                    a {
+                        color: #3088c6;
+                    }
+                }
+            }
+        }
+
+        .left-border-line {
+            border-left: 1px solid #e4e4e4;
+        }
+
+        #nothingTabContent {
+            margin-top: 40px;
+            .list-group-item {
+                font-size: 22px;
+                color: #666666;
+                background-color: #fff;
+                border-color: transparent;
+                border-bottom-color: #e4e4e4;
+            }
+            .list-group-item.active,
+            .list-group-item.active:focus,
+            .list-group-item.active:hover {
+                .list-item-title {
+                    font-size: 24px;
+                    color: #337ab7;
+                }
+                background-color: #fff;
+                border-color: #e4e4e4;
+                border-left: 8px solid #337ab7;
+            }
+        }
+
     }
 }
 
