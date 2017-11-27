@@ -723,11 +723,13 @@
             li {
                 border-top: 3px solid #d0d0d0;
                 background: #f5f5f5;
+                display: table-cell;
+                width: 1%;
                 a {
-                    height: 100px;
-                    line-height: 100px;
+                    height: 60px;
+                    line-height: 60px;
                     padding: 0;
-                    font-size: 24px;
+                    font-size: 14px;
                     color: #666666;
                     border: none;
                 }
@@ -741,16 +743,11 @@
             }
         }
 
-        .left-border-line {
-            border-left: 1px solid #e4e4e4;
-            padding-bottom: 50px;
-        }
-
         #nothingTabContent {
             margin-top: 40px;
             margin-left: 30px;
             .list-group-item {
-                font-size: 22px;
+                font-size: 16px;
                 color: #666666;
                 background-color: #fff;
                 border-color: transparent;
@@ -760,7 +757,7 @@
             .list-group-item.active:focus,
             .list-group-item.active:hover {
                 .list-item-title {
-                    font-size: 24px;
+                    font-size: 18px;
                     color: @base-color;
                 }
                 background-color: #fff;
@@ -768,9 +765,10 @@
                 border-left: 8px solid @base-color;
             }
             .see-more {
-                margin-left: 15px;
+                text-align: center;
                 color: @base-color;
-                font-size: 24px;
+                font-size: 18px;
+                margin-bottom: 40px;
             }
         }
 
@@ -794,39 +792,40 @@
         .img-tips {
             margin: 30px 0;
             color: #999;
-            font-size: 18px;
+            font-size: 15px;
         }
         .img-txt-detail {
             max-width: 600px;
             margin: 0 auto 30px;
-            font-size: 24px;
+            padding: 0 10px;
+            font-size: 18px;
             color: #333;
         }
         .unismart-btn {
             position: absolute;
-            top: -40px;
+            top: -30px;
             left: 50%;
             display: block;
-            height: 56px;
-            width: 208px;
+            height: 40px;
+            width: 150px;
             color: #fff;
             background: #19a456;
-            line-height: 56px;
+            line-height: 40px;
             text-align: center;
-            margin-left: -104px;
+            margin-left: -75px;
         }
         .nfc-btn {
             position: absolute;
-            top: -40px;
+            top: -30px;
             left: 50%;
             display: block;
-            height: 56px;
-            width: 208px;
+            height: 40px;
+            width: 150px;
             color: #fff;
             background: #099ea7;
-            line-height: 56px;
+            line-height: 40px;
             text-align: center;
-            margin-left: -104px;
+            margin-left: -75px;
         }
     }
 
@@ -848,12 +847,12 @@
         padding-bottom: 50px;
         text-align: center;
         .solution-detail {
-            margin: 130px 0 30px;
-            font-size: 24px;
+            margin: 90px 0 30px;
+            font-size: 20px;
             color: #666666;
         }
         .solution-link {
-            font-size: 24px;
+            font-size: 14px;
             color: @base-color;
         }
     }
