@@ -456,12 +456,11 @@ body {
     background-color: #fff;
   }
   .nothing-contact .contact-email .contact-title {
-    font-size: 36px;
+    font-size: 3.6rem;
     color: #2f88c6;
   }
   .nothing-contact .contact-email .contact-detail {
-    font-size: 24px;
-    color: #2f88c6;
+    font-size: 2.4rem;
   }
   .nothing-contact .contact-email .env-top {
     margin-top: 30px;
