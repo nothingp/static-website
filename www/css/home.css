@@ -1,3 +1,12 @@
+html {
+  font-size: 62.5%;
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #d2d2d2;
+  color: #333333;
+  min-width: 320px;
+}
 /*自定义的css*/
 .dropdown-submenu {
   position: relative;
@@ -44,30 +53,32 @@
   color: #337ab7;
 }
 @media screen and (min-width: 1200px) {
-  .container-fluid {
-    font-family: CiscoSans, Arial, sans-serif;
-    padding-left: 120px;
-    padding-right: 120px;
-  }
 }
 @media screen and (min-width: 768px) {
   .container-fluid {
-    font-family: CiscoSans, Arial, sans-serif;
-    padding-left: 40px;
-    padding-right: 40px;
+    max-width: 1600px;
+    padding: 0;
+    background: #ffffff;
   }
   .nothing-navbar {
     height: 120px;
     padding: 0;
-    margin: 0px 8%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .nothing-navbar .navbar-collapse {
+    padding: 0;
   }
   .nothing-navbar .nothing-navbar-brand {
     position: absolute;
-    margin-top: 20px;
+    margin-top: 32px;
   }
-  .nothing-navbar .nothing-navbar-brand img {
-    width: 100px;
-    height: 72px;
+  .nothing-navbar .nothing-navbar-brand .navbar-brand {
+    padding: 0;
+  }
+  .nothing-navbar .nothing-navbar-brand .navbar-brand img {
+    width: 99px;
+    height: 70px;
   }
   .nothing-navbar .nothing-navbar-brand-search {
     position: absolute;
@@ -75,23 +86,45 @@
     top: 60px;
   }
   .nothing-navbar .nothing-navbar-brand-search button {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
+    padding: 7px 0;
     line-height: 1.428571429;
-    border-radius: 15px;
+    border-radius: 16px;
   }
   .nothing-navbar .nothing-navbar-menu {
-    font-size: 1.4rem;
-    margin-top: 50px;
+    font-size: 1.6rem;
+  }
+  .nothing-navbar .nothing-navbar-menu .dropdown:hover > a:before {
+    border-bottom: 2px solid #2f88c6;
+    bottom: 0;
+    content: "";
+    left: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+  }
+  .nothing-navbar .nothing-navbar-menu .dropdown .dropdown-toggle {
+    color: #737373;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .nothing-navbar .nothing-navbar-menu .dropdown .dropdown-toggle:hover,
+  .nothing-navbar .nothing-navbar-menu .dropdown .dropdown-toggle:focus {
+    background: none;
   }
   .nothing-navbar .nothing-navbar-info > li a {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 0;
     color: #2f88c6;
-    font-size: 10px;
+    font-size: 1.4rem;
+    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+  }
+  .nothing-navbar .nothing-navbar-info > li a:hover,
+  .nothing-navbar .nothing-navbar-info > li a:focus {
+    background: none;
+    text-decoration: underline;
   }
   .nothing-navbar .nothing-navbar-info > li.line {
     position: relative;

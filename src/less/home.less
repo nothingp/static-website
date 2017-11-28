@@ -21,6 +21,18 @@
 @hr-background-color: #eaf3f9;
 
 @font-family: CiscoSans, Arial, sans-serif;
+@font-sub-family: CiscoSans-ExtraLight, Arial, sans-serif;
+
+html{
+    font-size: 62.5%;
+    font-family: @font-family;
+}
+
+body{
+    background:@base-font-color-lightest;
+    color: @base-font-color;
+    min-width: 320px;
+}
 
 /*自定义的css*/
 .dropdown-submenu {
@@ -77,12 +89,11 @@
 
 @media screen and (min-width: @screen-lg-min) {
     //1200
-    .container-fluid {
-        font-family: @font-family;
-
-        padding-left: 120px;
-        padding-right: 120px;
-    }
+    //.container-fluid {
+    //    font-family: @font-family;
+    //    padding-left: 120px;
+    //    padding-right: 120px;
+    //}
 }
 
 @media screen and (min-width: @screen-md-min) {
@@ -93,24 +104,31 @@
 @media screen and (min-width: @screen-sm-min) {
     //768- sm->lg
     .container-fluid {
-        font-family: @font-family;
-        padding-left: 40px;
-        padding-right: 40px;
+        max-width: 1600px;
+        padding: 0;
+        background: #ffffff;
     }
 
     //菜单
     .nothing-navbar {
         height: 120px;
         padding: 0;
-        margin: 0px 8%;
-
+        max-width: 1280px;
+        margin: 0 auto;
+        .navbar-collapse{
+            padding: 0;
+        }
         .nothing-navbar-brand {
             position: absolute;
-            margin-top: 20px;
-            img {
-                width: 100px;
-                height: 72px;
+            margin-top: 32px;
+            .navbar-brand{
+                padding: 0;
+                img {
+                    width: 99px;
+                    height: 70px;
+                }
             }
+
         }
 
         .nothing-navbar-brand-search {
@@ -118,28 +136,52 @@
             right: 0;
             top: 60px;
             button {
-                width: 30px;
-                height: 30px;
+                width: 32px;
+                height: 32px;
                 text-align: center;
-                padding: 6px 0;
-                font-size: 12px;
+                padding: 7px 0;
                 line-height: 1.428571429;
-                border-radius: 15px;
+                border-radius: 16px;
             }
         }
 
         .nothing-navbar-menu {
-            font-size: 1.4rem;
-            margin-top: 50px;
+            font-size: 1.6rem;
+            .dropdown{
+                &:hover{
+                    > a:before{
+                        border-bottom: 2px solid @base-color;
+                        bottom: 0;
+                        content: "";
+                        left: 0;
+                        margin: 0;
+                        position: absolute;
+                        width: 100%;
+                    }
+                }
+                .dropdown-toggle {
+                    color: #737373;
+                    padding-top: 40px;
+                    padding-bottom: 20px;
+                    &:hover,&:focus{
+                        background:none;
+                    }
+                }
+            }
         }
 
         .nothing-navbar-info {
             > li {
                 a {
-                    padding-top: 10px;
+                    padding-top: 5px;
                     padding-bottom: 0;
                     color: @base-color;
-                    font-size: 10px;
+                    font-size: 1.4rem;
+                    font-family:@font-sub-family ;
+                    &:hover,&:focus{
+                        background:none;
+                        text-decoration: underline;
+                    }
                 }
                 &.line {
                     position: relative;
