@@ -111,7 +111,7 @@ body{
 
     //菜单
     .nothing-navbar {
-        height: 120px;
+        height: 110px;
         padding: 0;
         max-width: 1280px;
         margin: 0 auto;
@@ -120,12 +120,12 @@ body{
         }
         .nothing-navbar-brand {
             position: absolute;
-            margin-top: 32px;
+            margin-top: 35px;
             .navbar-brand{
                 padding: 0;
                 img {
-                    width: 99px;
-                    height: 70px;
+                    width: 84px;
+                    height: 60px;
                 }
             }
 
@@ -134,19 +134,19 @@ body{
         .nothing-navbar-brand-search {
             position: absolute;
             right: 0;
-            top: 60px;
+            top:56px;
             button {
-                width: 32px;
-                height: 32px;
+                width: 22px;
+                height: 22px;
                 text-align: center;
-                padding: 7px 0;
+                padding: 2px 0;
                 line-height: 1.428571429;
-                border-radius: 16px;
+                border-radius: 11px;
             }
         }
 
         .nothing-navbar-menu {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             .dropdown{
                 &:hover{
                     > a:before{
@@ -162,8 +162,8 @@ body{
                 }
                 .dropdown-toggle {
                     color: #737373;
-                    padding-top: 40px;
-                    padding-bottom: 20px;
+                    padding-top: 21px;
+                    padding-bottom: 10px;
                     &:hover,&:focus{
                         background:none;
                     }
@@ -174,10 +174,10 @@ body{
         .nothing-navbar-info {
             > li {
                 a {
-                    padding-top: 5px;
+                    padding-top: 15px;
                     padding-bottom: 0;
                     color: @base-color;
-                    font-size: 1.4rem;
+                    font-size: 1.2rem;
                     font-family:@font-sub-family ;
                     &:hover,&:focus{
                         background:none;
@@ -209,17 +209,17 @@ body{
 
     //多个图片
     .nothing-icons {
-        height:200px;
+        height:136px;
         margin-left: 0;
         margin-right: 0;
         background-color: @base-color;
         .nothing-icon {
             .div-img-circle {
-                width: 77px;
-                height: 77px;
-                border-radius: 77px;
+                width: 56px;
+                height: 56px;
+                border-radius: 56px;
                 border: 1px solid #fff;
-                margin: 40px auto 0 ;
+                margin: 26px auto 0 ;
                 &.support {
                     background-image: url(../images/quick_nav/quick/support_center.png);
                     &:hover {
@@ -259,7 +259,7 @@ body{
 
             p {
                 text-align: center;
-                font-size: 1.8rem;
+                font-size: 1.2rem;
                 color: #fff;
                 margin-top: 18px;
                 padding: 0;
@@ -270,25 +270,28 @@ body{
 
     //走马灯
     .nothing-carousel {
-        height: 600px;
+        height: 500px;
         .in-focus {
-            margin-top: 80px;
-            font-size: 3.6rem;
+            margin-top: 60px;
+            font-size: 3rem;
             color: @base-color;
         }
         .in-focus-sub {
-            margin-top: 32px;
-            margin-bottom: 82px;
-            font-size: 2.4rem;
+            margin-top: 21px;
+            margin-bottom: 68px;
+            font-size: 2rem;
             color: #999;
         }
         .print {
-            text-align: right;
+            img{
+                width: 246px;
+                height: 192px;
+            }
         }
         .print-title {
             width: 60%;
             margin-bottom: 30px;
-            font-size: 3rem;
+            font-size: 2.4rem;
             color: #666666;
         }
         .print-li {
@@ -308,7 +311,7 @@ body{
         .read-more {
             margin-top: 40px;
             margin-left: 5px;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             color: @base-color;
         }
     }
@@ -318,14 +321,14 @@ body{
         max-width: 1280px;
         margin: 0 auto;
         .tab-title {
-            margin-top: 82px;
-            margin-bottom: 40px;
-            font-size: 36px;
+            margin-top: 90px;
+            margin-bottom: 24px;
+            font-size: 3rem;
             color: @base-color;
         }
         .tab-subtitle {
-            margin-bottom: 82px;
-            font-size: 24px;
+            margin-bottom: 26px;
+            font-size: 2rem;
             color: #999999;
         }
         #nothingTab {
@@ -333,10 +336,10 @@ body{
                 border-top: 3px solid #d0d0d0;
                 background: #f5f5f5;
                 a {
-                    height: 100px;
-                    line-height: 100px;
+                    height: 60px;
+                    line-height: 60px;
                     padding: 0;
-                    font-size: 24px;
+                    font-size: 1.4rem;
                     color: #666666;
                     border: none;
                 }
@@ -359,7 +362,7 @@ body{
             margin-top: 40px;
             margin-left: 30px;
             .list-group-item {
-                font-size: 22px;
+                font-size: 1.4rem;
                 color: #666666;
                 background-color: #fff;
                 border-color: transparent;
@@ -369,7 +372,7 @@ body{
             .list-group-item.active:focus,
             .list-group-item.active:hover {
                 .list-item-title {
-                    font-size: 24px;
+                    font-size: 1.6rem;
                     color: @base-color;
                 }
                 background-color: #fff;
@@ -379,7 +382,11 @@ body{
             .see-more {
                 margin-left: 15px;
                 color: @base-color;
-                font-size: 24px;
+                font-size: 1.8rem;
+            }
+            img{
+                max-width: 351px;
+                max-height: 272px;
             }
         }
 
@@ -404,12 +411,12 @@ body{
         .img-tips {
             margin: 30px 0;
             color: #999;
-            font-size: 18px;
+            font-size: 1.8rem;
         }
         .img-txt-detail {
             max-width: 600px;
             margin: 0 auto 30px;
-            font-size: 24px;
+            font-size: 1.6rem;
             color: #333;
         }
         .unismart-btn {
@@ -424,6 +431,7 @@ body{
             line-height: 56px;
             text-align: center;
             margin-left: -104px;
+            font-size: 2rem;
         }
         .nfc-btn {
             position: absolute;
@@ -437,6 +445,7 @@ body{
             line-height: 56px;
             text-align: center;
             margin-left: -104px;
+            font-size: 2rem;
         }
     }
 
@@ -466,24 +475,24 @@ body{
         margin: 50px auto;
         .solution-detail {
             margin: 30px 0;
-            font-size: 24px;
+            font-size: 1.6rem;
             color: #666666;
         }
         .solution-link {
-            font-size: 24px;
+            font-size:  1.6rem;
             color: @base-color;
         }
     }
 
     .nothing-jumbotron-bg {
         max-width: 1280px;
-        margin: 50px auto;
+        margin: 50px auto 0;
         position: relative;
         background-image: url(../images/bg.png);
         background-color: #fff;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 600px;
+        height: 400px;
         //width: 1920px;
         &:after {
             position: absolute;
@@ -497,73 +506,72 @@ body{
             content: '';
         }
         .bg-title {
-            font-size: 48px;
+            font-size: 3rem;
             color: #fff;
         }
         .bg-left-txt {
             margin: 50px 0;
-            font-size: 30px;
+            font-size: 2rem;
             color: #fff;
         }
         .bg-left-btn {
             margin: auto;
             display: block;
-            width: 225px;
-            height: 73px;
+            width: 161px;
+            height: 51px;
             text-align: center;
-            line-height: 73px;
+            line-height: 51px;
             background-color: @base-color;
             border-radius: 4px;
-            font-size: 24px;
+            font-size: 1.6rem;
             color: #fff;
         }
         .bg-right-txt {
             margin: 50px 0;
-            font-size: 30px;
+            font-size: 2rem;
             color: #fff;
         }
         .bg-right-btn {
             margin: auto;
             display: block;
-            width: 225px;
-            height: 73px;
+            width: 161px;
+            height: 51px;
             text-align: center;
-            line-height: 73px;
+            line-height: 51px;
             border-radius: 4px;
             border: solid 1px #ffffff;
-            font-size: 24px;
+            font-size: 1.6rem;
             color: #fff;
         }
     }
 
     .nothing-contact {
         max-width: 1280px;
-        margin: 50px auto;
+        margin: 0 auto;
         .contact-email {
             position: relative;
             margin: 0;
-            padding: 50px 0 250px;
+            padding: 61px 0 166px;
             .contact-title {
-                font-size: 3.6rem;
+                font-size: 2.6rem;
                 color: @base-color;
             }
             .contact-detail {
-                font-size: 2.4rem;
+                font-size: 1.6rem;
             }
             background-color: #fff;
             .env-top {
-                margin-top: 30px;
-                width: 176px;
-                height: 140px;
+                max-width: 120px;
+                max-height: 95px;
             }
             .btn-blue {
-                margin-top: 65px;
+                margin-top: 26px;
                 display: block;
-                width: 225px;
-                height: 73px;
-                line-height: 73px;
+                width: 161px;
+                height: 51px;
+                line-height: 51px;
                 text-align: center;
-                font-size: 24px;
+                font-size: 1.6rem;
                 color: @base-color;
                 background-color: #ffffff;
                 border-radius: 4px;
@@ -585,28 +593,29 @@ body{
             background: @base-color;
 
             .contact-update {
-                font-size: 3.6rem;
+                font-size: 2.4rem;
                 color: #fff;
-                line-height: 80px;
+                line-height: 40px;
                 text-align: right;
+                margin: 0;
             }
             .contact-input {
-                height: 80px;
-                max-width: 577px;
-                font-size: 30px;
+                height: 40px;
+                max-width: 480px;
+                font-size: 1.6rem;
                 border: 1px solid #e5e5e5;
             }
             .contact-subscribe {
                 display: block;
-                width: 295px;
-                height: 80px;
-                line-height: 80px;
+                width: 161px;
+                height: 41px;
+                line-height: 41px;
                 text-align: center;
                 color: #fff;
                 background-color: #72b85e;
                 border-radius: 6px;
                 border: solid 1px #72b85e;
-                font-size: 30px;
+                font-size: 1.6rem;
             }
         }
     }
