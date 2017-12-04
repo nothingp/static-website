@@ -59,7 +59,7 @@
 
 <body>
 <div class="container-fluid ">
-    <nav class="navbar row nothing-navbar">
+    <nav class="navbar row">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
             <button type="button" class="nothing-navbar-button navbar-toggle collapsed " data-toggle="collapse"
@@ -76,160 +76,304 @@
                 </a>
             </div>
             <div class="nothing-navbar-brand-search">
-                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"
+                                                                    aria-hidden="true"></span></button>
             </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right nothing-navbar-info">
+            <ul class="nav navbar-nav navbar-right nothing-navbar-info hidden-xs">
                 <li><a href="#"><img src="../build/images/cart-order.png" alt=""/> Order</a></li>
                 <li class="line"><a href="#">Login</a></li>
                 <li><a href="#">Register</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li class="dropdown-submenu">
-                            <a href="#">主食</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">饭</a></li>
-                                <li><a href="#">饼</a></li>
-                                <li><a href="#">包子</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">肉类</a></li>
-                        <li><a href="#">水产</a></li>
+                        <li class="dropdown-submenu"><a href="#">简体</a></li>
+                        <li><a href="#">繁体</a></li>
+                        <li><a href="#">英文</a></li>
                     </ul>
                 </li>
             </ul>
             <div class="row nothing-navbar-menu">
-                <div class="col-md-8 col-md-offset-3 col-sm-9 col-sm-offset-2">
-                <ul class="nav navbar-nav ">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
-                        <ul id="test" class="row dropdown-menu" role="menu">
-                            <div class="dropdown-menu-title col-md-2  col-sm-3 ">
-                                ABOUT US
-                            </div>
-                            <div class="col-md-5 col-sm-5 col-md-offset-1">
-                                <li class="dropdown-submenu">
-                                    <a href="#">About Apex</a>
-                                    <p>This is Apexmic</p>
-                                    <ul class="dropdown-3rdmenu" style="display: block">
-                                        <li><a href="#">Company Profile</a></li>
-                                        <li><a href="#">Company Profile</a></li>
-                                        <li><a href="#">Company Profile</a></li>
-                                        <li><a href="#">Company Profile</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="#">About Apex</a>
-                                    <p>This is Apexmic</p>
-                                    <ul class="dropdown-3rdmenu">
-                                        <li><a href="#">2Company Profile</a></li>
-                                        <li><a href="#">2Company Profile</a></li>
-                                        <li><a href="#">2Company Profile</a></li>
-                                        <li><a href="#">2Company Profile</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-submenu">
-                                    <a href="#">About Apex</a>
-                                    <p>This is Apexmic</p>
-                                    <ul class="dropdown-3rdmenu">
-                                        <li><a href="#">3Company Profile</a></li>
-                                        <li><a href="#">3Company Profile</a></li>
-                                        <li><a href="#">3Company Profile</a></li>
-                                        <li><a href="#">3Company Profile</a></li>
-                                    </ul>
-                                </li>
-                            </div>
-                            <div class="dropdown-menu-image col-md-4 col-sm-4" >
-                                <img src="images/submenu.png" class="img-responsive"/>
-                                <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany ProfileCompany ProfileCompany</p>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                                <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">UNISMART</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
-                        </ul>
-                    </li>
+                <div class="col-xs-6 col-md-8 col-md-offset-3 col-sm-9 col-sm-offset-2">
+                    <ul class="nav navbar-nav ">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">二级</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">UNISMART</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">SUPPORT</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">NEWS</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
-                        </ul>
-                    </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SUPPORT</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NEWS</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
 
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div><!-- /.navbar-collapse -->
-
     </nav>
 
     <div class="nothing-jumbotron jumbotron">
@@ -274,7 +418,7 @@
         <div class="carousel-inner" role="listbox">
             <div class="item active">
                 <div>
-                        <h3 class="text-center in-focus">
+                    <h3 class="text-center in-focus">
                         IN FOCUS
                     </h3>
                     <p class="text-center in-focus-sub">Discover Top Trends in Apex</p>
@@ -366,7 +510,7 @@
                             </ul>
                             <p class="see-more">See All Solutions</p>
                         </div>
-                        <div class="col-sm-2 col-sm-offset-1" >
+                        <div class="col-sm-2 col-sm-offset-1">
                             <img src="./images/products.png" class="img-responsive" alt="Responsive image">
                         </div>
                     </div>
@@ -413,7 +557,7 @@
 
     <div class="nothing-jumbotron-phone jumbotron">
         <!--<div class="jumbotron-tips">-->
-            <!--The Must-have App for the Printer Consumable Market-->
+        <!--The Must-have App for the Printer Consumable Market-->
         <!--</div>-->
         <img src="./images/phone.png" alt="" class="img-responsive hidden-xs">
         <img src="./images/H5/phone.png" alt="" class="img-responsive hidden-sm hidden-md hidden-lg">
