@@ -366,6 +366,7 @@ body {
     margin: 0 auto 30px;
     font-size: 1.6rem;
     color: #333;
+    min-height: 70px;
   }
   .nothing-img-container .unismart-btn {
     position: absolute;
