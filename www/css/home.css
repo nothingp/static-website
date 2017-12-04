@@ -38,13 +38,18 @@ body {
     right: 0;
     top: 56px;
   }
-  .navbar .nothing-navbar-brand-search button {
+  .navbar .nothing-navbar-brand-search a {
     width: 22px;
     height: 22px;
     text-align: center;
     padding: 2px 0;
     line-height: 1.428571429;
     border-radius: 11px;
+  }
+  .navbar .nothing-navbar-brand-search .search-content {
+    background: red;
+    position: absolute;
+    left: 0;
   }
   .navbar .nothing-navbar-menu {
     font-size: 1.4rem;

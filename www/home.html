@@ -34,6 +34,9 @@
     <link href="css/home.css" rel="stylesheet">
 
     <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
         //        $(document).ready(function(){
         //            dropdownOpen();//调用
         //        });
@@ -76,8 +79,9 @@
                 </a>
             </div>
             <div class="nothing-navbar-brand-search">
-                <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search"
-                                                                    aria-hidden="true"></span></button>
+                <a tabindex="0" type="button" role="button" class="btn btn-primary" >
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
             </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -146,18 +150,18 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS</a>
                             <ul class="row dropdown-menu" role="menu">
-                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
                                     ABOUT US
                                 </div>
-                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
                                     <li class="dropdown-submenu">
-                                        <a href="#">About Apex</a>
+                                        <a href="#">二级</a>
                                         <p class="hidden-xs">This is Apexmic</p>
                                         <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
@@ -191,18 +195,18 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">UNISMART</a>
                             <ul class="row dropdown-menu" role="menu">
-                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
                                     ABOUT US
                                 </div>
-                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
                                     <li class="dropdown-submenu">
-                                        <a href="#">About Apex</a>
+                                        <a href="#">二级</a>
                                         <p class="hidden-xs">This is Apexmic</p>
                                         <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
@@ -237,18 +241,18 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">SUPPORT</a>
                             <ul class="row dropdown-menu" role="menu">
-                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
                                     ABOUT US
                                 </div>
-                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
                                     <li class="dropdown-submenu">
-                                        <a href="#">About Apex</a>
+                                        <a href="#">二级</a>
                                         <p class="hidden-xs">This is Apexmic</p>
                                         <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
@@ -282,18 +286,18 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">NEWS</a>
                             <ul class="row dropdown-menu" role="menu">
-                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
                                     ABOUT US
                                 </div>
-                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
                                     <li class="dropdown-submenu">
-                                        <a href="#">About Apex</a>
+                                        <a href="#">二级</a>
                                         <p class="hidden-xs">This is Apexmic</p>
                                         <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
@@ -328,18 +332,18 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
                             <ul class="row dropdown-menu" role="menu">
-                                <div class="dropdown-menu-title col-md-2  col-sm-3 hidden-xs">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
                                     ABOUT US
                                 </div>
-                                <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
                                     <li class="dropdown-submenu">
-                                        <a href="#">About Apex</a>
+                                        <a href="#">二级</a>
                                         <p class="hidden-xs">This is Apexmic</p>
                                         <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
-                                            <li><a href="#">Company Profile</a></li>
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
                                         </ul>
                                     </li>
                                     <li class="dropdown-submenu">
