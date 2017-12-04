@@ -50,12 +50,6 @@
         //                $(this).removeClass('open');
         //            });
         //        }
-
-        $(function () {
-            $('#myTab a').hover(function () {
-                $(this).tab('show');
-            });
-        })
     </script>
 
     <style>
@@ -108,21 +102,50 @@
                 </li>
             </ul>
             <div class="row nothing-navbar-menu">
-                <div class="col-md-9 col-md-offset-2 col-sm-9 col-sm-offset-2">
+                <div class="col-md-8 col-md-offset-3 col-sm-9 col-sm-offset-2">
                 <ul class="nav navbar-nav ">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li class="dropdown-submenu">
-                                <a href="#">主食</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">饭</a></li>
-                                    <li><a href="#">饼</a></li>
-                                    <li><a href="#">包子</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">肉类</a></li>
-                            <li><a href="#">水产</a></li>
+                        <ul id="test" class="row dropdown-menu" role="menu">
+                            <div class="dropdown-menu-title col-md-2  col-sm-3 ">
+                                ABOUT US
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-md-offset-1">
+                                <li class="dropdown-submenu">
+                                    <a href="#">About Apex</a>
+                                    <p>This is Apexmic</p>
+                                    <ul class="dropdown-3rdmenu" style="display: block">
+                                        <li><a href="#">Company Profile</a></li>
+                                        <li><a href="#">Company Profile</a></li>
+                                        <li><a href="#">Company Profile</a></li>
+                                        <li><a href="#">Company Profile</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#">About Apex</a>
+                                    <p>This is Apexmic</p>
+                                    <ul class="dropdown-3rdmenu">
+                                        <li><a href="#">2Company Profile</a></li>
+                                        <li><a href="#">2Company Profile</a></li>
+                                        <li><a href="#">2Company Profile</a></li>
+                                        <li><a href="#">2Company Profile</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a href="#">About Apex</a>
+                                    <p>This is Apexmic</p>
+                                    <ul class="dropdown-3rdmenu">
+                                        <li><a href="#">3Company Profile</a></li>
+                                        <li><a href="#">3Company Profile</a></li>
+                                        <li><a href="#">3Company Profile</a></li>
+                                        <li><a href="#">3Company Profile</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="dropdown-menu-image col-md-4 col-sm-4" >
+                                <img src="images/submenu.png" class="img-responsive"/>
+                                <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany ProfileCompany ProfileCompany</p>
+                            </div>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -136,7 +159,7 @@
                                     <li><a href="#">包子</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">肉类</a></li>
+                                <li><a href="#">肉类</a></li>
                             <li><a href="#">水产</a></li>
                         </ul>
                     </li>
