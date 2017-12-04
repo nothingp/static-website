@@ -686,6 +686,7 @@ body {
     margin: auto;
   }
   .nothing-carousel .print-li li {
+    list-style-type: none;
     font-size: 16px;
     color: #666;
   }
@@ -824,9 +825,10 @@ body {
     display: none;
   }
   .nothing-solution-container {
-    margin: 80px 0 50px;
-    padding-bottom: 50px;
     text-align: center;
+  }
+  .nothing-solution-container img {
+    margin: 50px auto;
   }
   .nothing-solution-container .solution-detail {
     margin: 90px 0 30px;
@@ -845,17 +847,6 @@ body {
     background-size: 100% 100%;
     height: 800px;
     margin-bottom: 0;
-  }
-  .nothing-jumbotron-bg:after {
-    position: absolute;
-    top: 55%;
-    left: 20%;
-    width: 60%;
-    margin-top: -2.5px;
-    height: 5px;
-    background: #fff;
-    display: block;
-    content: '';
   }
   .nothing-jumbotron-bg .bg-title {
     margin-top: 20px;
