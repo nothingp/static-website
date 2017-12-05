@@ -643,12 +643,12 @@ body {
   }
   .navbar {
     margin-bottom: 0;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
   .navbar .navbar-header .nothing-navbar-button {
     float: left;
-    margin-left: 15px;
+    margin-left: 1.5rem;
   }
   .navbar .navbar-header .nothing-navbar-button .icon-bar {
     color: #2f88c6;
@@ -656,17 +656,17 @@ body {
   }
   .navbar .nothing-navbar-brand-search {
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 2rem;
+    top: 1rem;
   }
   .navbar .nothing-navbar-brand-search button {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     text-align: center;
-    padding: 6px 0;
-    font-size: 12px;
+    padding: .6rem 0;
+    font-size: 1.2rem;
     line-height: 1.428571429;
-    border-radius: 15px;
+    border-radius: 1.5rem;
   }
   .navbar .nothing-navbar-menu {
     height: 50rem;
@@ -678,7 +678,7 @@ body {
   }
   .navbar .nothing-navbar-menu .dropdown .dropdown-menu {
     position: absolute;
-    top: 3px;
+    top: .3rem;
     left: 100%;
     width: 100%;
   }
@@ -696,21 +696,21 @@ body {
     width: 100%;
     display: block;
     line-height: 1.8rem;
-    padding: 5px 15px;
+    padding: .5rem 1.5rem;
     background-color: #eee;
   }
   .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu {
     list-style-type: none;
     font-size: 1.8rem;
     line-height: 3rem;
-    padding: 5px 15px;
+    padding: .5rem 1.5rem;
   }
   .nothing-jumbotron.jumbotron {
     padding: 0;
     margin-bottom: 0;
   }
   .nothing-navbar-brand {
-    width: 200px;
+    width: 20rem;
     margin: 0 auto;
   }
   .nothing-navbar-brand .navbar-brand {
@@ -720,107 +720,111 @@ body {
     line-height: normal;
   }
   .nothing-navbar-brand .navbar-brand img {
-    width: 60px;
-    height: 45px;
-    margin: 5px auto;
+    width: 6rem;
+    height: 4.5rem;
+    margin: .5rem auto;
   }
   .nothing-icons {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin-left: 0;
     margin-right: 0;
     background-color: #2f88c6;
   }
   .nothing-icons .nothing-icon {
+    padding: 0;
     text-align: center;
   }
   .nothing-icons .nothing-icon p {
     color: #fff;
-    font-size: 12px;
+    font-size: 1.2rem;
     margin: 0;
-    line-height: 50px;
+    line-height: 5rem;
   }
   .nothing-carousel {
-    height: 750px;
+    height: 65rem;
   }
   .nothing-carousel .in-focus {
-    margin-top: 30px;
-    font-size: 25px;
+    margin-top: 3rem;
+    font-size: 2.5rem;
     color: #2f88c6;
   }
   .nothing-carousel .in-focus-sub {
-    margin-top: 20px;
-    margin-bottom: 50px;
-    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
     color: #999;
   }
   .nothing-carousel .print {
     text-align: center;
   }
+  .nothing-carousel .print img {
+    width: 60%;
+  }
   .nothing-carousel .print-title {
-    margin: 30px 0 20px;
-    padding: 10px;
-    font-size: 23px;
+    margin: 3rem 0 2rem;
+    padding: 1rem;
+    font-size: 2.3rem;
     color: #666;
   }
   .nothing-carousel .print-li {
     padding: 0;
-    padding-left: 15px;
+    padding-left: 1.5rem;
     width: 50%;
     margin: auto;
   }
   .nothing-carousel .print-li li {
     list-style-type: none;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #666;
   }
   .nothing-carousel .print-txt {
     text-align: center;
   }
   .nothing-carousel .read-more {
-    margin-top: 40px;
-    font-size: 18px;
+    margin-top: 4rem;
+    font-size: 1.8rem;
     color: #2f88c6;
   }
   .nothing-tab-list .tab-title {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-size: 25px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
     color: #2f88c6;
-    padding: 10px;
+    padding: 1rem;
   }
   .nothing-tab-list .tab-subtitle {
-    margin-bottom: 60px;
-    font-size: 20px;
+    margin-bottom: 6rem;
+    font-size: 2rem;
     color: #999;
   }
   .nothing-tab-list #nothingTab li {
-    border-top: 3px solid #d0d0d0;
+    border-top: .3rem solid #d0d0d0;
     background: #f5f5f5;
     display: table-cell;
     width: 1%;
   }
   .nothing-tab-list #nothingTab li a {
-    height: 60px;
-    line-height: 60px;
+    height: 6rem;
+    line-height: 6rem;
     padding: 0;
-    font-size: 14px;
+    font-size: 1.2rem;
     color: #666666;
     border: none;
   }
   .nothing-tab-list #nothingTab li.active {
-    border-top: 4px solid #2f88c6;
+    border-top: 0.4rem solid #2f88c6;
     background: #fff;
   }
   .nothing-tab-list #nothingTab li.active a {
     color: #2f88c6;
   }
   .nothing-tab-list #nothingTabContent {
-    margin-top: 40px;
-    margin-left: 10px;
+    margin-top: 4rem;
+    margin-left: 1rem;
   }
   .nothing-tab-list #nothingTabContent .list-group-item {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #666666;
     background-color: #fff;
     border-color: transparent;
@@ -831,96 +835,97 @@ body {
   .nothing-tab-list #nothingTabContent .list-group-item.active:hover {
     background-color: #fff;
     border-color: #e4e4e4;
-    border-left: 8px solid #2f88c6;
+    border-left: 0.8rem solid #2f88c6;
   }
   .nothing-tab-list #nothingTabContent .list-group-item.active .list-item-title,
   .nothing-tab-list #nothingTabContent .list-group-item.active:focus .list-item-title,
   .nothing-tab-list #nothingTabContent .list-group-item.active:hover .list-item-title {
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #2f88c6;
   }
   .nothing-tab-list #nothingTabContent .see-more {
     text-align: center;
     color: #2f88c6;
-    font-size: 18px;
-    margin-bottom: 40px;
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
   }
   .nothing-img-container {
-    margin-top: 50px;
+    margin-top: 5rem;
   }
   .nothing-img-container .thumbnail {
     padding: 0;
     margin-bottom: 0;
   }
   .nothing-img-container .thumbnail.unismart-thumbnail {
-    border-bottom: 8px solid #19a456;
+    border-bottom: .8rem solid #19a456;
   }
   .nothing-img-container .thumbnail.nfc-thumbnail {
-    border-bottom: 8px solid #099ea7;
+    border-bottom: .8rem solid #099ea7;
   }
   .nothing-img-container .caption {
     position: relative;
   }
   .nothing-img-container .img-tips {
-    margin: 30px 0;
+    margin: 3rem 0;
     color: #999;
-    font-size: 15px;
+    font-size: 1.5rem;
   }
   .nothing-img-container .img-txt-detail {
-    max-width: 600px;
-    margin: 0 auto 30px;
-    padding: 0 10px;
-    font-size: 18px;
+    max-width: 60rem;
+    margin: 0 auto 3rem;
+    padding: 0 1rem;
+    font-size: 1.8rem;
     color: #333;
   }
   .nothing-img-container .unismart-btn {
     position: absolute;
-    top: -30px;
+    top: -3rem;
     left: 50%;
     display: block;
-    height: 40px;
-    width: 150px;
+    height: 4rem;
+    width: 15rem;
     color: #fff;
     background: #19a456;
-    line-height: 40px;
+    line-height: 4rem;
     text-align: center;
-    margin-left: -75px;
+    margin-left: -7.5rem;
   }
   .nothing-img-container .nfc-btn {
     position: absolute;
-    top: -30px;
+    top: -3rem;
     left: 50%;
     display: block;
-    height: 40px;
-    width: 150px;
+    height: 4rem;
+    width: 15rem;
     color: #fff;
     background: #099ea7;
-    line-height: 40px;
+    line-height: 4rem;
     text-align: center;
-    margin-left: -75px;
+    margin-left: -7.5rem;
   }
   .nothing-jumbotron-phone.jumbotron {
     position: relative;
     padding: 0;
     background-color: #fff;
-    margin: 30px 0;
+    margin: 3rem 0;
   }
   .nothing-jumbotron-phone.jumbotron .jumbotron-tips {
     display: none;
   }
   .nothing-solution-container {
+    margin-bottom: 10rem;
     text-align: center;
   }
   .nothing-solution-container img {
-    margin: 50px auto;
+    margin: 5rem auto;
   }
   .nothing-solution-container .solution-detail {
-    margin: 90px 0 30px;
-    font-size: 20px;
+    margin: 9rem 0 3rem;
+    font-size: 2rem;
     color: #666666;
   }
   .nothing-solution-container .solution-link {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #2f88c6;
   }
   .nothing-jumbotron-bg {
@@ -929,117 +934,294 @@ body {
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 800px;
+    height: 80rem;
     margin-bottom: 0;
   }
+  .nothing-jumbotron-bg:after {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 60%;
+    margin-top: -0.1rem;
+    height: .2rem;
+    background: #fff;
+    display: block;
+    content: '';
+  }
   .nothing-jumbotron-bg .bg-title {
-    margin-top: 20px;
-    font-size: 30px;
+    margin-top: 2rem;
+    font-size: 3rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-left-txt {
-    margin: 50px 0;
-    font-size: 20px;
+    margin: 5rem 0;
+    font-size: 2rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-left-btn {
     margin: auto;
     display: block;
-    width: 160px;
-    height: 50px;
+    width: 16rem;
+    height: 5rem;
     text-align: center;
-    line-height: 50px;
+    line-height: 5rem;
     background-color: #2f88c6;
-    border-radius: 4px;
-    font-size: 18px;
+    border-radius: .4rem;
+    font-size: 1.8rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-right-txt {
-    margin: 200px 0 50px;
-    font-size: 20px;
+    margin: 20rem 0 5rem;
+    font-size: 2rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-right-btn {
     margin: auto;
     display: block;
-    width: 160px;
-    height: 50px;
+    width: 16rem;
+    height: 5rem;
     text-align: center;
-    line-height: 50px;
-    border-radius: 4px;
+    line-height: 5rem;
+    border-radius: .4rem;
     border: solid 1px #fff;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
   }
   .nothing-contact .contact-email {
     position: relative;
     margin: 0;
-    padding: 50px 0 100px;
+    padding: 5rem 0 10rem;
     background-color: #fff;
   }
   .nothing-contact .contact-email .contact-title {
-    font-size: 25px;
+    font-size: 2.5rem;
     color: #2f88c6;
     text-align: center;
   }
   .nothing-contact .contact-email .contact-detail {
-    padding: 10px;
-    font-size: 16px;
+    padding: 1rem;
+    font-size: 1.6rem;
     color: #2f88c6;
     text-align: center;
   }
   .nothing-contact .contact-email .env-top {
-    margin: 0 auto 40px;
+    margin: 0 auto 4rem;
     display: block;
   }
   .nothing-contact .contact-email .btn-blue {
-    margin-top: 65px;
+    margin-top: 6.5rem;
     display: block;
-    width: 225px;
-    height: 73px;
-    line-height: 73px;
+    width: 22.5rem;
+    height: 7.3rem;
+    line-height: 7.3rem;
     text-align: center;
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #2f88c6;
     background-color: #ffffff;
-    border-radius: 4px;
+    border-radius: .4rem;
     border: solid 1px #2f88c6;
   }
   .nothing-contact .img-100 {
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -0.2rem;
     width: 100%;
   }
   .nothing-contact .contact-form {
     margin: 0;
-    margin-top: -2px;
-    padding: 10px 0 60px;
+    margin-top: -0.2rem;
+    padding: 1rem 0 6rem;
     background: #2f88c6;
   }
   .nothing-contact .contact-form .contact-update {
-    margin: 20px 0;
-    font-size: 25px;
+    margin: 2rem 0;
+    font-size: 2.5rem;
     color: #fff;
     text-align: center;
   }
   .nothing-contact .contact-form .contact-input {
-    margin: 0 0 20px;
-    height: 50px;
-    font-size: 20px;
+    margin: 0 0 2rem;
+    height: 5rem;
+    font-size: 2rem;
     border: 1px solid #e5e5e5;
   }
   .nothing-contact .contact-form .contact-subscribe {
     display: block;
     margin: auto;
-    width: 160px;
-    height: 50px;
-    line-height: 50px;
+    width: 16rem;
+    height: 5rem;
+    line-height: 5rem;
     text-align: center;
     color: #fff;
     background-color: #72b85e;
-    border-radius: 6px;
+    border-radius: .6rem;
     border: solid 1px #72b85e;
-    font-size: 18px;
+    font-size: 1.8rem;
+  }
+  .nothing-footer {
+    background: #f5f5f5;
+    padding-top: 2rem;
+  }
+  .nothing-footer .row {
+    margin: 0;
+  }
+  .nothing-footer h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #404040;
+    position: relative;
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 1.5rem;
+  }
+  .nothing-footer h3:after {
+    display: block;
+    content: '+';
+    font-size: 2rem;
+    color: #404040;
+    position: absolute;
+    right: .3rem;
+    bottom: 1.8rem;
+  }
+  .nothing-footer h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #404040;
+  }
+  .nothing-footer .products-list-plus .products-list {
+    display: none;
+  }
+  .nothing-footer .products-list-plus:hover .products-list {
+    display: block;
+  }
+  .nothing-footer .products-list-plus:hover h3 {
+    border-bottom: none;
+  }
+  .nothing-footer .products-list-plus:hover h3:after {
+    content: '-';
+  }
+  .nothing-footer .support-list-plus .support-list {
+    display: none;
+  }
+  .nothing-footer .support-list-plus:hover .support-list {
+    display: block;
+  }
+  .nothing-footer .support-list-plus:hover h3 {
+    border-bottom: none;
+  }
+  .nothing-footer .support-list-plus:hover h3:after {
+    content: '-';
+  }
+  .nothing-footer .unismart-list-plus .unismart-list {
+    display: none;
+  }
+  .nothing-footer .unismart-list-plus:hover .unismart-list {
+    display: block;
+  }
+  .nothing-footer .unismart-list-plus:hover h3 {
+    border-bottom: none;
+  }
+  .nothing-footer .unismart-list-plus:hover h3:after {
+    content: '-';
+  }
+  .nothing-footer .news-list-plus .news-list {
+    display: none;
+  }
+  .nothing-footer .news-list-plus:hover .news-list {
+    display: block;
+  }
+  .nothing-footer .news-list-plus:hover h3 {
+    border-bottom: none;
+  }
+  .nothing-footer .news-list-plus:hover h3:after {
+    content: '-';
+  }
+  .nothing-footer .about-us-list-plus h3 {
+    border-bottom: none;
+  }
+  .nothing-footer .about-us-list-plus .about-us-list {
+    display: none;
+  }
+  .nothing-footer .about-us-list-plus:hover .about-us-list {
+    display: block;
+  }
+  .nothing-footer .about-us-list-plus:hover h3:after {
+    content: '-';
+  }
+  .nothing-footer .list-group {
+    margin-bottom: 0;
+  }
+  .nothing-footer .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #f5f5f5;
+    border: none;
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  .nothing-footer .copyright {
+    position: relative;
+    top: 6rem;
+  }
+  .nothing-footer .copyright p {
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .nothing-footer .share {
+    margin-top: 20px;
+    padding: 50px 0 60px;
+    background: #333;
+  }
+  .nothing-footer .follow-us-txt {
+    padding: 0;
+    text-align: left;
+    font-size: 1.4rem;
+    height: 4.9rem;
+    line-height: 4.9rem;
+    color: #fff;
+  }
+  .nothing-footer .up-phone-top {
+    position: relative;
+    top: -10rem;
+  }
+  .nothing-footer .share-icons {
+    list-style: none;
+  }
+  .nothing-footer .share-icons li {
+    margin-right: 10px;
+    float: left;
+  }
+  .nothing-footer .share-icons li div {
+    width: 49px;
+    height: 49px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .nothing-footer .share-icons .facebook-icon {
+    background-image: url(../images/concern/facebook.png);
+  }
+  .nothing-footer .share-icons .facebook-icon:hover {
+    background-image: url(../images/concern/facebook-color.png);
+  }
+  .nothing-footer .share-icons .twitter-icon {
+    background-image: url(../images/concern/twitter.png);
+  }
+  .nothing-footer .share-icons .twitter-icon:hover {
+    background-image: url(../images/concern/twitter-color.png);
+  }
+  .nothing-footer .share-icons .in-icon {
+    background-image: url(../images/concern/in.png);
+  }
+  .nothing-footer .share-icons .in-icon:hover {
+    background-image: url(../images/concern/in-color.png);
+  }
+  .nothing-footer .share-icons .youtube-icon {
+    background-image: url(../images/concern/youtube.png);
+  }
+  .nothing-footer .share-icons .youtube-icon:hover {
+    background-image: url(../images/concern/youtube-color.png);
   }
 }
