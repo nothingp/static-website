@@ -553,6 +553,78 @@ body {
     border: solid 1px #72b85e;
     font-size: 1.6rem;
   }
+  .nothing-footer {
+    margin-top: 20px;
+  }
+  .nothing-footer h3 {
+    font-size: 18px;
+    color: #333;
+  }
+  .nothing-footer h4 {
+    font-size: 14px;
+    color: #333;
+  }
+  .nothing-footer .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin-bottom: 0;
+    background-color: #fff;
+    border: none;
+    color: #999;
+    font-size: 13px;
+  }
+  .nothing-footer .copyright {
+    margin-top: 60px;
+  }
+  .nothing-footer .copyright p {
+    color: #fff;
+    font-size: 12px;
+  }
+  .nothing-footer .share {
+    margin-top: 20px;
+    background: #9e9e9e;
+    height: 160px;
+  }
+  .nothing-footer .share-icons {
+    margin-top: 55px;
+    list-style: none;
+  }
+  .nothing-footer .share-icons li {
+    margin-right: 20px;
+    float: left;
+  }
+  .nothing-footer .share-icons li div {
+    width: 49px;
+    height: 49px;
+    border-radius: 6px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .nothing-footer .share-icons .facebook-icon {
+    background-image: url(../images/concern/facebook.png);
+  }
+  .nothing-footer .share-icons .facebook-icon:hover {
+    background-image: url(../images/concern/facebook-color.png);
+  }
+  .nothing-footer .share-icons .twitter-icon {
+    background-image: url(../images/concern/twitter.png);
+  }
+  .nothing-footer .share-icons .twitter-icon:hover {
+    background-image: url(../images/concern/twitter-color.png);
+  }
+  .nothing-footer .share-icons .in-icon {
+    background-image: url(../images/concern/in.png);
+  }
+  .nothing-footer .share-icons .in-icon:hover {
+    background-image: url(../images/concern/in-color.png);
+  }
+  .nothing-footer .share-icons .youtube-icon {
+    background-image: url(../images/concern/youtube.png);
+  }
+  .nothing-footer .share-icons .youtube-icon:hover {
+    background-image: url(../images/concern/youtube-color.png);
+  }
 }
 @media screen and (max-width: 767px) {
   .container-fluid {
@@ -620,7 +692,7 @@ body {
     list-style-type: none;
     font-size: 1.8rem;
     line-height: 3rem;
-    padding: 5px 15px ;
+    padding: 5px 15px;
   }
   .nothing-jumbotron.jumbotron {
     padding: 0;
