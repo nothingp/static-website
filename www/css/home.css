@@ -248,7 +248,6 @@ body {
     height: 192px;
   }
   .nothing-carousel .print-title {
-    width: 60%;
     margin-bottom: 30px;
     font-size: 2.4rem;
     color: #666666;
@@ -258,7 +257,6 @@ body {
     padding-left: 20px;
   }
   .nothing-carousel .print-li li {
-    width: 60%;
     font-size: 1.6rem;
     color: #666666;
   }
