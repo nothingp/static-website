@@ -4,13 +4,50 @@
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
     //768- sm->lg
+    .user-center-navbar {
+        height: 110px;
+        background: #f5f5f5;
+    }
+
+    //首屏页面
+    .user-center-jumbotron.jumbotron {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .user-center-form {
+        max-width: 1280px;
+        margin: 50px auto;
+    }
+
+    .user-center-footer {
+        height: 777px;
+        background: #f5f5f5;
+    }
 
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-xs-max) {
     //768-xs
+    .user-center-navbar {
+        height: 50px;
+    }
 
+    .user-center-jumbotron.jumbotron {
+        padding: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .user-center-form {
+
+    }
+
+    .user-center-footer {
+        height: 449px;
+        background: #f5f5f5;
+    }
 }
 
 
