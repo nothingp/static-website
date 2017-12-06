@@ -643,8 +643,6 @@ body {
   }
   .navbar {
     margin-bottom: 0;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
   }
   .navbar .navbar-header .nothing-navbar-button {
     float: left;
@@ -654,10 +652,25 @@ body {
     color: #2f88c6;
     background: #0b97c4;
   }
+  .navbar .navbar-header .nothing-navbar-brand {
+    width: 20rem;
+    margin: 0.8rem auto 0;
+  }
+  .navbar .navbar-header .nothing-navbar-brand .navbar-brand {
+    float: none;
+    height: auto;
+    padding: 0;
+    line-height: normal;
+  }
+  .navbar .navbar-header .nothing-navbar-brand .navbar-brand img {
+    width: 4.5rem;
+    height: 3.3rem;
+    margin: 0 auto;
+  }
   .navbar .nothing-navbar-brand-search {
     position: absolute;
     right: 2rem;
-    top: 1rem;
+    top: 0.8rem;
   }
   .navbar .nothing-navbar-brand-search button {
     width: 3rem;
@@ -709,24 +722,10 @@ body {
     padding: 0;
     margin-bottom: 0;
   }
-  .nothing-navbar-brand {
-    width: 20rem;
-    margin: 0 auto;
-  }
-  .nothing-navbar-brand .navbar-brand {
-    float: none;
-    height: auto;
-    padding: 0;
-    line-height: normal;
-  }
-  .nothing-navbar-brand .navbar-brand img {
-    width: 6rem;
-    height: 4.5rem;
-    margin: .5rem auto;
-  }
   .nothing-icons {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    height: 13rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
     margin-left: 0;
     margin-right: 0;
     background-color: #2f88c6;
@@ -737,65 +736,64 @@ body {
   }
   .nothing-icons .nothing-icon p {
     color: #fff;
-    font-size: 1.2rem;
+    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-size: 1.6rem;
     margin: 0;
-    line-height: 5rem;
+    line-height: 4.8rem;
   }
   .nothing-carousel {
-    height: 65rem;
+    height: 55.2rem;
   }
   .nothing-carousel .in-focus {
-    margin-top: 3rem;
-    font-size: 2.5rem;
+    margin-top: 5rem;
+    font-size: 2.4rem;
     color: #2f88c6;
   }
   .nothing-carousel .in-focus-sub {
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    font-size: 1.8rem;
+    margin-top: 1.4rem;
+    margin-bottom: 6.2rem;
+    font-size: 1.5rem;
     color: #999;
+    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
   }
   .nothing-carousel .print {
     text-align: center;
   }
   .nothing-carousel .print img {
-    width: 60%;
+    width: 15.9rem;
+    height: 12.3rem;
   }
   .nothing-carousel .print-title {
-    margin: 3rem 0 2rem;
+    margin: 3.7rem 0 1rem;
     padding: 1rem;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     color: #666;
   }
   .nothing-carousel .print-li {
     padding: 0;
-    padding-left: 1.5rem;
-    width: 50%;
     margin: auto;
   }
   .nothing-carousel .print-li li {
-    list-style-type: none;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #666;
   }
   .nothing-carousel .print-txt {
     text-align: center;
   }
   .nothing-carousel .read-more {
-    margin-top: 4rem;
-    font-size: 1.8rem;
+    margin-top: 2.3rem;
+    font-size: 1.2rem;
     color: #2f88c6;
   }
   .nothing-tab-list .tab-title {
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin: 4.8rem 6rem 1.2rem;
+    font-size: 2.4rem;
     color: #2f88c6;
     padding: 1rem;
   }
   .nothing-tab-list .tab-subtitle {
-    margin-bottom: 6rem;
-    font-size: 2rem;
+    margin-bottom: 4.4rem;
+    font-size: 1.5rem;
     color: #999;
   }
   .nothing-tab-list #nothingTab li {
@@ -805,8 +803,7 @@ body {
     width: 1%;
   }
   .nothing-tab-list #nothingTab li a {
-    height: 6rem;
-    line-height: 6rem;
+    line-height: 5.4rem;
     padding: 0;
     font-size: 1.2rem;
     color: #666666;
@@ -820,11 +817,10 @@ body {
     color: #2f88c6;
   }
   .nothing-tab-list #nothingTabContent {
-    margin-top: 4rem;
-    margin-left: 1rem;
+    margin: 1.5rem 1rem 2rem;
   }
   .nothing-tab-list #nothingTabContent .list-group-item {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     color: #666666;
     background-color: #fff;
     border-color: transparent;
@@ -840,17 +836,13 @@ body {
   .nothing-tab-list #nothingTabContent .list-group-item.active .list-item-title,
   .nothing-tab-list #nothingTabContent .list-group-item.active:focus .list-item-title,
   .nothing-tab-list #nothingTabContent .list-group-item.active:hover .list-item-title {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #2f88c6;
   }
   .nothing-tab-list #nothingTabContent .see-more {
     text-align: center;
     color: #2f88c6;
-    font-size: 1.8rem;
-    margin-bottom: 4rem;
-  }
-  .nothing-img-container {
-    margin-top: 5rem;
+    font-size: 1.5rem;
   }
   .nothing-img-container .thumbnail {
     padding: 0;
@@ -866,40 +858,41 @@ body {
     position: relative;
   }
   .nothing-img-container .img-tips {
-    margin: 3rem 0;
+    margin: 3rem 0 2rem;
     color: #999;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
   }
   .nothing-img-container .img-txt-detail {
     max-width: 60rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 3rem ;
     padding: 0 1rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #333;
   }
   .nothing-img-container .unismart-btn {
     position: absolute;
-    top: -3rem;
-    left: 50%;
+    top: -1.5rem;
+    left: 57%;
     display: block;
-    height: 4rem;
-    width: 15rem;
+    height: 2.8rem;
+    font-size: 1.2rem;
+    width: 10.4rem;
     color: #fff;
     background: #19a456;
-    line-height: 4rem;
+    line-height: 2.8rem;
     text-align: center;
     margin-left: -7.5rem;
   }
   .nothing-img-container .nfc-btn {
     position: absolute;
-    top: -3rem;
-    left: 50%;
+    top: -1.5rem;
+    left: 57%;
     display: block;
-    height: 4rem;
-    width: 15rem;
+    height: 2.8rem;
+    width: 10.4rem;
     color: #fff;
     background: #099ea7;
-    line-height: 4rem;
+    line-height: 2.8rem;
     text-align: center;
     margin-left: -7.5rem;
   }
@@ -913,19 +906,19 @@ body {
     display: none;
   }
   .nothing-solution-container {
-    margin-bottom: 10rem;
+    margin-bottom: 9.1rem;
     text-align: center;
   }
   .nothing-solution-container img {
-    margin: 5rem auto;
+    margin: 7.3rem auto;
   }
   .nothing-solution-container .solution-detail {
     margin: 9rem 0 3rem;
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #666666;
   }
   .nothing-solution-container .solution-link {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #2f88c6;
   }
   .nothing-jumbotron-bg {
@@ -934,7 +927,7 @@ body {
     background-color: #fff;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 80rem;
+    height: 60rem;
     margin-bottom: 0;
   }
   .nothing-jumbotron-bg:after {
@@ -950,57 +943,61 @@ body {
   }
   .nothing-jumbotron-bg .bg-title {
     margin-top: 2rem;
-    font-size: 3rem;
+    font-size: 2.4rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-left-txt {
     margin: 5rem 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-left-btn {
     margin: auto;
     display: block;
-    width: 16rem;
-    height: 5rem;
+    width: 11.3rem;
+    height: 3.6rem;
     text-align: center;
-    line-height: 5rem;
+    line-height: 3.6rem;
     background-color: #2f88c6;
     border-radius: .4rem;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-right-txt {
-    margin: 20rem 0 5rem;
-    font-size: 2rem;
+    margin: 15rem 3rem 5rem;
+    font-size: 1.5rem;
     color: #fff;
   }
   .nothing-jumbotron-bg .bg-right-btn {
     margin: auto;
     display: block;
-    width: 16rem;
-    height: 5rem;
+    width: 11.3rem;
+    height: 3.6rem;
     text-align: center;
-    line-height: 5rem;
+    line-height: 3.6rem;
     border-radius: .4rem;
+    font-size: 1.2rem;
     border: solid 1px #fff;
-    font-size: 1.8rem;
     color: #fff;
   }
   .nothing-contact .contact-email {
     position: relative;
     margin: 0;
-    padding: 5rem 0 10rem;
+    padding: 6.3rem 0 4rem;
     background-color: #fff;
   }
+  .nothing-contact .contact-email .contact-email-image img {
+    width: 8.8rem;
+    height: 7rem;
+  }
   .nothing-contact .contact-email .contact-title {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #2f88c6;
     text-align: center;
   }
   .nothing-contact .contact-email .contact-detail {
     padding: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: #2f88c6;
     text-align: center;
   }
@@ -1035,38 +1032,37 @@ body {
   }
   .nothing-contact .contact-form .contact-update {
     margin: 2rem 0;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: #fff;
     text-align: center;
   }
   .nothing-contact .contact-form .contact-input {
     margin: 0 0 2rem;
-    height: 5rem;
-    font-size: 2rem;
+    height: 4.5rem;
+    font-size: 1.5rem;
     border: 1px solid #e5e5e5;
   }
   .nothing-contact .contact-form .contact-subscribe {
     display: block;
     margin: auto;
-    width: 16rem;
-    height: 5rem;
-    line-height: 5rem;
+    width: 14.7rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
     text-align: center;
     color: #fff;
     background-color: #72b85e;
     border-radius: .6rem;
     border: solid 1px #72b85e;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .nothing-footer {
     background: #f5f5f5;
-    padding-top: 2rem;
   }
   .nothing-footer .row {
     margin: 0;
   }
   .nothing-footer h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: normal;
     color: #404040;
     position: relative;
@@ -1080,7 +1076,7 @@ body {
     color: #404040;
     position: absolute;
     right: .3rem;
-    bottom: 1.8rem;
+    bottom: 1.35rem;
   }
   .nothing-footer h4 {
     font-size: 1.4rem;
@@ -1163,23 +1159,22 @@ body {
   }
   .nothing-footer .copyright {
     position: relative;
-    top: 6rem;
+    top: 2rem;
   }
   .nothing-footer .copyright p {
     color: #fff;
     font-size: 1.2rem;
   }
   .nothing-footer .share {
-    margin-top: 20px;
-    padding: 50px 0 60px;
+    padding: 3rem 0 6rem;
     background: #333;
   }
   .nothing-footer .follow-us-txt {
     padding: 0;
     text-align: left;
-    font-size: 1.4rem;
-    height: 4.9rem;
-    line-height: 4.9rem;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
     color: #fff;
   }
   .nothing-footer .up-phone-top {
@@ -1201,24 +1196,32 @@ body {
     background-size: 100% 100%;
   }
   .nothing-footer .share-icons .facebook-icon {
+    width: 2.5rem;
+    height: 2.5rem;
     background-image: url(../images/concern/facebook.png);
   }
   .nothing-footer .share-icons .facebook-icon:hover {
     background-image: url(../images/concern/facebook-color.png);
   }
   .nothing-footer .share-icons .twitter-icon {
+    width: 2.5rem;
+    height: 2.5rem;
     background-image: url(../images/concern/twitter.png);
   }
   .nothing-footer .share-icons .twitter-icon:hover {
     background-image: url(../images/concern/twitter-color.png);
   }
   .nothing-footer .share-icons .in-icon {
+    width: 2.5rem;
+    height: 2.5rem;
     background-image: url(../images/concern/in.png);
   }
   .nothing-footer .share-icons .in-icon:hover {
     background-image: url(../images/concern/in-color.png);
   }
   .nothing-footer .share-icons .youtube-icon {
+    width: 2.5rem;
+    height: 2.5rem;
     background-image: url(../images/concern/youtube.png);
   }
   .nothing-footer .share-icons .youtube-icon:hover {

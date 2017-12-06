@@ -753,8 +753,6 @@ body {
 
     .navbar {
         margin-bottom: 0;
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
         .navbar-header {
             .nothing-navbar-button {
                 float: left;
@@ -764,12 +762,27 @@ body {
                     background: #0b97c4;
                 }
             }
+            .nothing-navbar-brand {
+                width: 20rem;
+                margin: 0.8rem auto 0;
+                .navbar-brand {
+                    float: none;
+                    height: auto;
+                    padding: 0;
+                    line-height: normal;
+                    img {
+                        width: 4.5rem;
+                        height: 3.3rem;
+                        margin: 0 auto;
+                    }
+                }
+            }
         }
 
         .nothing-navbar-brand-search {
             position: absolute;
             right: 2rem;
-            top: 1rem;
+            top: 0.8rem;
             button {
                 width: 3rem;
                 height: 3rem;
@@ -826,25 +839,10 @@ body {
         margin-bottom: 0;
     }
 
-    .nothing-navbar-brand {
-        width: 20rem;
-        margin: 0 auto;
-        .navbar-brand {
-            float: none;
-            height: auto;
-            padding: 0;
-            line-height: normal;
-            img {
-                width: 6rem;
-                height: 4.5rem;
-                margin: .5rem auto;
-            }
-        }
-    }
-
     .nothing-icons {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        height: 13rem;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
         margin-left: 0;
         margin-right: 0;
         background-color: @base-color;
@@ -854,9 +852,10 @@ body {
             text-align: center;
             p {
                 color: #fff;
-                font-size: 1.2rem;
+                font-family: @font-sub-family;
+                font-size: 1.6rem;
                 margin: 0;
-                line-height: 5rem;
+                line-height: 4.8rem;
             }
         }
 
@@ -864,38 +863,37 @@ body {
 
     //走马灯
     .nothing-carousel {
-        height: 65rem;
+        height: 55.2rem;
         .in-focus {
-            margin-top: 3rem;
-            font-size: 2.5rem;
+            margin-top: 5rem;
+            font-size: 2.4rem;
             color: @base-color;
         }
         .in-focus-sub {
-            margin-top: 2rem;
-            margin-bottom: 5rem;
-            font-size: 1.8rem;
+            margin-top: 1.4rem;
+            margin-bottom: 6.2rem;
+            font-size: 1.5rem;
             color: #999;
+            font-family: @font-sub-family;
         }
         .print {
             img {
-                width: 60%;
+                width: 15.9rem;
+                height: 12.3rem;
             }
             text-align: center;
         }
         .print-title {
-            margin: 3rem 0 2rem;
+            margin: 3.7rem 0 1rem;
             padding: 1rem;
-            font-size: 2.3rem;
+            font-size: 1.8rem;
             color: #666;
         }
         .print-li {
             padding: 0;
-            padding-left: 1.5rem;
-            width: 50%;
             margin: auto;
             li {
-                list-style-type: none;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
                 color: #666;
             }
         }
@@ -905,8 +903,8 @@ body {
         }
 
         .read-more {
-            margin-top: 4rem;
-            font-size: 1.8rem;
+            margin-top: 2.3rem;
+            font-size: 1.2rem;
             color: @base-color;
         }
     }
@@ -914,15 +912,14 @@ body {
     //tab
     .nothing-tab-list {
         .tab-title {
-            margin-top: 4rem;
-            margin-bottom: 2rem;
-            font-size: 2.5rem;
+            margin: 4.8rem 6rem 1.2rem;
+            font-size: 2.4rem;
             color: @base-color;
             padding: 1rem;
         }
         .tab-subtitle {
-            margin-bottom: 6rem;
-            font-size: 2rem;
+            margin-bottom: 4.4rem;
+            font-size: 1.5rem;
             color: #999;
         }
         #nothingTab {
@@ -932,8 +929,7 @@ body {
                 display: table-cell;
                 width: 1%;
                 a {
-                    height: 6rem;
-                    line-height: 6rem;
+                    line-height: 5.4rem;
                     padding: 0;
                     font-size: 1.2rem;
                     color: #666666;
@@ -950,10 +946,9 @@ body {
         }
 
         #nothingTabContent {
-            margin-top: 4rem;
-            margin-left: 1rem;
+            margin: 1.5rem 1rem 2rem;
             .list-group-item {
-                font-size: 1.6rem;
+                font-size: 1.1rem;
                 color: #666666;
                 background-color: #fff;
                 border-color: transparent;
@@ -963,7 +958,7 @@ body {
             .list-group-item.active:focus,
             .list-group-item.active:hover {
                 .list-item-title {
-                    font-size: 1.8rem;
+                    font-size: 1.2rem;
                     color: @base-color;
                 }
                 background-color: #fff;
@@ -973,15 +968,13 @@ body {
             .see-more {
                 text-align: center;
                 color: @base-color;
-                font-size: 1.8rem;
-                margin-bottom: 4rem;
+                font-size: 1.5rem;
             }
         }
 
     }
 
     .nothing-img-container {
-        margin-top: 5rem;
         .thumbnail {
             padding: 0;
             margin-bottom: 0;
@@ -996,40 +989,41 @@ body {
             position: relative;
         }
         .img-tips {
-            margin: 3rem 0;
+            margin: 3rem 0 2rem;
             color: #999;
-            font-size: 1.5rem;
+            font-size: 0.9rem;
         }
         .img-txt-detail {
             max-width: 60rem;
-            margin: 0 auto 3rem;
+            margin: 0 auto 3rem ;
             padding: 0 1rem;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             color: #333;
         }
         .unismart-btn {
             position: absolute;
-            top: -3rem;
-            left: 50%;
+            top: -1.5rem;
+            left: 57%;
             display: block;
-            height: 4rem;
-            width: 15rem;
+            height: 2.8rem;
+            font-size: 1.2rem;
+            width: 10.4rem;
             color: #fff;
             background: #19a456;
-            line-height: 4rem;
+            line-height: 2.8rem;
             text-align: center;
             margin-left: -7.5rem;
         }
         .nfc-btn {
             position: absolute;
-            top: -3rem;
-            left: 50%;
+            top: -1.5rem;
+            left: 57%;
             display: block;
-            height: 4rem;
-            width: 15rem;
+            height: 2.8rem;
+            width: 10.4rem;
             color: #fff;
             background: #099ea7;
-            line-height: 4rem;
+            line-height: 2.8rem;
             text-align: center;
             margin-left: -7.5rem;
         }
@@ -1047,18 +1041,18 @@ body {
     }
 
     .nothing-solution-container {
-        margin-bottom: 10rem;
+        margin-bottom: 9.1rem;
         img {
-            margin: 5rem auto;
+            margin: 7.3rem auto;
         }
         text-align: center;
         .solution-detail {
             margin: 9rem 0 3rem;
-            font-size: 2rem;
+            font-size: 1.2rem;
             color: #666666;
         }
         .solution-link {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: @base-color;
         }
     }
@@ -1069,7 +1063,7 @@ body {
         background-color: #fff;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 80rem;
+        height: 60rem;
         margin-bottom: 0;
 
         &:after {
@@ -1085,41 +1079,41 @@ body {
         }
         .bg-title {
             margin-top: 2rem;
-            font-size: 3rem;
+            font-size: 2.4rem;
             color: #fff;
         }
         .bg-left-txt {
             margin: 5rem 0;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #fff;
         }
         .bg-left-btn {
             margin: auto;
             display: block;
-            width: 16rem;
-            height: 5rem;
+            width: 11.3rem;
+            height: 3.6rem;
             text-align: center;
-            line-height: 5rem;
+            line-height: 3.6rem;
             background-color: #2f88c6;
             border-radius: .4rem;
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             color: #fff;
         }
         .bg-right-txt {
-            margin: 20rem 0 5rem;
-            font-size: 2rem;
+            margin: 15rem 3rem 5rem;
+            font-size: 1.5rem;
             color: #fff;
         }
         .bg-right-btn {
             margin: auto;
             display: block;
-            width: 16rem;
-            height: 5rem;
+            width: 11.3rem;
+            height: 3.6rem;
             text-align: center;
-            line-height: 5rem;
+            line-height: 3.6rem;
             border-radius: .4rem;
+            font-size: 1.2rem;
             border: solid 1px #fff;
-            font-size: 1.8rem;
             color: #fff;
         }
     }
@@ -1128,15 +1122,21 @@ body {
         .contact-email {
             position: relative;
             margin: 0;
-            padding: 5rem 0 10rem;
+            padding: 6.3rem 0 4rem;
+            .contact-email-image{
+                img{
+                    width: 8.8rem;
+                    height: 7rem;
+                }
+            }
             .contact-title {
-                font-size: 2.5rem;
+                font-size: 1.8rem;
                 color: @base-color;
                 text-align: center;
             }
             .contact-detail {
                 padding: 1rem;
-                font-size: 1.6rem;
+                font-size: 1.2rem;
                 color: @base-color;
                 text-align: center;
             }
@@ -1175,40 +1175,39 @@ body {
 
             .contact-update {
                 margin: 2rem 0;
-                font-size: 2.5rem;
+                font-size: 2.4rem;
                 color: #fff;
                 text-align: center;
             }
             .contact-input {
                 margin: 0 0 2rem;
-                height: 5rem;
-                font-size: 2rem;
+                height: 4.5rem;
+                font-size: 1.5rem;
                 border: 1px solid #e5e5e5;
             }
             .contact-subscribe {
                 display: block;
                 margin: auto;
-                width: 16rem;
-                height: 5rem;
-                line-height: 5rem;
+                width: 14.7rem;
+                height: 4.5rem;
+                line-height: 4.5rem;
                 text-align: center;
                 color: #fff;
                 background-color: #72b85e;
                 border-radius: .6rem;
                 border: solid 1px #72b85e;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
             }
         }
     }
 
     .nothing-footer {
         background: #f5f5f5;
-        padding-top: 2rem;
         .row {
             margin: 0;
         }
         h3 {
-            font-size: 2rem;
+            font-size: 1.2rem;
             font-weight: normal;
             color: #404040;
             position: relative;
@@ -1221,7 +1220,7 @@ body {
                 color: #404040;
                 position: absolute;
                 right: .3rem;
-                bottom: 1.8rem;
+                bottom: 1.35rem;
             }
         }
         h4 {
@@ -1332,24 +1331,23 @@ body {
 
         .copyright {
             position: relative;
-            top: 6rem;
+            top: 2rem;
             p {
                 color: #fff;
                 font-size: 1.2rem;
             }
         }
         .share {
-            margin-top: 20px;
-            padding: 50px 0 60px;
+            padding: 3rem 0 6rem;
             background: #333;
         }
 
         .follow-us-txt {
             padding: 0;
             text-align: left;
-            font-size: 1.4rem;
-            height: 4.9rem;
-            line-height: 4.9rem;
+            font-size: 1.2rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
             color: #fff;
         }
 
@@ -1372,24 +1370,32 @@ body {
                 }
             }
             .facebook-icon {
+                width: 2.5rem;
+                height: 2.5rem;
                 background-image: url(../images/concern/facebook.png);
                 &:hover {
                     background-image: url(../images/concern/facebook-color.png);
                 }
             }
             .twitter-icon {
+                width: 2.5rem;
+                height: 2.5rem;
                 background-image: url(../images/concern/twitter.png);
                 &:hover {
                     background-image: url(../images/concern/twitter-color.png);
                 }
             }
             .in-icon {
+                width: 2.5rem;
+                height: 2.5rem;
                 background-image: url(../images/concern/in.png);
                 &:hover {
                     background-image: url(../images/concern/in-color.png);
                 }
             }
             .youtube-icon {
+                width: 2.5rem;
+                height: 2.5rem;
                 background-image: url(../images/concern/youtube.png);
                 &:hover {
                     background-image: url(../images/concern/youtube-color.png);
