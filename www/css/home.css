@@ -201,35 +201,35 @@ body {
   }
   .nothing-icons .nothing-icon .div-img-circle.support:hover {
     background-image: url(../images/quick_nav/hover/support_center.png);
-    border-color: #2f88c6;
+    border-color: transparent;
   }
   .nothing-icons .nothing-icon .div-img-circle.firmware {
     background-image: url(../images/quick_nav/quick/firmware_status.png);
   }
   .nothing-icons .nothing-icon .div-img-circle.firmware:hover {
     background-image: url(../images/quick_nav/hover/firmware_status.png);
-    border-color: #2f88c6;
+    border-color: transparent;
   }
   .nothing-icons .nothing-icon .div-img-circle.company {
     background-image: url(../images/quick_nav/quick/company_news.png);
   }
   .nothing-icons .nothing-icon .div-img-circle.company:hover {
     background-image: url(../images/quick_nav/hover/company_news.png);
-    border-color: #2f88c6;
+    border-color: transparent;
   }
   .nothing-icons .nothing-icon .div-img-circle.patent {
     background-image: url(../images/quick_nav/quick/patent_center.png);
   }
   .nothing-icons .nothing-icon .div-img-circle.patent:hover {
     background-image: url(../images/quick_nav/hover/patent_center.png);
-    border-color: #2f88c6;
+    border-color: transparent;
   }
   .nothing-icons .nothing-icon .div-img-circle.subscribe {
     background-image: url(../images/quick_nav/quick/subscribe.png);
   }
   .nothing-icons .nothing-icon .div-img-circle.subscribe:hover {
     background-image: url(../images/quick_nav/hover/subscribe.png);
-    border-color: #2f88c6;
+    border-color: transparent;
   }
   .nothing-icons .nothing-icon p {
     text-align: center;
@@ -725,6 +725,7 @@ body {
   .nothing-jumbotron.jumbotron {
     padding: 0;
     margin-bottom: 0;
+    border-radius: 0;
   }
   .nothing-icons {
     height: 13rem;
@@ -741,7 +742,7 @@ body {
   .nothing-icons .nothing-icon p {
     color: #fff;
     font-family: CiscoSans-ExtraLight, Arial, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0;
     line-height: 4.8rem;
   }
@@ -851,6 +852,8 @@ body {
   .nothing-img-container .thumbnail {
     padding: 0;
     margin-bottom: 0;
+    border: none;
+    border-radius: 0;
   }
   .nothing-img-container .thumbnail.unismart-thumbnail {
     border-bottom: .8rem solid #19a456;
@@ -868,7 +871,7 @@ body {
   }
   .nothing-img-container .img-txt-detail {
     max-width: 60rem;
-    margin: 0 auto 3rem ;
+    margin: 0 auto 3rem;
     padding: 0 1rem;
     font-size: 1.2rem;
     color: #333;
@@ -905,6 +908,7 @@ body {
     padding: 0;
     background-color: #fff;
     margin: 3rem 0;
+    border-radius: 0;
   }
   .nothing-jumbotron-phone.jumbotron .jumbotron-tips {
     display: none;
@@ -925,7 +929,7 @@ body {
     font-size: 1.2rem;
     color: #2f88c6;
   }
-  .nothing-jumbotron-bg {
+  .nothing-jumbotron-bg.jumbotron {
     position: relative;
     background-image: url(../images/H5/bg.png);
     background-color: #fff;
@@ -933,29 +937,29 @@ body {
     background-size: 100% 100%;
     height: 60rem;
     margin-bottom: 0;
+    border-radius: 0;
   }
-  .nothing-jumbotron-bg:after {
+  .nothing-jumbotron-bg.jumbotron:after {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 20%;
     width: 60%;
-    margin-top: -0.1rem;
-    height: .2rem;
+    height: .1rem;
     background: #fff;
     display: block;
     content: '';
   }
-  .nothing-jumbotron-bg .bg-title {
+  .nothing-jumbotron-bg.jumbotron .bg-title {
     margin-top: 2rem;
     font-size: 2.4rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg .bg-left-txt {
+  .nothing-jumbotron-bg.jumbotron .bg-left-txt {
     margin: 5rem 0;
     font-size: 1.5rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg .bg-left-btn {
+  .nothing-jumbotron-bg.jumbotron .bg-left-btn {
     margin: auto;
     display: block;
     width: 11.3rem;
@@ -967,12 +971,12 @@ body {
     font-size: 1.2rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg .bg-right-txt {
-    margin: 15rem 3rem 5rem;
+  .nothing-jumbotron-bg.jumbotron .bg-right-txt {
+    margin: 11rem 3rem 5rem;
     font-size: 1.5rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg .bg-right-btn {
+  .nothing-jumbotron-bg.jumbotron .bg-right-btn {
     margin: auto;
     display: block;
     width: 11.3rem;
@@ -1163,14 +1167,14 @@ body {
   }
   .nothing-footer .copyright {
     position: relative;
-    top: 2rem;
+    top: 4rem;
   }
   .nothing-footer .copyright p {
     color: #fff;
     font-size: 1.2rem;
   }
   .nothing-footer .share {
-    padding: 3rem 0 6rem;
+    padding: 3rem 0 4rem;
     background: #333;
   }
   .nothing-footer .follow-us-txt {
