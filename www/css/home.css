@@ -13,6 +13,15 @@ body {
     max-width: 1600px;
     padding: 0;
   }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
   .navbar {
     height: 110px;
     padding: 0;
@@ -636,9 +645,6 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  .container-fluid {
-    padding: 0;
-  }
   .navbar {
     margin-bottom: 0;
   }

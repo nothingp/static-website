@@ -1,0 +1,66 @@
+@import "variables.less";
+
+@base-color: #2f88c6;
+@unismart-base-color: #86af49;
+
+@base-font-color: #333333;
+@base-font-color-light: #666666;
+@base-font-color-lighter: #999999;
+@base-font-color-lightest: #d2d2d2;
+
+@danger-color: #eb6877;
+@success-color: #32b16c;
+
+
+@base-submenu-color: #a4c7de;
+@unismart-submenu-color: #c5dea4;
+
+@border-color: #bfbfbf;
+@split-color: #e5e5e5;
+
+@base-background-color: #f5f5f5;
+@hr-background-color: #eaf3f9;
+
+@font-family: CiscoSans, Arial, sans-serif;
+@font-sub-family: CiscoSans-ExtraLight, Arial, sans-serif;
+
+html {
+    font-family: @font-family;
+}
+
+body {
+    background: #ffffff;
+    color: @base-font-color;
+    min-width: 320px;
+}
+
+
+@media screen and (min-width: @screen-lg-min) {
+    //1200
+    //.container-fluid {
+    //    font-family: @font-family;
+    //    padding-left: 120px;
+    //    padding-right: 120px;
+    //}
+}
+
+@media screen and (min-width: @screen-md-min) {
+
+}
+
+//pc 展示开始。。。
+@media screen and (min-width: @screen-sm-min) {
+    //768- sm->lg
+    .container-fluid {
+        max-width: 1600px;
+        padding: 0;
+    }
+}
+
+//手机展示开始。。。
+@media screen and (max-width: @screen-xs-max) {
+    //768-xs
+    .container-fluid {
+        padding: 0;
+    }
+}
