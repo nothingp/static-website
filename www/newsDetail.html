@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>网站网站</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/newsDetail.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid ">
+    <!--header-->
+    <nav class="navbar row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="nothing-navbar-button navbar-toggle collapsed " data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation111</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="nothing-navbar-brand">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="./images/logo.png" class="hidden-xs">
+                    <img alt="Brand" src="./images/H5/logo.png" class="hidden-sm hidden-md hidden-lg">
+                </a>
+            </div>
+            <div class="nothing-navbar-brand-search">
+                <a tabindex="0" type="button" role="button" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right nothing-navbar-info hidden-xs">
+                <li><a href="#"><img src="../build/images/cart-order.png" alt=""/> Order</a></li>
+                <li class="line"><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-submenu"><a href="#">简体</a></li>
+                        <li><a href="#">繁体</a></li>
+                        <li><a href="#">英文</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="row nothing-navbar-menu">
+                <div class="col-xs-6 col-md-8 col-md-offset-3 col-sm-9 col-sm-offset-2">
+                    <ul class="nav navbar-nav ">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">Awards & Qualifications</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">Awards & Qualifications</a></li>
+                                            <li><a href="#">Awards & Qualifications</a></li>
+                                            <li><a href="#">Awards & Qualifications</a></li>
+                                            <li><a href="#">Awards & Qualifications</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">PRODUCTS</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">二级</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">UNISMART</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">二级</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">SUPPORT</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">二级</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">NEWS</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">二级</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
+                            <ul class="row dropdown-menu" role="menu">
+                                <div class="dropdown-menu-title col-md-2 col-sm-3 hidden-xs">
+                                    ABOUT US
+                                </div>
+                                <div class="dropdown-menu-xs col-md-5 col-sm-5 col-md-offset-1">
+                                    <li class="dropdown-submenu">
+                                        <a href="#">二级</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
+                                            <li><a href="#">三级1</a></li>
+                                            <li><a href="#">三级2</a></li>
+                                            <li><a href="#">三级3</a></li>
+                                            <li><a href="#">三级4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                            <li><a href="#">2Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a href="#">About Apex</a>
+                                        <p class="hidden-xs">This is Apexmic</p>
+                                        <ul class="dropdown-3rdmenu">
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                            <li><a href="#">3Company Profile</a></li>
+                                        </ul>
+                                    </li>
+                                </div>
+                                <div class="dropdown-menu-image col-md-4 col-sm-4 hidden-xs">
+                                    <img src="images/submenu.png" class="img-responsive"/>
+                                    <p>Company ProfileCompany ProfileCompany ProfileCompany ProfileCompany
+                                        ProfileCompany ProfileCompany</p>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar-collapse -->
+    </nav>
+    <!--二级菜单-->
+    <div class="nothing-submenu">
+        <div class="submenu-wrap">
+            <div class="col-xs-12 col-md-8 col-md-offset-1 col-sm-9 col-sm-offset-1">
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
+                            data-toggle="dropdown">
+                        主题
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">NEWS</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Company News</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Events</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Newsletters</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--新闻详情-->
+    <div class="nothing-news-wrap">
+        <div class="news-detail col-md-9">
+            <div class="detail-head">
+                <h3>
+                    Apex Won "Focus on Quality Award" for the Second Consecutive Year!
+                </h3>
+                <div class="news-share hidden-xs">
+                    <img src="./images/news/facebook-icon.png">
+                    <img src="./images/news/twitter-icon.png">
+                    <img src="./images/news/subscribe-icon.png">
+                    <img src="./images/news/goole-icon.png">
+                </div>
+                <div class="head-btm">
+                    <span>
+                        31 JUN ,2017
+                    </span>
+                    <span>
+                        chip
+                    </span>
+                    <span>
+                        Exhibition
+                    </span>
+                    <span>
+                        Certificate of merit
+                    </span>
+                </div>
+            </div>
+            <div class="detail-describe">
+                <p>
+                    From May 17 to May 19, "BUSINESS-INFORM 2017" was successfully held in Moscow, Russia. The exhibition has attracted 75 exhibitors from Russia, China, the United States and Japan.
+                </p>
+                <div class="detail-img">
+                    <figure>
+                        <img src="./images/news/new-1.png"/>
+                        <figcaption>
+                            Apex won "Focus on Quality Award" for the second consecutive year
+                        </figcaption>
+                    </figure>
+                </div>
+                <p>
+                    At the award ceremony held on May 18th, Apex won "Focus on Quality Award" for the second consecutive year. Apex, the only company in the aftermarket with SoC independent intellectual property rights, committed to technological innovation to continuously provide its clients with high-quality solutions and services.
+                </p>
+                <div class="detail-img">
+                    <figure>
+                        <img src="./images/news/news-2.png"/>
+                        <figcaption>
+                            Apex won "Focus on Quality Award" for the second consecutive year
+                        </figcaption>
+                    </figure>
+                </div>
+                <p>
+                    Ben Wu, the R&D manager of Apex, analyzed and explained the three major pain points existed in the current industry on May 17th, including storage technology, chip encryption technology and firmware upgrades. "Technology innovation is the best way to meet challenges," Apex adheres to the integration of technical resources and focus on R&D analysis to maintain its products in the leading position and provide its clients with comprehensive solutions. At present, advanced ASIC and SoC chip technology has been gradually applied to the field of niche brand products and copiers.
+                </p>
+            </div>
+            <div class="news-share visible-xs-block">
+                <span>Share to</span>
+                <img src="./images/news/facebook-icon.png">
+                <img src="./images/news/twitter-icon.png">
+                <img src="./images/news/subscribe-icon.png">
+                <img src="./images/news/goole-icon.png">
+            </div>
+        </div>
+        <div class="news-list col-md-3">
+            <h5>
+                Must Read
+            </h5>
+            <div class="list-item">
+                <div class="img-wrap">
+                    <img src="./images/news/new-1.png" alt=""/>
+                </div>
+                <div class="item-info">
+                    <p>
+                        Apex Won "Focus on Quality Award" for the Second Consecutive Year!
+                    </p>
+                    <span>
+                        2017-6-10
+                    </span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="img-wrap">
+                    <img src="./images/news/news-3.png" alt=""/>
+                </div>
+                <div class="item-info col-xs-6">
+                    <p>
+                        Apex Won "Focus on Quality Award" for the Second Consecutive Year!
+                    </p>
+                    <span>
+                        2017-6-10
+                    </span>
+                </div>
+            </div>
+
+            <div class="list-item">
+                <div class="img-wrap">
+                    <img src="./images/news/news-4.png" alt=""/>
+                </div>
+                <div class="item-info">
+                    <p>
+                        Apex Won "Focus on Quality Award" for the Second Consecutive Year!
+                    </p>
+                    <span>
+                        2017-6-10
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="nothing-footer">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-1 products-list-plus">
+
+                <h3>PRODUCTS</h3>
+
+                <div class="products-list">
+                    <h4>New Products</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Product News</li>
+                        <li class="list-group-item">-Latest Products</li>
+                    </ul>
+
+                    <h4>Ink Cartridge Chips</h4>
+
+                    <h4>Toner Cartridge Chips</h4>
+
+                    <h4>Accessories</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-OPC/Drums</li>
+                        <li class="list-group-item">-Toner</li>
+                        <li class="list-group-item">-Rollers</li>
+                        <li class="list-group-item">-Blades</li>
+                        <li class="list-group-item">-Others</li>
+                    </ul>
+
+                    <h4>Chip Testers</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 support-list-plus">
+
+                <h3>SUPPORT</h3>
+
+                <div class="support-list">
+                    <h4>Support Center</h4>
+
+                    <h4>Patent Center</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Introductions</li>
+                        <li class="list-group-item">-Patent Finder</li>
+                    </ul>
+
+                    <h4>Firmware Status</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Apex Support</li>
+                        <li class="list-group-item">-Firmware Status</li>
+                    </ul>
+
+                    <h4>Video Center</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 unismart-list-plus">
+                <h3>UNISMART</h3>
+
+                <div class="unismart-list">
+                    <h4>About Unismart</h4>
+
+                    <h4>Resettable Models</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-OEM Chips</li>
+                        <li class="list-group-item">-Apex Chips</li>
+                    </ul>
+
+                    <h4>Components</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Unismart</li>
+                        <li class="list-group-item">-Credits</li>
+                        <li class="list-group-item">-Blank Chips</li>
+                        <li class="list-group-item">-Jigs</li>
+                        <li class="list-group-item">-Other Accessories</li>
+                    </ul>
+
+                    <h4>Technical Support</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Upgrade Notification</li>
+                        <li class="list-group-item">-User Manual</li>
+                        <li class="list-group-item">-Download&Drives</li>
+                        <li class="list-group-item">-FAQ</li>
+                        <li class="list-group-item">-Warranty Information</li>
+                        <li class="list-group-item">-Contact Unismart</li>
+                    </ul>
+
+                    <h4>Video Support</h4>
+
+                    <h4>Global Resale Agent</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 news-list-plus">
+
+                <h3>NEWS</h3>
+
+                <div class="news-list">
+                    <h4>Company News</h4>
+
+                    <h4>Events</h4>
+
+                    <h4>Newsletters</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 about-us-list-plus">
+
+                <h3>ABOUT US</h3>
+
+                <div class="about-us-list">
+                    <h4>About Apex</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Company Profile</li>
+                        <li class="list-group-item">-History of Inovation</li>
+                        <li class="list-group-item">-Research&Development</li>
+                        <li class="list-group-item">-Award&Qualifications</li>
+                    </ul>
+
+                    <h4>Career</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Apex Impression</li>
+                        <li class="list-group-item">-Social Recruitment</li>
+                        <li class="list-group-item">-College Plan</li>
+                        <li class="list-group-item">-Growth at Apex</li>
+                        <li class="list-group-item">-Life at Apex</li>
+                    </ul>
+
+                    <h4>Contact Us</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row share">
+            <div class="col-sm-7 col-sm-offset-1 copyright">
+                <p>Privacy | Terms of use Copyright © 2008-2016 Apex Microelectronics Co.,Ltd.All Rights Researved.</p>
+                <p>
+                    All trademarks are property of their respective companies.
+                    All other brands or product names mentioned are intended to show compatibility only.
+                </p>
+            </div>
+            <div class="col-sm-4 up-phone-top">
+                <div class="row">
+                    <div class="col-xs-2 follow-us-txt hidden-sm hidden-md hidden-lg">
+                        Follow Us
+                    </div>
+                    <ul class="col-xs-10 col-sm-12 share-icons">
+                        <li>
+                            <div class="facebook-icon"></div>
+                        </li>
+                        <li>
+                            <div class="twitter-icon"></div>
+                        </li>
+                        <li>
+                            <div class="in-icon"></div>
+                        </li>
+                        <li>
+                            <div class="youtube-icon"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
