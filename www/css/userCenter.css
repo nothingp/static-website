@@ -1,0 +1,273 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #ffffff;
+  color: #333333;
+  min-width: 320px;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .user-center-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+  .user-center-jumbotron.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .user-center-form {
+    max-width: 1280px;
+    margin: 50px auto;
+  }
+  .user-center-form .form-label {
+    font-size: 30px;
+    color: #333;
+  }
+  .user-center-form .account input {
+    height: 42px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    padding-left: 15px;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+  .user-center-form .account input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #8c8c8c;
+  }
+  .user-center-form .account input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #8c8c8c;
+  }
+  .user-center-form .account input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #8c8c8c;
+  }
+  .user-center-form .account input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #8c8c8c;
+  }
+  .user-center-form .form-item-line {
+    border-top: 1px solid #ddd;
+    width: 80%;
+    margin: 50px 0;
+  }
+  .user-center-form .btn-two button {
+    width: 150px;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 18px;
+    color: #fff;
+  }
+  .user-center-form .btn-two button.btn-default {
+    color: #595959;
+    margin-right: 100px;
+  }
+  .user-center-form .customer-number {
+    font-size: 18px;
+    color: #737373;
+    margin-bottom: 35px;
+  }
+  .user-center-form .security-panel img {
+    width: 50px;
+    height: 50px;
+  }
+  .user-center-form .security-panel span {
+    font-size: 18px;
+    color: #737373;
+  }
+  .user-center-form .newsletter {
+    font-size: 16px;
+    color: #595959;
+  }
+  .user-center-form .order .order-head {
+    background: #f5f5f5;
+    font-size: 18px;
+    color: #595959;
+    padding-left: 5%;
+    height: 60px;
+    line-height: 60px;
+  }
+  .user-center-form .order .order-content {
+    font-size: 18px;
+    color: #595959;
+    padding-left: 5%;
+    height: 80px;
+    line-height: 80px;
+  }
+  .user-center-form .order .order-content .btn-default {
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .user-center-form .order .order-content.detail {
+    padding-left: 0;
+  }
+  .user-center-form .order .order-content.detail .btn-default {
+    width: 96px;
+  }
+  .user-center-form .order .order-content.download {
+    padding-left: 0;
+  }
+  .user-center-form .order .order-content.download .btn-default {
+    width: 119px;
+  }
+  .user-center-form .order .order-txt {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #737373;
+  }
+  .user-center-form .order .star-icon {
+    position: relative;
+    top: 2px;
+    color: #2f88c6;
+    margin-right: 3px;
+  }
+  .user-center-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .user-center-navbar {
+    height: 5rem;
+  }
+  .user-center-jumbotron.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .user-center-form .form-label {
+    margin: 3rem 0;
+    font-size: 1.8rem;
+    color: #8c8c8c;
+  }
+  .user-center-form .account {
+    margin: 0;
+  }
+  .user-center-form .account input {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: .2rem;
+    border: 1px solid #bfbfbf;
+    padding-left: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+  .user-center-form .account input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #737373;
+  }
+  .user-center-form .account input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #737373;
+  }
+  .user-center-form .account input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #737373;
+  }
+  .user-center-form .account input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #737373;
+  }
+  .user-center-form .security {
+    margin: 0;
+  }
+  .user-center-form .security .security-panel img {
+    width: 4rem;
+    height: 4rem;
+    margin-left: -0.5rem;
+  }
+  .user-center-form .security .security-panel span {
+    font-size: 1.8rem;
+    color: #737373;
+  }
+  .user-center-form .form-item-line {
+    border-top: 1px solid #ddd;
+    width: 90%;
+    margin: 5rem auto 0;
+  }
+  .user-center-form .btn-two button {
+    width: 48%;
+    border-radius: 2px;
+    height: 3.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .user-center-form .btn-two button.btn-default {
+    color: #595959;
+  }
+  .user-center-form .customer-number {
+    font-size: 1.6rem;
+    color: #737373;
+    margin-bottom: 3.5rem;
+  }
+  .user-center-form .newsletter {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #595959;
+  }
+  .user-center-form .order {
+    margin: 0;
+  }
+  .user-center-form .order .row {
+    margin: 0;
+  }
+  .user-center-form .order .order-head {
+    background: #f5f5f5;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #595959;
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
+  .user-center-form .order .order-content {
+    font-size: 1.4rem;
+    color: #595959;
+    height: 6rem;
+    line-height: 6rem;
+    text-align: center;
+  }
+  .user-center-form .order .order-content .btn-default {
+    width: 100%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0;
+    border-radius: .2rem;
+  }
+  .user-center-form .order .order-txt {
+    margin: 3rem 0 5rem;
+    font-size: 1.4rem;
+    color: #737373;
+  }
+  .user-center-form .order .star-icon {
+    position: relative;
+    top: .2rem;
+    color: #2f88c6;
+    margin-right: .3rem;
+  }
+  .user-center-footer {
+    height: 44.9rem;
+    background: #f5f5f5;
+  }
+}

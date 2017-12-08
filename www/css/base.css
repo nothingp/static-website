@@ -1,0 +1,26 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #ffffff;
+  color: #333333;
+  min-width: 320px;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0;
+  }
+}

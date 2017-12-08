@@ -1,0 +1,320 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #ffffff;
+  color: #333333;
+  min-width: 320px;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscriptionCenter-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-tabBar {
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default {
+    padding: 0 240px;
+    background: #2f88c4;
+    border: none;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
+    color: #fff;
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
+    color: #a4c7de;
+  }
+  .subscriptionCenter-form {
+    max-width: 1280px;
+    margin: 50px auto;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-title h3 {
+    font-family: ﻿CiscoSans;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #2f88c4;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-titlet p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-titlet .italic {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-content .form-group {
+    margin-bottom: 40px;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-content .form-label {
+    text-align: left;
+    font-size: 18px;
+    color: #666;
+    font-weight: normal;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-content .form-button {
+    font-size: 18px;
+    width: 120px;
+  }
+  .subscriptionCenter-list {
+    max-width: 1280px;
+    margin: 50px auto;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-title h4 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333333;
+    margin: 40px 0;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box {
+    padding: 0;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap {
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    border: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left {
+    height: 325px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left img {
+    width: 100%;
+    height: auto;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title {
+    padding-top: 35px;
+    padding-bottom: 22px;
+    border-bottom: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title h4 {
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #333333;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title p {
+    font-size: 16px;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 i {
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content p {
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 20px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content .newslist-btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button {
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: -25px;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button {
+    width: 100%;
+    height: 100%;
+    background-color: #dcdcdc;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button span {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+  }
+  .subscriptionCenter-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscriptionCenter-navbar {
+    height: 50px;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .subscriptionCenter-tabBar {
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default {
+    background: #2f88c4;
+    border: none;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav {
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
+    color: #fff;
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
+    color: #a4c7de;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown {
+    text-align: center;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-toggle {
+    color: #fff;
+    background: #2f88c4;
+    font-size: 1.8rem;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-toggle span {
+    font-size: 1.4rem;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-menu li a {
+    color: #fff;
+  }
+  .subscriptionCenter-form {
+    padding: 0 2rem;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-title h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #2f88c4;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-titlet p {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-titlet .italic {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-content .form-label {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: normal;
+  }
+  .subscriptionCenter-form .subscriptionCenter-form-content .form-button {
+    font-size: 1.6rem;
+    width: 15rem;
+  }
+  .subscriptionCenter-list {
+    margin: 0;
+    padding: 0 2rem;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box {
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap {
+    padding: 0;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left {
+    padding: 0;
+    padding-top: 2rem;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left img {
+    width: 100%;
+    height: auto;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right {
+    padding-right: 0;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 i {
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content p {
+    font-size: 1rem;
+    color: #8c8c8c;
+    margin-bottom: 1rem;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content .newslist-btn {
+    font-size: 1.6rem;
+    font-weight: normal;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button i {
+    color: #999;
+    font-style: normal;
+  }
+  .subscriptionCenter-footer {
+    height: 449px;
+    background: #f5f5f5;
+  }
+}
