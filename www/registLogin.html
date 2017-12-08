@@ -35,7 +35,11 @@
 
     <script>
         $(function () {
-            $('[data-toggle="popover"]').popover()
+            $('[data-toggle="popover"]').popover();
+            var countryList = $('#countryList').find('li');
+            $(countryList).click(function () {
+                $('#selectCountry').html($(this).find('a').html());
+            })
         })
     </script>
 
@@ -84,16 +88,21 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="dropdown select-country">
-                            <button class="btn btn-lg dropdown-toggle btn-block"
-                                    type="button" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                Country <span class="glyphicon glyphicon-menu-down"></span>
+                            <button
+                                class="btn btn-lg dropdown-toggle btn-block"
+                                type="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <span id="selectCountry">Country</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li value="china"><a href="#">China</a></li>
-                                <li value="germany"><a href="#">Germany</a></li>
-                                <li value="france"><a href="#">France</a></li>
-                                <li value="italy"><a href="#">Italy</a></li>
+                            <ul class="dropdown-menu" id="countryList">
+                                <li value="china"><a href="javascript:;">China</a></li>
+                                <li value="germany"><a href="javascript:;">Germany</a></li>
+                                <li value="france"><a href="javascript:;">France</a></li>
+                                <li value="italy"><a href="javascript:;">Italy</a></li>
                             </ul>
                         </div>
                     </div>
