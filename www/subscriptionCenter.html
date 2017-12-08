@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>订阅中心</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/subscriptionCenter.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid subscriptionCenter">
+        <div class="subscriptionCenter-navbar">
+        </div>
+
+        <div class="subscriptionCenter-tabBar">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                      <ul class="nav navbar-nav">
+                        <li class="active hidden-xs"><a href="#">NEWS <span class="sr-only">(current)</span></a></li>
+                        <li class="hidden-xs"><a href="#">Company News</a></li>
+                        <li class="hidden-xs"><a href="#">Events</a></li>
+                        <li class="hidden-xs"><a href="#">Newsletters</a></li>
+                        <li class="dropdown hidden-sm hidden-md hidden-lg">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS  <span class="glyphicon glyphicon-menu-down"></span></a>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">NEWS</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Company News</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Events</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Newsletters</a></li>                            
+                          </ul>
+                        </li>
+                      </ul>
+                      
+                <!-- </div> -->
+            </div>
+            </nav>
+            </div>
+        <div class="subscriptionCenter-banner">
+            <img src="./images/subscriptionCenter/subscriptionCenter-banner.png" alt="." class="hidden-xs img-responsive">
+            <img src="./images/subscriptionCenter/subscriptionCenter-banner2.png" alt="." class="hidden-sm hidden-md hidden-lg img-responsive">
+        </div>
+
+        <div class="subscriptionCenter-form">
+            <div class="subscriptionCenter-form-title">
+                <h3>Subscript Now!</h3>
+            </div>
+            <div class="subscriptionCenter-form-titlet">
+                <p>To be updated with latest Apex products and service information, </p>
+                <p class="italic">sign up for our newsletter.</p>
+            </div>
+            <div class="row">
+                <div class="subscriptionCenter-form-content col-sm-7 col-xm-12">
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label form-label">Your Name</label>
+                        <div class="col-sm-9">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label form-label">Your Compony</label>
+                        <div class="col-sm-9">
+                          <input type="password" class="form-control" id="inputPassword3">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label form-label">Your Email</label>
+                        <div class="col-sm-9">
+                          <input type="password" class="form-control" id="inputPassword3">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-10">
+                          <button type="submit" class="btn btn-primary form-button">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscriptionCenter-list row">
+            <div class="subscriptionCenter-list-title">
+                <h4>Newsletters</h4>
+            </div>
+            <div class="subscriptionCenter-list-content clearfix">
+                <div class="subscriptionCenter-list-content-box col-sm-4 col-xs-12">
+                    <div class="subscriptionCenter-list-content-box-wrap col-sm-11  col-xs-12 clearfix">
+                        <div class="subscriptionCenter-list-content-box-left col-sm-6 col-xs-4">
+                            <img src="./images/subscriptionCenter/newslist-bg.png" alt="....">
+                        </div>
+                        <div class="subscriptionCenter-list-content-box-right col-sm-6 col-xs-8">
+                            <div class="subscriptionCenter-list-content-box-right-title">
+                                <h4>Issue 69</h4>
+                                <p>November 08, 2016</p>
+                            </div>
+                            <div class="subscriptionCenter-list-content-box-right-content">
+                                <h4>
+                                    <i></i>
+                                    PDF:lssue 69
+                                </h4>
+                                <p>
+                                    click the button below to see the contents of the PFD file 
+                                </p>
+                                <button type="button" class="btn btn-primary newslist-btn">Click View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscriptionCenter-list-content-box col-sm-4 col-xs-12">
+                    <div class="subscriptionCenter-list-content-box-wrap col-sm-11  col-xs-12 clearfix">
+                        <div class="subscriptionCenter-list-content-box-left col-sm-6 col-xs-4">
+                            <img src="./images/subscriptionCenter/newslist-bg.png" alt="....">
+                        </div>
+                        <div class="subscriptionCenter-list-content-box-right col-sm-6 col-xs-8">
+                            <div class="subscriptionCenter-list-content-box-right-title">
+                                <h4>Issue 69</h4>
+                                <p>November 08, 2016</p>
+                            </div>
+                            <div class="subscriptionCenter-list-content-box-right-content">
+                                <h4>
+                                    <i></i>
+                                    PDF:lssue 69
+                                </h4>
+                                <p>
+                                    click the button below to see the contents of the PFD file 
+                                </p>
+                                <button type="button" class="btn btn-primary newslist-btn">Click View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="subscriptionCenter-list-content-box col-sm-4 col-xs-12">
+                    <div class="subscriptionCenter-list-content-box-wrap col-sm-11  col-xs-12 clearfix">
+                        <div class="subscriptionCenter-list-content-box-left col-sm-6 col-xs-4">
+                            <img src="./images/subscriptionCenter/newslist-bg.png" alt="....">
+                        </div>
+                        <div class="subscriptionCenter-list-content-box-right col-sm-6 col-xs-8">
+                            <div class="subscriptionCenter-list-content-box-right-title">
+                                <h4>Issue 69</h4>
+                                <p>November 08, 2016</p>
+                            </div>
+                            <div class="subscriptionCenter-list-content-box-right-content">
+                                <h4>
+                                    <i></i>
+                                    PDF:lssue 69
+                                </h4>
+                                <p>
+                                    click the button below to see the contents of the PFD file 
+                                </p>
+                                <button type="button" class="btn btn-primary newslist-btn">Click View</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="subscriptionCenter-list-button">
+                <button type="button" class="btn">
+                    <span class="glyphicon glyphicon-menu-down hidden-xs" aria-hidden="true"></span>
+                    <i class="hidden-sm hidden-md hidden-lg">Learn More</i>
+                </button>
+            </div>
+        </div>
+
+        <div class="subscriptionCenter-footer">
+
+    </div>
+    </div>
+</body>
+</html>
