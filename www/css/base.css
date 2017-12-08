@@ -6,6 +6,11 @@ body {
   color: #333333;
   min-width: 320px;
 }
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {

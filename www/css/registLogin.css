@@ -1,0 +1,367 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #ffffff;
+  color: #333333;
+  min-width: 320px;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .regist-login-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+  .regist-login-jumbotron.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .regist-login-form .account {
+    margin-bottom: 100px;
+  }
+  .regist-login-form .account .create-title {
+    font-size: 36px;
+    color: #2f88c6;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    margin: 60px 0;
+  }
+  .regist-login-form .account input[type=text],
+  .regist-login-form .account input[type=password] {
+    height: 42px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #bfbfbf;
+    padding-left: 15px;
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+  .regist-login-form .account input[type=text]::-webkit-input-placeholder,
+  .regist-login-form .account input[type=password]::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #8c8c8c;
+  }
+  .regist-login-form .account input[type=text]::-moz-placeholder,
+  .regist-login-form .account input[type=password]::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #8c8c8c;
+  }
+  .regist-login-form .account input[type=text]::-moz-placeholder,
+  .regist-login-form .account input[type=password]::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #8c8c8c;
+  }
+  .regist-login-form .account input[type=text]:-ms-input-placeholder,
+  .regist-login-form .account input[type=password]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #8c8c8c;
+  }
+  .regist-login-form .account .error-tips {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #e68181;
+  }
+  .regist-login-form .account .error-tips:before {
+    display: inline-block;
+    content: '* ';
+    position: relative;
+    top: 2px;
+    color: #e68181;
+  }
+  .regist-login-form .account .check-icon {
+    position: absolute;
+    right: -22px;
+    top: 8px;
+    width: 33px;
+    height: 30px;
+  }
+  .regist-login-form .account .error-icon {
+    position: absolute;
+    right: -22px;
+    top: 5px;
+    width: 33px;
+    height: 32px;
+  }
+  .regist-login-form .account .select-country .btn-lg {
+    padding: 0;
+    font-size: 18px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 4px;
+    padding-left: 15px;
+    text-align: left;
+    color: #8c8c8c;
+    border-color: #bfbfbf;
+  }
+  .regist-login-form .account .select-country .glyphicon.glyphicon-menu-down {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -8px;
+    font-size: 14px;
+  }
+  .regist-login-form .account .select-country .dropdown-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .regist-login-form .account .select-country .dropdown-menu li a {
+    color: #8c8c8c;
+    padding: 0;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+  }
+  .regist-login-form .account .select-country .dropdown-menu li a:hover {
+    background: #686868;
+  }
+  .regist-login-form .account .checkbox-two {
+    color: #595959;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .regist-login-form .account .checkbox-two input[type=radio] {
+    position: relative;
+    top: -1px;
+  }
+  .regist-login-form .account .checkbox-two label {
+    font-weight: normal;
+  }
+  .regist-login-form .account .line-split {
+    border-bottom: 1px solid #dcdcdc;
+    width: 120%;
+    margin-left: -10%;
+    margin-bottom: 35px;
+  }
+  .regist-login-form .account .bottom-btns {
+    margin-top: 50px;
+  }
+  .regist-login-form .account .bottom-btns .btn {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    padding: 0;
+  }
+  .regist-login-form .account .bottom-btns .btn.btn-default {
+    margin-right: 200px;
+  }
+  .regist-login-form .account .subscription {
+    font-size: 16px;
+    color: #595959;
+  }
+  .regist-login-form .account .subscription .long-txt {
+    margin-left: 20px;
+  }
+  .regist-login-form .account .drag-captcha {
+    width: 310px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #f5f5f5;
+    border-radius: 17px;
+    border: solid 1px #bfbfbf;
+    font-size: 12px;
+    margin-top: 10px;
+    position: relative;
+  }
+  .regist-login-form .account .drag-captcha .hover-btn {
+    display: inline-block;
+    width: 70px;
+    height: 32px;
+    margin-right: 10px;
+    line-height: 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 13px;
+    text-align: center;
+  }
+  .regist-login-form .account .drag-captcha:hover {
+    padding-left: 83px;
+  }
+  .regist-login-form .account .drag-captcha:hover .hover-btn {
+    position: absolute;
+    right: 0;
+  }
+  .regist-login-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .regist-login-navbar {
+    height: 5rem;
+  }
+  .regist-login-jumbotron.jumbotron {
+    padding: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .regist-login-form .create-title {
+    font-size: 2.2rem;
+    color: #2f88c6;
+    text-align: center;
+    height: 3.2rem;
+    line-height: 3.2rem;
+    margin: 3rem 0;
+  }
+  .regist-login-form .account {
+    margin: 0 0 10rem;
+  }
+  .regist-login-form .account input[type=text],
+  .regist-login-form .account input[type=password] {
+    height: 3.5rem;
+    width: 100%;
+    border-radius: .2rem;
+    border: 1px solid #bfbfbf;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+  .regist-login-form .account input[type=text]::-webkit-input-placeholder,
+  .regist-login-form .account input[type=password]::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #737373;
+  }
+  .regist-login-form .account input[type=text]::-moz-placeholder,
+  .regist-login-form .account input[type=password]::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #737373;
+  }
+  .regist-login-form .account input[type=text]::-moz-placeholder,
+  .regist-login-form .account input[type=password]::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #737373;
+  }
+  .regist-login-form .account input[type=text]:-ms-input-placeholder,
+  .regist-login-form .account input[type=password]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #737373;
+  }
+  .regist-login-form .account .error-tips {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.3rem;
+    color: #e58181;
+    padding-left: .5rem;
+    height: 1.5rem;
+    line-height: 1.2;
+    font-size: 1.3rem;
+  }
+  .regist-login-form .account .error-tips:before {
+    display: inline-block;
+    content: '*';
+    position: absolute;
+    top: .2rem;
+    left: 0;
+    color: #e58181;
+  }
+  .regist-login-form .account .select-country {
+    margin-bottom: 3.5rem;
+  }
+  .regist-login-form .account .select-country .btn-lg {
+    background: #fff;
+    padding: 0;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: .2rem;
+    padding-left: 1rem;
+    text-align: left;
+    color: #8c8c8c;
+    border-color: #bfbfbf;
+  }
+  .regist-login-form .account .select-country .glyphicon.glyphicon-menu-down {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    margin-top: -0.6rem;
+    font-size: 1.4rem;
+  }
+  .regist-login-form .account .select-country .dropdown-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .regist-login-form .account .select-country .dropdown-menu li a {
+    color: #8c8c8c;
+    padding: 0;
+    padding-left: 1rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    font-size: 1.4rem;
+  }
+  .regist-login-form .account .select-country .dropdown-menu li a:hover {
+    background: #686868;
+  }
+  .regist-login-form .account .checkbox-two {
+    color: #595959;
+    font-size: 1.4rem;
+    padding-left: 1.2rem;
+  }
+  .regist-login-form .account .checkbox-two div {
+    padding: 0;
+  }
+  .regist-login-form .account .checkbox-two input[type=radio] {
+    position: relative;
+    top: .2rem;
+  }
+  .regist-login-form .account .checkbox-two label {
+    font-weight: normal;
+  }
+  .regist-login-form .account .line-split {
+    border-bottom: 1px solid #dcdcdc;
+    width: 95%;
+    margin: 0 auto 2.5rem;
+  }
+  .regist-login-form .account .code-phone {
+    border: 1px solid #dcdcdc;
+    margin-right: 1rem;
+    width: 9rem;
+    height: 3.5rem;
+  }
+  .regist-login-form .account .bottom-btns {
+    margin-top: 5rem;
+  }
+  .regist-login-form .account .bottom-btns .btn {
+    width: 48%;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0;
+    border-radius: .2rem;
+  }
+  .regist-login-form .account .subscription {
+    margin-bottom: 3.5rem;
+    font-size: 1.4rem;
+    color: #595959;
+  }
+  .regist-login-form .account .subscription .checkbox {
+    margin: 0;
+  }
+  .regist-login-form .account .subscription .long-txt {
+    margin-left: 1.8rem;
+  }
+  .regist-login-footer {
+    height: 44.9rem;
+    background: #f5f5f5;
+  }
+}
