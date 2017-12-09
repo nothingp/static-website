@@ -52,6 +52,9 @@ body {
   .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
     color: #a4c7de;
   }
+  .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
+    background: #2f88c4;
+  }
   .subscriptionCenter-form {
     max-width: 1280px;
     margin: 50px auto;
@@ -76,11 +79,15 @@ body {
   .subscriptionCenter-form .subscriptionCenter-form-content .form-group {
     margin-bottom: 40px;
   }
+  .subscriptionCenter-form .subscriptionCenter-form-content .form-group .form-control {
+    height: 45px;
+  }
   .subscriptionCenter-form .subscriptionCenter-form-content .form-label {
     text-align: left;
     font-size: 18px;
     color: #666;
     font-weight: normal;
+    padding-top: 12px;
   }
   .subscriptionCenter-form .subscriptionCenter-form-content .form-button {
     font-size: 18px;
@@ -100,8 +107,14 @@ body {
     color: #333333;
     margin: 40px 0;
   }
+  .subscriptionCenter-list .subscriptionCenter-list-content {
+    transition: 2s;
+    height: 350px;
+    overflow: hidden;
+  }
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box {
     padding: 0;
+    margin-bottom: 40px;
   }
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap {
     padding: 0;
@@ -139,7 +152,7 @@ body {
   }
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 i {
     display: inline-block;
-    width: 28px;
+    width: 24px;
     height: 32px;
     background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
     background-size: 100% 100%;
@@ -155,6 +168,9 @@ body {
     width: 100%;
     font-size: 18px;
     font-weight: normal;
+  }
+  .subscriptionCenter-list .show-all-box {
+    height: auto;
   }
   .subscriptionCenter-list .subscriptionCenter-list-button {
     width: 80px;
@@ -223,6 +239,9 @@ body {
   .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-menu li a {
     color: #fff;
   }
+  .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
+    background: #2f88c4;
+  }
   .subscriptionCenter-form {
     padding: 0 2rem;
   }
@@ -284,7 +303,7 @@ body {
   }
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 i {
     display: inline-block;
-    width: 28px;
+    width: 24px;
     height: 32px;
     background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
     background-size: 100% 100%;
