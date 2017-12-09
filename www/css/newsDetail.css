@@ -5,7 +5,7 @@ html {
   font-family: CiscoSans, Arial, sans-serif;
 }
 body {
-  background: #ffffff;
+  background: #f2f2f2;
   color: #333333;
   min-width: 320px;
 }
@@ -19,11 +19,13 @@ body {
 @media screen and (min-width: 768px) {
   .container-fluid {
     max-width: 1600px;
+    background: #ffffff;
     padding: 0;
   }
 }
 @media screen and (max-width: 767px) {
   .container-fluid {
+    background: #ffffff;
     padding: 0;
   }
 }
