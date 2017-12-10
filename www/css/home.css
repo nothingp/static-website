@@ -163,6 +163,10 @@ body {
   .navbar .nothing-navbar-menu .in-focus {
     color: #337ab7;
   }
+  .navbar .nothing-navbar-info .glyphicon.glyphicon-triangle-bottom {
+    position: relative;
+    top: 3px;
+  }
   .navbar .nothing-navbar-info > li a {
     padding-top: 15px;
     padding-bottom: 0;
@@ -346,22 +350,19 @@ body {
     margin-left: 30px;
   }
   .nothing-tab-list #nothingTabContent .list-group-item {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #666666;
     background-color: #fff;
+    border-left-width: 8px;
     border-color: transparent;
     border-top-color: #e4e4e4;
   }
-  .nothing-tab-list #nothingTabContent .list-group-item.active,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:focus,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:hover {
+  .nothing-tab-list #nothingTabContent .list-group-item:hover {
     background-color: #fff;
     border-color: #e4e4e4;
     border-left: 8px solid #2f88c6;
   }
-  .nothing-tab-list #nothingTabContent .list-group-item.active .list-item-title,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:focus .list-item-title,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:hover .list-item-title {
+  .nothing-tab-list #nothingTabContent .list-group-item:hover .list-item-title {
     font-size: 1.6rem;
     color: #2f88c6;
   }
@@ -380,12 +381,20 @@ body {
   }
   .nothing-img-container .thumbnail {
     padding: 0;
+    overflow: hidden;
   }
   .nothing-img-container .thumbnail.unismart-thumbnail {
     border-bottom: 8px solid #19a456;
   }
   .nothing-img-container .thumbnail.nfc-thumbnail {
     border-bottom: 8px solid #099ea7;
+  }
+  .nothing-img-container .thumbnail img {
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .nothing-img-container .thumbnail:hover img {
+    transform: scale(1.1);
   }
   .nothing-img-container .caption {
     position: relative;
@@ -847,17 +856,14 @@ body {
     background-color: #fff;
     border-color: transparent;
     border-top-color: #e4e4e4;
+    border-left-width: .5rem;
   }
-  .nothing-tab-list #nothingTabContent .list-group-item.active,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:focus,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:hover {
+  .nothing-tab-list #nothingTabContent .list-group-item:hover {
     background-color: #fff;
     border-color: #e4e4e4;
-    border-left: 0.8rem solid #2f88c6;
+    border-left: 0.5rem solid #2f88c6;
   }
-  .nothing-tab-list #nothingTabContent .list-group-item.active .list-item-title,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:focus .list-item-title,
-  .nothing-tab-list #nothingTabContent .list-group-item.active:hover .list-item-title {
+  .nothing-tab-list #nothingTabContent .list-group-item:hover .list-item-title {
     font-size: 1.2rem;
     color: #2f88c6;
   }
@@ -871,12 +877,20 @@ body {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    overflow: hidden;
   }
   .nothing-img-container .thumbnail.unismart-thumbnail {
     border-bottom: .8rem solid #19a456;
   }
   .nothing-img-container .thumbnail.nfc-thumbnail {
     border-bottom: .8rem solid #099ea7;
+  }
+  .nothing-img-container .thumbnail img {
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .nothing-img-container .thumbnail:hover img {
+    transform: scale(1.1);
   }
   .nothing-img-container .caption {
     position: relative;
@@ -971,29 +985,16 @@ body {
     font-size: 2.4rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg.jumbotron .bg-left-txt {
-    margin: 5rem 0;
+  .nothing-jumbotron-bg.jumbotron .bg-txt {
+    margin: 5rem auto;
     font-size: 1.5rem;
     color: #fff;
+    width: 80%;
   }
-  .nothing-jumbotron-bg.jumbotron .bg-left-btn {
-    margin: auto;
-    display: block;
-    width: 11.3rem;
-    height: 3.6rem;
-    text-align: center;
-    line-height: 3.6rem;
-    background-color: #2f88c6;
-    border-radius: .4rem;
-    font-size: 1.2rem;
-    color: #fff;
+  .nothing-jumbotron-bg.jumbotron .bg-txt.phone-bg-txt-bottom {
+    margin-top: 11rem;
   }
-  .nothing-jumbotron-bg.jumbotron .bg-right-txt {
-    margin: 11rem 3rem 5rem;
-    font-size: 1.5rem;
-    color: #fff;
-  }
-  .nothing-jumbotron-bg.jumbotron .bg-right-btn {
+  .nothing-jumbotron-bg.jumbotron .bg-btn {
     margin: auto;
     display: block;
     width: 11.3rem;
@@ -1002,8 +1003,12 @@ body {
     line-height: 3.6rem;
     border-radius: .4rem;
     font-size: 1.2rem;
+    color: #fff;
     border: solid 1px #fff;
-    color: #fff;
+  }
+  .nothing-jumbotron-bg.jumbotron .bg-btn:hover {
+    border: solid 1px #2f88c6;
+    background-color: #2f88c6;
   }
   .nothing-contact .contact-email {
     position: relative;
