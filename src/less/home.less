@@ -471,19 +471,14 @@
     .nothing-jumbotron-phone.jumbotron {
         position: relative;
         padding: 0;
-        //background-image: url(../images/phone.png);
         background-color: #fff;
-        //background-repeat: no-repeat;
-        //height: 477px;
-        //width: 1920px;
         margin: 50px 0;
         .jumbotron-tips {
             position: absolute;
-            top: 78px;
+            top: 15%;
             left: 45%;
             width: 519px;
-            height: 74px;
-            font-size: 36px;
+            font-size: 3rem;
             color: #666666;
         }
     }
@@ -511,13 +506,12 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 400px;
-        //width: 1920px;
         &:after {
             position: absolute;
             top: 30%;
             left: 50%;
-            width: 5px;
-            margin-left: -2.5px;
+            width: 3px;
+            margin-left: -1.5px;
             height: 60%;
             background: #fff;
             display: block;
@@ -527,39 +521,26 @@
             font-size: 3rem;
             color: #fff;
         }
-        .bg-left-txt {
+        .bg-txt {
             margin: 50px 0;
             font-size: 2rem;
             color: #fff;
         }
-        .bg-left-btn {
+        .bg-btn {
             margin: auto;
             display: block;
             width: 161px;
             height: 51px;
             text-align: center;
             line-height: 51px;
-            background-color: @base-color;
+            border: solid 1px #fff;
             border-radius: 4px;
             font-size: 1.6rem;
             color: #fff;
-        }
-        .bg-right-txt {
-            margin: 50px 0;
-            font-size: 2rem;
-            color: #fff;
-        }
-        .bg-right-btn {
-            margin: auto;
-            display: block;
-            width: 161px;
-            height: 51px;
-            text-align: center;
-            line-height: 51px;
-            border-radius: 4px;
-            border: solid 1px #ffffff;
-            font-size: 1.6rem;
-            color: #fff;
+            &:hover {
+                border: solid 1px @base-color;
+                background-color: @base-color;
+            }
         }
     }
 
