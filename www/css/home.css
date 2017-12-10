@@ -843,7 +843,7 @@ body {
     margin: 0 auto;
   }
   .box-shadow-line .navbar .nothing-navbar-menu {
-    height: 50rem;
+    height: 100vh;
     border-top: 1px solid #ececec;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .navbar-nav {
