@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <title>网站网站</title>
+    <title>新闻中心</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -361,21 +361,21 @@
                 <div class="dropdown">
                     <button type="button" class="btn dropdown-toggle" id="dropdownMenu1"
                             data-toggle="dropdown">
-                        主题
+                        NEWS
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu1">
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">NEWS</a>
+                            <a role="menuitem" tabindex="0" href="#">NEWS</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Company News</a>
+                            <a role="menuitem" tabindex="1" href="#">Company News</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Events</a>
+                            <a role="menuitem" tabindex="2" href="#">Events</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Newsletters</a>
+                            <a role="menuitem" tabindex="3" href="#">Newsletters</a>
                         </li>
                     </ul>
                 </div>
@@ -387,11 +387,29 @@
         <img src="../build/images/news/banner.png" alt=""/>
     </div>
     <!--按钮列表-->
-    <div class="nothing-btn-list hidden-xs">
+    <div class="nothing-btn-list">
         <div class="btn-wrap">
             <button type="button" class="btn btn-default btn-active">All</button>
             <button type="button" class="btn btn-default">Recent</button>
             <button type="button" class="btn btn-default">Must Read</button>
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
+                        data-toggle="dropdown">
+                    All
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu2">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="0" href="#">All</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="1" href="#">Recent</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="2" href="#">Must Read</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>
@@ -449,6 +467,7 @@
                     </span>
                 </div>
             </div>
+            <button class="btn btn-default load-more">Learn more</button>
         </div>
         <div class="news-sidebar col-md-4">
             <div class="sidebar-item">
@@ -470,12 +489,21 @@
                                 @APEXMIC
                             </span>
                         </div>
+                        <div class="icon-place">
+                            <img src="../build/images/news/twitter-icon.png"/>
+                        </div>
                     </div>
                     <div class="detail-md">
                         Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
                     </div>
                     <div class="detail-btm">
-
+                        <div class="img-wrap">
+                            <img src="../build/images/news/like-icon.png"/>
+                            <img src="../build/images/news/exit-icon.png"/>
+                        </div>
+                        <div class="time">
+                            6 Jun
+                        </div>
                     </div>
                 </div>
                 <div class="item-detail">
@@ -491,12 +519,51 @@
                                 @APEXMIC
                             </span>
                         </div>
+                        <div class="icon-place">
+                            <img src="../build/images/news/twitter-icon.png"/>
+                        </div>
                     </div>
                     <div class="detail-md">
                         Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
                     </div>
                     <div class="detail-btm">
-
+                        <div class="img-wrap">
+                            <img src="../build/images/news/like-icon.png"/>
+                            <img src="../build/images/news/exit-icon.png"/>
+                        </div>
+                        <div class="time">
+                            6 Jun
+                        </div>
+                    </div>
+                </div>
+                <div class="item-detail">
+                    <div class="detail-tp">
+                        <div class="img-wrap">
+                            <img src="../build/images/news/twitter-head.png" alt=""/>
+                        </div>
+                        <div class="info">
+                            <span>
+                                ApexMicroelectronics
+                            </span>
+                            <span>
+                                @APEXMIC
+                            </span>
+                        </div>
+                        <div class="icon-place">
+                            <img src="../build/images/news/twitter-icon.png"/>
+                        </div>
+                    </div>
+                    <div class="detail-md">
+                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
+                    </div>
+                    <div class="detail-btm">
+                        <div class="img-wrap">
+                            <img src="../build/images/news/like-icon.png"/>
+                            <img src="../build/images/news/exit-icon.png"/>
+                        </div>
+                        <div class="time">
+                            6 Jun
+                        </div>
                     </div>
                 </div>
             </div>
@@ -512,17 +579,23 @@
                 </div>
                 <form class="form-table" role="form">
                     <div class="input-group">
-                        <span class="input-group-addon">Name</span>
+                        <div class="input-group-addon">
+                            <img src="../build/images/news/person-icon.png" alt=""/>
+                        </div>
                         <input type="text" class="form-control" placeholder="Your Name">
                     </div>
                     <br>
                     <div class="input-group">
-                        <span class="input-group-addon">Company</span>
+                        <div class="input-group-addon">
+                            <img src="../build/images/news/company-icon.png" alt=""/>
+                        </div>
                         <input type="text" class="form-control" placeholder="Your Company Name">
                     </div>
                     <br>
                     <div class="input-group">
-                        <span class="input-group-addon">Email</span>
+                        <div class="input-group-addon">
+                            <img src="../build/images/news/email-icon.png" alt=""/>
+                        </div>
                         <input type="text" class="form-control" placeholder="Enter E-mail">
                     </div>
                     <br>

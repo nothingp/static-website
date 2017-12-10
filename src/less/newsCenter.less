@@ -233,15 +233,19 @@
 
   //按钮列表
   .nothing-btn-list{
+    margin: 0 auto;
     height: 70px;
     border-bottom: 1px solid #e5e5e5;
     .btn-wrap{
       max-width: 1280px;
       margin: 0 auto;
       line-height: 70px;
-      .btn{
+      .dropdown{
+        display: none;
+      }
+      >.btn{
         display: inline-block;
-        margin-right: 36px;
+        margin-left: 20px;
         border-radius: 3px;
         border: solid 1px #2f88c4;
         color: #2f87c4;
@@ -257,7 +261,7 @@
   //新闻列表
   .nothing-new-list{
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     .news-list{
       .new-item{
         margin-top: 30px;
@@ -300,6 +304,14 @@
           }
         }
       }
+      .load-more{
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #999999;
+        border: solid 1px #e5e5e5;
+      }
     }
     .news-sidebar{
       .sidebar-item{
@@ -319,6 +331,7 @@
         }
         .item-detail{
           .detail-tp{
+            position: relative;
             display: flex;
             height: 60px;
             .img-wrap{
@@ -345,6 +358,17 @@
                 color: #8c8c8c;
               }
             }
+            .icon-place{
+              position: absolute;
+              right: 5px;
+              top: 5px;
+              width: 15px;
+              height: 15px;
+              >img{
+                width: 100%;
+                height: 100%;
+              }
+            }
           }
           .detail-md{
             padding: 0 10px;
@@ -353,7 +377,26 @@
             color: #666666;
           }
           .detail-btm{
+            display: flex;
             height: 35px;
+            padding-top: 8px;
+            .img-wrap{
+              padding-left: 10px;
+              flex: 1;
+              >img{
+                margin-right: 20px;
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+              }
+            }
+            .time{
+              line-height: 25px;
+              text-align: right;
+              font-size: 12px;
+              color: #92c1e0;
+              padding-right: 10px;
+            }
           }
         }
 
@@ -373,6 +416,14 @@
 
         .form-table{
           margin-top: 30px;
+          .input-group{
+            padding: 0 20px;
+            .input-group-addon{
+              padding: 6px 20px 6px 0;
+              background-color: inherit;
+              border: none;
+            }
+          }
           .submit-wrap{
             text-align: center;
             margin-bottom: 15px;
@@ -380,6 +431,7 @@
         }
       }
     }
+    &:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
   }
 
   .nothing-footer {
@@ -584,16 +636,44 @@
     }
   }
 
+  //按钮列表
+  .nothing-btn-list{
+    margin: 0 auto;
+    height: 7rem;
+    border-bottom: 1px solid #e5e5e5;
+    .btn-wrap{
+      margin: 0 auto;
+      line-height: 7rem;
+      >.btn{
+        display: none;
+      }
+      .dropdown{
+        margin-left: 1rem;
+        >.btn{
+          background-color: #2f87c4;
+          border-radius: .4rem;
+          border: solid 1px #2f88c4;
+          height: 3rem;
+          color: #fff
+        }
+        .dropdown-menu{
+          top: 5rem;
+          left: 1rem;
+        }
+      }
+    }
+  }
 
   //新闻列表
   .nothing-new-list{
+    margin-bottom: 3rem;
     .news-list{
       .new-item{
         margin-top: 2.5rem;
         height: 26rem;
         background-color: #ffffff;
-        box-shadow: 0px 3px 7px 0px
-        rgba(0, 0, 0, 0.35);
+        box-shadow: 0 .3rem .7rem 0 rgba(0, 0, 0, 0.35);
+
         border: solid 1px #e5e5e5;
         .item-lf{
           height: 12rem;
@@ -628,35 +708,44 @@
           }
         }
       }
+      .load-more{
+        margin-top: 2rem;
+        width: 100%;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        color: #999999;
+        border: solid 1px #e5e5e5;
+      }
     }
     .news-sidebar{
       .sidebar-item{
-        margin-top: 30px;
-        padding: 0 10px;
+        margin-top: 2rem;
+        padding: 0 1rem;
         background-color: #ffffff;
         border: solid 1px #e5e5e5;
         .item-head{
           border-bottom: 1px solid #d2d2d2;
           >h6{
             display: block;
-            padding-left: 10px;
+            padding-left: 1rem;
             border-left: 3px solid #2f88c4;
-            font-size: 20px;
+            font-size: 2rem;
             color: #404040;
           }
         }
         .item-detail{
+          position: relative;
           .detail-tp{
             display: flex;
-            height: 60px;
+            height: 6rem;
             .img-wrap{
-              border-radius: 5px;
+              border-radius: .5rem;
               >img{
-                margin: 14px;
+                margin: 1.4rem;
                 display: inline-block;
-                line-height: 60px;
-                width: 32px;
-                height: 32px;
+                line-height: 3rem;
+                width: 3.2rem;
+                height: 3.2rem;
               }
             }
             .info{
@@ -664,50 +753,89 @@
                 display: block;
               }
               >span:first-child{
-                font-size: 14px;
-                line-height: 30px;
+                font-size: 1.4rem;
+                line-height: 3rem;
                 color: #404040;
               }
               >span:last-child{
-                font-size: 12px;
+                font-size: 1.2rem;
                 color: #8c8c8c;
+              }
+            }
+            .icon-place{
+              position: absolute;
+              right: .5rem;
+              top: .5rem;
+              width: 1.5rem;
+              height: 1.5rem;
+              >img{
+                width: 100%;
+                height: 100%;
               }
             }
           }
           .detail-md{
-            padding: 0 10px;
-            font-size: 12px;
-            line-height: 16px;
+            padding: 0 1rem;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
             color: #666666;
           }
           .detail-btm{
-            height: 35px;
+            display: flex;
+            height: 3.5rem;
+            padding-top: .8rem;
+            .img-wrap{
+              padding-left: 1rem;
+              flex: 1;
+              >img{
+                margin-right: 2rem;
+                display: inline-block;
+                width: 1.3rem;
+                height: 1.3rem;
+              }
+            }
+            .time{
+              line-height: 2.5rem;
+              text-align: right;
+              font-size: 1.4rem;
+              color: #92c1e0;
+              padding-right: 1rem;
+            }
           }
+
         }
 
         .form-info{
-          margin-top: 20px;
+          margin-top: 2rem;
           >span{
-            display: block;
             color: #8c8c8c;
           }
           >span:first-child{
-            font-size: 16px;
+            font-size: 1.6rem;
           }
           >span:last-child{
-            font-size: 14px;
+            font-size: 1.4rem;
           }
         }
 
         .form-table{
-          margin-top: 30px;
+          margin-top: 2rem;
+          .input-group{
+            padding: 0 1rem;
+            .input-group-addon{
+              padding: .6rem 2rem .6rem 0;
+              background-color: inherit;
+              border: none;
+            }
+          }
           .submit-wrap{
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 1.5rem;
           }
         }
       }
     }
+    &:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
   }
 
 
