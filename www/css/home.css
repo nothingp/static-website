@@ -62,6 +62,10 @@ body {
     line-height: 1.428571429;
     border-radius: 11px;
   }
+  .navbar .nothing-navbar-brand-search a .glyphicon {
+    font-size: 1.2rem;
+    top: -1px;
+  }
   .navbar .nothing-navbar-brand-search .search-content {
     background: red;
     position: absolute;
@@ -176,12 +180,12 @@ body {
   }
   .navbar .nothing-navbar-info > li.line:after {
     position: absolute;
-    top: 30%;
+    top: 45%;
     right: 0;
     display: block;
     content: '';
     width: 1px;
-    height: 70%;
+    height: 50%;
     background: #2f88c6;
   }
   .nothing-jumbotron.jumbotron {
@@ -247,6 +251,7 @@ body {
   }
   .nothing-carousel {
     height: 500px;
+    background: #f5f5f5;
   }
   .nothing-carousel .in-focus {
     margin-top: 60px;
@@ -287,6 +292,16 @@ body {
   }
   .nothing-carousel .carousel-control {
     background-image: none;
+  }
+  .nothing-carousel .glyphicon.glyphicon-chevron-left,
+  .nothing-carousel .glyphicon.glyphicon-chevron-right {
+    color: #2f88c6;
+  }
+  .nothing-carousel .carousel-indicators li {
+    background: #fff;
+  }
+  .nothing-carousel .carousel-indicators li.active {
+    background: #2f88c6;
   }
   .nothing-tab-list {
     max-width: 1280px;
@@ -630,28 +645,19 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  .nothing-footer .share-icons .facebook-icon {
-    background-image: url(../images/concern/facebook.png);
+  .nothing-footer .share-icons li div:hover {
+    opacity: .9;
   }
-  .nothing-footer .share-icons .facebook-icon:hover {
+  .nothing-footer .share-icons .facebook-icon {
     background-image: url(../images/concern/facebook-color.png);
   }
   .nothing-footer .share-icons .twitter-icon {
-    background-image: url(../images/concern/twitter.png);
-  }
-  .nothing-footer .share-icons .twitter-icon:hover {
     background-image: url(../images/concern/twitter-color.png);
   }
   .nothing-footer .share-icons .in-icon {
-    background-image: url(../images/concern/in.png);
-  }
-  .nothing-footer .share-icons .in-icon:hover {
     background-image: url(../images/concern/in-color.png);
   }
   .nothing-footer .share-icons .youtube-icon {
-    background-image: url(../images/concern/youtube.png);
-  }
-  .nothing-footer .share-icons .youtube-icon:hover {
     background-image: url(../images/concern/youtube-color.png);
   }
 }
@@ -759,6 +765,7 @@ body {
   }
   .nothing-carousel {
     height: 55.2rem;
+    background: #f5f5f5;
   }
   .nothing-carousel .in-focus {
     margin-top: 5rem;
@@ -800,6 +807,19 @@ body {
     margin-top: 2.3rem;
     font-size: 1.2rem;
     color: #2f88c6;
+  }
+  .nothing-carousel .carousel-control {
+    background-image: none;
+  }
+  .nothing-carousel .glyphicon.glyphicon-chevron-left,
+  .nothing-carousel .glyphicon.glyphicon-chevron-right {
+    color: #2f88c6;
+  }
+  .nothing-carousel .carousel-indicators li {
+    background: #fff;
+  }
+  .nothing-carousel .carousel-indicators li.active {
+    background: #2f88c6;
   }
   .nothing-tab-list .tab-title {
     margin: 4.8rem 6rem 1.2rem;
@@ -1204,46 +1224,29 @@ body {
     list-style: none;
   }
   .nothing-footer .share-icons li {
-    margin-right: 10px;
+    margin-right: 1rem;
     float: left;
   }
   .nothing-footer .share-icons li div {
-    width: 49px;
-    height: 49px;
-    border-radius: 6px;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: .4rem;
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
-  .nothing-footer .share-icons .facebook-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url(../images/concern/facebook.png);
+  .nothing-footer .share-icons li div:hover {
+    opacity: .9;
   }
-  .nothing-footer .share-icons .facebook-icon:hover {
+  .nothing-footer .share-icons .facebook-icon {
     background-image: url(../images/concern/facebook-color.png);
   }
   .nothing-footer .share-icons .twitter-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url(../images/concern/twitter.png);
-  }
-  .nothing-footer .share-icons .twitter-icon:hover {
     background-image: url(../images/concern/twitter-color.png);
   }
   .nothing-footer .share-icons .in-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url(../images/concern/in.png);
-  }
-  .nothing-footer .share-icons .in-icon:hover {
     background-image: url(../images/concern/in-color.png);
   }
   .nothing-footer .share-icons .youtube-icon {
-    width: 2.5rem;
-    height: 2.5rem;
-    background-image: url(../images/concern/youtube.png);
-  }
-  .nothing-footer .share-icons .youtube-icon:hover {
     background-image: url(../images/concern/youtube-color.png);
   }
 }

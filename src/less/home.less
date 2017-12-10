@@ -35,7 +35,6 @@
                     height: 60px;
                 }
             }
-
         }
 
         .nothing-navbar-brand-search {
@@ -49,6 +48,10 @@
                 padding: 2px 0;
                 line-height: 1.428571429;
                 border-radius: 11px;
+                .glyphicon {
+                    font-size: 1.2rem;
+                    top: -1px;
+                }
             }
 
             .search-content {
@@ -186,12 +189,12 @@
                     position: relative;
                     &:after {
                         position: absolute;
-                        top: 30%;
+                        top: 45%;
                         right: 0;
                         display: block;
                         content: '';
                         width: 1px;
-                        height: 70%;
+                        height: 50%;
                         background: @base-color;
                     }
                 }
@@ -271,6 +274,7 @@
     //走马灯
     .nothing-carousel {
         height: 500px;
+        background: @base-background-color;
         .in-focus {
             margin-top: 60px;
             font-size: 3rem;
@@ -312,8 +316,20 @@
             font-size: 1.4rem;
             color: @base-color;
         }
-        .carousel-control{
+        .carousel-control {
             background-image: none;
+        }
+        .glyphicon.glyphicon-chevron-left,
+        .glyphicon.glyphicon-chevron-right {
+            color: @base-color;
+        }
+        .carousel-indicators {
+            li {
+                background: #fff;
+            }
+            li.active {
+                background: @base-color;
+            }
         }
     }
 
@@ -677,31 +693,22 @@
                     border-radius: 6px;
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
+                    &:hover {
+                        opacity: .9;
+                    }
                 }
             }
             .facebook-icon {
-                background-image: url(../images/concern/facebook.png);
-                &:hover {
-                    background-image: url(../images/concern/facebook-color.png);
-                }
+                background-image: url(../images/concern/facebook-color.png);
             }
             .twitter-icon {
-                background-image: url(../images/concern/twitter.png);
-                &:hover {
-                    background-image: url(../images/concern/twitter-color.png);
-                }
+                background-image: url(../images/concern/twitter-color.png);
             }
             .in-icon {
-                background-image: url(../images/concern/in.png);
-                &:hover {
-                    background-image: url(../images/concern/in-color.png);
-                }
+                background-image: url(../images/concern/in-color.png);
             }
             .youtube-icon {
-                background-image: url(../images/concern/youtube.png);
-                &:hover {
-                    background-image: url(../images/concern/youtube-color.png);
-                }
+                background-image: url(../images/concern/youtube-color.png);
             }
         }
     }
@@ -824,6 +831,7 @@
     //走马灯
     .nothing-carousel {
         height: 55.2rem;
+        background: @base-background-color;
         .in-focus {
             margin-top: 5rem;
             font-size: 2.4rem;
@@ -866,6 +874,22 @@
             margin-top: 2.3rem;
             font-size: 1.2rem;
             color: @base-color;
+        }
+
+        .carousel-control {
+            background-image: none;
+        }
+        .glyphicon.glyphicon-chevron-left,
+        .glyphicon.glyphicon-chevron-right {
+            color: @base-color;
+        }
+        .carousel-indicators {
+            li {
+                background: #fff;
+            }
+            li.active {
+                background: @base-color;
+            }
         }
     }
 
@@ -1322,47 +1346,30 @@
         .share-icons {
             list-style: none;
             li {
-                margin-right: 10px;
+                margin-right: 1rem;
                 float: left;
                 div {
-                    width: 49px;
-                    height: 49px;
-                    border-radius: 6px;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: .4rem;
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
+                    &:hover {
+                        opacity: .9;
+                    }
                 }
             }
             .facebook-icon {
-                width: 2.5rem;
-                height: 2.5rem;
-                background-image: url(../images/concern/facebook.png);
-                &:hover {
-                    background-image: url(../images/concern/facebook-color.png);
-                }
+                background-image: url(../images/concern/facebook-color.png);
             }
             .twitter-icon {
-                width: 2.5rem;
-                height: 2.5rem;
-                background-image: url(../images/concern/twitter.png);
-                &:hover {
-                    background-image: url(../images/concern/twitter-color.png);
-                }
+                background-image: url(../images/concern/twitter-color.png);
             }
             .in-icon {
-                width: 2.5rem;
-                height: 2.5rem;
-                background-image: url(../images/concern/in.png);
-                &:hover {
-                    background-image: url(../images/concern/in-color.png);
-                }
+                background-image: url(../images/concern/in-color.png);
             }
             .youtube-icon {
-                width: 2.5rem;
-                height: 2.5rem;
-                background-image: url(../images/concern/youtube.png);
-                &:hover {
-                    background-image: url(../images/concern/youtube-color.png);
-                }
+                background-image: url(../images/concern/youtube-color.png);
             }
         }
     }
