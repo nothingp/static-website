@@ -44,6 +44,9 @@
                     //width: 90px;
                 }
             }
+            .container-fluid{
+                background: rgba(47, 136, 196, 1);
+            }
         }
         
     }
@@ -77,12 +80,16 @@
         .subscriptionCenter-form-content{
             .form-group{
                 margin-bottom: 40px;
+                .form-control{
+                    height: 45px;
+                }
             }
         	.form-label{
         		text-align: left;
 				font-size: 18px;
 				color: #666;
 				font-weight: normal;
+                padding-top: 12px;
         	}
         	.form-button{
         		font-size: 18px;
@@ -107,9 +114,21 @@
         	}
         }
         .subscriptionCenter-list-content{
+            transition: 2s;
+            //transition: height 2s;
+            //-webkit-transition: height 2s;
+            //transition: height 1s linear 2s;
+            ///* Firefox 4 */
+            //-moz-transition:height 1s linear 2s;
+            ///* Safari and Chrome */
+            //-webkit-transition:height 1s linear 2s;
+            ///* Opera */
+            //-o-transition:height 1s linear 2s;
+            height:350px;
+            overflow: hidden;
         	.subscriptionCenter-list-content-box{
                 padding: 0;
-                
+                margin-bottom: 40px;
                 .subscriptionCenter-list-content-box-wrap{
                     padding: 0;
                     background-color: rgba(255, 255, 255, 1);
@@ -146,7 +165,7 @@
                         h4{
                             i{
                                 display: inline-block;
-                                width: 28px;
+                                width: 24px;
                                 height: 32px;
                                 background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
                                 background-size: 100% 100%;
@@ -170,6 +189,12 @@
                     }
         		}
         	}
+        }
+        .subscriptionCenter-list-content:hover{
+            //height:500px;
+        }
+        .show-all-box{
+            height:auto;
         }
         .subscriptionCenter-list-button{
             width: 80px;
@@ -255,6 +280,9 @@
                         }
                     }
                 }
+            }
+            .container-fluid{
+                background: rgba(47, 136, 196, 1);
             }
         }
         
@@ -342,7 +370,7 @@
                         h4{
                             i{
                                 display: inline-block;
-                                width: 28px;
+                                width: 24px;
                                 height: 32px;
                                 background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
                                 background-size: 100% 100%;
