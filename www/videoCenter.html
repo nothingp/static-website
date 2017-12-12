@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>视频中心</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/videoCenter.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</head>
+
+<body>
+<div class="container-fluid video-center">
+    <div class="video-center-navbar">
+    </div>
+
+    <div class="video-center-tabBar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active hidden-xs"><a href="#">Support <span class="sr-only">(current)</span></a></li>
+                    <li class="hidden-xs"><a href="#">Support Center</a></li>
+                    <li class="hidden-xs"><a href="#">Patient Center</a></li>
+                    <li class="hidden-xs"><a href="#">Firmware Upgrades</a></li>
+                    <li class="hidden-xs"><a href="#">Video Center</a></li>
+                    <li class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Support <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Support Center</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Patient Center</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Firmware Upgrades</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Video Center</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="video-center-banner">
+        <img src="./images/videoCenter/banner-pc.png" class="hidden-xs img-responsive">
+        <img src="./images/videoCenter/banner-h5.png" class="hidden-sm hidden-md hidden-lg img-responsive">
+    </div>
+
+    <div class="video-center-panel">
+        <div class="row">
+            <div class="col-xs-12 col-sm-9">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p><img src="./images/videoCenter/case01.png" class="img-responsive"></p>
+                        <p class="txt-title">
+                            Unismart II chip creation system operation inst- ructions (English Edition)
+                        </p>
+                        <p class="txt-detail">
+                            Welcome to the Unismart two generation chip creation system
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p><img src="./images/videoCenter/case02.png" class="img-responsive"></p>
+                        <p class="txt-title">
+                            Growing your Azure business with Azure Stack
+                        </p>
+                        <p class="txt-detail">
+                            Hear from partners and customers who are excited about the new prob-
+                            lems they can solve by bringing Azure on-premises with Azure Stack.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p><img src="./images/videoCenter/case03.png" class="img-responsive"></p>
+                        <p class="txt-title">
+                            Azure Stack vision
+                        </p>
+                        <p class="txt-detail">
+                            Watch this video to learn more about the Azure Stack vision and appro-
+                            ach.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p><img src="./images/videoCenter/case04.png" class="img-responsive"></p>
+                        <p class="txt-title">
+                            Edge and disconnected solutions demo
+                        </p>
+                        <p class="txt-detail">
+                            Watch this demo video to learn more about how Azure and Azure Stack
+                            unlock innovative edge and disconnected solutions.
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="hidden-xs">loading</p>
+                    <p class="hidden-sm hidden-md hidden-lg">
+                        <a href="javascript:;" class="btn btn-default">
+                            Learn More
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+                <div class="subscribe-form">
+                    <p class="title">Subscribe</p>
+                    <p class="tips">
+                        BE THE FIRST TO KNOW
+                        Sign up for our latest newsletter
+                    </p>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="name" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="company" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="company" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="email" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="subscribe-form">
+                    <p class="title">Support Center</p>
+                    <p class="tips">
+                        Need some help for product?
+                    </p>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="model" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="model" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-center-footer">
+    </div>
+</div>
+
+<script>
+    $('.show-more').click(function () {
+        $('.video-center-list-content').toggleClass('show-all-box');
+        $(this).find('span').toggleClass('glyphicon-menu-down').toggleClass('glyphicon-menu-up');
+    });
+</script>
+</body>
+</html>
