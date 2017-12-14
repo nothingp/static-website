@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>固件升级</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/firmwareUpgrades.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid subscriptionCenter">
+    <div class="subscriptionCenter-navbar">
+    </div>
+
+    <div class="subscriptionCenter-tabBar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                <ul class="nav navbar-nav">
+                    <li class="active hidden-xs"><a href="#">NEWS <span class="sr-only">(current)</span></a></li>
+                    <li class="hidden-xs"><a href="#">Company News</a></li>
+                    <li class="hidden-xs"><a href="#">Events</a></li>
+                    <li class="hidden-xs"><a href="#">Newsletters</a></li>
+                    <li class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS  <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">NEWS</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Company News</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Events</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Newsletters</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- </div> -->
+            </div>
+        </nav>
+    </div>
+
+    <div class="subscriptionCenter-banner">
+        <img src="./images/subscriptionCenter/firmware-banner.png" alt="." class="hidden-xs img-responsive">
+        <img src="./images/subscriptionCenter/firewareUpgrades-banner2.png" alt="." class="hidden-sm hidden-md hidden-lg img-responsive">
+    </div>
+
+    <div class="firmwareUpgrades-content">
+
+        <div class="firmwareUpgrades-content-left">
+            <div class="firmwareUpgrades-content-left-header">
+                <div class="firmwareUpgrades-content-left-header-title">
+                    <h3>Descriptions</h3>
+                </div>
+                <div class="firmwareUpgrades-content-left-header-content">
+                    <p>
+                        "There are various patterns for firmware upgrades. Here’s the new firmwares verification results on Apex chips for
+                        upgrading through new firmware or drivers released in OEM websites. We will continue to pay attention to the
+                        firmware upgrades and update the staus timely. If your chips fail, or you wish to get more details, please contact us."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="subscriptionCenter-footer">
+
+    </div>
+</div>
+
+<script>
+    $('.show-more').click(function(){
+        $('.subscriptionCenter-list-content').toggleClass('show-all-box');
+//            $('.subscriptionCenter-list-content').css({"height":"auto"});
+        $(this).find('span').toggleClass('glyphicon-menu-down').toggleClass('glyphicon-menu-up');
+
+    });
+</script>
+</body>
+</html>
