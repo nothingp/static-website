@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>联系我们</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/connectUs.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+            var countryList = $('#countryList').find('li');
+            $(countryList).click(function () {
+                $('#selectCountry').html($(this).find('a').html());
+            })
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid regist-login">
+    <div class="regist-login-navbar">
+
+    </div>
+
+    <div class="regist-login-jumbotron jumbotron">
+        <img src="./images/registLogin/banner-pc.png" alt="" class="hidden-xs img-responsive">
+        <img src="./images/registLogin/banner-phone.png" alt="" class="img-responsive hidden-sm hidden-md hidden-lg">
+    </div>
+
+    <div class="regist-login-form">
+        <div class="row account">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="row create-title">
+                    <div class="col-sm-12">Create Your Apex Account</div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" value="">
+                        <div class="error-tips">Please enter your first name</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Ben">
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="text" placeholder="Apex Microelectronics">
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="text" placeholder="No.63 North Mingzhu Rd, Xiangzhou District, Zhuhai, Guang...">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Zhuhai">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Xiangzhou District">
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="dropdown select-country">
+                            <button
+                                    class="btn btn-lg dropdown-toggle btn-block"
+                                    type="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                            >
+                                <span id="selectCountry">Country</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="countryList">
+                                <li value="china"><a href="javascript:;">China</a></li>
+                                <li value="germany"><a href="javascript:;">Germany</a></li>
+                                <li value="france"><a href="javascript:;">France</a></li>
+                                <li value="italy"><a href="javascript:;">Italy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="519110">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Phone Number">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Apexmic@example.com">
+                        <img src="./images/registLogin/check.png" class="hidden-xs check-icon">
+                    </div>
+                    <div class="line-split clearfix"></div>
+                    <div class="col-sm-8">
+                        <div class="row checkbox-two">
+                            <div class="col-xs-6 col-sm-6">
+                                <label>
+                                    <input type="radio" name="way" id="mailbox"> Mailbox registration
+                                </label>
+                            </div>
+                            <div class="col-xs-6 col-sm-6">
+                                <label>
+                                    <input type="radio" name="way" id="mobile"> Mobile registration
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="text" placeholder="@example.com">
+                        <div class="error-tips">Mail format error</div>
+                    </div>
+                    <div class="col-sm-3 col-sm-offset-1">
+                        <input type="text" placeholder="13546">
+                        <div class="error-tips">Code error</div>
+                        <img src="./images/registLogin/error.png" class="hidden-xs error-icon">
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="password" value="**">
+                        <div class="error-tips">At least 8 characters/At least one letter/At least one number</div>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="password" value="********">
+                        <img src="./images/registLogin/check.png" class="hidden-xs check-icon">
+                    </div>
+                    <div class="line-split clearfix"></div>
+                    <div class="col-sm-12 subscription">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="autoApply"> Subscription
+                            </label>
+                        </div>
+                        <p class="long-txt">Get latest newsletter about Apex products, events, updates and more.</p>
+                    </div>
+                </div>
+                <div class="row hidden-xs">
+                    <div class="col-sm-8">
+                        <img src="./images/registLogin/captcha.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="drag-captcha"><span class="hover-btn"> | | | </span>
+                            Drag the slider to complete the puzzle
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden-sm hidden-md hidden-lg">
+                    <div class="col-xs-12">
+                        <input type="password" placeholder="Verification code">
+                    </div>
+                    <div class="col-xs-12">
+                        <img src="./images/registLogin/code.png" class="code-phone">
+                        <a href="">Try a new code</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center bottom-btns">
+                        <a type="button" href='./home.html' class="btn btn-default">Reset</a>
+                        <a type="button" href='./userCenter.html' class="btn btn-primary">Confirm</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+
+    <div class="regist-login-footer">
+
+    </div>
+
+</div>
+</body>
+</html>

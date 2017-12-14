@@ -366,22 +366,22 @@
                     </button>
                     <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu1">
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">PRODUCTS</a>
+                            <a role="menuitem" tabindex="0" href="#">PRODUCTS</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">New Products</a>
+                            <a role="menuitem" tabindex="1" href="#">New Products</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Ink Cartridge Chips</a>
+                            <a role="menuitem" tabindex="2" href="#">Ink Cartridge Chips</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Toner Cartridge Chips</a>
+                            <a role="menuitem" tabindex="3" href="#">Toner Cartridge Chips</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Accessories</a>
+                            <a role="menuitem" tabindex="4" href="#">Accessories</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="-1" href="#">Chip Testers</a>
+                            <a role="menuitem" tabindex="5" href="#">Chip Testers</a>
                         </li>
                     </ul>
                 </div>
@@ -463,18 +463,38 @@
                 <!--<li class="active"></li>-->
             <!--</ol>-->
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#">product-news</a></li>
-                <li><a href="#">latest-products</a></li>
+                <li class="active"><a href="#">product news</a></li>
+                <li><a href="#">latest products</a></li>
             </ul>
         </div>
     </div>
-    <!--按钮列表1-->
-    <div class="nothing-btn-list hidden-xs">
+
+    <!--按钮列表-->
+    <div class="nothing-btn-list">
         <div class="btn-wrap">
             <button type="button" class="btn btn-default btn-active">All</button>
             <button type="button" class="btn btn-default">Inkjet(35)</button>
             <button type="button" class="btn btn-default">Laserjet(23)</button>
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
+                        data-toggle="dropdown">
+                    All
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu2">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="0" href="#">All</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="1" href="#">Inkjet(35)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="2" href="#">Laserjet(23)</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+
     </div>
     <br><br>
     <!--新闻列表-->
@@ -566,6 +586,7 @@
                     </span>
                 </div>
             </div>
+            <button class="btn btn-default load-more">Loading...</button>
         </div>
         <div class="news-sidebar col-md-4">
             <div class="sidebar-item">
@@ -577,7 +598,7 @@
                 <div class="item-detail">
                     <div class="detail-tp">
                         <div class="img-wrap">
-                            <img src="../build/images/news/twitter-head.png" alt=""/>
+                            <img src="./images/newsList/twitter-head.png" alt=""/>
                         </div>
                         <div class="info">
                             <span>
@@ -587,19 +608,27 @@
                                 @APEXMIC
                             </span>
                         </div>
+                        <div class="icon-place">
+                            <img src="./images/newsList/twitter-icon.png"/>
+                        </div>
                     </div>
                     <div class="detail-md">
-                        Laserjet Chip New Arrivals (May, 2017) - Product
-                        News - Apex Microelectronics
+                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
                     </div>
                     <div class="detail-btm">
-
+                        <div class="img-wrap">
+                            <img src="./images/newsList/like-icon.png"/>
+                            <img src="./images/newsList/exit-icon.png"/>
+                        </div>
+                        <div class="time">
+                            6 Jun
+                        </div>
                     </div>
                 </div>
                 <div class="item-detail">
                     <div class="detail-tp">
                         <div class="img-wrap">
-                            <img src="../build/images/news/twitter-head.png" alt=""/>
+                            <img src="./images/newsList/twitter-head.png" alt=""/>
                         </div>
                         <div class="info">
                             <span>
@@ -609,13 +638,51 @@
                                 @APEXMIC
                             </span>
                         </div>
+                        <div class="icon-place">
+                            <img src="./images/newsList/twitter-icon.png"/>
+                        </div>
                     </div>
                     <div class="detail-md">
-                        Laserjet Chip New Arrivals (May, 2017) - Product
-                        News - Apex Microelectronics
+                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
                     </div>
                     <div class="detail-btm">
-
+                        <div class="img-wrap">
+                            <img src="./images/newsList/like-icon.png"/>
+                            <img src="./images/newsList/exit-icon.png"/>
+                        </div>
+                        <div class="time">
+                            6 Jun
+                        </div>
+                    </div>
+                </div>
+                <div class="item-detail">
+                    <div class="detail-tp">
+                        <div class="img-wrap">
+                            <img src="./images/newsList/twitter-head.png" alt=""/>
+                        </div>
+                        <div class="info">
+                            <span>
+                                ApexMicroelectronics
+                            </span>
+                            <span>
+                                @APEXMIC
+                            </span>
+                        </div>
+                        <div class="icon-place">
+                            <img src="./images/newsList/twitter-icon.png"/>
+                        </div>
+                    </div>
+                    <div class="detail-md">
+                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
+                    </div>
+                    <div class="detail-btm">
+                        <div class="img-wrap">
+                            <img src="./images/newsList/like-icon.png"/>
+                            <img src="./images/newsList/exit-icon.png"/>
+                        </div>
+                        <div class="time">
+                            6 Jun
+                        </div>
                     </div>
                 </div>
             </div>
