@@ -51,6 +51,67 @@
     .video-center-panel {
         max-width: 1280px;
         margin: 50px auto;
+
+        .video-item {
+            margin-bottom: 1.5rem;
+
+            .img-video {
+            }
+            .img-txt {
+                padding-left: 1.5rem;
+            }
+
+            .txt-title {
+                padding: 0;
+                margin: 0;
+                font-size: 2.4rem;
+                color: #2f88c4;
+            }
+            .txt-detail {
+                padding: 0;
+                margin: 0;
+                font-size: 1.6rem;
+                color: #8c8c8c;
+            }
+        }
+
+        .loading-btn {
+            font-size: 1.6rem;
+            color: #8c8c8c;
+        }
+        .subscribe-form,
+        .support-form {
+            margin-bottom: 1.5rem;
+            border: 1px solid #E4E4E4;
+            padding: 1rem;
+            .form-group {
+                margin-bottom: 1rem;
+            }
+            label {
+                padding: 0;
+                text-align: right;
+            }
+            .title {
+                padding-left: .5rem;
+                border-left: .3rem solid #86af49;
+                position: relative;
+                font-size: 2rem;
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: #E4E4E4;
+                    position: absolute;
+                    left: 0;
+                    bottom: -.5rem;
+                }
+            }
+            .tips {
+                font-size: 1.6rem;
+                color: #8c8c8c;
+            }
+        }
     }
 
     .video-center-footer {
@@ -64,7 +125,7 @@
 @media screen and (max-width: @screen-xs-max) {
     //768-xs
     .video-center-navbar {
-        height: 50px;
+        height: 5rem;
     }
 
     .video-center-banner {
@@ -120,6 +181,74 @@
     }
 
     .video-center-panel {
+        padding: 1.5rem;
+        .row {
+            padding: 0;
+            margin: 0;
+            div {
+                padding: 0;
+                margin: 0;
+            }
+            .video-item {
+                margin-bottom: 1.5rem;
+
+                .img-video {
+                }
+                .img-txt {
+                    padding-left: 1.5rem;
+                }
+
+                .txt-title {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.2rem;
+                    color: #404040;
+                }
+                .txt-detail {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1.2rem;
+                    color: #808080;
+                }
+            }
+
+            .btn-primary.btn-block {
+                font-size: 1.5rem;
+                color: #999;
+            }
+            .subscribe-form,
+            .support-form {
+                margin-bottom: 1.5rem;
+                border: 1px solid #E4E4E4;
+                padding: 1rem;
+                .form-group {
+                    margin-bottom: 1rem;
+                }
+                label {
+                    padding: 0;
+                    text-align: center;
+                }
+                .title {
+                    padding-left: .5rem;
+                    border-left: .3rem solid #86af49;
+                    position: relative;
+                    &:after {
+                        display: block;
+                        content: '';
+                        width: 100%;
+                        height: 1px;
+                        background: #E4E4E4;
+                        position: absolute;
+                        left: 0;
+                        bottom: -.5rem;
+                    }
+                }
+                .tips {
+                    font-size: 1.2rem;
+                    color: #8c8c8c;
+                }
+            }
+        }
     }
 
     .video-center-footer {
