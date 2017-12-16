@@ -103,7 +103,7 @@ body {
   .video-center-panel .subscribe-form .title,
   .video-center-panel .support-form .title {
     padding-left: .5rem;
-    border-left: .3rem solid #86af49;
+    border-left: .3rem solid #2f88c4;
     position: relative;
     font-size: 2rem;
   }
@@ -120,6 +120,7 @@ body {
   }
   .video-center-panel .subscribe-form .tips,
   .video-center-panel .support-form .tips {
+    margin: 35px 0;
     font-size: 1.6rem;
     color: #8c8c8c;
   }
