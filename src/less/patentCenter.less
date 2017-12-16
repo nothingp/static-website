@@ -50,6 +50,251 @@
 
     .patent-center-panel {
 
+        .search-bar {
+            background: #eee;
+            height: 80px;
+            .content-padding {
+                padding-top: 20px;
+            }
+            .select-label {
+                color: #404040;
+                font-size: 18px;
+                padding-top: 5px;
+            }
+            .select-like {
+                padding-left: 0;
+                padding-right: 35px;
+                .btn-lg {
+                    padding: 0;
+                    padding-left: 15px;
+                    height: 40px;
+                    border-radius: 3px;
+                    color: #404040;
+                    font-size: 18px;
+                    text-align: left;
+                    border: 1px solid #dcdcdc;
+                }
+                .glyphicon {
+                    position: absolute;
+                    top: 11px;
+                    right: 15px;
+                }
+            }
+
+            .input-group-addon {
+                background-color: #fff;
+                border: 1px solid #dcdcdc;
+                border-radius: 0;
+                border-right: 0;
+                border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px;
+            }
+
+            .form-control {
+                padding: 0 15px 0 0;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                color: #a6a6a6;
+                border: 1px solid #dcdcdc;
+                border-radius: 0;
+                border-left: 0;
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                &:focus {
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                }
+            }
+            .btn-primary {
+                width: 100px;
+                padding: 0;
+                font-size: 18px;
+                height: 40px;
+                line-height: 40px;
+            }
+
+        }
+
+        .white-panel {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            #accordion {
+                > .panel-default {
+                    border-radius: 0;
+                    margin-bottom: 10px;
+                }
+            }
+            .panel-default {
+                .panel-heading {
+                    background: #fff;
+                }
+            }
+            .panel-title {
+                font-size: 20px;
+                font-weight: 400;
+                color: #595959;
+                a {
+                    display: block;
+                    position: relative;
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                    .down-circle {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        border: 1px solid #595959;
+                        position: absolute;
+                        top: 1px;
+                        right: 10px;
+                        border-radius: 10px;
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            top: 3px;
+                            right: 5px;
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border: 1px solid #595959;
+                            transform: rotate(45deg);
+                            border-left: 0;
+                            border-top: 0;
+                        }
+                    }
+                    &.collapsed {
+                        .down-circle {
+                            &:after {
+                                top: 5px;
+                                right: 7px;
+                                transform: rotate(-45deg);
+                            }
+                        }
+                    }
+                }
+                .link {
+                    color: #2f88c4;
+                }
+
+            }
+
+            .panel-collapse {
+                .panel-body {
+                    border-top: none;
+                }
+            }
+
+            .body-title {
+                font-size: 18px;
+                color: #a6a6a6;
+            }
+
+            .no-border {
+                margin-bottom: 0;
+
+                .panel-default {
+                    margin-top: 15px;
+                    border: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    .panel-heading {
+                        padding: 0;
+                    }
+                    .panel-sub-title {
+                        a {
+                            padding-right: 30px;
+                            font-size: 18px;
+                            color: #404040;
+                            position: relative;
+
+                            .sub-down-arrow {
+                                position: absolute;
+                                top: 3px;
+                                right: 5px;
+                                display: inline-block;
+                                width: 10px;
+                                height: 10px;
+                                border: 2px solid #404040;
+                                transform: rotate(45deg);
+                                border-left: 0;
+                                border-top: 0;
+                            }
+                            &:hover,
+                            &:focus {
+                                cursor: pointer;
+                                text-decoration: none;
+                            }
+                            &.collapsed {
+                                .sub-down-arrow {
+                                    top: 6px;
+                                    transform: rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+                    .panel-body {
+                        background: #f5f5f5;
+                        border: none;
+                        border-radius: 2px;
+                        .col-sm-4 {
+                            font-size: 16px;
+                            color: #8c8c8c;
+                            span {
+                                padding: 2px 5px;
+                                &:hover {
+                                    cursor: pointer;
+                                    background: #2f88c6;
+                                    border-radius: 3px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .subscribe-form,
+        .support-form {
+            margin-bottom: 1.5rem;
+            border: 1px solid #E4E4E4;
+            padding: 1rem;
+            .form-group {
+                margin-bottom: 1rem;
+            }
+            label {
+                padding: 0;
+                text-align: right;
+            }
+            .title {
+                padding-left: .5rem;
+                border-left: .3rem solid #2f88c4;
+                position: relative;
+                font-size: 2rem;
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: #E4E4E4;
+                    position: absolute;
+                    left: 0;
+                    bottom: -.5rem;
+                }
+            }
+            .tips {
+                font-size: 1.6rem;
+                color: #8c8c8c;
+                margin: 35px 0;
+            }
+        }
     }
 
     .patent-center-footer {
@@ -119,6 +364,39 @@
     }
 
     .patent-center-panel {
+
+        .subscribe-form,
+        .support-form {
+            margin-bottom: 1.5rem;
+            border: 1px solid #E4E4E4;
+            padding: 1rem;
+            .form-group {
+                margin-bottom: 1rem;
+            }
+            label {
+                padding: 0;
+                text-align: center;
+            }
+            .title {
+                padding-left: .5rem;
+                border-left: .3rem solid #2f88c4;
+                position: relative;
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    background: #E4E4E4;
+                    position: absolute;
+                    left: 0;
+                    bottom: -.5rem;
+                }
+            }
+            .tips {
+                font-size: 1.2rem;
+                color: #8c8c8c;
+            }
+        }
     }
 
     .patent-center-footer {
