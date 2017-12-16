@@ -365,6 +365,234 @@
 
     .patent-center-panel {
 
+        .search-bar {
+            position: relative;
+            background: #eee;
+            height: 10rem;
+
+            .select-like {
+                padding: 0 1rem;
+                .btn-lg {
+                    padding: 0;
+                    padding-left: 1rem;
+                    height: 3rem;
+                    border-radius: .3rem;
+                    font-size: 1.2rem;
+                    text-align: left;
+                    border: 1px solid #dcdcdc;
+                    background: #fff;
+                    color: #a6a6a6;
+                }
+                .glyphicon {
+                    position: absolute;
+                    top: 1rem;
+                    right: 1.5rem;
+                    color: #595959;
+                }
+            }
+
+            .phone-top {
+                padding: 0;
+                position: absolute;
+                top: 1.5rem;
+                left: 0;
+
+                .input-group {
+                    padding: 0 1rem;
+                }
+
+                .input-group-addon {
+                    background-color: #fff;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 0;
+                    border-right: 0;
+                    border-bottom-left-radius: .3rem;
+                    border-top-left-radius: .3rem;
+                    color: #a6a6a6;
+                }
+
+                .form-control {
+                    padding: 0 1.5rem 0 0;
+                    height: 3rem;
+                    line-height: 3rem;
+                    font-size: 1.2rem;
+                    color: #a6a6a6;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 0;
+                    border-left: 0;
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                    &:focus {
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                    }
+                }
+            }
+
+            .phone-bottom {
+                position: absolute;
+                bottom: 1.5rem;
+                left: 0;
+            }
+
+            .btn-primary {
+                width: 100px;
+                padding: 0;
+                font-size: 18px;
+                height: 40px;
+                line-height: 40px;
+            }
+
+        }
+
+        .white-panel {
+            padding: 15px;
+
+            .col-xs-12 {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+
+            #accordion {
+                > .panel-default {
+                    border-radius: 0;
+                    margin-bottom: 1rem;
+                }
+            }
+            .panel-default {
+                .panel-heading {
+                    background: #fff;
+                }
+            }
+            .panel-title {
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: #595959;
+                a {
+                    display: block;
+                    position: relative;
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                    .down-circle {
+                        display: inline-block;
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        border: 1px solid #595959;
+                        position: absolute;
+                        top: -.2rem;
+                        right: 0;
+                        border-radius: 1rem;
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            top: .3rem;
+                            right: .45rem;
+                            display: inline-block;
+                            width: .5rem;
+                            height: .5rem;
+                            border: 1px solid #595959;
+                            transform: rotate(45deg);
+                            border-left: 0;
+                            border-top: 0;
+                        }
+                    }
+                    &.collapsed {
+                        .down-circle {
+                            &:after {
+                                top: .4rem;
+                                right: .5rem;
+                                transform: rotate(-45deg);
+                            }
+                        }
+                    }
+                }
+                .link {
+                    color: #2f88c4;
+                }
+
+            }
+
+            .panel-collapse {
+                .panel-body {
+                    border-top: none;
+                }
+            }
+
+            .body-title {
+                font-size: 1rem;
+                color: #a6a6a6;
+            }
+
+            .no-border {
+                margin-bottom: 0;
+
+                .panel-default {
+                    margin-top: 1.5rem;
+                    border: none;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                    .panel-heading {
+                        padding: 0;
+                    }
+                    .panel-sub-title {
+                        a {
+                            padding-right: 3rem;
+                            font-size: 1rem;
+                            color: #404040;
+                            position: relative;
+
+                            .sub-down-arrow {
+                                position: relative;
+                                top: -.2rem;
+                                display: inline-block;
+                                width: .5rem;
+                                height: .5rem;
+                                border: 1px solid #404040;
+                                transform: rotate(45deg);
+                                border-left: 0;
+                                border-top: 0;
+                            }
+                            &:hover,
+                            &:focus {
+                                cursor: pointer;
+                                text-decoration: none;
+                            }
+                            &.collapsed {
+                                .sub-down-arrow {
+                                    top: -.1rem;
+                                    transform: rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+                    .panel-body {
+                        background: #f5f5f5;
+                        border: none;
+                        border-radius: .2rem;
+                        .col-xs-6 {
+                            font-size: 1rem;
+                            color: #8c8c8c;
+                            span {
+                                padding: .2rem .5rem;
+                                &:hover {
+                                    cursor: pointer;
+                                    background: #2f88c6;
+                                    border-radius: .3rem;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
         .subscribe-form,
         .support-form {
             margin-bottom: 1.5rem;
@@ -375,7 +603,7 @@
             }
             label {
                 padding: 0;
-                text-align: center;
+                text-align: right;
             }
             .title {
                 padding-left: .5rem;
