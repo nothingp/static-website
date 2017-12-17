@@ -1,0 +1,314 @@
+@import "variables.less";
+@import "base.less";
+
+//公共样式
+
+//pc 展示开始。。。
+@media screen and (min-width: @screen-sm-min) {
+    //768- sm->lg
+    .product-detail-navbar {
+        height: 110px;
+        background: #f5f5f5;
+    }
+
+    .product-detail-tabBar {
+        //height: 64px;
+        background: rgba(47, 136, 196, 1);
+        nav.navbar-default {
+            //height: 64px;
+            padding: 0 240px;
+            background: rgba(47, 136, 196, 1);
+            border: none;
+            margin-bottom: 0;
+            .navbar-nav {
+                .active {
+                    a {
+                        color: #fff;
+                        background: rgba(47, 136, 196, 1);
+                    }
+                }
+                a {
+                    color: #a4c7de;
+                }
+                li {
+                    //width: 90px;
+                }
+            }
+            .container-fluid {
+                background: rgba(47, 136, 196, 1);
+            }
+        }
+
+    }
+
+    .product-detail-panel {
+        .bread-tap {
+            margin: 0;
+            padding: 0;
+            height: 80px;
+            list-style: none;
+            li {
+                float: left;
+                font-size: 1.6rem;
+                height: 80px;
+                line-height: 80px;
+                a {
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                    color: #2f87c4;
+                }
+                &:after {
+                    display: inline-block;
+                    content: '>';
+                    margin: 0 10px;
+                    font-size: 1.6rem;
+                    color: #000;
+                }
+                &:last-child {
+                    a {
+                        color: #000;
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .img-show {
+            .left-img {
+                .img-responsive {
+                    border: solid 1px #e5e5e5;
+                }
+            }
+            .right-form {
+                .row {
+                    box-shadow: 0px 1px 0px 0px #e5e5e5;
+                    &:last-child {
+                        box-shadow: none;
+                    }
+                }
+                .col-sm-5,
+                .col-sm-7 {
+                    height: 65px;
+                    line-height: 65px;
+                }
+                .col-sm-5 {
+                    font-size: 1.8rem;
+                    color: #404040;
+                }
+                .col-sm-7 {
+                    font-size: 1.6rem;
+                    color: #666;
+                }
+                .count-handle {
+                    img {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 3px;
+                        &.minus {
+                            border: solid 1px #bebebe;
+                        }
+                        &.add {
+                            border: solid 1px #14517b;
+                        }
+                    }
+                    input {
+                        text-align: center;
+                        margin: 0 5px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .btn-primary {
+                        margin-left: 60px;
+                        img {
+                            width: 30px;
+                            position: relative;
+                            top: -3px;
+                        }
+                        padding: 0;
+                        background: #2f88c4;
+                        height: 40px;
+                        line-height: 40px;
+                        width: 180px;
+                        border-radius: 4px;
+                        font-size: 1.6rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .main-title {
+            margin: 50px 0 30px 15px;
+            font-size: 24px;
+            color: #666;
+            box-shadow: 0px 1px 0px 0px #e5e5e5;
+            padding-bottom: 15px;
+        }
+
+        .related-product {
+            img {
+                width: 179px;
+                height: 179px;
+                padding: 40px;
+                border: 1px solid #eee;
+            }
+            .text-center {
+                font-size: 1.6rem;
+                color: #666;
+                margin: 15px 0;
+            }
+        }
+
+        .installation-method {
+            img {
+                margin-left: -5px;
+            }
+            .sub-title {
+                margin: 20px 15px;
+                font-size: 24px;
+                color: #404040;
+            }
+            p {
+                margin: 20px 0;
+                font-size: 1.6rem;
+                color: #666;
+            }
+        }
+
+        .technical-support {
+            ul {
+                margin: 0 0 0 15px;
+                padding: 0;
+                list-style: none;
+                li {
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 16px;
+                    color: #595959;
+                }
+            }
+            .glyphicon-chevron-right {
+                margin-left: 50px;
+            }
+        }
+
+        .description {
+            margin-bottom: 150px;
+            .row {
+                margin: 0 15px;
+                padding: 0;
+                border-left: 1px solid #eee;
+                border-right: 1px solid #eee;
+            }
+
+            .col-xs-2 {
+                &:nth-child(odd) {
+                    background: #f5f5f5;
+                }
+                height: 50px;
+                line-height: 50px;
+                font-size: 14px;
+                color: #404040;
+                text-align: center;
+                border-bottom: 1px solid #eee;
+            }
+
+            .header {
+                font-size: 16px;
+                height: 50px;
+                line-height: 50px;
+                background-color: #2f88c6;
+                .col-xs-2 {
+                    color: #fff;
+                    border-bottom: none;
+                    &:nth-child(odd) {
+                        background: #2f88c6;
+                    }
+                }
+            }
+            .title {
+                background: #c1c1c1;
+                height: 40px;
+                line-height: 40px;
+                color: #fff;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .product-detail-footer {
+        height: 777px;
+        background: #f5f5f5;
+    }
+
+}
+
+//手机展示开始。。。
+@media screen and (max-width: @screen-xs-max) {
+    //768-xs
+    .product-detail-navbar {
+        height: 5rem;
+    }
+
+    .product-detail-tabBar {
+        background: rgba(47, 136, 196, 1);
+        nav.navbar-default {
+            background: rgba(47, 136, 196, 1);
+            border: none;
+            margin-bottom: 0;
+            .navbar-nav {
+                margin-bottom: 0;
+                .active {
+                    a {
+                        color: #fff;
+                        background: rgba(47, 136, 196, 1);
+                    }
+                }
+                a {
+                    color: #a4c7de;
+                }
+                li {
+
+                }
+                .dropdown {
+                    text-align: center;
+                    .dropdown-toggle {
+                        color: #fff;
+                        background: rgba(47, 136, 196, 1);
+                        font-size: 1.8rem;
+                        span {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .dropdown-menu {
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .container-fluid {
+                background: rgba(47, 136, 196, 1);
+            }
+        }
+
+    }
+
+    .product-detail-panel {
+
+    }
+
+    .product-detail-footer {
+        height: 449px;
+        background: #f5f5f5;
+    }
+}
