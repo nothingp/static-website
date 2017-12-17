@@ -92,16 +92,16 @@
                         box-shadow: none;
                     }
                 }
-                .col-sm-5,
-                .col-sm-7 {
+                .col-xs-5,
+                .col-xs-7 {
                     height: 65px;
                     line-height: 65px;
                 }
-                .col-sm-5 {
+                .col-xs-5 {
                     font-size: 1.8rem;
                     color: #404040;
                 }
-                .col-sm-7 {
+                .col-xs-7 {
                     font-size: 1.6rem;
                     color: #666;
                 }
@@ -304,7 +304,203 @@
     }
 
     .product-detail-panel {
+        .bread-tap {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 6.1rem;
+            left: 0;
+            z-index: 99;
+            list-style: none;
+            li {
+                font-size: 1rem;
+                a {
+                    &:hover,
+                    &:focus {
+                        cursor: pointer;
+                        text-decoration: none;
+                    }
+                    color: #fff;
+                }
+                &:before {
+                    display: inline-block;
+                    content: '<';
+                    margin: 0 10px;
+                    font-size: 1.6rem;
+                    color: #fff;
+                }
+            }
+        }
 
+        .img-show {
+            .right-form {
+                .row {
+                    margin: 0;
+                    position: relative;
+                    box-shadow: 0px 1px 0px 0px #e5e5e5;
+                    &:last-child {
+                        margin-bottom: 8rem;
+                    }
+                }
+                .col-xs-5,
+                .col-xs-7 {
+                    white-space: nowrap;
+                    padding: 2rem 0;
+                }
+                .col-xs-5 {
+                    font-size: 1.5rem;
+                    color: #404040;
+                }
+                .col-xs-7 {
+                    position: static;
+                    text-align: right;
+                    font-size: 1.4rem;
+                    color: #666;
+                }
+                .count-handle {
+                    img {
+                        width: 2rem;
+                        height: 2rem;
+                        border-radius: .3rem;
+                        &.minus {
+                            border: solid 1px #bebebe;
+                        }
+                        &.add {
+                            border: solid 1px #14517b;
+                        }
+                    }
+                    input {
+                        text-align: center;
+                        margin: 0 .5rem;
+                        width: 3rem;
+                        height: 3rem;
+                        border: 1px solid #eee;
+                    }
+                    .btn-primary {
+                        position: absolute;
+                        left: 0;
+                        top: 11rem;
+                        img {
+                            width: 3rem;
+                            position: relative;
+                            top: -.3rem;
+                        }
+                        padding: 0;
+                        background: #2f88c4;
+                        height: 4rem;
+                        line-height: 4rem;
+                        width: 100%;
+                        border-radius: .4rem;
+                        font-size: 1.5rem;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .main-title {
+            margin: 3rem 0 3rem 1.5rem;
+            font-size: 1.8rem;
+            color: #666;
+            box-shadow: 0px 1px 0px 0px #e5e5e5;
+            padding-bottom: 1.5rem;
+        }
+
+        .related-product {
+            img {
+                padding: 1.5rem;
+                border: 1px solid #eee;
+            }
+            .text-center {
+                font-size: 1.3rem;
+                color: #666;
+                margin: 1.5rem 0;
+            }
+        }
+
+        .installation-method {
+            img {
+                margin-left: -.5rem;
+            }
+            .sub-title {
+                margin: 2rem 1.5rem;
+                font-size: 1.4rem;
+                color: #404040;
+            }
+            p {
+                margin: 1.5rem 0;
+                font-size: 1.2rem;
+                color: #666;
+                min-height: 8rem;
+            }
+        }
+
+        .technical-support {
+            ul {
+                margin: 0 0 0 1.5rem;
+                padding: 0;
+                list-style: none;
+                li {
+                    padding: 2rem 0;
+                    font-size: 1.4rem;
+                    color: #595959;
+                }
+            }
+            .glyphicon-chevron-right {
+                margin-left: 3rem;
+            }
+        }
+
+        .description {
+            margin-bottom: 5rem;
+            .row {
+                margin: 0 1.5rem;
+                padding: 0;
+                border-left: 1px solid #eee;
+                border-right: 1px solid #eee;
+            }
+
+            .col-xs-2 {
+                &:nth-child(odd) {
+                    //text-align: right;
+                    //padding-right: 2rem;
+                    background: #f5f5f5;
+                }
+                padding: 1rem 0;
+                font-size: 1.2rem;
+                color: #404040;
+                text-align: center;
+                border-bottom: 1px solid #eee;
+            }
+
+            .header {
+                font-size: 1.3rem;
+                padding: 1rem 0;
+                background-color: #2f88c6;
+                .col-xs-2 {
+                    color: #fff;
+                    border-bottom: none;
+                    &:nth-child(odd) {
+                        background: #2f88c6;
+                    }
+                }
+            }
+            .title {
+                text-align: left;
+                background: #c1c1c1;
+                padding: .5rem 2rem;
+                color: #fff;
+                font-size: 1.2rem;
+            }
+            .phone-scroll {
+                overflow-x: scroll;
+            }
+            .width-fix {
+                width: 90rem;
+                white-space: nowrap;
+            }
+
+        }
     }
 
     .product-detail-footer {
