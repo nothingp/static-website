@@ -35,7 +35,6 @@ body {
 @media screen and (min-width: 768px) {
   .box-shadow-line {
     position: relative;
-    box-shadow: inset 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
   }
   .box-shadow-line .dropdown.search-top-icon {
     position: static;
@@ -102,21 +101,25 @@ body {
     top: 56px;
   }
   .box-shadow-line .nothing-navbar-brand-search a {
-    width: 22px;
-    height: 22px;
+    width: 28px;
+    height: 28px;
     text-align: center;
     padding: 2px 0;
+    background: #2f88c6;
     line-height: 1.428571429;
-    border-radius: 11px;
+    border-radius: 14px;
   }
   .box-shadow-line .nothing-navbar-brand-search a .glyphicon {
-    font-size: 1.2rem;
-    top: -1px;
+    font-size: 1.4rem;
+    top: 3px;
   }
   .box-shadow-line .nothing-navbar-brand-search .search-content {
     background: red;
     position: absolute;
     left: 0;
+  }
+  .box-shadow-line .nothing-navbar-brand-search .btn-primary {
+    border: 0;
   }
   .box-shadow-line .navbar {
     height: 110px;
@@ -149,16 +152,30 @@ body {
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li {
     position: static;
   }
+  .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
+    padding: 0;
+    margin: 10px 15px;
+  }
+  .box-shadow-line .navbar .nothing-navbar-menu .nav .open > a > a:focus a:hover {
+    background-color: #ffffff;
+  }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown:hover > a {
+    position: relative;
+    color: #2f88c6;
+  }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown:hover > a:hover a:active a:focus a:active {
+    background-color: #ffffff;
+  }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown:hover > a:before {
-    border-bottom: 2px solid #2f88c6;
+    background: #2f88c6;
     bottom: 0;
     content: "";
-    left: 0;
-    margin: 0;
+    height: 2px;
     position: absolute;
     width: 100%;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu {
+    background-color: #f5f5f5;
     position: absolute;
     padding: 30px 0;
     top: 109px;
@@ -194,7 +211,7 @@ body {
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu {
     position: absolute;
-    background: #fff;
+    background: #f5f5f5;
     display: none;
     width: 100%;
     top: -3px;
