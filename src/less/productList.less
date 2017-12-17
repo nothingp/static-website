@@ -1,0 +1,312 @@
+@import "variables.less";
+@import "base.less";
+
+
+//公共样式
+
+
+//pc 展示开始。。。
+@media screen and (min-width: @screen-sm-min) {
+  //768- sm->lg
+  .subscriptionCenter-navbar {
+    height: 110px;
+
+    background: #f5f5f5;
+  }
+
+  //首屏页面
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    //height: 280px;
+    overflow: hidden;
+  }
+
+  .subscriptionCenter-tabBar{
+    //height: 64px;
+    background: rgba(47, 136, 196, 1);
+    nav.navbar-default{
+      //height: 64px;
+      padding: 0 240px;
+      background: rgba(47, 136, 196, 1);
+      border: none;
+      margin-bottom: 0;
+      .navbar-nav{
+        .active{
+          a{
+            color: #fff;
+            background: rgba(47, 136, 196, 1);
+          }
+        }
+        a{
+          color: #a4c7de;
+        }
+        li{
+          //width: 90px;
+        }
+      }
+      .container-fluid{
+        background: rgba(47, 136, 196, 1);
+      }
+    }
+
+  }
+
+  .firmwareUpgrades-content {
+    max-width: 1280px;
+    margin: 50px auto;
+    .firmwareUpgrades-content-left{
+      padding-left:0;
+      .firmwareUpgrades-content-left-header{
+        h3{
+          font-size: 24px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #333333;
+          margin-bottom:41px;
+        }
+        p{
+          font-size: 18px;
+          letter-spacing: 0px;
+          line-height: 30px;
+          color: #666666;
+          margin-bottom:90px;
+        }
+      }
+      .firmwareUpgrades-content-left-title{
+        h3{
+          font-size: 24px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #333333;
+          margin-bottom:60px;
+        }
+      }
+      .firmwareUpgrades-content-left-form{
+        .firmwareUpgrades-content-left-form-search{
+          background: rgba(238, 238, 238, 1);
+          padding:20px 100px;
+          input{
+            padding-left:50px;
+          }
+          button{
+            background: rgba(47, 136, 196, 1);
+            color:#fff;
+            width:100px;
+          }
+        }
+        .firmwareUpgrades-content-left-form-select{
+          margin-top:16px;
+          margin-bottom:2px;
+          .firmwareUpgrades-content-left-form-select-son{
+            .form-group{
+              margin-bottom:0;
+            }
+            &:first-child{
+              padding-left:0;
+            }
+            &:last-child{
+              padding-right:0;
+            }
+          }
+        }
+        .firmwareUpgrades-content-left-form-table{
+          table{
+            border-bottom:1px solid #dcdcdc;
+            margin-bottom:0;
+            td{
+              padding-left:20px;
+              padding-right:20px;
+              font-size: 16px;
+              font-weight: normal;
+              font-style: normal;
+              color: #666666;
+            }
+            thead{
+              background: rgba(238, 238, 238, 1);
+              tr{
+                line-height:61px;
+                th{
+                  line-height:61px;
+                  padding:0 20px;
+                  font-size: 16px;
+                  font-weight: normal;
+                  font-style: normal;
+                  letter-spacing: 0px;
+                  color: #666666;
+                }
+              };
+            }
+          }
+        }
+      }
+    }
+    .firmwareUpgrades-content-right{
+      .subscribe-form{
+        border:1px solid #dcdcdc;
+        padding:15px;
+        margin-bottom:30px;
+        margin-top:10px;
+        .title{
+          font-size: 20px;
+          font-weight: normal;
+          font-style: normal;
+          line-height: 30px;
+          color: #333333;
+          border-bottom: 1px solid rgba(220, 220, 220, 1);
+          padding-left:10px;
+          position:relative;
+          &:before{
+            display:block;
+            content:'';
+            width:3px;
+            height:20px;
+            background: rgba(47, 136, 196, 1);
+            position:absolute;
+            left:0;
+            top:5px;
+          }
+        }
+        .tips{
+          font-size: 16px;
+          line-height: 18px;
+          color: #999999;
+          margin:20px 0;
+        }
+        form{}
+      }
+    }
+  }
+
+  .subscriptionCenter-list {
+    max-width: 1280px;
+    margin: 50px auto;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 60px;
+    position: relative;
+    .subscriptionCenter-list-title{
+      h4{
+        font-size: 30px;
+        font-weight: normal;
+        color: #333333;
+        margin: 40px 0;
+      }
+    }
+    .subscriptionCenter-list-content{
+      transition: 2s;
+      //transition: height 2s;
+      //-webkit-transition: height 2s;
+      //transition: height 1s linear 2s;
+      ///* Firefox 4 */
+      //-moz-transition:height 1s linear 2s;
+      ///* Safari and Chrome */
+      //-webkit-transition:height 1s linear 2s;
+      ///* Opera */
+      //-o-transition:height 1s linear 2s;
+      height:350px;
+      overflow: hidden;
+      .subscriptionCenter-list-content-box{
+        padding: 0;
+        margin-bottom: 40px;
+        .subscriptionCenter-list-content-box-wrap{
+          padding: 0;
+          background-color: rgba(255, 255, 255, 1);
+          box-shadow: 0px 3px 7px 0px
+          rgba(0, 0, 0, 0.35);
+          border: solid 1px rgba(229, 229, 229, 1);
+        }
+        .subscriptionCenter-list-content-box-left{
+          //width: 188px;
+          height: 325px;
+          padding: 0;
+          overflow: hidden;
+          img{
+            width: 100%;
+            height: auto;
+          }
+        }
+        .subscriptionCenter-list-content-box-right{
+          .subscriptionCenter-list-content-box-right-title{
+            padding-top: 35px;
+            padding-bottom: 22px;
+            border-bottom: solid 1px rgba(229, 229, 229, 1);
+            h4{
+              font-size: 26px;
+              letter-spacing: 0px;
+              color: #333333;
+            }
+            p{
+              font-size: 16px;
+              color: #595959;
+            }
+          }
+          .subscriptionCenter-list-content-box-right-content{
+            h4{
+              i{
+                display: inline-block;
+                width: 24px;
+                height: 32px;
+                background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+                background-size: 100% 100%;
+                vertical-align: middle;
+                margin-right:20px;
+              }
+              font-size: 16px;
+              font-weight: normal;
+              color: #595959;
+            }
+            p{
+              font-size: 12px;
+              color: #8c8c8c;
+              margin-bottom: 20px;
+            }
+            .newslist-btn{
+              width: 100%;
+              font-size: 18px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+    .subscriptionCenter-list-content:hover{
+      //height:500px;
+    }
+    .show-all-box{
+      height:auto;
+    }
+    .subscriptionCenter-list-button{
+      width: 80px;
+      height:25px;
+      position:absolute;
+      left:50%;
+      margin-left:-40px;
+      bottom: -25px;
+      border-radius: 0px 0px 4px 4px;
+      overflow:hidden;
+      button{
+        width:100%;
+        height:100%;
+        background-color: rgba(220, 220, 220, 1);
+        span{
+          color:#fff;
+          font-size: 20px;
+          position:relative;
+          top:-4px;
+        }
+      }
+    }
+  }
+
+  .subscriptionCenter-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+
+}
+
+//手机展示开始。。。
+@media screen and (max-width: @screen-xs-max) {
+  
+}

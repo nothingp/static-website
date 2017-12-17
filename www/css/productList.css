@@ -1,0 +1,278 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #f2f2f2;
+  color: #333333;
+  min-width: 320px;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.content-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscriptionCenter-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-tabBar {
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default {
+    padding: 0 240px;
+    background: #2f88c4;
+    border: none;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
+    color: #fff;
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
+    color: #a4c7de;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
+    background: #2f88c4;
+  }
+  .firmwareUpgrades-content {
+    max-width: 1280px;
+    margin: 50px auto;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left {
+    padding-left: 0;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-header h3 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 41px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-header p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 90px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-title h3 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 60px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search {
+    background: #eeeeee;
+    padding: 20px 100px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search input {
+    padding-left: 50px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search button {
+    background: #2f88c4;
+    color: #fff;
+    width: 100px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select {
+    margin-top: 16px;
+    margin-bottom: 2px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son .form-group {
+    margin-bottom: 0;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:first-child {
+    padding-left: 0;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:last-child {
+    padding-right: 0;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table {
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table td {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead {
+    background: #eeeeee;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead tr {
+    line-height: 61px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead tr th {
+    line-height: 61px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #666666;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form {
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 30px;
+    color: #333333;
+    border-bottom: 1px solid #dcdcdc;
+    padding-left: 10px;
+    position: relative;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title:before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: #2f88c4;
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .tips {
+    font-size: 16px;
+    line-height: 18px;
+    color: #999999;
+    margin: 20px 0;
+  }
+  .subscriptionCenter-list {
+    max-width: 1280px;
+    margin: 50px auto;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-title h4 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333333;
+    margin: 40px 0;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content {
+    transition: 2s;
+    height: 350px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap {
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    border: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left {
+    height: 325px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left img {
+    width: 100%;
+    height: auto;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title {
+    padding-top: 35px;
+    padding-bottom: 22px;
+    border-bottom: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title h4 {
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #333333;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title p {
+    font-size: 16px;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 i {
+    display: inline-block;
+    width: 24px;
+    height: 32px;
+    background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content p {
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 20px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content .newslist-btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .subscriptionCenter-list .show-all-box {
+    height: auto;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button {
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: -25px;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button {
+    width: 100%;
+    height: 100%;
+    background-color: #dcdcdc;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button span {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+  }
+  .subscriptionCenter-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+}

@@ -59,6 +59,229 @@ body {
   .patent-center-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
   }
+  .patent-center-panel .search-bar {
+    background: #eee;
+    height: 80px;
+  }
+  .patent-center-panel .search-bar .content-padding {
+    padding-top: 20px;
+  }
+  .patent-center-panel .search-bar .select-label {
+    color: #404040;
+    font-size: 18px;
+    padding-top: 5px;
+  }
+  .patent-center-panel .search-bar .select-like {
+    padding-left: 0;
+    padding-right: 35px;
+  }
+  .patent-center-panel .search-bar .select-like .btn-lg {
+    padding: 0;
+    padding-left: 15px;
+    height: 40px;
+    border-radius: 3px;
+    color: #404040;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid #dcdcdc;
+  }
+  .patent-center-panel .search-bar .select-like .glyphicon {
+    position: absolute;
+    top: 11px;
+    right: 15px;
+  }
+  .patent-center-panel .search-bar .input-group-addon {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  .patent-center-panel .search-bar .form-control {
+    padding: 0 15px 0 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #a6a6a6;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    border-left: 0;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  .patent-center-panel .search-bar .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  .patent-center-panel .search-bar .btn-primary {
+    width: 100px;
+    padding: 0;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .patent-center-panel .white-panel {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .patent-center-panel .white-panel #accordion > .panel-default {
+    border-radius: 0;
+    margin-bottom: 10px;
+  }
+  .patent-center-panel .white-panel .panel-default .panel-heading {
+    background: #fff;
+  }
+  .patent-center-panel .white-panel .panel-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #595959;
+  }
+  .patent-center-panel .white-panel .panel-title a {
+    display: block;
+    position: relative;
+  }
+  .patent-center-panel .white-panel .panel-title a:hover,
+  .patent-center-panel .white-panel .panel-title a:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .patent-center-panel .white-panel .panel-title a .down-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #595959;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    border-radius: 10px;
+  }
+  .patent-center-panel .white-panel .panel-title a .down-circle:after {
+    position: absolute;
+    content: '';
+    top: 3px;
+    right: 5px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #595959;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-top: 0;
+  }
+  .patent-center-panel .white-panel .panel-title a.collapsed .down-circle:after {
+    top: 5px;
+    right: 7px;
+    transform: rotate(-45deg);
+  }
+  .patent-center-panel .white-panel .panel-title .link {
+    color: #2f88c4;
+  }
+  .patent-center-panel .white-panel .panel-collapse .panel-body {
+    border-top: none;
+  }
+  .patent-center-panel .white-panel .body-title {
+    font-size: 18px;
+    color: #a6a6a6;
+  }
+  .patent-center-panel .white-panel .no-border {
+    margin-bottom: 0;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default {
+    margin-top: 15px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-heading {
+    padding: 0;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a {
+    padding-right: 30px;
+    font-size: 18px;
+    color: #404040;
+    position: relative;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a .sub-down-arrow {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #404040;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-top: 0;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a:hover,
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a.collapsed .sub-down-arrow {
+    top: 6px;
+    transform: rotate(-45deg);
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body {
+    background: #f5f5f5;
+    border: none;
+    border-radius: 2px;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body .col-sm-4 {
+    font-size: 16px;
+    color: #8c8c8c;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body .col-sm-4 span {
+    padding: 2px 5px;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body .col-sm-4 span:hover {
+    cursor: pointer;
+    background: #2f88c6;
+    border-radius: 3px;
+    color: #fff;
+  }
+  .patent-center-panel .subscribe-form,
+  .patent-center-panel .support-form {
+    margin-bottom: 1.5rem;
+    border: 1px solid #E4E4E4;
+    padding: 1rem;
+  }
+  .patent-center-panel .subscribe-form .form-group,
+  .patent-center-panel .support-form .form-group {
+    margin-bottom: 1rem;
+  }
+  .patent-center-panel .subscribe-form label,
+  .patent-center-panel .support-form label {
+    padding: 0;
+    text-align: right;
+  }
+  .patent-center-panel .subscribe-form .title,
+  .patent-center-panel .support-form .title {
+    padding-left: .5rem;
+    border-left: .3rem solid #2f88c4;
+    position: relative;
+    font-size: 2rem;
+  }
+  .patent-center-panel .subscribe-form .title:after,
+  .patent-center-panel .support-form .title:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #E4E4E4;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+  }
+  .patent-center-panel .subscribe-form .tips,
+  .patent-center-panel .support-form .tips {
+    font-size: 1.6rem;
+    color: #8c8c8c;
+    margin: 35px 0;
+  }
   .patent-center-footer {
     height: 777px;
     background: #f5f5f5;
@@ -107,6 +330,238 @@ body {
   }
   .patent-center-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
+  }
+  .patent-center-panel .search-bar {
+    position: relative;
+    background: #eee;
+    height: 10rem;
+  }
+  .patent-center-panel .search-bar .select-like {
+    padding: 0 1rem;
+  }
+  .patent-center-panel .search-bar .select-like .btn-lg {
+    padding: 0;
+    padding-left: 1rem;
+    height: 3rem;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    text-align: left;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    color: #a6a6a6;
+  }
+  .patent-center-panel .search-bar .select-like .glyphicon {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: #595959;
+  }
+  .patent-center-panel .search-bar .phone-top {
+    padding: 0;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+  }
+  .patent-center-panel .search-bar .phone-top .input-group {
+    padding: 0 1rem;
+  }
+  .patent-center-panel .search-bar .phone-top .input-group-addon {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: .3rem;
+    border-top-left-radius: .3rem;
+    color: #a6a6a6;
+  }
+  .patent-center-panel .search-bar .phone-top .form-control {
+    padding: 0 1.5rem 0 0;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.2rem;
+    color: #a6a6a6;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    border-left: 0;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  .patent-center-panel .search-bar .phone-top .form-control:focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+  .patent-center-panel .search-bar .phone-bottom {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 0;
+  }
+  .patent-center-panel .search-bar .btn-primary {
+    width: 100px;
+    padding: 0;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+  }
+  .patent-center-panel .white-panel {
+    padding: 15px;
+  }
+  .patent-center-panel .white-panel .col-xs-12 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .patent-center-panel .white-panel #accordion > .panel-default {
+    border-radius: 0;
+    margin-bottom: 1rem;
+  }
+  .patent-center-panel .white-panel .panel-default .panel-heading {
+    background: #fff;
+  }
+  .patent-center-panel .white-panel .panel-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #595959;
+  }
+  .patent-center-panel .white-panel .panel-title a {
+    display: block;
+    position: relative;
+  }
+  .patent-center-panel .white-panel .panel-title a:hover,
+  .patent-center-panel .white-panel .panel-title a:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .patent-center-panel .white-panel .panel-title a .down-circle {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #595959;
+    position: absolute;
+    top: -0.2rem;
+    right: 0;
+    border-radius: 1rem;
+  }
+  .patent-center-panel .white-panel .panel-title a .down-circle:after {
+    position: absolute;
+    content: '';
+    top: .3rem;
+    right: .45rem;
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border: 1px solid #595959;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-top: 0;
+  }
+  .patent-center-panel .white-panel .panel-title a.collapsed .down-circle:after {
+    top: .4rem;
+    right: .5rem;
+    transform: rotate(-45deg);
+  }
+  .patent-center-panel .white-panel .panel-title .link {
+    color: #2f88c4;
+  }
+  .patent-center-panel .white-panel .panel-collapse .panel-body {
+    border-top: none;
+  }
+  .patent-center-panel .white-panel .body-title {
+    font-size: 1rem;
+    color: #a6a6a6;
+  }
+  .patent-center-panel .white-panel .no-border {
+    margin-bottom: 0;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default {
+    margin-top: 1.5rem;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-heading {
+    padding: 0;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a {
+    padding-right: 3rem;
+    font-size: 1rem;
+    color: #404040;
+    position: relative;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a .sub-down-arrow {
+    position: relative;
+    top: -0.2rem;
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border: 1px solid #404040;
+    transform: rotate(45deg);
+    border-left: 0;
+    border-top: 0;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a:hover,
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-sub-title a.collapsed .sub-down-arrow {
+    top: -0.1rem;
+    transform: rotate(-45deg);
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body {
+    background: #f5f5f5;
+    border: none;
+    border-radius: .2rem;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body .col-xs-6 {
+    font-size: 1rem;
+    color: #8c8c8c;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body .col-xs-6 span {
+    padding: .2rem .5rem;
+  }
+  .patent-center-panel .white-panel .no-border .panel-default .panel-body .col-xs-6 span:hover {
+    cursor: pointer;
+    background: #2f88c6;
+    border-radius: .3rem;
+    color: #fff;
+  }
+  .patent-center-panel .subscribe-form,
+  .patent-center-panel .support-form {
+    margin-bottom: 1.5rem;
+    border: 1px solid #E4E4E4;
+    padding: 1rem;
+  }
+  .patent-center-panel .subscribe-form .form-group,
+  .patent-center-panel .support-form .form-group {
+    margin-bottom: 1rem;
+  }
+  .patent-center-panel .subscribe-form label,
+  .patent-center-panel .support-form label {
+    padding: 0;
+    text-align: right;
+  }
+  .patent-center-panel .subscribe-form .title,
+  .patent-center-panel .support-form .title {
+    padding-left: .5rem;
+    border-left: .3rem solid #2f88c4;
+    position: relative;
+  }
+  .patent-center-panel .subscribe-form .title:after,
+  .patent-center-panel .support-form .title:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #E4E4E4;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+  }
+  .patent-center-panel .subscribe-form .tips,
+  .patent-center-panel .support-form .tips {
+    font-size: 1.2rem;
+    color: #8c8c8c;
   }
   .patent-center-footer {
     height: 449px;

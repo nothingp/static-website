@@ -63,6 +63,67 @@ body {
     max-width: 1280px;
     margin: 50px auto;
   }
+  .video-center-panel .video-item {
+    margin-bottom: 1.5rem;
+  }
+  .video-center-panel .video-item .img-txt {
+    padding-left: 1.5rem;
+  }
+  .video-center-panel .video-item .txt-title {
+    padding: 0;
+    margin: 0;
+    font-size: 2.4rem;
+    color: #2f88c4;
+  }
+  .video-center-panel .video-item .txt-detail {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    color: #8c8c8c;
+  }
+  .video-center-panel .loading-btn {
+    font-size: 1.6rem;
+    color: #8c8c8c;
+  }
+  .video-center-panel .subscribe-form,
+  .video-center-panel .support-form {
+    margin-bottom: 1.5rem;
+    border: 1px solid #E4E4E4;
+    padding: 1rem;
+  }
+  .video-center-panel .subscribe-form .form-group,
+  .video-center-panel .support-form .form-group {
+    margin-bottom: 1rem;
+  }
+  .video-center-panel .subscribe-form label,
+  .video-center-panel .support-form label {
+    padding: 0;
+    text-align: right;
+  }
+  .video-center-panel .subscribe-form .title,
+  .video-center-panel .support-form .title {
+    padding-left: .5rem;
+    border-left: .3rem solid #2f88c4;
+    position: relative;
+    font-size: 2rem;
+  }
+  .video-center-panel .subscribe-form .title:after,
+  .video-center-panel .support-form .title:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #E4E4E4;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+  }
+  .video-center-panel .subscribe-form .tips,
+  .video-center-panel .support-form .tips {
+    margin: 35px 0;
+    font-size: 1.6rem;
+    color: #8c8c8c;
+  }
   .video-center-footer {
     height: 777px;
     background: #f5f5f5;
@@ -70,7 +131,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .video-center-navbar {
-    height: 50px;
+    height: 5rem;
   }
   .video-center-banner {
     padding: 0;
@@ -111,6 +172,76 @@ body {
   }
   .video-center-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
+  }
+  .video-center-panel {
+    padding: 1.5rem;
+  }
+  .video-center-panel .row {
+    padding: 0;
+    margin: 0;
+  }
+  .video-center-panel .row div {
+    padding: 0;
+    margin: 0;
+  }
+  .video-center-panel .row .video-item {
+    margin-bottom: 1.5rem;
+  }
+  .video-center-panel .row .video-item .img-txt {
+    padding-left: 1.5rem;
+  }
+  .video-center-panel .row .video-item .txt-title {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #404040;
+  }
+  .video-center-panel .row .video-item .txt-detail {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color: #808080;
+  }
+  .video-center-panel .row .btn-primary.btn-block {
+    font-size: 1.5rem;
+    color: #999;
+  }
+  .video-center-panel .row .subscribe-form,
+  .video-center-panel .row .support-form {
+    margin-bottom: 1.5rem;
+    border: 1px solid #E4E4E4;
+    padding: 1rem;
+  }
+  .video-center-panel .row .subscribe-form .form-group,
+  .video-center-panel .row .support-form .form-group {
+    margin-bottom: 1rem;
+  }
+  .video-center-panel .row .subscribe-form label,
+  .video-center-panel .row .support-form label {
+    padding: 0;
+    text-align: center;
+  }
+  .video-center-panel .row .subscribe-form .title,
+  .video-center-panel .row .support-form .title {
+    padding-left: .5rem;
+    border-left: .3rem solid #86af49;
+    position: relative;
+  }
+  .video-center-panel .row .subscribe-form .title:after,
+  .video-center-panel .row .support-form .title:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #E4E4E4;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+  }
+  .video-center-panel .row .subscribe-form .tips,
+  .video-center-panel .row .support-form .tips {
+    font-size: 1.2rem;
+    color: #8c8c8c;
   }
   .video-center-footer {
     height: 449px;
