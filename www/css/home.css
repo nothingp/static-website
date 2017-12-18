@@ -152,13 +152,11 @@ body {
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li {
     position: static;
-    width: 100%;
-    max-width: 118px;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
     padding: 0;
     text-align: center;
-    margin: 10px auto;
+    margin: 10px 20px;
     display: inline-block;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav .open > a > a:focus a:hover {
@@ -268,17 +266,23 @@ body {
     position: relative;
     top: 3px;
   }
-  .box-shadow-line .navbar .nothing-navbar-info > li a {
-    padding-top: 15px;
+  .box-shadow-line .navbar .nothing-navbar-info > li > a {
+    padding-top: 12px;
     padding-bottom: 0;
+    padding-left: 7px;
+    padding-right: 7px;
     color: #2f88c6;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: CiscoSans-ExtraLight, Arial, sans-serif;
   }
-  .box-shadow-line .navbar .nothing-navbar-info > li a:hover,
-  .box-shadow-line .navbar .nothing-navbar-info > li a:focus {
+  .box-shadow-line .navbar .nothing-navbar-info > li > a:hover,
+  .box-shadow-line .navbar .nothing-navbar-info > li > a:focus {
     background: none;
     text-decoration: underline;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info > li > a > img {
+    width: 15px;
+    height: 13px;
   }
   .box-shadow-line .navbar .nothing-navbar-info > li.line {
     position: relative;
@@ -292,6 +296,13 @@ body {
     width: 1px;
     height: 50%;
     background: #2f88c6;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu {
+    font-size: 1.2rem;
+    min-width: 85px;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu > li:hover {
+    border-left: 5px solid #2f88c6;
   }
   .box-shadow-line .navbar-1280 {
     max-width: 1280px;
@@ -773,6 +784,14 @@ body {
     right: calc((100% - 1280px)/2);
     right: -moz-calc((100% - 1280px)/2);
     right: -webkit-calc((100% - 1280px)/2);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 992px) {
+  .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
+    padding: 0;
+    text-align: center;
+    margin: 10px 35px;
+    display: inline-block;
   }
 }
 @media screen and (max-width: 767px) {

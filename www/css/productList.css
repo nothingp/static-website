@@ -59,64 +59,64 @@ body {
   .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
   }
-  .productList-content {
+  .firmwareUpgrades-content {
     max-width: 1280px;
     margin: 50px auto;
   }
-  .productList-content .firmwareUpgrades-content-left {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left {
     padding-left: 0;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-header h3 {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-header h3 {
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 0px;
     color: #333333;
     margin-bottom: 41px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-header p {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-header p {
     font-size: 18px;
     letter-spacing: 0px;
     line-height: 30px;
     color: #666666;
     margin-bottom: 90px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-title h3 {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-title h3 {
     font-size: 24px;
     font-weight: normal;
     letter-spacing: 0px;
     color: #333333;
     margin-bottom: 60px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search {
     background: #eeeeee;
     padding: 20px 100px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search input {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search input {
     padding-left: 50px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search button {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search button {
     background: #2f88c4;
     color: #fff;
     width: 100px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select {
     margin-top: 16px;
     margin-bottom: 2px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son .form-group {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son .form-group {
     margin-bottom: 0;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:first-child {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:first-child {
     padding-left: 0;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:last-child {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:last-child {
     padding-right: 0;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table {
     border-bottom: 1px solid #dcdcdc;
     margin-bottom: 0;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table td {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table td {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 16px;
@@ -124,13 +124,13 @@ body {
     font-style: normal;
     color: #666666;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead {
     background: #eeeeee;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead tr {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead tr {
     line-height: 61px;
   }
-  .productList-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead tr th {
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table thead tr th {
     line-height: 61px;
     padding: 0 20px;
     font-size: 16px;
@@ -139,13 +139,13 @@ body {
     letter-spacing: 0px;
     color: #666666;
   }
-  .productList-content .firmwareUpgrades-content-right .subscribe-form {
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form {
     border: 1px solid #dcdcdc;
     padding: 15px;
     margin-bottom: 30px;
     margin-top: 10px;
   }
-  .productList-content .firmwareUpgrades-content-right .subscribe-form .title {
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title {
     font-size: 20px;
     font-weight: normal;
     font-style: normal;
@@ -155,7 +155,7 @@ body {
     padding-left: 10px;
     position: relative;
   }
-  .productList-content .firmwareUpgrades-content-right .subscribe-form .title:before {
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title:before {
     display: block;
     content: '';
     width: 3px;
@@ -165,7 +165,7 @@ body {
     left: 0;
     top: 5px;
   }
-  .productList-content .firmwareUpgrades-content-right .subscribe-form .tips {
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .tips {
     font-size: 16px;
     line-height: 18px;
     color: #999999;
@@ -274,42 +274,5 @@ body {
   .subscriptionCenter-footer {
     height: 777px;
     background: #f5f5f5;
-  }
-}
-@media screen and (max-width: 767px) {
-  .subscriptionCenter-tabBar {
-    background: #2f88c4;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default {
-    background: #2f88c4;
-    border: none;
-    margin-bottom: 0;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav {
-    margin-bottom: 0;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
-    color: #fff;
-    background: #2f88c4;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
-    color: #a4c7de;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown {
-    text-align: center;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-toggle {
-    color: #fff;
-    background: #2f88c4;
-    font-size: 1.8rem;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-toggle span {
-    font-size: 1.4rem;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-menu li a {
-    color: #fff;
-  }
-  .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
-    background: #2f88c4;
   }
 }

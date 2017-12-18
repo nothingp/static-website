@@ -150,13 +150,22 @@
                     width: 100%;
                     > li {
                         position: static;
-                        width: 100%;
-                        max-width: 118px;
                         >a{
                             padding: 0;
                             text-align: center;
-                            margin: 10px auto;
+                            margin: 10px 20px;
                             display: inline-block;
+
+                        }
+
+                        @media (min-width: @screen-md-min) {
+                            >a{
+                                padding: 0;
+                                text-align: center;
+                                margin: 10px 35px;
+                                display: inline-block;
+
+                            }
                         }
                     }
 
@@ -180,7 +189,6 @@
                             background: @base-color;
                             bottom: 0;
                             content: "";
-
                             height: 2px;
                             position: absolute;
                             width: 100%;
@@ -295,17 +303,24 @@
                     top: 3px;
                 }
                 > li {
-                    a {
-                        padding-top: 15px;
+                    >a {
+                        padding-top: 12px;
                         padding-bottom: 0;
+                        padding-left: 7px;
+                        padding-right: 7px;
                         color: @base-color;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-family: @font-sub-family;
                         &:hover, &:focus {
                             background: none;
                             text-decoration: underline;
                         }
+                        >img{
+                            width: 15px;
+                            height: 13px;
+                        }
                     }
+
                     &.line {
                         position: relative;
                         &:after {
@@ -317,6 +332,13 @@
                             width: 1px;
                             height: 50%;
                             background: @base-color;
+                        }
+                    }
+                    .dropdown-menu{
+                        font-size: 1.2rem;
+                        min-width: 85px;
+                        >li:hover{
+                            border-left: 5px solid @base-color;
                         }
                     }
                 }
