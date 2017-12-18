@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>产品列表</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/productList.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid subscriptionCenter">
+    <div class="subscriptionCenter-navbar">
+    </div>
+
+    <div class="subscriptionCenter-tabBar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+
+                <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+                <ul class="nav navbar-nav">
+                    <li class="active hidden-xs"><a href="#">NEWS <span class="sr-only">(current)</span></a></li>
+                    <li class="hidden-xs"><a href="#">Company News</a></li>
+                    <li class="hidden-xs"><a href="#">Events</a></li>
+                    <li class="hidden-xs"><a href="#">Newsletters</a></li>
+                    <li class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS  <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">NEWS</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Company News</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Events</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Newsletters</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- </div> -->
+            </div>
+        </nav>
+    </div>
+
+    <div class="subscriptionCenter-banner">
+        <img src="./images/subscriptionCenter/firmware-banner.png" alt="." class="hidden-xs img-responsive">
+        <img src="./images/subscriptionCenter/firewareUpgrades-banner2.png" alt="." class="hidden-sm hidden-md hidden-lg img-responsive">
+    </div>
+
+    <div class="productList-content row">
+
+        <div class="productList-content-header">
+            <div class="productList-content-header-title">
+                <h3>Fliter</h3>
+            </div>
+            <div class="productList-content-header-search">
+                
+            </div>
+        </div>
+
+        <div class="firmwareUpgrades-content-left col-xs-12 col-sm-12">
+            <div class="firmwareUpgrades-content-left-form">
+                <div class="firmwareUpgrades-content-left-form-select firmwareUpgrades-content-left-form-search clearfix">
+                    <div class="firmwareUpgrades-content-left-form-select-son col-xs-4">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="firmwareUpgrades-content-left-form-select-son col-xs-4">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="firmwareUpgrades-content-left-form-select-son col-xs-4">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="firmwareUpgrades-content-left-form-table">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Printer Model</th>
+                            <th>Region</th>
+                            <th>APEX Code</th>
+                            <th>OEM Code</th>
+                            <th>Firmware Version</th>
+                            <th>Dates</th>
+                            <th>Pass/Fail</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>MFC-J680DW</td>
+                            <td>US</td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>H</td>
+                            <td>2017.2.9</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>MFC-J680DW</td>
+                            <td>US</td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>H</td>
+                            <td>2017.2.9</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>MFC-J680DW</td>
+                            <td>US</td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>H</td>
+                            <td>2017.2.9</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>MFC-J680DW</td>
+                            <td>US</td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>H</td>
+                            <td>2017.2.9</td>
+                            <td></td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="firmwareUpgrades-content-left-form-table-page">
+                        <div class="col-sm-6"></div>
+                        <div class="firmwareUpgrades-content-left-form-table-page-content col-sm-6">
+                            <div class="firmwareUpgrades-content-left-form-table-page-content-num col-sm-4">
+                                <span>DISPLAY:</span>
+                                <select name="num" id="num"></select>
+                            </div>
+                            <div class="firmwareUpgrades-content-left-form-table-page-content-pages col-sm-4"></div>
+                            <div class="firmwareUpgrades-content-left-form-table-page-content-count col-sm-4">
+                                <span>4</span>RESULTS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="subscriptionCenter-footer">
+
+    </div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>
