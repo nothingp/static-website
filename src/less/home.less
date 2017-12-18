@@ -228,6 +228,9 @@
 
                                 > a {
                                     color: @base-color;
+                                  .glyphicon {
+                                    display: inherit;
+                                  }
                                 }
                             }
 
@@ -235,6 +238,12 @@
                                 color: #595959;
                                 text-decoration: none;
                                 font-size: 1.6rem;
+
+                              .glyphicon {
+                                top: 12px;
+                                float: right;
+                                display: none;
+                              }
                             }
 
                             > p {
@@ -987,11 +996,11 @@
                         }
                         .dropdown-submenu {
                             > a {
-                                width: 100%;
-                                display: block;
-                                line-height: 1.8rem;
-                                padding: .5rem 1.5rem;
-                                background-color: #eee;
+                              width: 100%;
+                              display: block;
+                              line-height: 1.8rem;
+                              padding: .5rem 1.5rem;
+                              background-color: #eee;
                             }
                             font-size: 1.6rem;
                             .dropdown-3rdmenu {

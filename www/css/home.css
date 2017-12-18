@@ -210,10 +210,18 @@ body {
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover > a {
     color: #2f88c6;
   }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover > a .glyphicon {
+    display: inherit;
+  }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > a {
     color: #595959;
     text-decoration: none;
     font-size: 1.6rem;
+  }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > a .glyphicon {
+    top: 12px;
+    float: right;
+    display: none;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > p {
     font-size: 1.2rem;
