@@ -147,11 +147,16 @@
                 }
                 .nav {
                     position: static;
+                    width: 100%;
                     > li {
                         position: static;
+                        width: 100%;
+                        max-width: 118px;
                         >a{
                             padding: 0;
-                            margin: 10px 15px;
+                            text-align: center;
+                            margin: 10px auto;
+                            display: inline-block;
                         }
                     }
 
@@ -211,15 +216,21 @@
                                 .dropdown-3rdmenu {
                                     display: block;
                                 }
+
+                                > a {
+                                    color: @base-color;
+                                }
                             }
 
                             > a {
+                                color: #595959;
                                 text-decoration: none;
                                 font-size: 1.6rem;
                             }
 
                             > p {
                                 font-size: 1.2rem;
+                                color: #595959;
                             }
 
                             .dropdown-3rdmenu {
@@ -236,6 +247,11 @@
                                     list-style-type: none;
                                     > a {
                                         font-size: 1.4rem;
+                                        color: #595959;
+                                    }
+                                    > a:hover{
+                                        color: @base-color;
+                                        text-decoration : none;
                                     }
 
                                 }
@@ -243,6 +259,9 @@
 
                             .dropdown-3rdmenu-active {
                                 display: block;
+                                > a {
+                                    color: @base-color;
+                                }
                             }
                         }
 

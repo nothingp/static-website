@@ -148,13 +148,18 @@ body {
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav {
     position: static;
+    width: 100%;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li {
     position: static;
+    width: 100%;
+    max-width: 118px;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
     padding: 0;
-    margin: 10px 15px;
+    text-align: center;
+    margin: 10px auto;
+    display: inline-block;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav .open > a > a:focus a:hover {
     background-color: #ffffff;
@@ -202,12 +207,17 @@ body {
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover .dropdown-3rdmenu {
     display: block;
   }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover > a {
+    color: #2f88c6;
+  }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > a {
+    color: #595959;
     text-decoration: none;
     font-size: 1.6rem;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > p {
     font-size: 1.2rem;
+    color: #595959;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu {
     position: absolute;
@@ -225,9 +235,17 @@ body {
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu > li > a {
     font-size: 1.4rem;
+    color: #595959;
+  }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu > li > a:hover {
+    color: #2f88c6;
+    text-decoration: none;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu-active {
     display: block;
+  }
+  .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu-active > a {
+    color: #2f88c6;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-menu-image p {
     margin-top: 12px;
