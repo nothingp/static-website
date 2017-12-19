@@ -118,10 +118,10 @@
     <div class="productList-content row">
 
         <div class="productList-content-header">
-            <div class="productList-content-header-title">
+            <div class="productList-content-header-title hidden-xs">
                 <h3>Fliter</h3>
             </div>
-            <div class="productList-content-header-search clearfix">
+            <div class="productList-content-header-search clearfix hidden-xs">
                 <div class="col-sm-6 nopaddingleft">
                     <div class="col-sm-6 nopaddingleft">
                         <div class="form-group">
@@ -152,6 +152,41 @@
                             <span class="input-group-btn hidden-xs">
                                 <button class="btn btn-default" type="button"> search </button>
                             </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-mobile hidden-sm hidden-md hidden-lg">
+                <div class="filter-mobile-title">
+                    <h3>Fliter  <span class="glyphicon glyphicon-menu-down"></span></h3>
+                </div>
+                <div class="filter-mobile-content">
+                    <div class="filter-mobile-content-list">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-mobile-content-list">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-mobile-content-list">
+                        <div class="input-group clearfix col-xs-12">
+                            <div class="filter-mobile-content-list-search clearfix">
+                                <span class="glyphicon glyphicon-search searcn-icon"></span>
+                                <form action="" class="clearfix">
+                                    <input type="text" class="form-control" placeholder="Enter Printer Model/Apex Code/OEM Code/Firmware Version">
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -556,7 +591,9 @@
 </div>
 
 <script>
-
+    $('.filter-mobile-title').click(function(){
+        $('.filter-mobile-content').toggle();
+    });
 </script>
 </body>
 </html>
