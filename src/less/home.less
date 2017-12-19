@@ -19,7 +19,6 @@
     //菜单
     .box-shadow-line {
         position: relative;
-        box-shadow: inset 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
 
         .dropdown.search-top-icon {
             position: static;
@@ -89,15 +88,16 @@
             right: 0;
             top: 56px;
             a {
-                width: 22px;
-                height: 22px;
+                width: 28px;
+                height: 28px;
                 text-align: center;
                 padding: 2px 0;
+                background: #2f88c6;
                 line-height: 1.428571429;
-                border-radius: 11px;
+                border-radius: 14px;
                 .glyphicon {
-                    font-size: 1.2rem;
-                    top: -1px;
+                    font-size: 1.4rem;
+                    top: 3px;
                 }
             }
 
@@ -105,6 +105,10 @@
                 background: red;
                 position: absolute;
                 left: 0;
+            }
+
+            .btn-primary{
+                border: 0;
             }
         }
 
@@ -143,26 +147,56 @@
                 }
                 .nav {
                     position: static;
+                    width: 100%;
                     > li {
                         position: static;
+                        >a{
+                            padding: 0;
+                            text-align: center;
+                            margin: 10px 20px;
+                            display: inline-block;
+
+                        }
+
+                        @media (min-width: @screen-md-min) {
+                            >a{
+                                padding: 0;
+                                text-align: center;
+                                margin: 10px 35px;
+                                display: inline-block;
+
+                            }
+                        }
+                    }
+
+                    .open{
+                        >a >a:focus >a:hover{
+                            background-color: #ffffff;
+                        }
                     }
                 }
                 font-size: 1.4rem;
                 .dropdown {
                     &:hover {
+                        > a{
+                            position: relative;
+                            color:  @base-color;
+                        }
+                        > a:hover a:active a:focus a:active{
+                            background-color: #ffffff;
+                        }
                         > a:before {
-                            border-bottom: 2px solid @base-color;
+                            background: @base-color;
                             bottom: 0;
                             content: "";
-
-                            left: 0;
-                            margin: 0;
+                            height: 2px;
                             position: absolute;
                             width: 100%;
                         }
                     }
 
                     .dropdown-menu {
+                        background-color: @base-background-color;
                         position: absolute;
                         padding: 30px 0;
                         top: 109px;
@@ -174,6 +208,7 @@
                         .dropdown-menu-title {
                             font-size: 2.4rem;
                             text-align: right;
+                            color: @base-font-color-lighter;
                         }
 
                         .dropdown-submenu {
@@ -190,20 +225,35 @@
                                 .dropdown-3rdmenu {
                                     display: block;
                                 }
+
+                                > a {
+                                    color: @base-color;
+                                  .glyphicon {
+                                    display: inherit;
+                                  }
+                                }
                             }
 
                             > a {
+                                color: #595959;
                                 text-decoration: none;
                                 font-size: 1.6rem;
+
+                              .glyphicon {
+                                top: 12px;
+                                float: right;
+                                display: none;
+                              }
                             }
 
                             > p {
                                 font-size: 1.2rem;
+                                color: #595959;
                             }
 
                             .dropdown-3rdmenu {
                                 position: absolute;
-                                background: #fff;
+                                background: @base-background-color;
                                 display: none;
                                 width: 100%;
                                 top: -3px;
@@ -215,6 +265,11 @@
                                     list-style-type: none;
                                     > a {
                                         font-size: 1.4rem;
+                                        color: #595959;
+                                    }
+                                    > a:hover{
+                                        color: @base-color;
+                                        text-decoration : none;
                                     }
 
                                 }
@@ -222,6 +277,9 @@
 
                             .dropdown-3rdmenu-active {
                                 display: block;
+                                > a {
+                                    color: @base-color;
+                                }
                             }
                         }
 
@@ -230,6 +288,7 @@
                                 margin-top: 12px;
                                 font-size: 1.2rem;
                                 line-height: 2.4rem;
+                                max-width: 400px;
                             }
                         }
                     }
@@ -255,17 +314,24 @@
                     top: 3px;
                 }
                 > li {
-                    a {
-                        padding-top: 15px;
+                    >a {
+                        padding-top: 12px;
                         padding-bottom: 0;
+                        padding-left: 7px;
+                        padding-right: 7px;
                         color: @base-color;
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                         font-family: @font-sub-family;
                         &:hover, &:focus {
                             background: none;
                             text-decoration: underline;
                         }
+                        >img{
+                            width: 15px;
+                            height: 13px;
+                        }
                     }
+
                     &.line {
                         position: relative;
                         &:after {
@@ -279,6 +345,13 @@
                             background: @base-color;
                         }
                     }
+                    .dropdown-menu{
+                        font-size: 1.2rem;
+                        min-width: 85px;
+                        >li:hover{
+                            border-left: 5px solid @base-color;
+                        }
+                    }
                 }
             }
         }
@@ -286,6 +359,7 @@
         .navbar-1280 {
             max-width: 1280px;
             margin: 0 auto;
+
         }
     }
 
@@ -922,11 +996,11 @@
                         }
                         .dropdown-submenu {
                             > a {
-                                width: 100%;
-                                display: block;
-                                line-height: 1.8rem;
-                                padding: .5rem 1.5rem;
-                                background-color: #eee;
+                              width: 100%;
+                              display: block;
+                              line-height: 1.8rem;
+                              padding: .5rem 1.5rem;
+                              background-color: #eee;
                             }
                             font-size: 1.6rem;
                             .dropdown-3rdmenu {

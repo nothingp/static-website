@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>产品详情</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/productDetail.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</head>
+
+<body>
+<div class="container-fluid product-detail">
+    <div class="product-detail-navbar">
+    </div>
+
+    <div class="product-detail-tabBar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active hidden-xs"><a href="#">PRODUCTS <span class="sr-only">(current)</span></a></li>
+                    <li class="hidden-xs"><a href="#">New Products</a></li>
+                    <li class="hidden-xs"><a href="#">Ink Cartridge Chips</a></li>
+                    <li class="hidden-xs"><a href="#">Toner Cartridge Chips</a></li>
+                    <li class="hidden-xs"><a href="#">Accessories</a></li>
+                    <li class="hidden-xs"><a href="#">Chip Testers</a></li>
+                    <li class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">PRODUCTS <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">New Products</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Ink Cartridge Chips</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Toner Cartridge Chips</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Chip Testers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="product-detail-panel content-padding">
+        <ul class="bread-tap">
+            <li class="main-tap"><a href="#">Ink Cartridge Chips</a></li>
+            <li class="hidden-xs"><a href="#">AJE-T364BK</a></li>
+        </ul>
+
+        <div class="row img-show">
+            <div class="col-xs-12 col-sm-4 left-img">
+                <img src="./images/productDetail/img-show.png" class="img-responsive">
+            </div>
+            <div class="col-xs-12 col-sm-8 right-form">
+                <div class="row">
+                    <div class="col-xs-5">Apex Code</div>
+                    <div class="col-xs-7">AJE-T364BK</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5">OEM Code</div>
+                    <div class="col-xs-7">T3641/T364 2/T3643/T3644</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5">Printer Models (for use in)</div>
+                    <div class="col-xs-7 hidden-sm hidden-md hidden-lg">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </div>
+                    <div class="col-xs-7 hidden-xs">Epson Expression Home XP-245/442 Canon IMAGE ...</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5">Region</div>
+                    <div class="col-xs-7">KOR</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5">Color</div>
+                    <div class="col-xs-7">BK</div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-5">Quantity Added</div>
+                    <div class="col-xs-7">
+                        <div class="count-handle">
+                            <img src="./images/productDetail/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/productDetail/add.png" class="add">
+                            <a class="btn btn-primary">
+                                <img src="./images/productDetail/cart.png" alt=""> Add to Order
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row related-product">
+            <h3 class="main-title">Related Products</h3>
+            <div class="col-xs-4 col-sm-2">
+                <img src="./images/productDetail/img-tool-h5.png" class="img-responsive hidden-sm hidden-md hidden-lg">
+                <img src="./images/productDetail/img-tool.png" class="img-responsive hidden-xs">
+                <p class="text-center">AJE-T364C</p>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+                <img src="./images/productDetail/img-tool-h5.png" class="img-responsive hidden-sm hidden-md hidden-lg">
+                <img src="./images/productDetail/img-tool.png" class="img-responsive hidden-xs">
+                <p class="text-center">AJE-T364M</p>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+                <img src="./images/productDetail/img-tool-h5.png" class="img-responsive hidden-sm hidden-md hidden-lg">
+                <img src="./images/productDetail/img-tool.png" class="img-responsive hidden-xs">
+                <p class="text-center">AJE-T364Y</p>
+            </div>
+        </div>
+
+        <div class="row installation-method">
+            <h3 class="main-title">Installation Method</h3>
+            <div class="sub-title">
+                Installation Method of replacement chips for Epson VI series (Vertical Structure Cartridges)
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <img src="./images/productDetail/tool1-h5.png" class="img-responsive hidden-sm hidden-md hidden-lg">
+                <img src="./images/productDetail/tool1.png" class="img-responsive hidden-xs">
+                <p>
+                    1. Use a cutter to renomove the OEM chip but please do not break the location pillars on the
+                    cartridge.
+                </p>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <img src="./images/productDetail/tool2-h5.png" class="img-responsive hidden-sm hidden-md hidden-lg">
+                <img src="./images/productDetail/tool2.png" class="img-responsive hidden-xs">
+                <p>2. OEM chip is removed.</p>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <img src="./images/productDetail/tool3-h5.png" class="img-responsive hidden-sm hidden-md hidden-lg">
+                <img src="./images/productDetail/tool3.png" class="img-responsive hidden-xs">
+                <p>3. Fasten Apex’s chip assen shown above (throughadhes adhesive or hot melt glue).</p>
+            </div>
+        </div>
+
+        <div class="row technical-support">
+            <h3 class="main-title">Technical Support</h3>
+
+            <ul>
+                <li>
+                    Description for Non-OEM Information Replacement Chip Printing Notice.
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </li>
+                <li>
+                    How to Distinguish the T29 Series Cartridge for Europe or Australia Region.
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </li>
+                <li>
+                    How to Match T29 or T410 Cartridges and Printer Regions Correctly.
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row description">
+            <h3 class="main-title">Description</h3>
+
+            <div class="phone-scroll">
+
+                <div class="width-fix">
+                    <div class="row header">
+                        <div class="col-xs-2">
+                            Abbreviation
+                        </div>
+                        <div class="col-xs-2">
+                            Regions
+                        </div>
+                        <div class="col-xs-2">
+                            Abbreviation
+                        </div>
+                        <div class="col-xs-2">
+                            Regions
+                        </div>
+                        <div class="col-xs-2">
+                            Abbreviation
+                        </div>
+                        <div class="col-xs-2">
+                            Regions
+                        </div>
+                    </div>
+
+                    <div class="row title text-center">
+                        World Wide
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            WW
+                        </div>
+                        <div class="col-xs-2">
+                            World Wide
+                        </div>
+                        <div class="col-xs-2">
+                            WW(ex.JP)
+                        </div>
+                        <div class="col-xs-2">
+                            World Wide (except Japan)
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                    </div>
+
+                    <div class="row title text-center">
+                        Europe & America
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            NA
+                        </div>
+                        <div class="col-xs-2">
+                            North America
+                        </div>
+                        <div class="col-xs-2">
+                            SA
+                        </div>
+                        <div class="col-xs-2">
+                            South America
+                        </div>
+                        <div class="col-xs-2">
+                            LA
+                        </div>
+                        <div class="col-xs-2">
+                            Latin America
+                        </div>
+
+                        <div class="col-xs-2">
+                            US/USA/AME
+                        </div>
+                        <div class="col-xs-2">
+                            The United States/America
+                        </div>
+                        <div class="col-xs-2">
+                            EXP
+                        </div>
+                        <div class="col-xs-2">
+                            Europe and America
+                        </div>
+                        <div class="col-xs-2">
+                            EUR/EU
+                        </div>
+                        <div class="col-xs-2">
+                            Europe
+                        </div>
+
+                        <div class="col-xs-2">
+                            EEU
+                        </div>
+                        <div class="col-xs-2">
+                            East Europe
+                        </div>
+                        <div class="col-xs-2">
+                            WEU
+                        </div>
+                        <div class="col-xs-2">
+                            West Europe
+                        </div>
+                        <div class="col-xs-2">
+                            UK
+                        </div>
+                        <div class="col-xs-2">
+                            United Kingdom
+                        </div>
+
+                        <div class="col-xs-2">
+                            CIS/RUS
+                        </div>
+                        <div class="col-xs-2">
+                            Russia
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+
+                    </div>
+
+                    <div class="row title text-center">
+                        Oceania
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            ANZ
+                        </div>
+                        <div class="col-xs-2">
+                            Australia/New Zealand
+                        </div>
+                        <div class="col-xs-2">
+                            AU/AUS
+                        </div>
+                        <div class="col-xs-2">
+                            Australia
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                        <div class="col-xs-2">
+                            -
+                        </div>
+                    </div>
+
+                    <div class="row title text-center">
+                        Middle East & Africa
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            MEA
+                        </div>
+                        <div class="col-xs-2">
+                            Middle East/Africa
+                        </div>
+                        <div class="col-xs-2">
+                            ME
+                        </div>
+                        <div class="col-xs-2">
+                            Middle East
+                        </div>
+                        <div class="col-xs-2">
+                            ME
+                        </div>
+                        <div class="col-xs-2">
+                            Middle East
+                        </div>
+                    </div>
+
+                    <div class="row title text-center">
+                        Asia
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                            AP
+                        </div>
+                        <div class="col-xs-2">
+                            Asia-Pacific
+                        </div>
+                        <div class="col-xs-2">
+                            CHN
+                        </div>
+                        <div class="col-xs-2">
+                            China
+                        </div>
+                        <div class="col-xs-2">
+                            JP/JPN
+                        </div>
+                        <div class="col-xs-2">
+                            Japan
+                        </div>
+
+                        <div class="col-xs-2">
+                            IND
+                        </div>
+                        <div class="col-xs-2">
+                            India
+                        </div>
+                        <div class="col-xs-2">
+                            KOR/DOM
+                        </div>
+                        <div class="col-xs-2">
+                            Korea
+                        </div>
+                        <div class="col-xs-2">
+                            Korea
+                        </div>
+                        <div class="col-xs-2">
+                            Government
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="product-detail-footer">
+    </div>
+</div>
+</body>
+</html>

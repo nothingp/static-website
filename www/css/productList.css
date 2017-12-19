@@ -1,0 +1,496 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #f2f2f2;
+  color: #333333;
+  min-width: 320px;
+  font-family: CiscoSans, Arial, sans-serif;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.content-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscriptionCenter-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel {
+    height: 280px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel img {
+    width: 100%;
+    height: 280px;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators {
+    left: 90%;
+    bottom: 10px;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators li {
+    background: #fff;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators .active {
+    width: 24px;
+    height: 12px;
+    border-radius: 6px;
+  }
+  .subscriptionCenter-tabBar {
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default {
+    padding: 0 240px;
+    background: #2f88c4;
+    border: none;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
+    color: #fff;
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
+    color: #a4c7de;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
+    background: #2f88c4;
+  }
+  .productList-content {
+    max-width: 1280px;
+    margin: 50px auto;
+  }
+  .productList-content .productList-content-header {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .productList-content .productList-content-header h3 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  .productList-content .productList-content-header .productList-content-header-search {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .nopaddingleft {
+    padding-left: 0;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right .searcn-icon {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    color: #666;
+    z-index: 1111;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right input {
+    padding-left: 30px;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right button {
+    background: #2f88c4;
+    color: #fff;
+    width: 100px;
+  }
+  .productList-content .productList-content-left {
+    padding: 0;
+  }
+  .productList-content .productList-content-left .productList-content-left-header h3 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 41px;
+  }
+  .productList-content .productList-content-left .productList-content-left-header p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 30px;
+    color: #666666;
+    margin-bottom: 90px;
+  }
+  .productList-content .productList-content-left .productList-content-left-title h3 {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 60px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table {
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td img {
+    width: 40px;
+    height: 40px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .circle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .blue {
+    background: #01b0f1;
+    position: relative;
+    top: 6px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models p {
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num .num-dowm {
+    background: #f5f5f5;
+    color: #969696;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num .num-up {
+    background: #2f87c4;
+    color: #fff;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num input {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num button {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .cart-button {
+    width: 34px;
+    height: 34px;
+    background: url("../images/subscriptionCenter/cart-icon.jpg") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead {
+    background: #eeeeee;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr {
+    line-height: 61px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr th {
+    line-height: 61px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #666666;
+    text-align: center;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content {
+    padding: 20px 0;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num {
+    padding: 0;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num span {
+    font-size: 14px;
+    color: #666666;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num select {
+    display: inline-block;
+    width: 50%;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages {
+    padding: 0;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .nopadding {
+    padding: 0;
+    padding-top: 5px;
+    margin-left: 2px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width15 {
+    width: 24px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width25 {
+    width: 25%;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages input {
+    width: 100%;
+    height: 24px;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .showpages span {
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+  }
+  .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-count {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #666666;
+  }
+  .subscriptionCenter-list {
+    max-width: 1280px;
+    margin: 50px auto;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-title h4 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333333;
+    margin: 40px 0;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content {
+    transition: 2s;
+    height: 350px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap {
+    padding: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    border: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left {
+    height: 325px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left img {
+    width: 100%;
+    height: auto;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title {
+    padding-top: 35px;
+    padding-bottom: 22px;
+    border-bottom: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title h4 {
+    font-size: 26px;
+    letter-spacing: 0px;
+    color: #333333;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-title p {
+    font-size: 16px;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #595959;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 i {
+    display: inline-block;
+    width: 24px;
+    height: 32px;
+    background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content p {
+    font-size: 12px;
+    color: #8c8c8c;
+    margin-bottom: 20px;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content .newslist-btn {
+    width: 100%;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .subscriptionCenter-list .show-all-box {
+    height: auto;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button {
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    bottom: -25px;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button {
+    width: 100%;
+    height: 100%;
+    background-color: #dcdcdc;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-button button span {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+  }
+  .subscriptionCenter-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscriptionCenter-navbar {
+    height: 50px;
+  }
+  .subscriptionCenter-footer {
+    height: 449px;
+    background: #f5f5f5;
+  }
+  .subscriptionCenter-tabBar {
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default {
+    background: #2f88c4;
+    border: none;
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav {
+    margin-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
+    color: #fff;
+    background: #2f88c4;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
+    color: #a4c7de;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown {
+    text-align: center;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-toggle {
+    color: #fff;
+    background: #2f88c4;
+    font-size: 1.8rem;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-toggle span {
+    font-size: 1.4rem;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .dropdown .dropdown-menu li a {
+    color: #fff;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
+    background: #2f88c4;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators {
+    bottom: -1rem;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators li {
+    background: #fff;
+    width: .6rem;
+    height: .6rem;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators .active {
+    width: 1.2rem;
+    height: .6rem;
+    border-radius: 6px;
+  }
+  .productList-content-left-form-table {
+    display: none;
+  }
+  .productList-content {
+    margin: 0;
+  }
+  .filter-mobile .filter-mobile-title {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .filter-mobile .filter-mobile-title h3 {
+    line-height: 5rem;
+    text-align: center;
+    color: #333;
+    background: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .filter-mobile .filter-mobile-title h3 span {
+    font-size: 1.4rem;
+  }
+  .filter-mobile .filter-mobile-content {
+    display: none;
+    padding: 2rem;
+  }
+  .filter-mobile .filter-mobile-content .filter-mobile-content-list-search {
+    position: relative;
+  }
+  .filter-mobile .filter-mobile-content .filter-mobile-content-list-search .input-group {
+    width: 100%;
+  }
+  .filter-mobile .filter-mobile-content .filter-mobile-content-list-search .searcn-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #666;
+    z-index: 1111;
+  }
+  .filter-mobile .filter-mobile-content .filter-mobile-content-list-search input {
+    padding-left: 3rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
