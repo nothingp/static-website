@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <title>新闻中心</title>
+    <title>校园招聘</title>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,7 +30,7 @@
     </script>
 
     <!-- Custom Theme Style -->
-    <link href="css/newsCenter.css" rel="stylesheet">
+    <link href="css/campusRecruitment.css" rel="stylesheet">
 </head>
 
 <body>
@@ -365,16 +365,19 @@
                     </button>
                     <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu1">
                         <li role="presentation">
-                            <a role="menuitem" tabindex="0" href="#">NEWS</a>
+                            <a role="menuitem" tabindex="-1" href="#">NEWS</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="1" href="#">Company News</a>
+                            <a role="menuitem" tabindex="-1" href="#">Aipaike impression</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="2" href="#">Events</a>
+                            <a role="menuitem" tabindex="-1" href="#">Social recruitment</a>
                         </li>
                         <li role="presentation">
-                            <a role="menuitem" tabindex="3" href="#">Newsletters</a>
+                            <a role="menuitem" tabindex="-1" href="#">Aipaike growth</a>
+                        </li>
+                        <li role="presentation">
+                            <a role="menuitem" tabindex="-1" href="#">Aipaike life</a>
                         </li>
                     </ul>
                 </div>
@@ -383,225 +386,284 @@
     </div>
     <!--bannerImg-->
     <div class="nothing-banner-img">
-        <img src="./images/news/banner.png" alt=""/>
-    </div>
-    <!--按钮列表-->
-    <div class="nothing-btn-list">
-        <div class="btn-wrap">
-            <button type="button" class="btn btn-default btn-active">All</button>
-            <button type="button" class="btn btn-default">Recent</button>
-            <button type="button" class="btn btn-default">Must Read</button>
-            <div class="dropdown">
-                <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
-                        data-toggle="dropdown">
-                    All
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu2">
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="0" href="#">All</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="1" href="#">Recent</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="2" href="#">Must Read</a>
-                    </li>
-                </ul>
+        <div class="banner-info">
+            <div class="info-img">
+                <img src="./images/aboutUs/newTalent.png"/>
             </div>
+            <div class="info-detail">
+                <p class="info-title">Core starting point·New future</p>
+                <p class="info-content1">The world is like this, the opportunity to fight for their own!</p>
+                <p class="info-content2">Aipaike will work together with you to embrace the core platform, create the future</p>
+            </div>
+        </div>
+    </div>
+
+    <!--职位列表-->
+    <div class="nothing-job-list">
+        <div class="list-head">
+            <div class="head-lf col-md-3 hidden-xs hidden-sm">
+                <img src="./images/aboutUs/campus1.png" alt=""/>
+            </div>
+            <div class="head-md col-md-6">
+                <img src="./images/aboutUs/campus2.png" alt=""/>
+            </div>
+            <div class="head-rg col-md-3 hidden-xs hidden-sm">
+                <img src="./images/aboutUs/campus3.png" alt=""/>
+            </div>
+        </div>
+        <div class="list-table">
+            <ul class="list-item">
+                <li>
+                    <span class="text-dot col-md-8">
+                        Aipaike notice 2017 campus recruitment open interview city changes
+                    </span>
+                    <span class="col-md-4 hidden-xs hidden-sm">
+                        Oct 10, 2016
+                    </span>
+                </li>
+                <li>
+                    <span class="text-dot col-md-8">
+                        Aipaike 2017 campus recruitment online written notice
+                    </span>
+                    <span class="col-md-4 hidden-xs hidden-sm">
+                        Sept 9, 2016
+                    </span>
+                </li>
+                <li>
+                    <span class="text-dot col-md-8">
+                        About product /HR post written instructions
+                    </span>
+                    <span class="col-md-4 hidden-xs hidden-sm">
+                        Aug 20, 2016
+                    </span>
+                </li>
+                <li>
+                    <span class="text-dot col-md-8">
+                        Partial job recruitment, urban information adjustment
+                    </span>
+                    <span class="col-md-4 hidden-xs hidden-sm">
+                        June 11, 2016
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="list-page clearfix">
+            <div class="center-block page-lf">
+                <
+            </div>
+            <div class="page-md">
+                <span>
+                    1
+                </span>
+                <span class="page-of">
+                    of
+                </span>
+                <span>
+                    3
+                </span>
+            </div>
+            <div class="center-block page-rg">
+                >
+            </div>
+        </div>
+    </div>
+    <!--选择框-->
+    <div class="nothing-search">
+        <div class="search-input">
+            <input/>
+        </div>
+        <div class="search-btn">
+            <button type="button" class="btn btn-primary">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </div>
+    </div>
+    <!--工作类型选择-->
+    <div class="nothing-job-type">
+        <div class="type-tp">
+            <span>HANDS-ON BACKGROUND:</span>
+            <span class="active">Unlimited </span>
+            <span>Functional class </span>
+            <span>Technical category </span>
+            <span>Financial category </span>
+            <span>Sales category </span>
+        </div>
+        <div class="type-btm">
+            <span>
+                SORT ORDER:
+            </span>
+            <span class="active">
+                Unlimited
+            </span>
+            <span>
+                Press release time
+            </span>
+            <span>
+                By post category
+            </span>
+        </div>
+    </div>
+    <!--搜索结果-->
+    <div class="nothing-search-result">
+        120 results found
+    </div>
+    <!--工作列表-->
+    <div class="nothing-job-list-item">
+        <a class="job-item">
+            <div class="item-tp">
+                Accounting
+            </div>
+            <div class="item-md">
+                <span>
+                    Company / Department : Finance Department
+                </span>
+                <span>
+                    Number of recruiters : 1 People
+                </span>
+                <span>
+                    Work area :Zhuhai
+                </span>
+            </div>
+            <div class="item-btm">
+                <span>
+                    Financial category
+                </span>
+                <span>
+                    2017-07-31
+                </span>
+            </div>
+        </a>
+        <a class="job-item">
+            <div class="item-tp">
+                Declaration clerk
+            </div>
+            <div class="item-md">
+                <span>
+                    Company / Department : Finance Department
+                </span>
+                <span>
+                    Number of recruiters : 1 People
+                </span>
+                <span>
+                    Work area :Zhuhai
+                </span>
+            </div>
+            <div class="item-btm">
+                <span>
+                    Financial category
+                </span>
+                <span>
+                    2017-07-31
+                </span>
+            </div>
+        </a>
+        <a class="job-item">
+            <div class="item-tp">
+                Project Clerk
+            </div>
+            <div class="item-md">
+                <span>
+                    Company / Department : Finance Department
+                </span>
+                <span>
+                    Number of recruiters : 1 People
+                </span>
+                <span>
+                    Work area :Zhuhai
+                </span>
+            </div>
+            <div class="item-btm">
+                <span>
+                    Financial category
+                </span>
+                <span>
+                    2017-07-31
+                </span>
+            </div>
+        </a>
+        <a class="job-item">
+            <div class="item-tp">
+                Planning Specialist
+            </div>
+            <div class="item-md">
+                <span>
+                    Company / Department : Finance Department
+                </span>
+                <span>
+                    Number of recruiters : 1 People
+                </span>
+                <span>
+                    Work area :Zhuhai
+                </span>
+            </div>
+            <div class="item-btm">
+                <span>
+                    Financial category
+                </span>
+                <span>
+                    2017-07-31
+                </span>
+            </div>
+        </a>
+        <a class="job-item">
+            <div class="item-tp">
+                Product support
+            </div>
+            <div class="item-md">
+                <span>
+                    Company / Department : Finance Department
+                </span>
+                <span>
+                    Number of recruiters : 1 People
+                </span>
+                <span>
+                    Work area :Zhuhai
+                </span>
+            </div>
+            <div class="item-btm">
+                <span>
+                    Financial category
+                </span>
+                <span>
+                    2017-07-31
+                </span>
+            </div>
+        </a>
+        <div class="btn-wrap">
+            <button class="btn btn-default load-more .visible-xs-block">Learn more</button>
         </div>
 
     </div>
-    <!--新闻列表-->
-    <div class="nothing-new-list">
-        <div class="news-list col-md-8">
-            <div class="new-item">
-                <div class="item-lf  col-sm-4">
-                    <img src="./images/news/new-1.png" alt="">
-                </div>
-                <div class="item-rg  col-sm-8">
-                    <h4 class="multi-line-dot">
-                        Apex Won "Focus on Quality Award" for the Second Consecutive Year!
-                    </h4>
-                    <p class="multi-line-dot">
-                        From May 17 to May 19, "BUSINESS-INFORM 2017" was successfully held in Moscow,
-                        Russia. The…
-                    </p>
-                    <span>
-                        05 JUN, 2017
-                    </span>
-                </div>
+    <!--联系方式-->
+    <div class="nothing-contact-way clearfix">
+        <div class="contact-way">
+            <div class="contact-title col-md-3 hidden-xs hidden-sm">
+                Recruitment Contact
             </div>
-            <div class="new-item">
-                <div class="item-lf  col-sm-4">
-                    <img src="./images/news/new-1.png" alt="">
-                </div>
-                <div class="item-rg  col-sm-8">
-                    <h4 class="multi-line-dot">
-                        Apex Won "Focus on Quality Award" for the Second Consecutive Year!
-                    </h4>
-                    <p class="multi-line-dot">
-                        From May 17 to May 19, "BUSINESS-INFORM 2017" was successfully held in Moscow,
-                        Russia. The…
-                    </p>
-                    <span>
-                        05 JUN, 2017
-                    </span>
-                </div>
+            <div class="phone-img col-md-1 col-sm-1 col-xs-2">
+                <img src="./images/aboutUs/phone.png" alt=""/>
             </div>
-            <div class="new-item">
-                <div class="item-lf  col-sm-4">
-                    <img src="./images/news/new-1.png" alt="">
-                </div>
-                <div class="item-rg  col-sm-8">
-                    <h4 class="multi-line-dot">
-                        Apex Won "Focus on Quality Award" for the Second Consecutive Year!
-                    </h4>
-                    <p class="multi-line-dot">
-                        From May 17 to May 19, "BUSINESS-INFORM 2017" was successfully held in Moscow,
-                        Russia. The…
-                    </p>
-                    <span>
-                        05 JUN, 2017
-                    </span>
-                </div>
+            <div class="phone-content col-md-2 col-sm-5 col-xs-10">
+                <span>
+                    Recruitment hot line:
+                </span>
+                <span>
+                    0756-333768#101
+                </span>
             </div>
-            <button class="btn btn-default load-more">Learn more</button>
-        </div>
-        <div class="news-sidebar col-md-4">
-            <div class="sidebar-item">
-                <div class="item-head">
-                    <h6>
-                        Twitter
-                    </h6>
-                </div>
-                <div class="item-detail">
-                    <div class="detail-tp">
-                        <div class="img-wrap">
-                            <img src="./images/news/twitter-head.png" alt=""/>
-                        </div>
-                        <div class="info">
-                            <span>
-                                ApexMicroelectronics
-                            </span>
-                            <span>
-                                @APEXMIC
-                            </span>
-                        </div>
-                        <div class="icon-place">
-                            <img src="./images/news/twitter-icon.png"/>
-                        </div>
-                    </div>
-                    <div class="detail-md">
-                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
-                    </div>
-                    <div class="detail-btm">
-                        <div class="img-wrap">
-                            <img src="./images/news/like-icon.png"/>
-                            <img src="./images/news/exit-icon.png"/>
-                        </div>
-                        <div class="time">
-                            6 Jun
-                        </div>
-                    </div>
-                </div>
-                <div class="item-detail">
-                    <div class="detail-tp">
-                        <div class="img-wrap">
-                            <img src="./images/news/twitter-head.png" alt=""/>
-                        </div>
-                        <div class="info">
-                            <span>
-                                ApexMicroelectronics
-                            </span>
-                            <span>
-                                @APEXMIC
-                            </span>
-                        </div>
-                        <div class="icon-place">
-                            <img src="./images/news/twitter-icon.png"/>
-                        </div>
-                    </div>
-                    <div class="detail-md">
-                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
-                    </div>
-                    <div class="detail-btm">
-                        <div class="img-wrap">
-                            <img src="./images/news/like-icon.png"/>
-                            <img src="./images/news/exit-icon.png"/>
-                        </div>
-                        <div class="time">
-                            6 Jun
-                        </div>
-                    </div>
-                </div>
-                <div class="item-detail">
-                    <div class="detail-tp">
-                        <div class="img-wrap">
-                            <img src="./images/news/twitter-head.png" alt=""/>
-                        </div>
-                        <div class="info">
-                            <span>
-                                ApexMicroelectronics
-                            </span>
-                            <span>
-                                @APEXMIC
-                            </span>
-                        </div>
-                        <div class="icon-place">
-                            <img src="./images/news/twitter-icon.png"/>
-                        </div>
-                    </div>
-                    <div class="detail-md">
-                        Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
-                    </div>
-                    <div class="detail-btm">
-                        <div class="img-wrap">
-                            <img src="./images/news/like-icon.png"/>
-                            <img src="./images/news/exit-icon.png"/>
-                        </div>
-                        <div class="time">
-                            6 Jun
-                        </div>
-                    </div>
-                </div>
+            <div class="email-img col-md-1 col-sm-1 col-xs-2">
+                <img src="./images/aboutUs/email.png" alt=""/>
             </div>
-            <div class="sidebar-item">
-                <div class="item-head">
-                    <h6>
-                        Subscribe
-                    </h6>
-                </div>
-                <div class="form-info">
-                    <span>BE THE FIRST TO KNOW</span>
-                    <span>Sign up for our latest newsletter</span>
-                </div>
-                <form class="form-table" role="form">
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <img src="./images/news/person-icon.png" alt=""/>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Your Name">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <img src="./images/news/company-icon.png" alt=""/>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Your Company Name">
-                    </div>
-                    <br>
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <img src="./images/news/email-icon.png" alt=""/>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Enter E-mail">
-                    </div>
-                    <br>
-                    <div class="submit-wrap">
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
+            <div class="email-content col-md-2 col-sm-1 col-xs-10">
+                <span>
+                    Contact email:
+                </span>
+                <span>
+                    apex_hr@apexmic.com.cn
+                </span>
+            </div>
+            <div class="close-img col-md-3 hidden-xs hidden-sm">
+                <img src="./images/aboutUs/X.png" alt=""/>
             </div>
         </div>
     </div>

@@ -221,216 +221,117 @@
     }
   }
 
-  //bannerImg
-  .nothing-banner-img{
-    width: 100%;
-    height: 280px;
-    >img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  //按钮列表
-  .nothing-btn-list{
-    margin: 0 auto;
-    height: 70px;
-    border-bottom: 1px solid #e5e5e5;
-    .btn-wrap{
+  //职位详情
+  .nothing-job-detail-wrap{
+    height: 560px;
+    background-color: #E9F2F9;
+    .job-detail{
       max-width: 1280px;
       margin: 0 auto;
-      line-height: 70px;
-      .dropdown{
-        display: none;
+      padding: 20px 15px;
+      .detail-title{
+        height: 80px;
+        line-height: 80px;
+        >span:first-child{
+          font-size: 28px;
+          color: #2f88c4;
+        }
+        >span:last-child{
+          margin-left: 30px;
+          font-size: 16px;
+          color: #737373;
+        }
       }
-      >.btn{
-        display: inline-block;
-        margin-left: 20px;
-        border-radius: 3px;
-        border: solid 1px #2f88c4;
-        color: #2f87c4;
-        &.btn-active{
-          background-color: #2f87c4;
-          border: solid 1px #2f88c4;
-          color: #fff;
+      .detail-company{
+        >span{
+          display: inline-block;
+          height: 40px;
+          font-size: 16px;
+          line-height: 40px;
+          color: #264b80;
+        }
+        >span:first-child{
+          color: #264b80;
+        }
+        >span:last-child{
+          margin-left: 70px;
+        }
+      }
+      .detail-area{
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        line-height: 30px;
+        color: #264b80;
+      }
+      .detail-request{
+        color: #595959;
+        margin-bottom: 30px;
+        >h6{
+          font-size: 16px;
+        }
+      }
+      .detail-time{
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #595959;
+      }
+      .detail-share{
+        margin-top: 30px;
+        >span{
+          font-size: 18px;
+          color: #737373;
+          margin-right: 10px;
+        }
+        >img{
+          width: 25px;
+          height: 25px;
+          margin: 0 10px;
         }
       }
     }
   }
 
-  //新闻列表
-  .nothing-new-list{
+  //job app
+  .nothing-job-app{
     max-width: 1280px;
-    margin: 0 auto 30px;
-    .news-list{
-      .new-item{
-        margin-top: 30px;
-        height: 200px;
-        background-color: #ffffff;
-        box-shadow: 0px 3px 7px 0px
-        rgba(0, 0, 0, 0.35);
-        border: solid 1px #e5e5e5;
-        .item-lf{
-          height: 200px;
-          padding: 0;
-          >img{
-            width: 100%;
-            height: 100%;
-          }
-        }
-        .item-rg{
-          height: 200px;
-          padding-right: 28px;
-          padding-left: 28px;
-          >h4{
-            display: block;
-            margin-top: 20px;
-            height: 60px;
-            font-size: 18px;
-            color: #2f88c6;
-          }
-          >p{
-            height: 50px;
-            font-size: 14px;
-            line-height: 24px;
-            color: #595959;
-          }
-          >span{
-            display: block;
-            margin-top: 10px;
-            font-size: 14px;
-            line-height: 24px;
-            color: #8c8c8c;
-          }
-        }
-      }
-      .load-more{
-        margin-top: 20px;
-        width: 100%;
-        padding: 10px 0;
+    margin: 0 auto;
+    padding-left: 15px;
+    .app-title{
+      height: 120px;
+      line-height: 120px;
+      font-size: 28px;
+      color: #262626;
+    }
+    .app-download{
+      font-size: 16px;
+      line-height: 30px;
+      color: #595959;
+      margin-bottom: 30px;
+    }
+    .download-btn{
+      >button{
+        height: 45px;
+        background-color: #2f88c4;
+        border-radius: 6px;
         font-size: 16px;
-        color: #999999;
+        color: #ffffff;
+        padding: 0 20px;
       }
     }
-    .news-sidebar{
-      .sidebar-item{
-        margin-top: 30px;
-        padding: 0 10px;
-        background-color: #ffffff;
-        border: solid 1px #e5e5e5;
-        .item-head{
-          border-bottom: 1px solid #d2d2d2;
-          >h6{
-            display: block;
-            padding-left: 10px;
-            border-left: 3px solid #2f88c4;
-            font-size: 20px;
-            color: #404040;
-          }
-        }
-        .item-detail{
-          .detail-tp{
-            position: relative;
-            display: flex;
-            height: 60px;
-            .img-wrap{
-              border-radius: 5px;
-              >img{
-                margin: 14px;
-                display: inline-block;
-                line-height: 60px;
-                width: 32px;
-                height: 32px;
-              }
-            }
-            .info{
-              >span{
-                display: block;
-              }
-              >span:first-child{
-                font-size: 14px;
-                line-height: 30px;
-                color: #404040;
-              }
-              >span:last-child{
-                font-size: 12px;
-                color: #8c8c8c;
-              }
-            }
-            .icon-place{
-              position: absolute;
-              right: 5px;
-              top: 5px;
-              width: 15px;
-              height: 15px;
-              >img{
-                width: 100%;
-                height: 100%;
-              }
-            }
-          }
-          .detail-md{
-            padding: 0 10px;
-            font-size: 12px;
-            line-height: 16px;
-            color: #666666;
-          }
-          .detail-btm{
-            display: flex;
-            height: 35px;
-            padding-top: 8px;
-            .img-wrap{
-              padding-left: 10px;
-              flex: 1;
-              >img{
-                margin-right: 20px;
-                display: inline-block;
-                width: 13px;
-                height: 13px;
-              }
-            }
-            .time{
-              line-height: 25px;
-              text-align: right;
-              font-size: 12px;
-              color: #92c1e0;
-              padding-right: 10px;
-            }
-          }
-        }
-
-        .form-info{
-          margin-top: 20px;
-          >span{
-            display: block;
-            color: #8c8c8c;
-          }
-          >span:first-child{
-            font-size: 16px;
-          }
-          >span:last-child{
-            font-size: 14px;
-          }
-        }
-
-        .form-table{
-          margin-top: 30px;
-          .input-group{
-            padding: 0 20px;
-            .input-group-addon{
-              padding: 6px 20px 6px 0;
-              background-color: inherit;
-              border: none;
-            }
-          }
-          .submit-wrap{
-            text-align: center;
-            margin-bottom: 15px;
-          }
-        }
+    .app-info{
+      height: 80px;
+      font-size: 16px;
+      line-height: 80px;
+      color: #8c8c8c;
+    }
+    .partner-list{
+      margin-bottom: 100px;
+      >img{
+        margin-right: 30px;
       }
     }
-    &:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
   }
 
   .nothing-footer {
@@ -625,218 +526,113 @@
     }
   }
 
-  //bannerImg
-  .nothing-banner-img{
-    width: 100%;
-    height: 14rem;
-    >img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  //按钮列表
-  .nothing-btn-list{
-    margin: 0 auto;
-    height: 7rem;
-    border-bottom: 1px solid #e5e5e5;
-    .btn-wrap{
-      margin: 0 auto;
-      line-height: 7rem;
-      >.btn{
-        display: none;
-      }
-      .dropdown{
-        margin-left: 1rem;
-        >.btn{
-          background-color: #2f87c4;
-          border-radius: .4rem;
-          border: solid 1px #2f88c4;
-          height: 3rem;
-          color: #fff
+  //职位详情
+  .nothing-job-detail-wrap{
+    background-color: #E9F2F9;
+    .job-detail{
+      padding: 1rem .7rem;
+      .detail-title{
+        height: 4rem;
+        line-height: 4rem;
+        >span:first-child{
+          font-size: 2.4rem;
+          color: #2f88c4;
         }
-        .dropdown-menu{
-          top: 5rem;
-          left: 1rem;
+        >span:last-child{
+          margin-left: 1.5rem;
+          font-size: 1.2rem;
+          color: #737373;
         }
       }
-    }
-  }
-
-  //新闻列表
-  .nothing-new-list{
-    margin-bottom: 3rem;
-    .news-list{
-      .new-item{
-        margin-top: 2.5rem;
-        height: 26rem;
-        background-color: #ffffff;
-        box-shadow: 0 .3rem .7rem 0 rgba(0, 0, 0, 0.35);
-
-        border: solid 1px #e5e5e5;
-        .item-lf{
-          height: 12rem;
-          padding: 0;
-          >img{
-            width: 100%;
-            height: 100%;
-          }
+      .detail-company{
+        >span{
+          display: inline-block;
+          height: 2rem;
+          font-size: 1.6rem;
+          line-height: 2rem;
+          color: #264b80;
         }
-        .item-rg{
-          height: 14rem;
-          padding-right: 1.4rem;
-          padding-left: 1.4rem;
-          >h4{
-            display: block;
-            height: 4rem;
-            margin-top: 1.5rem;
-            font-size: 1.6rem;
-            color: #404040;
-          }
-          >p{
-            height: 3rem;
-            font-size: 1.4rem;
-            color: #595959;
-          }
-          >span{
-            display: block;
-            margin-top: 1rem;
-            font-size: 1.4rem;
-            line-height: 2.4rem;
-            color: #8c8c8c;
-          }
+        >span:first-child{
+          color: #264b80;
+        }
+        >span:last-child{
         }
       }
-      .load-more{
-        margin-top: 2rem;
-        width: 100%;
-        padding: 1rem 0;
+      .detail-area{
+        height: 2rem;
+        line-height: 2rem;
         font-size: 1.6rem;
-        color: #999999;
-        border: solid 1px #e5e5e5;
+        line-height: 1.5rem;
+        color: #264b80;
       }
-    }
-    .news-sidebar{
-      .sidebar-item{
-        margin-top: 2rem;
-        padding: 0 1rem;
-        background-color: #ffffff;
-        border: solid 1px #e5e5e5;
-        .item-head{
-          border-bottom: 1px solid #d2d2d2;
-          >h6{
-            display: block;
-            padding-left: 1rem;
-            border-left: 3px solid #2f88c4;
-            font-size: 2rem;
-            color: #404040;
-          }
+      .detail-request{
+        color: #595959;
+        margin-bottom: 1.5rem;
+        >h6{
+          font-size: 1.6rem;
         }
-        .item-detail{
-          position: relative;
-          .detail-tp{
-            display: flex;
-            height: 6rem;
-            .img-wrap{
-              border-radius: .5rem;
-              >img{
-                margin: 1.4rem;
-                display: inline-block;
-                line-height: 3rem;
-                width: 3.2rem;
-                height: 3.2rem;
-              }
-            }
-            .info{
-              >span{
-                display: block;
-              }
-              >span:first-child{
-                font-size: 1.4rem;
-                line-height: 3rem;
-                color: #404040;
-              }
-              >span:last-child{
-                font-size: 1.2rem;
-                color: #8c8c8c;
-              }
-            }
-            .icon-place{
-              position: absolute;
-              right: .5rem;
-              top: .5rem;
-              width: 1.5rem;
-              height: 1.5rem;
-              >img{
-                width: 100%;
-                height: 100%;
-              }
-            }
-          }
-          .detail-md{
-            padding: 0 1rem;
-            font-size: 1.2rem;
-            line-height: 1.6rem;
-            color: #999999;
-          }
-          .detail-btm{
-            display: flex;
-            height: 3.5rem;
-            padding-top: .8rem;
-            .img-wrap{
-              padding-left: 1rem;
-              flex: 1;
-              >img{
-                margin-right: 2rem;
-                display: inline-block;
-                width: 1.3rem;
-                height: 1.3rem;
-              }
-            }
-            .time{
-              line-height: 2.5rem;
-              text-align: right;
-              font-size: 1.4rem;
-              color: #92c1e0;
-              padding-right: 1rem;
-            }
-          }
-
+      }
+      .detail-time{
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 1.6rem;
+        color: #595959;
+      }
+      .detail-share{
+        margin-top: 1.5rem;
+        >span{
+          font-size: 1.5rem;
+          color: #737373;
+          margin-right: .5rem;
         }
-
-        .form-info{
-          margin-top: 2rem;
-          >span{
-            color: #8c8c8c;
-          }
-          >span:first-child{
-            font-size: 1.6rem;
-          }
-          >span:last-child{
-            font-size: 1.4rem;
-          }
-        }
-
-        .form-table{
-          margin-top: 2rem;
-          .input-group{
-            padding: 0 1rem;
-            .input-group-addon{
-              padding: .6rem 2rem .6rem 0;
-              background-color: inherit;
-              border: none;
-            }
-          }
-          .submit-wrap{
-            text-align: center;
-            margin-bottom: 1.5rem;
-          }
+        >img{
+          width: 1.2rem;
+          height: 1.2rem;
+          margin: 0 .5rem;
         }
       }
     }
-    &:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
   }
 
+  //job app
+  .nothing-job-app{
+    padding-left: .7rem;
+    .app-title{
+      height: 6rem;
+      line-height: 6rem;
+      font-size: 2.8rem;
+      color: #262626;
+    }
+    .app-download{
+      font-size: 1.6rem;
+      line-height: 1.5rem;
+      color: #595959;
+      margin-bottom: 1.5rem;
+    }
+    .download-btn{
+      padding: 0 1rem;
+      >button{
+        width: 100%;
+        height: 3.5rem;
+        background-color: #2f88c4;
+        border-radius: .3rem;
+        font-size: 1.6rem;
+        color: #ffffff;
+      }
+    }
+    .app-info{
+      height: 6rem;
+      font-size: 1.6rem;
+      line-height: 6rem;
+      color: #8c8c8c;
+    }
+    .partner-list{
+      margin-bottom: 5rem;
+      >img{
+        margin-right: 1.5rem;
+      }
+    }
+  }
 
   .nothing-footer {
     background: #f5f5f5;
