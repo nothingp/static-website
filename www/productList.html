@@ -55,20 +55,26 @@
 
                 <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
                 <ul class="nav navbar-nav">
-                    <li class="active hidden-xs"><a href="#">NEWS <span class="sr-only">(current)</span></a></li>
-                    <li class="hidden-xs"><a href="#">Company News</a></li>
-                    <li class="hidden-xs"><a href="#">Events</a></li>
-                    <li class="hidden-xs"><a href="#">Newsletters</a></li>
+                    <li class="active hidden-xs"><a href="#">PRODUCTS <span class="sr-only">(current)</span></a></li>
+                    <li class="hidden-xs"><a href="#">New Products</a></li>
+                    <li class="hidden-xs"><a href="#">Ink Cartridge Chips</a></li>
+                    <li class="hidden-xs"><a href="#">Toner Cartridge Chips</a></li>
+                    <li class="hidden-xs"><a href="#">Accessories</a></li>
+                    <li class="hidden-xs"><a href="#">Chip Testers</a></li>
                     <li class="dropdown hidden-sm hidden-md hidden-lg">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NEWS  <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS  <span class="glyphicon glyphicon-menu-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">PRODUCTS</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Company News</a></li>
+                            <li><a href="#">New Products</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Ink Cartridge Chips</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Newsletters</a></li>
+                            <li><a href="#">Toner Cartridge Chips</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Chip Testers</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -79,8 +85,34 @@
     </div>
 
     <div class="subscriptionCenter-banner">
-        <img src="./images/subscriptionCenter/firmware-banner.png" alt="." class="hidden-xs img-responsive">
-        <img src="./images/subscriptionCenter/firewareUpgrades-banner2.png" alt="." class="hidden-sm hidden-md hidden-lg img-responsive">
+        <!--<img src="./images/subscriptionCenter/firmware-banner.png" alt="." class="hidden-xs img-responsive">-->
+        <!--<img src="./images/subscriptionCenter/firewareUpgrades-banner2.png" alt="." class="hidden-sm hidden-md hidden-lg img-responsive">-->
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!--pc-->
+                    <img src="./images/subscriptionCenter/product-list-banner1.jpg" alt="First slide" class="hidden-xs img-responsive">
+                    <!--mobile-->
+                    <img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">
+                </div>
+                <div class="item">
+                    <img src="./images/subscriptionCenter/product-list-banner1.jpg" alt="Second slide" class="hidden-xs img-responsive">
+                    <img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">
+                </div>
+                <div class="item">
+                    <img src="./images/subscriptionCenter/firewareUpgrades-banner2.png" alt="Third slide" class="hidden-xs img-responsive">
+                    <img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <div class="productList-content row">
@@ -89,15 +121,9 @@
             <div class="productList-content-header-title">
                 <h3>Fliter</h3>
             </div>
-            <div class="productList-content-header-search">
-                
-            </div>
-        </div>
-
-        <div class="firmwareUpgrades-content-left col-xs-12 col-sm-12">
-            <div class="firmwareUpgrades-content-left-form">
-                <div class="firmwareUpgrades-content-left-form-select firmwareUpgrades-content-left-form-search clearfix">
-                    <div class="firmwareUpgrades-content-left-form-select-son col-xs-4">
+            <div class="productList-content-header-search clearfix">
+                <div class="col-sm-6 nopaddingleft">
+                    <div class="col-sm-6 nopaddingleft">
                         <div class="form-group">
                             <select class="selectpicker form-control">
                                 <option>Mustard</option>
@@ -106,16 +132,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="firmwareUpgrades-content-left-form-select-son col-xs-4">
-                        <div class="form-group">
-                            <select class="selectpicker form-control">
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="firmwareUpgrades-content-left-form-select-son col-xs-4">
+                    <div class="col-sm-6 nopaddingleft">
                         <div class="form-group">
                             <select class="selectpicker form-control">
                                 <option>Mustard</option>
@@ -125,67 +142,402 @@
                         </div>
                     </div>
                 </div>
-                <div class="firmwareUpgrades-content-left-form-table">
+                <div class="col-sm-6 productList-content-header-search-right clearfix">
+                    <div class="input-group col-sm-12 clearfix">
+                        <div class="col-sm-10 productList-content-header-search-right">
+                            <span class="glyphicon glyphicon-search searcn-icon"></span>
+                            <input type="text" class="form-control" placeholder="Enter Printer Model/Apex Code/OEM Code/Firmware Version">
+                        </div>
+                        <div class="col-sm-2 clearfix">
+                            <span class="input-group-btn hidden-xs">
+                                <button class="btn btn-default" type="button"> search </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="productList-content-left col-xs-12 col-sm-12">
+            <div class="productList-content-left-form">
+                <div class="productList-content-left-form-table">
                     <table class="table table-hover">
                         <thead>
                         <tr>
-                            <th>Printer Model</th>
-                            <th>Region</th>
-                            <th>APEX Code</th>
+                            <th>Chip Photo</th>
+                            <th>Apex Code</th>
                             <th>OEM Code</th>
-                            <th>Firmware Version</th>
-                            <th>Dates</th>
-                            <th>Pass/Fail</th>
+                            <th>Color</th>
+                            <th>Yield</th>
+                            <th>Region</th>
+                            <th>APrinter Models (for use in)</th>
+                            <th>Quantity</th>
+                            <th>Add to Order</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>MFC-J680DW</td>
-                            <td>US</td>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
                             <td>AJB-LC203</td>
                             <td>LC203</td>
-                            <td>H</td>
-                            <td>2017.2.9</td>
-                            <td></td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
                         </tr>
                         <tr>
-                            <td>MFC-J680DW</td>
-                            <td>US</td>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
                             <td>AJB-LC203</td>
                             <td>LC203</td>
-                            <td>H</td>
-                            <td>2017.2.9</td>
-                            <td></td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
                         </tr>
                         <tr>
-                            <td>MFC-J680DW</td>
-                            <td>US</td>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
                             <td>AJB-LC203</td>
                             <td>LC203</td>
-                            <td>H</td>
-                            <td>2017.2.9</td>
-                            <td></td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
                         </tr>
                         <tr>
-                            <td>MFC-J680DW</td>
-                            <td>US</td>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
                             <td>AJB-LC203</td>
                             <td>LC203</td>
-                            <td>H</td>
-                            <td>2017.2.9</td>
-                            <td></td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <!--<div></div>-->
+                                <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                            </td>
+                            <td>AJB-LC203</td>
+                            <td>LC203</td>
+                            <td>
+                                <span class="circle blue"></span>
+                            </td>
+                            <td>11.4K</td>
+                            <td>EXP</td>
+                            <td>
+                                <div class="printer-models">
+                                    <p>
+                                        HP Color LaserJet Pro M252dn/252n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M277dw/277n
+                                    </p>
+                                    <p>
+                                        HP Color LaserJet Pro MFP M274n
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="buy-num">
+                                    <button class="btn btn-default">
+                                        <span class="num-dowm">-</span>
+                                    </button>
+                                    <input type="text">
+                                    <button class="btn btn-default">
+                                        <span class="num-up">+</span>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn btn-default cart-button"></button>
+                            </td>
                         </tr>
 
                         </tbody>
                     </table>
-                    <div class="firmwareUpgrades-content-left-form-table-page">
-                        <div class="col-sm-6"></div>
-                        <div class="firmwareUpgrades-content-left-form-table-page-content col-sm-6">
+                    <div class="firmwareUpgrades-content-left-form-table-page hidden-xs">
+                        <div class="col-sm-5"></div>
+                        <div class="firmwareUpgrades-content-left-form-table-page-content col-sm-7">
                             <div class="firmwareUpgrades-content-left-form-table-page-content-num col-sm-4">
-                                <span>DISPLAY:</span>
-                                <select name="num" id="num"></select>
+                                <span>DISPLAY：</span>
+                                <select name="num" id="num" class="selectpicker form-control">
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>30</option>
+                                </select>
                             </div>
-                            <div class="firmwareUpgrades-content-left-form-table-page-content-pages col-sm-4"></div>
+                            <div class="firmwareUpgrades-content-left-form-table-page-content-pages col-sm-4 clearfix">
+                                <div class="col-sm-4 nopadding width15">
+                                    <button>
+                                        <span class="glyphicon glyphicon-step-backward"></span>
+                                    </button>
+                                </div>
+                                <div class="col-sm-4 nopadding width15">
+                                    <button>
+                                        <span class="glyphicon glyphicon-triangle-left"></span>
+                                    </button>
+                                </div>
+                                <div class="col-sm-4 nopadding width25">
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-4 nopadding width15 showpages">
+                                    <span>/1</span>
+                                </div>
+                                <div class="col-sm-4 nopadding width15">
+                                    <button>
+                                        <span class="glyphicon glyphicon-triangle-right"></span>
+                                    </button>
+                                </div>
+                                <div class="col-sm-4 nopadding width15">
+                                    <button>
+                                        <span class="glyphicon glyphicon-step-forward"></span>
+                                    </button>
+                                </div>
+                            </div>
                             <div class="firmwareUpgrades-content-left-form-table-page-content-count col-sm-4">
                                 <span>4</span>RESULTS
                             </div>
