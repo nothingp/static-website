@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>页头页脚</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/footer.css" rel="stylesheet">
+
+    <script>
+        // $(function () {
+        //     $('[data-toggle="popover"]').popover()
+        // })
+               $(document).ready(function(){
+                   dropdownOpen();//调用
+               });
+               /**
+                * 鼠标划过就展开子菜单，免得需要点击才能展开
+                */
+               function dropdownOpen() {
+                   var $dropdownLi = $('li.dropdown');
+                   $dropdownLi.mouseover(function() {
+                       $(this).addClass('open');
+                   }).mouseout(function() {
+                       var ele = $(this);
+                       //setTimeout(function(){ele.removeClass('open')},3000);
+                       $(this).removeClass('open');
+                   });
+               }
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid ">
+    <div class="nothing-footer">
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-1 products-list-plus">
+
+                <h3>PRODUCTS</h3>
+
+                <div class="products-list">
+                    <h4>New Products</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Product News</li>
+                        <li class="list-group-item">-Latest Products</li>
+                    </ul>
+
+                    <h4>Ink Cartridge Chips</h4>
+
+                    <h4>Toner Cartridge Chips</h4>
+
+                    <h4>Accessories</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-OPC/Drums</li>
+                        <li class="list-group-item">-Toner</li>
+                        <li class="list-group-item">-Rollers</li>
+                        <li class="list-group-item">-Blades</li>
+                        <li class="list-group-item">-Others</li>
+                    </ul>
+
+                    <h4>Chip Testers</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 support-list-plus">
+
+                <h3>SUPPORT</h3>
+
+                <div class="support-list">
+                    <h4>Support Center</h4>
+
+                    <h4>Patent Center</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Introductions</li>
+                        <li class="list-group-item">-Patent Finder</li>
+                    </ul>
+
+                    <h4>Firmware Status</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Apex Support</li>
+                        <li class="list-group-item">-Firmware Status</li>
+                    </ul>
+
+                    <h4>Video Center</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 unismart-list-plus">
+                <h3>UNISMART</h3>
+
+                <div class="unismart-list">
+                    <h4>About Unismart</h4>
+
+                    <h4>Resettable Models</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-OEM Chips</li>
+                        <li class="list-group-item">-Apex Chips</li>
+                    </ul>
+
+                    <h4>Components</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Unismart</li>
+                        <li class="list-group-item">-Credits</li>
+                        <li class="list-group-item">-Blank Chips</li>
+                        <li class="list-group-item">-Jigs</li>
+                        <li class="list-group-item">-Other Accessories</li>
+                    </ul>
+
+                    <h4>Technical Support</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Upgrade Notification</li>
+                        <li class="list-group-item">-User Manual</li>
+                        <li class="list-group-item">-Download&Drives</li>
+                        <li class="list-group-item">-FAQ</li>
+                        <li class="list-group-item">-Warranty Information</li>
+                        <li class="list-group-item">-Contact Unismart</li>
+                    </ul>
+
+                    <h4>Video Support</h4>
+
+                    <h4>Global Resale Agent</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 news-list-plus">
+
+                <h3>NEWS</h3>
+
+                <div class="news-list">
+                    <h4>Company News</h4>
+
+                    <h4>Events</h4>
+
+                    <h4>Newsletters</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-2 about-us-list-plus">
+
+                <h3>ABOUT US</h3>
+
+                <div class="about-us-list">
+                    <h4>About Apex</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Company Profile</li>
+                        <li class="list-group-item">-History of Inovation</li>
+                        <li class="list-group-item">-Research&Development</li>
+                        <li class="list-group-item">-Award&Qualifications</li>
+                    </ul>
+
+                    <h4>Career</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item">-Apex Impression</li>
+                        <li class="list-group-item">-Social Recruitment</li>
+                        <li class="list-group-item">-College Plan</li>
+                        <li class="list-group-item">-Growth at Apex</li>
+                        <li class="list-group-item">-Life at Apex</li>
+                    </ul>
+
+                    <h4>Contact Us</h4>
+                </div>
+
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row share">
+            <div class="col-sm-7 col-sm-offset-1 copyright">
+                <p>Privacy | Terms of use Copyright © 2008-2016 Apex Microelectronics Co.,Ltd.All Rights Researved.</p>
+                <p>
+                    All trademarks are property of their respective companies.
+                    All other brands or product names mentioned are intended to show compatibility only.
+                </p>
+            </div>
+            <div class="col-sm-4 up-phone-top">
+                <div class="row">
+                    <div class="col-xs-3 follow-us-txt hidden-sm hidden-md hidden-lg">
+                        Follow Us
+                    </div>
+                    <ul class="col-xs-9 col-sm-12 share-icons">
+                        <li>
+                            <div class="facebook-icon"></div>
+                        </li>
+                        <li>
+                            <div class="twitter-icon"></div>
+                        </li>
+                        <li>
+                            <div class="in-icon"></div>
+                        </li>
+                        <li>
+                            <div class="youtube-icon"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
