@@ -111,6 +111,49 @@
         }
       }
     }
+    .productList-content-select-style{
+      height:100px;
+      line-height:100px;
+      .nopadding{
+        padding:0;
+      }
+      .productList-content-select-style-content{
+        .productList-content-select-style-content-left{
+          span{
+            font-size: 18px;
+            color: #666666;
+          }
+        }
+        .productList-content-select-style-content-icon{
+          &:hover{
+            cursor: pointer;
+          }
+
+          span{
+            display:inline-block;
+            width:48px;
+            height:48px;
+            border-radius:50%;
+            border:solid 2px rgba(205, 205, 205, 1);
+            vertical-align: middle;
+            font-size:24px;
+            color:#666;
+            &:before{
+              position:absolute;
+              top:50%;
+              left:50%;
+              margin-left:-12px;
+              margin-top:-13px;
+            }
+          }
+          .active{
+            color:#fff;
+            background:#2f87c4;
+            border:none;
+          }
+        }
+      }
+    }
     .productList-content-left{
       padding:0;
       .productList-content-left-header{

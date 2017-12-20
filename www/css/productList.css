@@ -116,6 +116,42 @@ body {
     color: #fff;
     width: 100px;
   }
+  .productList-content .productList-content-select-style {
+    height: 100px;
+    line-height: 100px;
+  }
+  .productList-content .productList-content-select-style .nopadding {
+    padding: 0;
+  }
+  .productList-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-left span {
+    font-size: 18px;
+    color: #666666;
+  }
+  .productList-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon:hover {
+    cursor: pointer;
+  }
+  .productList-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: solid 2px #cdcdcd;
+    vertical-align: middle;
+    font-size: 24px;
+    color: #666;
+  }
+  .productList-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -13px;
+  }
+  .productList-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon .active {
+    color: #fff;
+    background: #2f87c4;
+    border: none;
+  }
   .productList-content .productList-content-left {
     padding: 0;
   }

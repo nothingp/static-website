@@ -193,6 +193,22 @@
             </div>
         </div>
 
+        <div class="productList-content-select-style hidden-xs nopadding">
+            <div class="col-sm-2 col-md-offset-10 productList-content-select-style-content nopadding">
+                <div class="col-sm-4 nopadding text-right productList-content-select-style-content-left">
+                    <span>View:</span>
+                </div>
+                <div class="col-sm-8 nopadding">
+                    <div class="col-sm-6 nopadding productList-content-select-style-content-icon text-right">
+                        <span class="glyphicon glyphicon-align-justify active"></span>
+                    </div>
+                    <div class="col-sm-6 nopadding productList-content-select-style-content-icon text-right">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="productList-content-left col-xs-12 col-sm-12">
             <div class="productList-content-left-form">
                 <div class="productList-content-left-form-table">
@@ -591,8 +607,14 @@
 </div>
 
 <script>
+
     $('.filter-mobile-title').click(function(){
         $('.filter-mobile-content').toggle();
+    });
+
+    $('.productList-content-select-style-content-icon').click(function(){
+        $('.productList-content-select-style-content-icon').find('span').removeClass('active');
+        $(this).find('span').addClass('active');
     });
 </script>
 </body>
