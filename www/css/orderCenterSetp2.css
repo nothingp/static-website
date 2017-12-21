@@ -1,0 +1,678 @@
+html {
+  font-family: CiscoSans, Arial, sans-serif;
+}
+body {
+  background: #f2f2f2;
+  color: #333333;
+  min-width: 320px;
+  font-family: CiscoSans, Arial, sans-serif;
+}
+html,
+body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.content-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 768px) {
+  .container-fluid {
+    max-width: 1600px;
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    background: #ffffff;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscriptionCenter-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel {
+    height: 280px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel img {
+    width: 100%;
+    height: 280px;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators {
+    left: 90%;
+    bottom: 10px;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators li {
+    background: #fff;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators .active {
+    width: 24px;
+    height: 12px;
+    border-radius: 6px;
+  }
+  .orderCenter-content {
+    max-width: 1280px;
+    margin: 50px auto;
+  }
+  .orderCenter-content .productList-content-wrap-table {
+    min-height: 1400px;
+  }
+  .orderCenter-content .orderCenter-content-header {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-title h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    margin: 60px 0;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-descript p {
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-img {
+    padding: 0 100px;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-img img {
+    width: 100%;
+    height: auto;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-word {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-word .setp {
+    font-size: 16px;
+    color: #999999;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-word .setp1,
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-word .setp2 {
+    color: #2f87c4;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-word .setp1 {
+    text-align: left;
+    padding-left: 70px;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps-word .setp3 {
+    text-align: right;
+    padding-right: 70px;
+  }
+  .orderCenter-content .productList-content-select-style {
+    height: 100px;
+    line-height: 100px;
+  }
+  .orderCenter-content .productList-content-select-style .nopadding {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-left span {
+    font-size: 18px;
+    color: #666666;
+  }
+  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon:hover {
+    cursor: pointer;
+  }
+  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: solid 2px #cdcdcd;
+    vertical-align: middle;
+    font-size: 24px;
+    color: #666;
+  }
+  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: -13px;
+  }
+  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon .active {
+    color: #fff;
+    background: #2f87c4;
+    border: none;
+  }
+  .orderCenter-content .productList-content-left {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-title {
+    padding-bottom: 26px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-title h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #333333;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form {
+    margin-bottom: 60px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table {
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -3px;
+    background: #fff;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td img {
+    width: 40px;
+    height: 40px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .circle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .blue {
+    color: #01b0f1;
+    position: relative;
+    top: 6px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .delete {
+    cursor: pointer;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models p {
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num .num-dowm {
+    background: #f5f5f5;
+    color: #969696;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num .num-up {
+    background: #2f87c4;
+    color: #fff;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num input {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num button {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .cart-button {
+    width: 34px;
+    height: 34px;
+    background: url("../images/subscriptionCenter/cart-icon.jpg") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead {
+    background: #eeeeee;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr {
+    line-height: 61px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr th {
+    line-height: 61px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #666666;
+    text-align: center;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content {
+    padding: 20px 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num span {
+    font-size: 14px;
+    color: #666666;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num select {
+    display: inline-block;
+    width: 50%;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .nopadding {
+    padding: 0;
+    padding-top: 5px;
+    margin-left: 2px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width15 {
+    width: 24px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width25 {
+    width: 25%;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages input {
+    width: 100%;
+    height: 24px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .showpages span {
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-count {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #666666;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar {
+    background: #2f87c4;
+    height: 90px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box {
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box input {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -3px;
+    background: #fff;
+    margin-right: 10px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box span {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .delete-button-box {
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .delete-button-box span {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .delete-button-box a {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul {
+    margin: 29px 0;
+    padding: 0 5%;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li {
+    display: block;
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li a {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li:first-of-type a {
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+  }
+  .subscriptionCenter-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subscriptionCenter-navbar {
+    height: 50px;
+  }
+  .subscriptionCenter-footer {
+    height: 449px;
+    background: #f5f5f5;
+  }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators {
+    bottom: -1rem;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators li {
+    background: #fff;
+    width: .6rem;
+    height: .6rem;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators .active {
+    width: 1.2rem;
+    height: .6rem;
+    border-radius: 6px;
+  }
+  .productList-content-left-form-table {
+    display: none;
+  }
+  .orderCenter-content .orderCenter-content-header {
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-title h3 {
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-descript {
+    padding: 0 1rem;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-descript p {
+    font-size: 1.2rem;
+    color: #666666;
+    text-align: left;
+    margin-bottom: 4rem;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-img {
+    padding: 0 3rem;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-img img {
+    width: 100%;
+    height: auto;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word .setp {
+    font-size: 1.2rem;
+    color: #999999;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word .setp1,
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word .setp2 {
+    color: #2f87c4;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word .setp1 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word .setp2 {
+    padding: 0 3rem;
+  }
+  .orderCenter-content .orderCenter-content-header .orderCenter-content-header-steps .orderCenter-content-header-steps-word .setp3 {
+    text-align: right;
+    padding-right: 1rem;
+    padding-left: 3rem;
+  }
+  .orderCenter-content .productList-content-left {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-title h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #333333;
+    padding-left: 1rem;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table {
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+    height: 140px;
+    line-height: 140px;
+    text-align: center;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td img {
+    width: 40px;
+    height: 40px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .circle {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .blue {
+    background: #01b0f1;
+    position: relative;
+    top: 6px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models p {
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    line-height: 24px;
+    font-size: 16px;
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num .num-dowm {
+    background: #f5f5f5;
+    color: #969696;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num .num-up {
+    background: #2f87c4;
+    color: #fff;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num input {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num button {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .cart-button {
+    width: 34px;
+    height: 34px;
+    background: url("../images/subscriptionCenter/cart-icon.jpg") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead {
+    background: #eeeeee;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr {
+    line-height: 61px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr th {
+    line-height: 61px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 0px;
+    color: #666666;
+    text-align: center;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content {
+    padding: 20px 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num span {
+    font-size: 14px;
+    color: #666666;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num select {
+    display: inline-block;
+    width: 50%;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages {
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .nopadding {
+    padding: 0;
+    padding-top: 5px;
+    margin-left: 2px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width15 {
+    width: 24px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width25 {
+    width: 25%;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages button {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages input {
+    width: 100%;
+    height: 24px;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .showpages span {
+    display: inline-block;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-count {
+    padding-top: 8px;
+    font-size: 14px;
+    color: #666666;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar {
+    padding: 3rem 1rem;
+    background: #2f87c4;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .nopadding {
+    padding: 0;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box {
+    text-align: left;
+    padding-right: 0;
+    margin-bottom: 3rem;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box input {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    margin-top: -0.3rem;
+    background: #fff;
+    margin-right: 1rem;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box span {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .delete-button-box {
+    text-align: left;
+    padding-right: 0;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .delete-button-box span {
+    margin-right: 1rem;
+    color: #fff;
+    font-size: 1.8rem;
+    position: relative;
+    top: .3rem;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .delete-button-box a {
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul {
+    margin: 0;
+    padding: 0 5%;
+    margin-top: -0.8rem;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li {
+    display: block;
+    width: 100%;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li a {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li:first-of-type {
+    margin-bottom: 2rem;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li:first-of-type a {
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+  }
+}

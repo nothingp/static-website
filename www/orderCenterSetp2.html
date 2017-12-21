@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>订单中心</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/orderCenterSetp2.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid subscriptionCenter">
+    <div class="subscriptionCenter-navbar">
+    </div>
+
+    <div class="subscriptionCenter-banner">
+        <img src="./images/subscriptionCenter/order-center-banner.jpg" alt="." class="hidden-xs img-responsive">
+        <img src="./images/subscriptionCenter/order-center-banner-mobile.jpg" alt="." class="hidden-sm hidden-md hidden-lg img-responsive">
+    </div>
+
+    <div class="orderCenter-content clearfix">
+
+        <div class="orderCenter-content-header">
+            <div class="orderCenter-content-header-title">
+                <h3>ORDER CENTER</h3>
+            </div>
+            <div class="orderCenter-content-header-descript">
+                <p>
+                    Order center is helping you effectively place your order. Here, you can select the item you need and get a price quote via sending email to us.
+                </p>
+            </div>
+
+            <div class="orderCenter-content-header-steps clearfix">
+                <div class="orderCenter-content-header-steps-img">
+                    <img src="./images/subscriptionCenter/order-center-setps.jpg" alt="...">
+                </div>
+                <div class="orderCenter-content-header-steps-word clearfix">
+                    <div class="col-xs-4 col-sm-4 setp1 setp">
+                        SIGN IN & SHIPPING
+                    </div>
+                    <div class="col-xs-4 col-sm-4 setp2 setp">
+                        CHECK OUT
+                    </div>
+                    <div class="col-xs-4 col-sm-4 setp3 setp">
+                        PLACE ORDER
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="productList-content-select-style hidden-xs nopadding clearfix">
+            <div class="col-sm-2 col-md-offset-10 productList-content-select-style-content nopadding clearfix">
+                <div class="col-sm-4 nopadding text-right productList-content-select-style-content-left">
+                    <span>View:</span>
+                </div>
+                <div class="col-sm-8 nopadding clearfix">
+                    <div class="col-sm-6 nopadding productList-content-select-style-content-icon text-right">
+                        <span class="glyphicon glyphicon-align-justify active"></span>
+                    </div>
+                    <div class="col-sm-6 nopadding productList-content-select-style-content-icon text-right">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="productList-content-wrap-table">
+            <div class="productList-content-left clearfix">
+                <div class="productList-content-left-title">
+                    <h3>
+                        Ink Cartridge Chips
+                    </h3>
+                </div>
+                <div class="productList-content-left-form">
+                    <div class="productList-content-left-form-table">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="table-select-all-one">
+                                </th>
+                                <th>Apex Code</th>
+                                <th>OEM Code</th>
+                                <th>Color</th>
+                                <th>Region</th>
+                                <th>APrinter Models (for use in)</th>
+                                <th>Quantity</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="">
+                                </td>
+                                <td>AJB-LC203</td>
+                                <td>LC203</td>
+                                <td>
+                                    <!--<span class="circle blue"></span>-->
+                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                </td>
+                                <td>EXP</td>
+                                <td>
+                                    <div class="printer-models">
+                                        <p>
+                                            HP Color LaserJet Pro M252dn/252n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M277dw/277n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M274n
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="buy-num">
+                                        <button class="btn btn-default">
+                                            <span class="num-dowm">-</span>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="btn btn-default">
+                                            <span class="num-up">+</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash delete"></span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productList-content-left clearfix">
+                <div class="productList-content-left-title">
+                    <h3>
+                        Laser Cartridge Chips
+                    </h3>
+                </div>
+                <div class="productList-content-left-form">
+                    <div class="productList-content-left-form-table">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="table-select-all-two">
+                                </th>
+                                <th>Apex Code</th>
+                                <th>OEM Code</th>
+                                <th>Color</th>
+                                <th>Region</th>
+                                <th>APrinter Models (for use in)</th>
+                                <th>Quantity</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="">
+                                </td>
+                                <td>AJB-LC203</td>
+                                <td>LC203</td>
+                                <td>
+                                    <!--<span class="circle blue"></span>-->
+                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                </td>
+                                <td>EXP</td>
+                                <td>
+                                    <div class="printer-models">
+                                        <p>
+                                            HP Color LaserJet Pro M252dn/252n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M277dw/277n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M274n
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="buy-num">
+                                        <button class="btn btn-default">
+                                            <span class="num-dowm">-</span>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="btn btn-default">
+                                            <span class="num-up">+</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash delete"></span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productList-content-left clearfix">
+                <div class="productList-content-left-title">
+                    <h3>
+                        Accessories
+                    </h3>
+                </div>
+                <div class="productList-content-left-form">
+                    <div class="productList-content-left-form-table">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="table-select-all-three">
+                                </th>
+                                <th>Apex Code</th>
+                                <th>OEM Code</th>
+                                <th>Color</th>
+                                <th>Region</th>
+                                <th>APrinter Models (for use in)</th>
+                                <th>Quantity</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="">
+                                </td>
+                                <td>AJB-LC203</td>
+                                <td>LC203</td>
+                                <td>
+                                    <!--<span class="circle blue"></span>-->
+                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                </td>
+                                <td>EXP</td>
+                                <td>
+                                    <div class="printer-models">
+                                        <p>
+                                            HP Color LaserJet Pro M252dn/252n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M277dw/277n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M274n
+                                        </p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="buy-num">
+                                        <button class="btn btn-default">
+                                            <span class="num-dowm">-</span>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="btn btn-default">
+                                            <span class="num-up">+</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash delete"></span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="productList-content-left clearfix">
+                <div class="productList-content-left-title">
+                    <h3>
+                        Unismart
+                    </h3>
+                </div>
+                <div class="productList-content-left-form">
+                    <div class="productList-content-left-form-table">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" id="table-select-all-four">
+                                </th>
+                                <th>Photo</th>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>Delete</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="">
+                                </td>
+                                <td>
+                                    <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
+                                </td>
+                                <td>AE 0</td>
+
+                                <td>
+                                    <div class="buy-num">
+                                        <button class="btn btn-default">
+                                            <span class="num-dowm">-</span>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="btn btn-default">
+                                            <span class="num-up">+</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash delete"></span>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="orderCenter-content-bottom-bar clearfix">
+            <div class="col-sm-6 col-xs-7 clearfix nopadding">
+                <div class="select-all-box col-sm-6 col-xs-12 nopadding">
+                    <input type="checkbox" class="select-all">
+                    <span>Select all products</span>
+                </div>
+                <div class="col-sm-6 delete-button-box col-xs-12 nopadding">
+                    <span class="glyphicon glyphicon-trash delete"></span>
+                    <a href="#">Delete selected product</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-5 clearfix nopadding">
+                <div class="col-sm-6 hidden-xs"></div>
+                <div class="col-sm-6 pages-box col-xs-12">
+                    <nav aria-label="...">
+                        <ul class="pager clearfix">
+                            <li><a href="#">Previous</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="subscriptionCenter-footer">
+
+    </div>
+</div>
+
+<script>
+
+    $('.filter-mobile-title').click(function(){
+        $('.filter-mobile-content').toggle();
+    });
+
+    $('.productList-content-select-style-content-icon').click(function(){
+        $('.productList-content-select-style-content-icon').find('span').removeClass('active');
+        $(this).find('span').addClass('active');
+    });
+
+    $('.select-all').click(function(){
+        if(this.checked){
+            $(":checkbox").prop("checked", true);
+        }else{
+            $(":checkbox").prop("checked", false);
+        }
+    });
+
+    $('table th').find('input').each(function(i){
+        $(this).click(function () {
+            if(this.checked){
+                $('table').eq(i).find("input").prop("checked", true);
+            }else{
+                $('table').eq(i).find("input").prop("checked", false);
+            }
+        });
+
+    });
+
+    $('.num-dowm').click(function(){
+        var num = parseInt($(this).parent().next().val());
+        if(num > 0){
+            num--;
+            $(this).parent().next().val( num||0 );
+        }
+    });
+
+    $('.num-up').click(function(){
+        var num = parseInt($(this).parent().prev().val());
+        num++;
+        $(this).parent().prev().val( num );
+    });
+</script>
+</body>
+</html>
