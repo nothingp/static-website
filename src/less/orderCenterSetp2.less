@@ -46,7 +46,7 @@
     max-width: 1280px;
     margin: 50px auto;
     .productList-content-wrap-table{
-      min-height:1400px;
+      min-height:1700px;
     }
     //position:relative;
     .orderCenter-content-header{
@@ -152,6 +152,7 @@
       .productList-content-left-form{
         margin-bottom:60px;
         .productList-content-left-form-table{
+          display:none;
           table{
             input[type='checkbox']{
               width:20px;
@@ -314,6 +315,113 @@
                 padding-top:8px;
                 font-size: 14px;
                 color: #666666;
+              }
+            }
+          }
+        }
+        .orderCenter-content-left-form-div{
+          border:1px solid #e5e5e5;
+          .orderCenter-content-left-form-div-one{
+            display:table;
+            .orderCenter-content-left-form-div-one-left{
+              text-align:center;
+              input{
+                width:20px;
+                height:20px;
+                vertical-align: middle;
+                margin-top:-3px;
+                background:#fff;
+              }
+            }
+            .orderCenter-content-left-form-div-one-middle{
+              padding:30px 20px;
+              i{
+                font-style:normal;
+                font-size: 16px;
+                color: #333;
+                margin-right:36px;
+              }
+              span{
+                font-size: 16px;
+                color: #666666;
+              }
+              .nopaddingright{
+                padding-right:0;
+              }
+              .orderCenter-content-left-form-div-one-middle-up{
+                margin-bottom:20px;
+                .blue{
+                  color:rgba(0, 176, 240, 1);
+                }
+              }
+
+              .orderCenter-content-left-form-div-one-middle-down{
+                .printerModels{
+                  display:inline-block;
+                  vertical-align: top;
+                  ul{
+                    list-style: normal;
+                    list-style-type:none;
+                    li{
+                      font-size: 16px;
+                      //line-height: 36px;
+                      color: #666666;
+                      margin-bottom:10px;
+                    }
+                  }
+                }
+              }
+            }
+            .orderCenter-content-left-form-div-one-right{
+              padding-left:0;
+              position:relative;
+              .buy-num{
+                position:absolute;
+                top:30px;
+                right:20px;
+                span{
+                  display:inline-block;
+                  width:24px;
+                  height:24px;
+                  float:left;
+                  line-height: 24px;
+                  font-size:16px;
+                  border:1px solid #bebebe;
+
+                }
+                .num-dowm{
+                  background:#f5f5f5;
+                  color:#969696;
+                  border-radius:4px 0 0 4px;
+                }
+                .num-up{
+                  background:#2f87c4;
+                  color:#fff;
+                  border-radius:0 4px 4px 0;
+                }
+                input{
+                  display: inline-block;
+                  width:24px;
+                  height:24px;
+                  float:left;
+                  text-align:center;
+                }
+                button{
+                  width:24px;
+                  height:24px;
+                  margin:0;
+                  padding:0;
+                  border:none;
+                  float:left;
+                }
+              }
+              .delete{
+                position:absolute;
+                bottom:30px;
+                right:20px;
+                span{
+                  color:rgba(140, 140, 140, 1);
+                }
               }
             }
           }
@@ -485,7 +593,7 @@
           .setp3{
             text-align:right;
             padding-right:1rem;
-            padding-left:2rem;
+            padding-left:3rem;
           }
         }
       }
