@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>订单中心</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/orderCenterStep3.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+            var countryList = $('#countryList').find('li');
+            $(countryList).click(function () {
+                $('#selectCountry').html($(this).find('a').html());
+            })
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid order-center-step3">
+    <div class="order-center-step3-navbar">
+    </div>
+
+    <div class="order-center-step3-banner">
+        <img src="./images/subscriptionCenter/order-center-banner.jpg" alt="." class="hidden-xs img-responsive">
+        <img src="./images/subscriptionCenter/order-center-banner-mobile.jpg" alt="."
+             class="hidden-sm hidden-md hidden-lg img-responsive">
+    </div>
+
+    <div class="orderCenter-content clearfix content-padding">
+
+        <div class="orderCenter-content-header">
+            <div class="orderCenter-content-header-title">
+                <h3>ORDER CENTER</h3>
+            </div>
+            <div class="orderCenter-content-header-descript">
+                <p>
+                    Order center is helping you effectively place your order. Here, you can select the item you need and
+                    get a price quote via sending email to us.
+                </p>
+            </div>
+
+            <div class="orderCenter-content-header-steps clearfix">
+                <div class="orderCenter-content-header-steps-img">
+                    <img src="./images/orderCenter/step3.png" alt="...">
+                </div>
+                <div class="orderCenter-content-header-steps-word clearfix">
+                    <div class="col-xs-4 col-sm-4 setp1 setp">
+                        SIGN IN & SHIPPING
+                    </div>
+                    <div class="col-xs-4 col-sm-4 setp2 setp">
+                        CHECK OUT
+                    </div>
+                    <div class="col-xs-4 col-sm-4 setp3 setp">
+                        PLACE ORDER
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="productList-content-select-style hidden-xs nopadding clearfix">
+            <div class="col-sm-2 col-md-offset-10 productList-content-select-style-content nopadding clearfix">
+                <div class="col-sm-4 nopadding text-right productList-content-select-style-content-left">
+                    <span>View:</span>
+                </div>
+                <div class="col-sm-8 nopadding clearfix">
+                    <div class="col-sm-6 nopadding productList-content-select-style-content-icon style-one text-right">
+                        <span class="glyphicon glyphicon-align-justify active"></span>
+                    </div>
+                    <div class="col-sm-6 nopadding productList-content-select-style-content-icon style-two text-right">
+                        <span class="glyphicon glyphicon-list"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="order-center-content">
+            <div class="order-center-panel">
+                <p class="title">
+                    Please confirm the following items:
+                </p>
+
+                <div class="table-list">
+                    <div class="row head">
+                        <div class="col-sm-1 item">Item</div>
+
+                        <div class="col-sm-2 category">Category</div>
+                        <div class="col-sm-1 code">Apex Code</div>
+                        <div class="col-sm-1 oem-code">OEM Code</div>
+
+                        <div class="col-sm-1 color">Color</div>
+                        <div class="col-sm-1 yield">Yield</div>
+                        <div class="col-sm-1 region">Region</div>
+
+                        <div class="col-sm-3 printer">Printer Models</div>
+                        <div class="col-sm-1 quantity">Quantity</div>
+                    </div>
+
+                    <div class="body">
+
+                        <div class="row row-item">
+                            <div class="col-sm-1 item">1</div>
+
+                            <div class="col-sm-2 category">Ink Cartridge Chips</div>
+                            <div class="col-sm-1 code">AJB-LC3329C</div>
+                            <div class="col-sm-1 oem-code">LC3329C</div>
+
+                            <div class="col-sm-1 color">
+                                <img src="./images/orderCenter/water-point.png">
+                            </div>
+                            <div class="col-sm-1 yield">-</div>
+                            <div class="col-sm-1 region">EXP</div>
+
+                            <div class="col-sm-3 printer">
+                                <div>
+                                    HP ® ImageClass MF5850dn/5880dn/5950dw/
+                                    5960dn/LBP6300dn/6650dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn
+                                </div>
+                            </div>
+                            <div class="col-sm-1 quantity">
+                                10
+                            </div>
+                        </div>
+
+                        <div class="row row-item">
+                            <div class="col-sm-1 item">2</div>
+
+                            <div class="col-sm-2 category">Ink Cartridge Chips</div>
+                            <div class="col-sm-1 code">AJB-LC3329C</div>
+                            <div class="col-sm-1 oem-code">LC3329C</div>
+
+                            <div class="col-sm-1 color">
+                                <img src="./images/orderCenter/yellow-point.png">
+                            </div>
+                            <div class="col-sm-1 yield">400</div>
+                            <div class="col-sm-1 region">EXP</div>
+
+                            <div class="col-sm-3 printer">
+                                <div>
+                                    HP ® ImageClass MF5850dn/5880dn/5950dw/
+                                    5960dn/LBP6300dn/6650dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn
+                                </div>
+                            </div>
+                            <div class="col-sm-1 quantity">
+                                20
+                            </div>
+                        </div>
+
+                        <div class="row row-item">
+                            <div class="col-sm-1 item">3</div>
+
+                            <div class="col-sm-2 category">Ink Cartridge Chips</div>
+                            <div class="col-sm-1 code">AJB-LC3329C</div>
+                            <div class="col-sm-1 oem-code">LC3329C</div>
+
+                            <div class="col-sm-1 color">
+                                -
+                            </div>
+                            <div class="col-sm-1 yield">-</div>
+                            <div class="col-sm-1 region">-</div>
+
+                            <div class="col-sm-3 printer">
+                                <div>
+                                    HP ® ImageClass MF5850dn/5880dn/5950dw/
+                                    5960dn/LBP6300dn/6650dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn
+                                </div>
+                            </div>
+                            <div class="col-sm-1 quantity">
+                                5pcs
+                            </div>
+                        </div>
+
+                        <div class="row row-item">
+                            <div class="col-sm-1 item">4</div>
+
+                            <div class="col-sm-2 category">Ink Cartridge Chips</div>
+                            <div class="col-sm-1 code">AJB-LC3329C</div>
+                            <div class="col-sm-1 oem-code">-</div>
+
+                            <div class="col-sm-1 color">
+                                -
+                            </div>
+                            <div class="col-sm-1 yield">-</div>
+                            <div class="col-sm-1 region">-</div>
+
+                            <div class="col-sm-3 printer">
+                                <div>-</div>
+                            </div>
+                            <div class="col-sm-1 quantity">
+                                5
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="panel-list">
+
+                    <div class="row row-item">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Item</div>
+                                <div class="col-sm-6 value-item">1</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Category</div>
+                                <div class="col-sm-6 value-item">Ink Cartridge Chips</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Apex Code</div>
+                                <div class="col-sm-6 value-item">AJB-LC3329C</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">OEM Code</div>
+                                <div class="col-sm-6 value-item">LC3329C</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Color</div>
+                                <div class="col-sm-6 value-item">
+                                    <img src="./images/orderCenter/water-point.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Yield</div>
+                                <div class="col-sm-6 value-item">-</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Region</div>
+                                <div class="col-sm-6 value-item">WWW</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-3 label-item">Printer Models</div>
+                                <div class="col-sm-9 value-item">
+                                    HP ® ImageClass MF5850dn/5880dn/5950dw/
+                                    5960dn/LBP6300dn/6650dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 quantity-phone">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Quantity</div>
+                                <div class="col-sm-6 value-item">10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-item">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Item</div>
+                                <div class="col-sm-6 value-item">2</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Category</div>
+                                <div class="col-sm-6 value-item">Laser Cartridge Chips</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Apex Code</div>
+                                <div class="col-sm-6 value-item">AJB-LC3329C</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">OEM Code</div>
+                                <div class="col-sm-6 value-item">LC3329C</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Color</div>
+                                <div class="col-sm-6 value-item">
+                                    <img src="./images/orderCenter/yellow-point.png">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Yield</div>
+                                <div class="col-sm-6 value-item">4000</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Region</div>
+                                <div class="col-sm-6 value-item">WWW</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-3 label-item">Printer Models</div>
+                                <div class="col-sm-9 value-item">
+                                    HP ® ImageClass MF5850dn/5880dn/5950dw/
+                                    5960dn/LBP6300dn/6650dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-3 quantity-phone">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Quantity</div>
+                                <div class="col-sm-6 value-item">10</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-item">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Item</div>
+                                <div class="col-sm-6 value-item">3</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Category</div>
+                                <div class="col-sm-6 value-item">Accessories</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Apex Code</div>
+                                <div class="col-sm-6 value-item">AJB-LC3329C</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">OEM Code</div>
+                                <div class="col-sm-6 value-item">LC3329C</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Color</div>
+                                <div class="col-sm-6 value-item">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Yield</div>
+                                <div class="col-sm-6 value-item">-</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Region</div>
+                                <div class="col-sm-6 value-item">-</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-3 label-item">Printer Models</div>
+                                <div class="col-sm-9 value-item">
+                                    HP ® ImageClass MF5850dn/5880dn/5950dw/
+                                    5960dn/LBP6300dn/6650dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn/6670dn/
+                                    6670dn/6670dn/6670dn/6670dn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 quantity-phone">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Quantity</div>
+                                <div class="col-sm-6 value-item">5pcs</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row row-item">
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Item</div>
+                                <div class="col-sm-6 value-item">4</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-4">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Category</div>
+                                <div class="col-sm-6 value-item">Unismart</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Apex Code</div>
+                                <div class="col-sm-6 value-item">AJB-LC3329C</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">OEM Code</div>
+                                <div class="col-sm-6 value-item">-</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Color</div>
+                                <div class="col-sm-6 value-item">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Yield</div>
+                                <div class="col-sm-6 value-item">-</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-2">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Region</div>
+                                <div class="col-sm-6 value-item">-</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-3 label-item">Printer Models</div>
+                                <div class="col-sm-9 value-item">
+                                    -
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-4 col-sm-3 quantity-phone">
+                            <div class="row">
+                                <div class="col-sm-6 label-item">Quantity</div>
+                                <div class="col-sm-6 value-item">5</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <p class="title">
+                    Please confirm your delivery details:
+                </p>
+                <div class="form">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="label-item">First Name <span class="required">*</span></div>
+                            <div class="input">
+                                <input type="text" placeholder="" value="Wenny">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="label-item">Address <span class="required">*</span></div>
+                            <div class="input">
+                                <input type="text" placeholder=""
+                                       value="7/F, Bldg.4, No.63 North Mingzhu Road, Qianshan">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="label-item">Last Name <span class="required">*</span></div>
+                            <div class="input">
+                                <input type="text" placeholder="" value="Last Name*">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="label-item">City <span class="required">*</span></div>
+                            <div class="input">
+                                <input type="text" placeholder="" value="Zhuhai">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="label-item">Phone Number <span class="required">*</span></div>
+                            <div class="input">
+                                <input type="text" placeholder="" value="0570-069-609">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="label-item">State <span class="required">*</span></div>
+                                    <div class="input">
+                                        <input type="text" placeholder="" value="Guangdong">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="label-item">ZIP Code <span class="required">*</span></div>
+                                    <div class="input">
+                                        <input type="text" placeholder="" value="519000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="label-item">Company <span class="required">*</span></div>
+                            <div class="input">
+                                <input type="text" placeholder="" value="Apex Microelectronics Co.,Ltd.">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="label-item">Country <span class="required">*</span></div>
+                            <div class="input">
+                                <div class="dropdown select-country">
+                                    <button
+                                        class="btn btn-lg dropdown-toggle btn-block"
+                                        type="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span id="selectCountry">China</span>
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="countryList">
+                                        <li value="china"><a href="javascript:;">China</a></li>
+                                        <li value="germany"><a href="javascript:;">Germany</a></li>
+                                        <li value="france"><a href="javascript:;">France</a></li>
+                                        <li value="italy"><a href="javascript:;">Italy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="order-center-btns">
+                <div>
+                    <a href="javascript:;" class="btn btn-primary">Previous</a>
+                    <a href="javascript:;" class="btn btn-default">Done</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="order-center-step3-footer">
+
+    </div>
+</div>
+
+<script>
+
+    $('.productList-content-select-style-content-icon').click(function () {
+        $('.productList-content-select-style-content-icon').find('span').removeClass('active');
+        $(this).find('span').addClass('active');
+    });
+
+    $('.style-one').click(function () {
+        $('.table-list').show();
+        $('.panel-list').hide();
+    })
+
+    $('.style-two').click(function () {
+        $('.table-list').hide();
+        $('.panel-list').show();
+    })
+
+
+    $('.select-all').click(function () {
+        if (this.checked) {
+            $(":checkbox").prop("checked", true);
+        } else {
+            $(":checkbox").prop("checked", false);
+        }
+    });
+
+    $('table th').find('input').each(function (i) {
+        $(this).click(function () {
+            if (this.checked) {
+                $('table').eq(i).find("input").prop("checked", true);
+            } else {
+                $('table').eq(i).find("input").prop("checked", false);
+            }
+        });
+
+    });
+
+    $('.num-dowm').click(function () {
+        var num = parseInt($(this).parent().next().val());
+        if (num > 0) {
+            num--;
+            $(this).parent().next().val(num || 0);
+        }
+    });
+
+    $('.num-up').click(function () {
+        var num = parseInt($(this).parent().prev().val());
+        num++;
+        $(this).parent().prev().val(num);
+    });
+</script>
+</body>
+</html>
