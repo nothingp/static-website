@@ -382,7 +382,8 @@ body {
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: -40%;
+    width: 130%;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num span {
     display: inline-block;
