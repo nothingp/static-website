@@ -490,6 +490,107 @@ body {
   .productList-content-left-form-table {
     display: none;
   }
+  .productList-sm {
+    padding-top: 1.2rem;
+    background-color: #f5f5f5;
+  }
+  .productList-sm .product-item {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin-bottom: 1.2rem;
+  }
+  .productList-sm .product-item .flex {
+    display: flex;
+  }
+  .productList-sm .product-item .flex .flex-item {
+    flex: 1;
+  }
+  .productList-sm .product-item .item-tp .product-img > img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .productList-sm .product-item .item-md {
+    margin-top: 1rem;
+  }
+  .productList-sm .product-item .product-info {
+    margin-top: 1.5rem;
+  }
+  .productList-sm .product-item .product-info .info-title {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #666666;
+  }
+  .productList-sm .product-item .product-info .info-detail {
+    color: #656665;
+    font-size: 1.4rem;
+  }
+  .productList-sm .product-item .product-btm {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .productList-sm .product-item .product-btm .cart-btn {
+    flex: 1;
+  }
+  .productList-sm .product-item .product-btm .cart-btn > button {
+    height: 4.5rem;
+    background-color: #ffffff;
+    border-radius: .02rem;
+    border: solid 1px #2f87c4;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+  .productList-sm .product-item .product-btm .cart-btn > button > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .2rem;
+  }
+  .productList-sm .product-item .product-btm .cart-btn > button > span {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+    color: #2f87c4;
+  }
+  .productList-sm .product-item .product-btm .counter {
+    padding-left: 1rem;
+    display: flex;
+    width: 14rem;
+    height: 4.5rem;
+    background-color: #ffffff;
+    border-radius: .02rem;
+    border: solid .01rem #b5b5b5;
+    text-align: center;
+  }
+  .productList-sm .product-item .product-btm .counter > div {
+    flex: 1;
+  }
+  .productList-sm .product-item .product-btm .counter .counter-reduce {
+    font-size: 2.8rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background-color: #eaeaea;
+    color: #666666;
+  }
+  .productList-sm .product-item .product-btm .counter .counter-num {
+    font-size: 2.4rem;
+    line-height: 4.5rem;
+    color: #333333;
+  }
+  .productList-sm .product-item .product-btm .counter .counter-add {
+    font-size: 2.4rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background-color: #2f87c4;
+    color: #ffffff;
+  }
+  .productList-sm .product-item .info-item > p {
+    margin: 0 0 .5rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: #666666;
+  }
+  .productList-sm .product-item:last-child {
+    margin-bottom: 0;
+  }
   .productList-content {
     margin: 0;
   }

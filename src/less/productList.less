@@ -553,6 +553,117 @@
     display: none;
   }
 
+  //手机端商品列表展示
+  .productList-sm{
+    padding-top: 1.2rem;
+    background-color: #f5f5f5;
+    .product-item{
+      padding: 2rem 1rem;
+      background-color: #fff;
+      margin-bottom: 1.2rem;
+      .flex{
+        display: flex;
+        .flex-item{
+          flex: 1;
+        }
+      }
+      .item-tp{
+        .product-img{
+          >img{
+            width: 3.5rem;
+            height: 3.5rem;
+          }
+        }
+      }
+      .item-md{
+        margin-top: 1rem;
+      }
+      .product-info{
+        margin-top: 1.5rem;
+        .info-title{
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+          color: #666666;
+        }
+        .info-detail{
+          color: #656665;
+          font-size: 1.4rem;
+        }
+      }
+      .product-btm{
+        display: flex;
+        margin-top: 1.5rem;
+        .cart-btn{
+          flex: 1;
+          >button{
+            height: 4.5rem;
+            background-color: #ffffff;
+            border-radius: .02rem;
+            border: solid 1px #2f87c4;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            width: 100%;
+            >img{
+              width: 1.5rem;
+              height: 1.5rem;
+              margin-right: .2rem;
+            }
+            >span{
+              font-size: 1.5rem;
+              line-height: 1.4rem;
+              color: #2f87c4;
+            }
+          }
+        }
+        .counter{
+          padding-left: 1rem;
+          display: flex;
+          width: 14rem;
+          height: 4.5rem;
+          background-color: #ffffff;
+          border-radius: .02rem;
+          border: solid .01rem #b5b5b5;
+          text-align: center;
+          >div{
+            flex: 1;
+          }
+          .counter-reduce{
+            font-size: 2.8rem;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            background-color: #eaeaea;
+            color: #666666;
+          }
+          .counter-num{
+            font-size: 2.4rem;
+            line-height: 4.5rem;
+            color: #333333;
+          }
+          .counter-add{
+            font-size: 2.4rem;
+            height: 4.5rem;
+            line-height: 4.5rem;
+            background-color: #2f87c4;
+            color: #ffffff;
+          }
+        }
+      }
+      .info-item{
+        >p{
+          margin: 0 0 .5rem;
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+          color: #666666;
+        }
+        >span{
+
+        }
+      }
+    }
+    .product-item:last-child{
+      margin-bottom: 0;
+    }
+  }
   .productList-content{
     margin:0;
   }
