@@ -46,11 +46,16 @@ body {
     margin-bottom: 0;
   }
   .product-detail-tabBar nav.navbar-default .navbar-nav .active a {
+    font-size: 20px;
     color: #fff;
     background: #2f88c4;
   }
   .product-detail-tabBar nav.navbar-default .navbar-nav a {
     color: #a4c7de;
+    hieght: 70px;
+    line-height: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .product-detail-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
