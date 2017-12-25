@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>芯片测试仪</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/chipTest.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid chip-test">
+    <div class="chip-test-navbar">
+
+    </div>
+
+    <!--二级菜单-->
+    <div class="product-detail-tabBar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active hidden-xs"><a href="#">PRODUCTS <span class="sr-only">(current)</span></a></li>
+                    <li class="hidden-xs"><a href="#">New Products</a></li>
+                    <li class="hidden-xs"><a href="#">Ink Cartridge Chips</a></li>
+                    <li class="hidden-xs"><a href="#">Toner Cartridge Chips</a></li>
+                    <li class="hidden-xs"><a href="#">Accessories</a></li>
+                    <li class="hidden-xs"><a href="#">Chip Testers</a></li>
+                    <li class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">PRODUCTS <span class="glyphicon glyphicon-menu-down"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">New Products</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Ink Cartridge Chips</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Toner Cartridge Chips</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Chip Testers</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--bannerImg-->
+    <div id="slidershow" class="carousel slide" data-ride="carousel">
+        <!-- 设置图片轮播的顺序 -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#slidershow" data-slide-to="0"></li>
+            <li data-target="#slidershow" data-slide-to="1"></li>
+            <li data-target="#slidershow" data-slide-to="2"></li>
+            <li data-target="#slidershow" data-slide-to="4"></li>
+            <li data-target="#slidershow" data-slide-to="5"></li>
+        </ol>
+        <!-- 设置轮播图片 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
+                <div class="carousel-caption">
+                    <h3>  </h3>
+                    <p>  </p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
+                <div class="carousel-caption">
+                    <h3>  </h3>
+                    <p>  </p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
+                <div class="carousel-caption">
+                    <h3>  </h3>
+                    <p>  </p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
+                <div class="carousel-caption">
+                    <h3>  </h3>
+                    <p>  </p>
+                </div>
+            </div>
+            <div class="item">
+                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
+                <div class="carousel-caption">
+                    <h3>  </h3>
+                    <p>  </p>
+                </div>
+            </div>
+        </div>
+        <!-- 设置轮播图片控制器 -->
+        <a class="left carousel-control" href="#slidershow" role="button" data-slide="prev">
+            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+        </a>
+        <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+        </a>
+    </div>
+    <br><br>
+
+    <!--Chip Testers-->
+    <div class="chipTest content-padding">
+        <div class="col-sm-12 hidden-xs">Chip Testers</div>
+    </div>
+    <!--Chip List-->
+    <div class="nothing-chip-list content-padding">
+        <div class="row account">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="chip-list">
+                        <div class="new-item col-xs-6">
+                            <div class="item-lf col-sm-12">
+                                <div class="imgDetail">
+                                    <img src="./images/chipTest/chip-test.png" alt="aaa"/>
+                                    <div class="titleDetail">
+                                        Epson III/IV OEM Chip Resetter
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-lf col-sm-12">
+                                <div class="imgDetail">
+                                    <img src="./images/chipTest/chip-test.png" alt="aaa"/>
+                                    <div class="titleDetail">
+                                        Epson III/IV OEM Chip Resetter
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-item col-xs-6">
+                            <div class="item-lf col-sm-12">
+                                <div class="imgDetail">
+                                    <img src="./images/chipTest/chip-test.png" alt="aaa"/>
+                                </div>
+                                <div class="titleDetail">
+                                    Epson III/IV OEM Chip Resetter
+                                </div>
+                            </div>
+                            <div class="item-lf col-sm-12">
+                                <div class="imgDetail">
+                                    <img src="./images/chipTest/chip-test.png" alt="aaa"/>
+                                    <div class="titleDetail">
+                                        Epson III/IV OEM Chip Resetter
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-item col-xs-6 hidden-sm hidden-sx">
+                            <div class="item-lf col-sm-12">
+                                <div class="imgDetail">
+                                    <img src="./images/chipTest/chip-test.png" alt="aaa"/>
+                                    <div class="titleDetail">
+                                        Epson III/IV OEM Chip Resetter
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-lf col-sm-12">
+
+                            </div>
+                        </div>
+                        <button class="btn col-sm-12 hidden-md hidden-lg">Learn more</button>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="news-sidebar">
+                        <div class="sidebar-item">
+                            <div class="item-head">
+                                <h6>
+                                    Twitter
+                                </h6>
+                            </div>
+                            <div class="item-detail">
+                                <div class="detail-tp">
+                                    <div class="img-wrap">
+                                        <img src="./images/newsList/twitter-head.png" alt=""/>
+                                    </div>
+                                    <div class="info">
+                            <span>
+                                ApexMicroelectronics
+                            </span>
+                                        <span>
+                                @APEXMIC
+                            </span>
+                                    </div>
+                                    <div class="icon-place">
+                                        <img src="./images/newsList/twitter-icon.png"/>
+                                    </div>
+                                </div>
+                                <div class="detail-md">
+                                    Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
+                                </div>
+                                <div class="detail-btm">
+                                    <div class="img-wrap">
+                                        <img src="./images/newsList/like-icon.png"/>
+                                        <img src="./images/newsList/exit-icon.png"/>
+                                    </div>
+                                    <div class="time">
+                                        6 Jun
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-detail">
+                                <div class="detail-tp">
+                                    <div class="img-wrap">
+                                        <img src="./images/newsList/twitter-head.png" alt=""/>
+                                    </div>
+                                    <div class="info">
+                            <span>
+                                ApexMicroelectronics
+                            </span>
+                                        <span>
+                                @APEXMIC
+                            </span>
+                                    </div>
+                                    <div class="icon-place">
+                                        <img src="./images/newsList/twitter-icon.png"/>
+                                    </div>
+                                </div>
+                                <div class="detail-md">
+                                    Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
+                                </div>
+                                <div class="detail-btm">
+                                    <div class="img-wrap">
+                                        <img src="./images/newsList/like-icon.png"/>
+                                        <img src="./images/newsList/exit-icon.png"/>
+                                    </div>
+                                    <div class="time">
+                                        6 Jun
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-detail">
+                                <div class="detail-tp">
+                                    <div class="img-wrap">
+                                        <img src="./images/newsList/twitter-head.png" alt=""/>
+                                    </div>
+                                    <div class="info">
+                            <span>
+                                ApexMicroelectronics
+                            </span>
+                                        <span>
+                                @APEXMIC
+                            </span>
+                                    </div>
+                                    <div class="icon-place">
+                                        <img src="./images/newsList/twitter-icon.png"/>
+                                    </div>
+                                </div>
+                                <div class="detail-md">
+                                    Laserjet Chip New Arrivals (May, 2017) - ProductNews - Apex Microelectronics apexmic.com/product/newsde
+                                </div>
+                                <div class="detail-btm">
+                                    <div class="img-wrap">
+                                        <img src="./images/newsList/like-icon.png"/>
+                                        <img src="./images/newsList/exit-icon.png"/>
+                                    </div>
+                                    <div class="time">
+                                        6 Jun
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="item-head">
+                                <h6>
+                                    Subscribe
+                                </h6>
+                            </div>
+                            <div class="form-info">
+                                <span>BE THE FIRST TO KNOW</span>
+                                <span>Sign up for our latest newsletter</span>
+                            </div>
+                            <form class="form-table" role="form">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><img src="./images/chipTest/person-icon.png" alt=""/></span>
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><img src="./images/chipTest/company-icon.png" alt=""/></span>
+                                    <input type="text" class="form-control" placeholder="Your Company Name">
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><img src="./images/chipTest/email-icon.png" alt=""/></span>
+                                    <input type="text" class="form-control" placeholder="Enter E-mail">
+                                </div>
+                                <br>
+                                <div class="submit-wrap">
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="sidebar-item">
+                            <div class="item-head">
+                                <h6>
+                                    Support Center
+                                </h6>
+                            </div>
+                            <div class="form-info">
+                                <span>Need some help for product</span>
+                            </div>
+                            <form class="form-table" role="form">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><img src="./images/chipTest/search-icon.png" alt=""/></span>
+                                    <input type="text" class="form-control" placeholder="Enter Cartridge Model">
+                                </div>
+                                <br>
+                                <div class="submit-wrap">
+                                    <button type="button" class="btn btn-primary">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="img-bg-item hidden-xs hidden-sm hidden-md">
+                            <div class="img-bg">
+                                <div class="img-left">
+                                    <div>
+                                        <img src="./images/chipTest/google-play.png"/>
+                                    </div>
+                                    <div class="img-left-botttom">
+                                        <img src="./images/chipTest/app-store.png"/>
+                                    </div>
+                                </div>
+                                <div class="img-right">
+                                    <img src="./images/chipTest/apex.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="chip-test-footer">
+
+    </div>
+</div>
+</body>
+</html>
