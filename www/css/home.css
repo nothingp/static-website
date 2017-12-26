@@ -734,6 +734,34 @@ body {
     padding: 0;
     margin-bottom: 0;
   }
+  .chevron {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+  }
+  .chevron-right {
+    border-top: 3px solid #2f88c6;
+    border-right: 3px solid #2f88c6;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+  }
+  .chevron-left {
+    border-top: 3px solid #2f88c6;
+    border-left: 3px solid #2f88c6;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+  }
   .nothing-icons {
     height: 136px;
     margin-left: 0;
@@ -1126,6 +1154,35 @@ body {
     padding: 0;
     margin-bottom: 0;
     border-radius: 0;
+  }
+  .chevron {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -1rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+  }
+  .chevron-right {
+    border-top: 2px solid #2f88c6;
+    border-right: 2px solid #2f88c6;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    right: 50%;
+  }
+  .chevron-left {
+    border-top: 2px solid #2f88c6;
+    border-left: 2px solid #2f88c6;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
   }
   .nothing-icons {
     height: 13rem;
