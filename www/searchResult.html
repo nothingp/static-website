@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>搜索结果</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/searchResult.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+            var countryList = $('#countryList').find('li');
+            $(countryList).click(function () {
+                $('#selectCountry').html($(this).find('a').html());
+            })
+        })
+    </script>
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<div class="container-fluid search-result">
+
+    <div class="search-result-navbar">
+
+    </div>
+
+    <!--bannerImg-->
+    <div class="nothing-banner-img">
+        <div class="col-md-3 col-xs-2"></div>
+        <div class="col-md-6 col-xs-8">
+            <input type="text" placeholder="Search Support">
+            <!--<span class="glyphicon glyphicon-search searcn-icon"></span>-->
+        </div>
+        <div class="col-md-3 col-xs-2"></div>
+    </div>
+
+    <!--按钮列表-->
+    <div class="nothing-btn-list">
+        <div class="btn-wrap">
+            <button type="button" class="btn btn-default btn-active">All</button>
+            <button type="button" class="btn btn-default">Product(35)</button>
+            <button type="button" class="btn btn-default">News(2333)</button>
+            <button type="button" class="btn btn-default">Support(325)</button>
+            <button type="button" class="btn btn-default">File(325)</button>
+            <button type="button" class="btn btn-default">Faq(325)</button>
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
+                        data-toggle="dropdown">
+                    All
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu nav navbar-nav" role="menu" aria-labelledby="dropdownMenu2">
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="0" href="#">All</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="1" href="#">Product(35)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="2" href="#">News(2333)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="2" href="#">Support(325)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="2" href="#">File(325)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="2" href="#">Faq(325)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <!--35 results found-->
+    <div class="results-found content-padding">
+        <div class="col-md-12">
+            <div class="col-sm-12 hidden-xs">35 results found</div>
+        </div>
+    </div>
+
+    <!--搜索列表-->
+    <div class="found-list content-padding">
+        <div class="found">
+            <div class="found-top">
+                Apex Won "Focus on Quality Award" for the Second Consecutive Year!
+            </div>
+            <div class="found-mid">
+                <span>articles</span>
+                <span>2017-05-31</span>
+            </div>
+            <div class="found-bottom">
+                From May 17 to May 19, "BUSINESS-INFORM 2017" was successfully held in Moscow, Russia. The exhibition has attracted 75 exhibitors from Russia, China, the
+                United States and Japan.
+            </div>
+        </div>
+        <div class="found-item">
+            <div class="found-top-item">
+                Apex successfully joined in the RT Imaging Summit & Expo—EMEA 2017
+            </div>
+            <div class="found-mid-item">
+                <span>articles</span>
+                <span>2017-05-31</span>
+            </div>
+            <div class="found-bottom-item">
+                The RTImagingSummit&Expo—EMEA 2017 was held in Cairo, Egypt from April 23th to 24th. …
+            </div>
+        </div>
+        <div class="found-item-list">
+            <div class="found-top-item-list">
+                <img src="./images/searchResult/laserjetChips.png">
+            </div>
+            <div class="found-mid-item-list">
+                <div class="list-top">Utax P-C3065MFP/3560DN/3560I MFP/3565I MFP</div>
+                <div class="list-bottom">Laserjet Chips</div>
+            </div>
+        </div>
+        <div class="found-item-list">
+            <div class="found-top-item-list">
+                <img src="./images/searchResult/Brother-1.png">
+            </div>
+            <div class="found-mid-item-list">
+                <div class="list-top">aLO-4430</div>
+                <div class="list-bottom">Laserjet Chips</div>
+            </div>
+        </div>
+        <div class="found-item-list hidden-xs">
+            <div class="found-top-item-list">
+                <img src="./images/searchResult/Kyocera-1.png">
+            </div>
+            <div class="found-mid-item-list">
+                <div class="list-top">Epson EP-10Va/30Va</div>
+                <div class="list-bottom">Inkjet Chips</div>
+            </div>
+        </div>
+        <div class="found-item-list hidden-xs">
+            <div class="found-top-item-list">
+                <img src="./images/searchResult/Sindoh-1.png">
+            </div>
+            <div class="found-mid-item-list">
+                <div class="list-top">aJE-T3641/T3642/T3643/T3644</div>
+                <div class="list-bottom">Inkjet Chips</div>
+            </div>
+        </div>
+        <div class="found-item hidden-xs">
+            <div class="found-top-item">
+                Software installation
+            </div>
+            <div class="found-mid-item">
+                <span>-Software can be installed, but driver reports error while the software is running.</span>
+            </div>
+            <div class="found-bottom-item">
+                -During installation, there are warnings from antivirus software.
+            </div>
+        </div>
+        <div class="found-item-list">
+            <div class="found-top-item-list">
+                <div class="found-img">
+                    <img src="./images/searchResult/pdf.png">
+                </div>
+            </div>
+            <div class="found-mid-item-list">
+                <div class="list-top">Unismart II System Structure </div>
+                <div class="list-bottom">2017-07-20</div>
+            </div>
+        </div>
+        <div class="found-item-list">
+            <div class="found-top-item-list">
+                <div class="found-img">
+                    <img src="./images/searchResult/doc.png">
+                </div>
+            </div>
+            <div class="found-mid-item-list">
+                <div class="list-top">Unismart Operating Instruction</div>
+                <div class="list-bottom">2017-07-20</div>
+            </div>
+        </div>
+        <div class="firmwareUpgrades-content-left-form-table-page hidden-xs">
+            <div class="col-sm-5"></div>
+            <div class="firmwareUpgrades-content-left-form-table-page-content col-sm-7">
+                <div class="firmwareUpgrades-content-left-form-table-page-content-num col-sm-4">
+                    <span>DISPLAY：</span>
+                    <select name="num" id="num" class="selectpicker form-control">
+                        <option>10</option>
+                        <option selected>20</option>
+                        <option>30</option>
+                    </select>
+                </div>
+                <div class="firmwareUpgrades-content-left-form-table-page-content-pages col-sm-4 clearfix">
+                    <div class="col-sm-4 nopadding width15">
+                        <button>
+                            <span class="glyphicon glyphicon-step-backward"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-4 nopadding width15">
+                        <button>
+                            <span class="glyphicon glyphicon-triangle-left"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-4 nopadding width25">
+                        <input type="text" placeholder="1">
+                    </div>
+                    <div class="col-sm-4 nopadding width15 showpages">
+                        <span>/1</span>
+                    </div>
+                    <div class="col-sm-4 nopadding width15">
+                        <button>
+                            <span class="glyphicon glyphicon-triangle-right"></span>
+                        </button>
+                    </div>
+                    <div class="col-sm-4 nopadding width15">
+                        <button>
+                            <span class="glyphicon glyphicon-step-forward"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="firmwareUpgrades-content-left-form-table-page-content-count col-sm-4">
+                    <span>9</span>RESULTS
+                </div>
+            </div>
+        </div>
+        <div class="found-btn">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-default load-more hidden-md hidden-sm hidden-lg">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-result-footer">
+
+    </div>
+
+</div>
+</body>
+</html>

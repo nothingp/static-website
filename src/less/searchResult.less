@@ -1,0 +1,369 @@
+@import "variables.less";
+@import "base.less";
+
+//pc 展示开始。。。
+@media screen and (min-width: @screen-sm-min) {
+  //768- sm->lg
+  .search-result-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
+
+  //bannerImg
+  .nothing-banner-img{
+    width: 100%;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../images/searchResult/banner.png);
+    text-align: center;
+    line-height: 280px;
+    input{
+      width: 100%;
+      height: 50px;
+      font-size: 20px;
+      padding-left: 20px;
+    }
+    .glyphicon{
+      background-color: #FFF;
+      padding: 8px;
+      font-size: 20px;
+      border: none;
+      margin-left: -60px;
+      color: #737373;
+    }
+
+  }
+
+  //按钮列表
+  .nothing-btn-list{
+    margin: 0 auto;
+    height: 70px;
+    border-bottom: 1px solid #dcdcdc;
+    .btn-wrap{
+      max-width: 1280px;
+      margin: 0 auto;
+      line-height: 70px;
+      .dropdown{
+        display: none;
+      }
+      >.btn{
+        display: inline-block;
+        margin-left: 20px;
+        border-radius: 3px;
+        border: solid 1px #2f88c4;
+        color: #2f87c4;
+        &.btn-active{
+          background-color: #2f87c4;
+          border: solid 1px #2f88c4;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  // 35 results found
+  .results-found{
+    font-size: 16px;
+    color: #999999;
+    padding: 16px 0 26px 0;
+  }
+
+  //搜索列表
+  .found-list{
+    margin-top: 26px;
+    .found{
+      border: solid 1px #e5e5e5;
+      margin-bottom: 10px;
+      .found-top{
+        color: #2f88c4;
+        font-size: 18px;
+        margin-top: 27px;
+        margin-left: 30px;
+      }
+      .found-mid{
+        font-size: 16px;
+        margin-top: 19px;
+        margin-left: 30px;
+        span:first-child{
+          margin-right: 30px;
+          color: #666666;
+        }
+        span:last-child{
+          color: #999999;
+        }
+      }
+      .found-bottom{
+        color: #999999;
+        font-size: 16px;
+        margin-top: 24px;
+        margin-bottom: 23px;
+        margin-left: 30px;
+      }
+    }
+    .found-item{
+      margin-bottom: 30px;
+      .found-top-item{
+        color: #333333;
+        font-size: 18px;
+        margin-top: 27px;
+        margin-left: 30px;
+      }
+      .found-mid-item{
+        font-size: 16px;
+        margin-top: 19px;
+        margin-left: 30px;
+        span:first-child{
+          margin-right: 30px;
+          color: #666666;
+        }
+        span:last-child{
+          color: #999999;
+        }
+      }
+      .found-bottom-item{
+        color: #999999;
+        font-size: 16px;
+        margin-top: 24px;
+        margin-bottom: 23px;
+        margin-left: 30px;
+      }
+    }
+    .found-item-list{
+      margin-bottom: 30px;
+      display: flex;
+      margin-left: 20px;
+      .found-top-item-list{
+        margin: auto 10px;
+        width: 120px;
+        text-align: center;
+
+      }
+      .found-mid-item-list{
+        margin: auto 30px;
+        .list-top{
+          margin-right: 30px;
+          color: #333333;
+          font-size: 18px;
+        }
+        .list-bottom{
+          color: #666666;
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .firmwareUpgrades-content-left-form-table-page{
+    .firmwareUpgrades-content-left-form-table-page-content{
+      padding:20px 0;
+      .firmwareUpgrades-content-left-form-table-page-content-num{
+        padding:0;
+        span{
+          font-size: 14px;
+          color: #666666;
+        }
+        select{
+          display:inline-block;
+          width:50%;
+        }
+      }
+      .firmwareUpgrades-content-left-form-table-page-content-pages{
+        padding:0;
+        .nopadding{
+          padding:0;
+          padding-top:5px;
+          margin-left:2px;
+        }
+        .width15{
+          width:24px;
+          //display: inline-block;
+        }
+        .width25{
+          width:25%;
+          //display: inline-block;
+        }
+        button{
+          display:inline-block;
+          width:24px;
+          height:24px;
+          padding:0;
+        }
+        input{
+          width:100%;
+          height:24px;
+        }
+        .showpages{
+          span{
+            display: inline-block;
+            width:100%;
+            height:24px;
+            line-height: 24px;
+            text-align: center;
+            color:#666666;
+          }
+        }
+
+      }
+      .firmwareUpgrades-content-left-form-table-page-content-count{
+        padding-top:8px;
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+
+
+  .search-result-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+
+
+}
+
+//手机展示开始。。。
+@media screen and (max-width: @screen-xs-max) {
+  //768-xs
+  .search-result-navbar {
+    height: 5rem;
+  }
+
+  //bannerImg
+  .nothing-banner-img{
+    width: 100%;
+    height: 14rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../images/searchResult/banner.png);
+    text-align: center;
+    line-height: 14rem;
+    input{
+      height: 3rem;
+      font-size: 1rem;
+      width: 100%;
+      padding-left: 2rem;
+    }
+    .glyphicon{
+      background-color: #FFF;
+      padding: .8rem;
+      font-size: 2rem;
+      border: none;
+      margin-left: -4rem;
+      color: #737373;
+    }
+  }
+
+  //按钮列表
+  .nothing-btn-list{
+    margin: 0 auto;
+    height: 7rem;
+    border-bottom: 1px solid #e5e5e5;
+    .btn-wrap{
+      margin: 0 auto;
+      line-height: 7rem;
+      >.btn{
+        display: none;
+      }
+      .dropdown{
+        margin-left: 1rem;
+        >.btn{
+          background-color: #2f87c4;
+          border-radius: .4rem;
+          border: solid 1px #2f88c4;
+          height: 3rem;
+          color: #fff
+        }
+        .dropdown-menu{
+          top: 5rem;
+          left: 1rem;
+        }
+      }
+    }
+  }
+
+  //搜索列表
+  .found-list{
+    margin-top: 3rem;
+    .found,.found-item{
+      border: solid 1px #e5e5e5;
+      margin-bottom: 1rem;
+      .found-top,.found-top-item{
+        color: #262626;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+      }
+      .found-mid,.found-mid-item{
+        color: #595959;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        span:first-child{
+          margin-right: 2rem;
+        }
+        span:last-child{
+          color: #8c8c8c;
+        }
+      }
+      .found-bottom,.found-bottom-item{
+        color: #8c8c8c;
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+      }
+    }
+    .found-item-list{
+      margin-bottom: 1rem;
+      display: flex;
+      border: solid 1px #e5e5e5;
+      .found-top-item-list{
+        margin: auto 1rem;
+        width: 6rem;
+        text-align: center;
+        img{
+          width: 6rem;
+          margin: 1rem 0;
+        }
+        .found-img{
+          img{
+            width: 3rem;
+          }
+        }
+      }
+      .found-mid-item-list{
+        margin: auto 0;
+        .list-top{
+          color: #262626;
+          font-size: 1rem;
+        }
+        .list-bottom{
+          color: #595959;
+          font-size: 1rem;
+        }
+      }
+    }
+    .found-btn{
+      .btn{
+        width: 100%;
+        font-size: 2rem;
+        color: #999999;
+        margin: 3rem 0;
+      }
+    }
+  }
+
+
+  .search-result-footer {
+    height: 44.9rem;
+    background: #f5f5f5;
+  }
+}
+
+
+
+
+
+
