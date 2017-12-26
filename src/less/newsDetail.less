@@ -219,6 +219,20 @@
           padding: 10px 0;
           background-color: inherit;
           box-shadow: none;
+          >li{
+            >a{
+              background-color: inherit!important;
+              border: none!important;
+              box-shadow: none!important;
+              color: #a4c7de;
+              &.active{
+                color: #ffffff;
+              }
+            }
+            >a:hover{
+              color: #ffffff;
+            }
+          }
         }
       }
     }
@@ -244,18 +258,54 @@
         .news-share{
           height: 50px;
           line-height: 50px;
+          >a{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-right: 10px;
+            background-size: 100% 100%;
+          }
+          .facebook-icon{
+            background-image: url("../images/news/facebook-icon.png");
+          }
+          .facebook-icon:hover{
+            background-image: url("../images/news/share1.png");
+          }
+          .twitter-icon{
+            background-image: url("../images/news/twitter-icon.png");
+          }
+          .twitter-icon:hover{
+            background-image: url("../images/news/share2.png");
+          }
+          .subscribe-icon{
+            background-image: url("../images/news/subscribe-icon.png");
+          }
+          .subscribe-icon:hover{
+            background-image: url("../images/news/share3.png");
+          }
+          .google-icon{
+            background-image: url("../images/news/google-icon.png");
+          }
+          .google-icon:hover{
+            background-image: url("../images/news/share4.png");
+          }
           >img{
             display: inline-block;
             margin-right: 10px;
           }
         }
         .head-btm{
-          >span:not(:first-child){
+          >a{
             font-size: 14px;
             color: #2f88c4;
             padding: 3px 6px;
             border: solid 1px #eeeeee;
             margin-right: 20px;
+            text-decoration: none;
+          }
+          >a:hover{
+            background-color: #2f88c4;
+            color: #ffffff;
           }
           >span:first-child{
             margin-right: 30px;
@@ -292,10 +342,13 @@
         font-size: 22px;
         color: #595959;
       }
-      .list-item{
-        margin: 10px;
+      .list-item:hover{
+        cursor: pointer;
         box-shadow: 0px 3px 7px 0px
         rgba(0, 0, 0, 0.35);
+      }
+      .list-item{
+        margin: 10px;
         border: solid 1px #eeeeee;
         .img-wrap{
           padding: 0;
