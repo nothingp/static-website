@@ -34,25 +34,47 @@
     <link href="css/home.css" rel="stylesheet">
 
     <script>
-        // $(function () {
-        //     $('[data-toggle="popover"]').popover()
-        // })
-               $(document).ready(function(){
-                   dropdownOpen();//调用
-               });
-               /**
-                * 鼠标划过就展开子菜单，免得需要点击才能展开
-                */
-               function dropdownOpen() {
-                   var $dropdownLi = $('li.dropdown');
-                   $dropdownLi.mouseover(function() {
-                       $(this).addClass('open');
-                   }).mouseout(function() {
-                       var ele = $(this);
-                       //setTimeout(function(){ele.removeClass('open')},3000);
-                       $(this).removeClass('open');
-                   });
-               }
+
+        $(document).ready(function () {
+            dropdownOpen();//调用
+        });
+
+        /**
+         * 鼠标划过就展开子菜单，免得需要点击才能展开
+         */
+        function dropdownOpen() {
+            var $dropdownLi = $('li.dropdown');
+            $dropdownLi.mouseover(function () {
+                $(this).addClass('open');
+            }).mouseout(function () {
+                var ele = $(this);
+                $(this).removeClass('open');
+            });
+        }
+
+        $(function () {
+            var footerArrowLink = $('.subMenu-container').find('.sub-menu-arrow');
+            $(footerArrowLink).hover(function () {
+                $(this).next().show();
+            }).mouseleave(function () {
+                $(this).next().hide();
+            })
+
+            var footerCloseLink = $('.subMenu-container').find('.close-icon');
+            $(footerCloseLink).click(function () {
+                $(this).parent().hide();
+            })
+
+            $('.subMenu-container-list').mouseover(function () {
+                $(this).show();
+            });
+
+            $('.subMenu-container-list').mouseleave(function () {
+                $(this).hide();
+            });
+
+        })
+
     </script>
 
     <style>
@@ -122,7 +144,9 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5 ">
                                             <li class="dropdown-submenu">
-                                                <a href="#">Awards & Qualifications<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">Awards & Qualifications<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
                                                     <li><a href="#">Awards & Qualifications</a></li>
@@ -132,7 +156,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -142,7 +168,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -167,7 +195,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -177,7 +206,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -187,7 +218,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -212,7 +245,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -222,7 +256,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -232,7 +268,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -258,7 +296,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -268,7 +307,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -278,7 +319,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -303,7 +346,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -313,7 +357,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -323,7 +369,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -349,7 +397,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu-active dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -359,7 +408,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -369,7 +420,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                    class="glyphicon glyphicon-menu-right hidden-xs"
+                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -733,128 +786,236 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-1 products-list-plus">
 
-                <h3>PRODUCTS</h3>
+                <h3><a href="javascript:;">PRODUCTS</a></h3>
 
                 <div class="products-list">
-                    <h4>New Products</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Product News</li>
-                        <li class="list-group-item">-Latest Products</li>
-                    </ul>
+                    <h4>
+                        <a href="">New Products</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Product News</a></li>
+                                    <li class="list-group-item"><a href="">-Latest Products</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Ink Cartridge Chips</h4>
+                    <h4><a href="">Ink Cartridge Chips</a></h4>
 
-                    <h4>Toner Cartridge Chips</h4>
+                    <h4><a href="">Toner Cartridge Chips</a></h4>
 
-                    <h4>Accessories</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-OPC/Drums</li>
-                        <li class="list-group-item">-Toner</li>
-                        <li class="list-group-item">-Rollers</li>
-                        <li class="list-group-item">-Blades</li>
-                        <li class="list-group-item">-Others</li>
-                    </ul>
+                    <h4>
+                        <a href="">Accessories</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-OPC/Drums</a></li>
+                                    <li class="list-group-item"><a href="">-Toner</a></li>
+                                    <li class="list-group-item"><a href="">-Rollers</a></li>
+                                    <li class="list-group-item"><a href="">-Blades</a></li>
+                                    <li class="list-group-item"><a href="">-Others</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Chip Testers</h4>
+                    <h4><a href="">Chip Testers</a></h4>
                 </div>
 
             </div>
             <div class="col-sm-2 support-list-plus">
 
-                <h3>SUPPORT</h3>
+                <h3><a href="">SUPPORT</a></h3>
 
                 <div class="support-list">
-                    <h4>Support Center</h4>
+                    <h4><a href="">Support Center</a></h4>
 
-                    <h4>Patent Center</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Introductions</li>
-                        <li class="list-group-item">-Patent Finder</li>
-                    </ul>
+                    <h4>
+                        <a href="">Patent Center</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Introductions</a></li>
+                                    <li class="list-group-item"><a href="">-Patent Finder</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Firmware Status</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Apex Support</li>
-                        <li class="list-group-item">-Firmware Status</li>
-                    </ul>
+                    <h4>
+                        <a href="">Firmware Status</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Apex Support</a></li>
+                                    <li class="list-group-item"><a href="">-Firmware Status</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Video Center</h4>
+                    <h4><a href="">Video Center</a></h4>
                 </div>
 
             </div>
             <div class="col-sm-2 unismart-list-plus">
-                <h3>UNISMART</h3>
+                <h3><a href="">UNISMART</a></h3>
 
                 <div class="unismart-list">
-                    <h4>About Unismart</h4>
+                    <h4><a href="">About Unismart</a></h4>
 
-                    <h4>Resettable Models</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-OEM Chips</li>
-                        <li class="list-group-item">-Apex Chips</li>
-                    </ul>
+                    <h4>
+                        <a href="">Resettable Models</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-OEM Chips</a></li>
+                                    <li class="list-group-item"><a href="">-Apex Chips</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Components</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Unismart</li>
-                        <li class="list-group-item">-Credits</li>
-                        <li class="list-group-item">-Blank Chips</li>
-                        <li class="list-group-item">-Jigs</li>
-                        <li class="list-group-item">-Other Accessories</li>
-                    </ul>
+                    <h4>
+                        <a href="">Components</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Unismart</a></li>
+                                    <li class="list-group-item"><a href="">-Credits</a></li>
+                                    <li class="list-group-item"><a href="">-Blank Chips</a></li>
+                                    <li class="list-group-item"><a href="">-Jigs</a></li>
+                                    <li class="list-group-item"><a href="">-Other Accessories</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Technical Support</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Upgrade Notification</li>
-                        <li class="list-group-item">-User Manual</li>
-                        <li class="list-group-item">-Download&Drives</li>
-                        <li class="list-group-item">-FAQ</li>
-                        <li class="list-group-item">-Warranty Information</li>
-                        <li class="list-group-item">-Contact Unismart</li>
-                    </ul>
+                    <h4>
+                        <a href="">Technical Support</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Upgrade Notification</a></li>
+                                    <li class="list-group-item"><a href="">-User Manual</a></li>
+                                    <li class="list-group-item"><a href="">-Download&Drives</a></li>
+                                    <li class="list-group-item"><a href="">-FAQ</a></li>
+                                    <li class="list-group-item"><a href="">-Warranty Information</a></li>
+                                    <li class="list-group-item"><a href="">-Contact Unismart</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Video Support</h4>
+                    <h4><a href="">Video Support</a></h4>
 
-                    <h4>Global Resale Agent</h4>
+                    <h4><a href="">Global Resale Agent</a></h4>
                 </div>
 
             </div>
             <div class="col-sm-2 news-list-plus">
 
-                <h3>NEWS</h3>
+                <h3><a href="">NEWS</a></h3>
 
                 <div class="news-list">
-                    <h4>Company News</h4>
+                    <h4><a href="">Company News</a></h4>
 
-                    <h4>Events</h4>
+                    <h4><a href="">Events</a></h4>
 
-                    <h4>Newsletters</h4>
+                    <h4><a href="">Newsletters</a></h4>
                 </div>
 
             </div>
             <div class="col-sm-2 about-us-list-plus">
 
-                <h3>ABOUT US</h3>
+                <h3><a href="">ABOUT US</a></h3>
 
                 <div class="about-us-list">
-                    <h4>About Apex</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Company Profile</li>
-                        <li class="list-group-item">-History of Inovation</li>
-                        <li class="list-group-item">-Research&Development</li>
-                        <li class="list-group-item">-Award&Qualifications</li>
-                    </ul>
+                    <h4>
+                        <a href="">About Apex</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Company Profile</a></li>
+                                    <li class="list-group-item"><a href="">-History of Inovation</a></li>
+                                    <li class="list-group-item"><a href="">-Research&Development</a></li>
+                                    <li class="list-group-item"><a href="">-Award&Qualifications</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Career</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item">-Apex Impression</li>
-                        <li class="list-group-item">-Social Recruitment</li>
-                        <li class="list-group-item">-College Plan</li>
-                        <li class="list-group-item">-Growth at Apex</li>
-                        <li class="list-group-item">-Life at Apex</li>
-                    </ul>
+                    <h4>
+                        <a href="">Career</a>
+                        <div class="subMenu-container">
+                            <div class="sub-menu-arrow">
+                                <span></span>
+                            </div>
+                            <div class="subMenu-container-list">
+                                <ul class="list-group">
+                                    <li class="list-group-item"><a href="">-Apex Impression</a></li>
+                                    <li class="list-group-item"><a href="">-Social Recruitment</a></li>
+                                    <li class="list-group-item"><a href="">-College Plan</a></li>
+                                    <li class="list-group-item"><a href="">-Growth at Apex</a></li>
+                                    <li class="list-group-item"><a href="">-Life at Apex</a></li>
+                                </ul>
+                                <div class="close-icon">
+                                    <img src="./images/footer-close.png">
+                                </div>
+                            </div>
+                        </div>
+                    </h4>
 
-                    <h4>Contact Us</h4>
+                    <h4><a href="">Contact Us</a></h4>
                 </div>
 
             </div>
@@ -862,14 +1023,14 @@
         </div>
 
         <div class="row share">
-            <div class="col-sm-7 col-sm-offset-1 copyright">
+            <div class="col-sm-8 col-sm-offset-1 copyright">
                 <p>Privacy | Terms of use Copyright © 2008-2016 Apex Microelectronics Co.,Ltd.All Rights Researved.</p>
                 <p>
                     All trademarks are property of their respective companies.
                     All other brands or product names mentioned are intended to show compatibility only.
                 </p>
             </div>
-            <div class="col-sm-4 up-phone-top">
+            <div class="col-sm-3 up-phone-top">
                 <div class="row">
                     <div class="col-xs-3 follow-us-txt hidden-sm hidden-md hidden-lg">
                         Follow Us

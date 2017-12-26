@@ -17,21 +17,33 @@
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
     .nothing-footer {
-        height: 777px;
-        max-width: 1280px;
+        //height: 777px;
         margin: 0 auto;
         background: #f5f5f5;
+        padding-top: 30px;
+        //padding-bottom: 25px;
+
         .row {
             margin: 0;
         }
+        a {
+            color: #595959;
+            &:hover {
+                color: #595959;
+            }
+        }
         h3 {
+            margin: 0;
             font-size: 1.8rem;
-            color: #333;
+            line-height: 3rem;
         }
         h4 {
+            margin: 0;
             font-size: 1.4rem;
-            color: #333;
+            line-height: 3rem;
+            position: relative;
         }
+
         .list-group {
             margin-bottom: 0;
         }
@@ -42,15 +54,74 @@
             margin-bottom: 0;
             background-color: #f5f5f5;
             border: none;
-            color: #999;
-            font-size: 1.3rem;
-            line-height: 2.5rem;
+            color: #8c8c8c;
+            font-size: 1.2rem;
+            line-height: 3rem;
         }
+
+        .subMenu-container {
+            display: inline-block;
+            height: 18px;
+            position: relative;
+            width: 25px;
+            .subMenu-container-list {
+                display: none;
+                border: 1px solid #ccc;
+                padding: 20px;
+                position: absolute;
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+                top: 0;
+                left: 25px;
+                min-width: 250px;
+                background: #f0f0f0;
+                z-index: 99;
+                .list-group-item {
+                    background-color: #f0f0f0;
+                }
+
+                .close-icon {
+                    position: absolute;
+                    top: 5px;
+                    right: 10px;
+                }
+            }
+            .sub-menu-arrow {
+                position: absolute;
+                cursor: pointer;
+                height: 25px;
+                width: 25px;
+                &:hover {
+                    background: #b4b4b4;
+                }
+                span {
+                    border-color: #8e9299;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    left: 7px;
+                    position: absolute;
+                    top: 9px;
+                    z-index: 0;
+                }
+
+            }
+        }
+
         .copyright {
-            margin-top: 40px;
+            //margin: 0;
+            margin-top: 50px;
+            //padding: 0;
             p {
                 color: #fff;
                 font-size: 1.2rem;
+                //line-height: 3rem;
+                //margin: 0;
+                //padding: 0;
             }
         }
         .share {
@@ -60,14 +131,14 @@
         }
 
         .share-icons {
-            margin-top: 40px;
+            margin-top: 50px;
             list-style: none;
             li {
                 margin-right: 20px;
                 float: left;
                 div {
-                    width: 49px;
-                    height: 49px;
+                    width: 42px;
+                    height: 42px;
                     border-radius: 6px;
                     background-repeat: no-repeat;
                     background-size: 100% 100%;
