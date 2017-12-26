@@ -207,6 +207,18 @@ body {
     background-color: inherit;
     box-shadow: none;
   }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a {
+    background-color: inherit!important;
+    border: none!important;
+    box-shadow: none!important;
+    color: #a4c7de;
+  }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a.active {
+    color: #ffffff;
+  }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a:hover {
+    color: #ffffff;
+  }
   .nothing-banner-img {
     width: 100%;
     height: 280px;
@@ -244,11 +256,14 @@ body {
     max-width: 1280px;
     margin: 0 auto 30px;
   }
+  .nothing-new-list .news-list .new-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  }
   .nothing-new-list .news-list .new-item {
     margin-top: 30px;
     height: 200px;
     background-color: #ffffff;
-    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
     border: solid 1px #e5e5e5;
   }
   .nothing-new-list .news-list .new-item .item-lf {
@@ -292,6 +307,7 @@ body {
     color: #999999;
   }
   .nothing-new-list .news-sidebar .sidebar-item {
+    cursor: pointer;
     margin-top: 30px;
     padding: 0 10px;
     background-color: #ffffff;
