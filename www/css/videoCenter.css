@@ -51,11 +51,17 @@ body {
     margin-bottom: 0;
   }
   .video-center-tabBar nav.navbar-default .navbar-nav .active a {
+    font-size: 20px;
     color: #fff;
     background: #2f88c4;
   }
   .video-center-tabBar nav.navbar-default .navbar-nav a {
+    font-size: 16px;
     color: #a4c7de;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .video-center-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;

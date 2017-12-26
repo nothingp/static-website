@@ -154,192 +154,6 @@
         }
       }
     }
-    .productList-content-left{
-      padding:0;
-      .productList-content-left-header{
-        h3{
-          font-size: 24px;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #333333;
-          margin-bottom:41px;
-        }
-        p{
-          font-size: 18px;
-          letter-spacing: 0px;
-          line-height: 30px;
-          color: #666666;
-          margin-bottom:90px;
-        }
-      }
-      .productList-content-left-title{
-        h3{
-          font-size: 24px;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #333333;
-          margin-bottom:60px;
-        }
-      }
-      .productList-content-left-form{
-        .productList-content-left-form-table{
-          table{
-            border-bottom:1px solid #dcdcdc;
-            margin-bottom:0;
-            td{
-              padding-left:20px;
-              padding-right:20px;
-              font-size: 16px;
-              font-weight: normal;
-              font-style: normal;
-              color: #666666;
-              height:140px;
-              line-height: 140px;
-              text-align: center;
-              img{
-                width:40px;
-                height:40px;
-              }
-              .circle{
-                display: inline-block;
-                width:24px;
-                height:24px;
-                -webkit-border-radius:50%;
-                -moz-border-radius:50%;
-                border-radius:50%;
-              }
-              .blue{
-                background: #01b0f1;
-                position:relative;
-                top:6px;
-              }
-              .printer-models{
-                display: inline-block;
-                vertical-align: middle;
-                p{
-                  line-height:30px;
-                  margin-bottom:0;
-                  text-align:left;
-                }
-              }
-              .buy-num{
-                span{
-                  display:inline-block;
-                  width:24px;
-                  height:24px;
-                  float:left;
-                  line-height: 24px;
-                  font-size:16px;
-                  border:1px solid #bebebe;
-                  border-radius:4px;
-                }
-                .num-dowm{
-                  background:#f5f5f5;
-                  color:#969696;
-                }
-                .num-up{
-                  background:#2f87c4;
-                  color:#fff;
-                }
-                input{
-                  display: inline-block;
-                  width:30px;
-                  height:30px;
-                }
-                button{
-                  width:26px;
-                  height:26px;
-                  margin:0;
-                  padding:0;
-                  border:none;
-                }
-              }
-              .cart-button{
-                width:34px;
-                height:34px;
-                background: url("../images/subscriptionCenter/cart-icon.jpg") no-repeat;
-                background-size: 100% 100%;
-                border:none;
-              }
-            }
-            thead{
-              background: rgba(238, 238, 238, 1);
-              tr{
-                line-height:61px;
-                th{
-                  line-height:61px;
-                  padding:0 20px;
-                  font-size: 16px;
-                  font-weight: normal;
-                  font-style: normal;
-                  letter-spacing: 0px;
-                  color: #666666;
-                  text-align: center;
-                }
-              };
-            }
-          }
-          .firmwareUpgrades-content-left-form-table-page{
-            .firmwareUpgrades-content-left-form-table-page-content{
-              padding:20px 0;
-              .firmwareUpgrades-content-left-form-table-page-content-num{
-                padding:0;
-                span{
-                  font-size: 14px;
-                  color: #666666;
-                }
-                select{
-                  display:inline-block;
-                  width:50%;
-                }
-              }
-              .firmwareUpgrades-content-left-form-table-page-content-pages{
-                padding:0;
-                .nopadding{
-                  padding:0;
-                  padding-top:5px;
-                  margin-left:2px;
-                }
-                .width15{
-                  width:24px;
-                  //display: inline-block;
-                }
-                .width25{
-                  width:25%;
-                  //display: inline-block;
-                }
-                button{
-                  display:inline-block;
-                  width:24px;
-                  height:24px;
-                  padding:0;
-                }
-                input{
-                  width:100%;
-                  height:24px;
-                }
-                .showpages{
-                  span{
-                    display: inline-block;
-                    width:100%;
-                    height:24px;
-                    line-height: 24px;
-                    text-align: center;
-                    color:#666666;
-                  }
-                }
-
-              }
-              .firmwareUpgrades-content-left-form-table-page-content-count{
-                padding-top:8px;
-                font-size: 14px;
-                color: #666666;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 
   .subscriptionCenter-list {
@@ -463,6 +277,225 @@
     }
   }
 
+  //产品列表
+  .productList-md{
+    .product-item{
+      display: flex;
+      background-color: #ffffff;
+      border: solid 1px #e5e5e5;
+      margin-bottom: 20px;
+      .product-img{
+        padding: 50px 0;
+        margin: 50px 0;
+        flex: 1;
+        border-right: 1px solid #e5e5e5;
+        >img{
+          margin: 0 auto;
+          display: block;
+          width: 85px;
+          height: 85px;
+        }
+      }
+      .product-info{
+        flex: 3;
+        padding-left: 30px;
+        padding-right: 30px;
+        .info-tp{
+          margin-top: 20px;
+          display: flex;
+          .flex-item{
+            flex: 1;
+            >p{
+              font-size: 18px;
+              line-height: 36px;
+              color: #666666;
+            }
+            >span{
+              display: inline-block;
+              font-size: 16px;
+              line-height: 36px;
+              color: #666666;
+            }
+          }
+          .color-item{
+            display: flex;
+            .color{
+              flex: 1;
+              font-size: 18px;
+              line-height: 36px;
+              color: #666666;
+            }
+            .colorI-wrap{
+              flex: 1;
+              .colorI{
+                width: 22px;
+                height: 22px;
+                background-color: #01b0f1;
+                display: block;
+                margin-top: 5px;
+                border-radius: 22px;
+              }
+            }
+          }
+        }
+        .info-btm{
+          margin-top: 30px;
+          display: flex;
+          p{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+          }
+          .info-title{
+            width: 220px;
+            font-size: 16px;
+            line-height: 36px;
+            color: #666666;
+            overflow: hidden;
+          }
+          .info-detail{
+            flex: 1;
+            font-size: 16px;
+            line-height: 36px;
+            color: #666666;
+            overflow: hidden;
+          }
+        }
+      }
+
+      .product-buy{
+        background-color: #ffffff;
+        border-radius: 4px;
+        margin-top: 30px;
+        padding-right: 30px;
+        .counter{
+          float: right;
+          display: flex;
+          width: 120px;
+          height: 40px;
+          background-color: #ffffff;
+          border-radius: 4px;
+          border: solid 1px #b5b5b5;
+          text-align: center;
+          >button{
+            padding: 0;
+            border: none;
+          }
+          .counter-reduce{
+            flex: 1;
+            font-size: 28px;
+            line-height: 40px;
+            background-color: #eaeaea;
+            color: #666666;
+          }
+          .counter-num{
+            flex: 1;
+            font-size: 24px;
+            line-height: 40px;
+            color: #333333;
+          }
+          .counter-add{
+            flex: 1;
+            font-size: 24px;
+            line-height: 40px;
+            background-color: #2f87c4;
+            color: #ffffff;
+          }
+        }
+
+        .cart-btn{
+          >button{
+            margin-top: 100px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            border: solid 1px #2f87c4;
+            padding: 15px 10px 40px;
+            width: 100%;
+            >img{
+              width: 30px;
+              height: 30px;
+              margin-right: 4px;
+            }
+            >span{
+              font-size: 18px;
+              color: #2f87c4;
+            }
+          }
+        }
+
+      }
+    }
+    .product-item:hover{
+      box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.18);
+    }
+  }
+
+  .productList-table-page{
+
+    .productList-table-page-content{
+      padding:20px 0;
+      .productList-table-page-content-num{
+        padding:0;
+        span{
+          font-size: 14px;
+          color: #666666;
+        }
+        select{
+          display:inline-block;
+          width:50%;
+        }
+      }
+      .productList-table-page-content-pages{
+        padding:0;
+        .nopadding{
+          padding:0;
+          padding-top:5px;
+          margin-left:2px;
+        }
+        .width15{
+          width:24px;
+          //display: inline-block;
+        }
+        .width25{
+          width:25%;
+          //display: inline-block;
+        }
+        button{
+          display:inline-block;
+          width:24px;
+          height:24px;
+          padding:0;
+        }
+        input{
+          width:100%;
+          height:24px;
+        }
+        .showpages{
+          span{
+            display: inline-block;
+            width:100%;
+            height:24px;
+            line-height: 24px;
+            text-align: center;
+            color:#666666;
+          }
+        }
+
+      }
+      .productList-table-page-content-count{
+        padding-top:8px;
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+
+  .productList-sm{
+    display: none;
+  }
   .subscriptionCenter-footer {
     height: 777px;
     background: #f5f5f5;
@@ -548,9 +581,6 @@
         }
       }
     }
-  }
-  .productList-content-left-form-table{
-    display: none;
   }
 
   //手机端商品列表展示

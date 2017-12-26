@@ -45,7 +45,7 @@ body {
     background: #2f88c4;
   }
   .subscriptionCenter-tabBar nav.navbar-default {
-    padding: 0 240px;
+    padding: 0 20%;
     background: #2f88c4;
     border: none;
     margin-bottom: 0;
@@ -53,9 +53,19 @@ body {
   .subscriptionCenter-tabBar nav.navbar-default .navbar-nav .active a {
     color: #fff;
     background: #2f88c4;
+    font-size: 20px;
   }
   .subscriptionCenter-tabBar nav.navbar-default .navbar-nav a {
+    font-size: 16px;
     color: #a4c7de;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .subscriptionCenter-tabBar nav.navbar-default .navbar-nav li {
+    height: 70px;
+    line-height: 70px;
   }
   .subscriptionCenter-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
@@ -124,8 +134,10 @@ body {
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap {
     padding: 0;
     background-color: #ffffff;
-    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
     border: solid 1px #e5e5e5;
+  }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-wrap:hover {
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
   }
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-left {
     height: 325px;
@@ -191,6 +203,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #dcdcdc;
+    outline: none;
   }
   .subscriptionCenter-list .subscriptionCenter-list-button button span {
     color: #fff;
