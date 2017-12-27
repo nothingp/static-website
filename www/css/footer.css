@@ -136,12 +136,16 @@ body {
     height: 134px;
   }
   .nothing-footer .share-icons {
+    padding: 0;
     margin-top: 50px;
     list-style: none;
   }
   .nothing-footer .share-icons li {
     margin-right: 20px;
     float: left;
+  }
+  .nothing-footer .share-icons li:last-child {
+    margin-right: 0;
   }
   .nothing-footer .share-icons li div {
     width: 42px;
@@ -181,6 +185,9 @@ body {
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 1.5rem;
   }
+  .nothing-footer h3 a {
+    color: #404040;
+  }
   .nothing-footer h3:after {
     display: block;
     content: '+';
@@ -193,6 +200,9 @@ body {
   .nothing-footer h4 {
     font-size: 1.4rem;
     font-weight: normal;
+    color: #404040;
+  }
+  .nothing-footer h4 a {
     color: #404040;
   }
   .nothing-footer .products-list-plus .products-list {
@@ -268,6 +278,9 @@ body {
     color: #999;
     font-size: 1.3rem;
     line-height: 2.5rem;
+  }
+  .nothing-footer .close-icon {
+    display: none;
   }
   .nothing-footer .copyright {
     position: relative;
