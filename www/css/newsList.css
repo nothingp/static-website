@@ -207,6 +207,18 @@ body {
     background-color: inherit;
     box-shadow: none;
   }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a {
+    background-color: inherit!important;
+    border: none!important;
+    box-shadow: none!important;
+    color: #a4c7de;
+  }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a.active {
+    color: #ffffff;
+  }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a:hover {
+    color: #ffffff;
+  }
   .nothing-banner-img {
     width: 100%;
     height: 280px;
@@ -214,6 +226,25 @@ body {
   .nothing-banner-img > img {
     width: 100%;
     height: 100%;
+  }
+  .nav-btn-list {
+    padding: 30px 50px 20px 50px;
+    color: #e5e5e5 ;
+  }
+  .nav-btn-list .nav-btn-wrap a:hover {
+    color: #2f88c4;
+    text-decoration: none;
+  }
+  .nav-btn-list .nav-btn-wrap a:active {
+    color: #2f88c4;
+  }
+  .nav-btn-list .nav-btn-wrap .product-news {
+    font-size: 18px;
+    color: #e5e5e5 ;
+  }
+  .nav-btn-list .nav-btn-wrap .latest-products {
+    font-size: 18px;
+    color: #e5e5e5 ;
   }
   .nothing-btn-list {
     margin: 0 auto;
@@ -244,11 +275,14 @@ body {
     max-width: 1280px;
     margin: 0 auto 30px;
   }
+  .nothing-new-list .news-list .new-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  }
   .nothing-new-list .news-list .new-item {
     margin-top: 30px;
     height: 200px;
     background-color: #ffffff;
-    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
     border: solid 1px #e5e5e5;
   }
   .nothing-new-list .news-list .new-item .item-lf {
@@ -293,6 +327,7 @@ body {
     border: solid 1px #e5e5e5;
   }
   .nothing-new-list .img-bg-item .img-bg {
+    cursor: pointer;
     display: flex;
     margin-top: 30px;
     height: 250px;
@@ -322,6 +357,7 @@ body {
     height: 140px;
   }
   .nothing-new-list .news-sidebar .sidebar-item {
+    cursor: pointer;
     margin-top: 30px;
     padding: 0 10px;
     background-color: #ffffff;

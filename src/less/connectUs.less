@@ -25,6 +25,20 @@
           padding: 10px 0;
           background-color: inherit;
           box-shadow: none;
+          >li{
+            >a{
+              background-color: inherit!important;
+              border: none!important;
+              box-shadow: none!important;
+              color: #a4c7de;
+              &.active{
+                color: #ffffff;
+              }
+            }
+            >a:hover{
+              color: #ffffff;
+            }
+          }
         }
       }
     }
@@ -34,6 +48,7 @@
   .nothing-banner-img{
     width: 100%;
     height: 280px;
+    border:#ccc solid 0px;
     >img{
       width: 100%;
       height: 100%;

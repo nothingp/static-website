@@ -54,9 +54,22 @@ body {
     background-color: inherit;
     box-shadow: none;
   }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a {
+    background-color: inherit!important;
+    border: none!important;
+    box-shadow: none!important;
+    color: #a4c7de;
+  }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a.active {
+    color: #ffffff;
+  }
+  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a:hover {
+    color: #ffffff;
+  }
   .nothing-banner-img {
     width: 100%;
     height: 280px;
+    border: #ccc solid 0px;
   }
   .nothing-banner-img > img {
     width: 100%;
