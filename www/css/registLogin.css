@@ -16,6 +16,18 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+.family-normal {
+  font-family: CiscoSans;
+}
+.family-light {
+  font-family: CiscoSans-ExtraLight;
+}
+.family-bold {
+  font-family: CiscoSans-Bold;
+}
+.no-padding {
+  padding: 0;
+}
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {
@@ -44,7 +56,7 @@ body {
     margin-bottom: 100px;
   }
   .regist-login-form .account .create-title {
-    font-size: 36px;
+    font-size: 4.8rem;
     color: #2f88c6;
     text-align: center;
     height: 32px;
@@ -109,6 +121,7 @@ body {
     height: 32px;
   }
   .regist-login-form .account .select-country .btn-lg {
+    background: #fff;
     padding: 0;
     font-size: 18px;
     height: 42px;
@@ -141,6 +154,7 @@ body {
   }
   .regist-login-form .account .select-country .dropdown-menu li a:hover {
     background: #686868;
+    color: #fff;
   }
   .regist-login-form .account .checkbox-two {
     color: #595959;
