@@ -108,7 +108,6 @@
                     top: 9px;
                     z-index: 0;
                 }
-
             }
         }
 
@@ -131,10 +130,14 @@
         }
 
         .share-icons {
+            padding: 0;
             margin-top: 50px;
             list-style: none;
             li {
                 margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
                 float: left;
                 div {
                     width: 42px;
@@ -178,6 +181,9 @@
             position: relative;
             border-bottom: 1px solid #e4e4e4;
             padding-bottom: 1.5rem;
+            a {
+                color: #404040;
+            }
             &:after {
                 display: block;
                 content: '+';
@@ -192,6 +198,9 @@
             font-size: 1.4rem;
             font-weight: normal;
             color: #404040;
+            a {
+                color: #404040;
+            }
         }
 
         .products-list-plus {
@@ -292,6 +301,10 @@
             color: #999;
             font-size: 1.3rem;
             line-height: 2.5rem;
+        }
+
+        .close-icon {
+            display: none;
         }
 
         .copyright {

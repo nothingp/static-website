@@ -598,12 +598,16 @@ body {
     height: 134px;
   }
   .nothing-footer .share-icons {
+    padding: 0;
     margin-top: 50px;
     list-style: none;
   }
   .nothing-footer .share-icons li {
     margin-right: 20px;
     float: left;
+  }
+  .nothing-footer .share-icons li:last-child {
+    margin-right: 0;
   }
   .nothing-footer .share-icons li div {
     width: 42px;
@@ -643,6 +647,9 @@ body {
     border-bottom: 1px solid #e4e4e4;
     padding-bottom: 1.5rem;
   }
+  .nothing-footer h3 a {
+    color: #404040;
+  }
   .nothing-footer h3:after {
     display: block;
     content: '+';
@@ -655,6 +662,9 @@ body {
   .nothing-footer h4 {
     font-size: 1.4rem;
     font-weight: normal;
+    color: #404040;
+  }
+  .nothing-footer h4 a {
     color: #404040;
   }
   .nothing-footer .products-list-plus .products-list {
@@ -730,6 +740,9 @@ body {
     color: #999;
     font-size: 1.3rem;
     line-height: 2.5rem;
+  }
+  .nothing-footer .close-icon {
+    display: none;
   }
   .nothing-footer .copyright {
     position: relative;
@@ -966,7 +979,8 @@ body {
     color: #2f88c6;
   }
   .nothing-tab-list .left-border-line {
-    border-left: 1px solid #e4e4e4;
+    border: 1px solid #e4e4e4;
+    border-top: none;
     padding-bottom: 50px;
   }
   .nothing-tab-list #nothingTabContent {
@@ -1089,7 +1103,7 @@ body {
     font-size: 1.6rem;
     color: #2f88c6;
   }
-  .nothing-jumbotron-bg {
+  .nothing-jumbotron-bg.jumbotron {
     margin: 50px auto 0;
     position: relative;
     border-radius: 0px;
@@ -1098,8 +1112,9 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 400px;
+    border-radius: 0;
   }
-  .nothing-jumbotron-bg:after {
+  .nothing-jumbotron-bg.jumbotron:after {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -1110,16 +1125,16 @@ body {
     display: block;
     content: '';
   }
-  .nothing-jumbotron-bg .bg-title {
+  .nothing-jumbotron-bg.jumbotron .bg-title {
     font-size: 3rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg .bg-txt {
+  .nothing-jumbotron-bg.jumbotron .bg-txt {
     margin: 50px 0;
     font-size: 2rem;
     color: #fff;
   }
-  .nothing-jumbotron-bg .bg-btn {
+  .nothing-jumbotron-bg.jumbotron .bg-btn {
     margin: auto;
     display: block;
     width: 161px;
@@ -1130,10 +1145,29 @@ body {
     border-radius: 4px;
     font-size: 1.6rem;
     color: #fff;
+    position: relative;
   }
-  .nothing-jumbotron-bg .bg-btn:hover {
+  .nothing-jumbotron-bg.jumbotron .bg-btn:after {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: block;
+    height: 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    width: 0;
+    right: 25px;
+    position: absolute;
+    top: 22px;
+    z-index: 0;
+  }
+  .nothing-jumbotron-bg.jumbotron .bg-btn:hover {
     border: solid 1px #2f88c6;
     background-color: #2f88c6;
+  }
+  .nothing-jumbotron-bg.jumbotron .bg-btn:hover:after {
+    right: 20px;
   }
   .nothing-contact {
     margin: 0 auto;
@@ -1141,7 +1175,7 @@ body {
   .nothing-contact .contact-email {
     position: relative;
     margin: 0;
-    padding: 61px 0 166px;
+    padding: 61px 0 135px;
     background-color: #fff;
   }
   .nothing-contact .contact-email .contact-title {
@@ -1151,12 +1185,17 @@ body {
   .nothing-contact .contact-email .contact-detail {
     font-size: 1.6rem;
   }
+  .nothing-contact .contact-email .contact-email-image {
+    text-align: right;
+    padding-right: 45px;
+  }
   .nothing-contact .contact-email .env-top {
     max-width: 120px;
     max-height: 95px;
   }
   .nothing-contact .contact-email .btn-blue {
     margin-top: 26px;
+    margin-left: 30px;
     display: block;
     width: 161px;
     height: 51px;
@@ -1167,6 +1206,31 @@ body {
     background-color: #ffffff;
     border-radius: 4px;
     border: solid 1px #2f88c6;
+    position: relative;
+  }
+  .nothing-contact .contact-email .btn-blue:after {
+    border-color: #2f88c6;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: block;
+    height: 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    width: 0;
+    right: 25px;
+    position: absolute;
+    top: 22px;
+    z-index: 0;
+  }
+  .nothing-contact .contact-email .btn-blue:hover {
+    color: #fff;
+    border: solid 1px #2f88c6;
+    background-color: #2f88c6;
+  }
+  .nothing-contact .contact-email .btn-blue:hover:after {
+    border-color: #fff;
+    right: 20px;
   }
   .nothing-contact .img-100 {
     position: absolute;
@@ -1204,6 +1268,11 @@ body {
     border-radius: 6px;
     border: solid 1px #72b85e;
     font-size: 1.6rem;
+  }
+  .nothing-contact .contact-form .contact-subscribe:hover,
+  .nothing-contact .contact-form .contact-subscribe:focus {
+    background: #599e45;
+    border: solid 1px #599e45;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1581,10 +1650,14 @@ body {
     height: 4.5rem;
     line-height: 4.5rem;
     text-align: center;
-    color: #fff;
     background-color: #72b85e;
     border-radius: .6rem;
     border: solid 1px #72b85e;
     font-size: 1.5rem;
+  }
+  .nothing-contact .contact-form .contact-subscribe:hover,
+  .nothing-contact .contact-form .contact-subscribe:focus {
+    color: #fff;
+    background: #599e45;
   }
 }
