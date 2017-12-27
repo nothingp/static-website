@@ -1,11 +1,11 @@
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {
@@ -181,7 +181,7 @@ body {
     padding-bottom: 0;
     color: #2f88c6;
     font-size: 1.2rem;
-    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-family: CiscoSans-ExtraLight;
   }
   .navbar .nothing-navbar-info > li a:hover,
   .navbar .nothing-navbar-info > li a:focus {

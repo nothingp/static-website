@@ -1,11 +1,11 @@
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {

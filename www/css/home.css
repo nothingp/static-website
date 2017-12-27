@@ -1,11 +1,11 @@
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {
@@ -301,7 +301,7 @@ body {
     padding-right: 7px;
     color: #2f88c6;
     font-size: 1rem;
-    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-family: CiscoSans-ExtraLight;
   }
   .box-shadow-line .navbar .nothing-navbar-info > li > a:hover,
   .box-shadow-line .navbar .nothing-navbar-info > li > a:focus {
@@ -756,16 +756,12 @@ body {
   .nothing-footer .close-icon {
     display: none;
   }
-  .nothing-footer .copyright {
-    position: relative;
-    top: 4rem;
-  }
   .nothing-footer .copyright p {
     color: #fff;
     font-size: 1.2rem;
   }
   .nothing-footer .share {
-    padding: 3rem 0 4rem;
+    padding: 3rem 0;
     background: #333;
   }
   .nothing-footer .follow-us-txt {
@@ -777,8 +773,7 @@ body {
     color: #fff;
   }
   .nothing-footer .up-phone-top {
-    position: relative;
-    top: -10rem;
+    margin-top: 3rem;
   }
   .nothing-footer .share-icons {
     list-style: none;
@@ -1012,14 +1007,16 @@ body {
     border-color: transparent;
     border-top-color: #e4e4e4;
   }
+  .nothing-tab-list #nothingTabContent .list-group-item .list-item-title {
+    font-weight: 700;
+  }
   .nothing-tab-list #nothingTabContent .list-group-item:hover {
     background-color: #fff;
     border-color: #e4e4e4;
-    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 8px 0px #d8d8d8;
     border-left: 8px solid #2f88c6;
   }
   .nothing-tab-list #nothingTabContent .list-group-item:hover .list-item-title {
-    font-size: 1.6rem;
     color: #2f88c6;
   }
   .nothing-tab-list #nothingTabContent .see-more {
@@ -1342,7 +1339,7 @@ body {
   }
   .nothing-icons .nothing-icon p {
     color: #fff;
-    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-family: CiscoSans-ExtraLight;
     font-size: 1.4rem;
     margin: 0;
     line-height: 4.8rem;
@@ -1361,7 +1358,7 @@ body {
     margin-bottom: 6.2rem;
     font-size: 1.5rem;
     color: #999;
-    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-carousel .print {
     text-align: center;
@@ -1451,15 +1448,20 @@ body {
     background-color: #fff;
     border-color: #e4e4e4;
     border-left: 0.5rem solid #2f88c6;
+    box-shadow: 0px 0px 8px 0px #d8d8d8;
   }
   .nothing-tab-list #nothingTabContent .list-group-item:hover .list-item-title {
     font-size: 1.2rem;
     color: #2f88c6;
   }
   .nothing-tab-list #nothingTabContent .see-more {
+    margin-top: 50%;
     text-align: center;
     color: #2f88c6;
     font-size: 1.5rem;
+  }
+  .nothing-tab-list #nothingTabContent img {
+    width: 100%;
   }
   .nothing-img-container .thumbnail {
     padding: 0;
@@ -1662,6 +1664,7 @@ body {
     border: 1px solid #e5e5e5;
   }
   .nothing-contact .contact-form .contact-subscribe {
+    color: #fff;
     display: block;
     margin: auto;
     width: 14.7rem;

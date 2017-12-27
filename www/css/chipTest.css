@@ -1,11 +1,11 @@
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {
@@ -301,7 +301,7 @@ body {
     padding-right: 7px;
     color: #2f88c6;
     font-size: 1rem;
-    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-family: CiscoSans-ExtraLight;
   }
   .box-shadow-line .navbar .nothing-navbar-info > li > a:hover,
   .box-shadow-line .navbar .nothing-navbar-info > li > a:focus {
@@ -756,16 +756,12 @@ body {
   .nothing-footer .close-icon {
     display: none;
   }
-  .nothing-footer .copyright {
-    position: relative;
-    top: 4rem;
-  }
   .nothing-footer .copyright p {
     color: #fff;
     font-size: 1.2rem;
   }
   .nothing-footer .share {
-    padding: 3rem 0 4rem;
+    padding: 3rem 0;
     background: #333;
   }
   .nothing-footer .follow-us-txt {
@@ -777,8 +773,7 @@ body {
     color: #fff;
   }
   .nothing-footer .up-phone-top {
-    position: relative;
-    top: -10rem;
+    margin-top: 3rem;
   }
   .nothing-footer .share-icons {
     list-style: none;

@@ -241,14 +241,16 @@
                 border-left-width: 8px;
                 border-color: transparent;
                 border-top-color: #e4e4e4;
+                .list-item-title {
+                    font-weight: 700;
+                }
                 &:hover {
                     .list-item-title {
-                        font-size: 1.6rem;
                         color: @base-color;
                     }
                     background-color: #fff;
                     border-color: #e4e4e4;
-                    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.05);
+                    box-shadow: 0px 0px 8px 0px #d8d8d8;
                     border-left: 8px solid @base-color;
                 }
             }
@@ -721,12 +723,17 @@
                     background-color: #fff;
                     border-color: #e4e4e4;
                     border-left: .5rem solid @base-color;
+                    box-shadow: 0px 0px 8px 0px #d8d8d8;
                 }
             }
             .see-more {
+                margin-top: 50%;
                 text-align: center;
                 color: @base-color;
                 font-size: 1.5rem;
+            }
+            img {
+                width: 100%;
             }
         }
     }
@@ -947,6 +954,7 @@
                 border: 1px solid #e5e5e5;
             }
             .contact-subscribe {
+                color: #fff;
                 display: block;
                 margin: auto;
                 width: 14.7rem;
