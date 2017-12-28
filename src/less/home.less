@@ -383,6 +383,25 @@
         .solution-link {
             font-size: 1.6rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -60px;
+                    position: absolute;
+                    top: 8px;
+                    z-index: 0;
+                }
+            }
         }
     }
 
@@ -620,7 +639,7 @@
             p {
                 color: #fff;
                 font-family: @font-sub-family;
-                font-size: 1.4rem; //TODO ios 5 1.4rem
+                font-size: 1.4rem;
                 margin: 0;
                 line-height: 4.8rem;
             }
@@ -873,6 +892,25 @@
         .solution-link {
             font-size: 1.2rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: .3rem;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -1rem;
+                    position: absolute;
+                    top: .4rem;
+                    z-index: 0;
+                }
+            }
         }
     }
 

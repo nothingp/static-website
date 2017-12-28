@@ -1135,6 +1135,25 @@ body {
     font-size: 1.6rem;
     color: #2f88c6;
   }
+  .nothing-solution-container .solution-link span {
+    display: inline-block;
+    position: relative;
+  }
+  .nothing-solution-container .solution-link span:after {
+    border-color: #2f88c6;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: inline-block;
+    height: 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    width: 0;
+    right: -60px;
+    position: absolute;
+    top: 8px;
+    z-index: 0;
+  }
   .nothing-jumbotron-bg.jumbotron {
     margin: 50px auto 0;
     position: relative;
@@ -1587,6 +1606,25 @@ body {
   .nothing-solution-container .solution-link {
     font-size: 1.2rem;
     color: #2f88c6;
+  }
+  .nothing-solution-container .solution-link span {
+    display: inline-block;
+    position: relative;
+  }
+  .nothing-solution-container .solution-link span:after {
+    border-color: #2f88c6;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: inline-block;
+    height: 0;
+    padding: .3rem;
+    transform: rotate(45deg);
+    width: 0;
+    right: -1rem;
+    position: absolute;
+    top: .4rem;
+    z-index: 0;
   }
   .nothing-jumbotron-bg.jumbotron {
     position: relative;
