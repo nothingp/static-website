@@ -97,7 +97,7 @@
             color: @base-color;
         }
         .in-focus-sub {
-            margin-top: 21px;
+            margin-top: 13px;
             margin-bottom: 68px;
             font-size: 2rem;
             color: #999;
@@ -109,9 +109,10 @@
             }
         }
         .print-title {
-            margin-bottom: 30px;
+            margin-top: -20px;
             font-size: 2.4rem;
             color: #666666;
+            line-height: 4.3rem;
         }
         .print-li {
             padding: 0;
@@ -131,14 +132,33 @@
             margin-left: 5px;
             font-size: 1.4rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -15px;
+                    position: absolute;
+                    top: 7px;
+                    z-index: 0;
+                }
+            }
         }
         .carousel-control {
             background-image: none;
         }
-        .glyphicon.glyphicon-chevron-left,
-        .glyphicon.glyphicon-chevron-right {
-            color: @base-color;
-        }
+        //.glyphicon.glyphicon-chevron-left,
+        //.glyphicon.glyphicon-chevron-right {
+        //    color: @base-color;
+        //}
         .carousel-indicators {
             li {
                 background: #fff;
@@ -654,6 +674,25 @@
             margin-top: 2.3rem;
             font-size: 1.2rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -15px;
+                    position: absolute;
+                    top: 5px;
+                    z-index: 0;
+                }
+            }
         }
 
         .carousel-control {
