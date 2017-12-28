@@ -1161,6 +1161,7 @@ body {
     font-size: 1.6rem;
     color: #fff;
     position: relative;
+    padding-right: 30px;
   }
   .nothing-jumbotron-bg.jumbotron .bg-btn:after {
     border-color: #fff;
@@ -1222,6 +1223,7 @@ body {
     border-radius: 4px;
     border: solid 1px #2f88c6;
     position: relative;
+    padding-right: 20px;
   }
   .nothing-contact .contact-email .btn-blue:after {
     border-color: #2f88c6;
@@ -1596,10 +1598,30 @@ body {
     font-size: 1.2rem;
     color: #fff;
     border: solid 1px #fff;
+    padding-right: 30px;
+    position: relative;
+  }
+  .nothing-jumbotron-bg.jumbotron .bg-btn:after {
+    border-color: #fff;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: block;
+    height: 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    width: 0;
+    right: 25px;
+    position: absolute;
+    top: 18px;
+    z-index: 0;
   }
   .nothing-jumbotron-bg.jumbotron .bg-btn:hover {
     border: solid 1px #2f88c6;
     background-color: #2f88c6;
+  }
+  .nothing-jumbotron-bg.jumbotron .bg-btn:hover:after {
+    right: 20px;
   }
   .nothing-contact .contact-email {
     position: relative;
@@ -1625,19 +1647,6 @@ body {
   .nothing-contact .contact-email .env-top {
     margin: 0 auto 4rem;
     display: block;
-  }
-  .nothing-contact .contact-email .btn-blue {
-    margin-top: 6.5rem;
-    display: block;
-    width: 22.5rem;
-    height: 7.3rem;
-    line-height: 7.3rem;
-    text-align: center;
-    font-size: 2.4rem;
-    color: #2f88c6;
-    background-color: #ffffff;
-    border-radius: .4rem;
-    border: solid 1px #2f88c6;
   }
   .nothing-contact .img-100 {
     position: absolute;

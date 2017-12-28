@@ -407,6 +407,8 @@
             font-size: 1.6rem;
             color: #fff;
             position: relative;
+            padding-right: 30px;
+
             &:after {
                 border-color: #fff;
                 border-style: solid;
@@ -469,6 +471,7 @@
                 border-radius: 4px;
                 border: solid 1px @base-color;
                 position: relative;
+                padding-right: 20px;
                 &:after {
                     border-color: @base-color;
                     border-style: solid;
@@ -879,9 +882,29 @@
             font-size: 1.2rem;
             color: #fff;
             border: solid 1px #fff;
+            padding-right: 30px;
+            position: relative;
+            &:after {
+                border-color: #fff;
+                border-style: solid;
+                border-width: 1px 1px 0 0;
+                content: "";
+                display: block;
+                height: 0;
+                padding: 3px;
+                transform: rotate(45deg);
+                width: 0;
+                right: 25px;
+                position: absolute;
+                top: 18px;
+                z-index: 0;
+            }
             &:hover {
                 border: solid 1px @base-color;
                 background-color: @base-color;
+                &:after {
+                    right: 20px;
+                }
             }
         }
     }
@@ -912,19 +935,6 @@
             .env-top {
                 margin: 0 auto 4rem;
                 display: block;
-            }
-            .btn-blue {
-                margin-top: 6.5rem;
-                display: block;
-                width: 22.5rem;
-                height: 7.3rem;
-                line-height: 7.3rem;
-                text-align: center;
-                font-size: 2.4rem;
-                color: @base-color;
-                background-color: #ffffff;
-                border-radius: .4rem;
-                border: solid 1px @base-color;
             }
         }
 
