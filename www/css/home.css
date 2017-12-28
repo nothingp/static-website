@@ -1052,12 +1052,17 @@ body {
   .nothing-img-container .thumbnail {
     padding: 0;
     overflow: hidden;
+    height: 508px;
   }
   .nothing-img-container .thumbnail.unismart-thumbnail {
     border-bottom: 8px solid #19a456;
   }
   .nothing-img-container .thumbnail.nfc-thumbnail {
     border-bottom: 8px solid #099ea7;
+  }
+  .nothing-img-container .thumbnail .img-well {
+    height: 268px;
+    overflow: hidden;
   }
   .nothing-img-container .thumbnail img {
     cursor: pointer;
@@ -1070,7 +1075,7 @@ body {
     position: relative;
   }
   .nothing-img-container .img-tips {
-    margin: 30px 0;
+    margin: 45px 0 15px;
     color: #999;
     font-size: 1.8rem;
   }
@@ -1080,6 +1085,7 @@ body {
     font-size: 1.6rem;
     color: #333;
     min-height: 70px;
+    line-height: 36px;
   }
   .nothing-img-container .unismart-btn {
     position: absolute;
@@ -1095,6 +1101,9 @@ body {
     margin-left: -104px;
     font-size: 2rem;
   }
+  .nothing-img-container .unismart-btn:hover {
+    background: #12783f;
+  }
   .nothing-img-container .nfc-btn {
     position: absolute;
     top: -40px;
@@ -1108,6 +1117,9 @@ body {
     text-align: center;
     margin-left: -104px;
     font-size: 2rem;
+  }
+  .nothing-img-container .nfc-btn:hover {
+    background: #067077;
   }
   .nothing-jumbotron-phone.jumbotron {
     position: relative;
@@ -1541,6 +1553,9 @@ body {
   .nothing-img-container .thumbnail.nfc-thumbnail {
     border-bottom: .8rem solid #099ea7;
   }
+  .nothing-img-container .thumbnail .img-well {
+    overflow: hidden;
+  }
   .nothing-img-container .thumbnail img {
     cursor: pointer;
     transition: all 0.6s;
@@ -1558,10 +1573,10 @@ body {
   }
   .nothing-img-container .img-txt-detail {
     max-width: 60rem;
-    margin: 0 auto 3rem;
     padding: 0 1rem;
     font-size: 1.2rem;
     color: #333;
+    line-height: 2rem;
   }
   .nothing-img-container .unismart-btn {
     position: absolute;
@@ -1577,6 +1592,9 @@ body {
     text-align: center;
     margin-left: -7.5rem;
   }
+  .nothing-img-container .unismart-btn:hover {
+    background: #12783f;
+  }
   .nothing-img-container .nfc-btn {
     position: absolute;
     top: -1.5rem;
@@ -1589,6 +1607,9 @@ body {
     line-height: 2.8rem;
     text-align: center;
     margin-left: -7.5rem;
+  }
+  .nothing-img-container .nfc-btn:hover {
+    background: #067077;
   }
   .nothing-jumbotron-phone.jumbotron {
     position: relative;
