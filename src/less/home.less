@@ -266,12 +266,38 @@
                 border-left-width: 8px;
                 border-color: transparent;
                 border-top-color: #e4e4e4;
+                position: relative;
+                &:first-child {
+                    border-top-color: transparent;
+                }
                 .list-item-title {
                     font-weight: 700;
+                }
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 2px 2px 0 0;
+                    content: "";
+                    display: block;
+                    height: 0;
+                    padding: 5px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: 10%;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -2.5px;
+                    z-index: 0;
+                    opacity: 0;
                 }
                 &:hover {
                     .list-item-title {
                         color: @base-color;
+                    }
+                    &:after {
+                        right: 8%;
+                        opacity: .8;
+                        transition: all 500ms ease-in-out;
                     }
                     background-color: #fff;
                     border-color: #e4e4e4;

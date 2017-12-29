@@ -1076,9 +1076,30 @@ body {
     border-left-width: 8px;
     border-color: transparent;
     border-top-color: #e4e4e4;
+    position: relative;
+  }
+  .nothing-tab-list #nothingTabContent .list-group-item:first-child {
+    border-top-color: transparent;
   }
   .nothing-tab-list #nothingTabContent .list-group-item .list-item-title {
     font-weight: 700;
+  }
+  .nothing-tab-list #nothingTabContent .list-group-item:after {
+    border-color: #2f88c6;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: block;
+    height: 0;
+    padding: 5px;
+    transform: rotate(45deg);
+    width: 0;
+    right: 10%;
+    position: absolute;
+    top: 50%;
+    margin-top: -2.5px;
+    z-index: 0;
+    opacity: 0;
   }
   .nothing-tab-list #nothingTabContent .list-group-item:hover {
     background-color: #fff;
@@ -1088,6 +1109,11 @@ body {
   }
   .nothing-tab-list #nothingTabContent .list-group-item:hover .list-item-title {
     color: #2f88c6;
+  }
+  .nothing-tab-list #nothingTabContent .list-group-item:hover:after {
+    right: 8%;
+    opacity: .8;
+    transition: all 500ms ease-in-out;
   }
   .nothing-tab-list #nothingTabContent .see-more {
     margin-left: 15px;
