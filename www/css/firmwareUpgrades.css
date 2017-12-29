@@ -256,6 +256,7 @@ body {
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-right {
     padding: 0;
+    padding-left: 10px;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form {
     border: 1px solid #dcdcdc;
