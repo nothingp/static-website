@@ -103,8 +103,12 @@ body {
   }
   .video-center-panel .video-item .txt-title {
     padding: 0;
-    margin: 0;
+    margin: 5px 0;
     font-size: 2.4rem;
+    color: #333;
+    line-height: 3rem;
+  }
+  .video-center-panel .video-item .txt-title:hover {
     color: #2f88c4;
   }
   .video-center-panel .video-item .txt-detail {
@@ -126,6 +130,11 @@ body {
   .video-center-panel .subscribe-form .form-group,
   .video-center-panel .support-form .form-group {
     margin-bottom: 1rem;
+  }
+  .video-center-panel .subscribe-form .form-group .submit-button,
+  .video-center-panel .support-form .form-group .submit-button {
+    height: 32px;
+    width: 100px;
   }
   .video-center-panel .subscribe-form label,
   .video-center-panel .support-form label {
@@ -234,9 +243,10 @@ body {
   }
   .video-center-panel .row .video-item .txt-title {
     padding: 0;
-    margin: 0;
+    margin: 5px 0;
     font-size: 1.2rem;
     color: #404040;
+    line-height: 3rem;
   }
   .video-center-panel .row .video-item .txt-detail {
     padding: 0;
