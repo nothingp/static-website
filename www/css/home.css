@@ -355,6 +355,9 @@ body {
     font-size: 1.2rem;
     min-width: 85px;
   }
+  .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu > li {
+    border-left: 5px solid transparent;
+  }
   .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu > li:hover {
     border-left: 5px solid #2f88c6;
   }
@@ -879,6 +882,7 @@ body {
   .nothing-icons .nothing-icon .div-img-circle.support:hover {
     background-image: url(../images/quick_nav/hover/support_center.png);
     border-color: transparent;
+    transition: background 0.3s ease;
   }
   .nothing-icons .nothing-icon .div-img-circle.firmware {
     background-image: url(../images/quick_nav/quick/firmware_status.png);
@@ -886,6 +890,7 @@ body {
   .nothing-icons .nothing-icon .div-img-circle.firmware:hover {
     background-image: url(../images/quick_nav/hover/firmware_status.png);
     border-color: transparent;
+    transition: background 0.3s ease;
   }
   .nothing-icons .nothing-icon .div-img-circle.company {
     background-image: url(../images/quick_nav/quick/company_news.png);
@@ -893,6 +898,7 @@ body {
   .nothing-icons .nothing-icon .div-img-circle.company:hover {
     background-image: url(../images/quick_nav/hover/company_news.png);
     border-color: transparent;
+    transition: background 0.3s ease;
   }
   .nothing-icons .nothing-icon .div-img-circle.patent {
     background-image: url(../images/quick_nav/quick/patent_center.png);
@@ -900,6 +906,7 @@ body {
   .nothing-icons .nothing-icon .div-img-circle.patent:hover {
     background-image: url(../images/quick_nav/hover/patent_center.png);
     border-color: transparent;
+    transition: background 0.3s ease;
   }
   .nothing-icons .nothing-icon .div-img-circle.subscribe {
     background-image: url(../images/quick_nav/quick/subscribe.png);
@@ -907,6 +914,7 @@ body {
   .nothing-icons .nothing-icon .div-img-circle.subscribe:hover {
     background-image: url(../images/quick_nav/hover/subscribe.png);
     border-color: transparent;
+    transition: background 0.3s ease;
   }
   .nothing-icons .nothing-icon p {
     text-align: center;

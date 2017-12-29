@@ -355,6 +355,9 @@ body {
     font-size: 1.2rem;
     min-width: 85px;
   }
+  .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu > li {
+    border-left: 5px solid transparent;
+  }
   .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu > li:hover {
     border-left: 5px solid #2f88c6;
   }
