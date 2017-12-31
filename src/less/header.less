@@ -418,7 +418,7 @@
         .dropdown.search-top-icon {
             position: static;
             .dropdown-menu {
-                position: absolute;
+                position: inherit;
                 top: 4.29rem;
                 background: @base-color;
                 border: none;
@@ -429,7 +429,7 @@
                 padding: 0;
                 .search-close-icon {
                     position: absolute;
-                    top: .8rem;
+                    top: 4.8rem;
                     right: 2rem;
                     color: #fff;
                     display: inline-block;
@@ -458,7 +458,7 @@
                 &:after {
                     position: absolute;
                     display: block;
-                    top: -.25rem;
+                    top: 4rem;
                     right: 3.3rem;
                     content: '';
                     width: .5rem;
@@ -511,6 +511,7 @@
 
         .navbar {
             margin-bottom: 0;
+            border: 0;
             .navbar-header {
                 .nothing-navbar-button {
                     float: left;

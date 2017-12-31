@@ -401,7 +401,7 @@ body {
     position: static;
   }
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu {
-    position: absolute;
+    position: inherit;
     top: 4.29rem;
     background: #2f88c6;
     border: none;
@@ -413,7 +413,7 @@ body {
   }
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu .search-close-icon {
     position: absolute;
-    top: .8rem;
+    top: 4.8rem;
     right: 2rem;
     color: #fff;
     display: inline-block;
@@ -441,7 +441,7 @@ body {
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu:after {
     position: absolute;
     display: block;
-    top: -0.25rem;
+    top: 4rem;
     right: 3.3rem;
     content: '';
     width: .5rem;
@@ -494,6 +494,7 @@ body {
   }
   .box-shadow-line .navbar {
     margin-bottom: 0;
+    border: 0;
   }
   .box-shadow-line .navbar .navbar-header .nothing-navbar-button {
     float: left;
