@@ -73,6 +73,29 @@
                 $(this).hide();
             });
 
+            var footerTitles = $('.footer-close-title');
+
+            $(footerTitles).click(function () {
+                var footerItemList = $('.item-list');
+                var footerTitleActive = $('.footer-close-title.active');
+                $(footerItemList).hide();
+                if ($(this).hasClass('active')) {
+                    $(footerTitleActive).removeClass('active');
+                    $(this).removeClass('active');
+                    $(this).next().hide();
+                } else {
+                    $(footerTitleActive).removeClass('active');
+                    $(this).addClass('active');
+                    $(this).next().show();
+                }
+            })
+
+//            $(footerTitles).mouseout(function () {
+//                var footerItemList = $('.item-list');
+//                var footerTitleActive = $('.footer-close-title.active');
+//                $(footerItemList).hide();
+//                $(footerTitleActive).removeClass('active');
+//            })
         })
 
     </script>
@@ -113,10 +136,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right nothing-navbar-info hidden-xs">
-                        <li>
+                        <li class="order-cart">
                             <a href="#">
-                                <img src="../build/images/cart-order.png" alt=""/>
-                                &nbsp;Order
+                                <img src="../build/images/cart-order.png" alt=""/>Order
                             </a>
                         </li>
                         <li class="line"><a href="./registLogin.html">Login</a></li>
@@ -454,7 +476,7 @@
                     </div>
                 </div>
                 <div class="dropdown-menu" role="menu">
-                    <span class="glyphicon glyphicon-remove"></span>
+                    <span class="search-close-icon"></span>
                     <input type="text" placeholder="Search">
                 </div>
             </div>
@@ -506,7 +528,7 @@
                     <h3 class="text-center in-focus">
                         IN FOCUS
                     </h3>
-                    <p class="text-center in-focus-sub">Discover Top Trends in Apex</p>
+                    <p class="text-center in-focus-sub family-light">Discover Top Trends in Apex</p>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-sm-offset-2 col-md-2 col-md-offset-3 print">
@@ -514,14 +536,16 @@
                     </div>
                     <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 print-txt">
                         <p class="print-title">
-                            Replacement Clips for Canon CRG
+                            Replacement Clips for Canon CRG <br>
                             045/046 Series Cartridge
                         </p>
-                        <ul class="print-li">
+                        <ul class="print-li family-light">
                             <li>ScC design with consise performance</li>
                             <li>Easy to install recycle cartridge</li>
                         </ul>
-                        <p class="read-more">Learn more <span class="glyphicon glyphicon-chevron-right"></span></p>
+                        <p class="read-more family-light">
+                            <span> Learn more</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -539,14 +563,16 @@
                     </div>
                     <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 print-txt">
                         <p class="print-title">
-                            Replacement Clips for Canon CRG
+                            Replacement Clips for Canon CRG <br>
                             045/046 Series Cartridge
                         </p>
-                        <ul class="print-li">
+                        <ul class="print-li family-light">
                             <li>ScC design with consise performance</li>
                             <li>Easy to install recycle cartridge</li>
                         </ul>
-                        <p class="read-more">Learn more <span class="glyphicon glyphicon-chevron-right"></span></p>
+                        <p class="read-more family-light">
+                            <span> Learn more</span>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -564,14 +590,16 @@
                     </div>
                     <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 print-txt">
                         <p class="print-title">
-                            Replacement Clips for Canon CRG
+                            Replacement Clips for Canon CRG <br>
                             045/046 Series Cartridge
                         </p>
-                        <ul class="print-li">
+                        <ul class="print-li family-light">
                             <li>ScC design with consise performance</li>
                             <li>Easy to install recycle cartridge</li>
                         </ul>
-                        <p class="read-more">Learn more <span class="glyphicon glyphicon-chevron-right"></span></p>
+                        <p class="read-more family-light">
+                            <span> Learn more</span>
+                        </p>
                     </div>
                 </div>
 
@@ -587,9 +615,9 @@
         </a>
     </div>
 
-    <div class="nothing-tab-list">
+    <div class="nothing-tab-list family-normal">
         <p class="text-center tab-title">LATEST PRODUCT SOLUTIONS</p>
-        <p class="text-center tab-subtitle">Seize the Market Opportunities</p>
+        <p class="text-center tab-subtitle family-light">Seize the Market Opportunities</p>
 
         <div class="left-border-line">
             <ul id='nothingTab' class="nav nav-tabs nav-justified">
@@ -608,25 +636,28 @@
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <p class="list-item-title">5 JULY 2017</p>
-                                    <p>Unismart | Available Now!OEM Restting for Brother III Series.</p>
+                                    <p class="family-light">
+                                        Unismart | Available Now!OEM Restting for Brother III
+                                        Series.
+                                    </p>
                                 </li>
                                 <li class="list-group-item">
                                     <p class="list-item-title">1 JULY 2017</p>
-                                    <p>Inkjet Chip New Arrivals(July, 2017)</p>
+                                    <p class="family-light">Inkjet Chip New Arrivals(July, 2017)</p>
                                 </li>
                                 <li class="list-group-item">
                                     <p class="list-item-title">28 JUNE 2017</p>
-                                    <p>Replacement Chips for Brother III Series.</p>
+                                    <p class="family-light">Replacement Chips for Brother III Series.</p>
                                 </li>
                             </ul>
-                            <p class="see-more hidden-xs">See All Solutions</p>
+                            <p class="see-more hidden-xs family-light">See All Solutions</p>
                         </div>
-                        <div class="col-sm-2 row">
-                            <div class="col-xs-5 visible-xs">
-                                <p class="see-more">See All Solutions</p>
+                        <div class="col-sm-6 row">
+                            <div class="col-xs-6 visible-xs">
+                                <p class="see-more family-light">See All Solutions</p>
                             </div>
-                            <div class="col-xs-7">
-                                <img src="./images/products.png" class="img-responsive" alt="Responsive image">
+                            <div class="col-xs-6 col-sm-12 text-center">
+                                <img src="./images/products.png">
                             </div>
                         </div>
                     </div>
@@ -637,25 +668,28 @@
                             <ul class="list-group">
                                 <li class="list-group-item">
                                     <p class="list-item-title">5 JULY 2017</p>
-                                    <p>Unismart | Available Now!OEM Restting for Brother III Series.</p>
+                                    <p class="family-light">
+                                        Unismart | Available Now!OEM Restting for Brother III
+                                        Series.
+                                    </p>
                                 </li>
                                 <li class="list-group-item">
                                     <p class="list-item-title">1 JULY 2017</p>
-                                    <p>Inkjet Chip New Arrivals(July, 2017)</p>
+                                    <p class="family-light">Inkjet Chip New Arrivals(July, 2017)</p>
                                 </li>
                                 <li class="list-group-item active">
                                     <p class="list-item-title">28 JUNE 2017</p>
-                                    <p>Replacement Chips for Brother III Series.</p>
+                                    <p class="family-light">Replacement Chips for Brother III Series.</p>
                                 </li>
                             </ul>
-                            <p class="see-more hidden-xs">See All Solutions</p>
+                            <p class="see-more hidden-xs family-light">See All Solutions</p>
                         </div>
-                        <div class="col-sm-2 row">
-                            <div class="col-xs-5 visible-xs">
-                                <p class="see-more">See All Solutions</p>
+                        <div class="col-sm-6 row">
+                            <div class="col-xs-6 visible-xs">
+                                <p class="see-more family-light">See All Solutions</p>
                             </div>
-                            <div class="col-xs-5">
-                                <img src="./images/products.png" class="img-responsive" alt="Responsive image">
+                            <div class="col-xs-6 col-sm-12 text-center">
+                                <img src="./images/products.png">
                             </div>
                         </div>
                     </div>
@@ -669,16 +703,23 @@
         <div class="row">
             <div class="col-xs-12 col-sm-6">
                 <div class="thumbnail unismart-thumbnail">
-                    <a href="javascript:;">
-                        <img src="./images/UNISMART.png" class="hidden-xs">
-                    </a>
-                    <a href="javascript:;">
-                        <img src="./images/H5/UNISMART.png" class="hidden-sm hidden-md hidden-lg">
-                    </a>
+                    <div class="img-well">
+                        <a href="javascript:;">
+                            <img src="./images/UNISMART.png" class="hidden-xs">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="./images/H5/UNISMART.png" class="hidden-sm hidden-md hidden-lg">
+                        </a>
+                    </div>
 
                     <div class="caption">
-                        <p class="text-center img-tips">Ecc-Friendly. Efficient. Eccnomical.</p>
-                        <p class="text-center img-txt-detail">
+                        <p class="text-center img-tips family-light">Ecc-Friendly. Efficient. Eccnomical.</p>
+                        <p class="text-center img-txt-detail family-light hidden-xs">
+                            Unismart effectively reduces waste of single use chips and <br>
+                            encourages people to choose environmentally friendly <br>
+                            cartridges.
+                        </p>
+                        <p class="text-center img-txt-detail family-light visible-xs">
                             Unismart effectively reduces waste of single use chips
                             and encourages people to choose environmentally
                             friendly cartridges.
@@ -689,19 +730,26 @@
             </div>
             <div class="col-xs-12 col-sm-6">
                 <div class="thumbnail nfc-thumbnail">
-                    <a href="javascript:;">
-                        <img src="./images/NFC.png" class="hidden-xs">
-                    </a>
-                    <a href="javascript:;">
-                        <img src="./images/H5/NFC.png" class="hidden-sm hidden-md hidden-lg">
-                    </a>
+                    <div class="img-well">
+                        <a href="javascript:;">
+                            <img src="./images/NFC.png" class="hidden-xs">
+                        </a>
+                        <a href="javascript:;">
+                            <img src="./images/H5/NFC.png" class="hidden-sm hidden-md hidden-lg">
+                        </a>
+                    </div>
+
                     <div class="caption">
-                        <p class="text-center img-tips">Tao Into the world.</p>
-                        <p class="text-center img-txt-detail">
+                        <p class="text-center img-tips family-light">Tao Into the world.</p>
+                        <p class="text-center img-txt-detail family-light hidden-xs">
                             Apex NFC chips are a brand new technology for using an <br>
                             NFC embedded card and other applications.
                         </p>
-                        <span class="nfc-btn">UNISMART</span>
+                        <p class="text-center img-txt-detail family-light visible-xs">
+                            Apex NFC chips are a brand new technology for using an
+                            NFC embedded card and other applications.
+                        </p>
+                        <span class="nfc-btn">NFC SOLUTION</span>
                     </div>
                 </div>
             </div>
@@ -721,30 +769,33 @@
     <div class="nothing-solution-container container">
         <img src="./images/transition-txt.png" alt="" class="img-responsive hidden-xs"/>
         <img src="./images/H5/transition-txt.png" alt="" class="img-responsive hidden-sm hidden-md hidden-lg"/>
-        <div class="container-fluid text-center solution-detail">
+        <div class="container-fluid text-center solution-detail family-light">
             As a aftermarket industry innovator and a leader among cartridges chip design companies,
             we look for ways to apply our technology to address industrial challenges while serving as a role modal for
             how chip design companies should prepare for any technological hurdles.
         </div>
-        <div class="text-center solution-link">
-            Find details about Apex research and development >
+        <div class="text-center solution-link family-light">
+            <span>Find details about Apex research and development</span>
         </div>
     </div>
 
     <div class="nothing-jumbotron-bg jumbotron">
+        <div class="bg-media"></div>
         <p class="text-center bg-title">WHAT'S NEW IN APEX</p>
-        <div class="row">
+        <div class="row family-light">
             <div class="col-xs-12 col-sm-6 text-center">
                 <p class="text-center bg-txt">
-                    Find out the latest information and
-                    report from Apex. We'd here pushing the aftermarket forward.
+                    Find out the latest information and report from <br>
+                    Apex. We’d here pushing the aftermarket <br>
+                    forward.
                 </p>
                 <span class="bg-btn">Learn more </span>
             </div>
             <div class="col-xs-12 col-sm-6 text-center">
                 <p class="text-center bg-txt phone-bg-txt-bottom">
-                    Our latest event around the world always waits for your visit.Let's work
-                    together and seize the opportunities.
+                    Our latest event around the world always waits <br>
+                    for your visit. Let’s work together and seize the <br>
+                    opportunities.
                 </p>
                 <span class="bg-btn">Learn more </span>
             </div>
@@ -766,14 +817,20 @@
             <div class="col-sm-3 hidden-xs">
                 <span class="btn-blue">Provide Info </span>
             </div>
-            <img src="./images/line2.png" alt="" class='img-100'/>
+            <img src="./images/line.png" alt="" class='img-100'/>
         </div>
         <div class="row contact-form">
             <div class="col-xs-12 col-sm-4">
                 <p class="contact-update">Get Updates</p>
             </div>
-            <div class="col-xs-12 col-sm-4">
-                <input type="text" class="form-control contact-input" placeholder="Enter your E-mail">
+            <div class="col-xs-12 col-sm-4 family-light">
+                <input
+                    type="text"
+                    class="form-control contact-input"
+                    placeholder="Enter your E-mail"
+                    onfocus="this.placeholder=''"
+                    onblur="this.placeholder='Enter your E-mail'"
+                >
             </div>
             <div class="col-xs-12 col-sm-4">
                 <span class="contact-subscribe">Subscribe Now</span>
@@ -784,11 +841,11 @@
 
     <div class="nothing-footer">
         <div class="row">
-            <div class="col-sm-2 col-sm-offset-1 products-list-plus">
+            <div class="col-sm-2 col-sm-offset-1 footer-item">
 
-                <h3><a href="javascript:;">PRODUCTS</a></h3>
+                <h3 class="footer-close-title">PRODUCTS</h3>
 
-                <div class="products-list">
+                <div class="item-list">
                     <h4>
                         <a href="">New Products</a>
                         <div class="subMenu-container">
@@ -836,11 +893,11 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 support-list-plus">
+            <div class="col-sm-2 footer-item">
 
-                <h3><a href="">SUPPORT</a></h3>
+                <h3 class="footer-close-title">SUPPORT</h3>
 
-                <div class="support-list">
+                <div class="item-list">
                     <h4><a href="">Support Center</a></h4>
 
                     <h4>
@@ -883,10 +940,10 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 unismart-list-plus">
-                <h3><a href="">UNISMART</a></h3>
+            <div class="col-sm-2 footer-item">
+                <h3 class="footer-close-title">UNISMART</h3>
 
-                <div class="unismart-list">
+                <div class="item-list">
                     <h4><a href="">About Unismart</a></h4>
 
                     <h4>
@@ -956,11 +1013,11 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 news-list-plus">
+            <div class="col-sm-2 footer-item">
 
-                <h3><a href="">NEWS</a></h3>
+                <h3 class="footer-close-title">NEWS</h3>
 
-                <div class="news-list">
+                <div class="item-list">
                     <h4><a href="">Company News</a></h4>
 
                     <h4><a href="">Events</a></h4>
@@ -969,11 +1026,11 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 about-us-list-plus">
+            <div class="col-sm-2 footer-item">
 
-                <h3><a href="">ABOUT US</a></h3>
+                <h3 class="footer-close-title">ABOUT US</h3>
 
-                <div class="about-us-list">
+                <div class="item-list">
                     <h4>
                         <a href="">About Apex</a>
                         <div class="subMenu-container">

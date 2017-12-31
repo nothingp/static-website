@@ -24,37 +24,6 @@
         margin-bottom: 0;
     }
 
-    .chevron {
-        width: 30px;
-        height: 30px;
-        margin-top: -10px;
-        font-size: 30px;
-        position: absolute;
-        top: 50%;
-        z-index: 5;
-        display: inline-block;
-    }
-
-    .chevron-right {
-        border-top: 3px solid #2f88c6;
-        border-right: 3px solid #2f88c6;
-        transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        -moz-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-    }
-
-    .chevron-left {
-        border-top: 3px solid #2f88c6;
-        border-left: 3px solid #2f88c6;
-        transform: rotate(-45deg);
-        -ms-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
-    }
-
     //多个图片
     .nothing-icons {
         height: 136px;
@@ -75,6 +44,7 @@
                     &:hover {
                         background-image: url(../images/quick_nav/hover/support_center.png);
                         border-color: transparent;
+                        transition: background 0.3s ease;
                     }
                 }
                 &.firmware {
@@ -82,6 +52,7 @@
                     &:hover {
                         background-image: url(../images/quick_nav/hover/firmware_status.png);
                         border-color: transparent;
+                        transition: background 0.3s ease;
                     }
                 }
                 &.company {
@@ -89,6 +60,7 @@
                     &:hover {
                         background-image: url(../images/quick_nav/hover/company_news.png);
                         border-color: transparent;
+                        transition: background 0.3s ease;
                     }
                 }
                 &.patent {
@@ -96,6 +68,7 @@
                     &:hover {
                         background-image: url(../images/quick_nav/hover/patent_center.png);
                         border-color: transparent;
+                        transition: background 0.3s ease;
                     }
                 }
                 &.subscribe {
@@ -103,6 +76,7 @@
                     &:hover {
                         background-image: url(../images/quick_nav/hover/subscribe.png);
                         border-color: transparent;
+                        transition: background 0.3s ease;
                     }
                 }
             }
@@ -128,7 +102,7 @@
             color: @base-color;
         }
         .in-focus-sub {
-            margin-top: 21px;
+            margin-top: 13px;
             margin-bottom: 68px;
             font-size: 2rem;
             color: #999;
@@ -140,9 +114,10 @@
             }
         }
         .print-title {
-            margin-bottom: 30px;
+            margin-top: -20px;
             font-size: 2.4rem;
             color: #666666;
+            line-height: 4.3rem;
         }
         .print-li {
             padding: 0;
@@ -162,20 +137,78 @@
             margin-left: 5px;
             font-size: 1.4rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -15px;
+                    position: absolute;
+                    top: 7px;
+                    z-index: 0;
+                }
+            }
         }
         .carousel-control {
             background-image: none;
         }
-        .glyphicon.glyphicon-chevron-left,
-        .glyphicon.glyphicon-chevron-right {
-            color: @base-color;
-        }
+        //.glyphicon.glyphicon-chevron-left,
+        //.glyphicon.glyphicon-chevron-right {
+        //    color: @base-color;
+        //}
         .carousel-indicators {
             li {
                 background: #fff;
             }
             li.active {
                 background: @base-color;
+            }
+        }
+
+        .chevron {
+            width: 30px;
+            height: 30px;
+            margin-top: -10px;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+            display: inline-block;
+            opacity: 1;
+        }
+
+        .chevron-right {
+            border-top: 3px solid #ccc;
+            border-right: 3px solid #ccc;
+            transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+
+        }
+
+        .chevron-left {
+            border-top: 3px solid #ccc;
+            border-left: 3px solid #ccc;
+            transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+        }
+
+        .carousel-control:hover {
+            .chevron-left, .chevron-right {
+                border-color: @base-color;
             }
         }
     }
@@ -233,13 +266,42 @@
                 border-left-width: 8px;
                 border-color: transparent;
                 border-top-color: #e4e4e4;
+                position: relative;
+                &:first-child {
+                    border-top-color: transparent;
+                }
+                .list-item-title {
+                    font-weight: 700;
+                }
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 2px 2px 0 0;
+                    content: "";
+                    display: block;
+                    height: 0;
+                    padding: 5px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: 10%;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -2.5px;
+                    z-index: 0;
+                    opacity: 0;
+                }
                 &:hover {
                     .list-item-title {
-                        font-size: 1.6rem;
                         color: @base-color;
+                    }
+                    &:after {
+                        right: 8%;
+                        opacity: .8;
+                        transition: all 500ms ease-in-out;
                     }
                     background-color: #fff;
                     border-color: #e4e4e4;
+                    box-shadow: 0px 0px 8px 0px #d8d8d8;
                     border-left: 8px solid @base-color;
                 }
             }
@@ -251,6 +313,7 @@
             img {
                 max-width: 351px;
                 max-height: 272px;
+                margin-top: 30px;
             }
         }
 
@@ -263,11 +326,16 @@
         .thumbnail {
             padding: 0;
             overflow: hidden;
+            height: 508px;
             &.unismart-thumbnail {
                 border-bottom: 8px solid #19a456;
             }
             &.nfc-thumbnail {
                 border-bottom: 8px solid #099ea7;
+            }
+            .img-well {
+                height: 268px;
+                overflow: hidden;
             }
             img {
                 cursor: pointer;
@@ -283,7 +351,7 @@
             position: relative;
         }
         .img-tips {
-            margin: 30px 0;
+            margin: 45px 0 15px;
             color: #999;
             font-size: 1.8rem;
         }
@@ -293,6 +361,7 @@
             font-size: 1.6rem;
             color: #333;
             min-height: 70px;
+            line-height: 36px;
         }
         .unismart-btn {
             position: absolute;
@@ -307,6 +376,9 @@
             text-align: center;
             margin-left: -104px;
             font-size: 2rem;
+            &:hover {
+                background: darken(#19a456, 10%);
+            }
         }
         .nfc-btn {
             position: absolute;
@@ -321,6 +393,9 @@
             text-align: center;
             margin-left: -104px;
             font-size: 2rem;
+            &:hover {
+                background: darken(#099ea7, 10%);
+            }
         }
     }
 
@@ -351,31 +426,60 @@
         .solution-link {
             font-size: 1.6rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -60px;
+                    position: absolute;
+                    top: 8px;
+                    z-index: 0;
+                }
+            }
         }
     }
 
     .nothing-jumbotron-bg.jumbotron {
+
+        .bg-media {
+            background-image: url(../images/bg.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
         margin: 50px auto 0;
         position: relative;
-        border-radius: 0px;
-        background-image: url(../images/bg.png);
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
         height: 400px;
         border-radius: 0;
         &:after {
             position: absolute;
             top: 30%;
             left: 50%;
-            width: 3px;
-            margin-left: -1.5px;
+            width: 5px;
+            margin-left: -2.5px;
             height: 60%;
             background: #fff;
             display: block;
             content: '';
         }
         .bg-title {
+            position: relative;
             font-size: 3rem;
             color: #fff;
         }
@@ -396,6 +500,8 @@
             font-size: 1.6rem;
             color: #fff;
             position: relative;
+            padding-right: 30px;
+
             &:after {
                 border-color: #fff;
                 border-style: solid;
@@ -458,6 +564,7 @@
                 border-radius: 4px;
                 border: solid 1px @base-color;
                 position: relative;
+                padding-right: 20px;
                 &:after {
                     border-color: @base-color;
                     border-style: solid;
@@ -586,7 +693,7 @@
             p {
                 color: #fff;
                 font-family: @font-sub-family;
-                font-size: 1.4rem; //TODO ios 5 1.4rem
+                font-size: 1.4rem;
                 margin: 0;
                 line-height: 4.8rem;
             }
@@ -640,6 +747,25 @@
             margin-top: 2.3rem;
             font-size: 1.2rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: 3px;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -15px;
+                    position: absolute;
+                    top: 5px;
+                    z-index: 0;
+                }
+            }
         }
 
         .carousel-control {
@@ -712,12 +838,17 @@
                     background-color: #fff;
                     border-color: #e4e4e4;
                     border-left: .5rem solid @base-color;
+                    box-shadow: 0px 0px 8px 0px #d8d8d8;
                 }
             }
             .see-more {
+                margin-top: 50%;
                 text-align: center;
                 color: @base-color;
                 font-size: 1.5rem;
+            }
+            img {
+                width: 100%;
             }
         }
     }
@@ -734,6 +865,9 @@
             }
             &.nfc-thumbnail {
                 border-bottom: .8rem solid #099ea7;
+            }
+            .img-well {
+                overflow: hidden;
             }
             img {
                 cursor: pointer;
@@ -755,10 +889,10 @@
         }
         .img-txt-detail {
             max-width: 60rem;
-            margin: 0 auto 3rem;
             padding: 0 1rem;
             font-size: 1.2rem;
             color: #333;
+            line-height: 2rem;
         }
         .unismart-btn {
             position: absolute;
@@ -773,6 +907,9 @@
             line-height: 2.8rem;
             text-align: center;
             margin-left: -7.5rem;
+            &:hover {
+                background: darken(#19a456, 10%);
+            }
         }
         .nfc-btn {
             position: absolute;
@@ -786,6 +923,9 @@
             line-height: 2.8rem;
             text-align: center;
             margin-left: -7.5rem;
+            &:hover {
+                background: darken(#099ea7, 10%);
+            }
         }
     }
 
@@ -815,6 +955,25 @@
         .solution-link {
             font-size: 1.2rem;
             color: @base-color;
+            span {
+                display: inline-block;
+                position: relative;
+                &:after {
+                    border-color: @base-color;
+                    border-style: solid;
+                    border-width: 1px 1px 0 0;
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    padding: .3rem;
+                    transform: rotate(45deg);
+                    width: 0;
+                    right: -1rem;
+                    position: absolute;
+                    top: .4rem;
+                    z-index: 0;
+                }
+            }
         }
     }
 
@@ -863,9 +1022,29 @@
             font-size: 1.2rem;
             color: #fff;
             border: solid 1px #fff;
+            padding-right: 30px;
+            position: relative;
+            &:after {
+                border-color: #fff;
+                border-style: solid;
+                border-width: 1px 1px 0 0;
+                content: "";
+                display: block;
+                height: 0;
+                padding: 3px;
+                transform: rotate(45deg);
+                width: 0;
+                right: 25px;
+                position: absolute;
+                top: 18px;
+                z-index: 0;
+            }
             &:hover {
                 border: solid 1px @base-color;
                 background-color: @base-color;
+                &:after {
+                    right: 20px;
+                }
             }
         }
     }
@@ -897,19 +1076,6 @@
                 margin: 0 auto 4rem;
                 display: block;
             }
-            .btn-blue {
-                margin-top: 6.5rem;
-                display: block;
-                width: 22.5rem;
-                height: 7.3rem;
-                line-height: 7.3rem;
-                text-align: center;
-                font-size: 2.4rem;
-                color: @base-color;
-                background-color: #ffffff;
-                border-radius: .4rem;
-                border: solid 1px @base-color;
-            }
         }
 
         .img-100 {
@@ -938,6 +1104,7 @@
                 border: 1px solid #e5e5e5;
             }
             .contact-subscribe {
+                color: #fff;
                 display: block;
                 margin: auto;
                 width: 14.7rem;

@@ -2,13 +2,13 @@
  * 新闻详情样式
  */
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {
@@ -18,6 +18,18 @@ body {
 .content-padding {
   padding-left: 20px;
   padding-right: 20px;
+}
+.family-normal {
+  font-family: CiscoSans;
+}
+.family-light {
+  font-family: CiscoSans-ExtraLight;
+}
+.family-bold {
+  font-family: CiscoSans-Bold;
+}
+.no-padding {
+  padding: 0;
 }
 @media screen and (min-width: 1200px) {
 }
@@ -172,7 +184,7 @@ body {
     padding-bottom: 0;
     color: #2f88c6;
     font-size: 1.2rem;
-    font-family: CiscoSans-ExtraLight, Arial, sans-serif;
+    font-family: CiscoSans-ExtraLight;
   }
   .navbar .nothing-navbar-info > li a:hover,
   .navbar .nothing-navbar-info > li a:focus {

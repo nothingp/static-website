@@ -24,24 +24,47 @@
             position: static;
             .dropdown-menu {
                 background: @base-color;
+                position: inherit;
                 border: none;
                 width: 100%;
                 height: 180px;
                 border-radius: 0;
                 margin: 0;
                 padding: 0;
-                .glyphicon.glyphicon-remove {
+                .search-close-icon {
                     position: absolute;
-                    top: 20px;
+                    top: 130px;
                     right: 20px;
-                    font-size: 25px;
                     color: #fff;
+                    display: inline-block;
+                    height: 20px;
+                    overflow: hidden;
+                    width: 20px;
+
+                    &:after,
+                    &:before {
+                        background: #fff;
+                        content: "";
+                        height: 2px;
+                        left: 0;
+                        margin-top: -1px;
+                        position: absolute;
+                        top: 50%;
+                        width: 100%;
+                    }
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+
                 }
                 &:after {
                     position: absolute;
                     display: block;
-                    top: -7.5px;
-                    right: 3px;
+                    top: 102px;
+                    right: 6px;
                     content: '';
                     width: 15px;
                     height: 15px;
@@ -50,9 +73,9 @@
                 }
                 @media (min-width: 1281px) {
                     &:after {
-                        right: calc(~"(100% - 1280px)/2");
-                        right: -moz-calc(~"(100% - 1280px)/2");
-                        right: -webkit-calc(~"(100% - 1280px)/2");
+                        right: calc(~"(100% - 1270px)/2");
+                        right: -moz-calc(~"(100% - 1270px)/2");
+                        right: -webkit-calc(~"(100% - 1270px)/2");
                     }
                 }
                 input {
@@ -95,6 +118,9 @@
                 background: #2f88c6;
                 line-height: 1.428571429;
                 border-radius: 14px;
+                &:hover {
+                    background: darken(#2f88c6, 10%);
+                }
                 .glyphicon {
                     font-size: 1.4rem;
                     top: 3px;
@@ -107,7 +133,7 @@
                 left: 0;
             }
 
-            .btn-primary{
+            .btn-primary {
                 border: 0;
             }
         }
@@ -150,7 +176,7 @@
                     width: 100%;
                     > li {
                         position: static;
-                        >a{
+                        > a {
                             padding: 0;
                             text-align: center;
                             margin: 13px 20px;
@@ -159,7 +185,7 @@
                         }
 
                         @media (min-width: @screen-md-min) {
-                            >a{
+                            > a {
                                 padding: 0;
                                 text-align: center;
                                 margin: 13px 35px;
@@ -169,8 +195,8 @@
                         }
                     }
 
-                    .open{
-                        >a,>a:focus,>a:hover{
+                    .open {
+                        > a, > a:focus, > a:hover {
                             background-color: #ffffff;
                         }
                     }
@@ -178,9 +204,9 @@
                 font-size: 1.4rem;
                 .dropdown {
                     &:hover {
-                        > a{
+                        > a {
                             position: relative;
-                            color:  @base-color;
+                            color: @base-color;
                         }
                         > a:before {
                             background: @base-color;
@@ -191,7 +217,7 @@
                             width: 100%;
                         }
 
-                        >a >a:focus >a:hover{
+                        > a > a:focus > a:hover {
                             background-color: #ffffff;
                         }
                     }
@@ -229,9 +255,9 @@
 
                                 > a {
                                     color: @base-color;
-                                  .glyphicon {
-                                    display: inherit;
-                                  }
+                                    .glyphicon {
+                                        display: inherit;
+                                    }
                                 }
                             }
 
@@ -240,11 +266,11 @@
                                 text-decoration: none;
                                 font-size: 1.6rem;
 
-                              .glyphicon {
-                                top: 12px;
-                                float: right;
-                                display: none;
-                              }
+                                .glyphicon {
+                                    top: 12px;
+                                    float: right;
+                                    display: none;
+                                }
                             }
 
                             > p {
@@ -268,9 +294,9 @@
                                         font-size: 1.4rem;
                                         color: #595959;
                                     }
-                                    > a:hover{
+                                    > a:hover {
                                         color: @base-color;
-                                        text-decoration : none;
+                                        text-decoration: none;
                                     }
 
                                 }
@@ -313,12 +339,22 @@
             }
 
             .nothing-navbar-info {
-                .glyphicon.glyphicon-triangle-bottom {
-                    position: relative;
-                    top: 3px;
+                //.glyphicon.glyphicon-triangle-bottom {
+                //    position: relative;
+                //    top: 3px;
+                //}
+                .open{
+                    >a,>a:focus,>a:hover{
+                        background-color: #ffffff;
+
+                    }
+                    .glyphicon-triangle-bottom:before{
+                        content:"\e253";
+                    }
                 }
+
                 > li {
-                    >a {
+                    > a {
                         padding-top: 12px;
                         padding-bottom: 0;
                         padding-left: 7px;
@@ -330,9 +366,12 @@
                             background: none;
                             text-decoration: underline;
                         }
-                        >img{
+                        > img {
+                            position: relative;
+                            left: 0;
                             width: 15px;
                             height: 13px;
+                            margin-right: 7px;
                         }
                     }
 
@@ -349,11 +388,15 @@
                             background: @base-color;
                         }
                     }
-                    .dropdown-menu{
+                    .dropdown-menu {
                         font-size: 1.2rem;
                         min-width: 85px;
-                        >li:hover{
-                            border-left: 5px solid @base-color;
+                        > li {
+                            border-left: 5px solid transparent;
+
+                            &:hover {
+                                border-left: 5px solid @base-color;
+                            }
                         }
                     }
                 }
@@ -375,7 +418,7 @@
         .dropdown.search-top-icon {
             position: static;
             .dropdown-menu {
-                position: absolute;
+                position: inherit;
                 top: 4.29rem;
                 background: @base-color;
                 border: none;
@@ -384,17 +427,38 @@
                 border-radius: 0;
                 margin: 0;
                 padding: 0;
-                .glyphicon.glyphicon-remove {
+                .search-close-icon {
                     position: absolute;
-                    top: .8rem;
+                    top: 4.8rem;
                     right: 2rem;
-                    font-size: 1.5rem;
                     color: #fff;
+                    display: inline-block;
+                    height: 1.5rem;
+                    overflow: hidden;
+                    width: 1.5rem;
+
+                    &:after,
+                    &:before {
+                        background: #fff;
+                        content: "";
+                        height: .2rem;
+                        left: 0;
+                        margin-top: -1px;
+                        position: absolute;
+                        top: 50%;
+                        width: 100%;
+                    }
+                    &:after {
+                        transform: rotate(-45deg);
+                    }
+                    &:before {
+                        transform: rotate(45deg);
+                    }
                 }
                 &:after {
                     position: absolute;
                     display: block;
-                    top: -.25rem;
+                    top: 4rem;
                     right: 3.3rem;
                     content: '';
                     width: .5rem;
@@ -447,6 +511,7 @@
 
         .navbar {
             margin-bottom: 0;
+            border: 0;
             .navbar-header {
                 .nothing-navbar-button {
                     float: left;
@@ -496,11 +561,11 @@
                         }
                         .dropdown-submenu {
                             > a {
-                              width: 100%;
-                              display: block;
-                              line-height: 1.8rem;
-                              padding: .5rem 1.5rem;
-                              background-color: #eee;
+                                width: 100%;
+                                display: block;
+                                line-height: 1.8rem;
+                                padding: .5rem 1.5rem;
+                                background-color: #eee;
                             }
                             font-size: 1.6rem;
                             .dropdown-3rdmenu {

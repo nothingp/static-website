@@ -15,7 +15,11 @@
     .video-center-banner {
         padding: 0;
         margin-bottom: 0;
+        height:280px;
         overflow: hidden;
+        img{
+            height:100%;
+        }
     }
 
     .video-center-tabBar {
@@ -57,6 +61,16 @@
     .video-center-panel {
         max-width: 1280px;
         margin: 50px auto;
+        padding-left:0;
+
+        .video-center-panel-left{
+            padding-left:5px;
+            padding-right:22.5px;
+        }
+        .video-center-panel-right{
+            padding-left:12.5px;
+            padding-right:0;
+        }
 
         .video-item {
             margin-bottom: 1.5rem;
@@ -69,9 +83,13 @@
 
             .txt-title {
                 padding: 0;
-                margin: 0;
+                margin: 5px 0;
                 font-size: 2.4rem;
-                color: #2f88c4;
+                color: #333;
+                line-height:3rem;
+                &:hover{
+                    color: #2f88c4;
+                }
             }
             .txt-detail {
                 padding: 0;
@@ -92,16 +110,31 @@
             padding: 1rem;
             .form-group {
                 margin-bottom: 1rem;
+                .submit-button{
+                    height:32px;
+                    width:100px;
+                }
             }
             label {
                 padding: 0;
                 text-align: right;
             }
             .title {
-                padding-left: .5rem;
-                border-left: .3rem solid #2f88c4;
+                padding-left: 10px;
+
+                //border-left: 3px solid #2f88c4;
                 position: relative;
                 font-size: 2rem;
+                &:before {
+                    display: block;
+                    content: '';
+                    width: 3px;
+                    height: 20px;
+                    background: #2f88c4;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                }
                 &:after {
                     display: block;
                     content: '';
@@ -207,9 +240,10 @@
 
                 .txt-title {
                     padding: 0;
-                    margin: 0;
+                    margin: 5px 0;
                     font-size: 1.2rem;
                     color: #404040;
+                    line-height:3rem;
                 }
                 .txt-detail {
                     padding: 0;

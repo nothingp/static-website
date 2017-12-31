@@ -73,6 +73,32 @@
                 $(this).hide();
             });
 
+
+            var footerTitles = $('.footer-close-title');
+
+            $(footerTitles).click(function () {
+                var footerItemList = $('.item-list');
+                var footerTitleActive = $('.footer-close-title.active');
+                $(footerItemList).hide();
+                if ($(this).hasClass('active')) {
+                    $(footerTitleActive).removeClass('active');
+                    $(this).removeClass('active');
+                    $(this).next().hide();
+                } else {
+                    $(footerTitleActive).removeClass('active');
+                    $(this).addClass('active');
+                    $(this).next().show();
+                }
+            })
+
+//            $(footerTitles).mouseout(function () {
+//                var footerItemList = $('.item-list');
+//                var footerTitleActive = $('.footer-close-title.active');
+//                $(footerItemList).hide();
+//                $(footerTitleActive).removeClass('active');
+//            })
+
+
         })
     </script>
 
@@ -85,11 +111,11 @@
 <div class="container-fluid ">
     <div class="nothing-footer">
         <div class="row">
-            <div class="col-sm-2 col-sm-offset-1 products-list-plus">
+            <div class="col-sm-2 col-sm-offset-1 footer-item">
 
-                <h3><a href="javascript:;">PRODUCTS</a></h3>
+                <h3 class="footer-close-title">PRODUCTS</h3>
 
-                <div class="products-list">
+                <div class="item-list">
                     <h4>
                         <a href="">New Products</a>
                         <div class="subMenu-container">
@@ -137,11 +163,11 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 support-list-plus">
+            <div class="col-sm-2 footer-item">
 
-                <h3><a href="">SUPPORT</a></h3>
+                <h3 class="footer-close-title">SUPPORT</h3>
 
-                <div class="support-list">
+                <div class="item-list">
                     <h4><a href="">Support Center</a></h4>
 
                     <h4>
@@ -184,10 +210,10 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 unismart-list-plus">
-                <h3><a href="">UNISMART</a></h3>
+            <div class="col-sm-2 footer-item">
+                <h3 class="footer-close-title">UNISMART</h3>
 
-                <div class="unismart-list">
+                <div class="item-list">
                     <h4><a href="">About Unismart</a></h4>
 
                     <h4>
@@ -257,11 +283,11 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 news-list-plus">
+            <div class="col-sm-2 footer-item">
 
-                <h3><a href="">NEWS</a></h3>
+                <h3 class="footer-close-title">NEWS</h3>
 
-                <div class="news-list">
+                <div class="item-list">
                     <h4><a href="">Company News</a></h4>
 
                     <h4><a href="">Events</a></h4>
@@ -270,11 +296,11 @@
                 </div>
 
             </div>
-            <div class="col-sm-2 about-us-list-plus">
+            <div class="col-sm-2 footer-item">
 
-                <h3><a href="">ABOUT US</a></h3>
+                <h3 class="footer-close-title">ABOUT US</h3>
 
-                <div class="about-us-list">
+                <div class="item-list">
                     <h4>
                         <a href="">About Apex</a>
                         <div class="subMenu-container">

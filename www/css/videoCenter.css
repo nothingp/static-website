@@ -1,11 +1,11 @@
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {
@@ -15,6 +15,18 @@ body {
 .content-padding {
   padding-left: 20px;
   padding-right: 20px;
+}
+.family-normal {
+  font-family: CiscoSans;
+}
+.family-light {
+  font-family: CiscoSans-ExtraLight;
+}
+.family-bold {
+  font-family: CiscoSans-Bold;
+}
+.no-padding {
+  padding: 0;
 }
 @media screen and (min-width: 1200px) {
 }
@@ -39,7 +51,11 @@ body {
   .video-center-banner {
     padding: 0;
     margin-bottom: 0;
+    height: 280px;
     overflow: hidden;
+  }
+  .video-center-banner img {
+    height: 100%;
   }
   .video-center-tabBar {
     background: #2f88c4;
@@ -69,6 +85,15 @@ body {
   .video-center-panel {
     max-width: 1280px;
     margin: 50px auto;
+    padding-left: 0;
+  }
+  .video-center-panel .video-center-panel-left {
+    padding-left: 5px;
+    padding-right: 22.5px;
+  }
+  .video-center-panel .video-center-panel-right {
+    padding-left: 12.5px;
+    padding-right: 0;
   }
   .video-center-panel .video-item {
     margin-bottom: 1.5rem;
@@ -78,8 +103,12 @@ body {
   }
   .video-center-panel .video-item .txt-title {
     padding: 0;
-    margin: 0;
+    margin: 5px 0;
     font-size: 2.4rem;
+    color: #333;
+    line-height: 3rem;
+  }
+  .video-center-panel .video-item .txt-title:hover {
     color: #2f88c4;
   }
   .video-center-panel .video-item .txt-detail {
@@ -102,6 +131,11 @@ body {
   .video-center-panel .support-form .form-group {
     margin-bottom: 1rem;
   }
+  .video-center-panel .subscribe-form .form-group .submit-button,
+  .video-center-panel .support-form .form-group .submit-button {
+    height: 32px;
+    width: 100px;
+  }
   .video-center-panel .subscribe-form label,
   .video-center-panel .support-form label {
     padding: 0;
@@ -109,10 +143,20 @@ body {
   }
   .video-center-panel .subscribe-form .title,
   .video-center-panel .support-form .title {
-    padding-left: .5rem;
-    border-left: .3rem solid #2f88c4;
+    padding-left: 10px;
     position: relative;
     font-size: 2rem;
+  }
+  .video-center-panel .subscribe-form .title:before,
+  .video-center-panel .support-form .title:before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: #2f88c4;
+    position: absolute;
+    left: 0;
+    top: 4px;
   }
   .video-center-panel .subscribe-form .title:after,
   .video-center-panel .support-form .title:after {
@@ -199,9 +243,10 @@ body {
   }
   .video-center-panel .row .video-item .txt-title {
     padding: 0;
-    margin: 0;
+    margin: 5px 0;
     font-size: 1.2rem;
     color: #404040;
+    line-height: 3rem;
   }
   .video-center-panel .row .video-item .txt-detail {
     padding: 0;

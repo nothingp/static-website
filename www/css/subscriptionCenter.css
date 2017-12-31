@@ -1,11 +1,11 @@
 html {
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 body {
   background: #f2f2f2;
   color: #333333;
   min-width: 320px;
-  font-family: CiscoSans, Arial, sans-serif;
+  font-family: CiscoSans;
 }
 html,
 body {
@@ -15,6 +15,18 @@ body {
 .content-padding {
   padding-left: 20px;
   padding-right: 20px;
+}
+.family-normal {
+  font-family: CiscoSans;
+}
+.family-light {
+  font-family: CiscoSans-ExtraLight;
+}
+.family-bold {
+  font-family: CiscoSans-Bold;
+}
+.no-padding {
+  padding: 0;
 }
 @media screen and (min-width: 1200px) {
 }
@@ -171,7 +183,7 @@ body {
     display: inline-block;
     width: 24px;
     height: 32px;
-    background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+    background: url('../images/subscriptionCenter/pdf-bg-new.png') no-repeat 0 0;
     background-size: 100% 100%;
     vertical-align: middle;
     margin-right: 20px;
