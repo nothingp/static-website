@@ -313,9 +313,13 @@ body {
   .box-shadow-line .navbar .nothing-navbar-menu .in-focus {
     color: #337ab7;
   }
-  .box-shadow-line .navbar .nothing-navbar-info .glyphicon.glyphicon-triangle-bottom {
-    position: relative;
-    top: 3px;
+  .box-shadow-line .navbar .nothing-navbar-info .open > a,
+  .box-shadow-line .navbar .nothing-navbar-info .open > a:focus,
+  .box-shadow-line .navbar .nothing-navbar-info .open > a:hover {
+    background-color: #ffffff;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .glyphicon-triangle-bottom:before {
+    content: "\e253";
   }
   .box-shadow-line .navbar .nothing-navbar-info > li > a {
     padding-top: 12px;
