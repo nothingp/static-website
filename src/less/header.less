@@ -24,6 +24,7 @@
             position: static;
             .dropdown-menu {
                 background: @base-color;
+                position: inherit;
                 border: none;
                 width: 100%;
                 height: 180px;
@@ -32,7 +33,7 @@
                 padding: 0;
                 .search-close-icon {
                     position: absolute;
-                    top: 20px;
+                    top: 130px;
                     right: 20px;
                     color: #fff;
                     display: inline-block;
@@ -57,11 +58,12 @@
                     &:before {
                         transform: rotate(45deg);
                     }
+
                 }
                 &:after {
                     position: absolute;
                     display: block;
-                    top: -7.5px;
+                    top: 102px;
                     right: 6px;
                     content: '';
                     width: 15px;

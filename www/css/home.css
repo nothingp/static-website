@@ -54,6 +54,7 @@ body {
   }
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu {
     background: #2f88c6;
+    position: inherit;
     border: none;
     width: 100%;
     height: 180px;
@@ -63,7 +64,7 @@ body {
   }
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu .search-close-icon {
     position: absolute;
-    top: 20px;
+    top: 130px;
     right: 20px;
     color: #fff;
     display: inline-block;
@@ -91,7 +92,7 @@ body {
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu:after {
     position: absolute;
     display: block;
-    top: -7.5px;
+    top: 102px;
     right: 6px;
     content: '';
     width: 15px;
