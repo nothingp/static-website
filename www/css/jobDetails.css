@@ -222,6 +222,7 @@ body {
   .nothing-job-detail-wrap {
     height: 560px;
     background-color: #E9F2F9;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-job-detail-wrap .job-detail {
     max-width: 1280px;
@@ -235,6 +236,7 @@ body {
   .nothing-job-detail-wrap .job-detail .detail-title > span:first-child {
     font-size: 28px;
     color: #2f88c4;
+    font-family: CiscoSans;
   }
   .nothing-job-detail-wrap .job-detail .detail-title > span:last-child {
     margin-left: 30px;
@@ -267,6 +269,7 @@ body {
   }
   .nothing-job-detail-wrap .job-detail .detail-request > h6 {
     font-size: 16px;
+    font-family: CiscoSans;
   }
   .nothing-job-detail-wrap .job-detail .detail-time {
     height: 40px;
@@ -289,6 +292,7 @@ body {
   }
   .nothing-job-app {
     max-width: 1280px;
+    font-family: CiscoSans-ExtraLight;
     margin: 0 auto;
     padding-left: 15px;
   }
@@ -308,6 +312,7 @@ body {
     height: 45px;
     background-color: #2f88c4;
     border-radius: 6px;
+    border: none;
     font-size: 16px;
     color: #ffffff;
     padding: 0 20px;
@@ -506,6 +511,7 @@ body {
   }
   .nothing-job-detail-wrap {
     background-color: #E9F2F9;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-job-detail-wrap .job-detail {
     padding: 1rem .7rem;
@@ -517,6 +523,7 @@ body {
   .nothing-job-detail-wrap .job-detail .detail-title > span:first-child {
     font-size: 2.4rem;
     color: #2f88c4;
+    font-family: CiscoSans;
   }
   .nothing-job-detail-wrap .job-detail .detail-title > span:last-child {
     margin-left: 1.5rem;
@@ -546,6 +553,7 @@ body {
   }
   .nothing-job-detail-wrap .job-detail .detail-request > h6 {
     font-size: 1.6rem;
+    font-family: CiscoSans;
   }
   .nothing-job-detail-wrap .job-detail .detail-time {
     height: 2rem;
@@ -568,6 +576,7 @@ body {
   }
   .nothing-job-app {
     padding-left: .7rem;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-job-app .app-title {
     height: 6rem;
@@ -589,6 +598,7 @@ body {
     height: 3.5rem;
     background-color: #2f88c4;
     border-radius: .3rem;
+    border: none;
     font-size: 1.6rem;
     color: #ffffff;
   }
