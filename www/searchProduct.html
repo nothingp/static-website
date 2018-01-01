@@ -33,9 +33,20 @@
     <!-- Custom Theme Style -->
     <link href="css/searchProduct.css" rel="stylesheet">
 
-    <style>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+            var categoryList = $('#categoryList').find('li');
+            $(categoryList).click(function () {
+                $('#chooseCategory').html($(this).find('a').html());
+            })
 
-    </style>
+            var collapseIn = $('.panel-collapse.collapse').not('.panel-collapse.collapse.in');
+            collapseIn.map(function () {
+                $(this).prev().find('a').addClass('collapsed');
+            })
+        })
+    </script>
 </head>
 
 <body>
@@ -47,7 +58,7 @@
         <div class="banner-bg">
 
         </div>
-        <div class="input-group col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 search-input">
+        <div class="input-group col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 search-input">
             <input type="text" class="form-control" placeholder="Search Support"/>
             <span class="input-group-addon icon-wrap">
                 <span class="glyphicon glyphicon-search search-icon"></span>
@@ -56,11 +67,11 @@
     </div>
     <!--按钮列表-->
     <div class="nothing-btn-list">
-        <div class="btn-wrap">
+        <div class="btn-wrap clearfix">
             <button type="button" class="btn btn-default btn-active">All</button>
             <button type="button" class="btn btn-default">Inkjet(35)</button>
             <button type="button" class="btn btn-default">Laserjet(23)</button>
-            <div class="dropdown">
+            <div class="dropdown col-xs-6">
                 <button type="button" class="btn dropdown-toggle" id="dropdownMenu2"
                         data-toggle="dropdown">
                     All
@@ -81,19 +92,57 @@
                     </li>
                 </ul>
             </div>
+            <div class="filter-mobile hidden-sm hidden-md hidden-lg col-xs-6">
+                <div class="filter-mobile-title">
+                    <h3>Fliter  <span class="glyphicon glyphicon-menu-down"></span></h3>
+                </div>
+                <div class="filter-mobile-content">
+                    <div class="filter-mobile-content-list">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-mobile-content-list">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-mobile-content-list">
+                        <div class="input-group clearfix col-xs-12">
+                            <div class="filter-mobile-content-list-search clearfix">
+                                <span class="glyphicon glyphicon-search searcn-icon"></span>
+                                <form action="" class="clearfix">
+                                    <input type="text" class="form-control" placeholder="Enter Printer Model/Apex Code/OEM Code/Firmware Version">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
     <!--搜索结果数量-->
     <div class="nothing-result-num">
-        35 results found
+        <span>
+            35 results found
+        </span>
     </div>
     <div class="nothing-result-list clearfix">
-        <div class="list-sidebar col-md-3">
+        <div class="list-sidebar col-md-3 col-sm-3">
+            <!-- panel 1 -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-                <!-- panel 1 -->
-                <div class="panel panel-default">
+                <div class="panel panel-default collapse-item panel-item">
                     <div class="panel-heading" role="tab" id="heading1">
                         <h4 class="panel-title">
                             <a role="button"
@@ -103,2892 +152,297 @@
                                aria-expanded="true"
                                aria-controls="collapse1"
                             >
-                                PATENT#
-                                <span class="link">CN201210209303.5 CN201230666415.4</span>
+                                Choose Category
                                 <span class="down-circle"></span>
                             </a>
                         </h4>
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse in" role="tabpanel"
+                    <div id="collapse1" class="panel-collapse collapse in list-body" role="tabpanel"
                          aria-labelledby="heading1">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA1" role="tablist"
-                                 aria-multiselectable="true">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="subH1">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA1"
-                                                    href="#subC1"
-                                                    aria-expanded="true" aria-controls="collapseOne">
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC1" class="panel-collapse collapse in" role="tabpanel"
-                                         aria-labelledby="subH1">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="subH2">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA1"
-                                                    href="#subC2"
-                                                    aria-expanded="true" aria-controls="collapseOne">
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC2" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="subH2">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="subH3">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA1"
-                                                    href="#subC3"
-                                                    aria-expanded="true" aria-controls="collapseOne">
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC3" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="subH3">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="subH4">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA1"
-                                                    href="#subC4"
-                                                    aria-expanded="true" aria-controls="collapseOne">
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC4" class="panel-collapse collapse" role="tabpanel"
-                                         aria-labelledby="subH4">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 2 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse2"
-                            >
-                                PATENT#
-                                <span class="link">CN201010254668 CN201210379948.3</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA2">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA2"
-                                                    href="#subC2-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC2-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA2"
-                                                    href="#subC2-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC2-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA2"
-                                                    href="#subC2-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC2-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA2"
-                                                    href="#subC2-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC2-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 3 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse3"
-                            >
-                                PATENT#
-                                <span class="link">CN201210006505.x</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA3">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA3"
-                                                    href="#subC3-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC3-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA3"
-                                                    href="#subC3-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC3-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA3"
-                                                    href="#subC3-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC3-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA3"
-                                                    href="#subC3-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC3-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 4 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse4"
-                            >
-                                PATENT#
-                                <span class="link">CN201210006505.x</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA4">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA4"
-                                                    href="#subC4-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC4-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA4"
-                                                    href="#subC4-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC4-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA4"
-                                                    href="#subC4-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC4-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA4"
-                                                    href="#subC4-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC4-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 5 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse5"
-                            >
-                                PATENT#
-                                <span class="link">CN201210107270.3</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA5">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA5"
-                                                    href="#subC5-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC5-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA5"
-                                                    href="#subC5-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC5-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA5"
-                                                    href="#subC5-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC5-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA5"
-                                                    href="#subC5-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC5-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 6 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse6"
-                            >
-                                PATENT#
-                                <span class="link">CN201110459593.4 CN201210418910.2</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse6" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA6">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA6"
-                                                    href="#subC6-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC6-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA6"
-                                                    href="#subC6-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC6-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA6"
-                                                    href="#subC6-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC6-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA6"
-                                                    href="#subC6-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC6-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 7 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse7"
-                            >
-                                PATENT#
-                                <span class="link">CN201130024837.7</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse7" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA7">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA7"
-                                                    href="#subC7-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC7-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA7"
-                                                    href="#subC7-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC7-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA7"
-                                                    href="#subC7-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC7-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA7"
-                                                    href="#subC7-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC7-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 8 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse8"
-                            >
-                                PATENT#
-                                <span class="link">AJE-ICBK56/ICC46/ICM46/ICY46</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse8" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA8">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA8"
-                                                    href="#subC8-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC8-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA8"
-                                                    href="#subC8-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC8-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA8"
-                                                    href="#subC8-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC8-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA8"
-                                                    href="#subC8-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC8-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 9 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse9"
-                            >
-                                PATENT#
-                                <span class="link">CN201310020861.1</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse9" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA9">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA9"
-                                                    href="#subC9-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC9-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA9"
-                                                    href="#subC9-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC9-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA9"
-                                                    href="#subC9-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC9-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA9"
-                                                    href="#subC9-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC9-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- panel 10 -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a role="button"
-                               data-toggle="collapse"
-                               data-parent="#accordion"
-                               href="#collapse10"
-                            >
-                                PATENT#
-                                <span class="link">CN201310141831.6</span>
-                                <span class="down-circle"></span>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse10" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <p class="body-title">
-                                This patent applied in the following products:
-                            </p>
-                            <div class="panel-group no-border" id="subA10">
-
-                                <!-- sub-panel -->
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA10"
-                                                    href="#subC10-1"
-                                            >
-                                                Replacement chips for Epson® new 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC10-1" class="panel-collapse collapse in">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA10"
-                                                    href="#subC10-2"
-                                            >
-                                                Replacement chips for Epson® 9-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC10-2" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA10"
-                                                    href="#subC10-3"
-                                            >
-                                                Replacement chips for Epson® 7-pin CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC10-3" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-sub-title">
-                                            <a
-                                                    role="button"
-                                                    data-toggle="collapse"
-                                                    data-parent="#subA10"
-                                                    href="#subC10-4"
-                                            >
-                                                Replacement chips for Epson® IV CISS
-                                                <span class="sub-down-arrow"></span>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="subC10-4" class="panel-collapse collapse">
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK61R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK62R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICBK67R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-ICC65R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1241R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251NR</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1251R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1261R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1271R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1281R</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291NR</span>
-                                                </div>
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1291R</span>
-                                                </div>
-
-                                                <div class="col-xs-6 col-sm-4">
-                                                    <span>AJE-T1301R</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item active">
+                                <span class="badge">(1)</span>
+                                Ink Cartridge Chips
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">(3)</span>
+                                Toner Cartridge Chips
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">(0)</span>
+                                Accessories
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
+            <!-- panel 2 -->
+            <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
 
+                <!-- panel 1 -->
+                <div class="panel panel-default collapse-item panel-item">
+                    <div class="panel-heading" role="tab" id="heading2">
+                        <h4 class="panel-title">
+                            <a role="button"
+                               data-toggle="collapse"
+                               data-parent="#accordion2"
+                               href="#collapse2"
+                               aria-expanded="true"
+                               aria-controls="collapse2"
+                            >
+                                Brand
+                                <span class="down-circle"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse in list-body" role="tabpanel"
+                         aria-labelledby="heading1">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge">(10)</span>
+                                All
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">(1)</span>
+                                Brother
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">(5)</span>
+                                Kyocera
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">(2)</span>
+                                Sindoh
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge">(2)</span>
+                                Ricoh
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!-- panel 3 -->
+            <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+
+                <!-- panel 1 -->
+                <div class="panel panel-default collapse-item panel-item">
+                    <div class="panel-heading" role="tab" id="heading3">
+                        <h4 class="panel-title">
+                            <a role="button"
+                               data-toggle="collapse"
+                               data-parent="#accordion3"
+                               href="#collapse3"
+                               aria-expanded="true"
+                               aria-controls="collapse3"
+                            >
+                                Cartridge Series
+                                <span class="down-circle"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse in list-body" role="tabpanel"
+                         aria-labelledby="heading3">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Brother I Series
+                            </li>
+                            <li class="list-group-item">
+                                Brother II Series
+                            </li>
+                            <li class="list-group-item">
+                                Brother III Series
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="list-table col-md-9">
-
+        <div class="list-table col-md-9 col-sm-9">
+            <div class="table-top">
+                <a class="product-item col-md-4 col-sm-4 col-xs-6">
+                    <div class="Center-Container img-wrap">
+                        <div class="Table-Cell">
+                            <div class="Center-Block">
+                                <img src="./images/searchResult/Brother-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>AJB-LC3029BK</p>
+                        <p>Ink Cartridge Chips</p>
+                    </div>
+                    <div class="count-wrap">
+                        <div class="count-handle">
+                            <img src="./images/searchResult/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/searchResult/add.png" class="add">
+                            <img src="./images/searchResult/cart.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a class="product-item col-md-4 col-sm-4 col-xs-6">
+                    <div class="Center-Container img-wrap">
+                        <div class="Table-Cell">
+                            <div class="Center-Block">
+                                <img src="./images/searchResult/Brother-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>AJB-LC3029BK</p>
+                        <p>Ink Cartridge Chips</p>
+                    </div>
+                    <div class="count-wrap">
+                        <div class="count-handle">
+                            <img src="./images/searchResult/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/searchResult/add.png" class="add">
+                            <img src="./images/searchResult/cart.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a class="product-item col-md-4 col-sm-4 col-xs-6">
+                    <div class="Center-Container img-wrap">
+                        <div class="Table-Cell">
+                            <div class="Center-Block">
+                                <img src="./images/searchResult/Brother-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>AJB-LC3029BK</p>
+                        <p>Ink Cartridge Chips</p>
+                    </div>
+                    <div class="count-wrap">
+                        <div class="count-handle">
+                            <img src="./images/searchResult/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/searchResult/add.png" class="add">
+                            <img src="./images/searchResult/cart.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a class="product-item col-md-4 col-sm-4 col-xs-6">
+                    <div class="Center-Container img-wrap">
+                        <div class="Table-Cell">
+                            <div class="Center-Block">
+                                <img src="./images/searchResult/Brother-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>AJB-LC3029BK</p>
+                        <p>Ink Cartridge Chips</p>
+                    </div>
+                    <div class="count-wrap">
+                        <div class="count-handle">
+                            <img src="./images/searchResult/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/searchResult/add.png" class="add">
+                            <img src="./images/searchResult/cart.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a class="product-item col-md-4 col-sm-4 col-xs-6">
+                    <div class="Center-Container img-wrap">
+                        <div class="Table-Cell">
+                            <div class="Center-Block">
+                                <img src="./images/searchResult/Brother-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>AJB-LC3029BK</p>
+                        <p>Ink Cartridge Chips</p>
+                    </div>
+                    <div class="count-wrap">
+                        <div class="count-handle">
+                            <img src="./images/searchResult/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/searchResult/add.png" class="add">
+                            <img src="./images/searchResult/cart.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a class="product-item col-md-4 col-sm-4 col-xs-6">
+                    <div class="Center-Container img-wrap">
+                        <div class="Table-Cell">
+                            <div class="Center-Block">
+                                <img src="./images/searchResult/Brother-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>AJB-LC3029BK</p>
+                        <p>Ink Cartridge Chips</p>
+                    </div>
+                    <div class="count-wrap">
+                        <div class="count-handle">
+                            <img src="./images/searchResult/minus.png" class="minus">
+                            <input type="text" class="num-cart" value="0">
+                            <img src="./images/searchResult/add.png" class="add">
+                            <img src="./images/searchResult/cart.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <div class="btn-wrap col-xs-12 visible-xs">
+                    <a class="learn-more-btn" href="javascript: void (0)">
+                        Learn more
+                    </a>
+                </div>
+            </div>
+            <div class="table-btm">
+                <div class="productList-table-page hidden-xs">
+                    <div class="productList-table-page-content pull-right">
+                        <div class="productList-table-page-content-num col-sm-5">
+                            <span>DISPLAY：</span>
+                            <select name="num" id="num" class="selectpicker form-control">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <div class="productList-table-page-content-pages col-sm-5 clearfix">
+                            <div class="col-sm-4 nopadding width15">
+                                <button>
+                                    <span class="glyphicon glyphicon-step-backward"></span>
+                                </button>
+                            </div>
+                            <div class="col-sm-4 nopadding width15">
+                                <button>
+                                    <span class="glyphicon glyphicon-triangle-left"></span>
+                                </button>
+                            </div>
+                            <div class="col-sm-4 nopadding width25">
+                                <input type="text">
+                            </div>
+                            <div class="col-sm-4 nopadding width15 showpages">
+                                <span>/1</span>
+                            </div>
+                            <div class="col-sm-4 nopadding width15">
+                                <button>
+                                    <span class="glyphicon glyphicon-triangle-right"></span>
+                                </button>
+                            </div>
+                            <div class="col-sm-4 nopadding width15">
+                                <button>
+                                    <span class="glyphicon glyphicon-step-forward"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="productList-table-page-content-count col-sm-2">
+                            <span>4</span>RESULTS
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="search-product-footer">
-
     </div>
 </div>
 
