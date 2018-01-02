@@ -1048,6 +1048,7 @@ body {
     margin-bottom: 26px;
     font-size: 2rem;
     color: #999999;
+    font-weight: 100;
   }
   .nothing-tab-list #nothingTab li {
     border-top: 3px solid #d0d0d0;
@@ -1289,9 +1290,10 @@ body {
     color: #fff;
   }
   .nothing-jumbotron-bg.jumbotron .bg-txt {
-    margin: 50px 0;
-    font-size: 2rem;
+    margin: 20px 0 40px;
+    font-size: 20px;
     color: #fff;
+    line-height: 40px;
   }
   .nothing-jumbotron-bg.jumbotron .bg-btn {
     margin: auto;
