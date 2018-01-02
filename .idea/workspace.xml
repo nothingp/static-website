@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bea158de-0d81-41ac-81bc-a52637b63530" name="Default" comment="联系我们">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/Brother-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/Kyocera-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/Sindoh-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/doc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/laserjetChips.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/images/searchResult/pdf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/less/searchResult.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/searchResult.html" />
+    <list default="true" id="bea158de-0d81-41ac-81bc-a52637b63530" name="Default" comment="提交搜索结果css">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/chipTest.less" afterPath="$PROJECT_DIR$/src/less/chipTest.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/connectUs.less" afterPath="$PROJECT_DIR$/src/less/connectUs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/newsList.less" afterPath="$PROJECT_DIR$/src/less/newsList.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/less/searchResult.less" afterPath="$PROJECT_DIR$/src/less/searchResult.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/chipTest.css" afterPath="$PROJECT_DIR$/www/css/chipTest.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/connectUs.css" afterPath="$PROJECT_DIR$/www/css/connectUs.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/newsList.css" afterPath="$PROJECT_DIR$/www/css/newsList.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/searchResult.css" afterPath="$PROJECT_DIR$/www/css/searchResult.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/newsList.html" afterPath="$PROJECT_DIR$/www/newsList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/searchResult.html" afterPath="$PROJECT_DIR$/www/searchResult.html" />
     </list>
     <ignored path="static-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,77 +32,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="searchResult.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/searchResult.html">
+      <file leaf-file-name="chipTest.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/chipTest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="219" column="22" selection-start-line="219" selection-start-column="22" selection-end-line="219" selection-end-column="22" />
+            <state relative-caret-position="118">
+              <caret line="33" column="28" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="28" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#1;n#div#9;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#10;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchResult.less" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/less/searchResult.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="243" column="18" selection-start-line="243" selection-start-column="18" selection-end-line="243" selection-end-column="18" />
-              <folding>
-                <element signature="e#149#198#0" expanded="false" />
-                <element signature="e#235#721#0" expanded="false" />
-                <element signature="e#751#1268#0" expanded="false" />
-                <element signature="e#1308#1382#0" expanded="false" />
-                <element signature="e#1406#3169#0" expanded="false" />
-                <element signature="e#1440#2052#0" expanded="false" />
-                <element signature="e#3219#4507#0" expanded="false" />
-                <element signature="e#4534#4583#0" expanded="false" />
-                <element signature="e#4684#4707#0" expanded="false" />
-                <element signature="e#5261#5760#0" expanded="false" />
-                <element signature="e#5784#7233#0" expanded="false" />
-                <element signature="e#5830#6491#0" expanded="false" />
-                <element signature="e#6512#7093#0" expanded="false" />
-                <element signature="e#7260#7311#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productList.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="productList.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/productList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="552" column="77" selection-start-line="552" selection-start-column="32" selection-end-line="552" selection-end-column="77" />
+            <state relative-caret-position="772">
+              <caret line="762" column="40" selection-start-line="762" selection-start-column="40" selection-end-line="762" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newsCenter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/newsCenter.html">
+      <file leaf-file-name="chipTest.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/less/chipTest.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="468" column="73" selection-start-line="468" selection-start-column="12" selection-end-line="468" selection-end-column="73" />
+            <state relative-caret-position="285">
+              <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
               <folding>
-                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#259#812#0" expanded="false" />
+                <element signature="e#844#890#0" expanded="false" />
+                <element signature="e#5040#5089#0" expanded="false" />
+                <element signature="e#5230#6122#0" expanded="false" />
+                <element signature="e#6817#9675#0" expanded="false" />
+                <element signature="e#9710#9761#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -120,16 +91,16 @@
         <option value="$PROJECT_DIR$/www/css/newsList.css" />
         <option value="$PROJECT_DIR$/www/registLogin.html" />
         <option value="$PROJECT_DIR$/src/less/newsCenter.less" />
+        <option value="$PROJECT_DIR$/www/home.html" />
+        <option value="$PROJECT_DIR$/www/chipTest.html" />
+        <option value="$PROJECT_DIR$/www/newsCenter.html" />
         <option value="$PROJECT_DIR$/www/connectUs.html" />
         <option value="$PROJECT_DIR$/src/less/connectUs.less" />
-        <option value="$PROJECT_DIR$/www/newsCenter.html" />
-        <option value="$PROJECT_DIR$/www/home.html" />
-        <option value="$PROJECT_DIR$/src/less/chipTest.less" />
-        <option value="$PROJECT_DIR$/src/less/newsList.less" />
         <option value="$PROJECT_DIR$/www/newsList.html" />
-        <option value="$PROJECT_DIR$/www/chipTest.html" />
-        <option value="$PROJECT_DIR$/src/less/searchResult.less" />
+        <option value="$PROJECT_DIR$/src/less/newsList.less" />
         <option value="$PROJECT_DIR$/www/searchResult.html" />
+        <option value="$PROJECT_DIR$/src/less/searchResult.less" />
+        <option value="$PROJECT_DIR$/src/less/chipTest.less" />
       </list>
     </option>
   </component>
@@ -234,28 +205,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="searchResult" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static-website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -316,12 +265,45 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/orderCenterSetp2.less</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/productList.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/base.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/firmwareUpgrades.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/footer.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/header.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/home.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/registLogin.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/subscriptionCenter.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/less/videoCenter.less</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/base.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/campusRecruitment.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/chipTest.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/connectUs.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/firmwareUpgrades.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/footer.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/header.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/home.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/jobDetails.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/newsCenter.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/newsDetail.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/newsList.css</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/orderCenterSetp2.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/orderCenterStep3.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/patentCenter.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/productDetail.css</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/productList.css</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/orderCenterSetp2.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/productList.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/registLogin.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/searchProduct.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/searchResult.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/subscriptionCenter.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/userCenter.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/css/videoCenter.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/firmwareUpgrades.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/footer.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/home.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/line.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/registLogin.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/userCenter.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/videoCenter.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -329,8 +311,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/subscriptionCenter/order-center-setps-3.jpg</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/subscriptionCenter/unismart.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/subscriptionCenter/pdf-bg-new.png</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -338,6 +319,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/line1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/www/images/line2.png</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -490,7 +473,7 @@
       <workItem from="1511517572117" duration="2626000" />
       <workItem from="1511946334901" duration="33763000" />
       <workItem from="1512965356810" duration="50554000" />
-      <workItem from="1513579768174" duration="51209000" />
+      <workItem from="1513579768174" duration="81784000" />
     </task>
     <task id="LOCAL-00001" summary="新闻列表">
       <created>1512775679769</created>
@@ -527,11 +510,32 @@
       <option name="project" value="LOCAL" />
       <updated>1514163147160</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="搜索结果">
+      <created>1514267198659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1514267198659</updated>
+    </task>
+    <task id="LOCAL-00007" summary="提交搜索结果css">
+      <created>1514268609784</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1514268609784</updated>
+    </task>
+    <task id="LOCAL-00008" summary="联系我们地图效果添加">
+      <created>1514360578806</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1514360578806</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138152000" />
+    <option name="totallyTimeSpent" value="168727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -548,12 +552,12 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.50528544" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.5081043" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32048193" sideWeight="0.49753347" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3180723" sideWeight="0.4947146" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.4947146" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253012" sideWeight="0.4918957" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -563,24 +567,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.49753347" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.50528544" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32048193" sideWeight="0.49753347" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771084" sideWeight="0.4947146" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -615,58 +601,16 @@
     <MESSAGE value="新闻列表" />
     <MESSAGE value="联系我们" />
     <MESSAGE value=" 芯片测试仪" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 芯片测试仪" />
+    <MESSAGE value="搜索结果" />
+    <MESSAGE value="提交搜索结果css" />
+    <MESSAGE value="联系我们地图效果添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="联系我们地图效果添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/less/productDetail.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="303" column="5" selection-start-line="259" selection-start-column="4" selection-end-line="303" selection-end-column="5" />
-          <folding>
-            <element signature="e#6887#8161#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/connectUs.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2970">
-          <caret line="217" column="24" selection-start-line="216" selection-start-column="4" selection-end-line="217" selection-end-column="24" />
-          <folding>
-            <element signature="e#207#583#0" expanded="false" />
-            <element signature="e#4844#5229#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/connectUs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="277" column="4" selection-start-line="277" selection-start-column="4" selection-end-line="279" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/images/newsList/app-store.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/images/newsList/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/images/search.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -747,46 +691,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/chipTest.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding>
-            <element signature="e#258#811#0" expanded="false" />
-            <element signature="e#843#889#0" expanded="false" />
-            <element signature="e#4992#5041#0" expanded="false" />
-            <element signature="e#5182#6074#0" expanded="false" />
-            <element signature="e#6769#9627#0" expanded="false" />
-            <element signature="e#9662#9713#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/images/subscriptionCenter/download.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/newsList.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="556" column="20" selection-start-line="556" selection-start-column="20" selection-end-line="556" selection-end-column="20" />
-          <folding>
-            <element signature="e#5314#6258#0" expanded="false" />
-            <element signature="e#7196#10064#0" expanded="false" />
-            <element signature="e#10177#11966#0" expanded="false" />
-            <element signature="e#14456#14955#0" expanded="false" />
-            <element signature="e#16173#19058#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/productDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="74" column="10" selection-start-line="46" selection-start-column="4" selection-end-line="74" selection-end-column="10" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/campusRecruitment.html">
@@ -813,23 +720,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/newsDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/orderCenterSetp2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/patentCenter.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -861,125 +752,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/registLogin.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="361" column="4" selection-start-line="361" selection-start-column="4" selection-end-line="364" selection-end-column="5" />
-          <folding>
-            <element signature="e#262#315#0" expanded="false" />
-            <element signature="e#1464#1834#0" expanded="false" />
-            <element signature="e#1860#2026#0" expanded="false" />
-            <element signature="e#2052#2218#0" expanded="false" />
-            <element signature="e#2248#3526#0" expanded="false" />
-            <element signature="e#3554#3878#0" expanded="false" />
-            <element signature="e#3904#4070#0" expanded="false" />
-            <element signature="e#4096#4468#0" expanded="false" />
-            <element signature="e#4495#4660#0" expanded="false" />
-            <element signature="e#5717#5776#0" expanded="false" />
-            <element signature="e#7737#9110#0" expanded="false" />
-            <element signature="e#10536#10597#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/newsList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3298">
-          <caret line="723" column="25" selection-start-line="723" selection-start-column="25" selection-end-line="723" selection-end-column="25" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="554" column="51" selection-start-line="554" selection-start-column="51" selection-end-line="554" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/home.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="43" selection-start-line="39" selection-start-column="16" selection-end-line="40" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/newsCenter.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="233" column="2" selection-start-line="233" selection-start-column="2" selection-end-line="258" selection-end-column="3" />
-          <folding>
-            <element signature="e#361#4118#0" expanded="false" />
-            <element signature="e#4147#4523#0" expanded="false" />
-            <element signature="e#4560#4656#0" expanded="false" />
-            <element signature="e#4686#5203#0" expanded="false" />
-            <element signature="e#5233#9390#0" expanded="false" />
-            <element signature="e#9410#11199#0" expanded="false" />
-            <element signature="e#11274#13112#0" expanded="false" />
-            <element signature="e#13141#13526#0" expanded="false" />
-            <element signature="e#13689#14188#0" expanded="false" />
-            <element signature="e#15832#17632#0" expanded="false" />
-            <element signature="e#18405#22321#0" expanded="false" />
-            <element signature="e#22342#22415#0" expanded="false" />
-            <element signature="e#22441#22573#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/chipTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="134" column="10" selection-start-line="131" selection-start-column="4" selection-end-line="134" selection-end-column="10" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/images/searchResult/laserjetChips.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/registLogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="64" column="33" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#6;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#9;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#11;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#12;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#13;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#14;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#15;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#17;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/images/searchResult/Brother-1.png">
@@ -1006,63 +781,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="281" column="10" selection-start-line="281" selection-start-column="10" selection-end-line="338" selection-end-column="11" />
-          <folding>
-            <element signature="e#6930#8666#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/productList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="552" column="77" selection-start-line="552" selection-start-column="32" selection-end-line="552" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/newsCenter.html">
+    <entry file="file://$PROJECT_DIR$/www/patentCenter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="468" column="73" selection-start-line="468" selection-start-column="12" selection-end-line="468" selection-end-column="73" />
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/newsDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/productDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="74" column="10" selection-start-line="46" selection-start-column="4" selection-end-line="74" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1645">
+          <caret line="145" column="43" selection-start-line="145" selection-start-column="43" selection-end-line="145" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/registLogin.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="361" column="4" selection-start-line="361" selection-start-column="4" selection-end-line="361" selection-end-column="4" />
           <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#262#315#0" expanded="false" />
+            <element signature="e#3639#3963#0" expanded="false" />
+            <element signature="e#3989#4155#0" expanded="false" />
+            <element signature="e#4181#4553#0" expanded="false" />
+            <element signature="e#4580#4745#0" expanded="false" />
+            <element signature="e#5802#5861#0" expanded="false" />
+            <element signature="e#7822#9195#0" expanded="false" />
+            <element signature="e#10621#10682#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/less/searchResult.less">
+    <entry file="file://$PROJECT_DIR$/www/images/NFC.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/newsCenter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="243" column="18" selection-start-line="243" selection-start-column="18" selection-end-line="243" selection-end-column="18" />
-          <folding>
-            <element signature="e#149#198#0" expanded="false" />
-            <element signature="e#235#721#0" expanded="false" />
-            <element signature="e#751#1268#0" expanded="false" />
-            <element signature="e#1308#1382#0" expanded="false" />
-            <element signature="e#1406#3169#0" expanded="false" />
-            <element signature="e#1440#2052#0" expanded="false" />
-            <element signature="e#3219#4507#0" expanded="false" />
-            <element signature="e#4534#4583#0" expanded="false" />
-            <element signature="e#4684#4707#0" expanded="false" />
-            <element signature="e#5261#5760#0" expanded="false" />
-            <element signature="e#5784#7233#0" expanded="false" />
-            <element signature="e#5830#6491#0" expanded="false" />
-            <element signature="e#6512#7093#0" expanded="false" />
-            <element signature="e#7260#7311#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="169">
+          <caret line="456" column="47" selection-start-line="456" selection-start-column="47" selection-end-line="456" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/searchProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="16" selection-end-line="45" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/searchProduct.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/searchResult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="219" column="22" selection-start-line="219" selection-start-column="22" selection-end-line="219" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="113" column="14" selection-start-line="113" selection-start-column="14" selection-end-line="113" selection-end-column="14" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1073,10 +887,165 @@
             <element signature="n#div#6;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#7;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#8;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#1;n#div#9;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#10;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/newsList.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="162" column="11" selection-start-line="160" selection-start-column="10" selection-end-line="162" selection-end-column="11" />
+          <folding>
+            <element signature="e#11092#12881#0" expanded="false" />
+            <element signature="e#15371#15870#0" expanded="false" />
+            <element signature="e#17088#19973#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/newsList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="511" column="35" selection-start-line="511" selection-start-column="28" selection-end-line="511" selection-end-column="35" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/searchResult.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="e#149#198#0" expanded="false" />
+            <element signature="e#3247#3974#0" expanded="false" />
+            <element signature="e#5964#6013#0" expanded="false" />
+            <element signature="e#6114#6137#0" expanded="false" />
+            <element signature="e#6174#6661#0" expanded="false" />
+            <element signature="e#6691#7190#0" expanded="false" />
+            <element signature="e#7214#8663#0" expanded="false" />
+            <element signature="e#7260#7921#0" expanded="false" />
+            <element signature="e#7942#8523#0" expanded="false" />
+            <element signature="e#8690#8741#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/connectUs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="207" column="96" selection-start-line="207" selection-start-column="90" selection-end-line="207" selection-end-column="96" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1514803654000" expanded="true" signature="13929:13935" ph=" " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/connectUs.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="394" column="22" selection-start-line="394" selection-start-column="22" selection-end-line="394" selection-end-column="22" />
+          <folding>
+            <element signature="e#5158#5207#0" expanded="false" />
+            <element signature="e#5344#5729#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/newsCenter.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="1076" column="31" selection-start-line="1072" selection-start-column="2" selection-end-line="1076" selection-end-column="31" />
+          <folding>
+            <element signature="e#361#4118#0" expanded="false" />
+            <element signature="e#4916#5012#0" expanded="false" />
+            <element signature="e#5042#5559#0" expanded="false" />
+            <element signature="e#9847#11636#0" expanded="false" />
+            <element signature="e#11711#13549#0" expanded="false" />
+            <element signature="e#13578#13963#0" expanded="false" />
+            <element signature="e#14126#14625#0" expanded="false" />
+            <element signature="e#16269#18069#0" expanded="false" />
+            <element signature="e#18842#22758#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/registLogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="97" column="64" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#12;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#13;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#14;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#15;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#17;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/less/chipTest.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="46" selection-end-line="66" selection-end-column="46" />
+          <folding>
+            <element signature="e#259#812#0" expanded="false" />
+            <element signature="e#844#890#0" expanded="false" />
+            <element signature="e#5040#5089#0" expanded="false" />
+            <element signature="e#5230#6122#0" expanded="false" />
+            <element signature="e#6817#9675#0" expanded="false" />
+            <element signature="e#9710#9761#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/chipTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/productList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="762" column="40" selection-start-line="762" selection-start-column="40" selection-end-line="762" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

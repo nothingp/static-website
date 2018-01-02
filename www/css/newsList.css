@@ -315,7 +315,7 @@ body {
     margin-top: 20px;
     height: 60px;
     font-size: 18px;
-    color: #2f88c6;
+    color: #404040;
   }
   .nothing-new-list .news-list .new-item .item-rg > p {
     height: 50px;
@@ -333,10 +333,10 @@ body {
   .nothing-new-list .news-list .load-more {
     margin-top: 20px;
     width: 100%;
-    padding: 10px 0;
+    padding: 68px 0;
     font-size: 16px;
-    color: #999999;
-    border: solid 1px #e5e5e5;
+    color: #8c8c8c;
+    border: inherit;
   }
   .nothing-new-list .img-bg-item .img-bg {
     cursor: pointer;
@@ -428,6 +428,9 @@ body {
     font-size: 12px;
     line-height: 16px;
     color: #666666;
+  }
+  .nothing-new-list .news-sidebar .sidebar-item .item-detail .detail-md span:last-child {
+    color: #2f88c4;
   }
   .nothing-new-list .news-sidebar .sidebar-item .item-detail .detail-btm {
     display: flex;

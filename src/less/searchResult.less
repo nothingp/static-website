@@ -10,40 +10,82 @@
   }
 
   //bannerImg
-  .nothing-banner-img{
-    width: 100%;
-    height: 280px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url(../images/searchResult/banner.png);
-    text-align: center;
-    line-height: 280px;
-    input{
+  //.nothing-banner-img{
+  //  width: 100%;
+  //  height: 280px;
+  //  background-repeat: no-repeat;
+  //  background-size: 100% 100%;
+  //  background-image: url(../images/searchResult/banner.png);
+  //  text-align: center;
+  //  line-height: 280px;
+  //  input{
+  //    width: 100%;
+  //    height: 50px;
+  //    font-size: 20px;
+  //    padding-left: 20px;
+  //  }
+  //  .glyphicon{
+  //    background-color: #FFF;
+  //    padding: 8px;
+  //    font-size: 20px;
+  //    border: none;
+  //    margin-left: -60px;
+  //    color: #737373;
+  //  }
+  //
+  //}
+  .search-product-banner{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    .banner-bg{
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
+      height: 300px;
+      background-image: url(../images/searchResult/banner-bg.png);
+    }
+    .search-input{
+      margin: 125px auto;
       height: 50px;
-      font-size: 20px;
-      padding-left: 20px;
+      box-shadow: 6px 10px 35px 0px rgba(0, 0, 0, 0.5);
+      border-radius: 2px;
+      width: 800px;
+      >input{
+        width: 100%;
+        height: 100%;
+        border-right: none;
+        box-shadow: none;
+        font-family: CiscoSans-ExtraLight;
+        font-size: 20px;
+        color: #999999;
+      }
+      .icon-wrap{
+        background: #fff;
+        .search-icon{
+          padding: 6px 20px;
+          color: #999999;
+        }
+      }
     }
-    .glyphicon{
-      background-color: #FFF;
-      padding: 8px;
-      font-size: 20px;
-      border: none;
-      margin-left: -60px;
-      color: #737373;
-    }
-
   }
+
 
   //按钮列表
   .nothing-btn-list{
-    margin: 0 auto;
+    padding-left: 142px;
     height: 70px;
     border-bottom: 1px solid #dcdcdc;
     .btn-wrap{
       max-width: 1280px;
       margin: 0 auto;
       line-height: 70px;
+      .btn{
+        height: 30px;
+        padding: 7px 20px;
+        line-height: 0px;
+      }
       .dropdown{
         display: none;
       }
@@ -66,24 +108,36 @@
   .results-found{
     font-size: 16px;
     color: #999999;
-    padding: 16px 0 26px 0;
+    padding: 16px 0 26px 132px;
+    font-family: CiscoSans-ExtraLight;
+
   }
 
   //搜索列表
   .found-list{
+    font-family: CiscoSans-ExtraLight;
     margin-top: 26px;
+    padding: 0px 160px;
+    width: 1280px;
     .found{
-      border: solid 1px #e5e5e5;
+      &:hover{
+        border: solid 1px #e5e5e5;
+      }
       margin-bottom: 10px;
+      height: 160px;
+
       .found-top{
-        color: #2f88c4;
+        color: #333333;
         font-size: 18px;
         margin-top: 27px;
         margin-left: 30px;
+        &:hover{
+          color: #2f88c4;
+        }
       }
       .found-mid{
         font-size: 16px;
-        margin-top: 19px;
+        margin-top: 16px;
         margin-left: 30px;
         span:first-child{
           margin-right: 30px;
@@ -96,22 +150,30 @@
       .found-bottom{
         color: #999999;
         font-size: 16px;
-        margin-top: 24px;
+        margin-top: 16px;
         margin-bottom: 23px;
         margin-left: 30px;
       }
     }
     .found-item{
       margin-bottom: 30px;
+      &:hover{
+        border: solid 1px #e5e5e5;
+      }
+      height: 160px;
+
       .found-top-item{
         color: #333333;
         font-size: 18px;
         margin-top: 27px;
         margin-left: 30px;
+        &:hover{
+          color: #2f88c4;
+        }
       }
       .found-mid-item{
         font-size: 16px;
-        margin-top: 19px;
+        margin-top: 16px;
         margin-left: 30px;
         span:first-child{
           margin-right: 30px;
@@ -124,7 +186,7 @@
       .found-bottom-item{
         color: #999999;
         font-size: 16px;
-        margin-top: 24px;
+        margin-top: 16px;
         margin-bottom: 23px;
         margin-left: 30px;
       }
@@ -133,6 +195,11 @@
       margin-bottom: 30px;
       display: flex;
       margin-left: 20px;
+      &:hover{
+        border: solid 1px #e5e5e5;
+      }
+      height: 96px;
+
       .found-top-item-list{
         margin: auto 10px;
         width: 120px;
@@ -156,6 +223,7 @@
   }
 
   .firmwareUpgrades-content-left-form-table-page{
+    font-family: CiscoSans-ExtraLight;
     .firmwareUpgrades-content-left-form-table-page-content{
       padding:20px 0;
       .firmwareUpgrades-content-left-form-table-page-content-num{
