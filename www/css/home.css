@@ -1310,7 +1310,7 @@ body {
   .nothing-jumbotron-bg.jumbotron .bg-btn:after {
     border-color: #fff;
     border-style: solid;
-    border-width: 1px 1px 0 0;
+    border-width: 2px 2px 0 0;
     content: "";
     display: block;
     height: 0;
@@ -1372,7 +1372,7 @@ body {
   .nothing-contact .contact-email .btn-blue:after {
     border-color: #2f88c6;
     border-style: solid;
-    border-width: 1px 1px 0 0;
+    border-width: 2px 2px 0 0;
     content: "";
     display: block;
     height: 0;
