@@ -120,15 +120,14 @@ body {
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search input {
     padding-left: 50px;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
     font-size: 16px;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-search button {
     background: #2f88c4;
     color: #fff;
     width: 100px;
-    height: 50px;
+    height: 40px;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select {
     margin-top: 16px;
@@ -140,13 +139,13 @@ body {
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son .form-group span {
     position: absolute;
-    top: 20px;
+    top: 15px;
     right: 12px;
     font-size: 14px;
     color: #5a5a5a;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son .form-group select {
-    height: 50px;
+    height: 40px;
     font-size: 16px;
     appearance: none;
     -moz-appearance: none;
