@@ -57,6 +57,7 @@ body {
   }
   .regist-login-form .account .create-title {
     font-size: 4.8rem;
+    font-weight: 700;
     color: #2f88c6;
     text-align: center;
     height: 32px;
