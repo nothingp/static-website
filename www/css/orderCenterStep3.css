@@ -262,6 +262,7 @@ body {
     padding-left: 15px;
   }
   .orderCenter-content .form .select-country .btn-lg {
+    background: #fff;
     padding: 0;
     font-size: 1.4rem;
     height: 42px;
@@ -287,12 +288,13 @@ body {
   .orderCenter-content .form .select-country .dropdown-menu li a {
     color: #8c8c8c;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 15px;
     height: 40px;
     line-height: 40px;
     font-size: 1.4rem;
   }
   .orderCenter-content .form .select-country .dropdown-menu li a:hover {
+    color: #fff;
     background: #686868;
   }
   .orderCenter-content .order-center-btns {
@@ -314,6 +316,10 @@ body {
     width: 134px;
     border-radius: 4px;
     border: 1px solid #fff;
+    background: #2f87c4;
+  }
+  .orderCenter-content .order-center-btns .btn-primary:hover {
+    background: #256b9b;
   }
   .order-center-step3-footer {
     height: 777px;
@@ -511,6 +517,7 @@ body {
   .orderCenter-content .order-center-btns .btn-primary {
     width: 45%;
     border-radius: .4rem;
+    background: #2f87c4;
     border: 1px solid #fff;
   }
 }
