@@ -137,8 +137,18 @@ body {
     line-height: 40px;
   }
   .patent-center-panel .white-panel {
+    margin: auto;
+    max-width: 1280px;
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .patent-center-panel .white-panel .col-sm-9 {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+  .patent-center-panel .white-panel .col-sm-3 {
+    padding-left: 10px;
+    padding-right: 0;
   }
   .patent-center-panel .white-panel #accordion > .panel-default {
     border-radius: 0;
