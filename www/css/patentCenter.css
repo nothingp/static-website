@@ -298,25 +298,47 @@ body {
   }
   .patent-center-panel .subscribe-form,
   .patent-center-panel .support-form {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
     border: 1px solid #E4E4E4;
-    padding: 1rem;
+    padding: 15px;
   }
   .patent-center-panel .subscribe-form .form-group,
   .patent-center-panel .support-form .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
   }
   .patent-center-panel .subscribe-form label,
   .patent-center-panel .support-form label {
     padding: 0;
+    padding-left: 25px;
     text-align: right;
+    margin: 5px auto;
+  }
+  .patent-center-panel .subscribe-form .form-control,
+  .patent-center-panel .support-form .form-control {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    margin: 5px auto;
+    border-radius: 3px;
   }
   .patent-center-panel .subscribe-form .title,
   .patent-center-panel .support-form .title {
-    padding-left: .5rem;
-    border-left: .3rem solid #2f88c4;
+    padding-left: 12px;
     position: relative;
     font-size: 2rem;
+  }
+  .patent-center-panel .subscribe-form .title:before,
+  .patent-center-panel .support-form .title:before {
+    display: block;
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: #2f88c4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
   }
   .patent-center-panel .subscribe-form .title:after,
   .patent-center-panel .support-form .title:after {
@@ -327,13 +349,24 @@ body {
     background: #E4E4E4;
     position: absolute;
     left: 0;
-    bottom: -0.5rem;
+    bottom: -10px;
+  }
+  .patent-center-panel .subscribe-form .btn.btn-primary,
+  .patent-center-panel .support-form .btn.btn-primary {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    margin-top: 20px;
   }
   .patent-center-panel .subscribe-form .tips,
   .patent-center-panel .support-form .tips {
     font-size: 1.6rem;
     color: #8c8c8c;
-    margin: 35px 0;
+    margin: 32px 0 28px;
+  }
+  .patent-center-panel .img-bottom img {
+    border-radius: 5px;
   }
   .patent-center-footer {
     height: 777px;
@@ -622,9 +655,20 @@ body {
   }
   .patent-center-panel .subscribe-form .title,
   .patent-center-panel .support-form .title {
-    padding-left: .5rem;
-    border-left: .3rem solid #2f88c4;
+    padding-left: 1rem;
     position: relative;
+  }
+  .patent-center-panel .subscribe-form .title:before,
+  .patent-center-panel .support-form .title:before {
+    display: block;
+    content: '';
+    width: .3rem;
+    height: 2rem;
+    background: #2f88c4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1rem;
   }
   .patent-center-panel .subscribe-form .title:after,
   .patent-center-panel .support-form .title:after {
@@ -635,12 +679,16 @@ body {
     background: #E4E4E4;
     position: absolute;
     left: 0;
-    bottom: -0.5rem;
+    bottom: -1rem;
   }
   .patent-center-panel .subscribe-form .tips,
   .patent-center-panel .support-form .tips {
+    margin: 20px 0;
     font-size: 1.2rem;
     color: #8c8c8c;
+  }
+  .patent-center-panel .img-bottom img {
+    border-radius: 5px;
   }
   .patent-center-footer {
     height: 449px;
