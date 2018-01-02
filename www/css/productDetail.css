@@ -72,6 +72,10 @@ body {
   .product-detail-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
   }
+  .product-detail-panel {
+    max-width: 1280px;
+    margin: auto;
+  }
   .product-detail-panel .bread-tap {
     margin: 0;
     padding: 0;
@@ -201,9 +205,28 @@ body {
     line-height: 50px;
     font-size: 16px;
     color: #595959;
+    position: relative;
   }
-  .product-detail-panel .technical-support .glyphicon-chevron-right {
-    margin-left: 50px;
+  .product-detail-panel .technical-support ul li .arrow-right {
+    border-color: #595959;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: block;
+    height: 0;
+    padding: 5px;
+    transform: rotate(45deg);
+    width: 0;
+    right: -10px;
+    position: absolute;
+    top: 22px;
+    z-index: 0;
+  }
+  .product-detail-panel .technical-support .txt-dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
   }
   .product-detail-panel .description {
     margin-bottom: 150px;
@@ -406,7 +429,7 @@ body {
     min-height: 8rem;
   }
   .product-detail-panel .technical-support ul {
-    margin: 0 0 0 1.5rem;
+    margin: 0 1.5rem;
     padding: 0;
     list-style: none;
   }
@@ -414,9 +437,23 @@ body {
     padding: 2rem 0;
     font-size: 1.4rem;
     color: #595959;
+    position: relative;
+    padding-right: 10px;
   }
-  .product-detail-panel .technical-support .glyphicon-chevron-right {
-    margin-left: 3rem;
+  .product-detail-panel .technical-support ul li .arrow-right {
+    border-color: #595959;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    display: block;
+    height: 0;
+    padding: 5px;
+    transform: rotate(45deg);
+    width: 0;
+    right: 0px;
+    position: absolute;
+    top: 29px;
+    z-index: 0;
   }
   .product-detail-panel .description {
     margin-bottom: 5rem;
