@@ -1227,6 +1227,10 @@ body {
   .nothing-solution-container {
     margin: 50px auto;
   }
+  .nothing-solution-container img {
+    width: 970px;
+    margin: auto;
+  }
   .nothing-solution-container .solution-detail {
     margin: 30px 0;
     font-size: 1.6rem;
