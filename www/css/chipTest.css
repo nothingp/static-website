@@ -371,32 +371,37 @@ body {
     margin: 0 auto;
   }
   .nothing-second-menu {
-    max-width: 1280px;
+    background-color: #2f88c6;
+    max-width: 1600px;
   }
-  .nothing-second-menu .navbar-default {
+  .nothing-second-menu .nothing-second-menu-content {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  .nothing-second-menu .nothing-second-menu-content .navbar-default {
     background-color: #2f88c6;
   }
-  .nothing-second-menu .navbar {
+  .nothing-second-menu .nothing-second-menu-content .navbar {
     margin-bottom: 0;
     border: 0;
     border-radius: 0;
   }
-  .nothing-second-menu .navbar .navbar-brand {
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-brand {
     height: 70px;
     line-height: 40px;
     font-size: 16px;
     color: #ffffff;
   }
-  .nothing-second-menu .navbar .navbar-nav .open > a,
-  .nothing-second-menu .navbar .navbar-nav .open > a:focus,
-  .nothing-second-menu .navbar .navbar-nav .open > a:hover {
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a,
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a:focus,
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a:hover {
     background-color: transparent;
     color: #a4c7de;
   }
-  .nothing-second-menu .navbar .navbar-nav > li:hover {
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
-  .nothing-second-menu .navbar .navbar-nav > li > a {
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li > a {
     padding-top: 0;
     padding-bottom: 0;
     line-height: 70px;
