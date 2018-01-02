@@ -980,7 +980,7 @@ body {
   .nothing-carousel .read-more span:after {
     border-color: #2f88c6;
     border-style: solid;
-    border-width: 1px 1px 0 0;
+    border-width: 2px 2px 0 0;
     content: "";
     display: inline-block;
     height: 0;
@@ -1002,9 +1002,9 @@ body {
     background: #2f88c6;
   }
   .nothing-carousel .chevron {
-    width: 30px;
-    height: 30px;
-    margin-top: -10px;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
     font-size: 30px;
     position: absolute;
     top: 50%;
