@@ -123,8 +123,18 @@
             padding: 0;
             padding-left: 20px;
             li {
+                list-style: none;
                 font-size: 1.6rem;
                 color: #666666;
+                position: relative;
+                &:before {
+                    display: inline-block;
+                    content: '.';
+                    margin-right: 20px;
+                    position: absolute;
+                    top: -5px;
+                    left: -10px;
+                }
             }
         }
 
@@ -729,13 +739,25 @@
             padding: 1rem;
             font-size: 1.8rem;
             color: #666;
+            text-align: center;
         }
         .print-li {
+            width: 80%;
             padding: 0;
             margin: auto;
             li {
+                list-style: none;
                 font-size: 1.5rem;
                 color: #666;
+                position: relative;
+                &:before {
+                    display: inline-block;
+                    content: '.';
+                    margin-right: 5px;
+                    position: relative;
+                    top: -5px;
+                    left: 0px;
+                }
             }
         }
 

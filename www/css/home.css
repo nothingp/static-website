@@ -951,8 +951,18 @@ body {
     padding-left: 20px;
   }
   .nothing-carousel .print-li li {
+    list-style: none;
     font-size: 1.6rem;
     color: #666666;
+    position: relative;
+  }
+  .nothing-carousel .print-li li:before {
+    display: inline-block;
+    content: '.';
+    margin-right: 20px;
+    position: absolute;
+    top: -5px;
+    left: -10px;
   }
   .nothing-carousel .print-txt {
     text-align: left;
@@ -1508,14 +1518,26 @@ body {
     padding: 1rem;
     font-size: 1.8rem;
     color: #666;
+    text-align: center;
   }
   .nothing-carousel .print-li {
+    width: 80%;
     padding: 0;
     margin: auto;
   }
   .nothing-carousel .print-li li {
+    list-style: none;
     font-size: 1.5rem;
     color: #666;
+    position: relative;
+  }
+  .nothing-carousel .print-li li:before {
+    display: inline-block;
+    content: '.';
+    margin-right: 5px;
+    position: relative;
+    top: -5px;
+    left: 0px;
   }
   .nothing-carousel .print-txt {
     text-align: center;
