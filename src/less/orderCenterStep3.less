@@ -1,17 +1,10 @@
 @import "variables.less";
 @import "base.less";
-
-//公共样式
+@import "header.less";
+@import "footer.less";
 
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
-    //768- sm->lg
-    .order-center-step3-navbar {
-        height: 110px;
-        background: #f5f5f5;
-    }
-
-    //首屏页面
     .order-center-step3-banner {
         padding: 0;
         margin-bottom: 0;
@@ -317,25 +310,10 @@
             }
         }
     }
-
-    .order-center-step3-footer {
-        height: 777px;
-        background: #f5f5f5;
-    }
-
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-xs-max) {
-    .order-center-step3-navbar {
-        height: 50px;
-    }
-
-    .order-center-step3-footer {
-        height: 449px;
-        background: #f5f5f5;
-    }
-
     .order-center-step3-banner {
         padding: 0;
         margin-bottom: 0;
@@ -546,5 +524,4 @@
             }
         }
     }
-
 }

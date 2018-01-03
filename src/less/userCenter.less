@@ -1,15 +1,10 @@
 @import "variables.less";
 @import "base.less";
+@import "header.less";
+@import "footer.less";
 
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
-    //768- sm->lg
-    .user-center-navbar {
-        height: 110px;
-        background: #f5f5f5;
-    }
-
-    //首屏页面
     .user-center-jumbotron.jumbotron {
         padding: 0;
         margin-bottom: 0;
@@ -136,21 +131,10 @@
             }
         }
     }
-
-    .user-center-footer {
-        height: 777px;
-        background: #f5f5f5;
-    }
-
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-xs-max) {
-    //768-xs
-    .user-center-navbar {
-        height: 5rem;
-    }
-
     .user-center-jumbotron.jumbotron {
         padding: 0;
         margin-bottom: 0;
@@ -274,11 +258,6 @@
                 margin-right: .3rem;
             }
         }
-    }
-
-    .user-center-footer {
-        height: 44.9rem;
-        background: #f5f5f5;
     }
 }
 
