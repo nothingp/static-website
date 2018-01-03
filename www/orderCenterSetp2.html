@@ -931,8 +931,8 @@
             <div class="col-sm-6 col-xs-7 clearfix nopadding">
                 <div class="select-all-box col-sm-6 col-xs-12 nopadding">
                     <div class="wrap-checkbox">
-                        <input type="checkbox" id="table-select-all-one">
-                        <span class="checkbox-span"></span>
+                        <input type="checkbox" id="table-select-all-one1" class="select-all">
+                        <span class="checkbox-span checkbox-all-span"></span>
                     </div>
                     <span class="">Select all products</span>
                 </div>
@@ -979,10 +979,12 @@
         $('.productList-content-left-form-table').show();
     })
 
+//    $(":checkbox + span").removeClass('checkbox-span');
 
     $('.select-all').click(function(){
         if(this.checked){
             $(":checkbox").prop("checked", true);
+//            $(":checkbox + span").addClass('checkbox-span');
         }else{
             $(":checkbox").prop("checked", false);
         }
