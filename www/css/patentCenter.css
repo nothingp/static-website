@@ -952,6 +952,10 @@ body {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
   }
+  .patent-center-panel .search-bar .input-group-addon img {
+    position: relative;
+    top: -1px;
+  }
   .patent-center-panel .search-bar .form-control {
     padding: 0 15px 0 0;
     height: 40px;
