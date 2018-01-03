@@ -28,12 +28,113 @@ body {
 .no-padding {
   padding: 0;
 }
-.txt-dot {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  box-sizing: border-box;
+input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #999;
+  outline: 0;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8999999;
 }
+input[type=checkbox]:checked {
+  opacity: 0;
+}
+input[type="checkbox"] + .checkbox-span {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"]:checked + .checkbox-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/common/checkbox.png') no-repeat;
+  background-size: 100% 100% ;
+}
+.wrap-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/********
+产品列表、订单中心color项图片
+*****/
+.color-span {
+  display: inline-block;
+  width: 26px;
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+.airspay-bk {
+  background: url("../images/common/color/airspay/BK.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-c {
+  background: url("../images/common/color/airspay/C.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-gy {
+  background: url("../images/common/color/airspay/GY.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-lc {
+  background: url("../images/common/color/airspay/LC.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-lm {
+  background: url("../images/common/color/airspay/LM.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-m {
+  background: url("../images/common/color/airspay/M.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-r {
+  background: url("../images/common/color/airspay/R.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-y {
+  background: url("../images/common/color/airspay/Y.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-bk {
+  background: url("../images/common/color/laser/BK.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-c {
+  background: url("../images/common/color/laser/C.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-cmy {
+  background: url("../images/common/color/laser/CMY.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-kcmy {
+  background: url("../images/common/color/laser/KCMY.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-m {
+  background: url("../images/common/color/laser/M.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-y {
+  background: url("../images/common/color/laser/Y.png") no-repeat;
+  background-size: 100% 100%;
+}
+/********
+产品列表、订单中心color项图片 end
+*****/
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {
@@ -130,41 +231,63 @@ body {
     text-align: right;
     padding-right: 70px;
   }
-  .orderCenter-content .productList-content-select-style {
+  .orderCenter-content .productList-content-select-style2 {
     height: 100px;
     line-height: 100px;
   }
-  .orderCenter-content .productList-content-select-style .nopadding {
+  .orderCenter-content .productList-content-select-style2 .nopadding {
     padding: 0;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-left span {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-left {
+    margin-left: -40%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-left span {
     font-size: 18px;
     color: #666666;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon:hover {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right {
+    margin-left: 34%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one {
+    margin-left: -15%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one span {
+    background: url("../images/common/style1.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one .active {
+    background: url("../images/common/style1-a.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two {
+    margin-left: 15%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two span {
+    background: url("../images/common/style2.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two .active {
+    background: url("../images/common/style2-a.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-icon:hover {
     cursor: pointer;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-icon span {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    border: solid 2px #cdcdcd;
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span:before {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-icon span:before {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -12px;
     margin-top: -13px;
-  }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon .active {
-    color: #fff;
-    background: #2f87c4;
-    border: none;
   }
   .orderCenter-content .productList-content-left {
     padding: 0;
@@ -191,8 +314,11 @@ body {
     width: 20px;
     height: 20px;
     vertical-align: middle;
-    margin-top: -3px;
+    margin: 0;
     background: #fff;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table .wrap-buy-num {
+    position: relative;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td {
     padding-left: 20px;
@@ -202,8 +328,9 @@ body {
     font-style: normal;
     color: #666666;
     height: 140px;
-    line-height: 140px;
+    vertical-align: middle;
     text-align: center;
+    border-top: none;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td img {
     width: 40px;
@@ -224,6 +351,9 @@ body {
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .delete {
     cursor: pointer;
+    font-size: 22px;
+    position: relative;
+    top: 6px;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models {
     display: inline-block;
@@ -233,6 +363,13 @@ body {
     line-height: 30px;
     margin-bottom: 0;
     text-align: left;
+  }
+  .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    right: -17%;
+    width: 130%;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .buy-num span {
     display: inline-block;
@@ -273,20 +410,21 @@ body {
     border: none;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead {
-    background: #eeeeee;
+    background: #f5f5f5;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr {
     line-height: 61px;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table thead tr th {
-    line-height: 61px;
-    padding: 0 20px;
+    height: 61px;
+    vertical-align: middle;
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
     letter-spacing: 0px;
     color: #666666;
     text-align: center;
+    border-bottom: none;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .productList-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content {
     padding: 20px 0;
@@ -400,8 +538,8 @@ body {
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num {
     position: absolute;
     top: 20px;
-    right: -40%;
-    width: 130%;
+    right: -45%;
+    width: 140%;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num span {
     display: inline-block;
@@ -417,23 +555,29 @@ body {
     color: #969696;
     border-right: none;
     border-radius: 4px 0 0 4px;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num .num-up {
     background: #2f87c4;
     color: #fff;
     border: none;
     border-radius: 0 4px 4px 0;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num input {
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 30px;
     float: left;
     text-align: center;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .buy-num button {
-    width: 24px;
-    height: 24px;
+    width: 27px;
+    height: 30px;
     margin: 0;
     padding: 0;
     border: none;
@@ -441,11 +585,16 @@ body {
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .delete {
     position: absolute;
+    width: 22px;
+    height: 26px;
     bottom: 30px;
-    right: 20px;
+    right: 10px;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-one .orderCenter-content-left-form-div-one-right .delete span {
     color: #8c8c8c;
+    font-size: 22px;
+    width: 100%;
+    height: 100%;
   }
   .orderCenter-content .productList-content-left .productList-content-left-form .orderCenter-content-left-form-div .orderCenter-content-left-form-div-unismart .orderCenter-content-left-form-div-one-middle {
     padding: 5rem 3rem;
@@ -465,6 +614,9 @@ body {
     text-align: center;
     height: 90px;
     line-height: 90px;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .select-all-box .wrap-checkbox {
+    margin-right: 10px;
   }
   .orderCenter-content .orderCenter-content-bottom-bar .select-all-box input {
     width: 20px;
@@ -509,10 +661,18 @@ body {
     width: 100%;
     border-radius: 4px;
   }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li a:hover {
+    background: #fff;
+    color: #337ab7;
+  }
   .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li:first-of-type a {
     border: 1px solid #fff;
     color: #fff;
     background: none;
+  }
+  .orderCenter-content .orderCenter-content-bottom-bar .pages-box ul li:first-of-type a:hover {
+    background: #fff;
+    color: #337ab7;
   }
   .subscriptionCenter-footer {
     height: 777px;
