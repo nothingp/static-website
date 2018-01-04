@@ -1077,8 +1077,9 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     line-height: 4.3rem;
   }
   .nothing-carousel .print-li {
+    margin-top: 5px;
     padding: 0;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .nothing-carousel .print-li li {
     list-style: none;
@@ -1098,7 +1099,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     text-align: left;
   }
   .nothing-carousel .read-more {
-    margin-top: 40px;
+    margin-top: 45px;
     margin-left: 5px;
     font-size: 1.4rem;
     color: #2f88c6;
@@ -1125,11 +1126,8 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .nothing-carousel .carousel-control {
     background-image: none;
   }
-  .nothing-carousel .carousel-indicators li {
-    background: #fff;
-  }
-  .nothing-carousel .carousel-indicators li.active {
-    background: #2f88c6;
+  .nothing-carousel .carousel-indicators {
+    display: none;
   }
   .nothing-carousel .chevron {
     width: 40px;
@@ -1143,6 +1141,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     opacity: 1;
   }
   .nothing-carousel .chevron-right {
+    left: 45px;
     border-top: 3px solid #ccc;
     border-right: 3px solid #ccc;
     transform: rotate(45deg);
@@ -1152,6 +1151,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     -o-transform: rotate(45deg);
   }
   .nothing-carousel .chevron-left {
+    right: 45px;
     border-top: 3px solid #ccc;
     border-left: 3px solid #ccc;
     transform: rotate(-45deg);

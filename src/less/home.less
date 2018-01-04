@@ -121,8 +121,9 @@
             line-height: 4.3rem;
         }
         .print-li {
+            margin-top: 5px;
             padding: 0;
-            padding-left: 20px;
+            padding-left: 10px;
             li {
                 list-style: none;
                 font-size: 1.6rem;
@@ -144,7 +145,7 @@
         }
 
         .read-more {
-            margin-top: 40px;
+            margin-top: 45px;
             margin-left: 5px;
             font-size: 1.4rem;
             color: @base-color;
@@ -172,12 +173,13 @@
             background-image: none;
         }
         .carousel-indicators {
-            li {
-                background: #fff;
-            }
-            li.active {
-                background: @base-color;
-            }
+            display: none;
+            //li {
+            //    background: #fff;
+            //}
+            //li.active {
+            //    background: @base-color;
+            //}
         }
 
         .chevron {
@@ -193,6 +195,7 @@
         }
 
         .chevron-right {
+            left: 45px;
             border-top: 3px solid #ccc;
             border-right: 3px solid #ccc;
             transform: rotate(45deg);
@@ -203,6 +206,7 @@
         }
 
         .chevron-left {
+            right: 45px;
             border-top: 3px solid #ccc;
             border-left: 3px solid #ccc;
             transform: rotate(-45deg);
