@@ -76,9 +76,9 @@
                 }
                 @media (min-width: 1281px) {
                     &:after {
-                        right: calc(~"(100% - 1270px)/2");
-                        right: -moz-calc(~"(100% - 1270px)/2");
-                        right: -webkit-calc(~"(100% - 1270px)/2");
+                        right: calc(~"(100% - 1260px)/2");
+                        right: -moz-calc(~"(100% - 1260px)/2");
+                        right: -webkit-calc(~"(100% - 1260px)/2");
                     }
                 }
                 input {
@@ -128,34 +128,16 @@
         }
 
         .nothing-navbar-brand-search {
+            width: 38px;
+            height: 36px;
             position: absolute;
             right: 0;
             top: 56px;
+            background-image: url(../images/home/search-icon.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
             a {
-                width: 28px;
-                height: 28px;
-                text-align: center;
-                padding: 2px 0;
-                background: #2f88c6;
-                line-height: 1.428571429;
-                border-radius: 14px;
-                &:hover {
-                    background: darken(#2f88c6, 10%);
-                }
-                .glyphicon {
-                    font-size: 1.4rem;
-                    top: 3px;
-                }
-            }
-
-            .search-content {
-                background: red;
-                position: absolute;
-                left: 0;
-            }
-
-            .btn-primary {
-                border: 0;
+                display: none;
             }
         }
 
@@ -580,17 +562,16 @@
         }
 
         .nothing-navbar-brand-search {
+            width: 38px;
+            height: 36px;
             position: absolute;
             right: 2rem;
-            top: 0.8rem;
-            button {
-                width: 3rem;
-                height: 3rem;
-                text-align: center;
-                padding: .6rem 0;
-                font-size: 1.2rem;
-                line-height: 1.428571429;
-                border-radius: 1.5rem;
+            top: .6rem;
+            background-image: url(../images/home/search-icon.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            a {
+                display: none;
             }
         }
 
@@ -601,6 +582,7 @@
                 .nothing-navbar-button {
                     float: left;
                     margin-left: 1.5rem;
+                    margin-right: 0;
                     .icon-bar {
                         color: @base-color;
                         background: #0b97c4;

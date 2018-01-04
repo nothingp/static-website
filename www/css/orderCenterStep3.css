@@ -261,33 +261,17 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     transition: height 0.5s ease-out;
   }
   .box-shadow-line .nothing-navbar-brand-search {
+    width: 38px;
+    height: 36px;
     position: absolute;
     right: 0;
     top: 56px;
+    background-image: url(../images/home/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   .box-shadow-line .nothing-navbar-brand-search a {
-    width: 28px;
-    height: 28px;
-    text-align: center;
-    padding: 2px 0;
-    background: #2f88c6;
-    line-height: 1.428571429;
-    border-radius: 14px;
-  }
-  .box-shadow-line .nothing-navbar-brand-search a:hover {
-    background: #256c9d;
-  }
-  .box-shadow-line .nothing-navbar-brand-search a .glyphicon {
-    font-size: 1.4rem;
-    top: 3px;
-  }
-  .box-shadow-line .nothing-navbar-brand-search .search-content {
-    background: red;
-    position: absolute;
-    left: 0;
-  }
-  .box-shadow-line .nothing-navbar-brand-search .btn-primary {
-    border: 0;
+    display: none;
   }
   .box-shadow-line .navbar {
     height: 110px;
@@ -564,9 +548,9 @@ input[type="checkbox"]:checked + .checkbox-all-span {
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
   .box-shadow-line .dropdown.search-top-icon .dropdown-menu:after {
-    right: calc((100% - 1270px)/2);
-    right: -moz-calc((100% - 1270px)/2);
-    right: -webkit-calc((100% - 1270px)/2);
+    right: calc((100% - 1260px)/2);
+    right: -moz-calc((100% - 1260px)/2);
+    right: -webkit-calc((100% - 1260px)/2);
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {
@@ -670,18 +654,17 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     color: #8c8c8c;
   }
   .box-shadow-line .nothing-navbar-brand-search {
+    width: 38px;
+    height: 36px;
     position: absolute;
     right: 2rem;
-    top: 0.8rem;
+    top: .6rem;
+    background-image: url(../images/home/search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
-  .box-shadow-line .nothing-navbar-brand-search button {
-    width: 3rem;
-    height: 3rem;
-    text-align: center;
-    padding: .6rem 0;
-    font-size: 1.2rem;
-    line-height: 1.428571429;
-    border-radius: 1.5rem;
+  .box-shadow-line .nothing-navbar-brand-search a {
+    display: none;
   }
   .box-shadow-line .navbar {
     margin-bottom: 0;
@@ -690,6 +673,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .box-shadow-line .navbar .navbar-header .nothing-navbar-button {
     float: left;
     margin-left: 1.5rem;
+    margin-right: 0;
   }
   .box-shadow-line .navbar .navbar-header .nothing-navbar-button .icon-bar {
     color: #2f88c6;
