@@ -442,6 +442,12 @@
                         > a, > a:focus, > a:hover {
                             background-color: transparent;
                             color: @base-submenu-color;
+                            >span{
+                                display:inherit;
+                                position: absolute;
+                                top: 60px;
+                                left: 45%;
+                            }
                         }
                     }
                     > li {
@@ -454,6 +460,9 @@
                             line-height: 70px;
                             color: @base-submenu-color;
                             font-size: 14px;
+                            >span{
+                                display: none;
+                            }
                         }
                     }
                 }
