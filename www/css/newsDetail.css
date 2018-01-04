@@ -434,6 +434,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   }
   .box-shadow-line .navbar .nothing-navbar-info .glyphicon.glyphicon-triangle-bottom {
     position: relative;
+    left: 5px;
     top: 3px;
   }
   .box-shadow-line .navbar .nothing-navbar-info .open > a,
@@ -443,6 +444,12 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   }
   .box-shadow-line .navbar .nothing-navbar-info .open .glyphicon-triangle-bottom:before {
     content: "\e253";
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu {
+    border-radius: 0;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a {
+    padding: 3px 10px;
   }
   .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li > a:focus,
   .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a:hover {
@@ -465,8 +472,6 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .box-shadow-line .navbar .nothing-navbar-info > li > a > img {
     position: relative;
     left: 0;
-    width: 15px;
-    height: 13px;
     margin-right: 7px;
   }
   .box-shadow-line .navbar .nothing-navbar-info > li.line {

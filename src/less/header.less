@@ -344,6 +344,7 @@
             .nothing-navbar-info {
                 .glyphicon.glyphicon-triangle-bottom {
                     position: relative;
+                    left: 5px;
                     top: 3px;
                 }
                 .open {
@@ -356,7 +357,11 @@
                     }
 
                     .dropdown-menu {
+                        border-radius: 0;
                         > li {
+                            a {
+                                padding: 3px 10px;
+                            }
                             > a:focus, a:hover {
                                 background-color: #ffffff;
                             }
@@ -380,8 +385,6 @@
                         > img {
                             position: relative;
                             left: 0;
-                            width: 15px;
-                            height: 13px;
                             margin-right: 7px;
                         }
                     }
