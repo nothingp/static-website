@@ -23,11 +23,12 @@
         .dropdown.search-top-icon {
             position: static;
             .dropdown-menu {
+                display: block;
                 background: @base-color;
                 position: inherit;
                 border: none;
                 width: 100%;
-                height: 180px;
+                height: 0;
                 border-radius: 0;
                 margin: 0;
                 padding: 0;
@@ -37,7 +38,8 @@
                     right: 20px;
                     color: #fff;
                     display: inline-block;
-                    height: 20px;
+                    height: 0;
+                    //opacity: 0;
                     overflow: hidden;
                     width: 20px;
 
@@ -68,6 +70,7 @@
                     content: '';
                     width: 15px;
                     height: 15px;
+                    opacity: 0;
                     background: @base-color;
                     transform: rotate(45deg);
                 }
@@ -83,10 +86,11 @@
                     border: none;
                     border-radius: 30px;
                     width: 60%;
-                    height: 60px;
+                    height: 0;
                     margin: 55px auto 0;
                     padding-left: 30px;
                     font-size: 2.5rem;
+                    opacity: 0;
                     &:focus {
                         outline: none;
                     }
@@ -102,6 +106,23 @@
                     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
                         color: #8c8c8c;
                     }
+                }
+            }
+            &.open > .dropdown-menu {
+                height: 180px;
+                transition: height .5s ease-out;
+                &:after {
+                    opacity: 1;
+                    transition: opacity 1s ease-out;
+                }
+                input {
+                    opacity: 1;
+                    height: 60px;
+                    transition: height .5s ease-out;
+                }
+                .search-close-icon {
+                    height: 20px;
+                    transition: height .5s ease-out;
                 }
             }
         }
@@ -343,19 +364,19 @@
                     position: relative;
                     top: 3px;
                 }
-                .open{
-                    >a,>a:focus,>a:hover{
+                .open {
+                    > a, > a:focus, > a:hover {
                         background-color: #ffffff;
 
                     }
-                    .glyphicon-triangle-bottom:before{
-                        content:"\e253";
+                    .glyphicon-triangle-bottom:before {
+                        content: "\e253";
                     }
 
-                    .dropdown-menu{
-                        >li{
-                            >a:focus,a:hover{
-                              background-color: #ffffff;
+                    .dropdown-menu {
+                        > li {
+                            > a:focus, a:hover {
+                                background-color: #ffffff;
                             }
                         }
                     }
@@ -418,7 +439,7 @@
         }
     }
 
-    .nothing-second-menu{
+    .nothing-second-menu {
         background-color: @base-color;
         max-width: 1600px;
         .nothing-second-menu-content {
@@ -440,8 +461,8 @@
                 .navbar-nav {
                     .open {
                         > a, > a:focus, > a:hover {
-                            >span{
-                                display:inherit;
+                            > span {
+                                display: inherit;
                                 position: absolute;
                                 top: 60px;
                                 left: 45%;
@@ -454,7 +475,7 @@
                             background-color: #2977ab;
                             > a, > a:focus, > a:hover {
                                 background-color: transparent;
-                                color:#ffffff;
+                                color: #ffffff;
 
                             }
                         }
@@ -464,7 +485,7 @@
                             line-height: 70px;
                             color: @base-submenu-color;
                             font-size: 14px;
-                            >span{
+                            > span {
                                 display: none;
                             }
                         }
