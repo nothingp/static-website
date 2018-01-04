@@ -511,14 +511,25 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     font-size: 16px;
     color: #ffffff;
   }
-  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a,
-  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a:focus,
-  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a:hover {
-    background-color: transparent;
-    color: #a4c7de;
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a > span,
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a:focus > span,
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav .open > a:hover > span {
+    display: inherit;
+    position: absolute;
+    top: 60px;
+    left: 45%;
+  }
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li {
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #2977ab;
+  }
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li:hover > a,
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li:hover > a:focus,
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li:hover > a:hover {
+    background-color: transparent;
+    color: #ffffff;
   }
   .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li > a {
     padding-top: 0;
@@ -526,6 +537,9 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     line-height: 70px;
     color: #a4c7de;
     font-size: 14px;
+  }
+  .nothing-second-menu .nothing-second-menu-content .navbar .navbar-nav > li > a > span {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1281px) {

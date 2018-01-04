@@ -440,8 +440,6 @@
                 .navbar-nav {
                     .open {
                         > a, > a:focus, > a:hover {
-                            background-color: transparent;
-                            color: @base-submenu-color;
                             >span{
                                 display:inherit;
                                 position: absolute;
@@ -451,8 +449,14 @@
                         }
                     }
                     > li {
+                        font-family: CiscoSans-ExtraLight;
                         &:hover {
-                            background-color: rgba(255, 255, 255, .1);
+                            background-color: #2977ab;
+                            > a, > a:focus, > a:hover {
+                                background-color: transparent;
+                                color:#ffffff;
+
+                            }
                         }
                         > a {
                             padding-top: 0;
