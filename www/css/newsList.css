@@ -429,29 +429,6 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .box-shadow-line .navbar .nothing-navbar-menu .in-focus {
     color: #337ab7;
   }
-  .box-shadow-line .navbar .nothing-navbar-info .glyphicon.glyphicon-triangle-bottom {
-    position: relative;
-    left: 5px;
-    top: 3px;
-  }
-  .box-shadow-line .navbar .nothing-navbar-info .open > a,
-  .box-shadow-line .navbar .nothing-navbar-info .open > a:focus,
-  .box-shadow-line .navbar .nothing-navbar-info .open > a:hover {
-    background-color: #ffffff;
-  }
-  .box-shadow-line .navbar .nothing-navbar-info .open .glyphicon-triangle-bottom:before {
-    content: "\e253";
-  }
-  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu {
-    border-radius: 0;
-  }
-  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a {
-    padding: 3px 10px;
-  }
-  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li > a:focus,
-  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a:hover {
-    background-color: #ffffff;
-  }
   .box-shadow-line .navbar .nothing-navbar-info > li > a {
     padding-top: 12px;
     padding-bottom: 0;
@@ -493,6 +470,30 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   }
   .box-shadow-line .navbar .nothing-navbar-info > li .dropdown-menu > li:hover {
     border-left: 5px solid #2f88c6;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .glyphicon.glyphicon-triangle-bottom {
+    position: relative;
+    left: 5px;
+    top: 3px;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open > a,
+  .box-shadow-line .navbar .nothing-navbar-info .open > a:focus,
+  .box-shadow-line .navbar .nothing-navbar-info .open > a:hover {
+    background-color: #ffffff;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .glyphicon-triangle-bottom:before {
+    content: "\e253";
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu {
+    border-radius: 0;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a {
+    padding: 3px 10px;
+  }
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li > a:focus,
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a:hover {
+    color: #2f88c6;
+    background-color: #ffffff;
   }
   .box-shadow-line .navbar-1280 {
     max-width: 1280px;

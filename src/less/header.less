@@ -342,33 +342,6 @@
             }
 
             .nothing-navbar-info {
-                .glyphicon.glyphicon-triangle-bottom {
-                    position: relative;
-                    left: 5px;
-                    top: 3px;
-                }
-                .open {
-                    > a, > a:focus, > a:hover {
-                        background-color: #ffffff;
-
-                    }
-                    .glyphicon-triangle-bottom:before {
-                        content: "\e253";
-                    }
-
-                    .dropdown-menu {
-                        border-radius: 0;
-                        > li {
-                            a {
-                                padding: 3px 10px;
-                            }
-                            > a:focus, a:hover {
-                                background-color: #ffffff;
-                            }
-                        }
-                    }
-                }
-
                 > li {
                     > a {
                         padding-top: 12px;
@@ -410,6 +383,32 @@
 
                             &:hover {
                                 border-left: 5px solid @base-color;
+                            }
+                        }
+                    }
+                }
+                .glyphicon.glyphicon-triangle-bottom {
+                    position: relative;
+                    left: 5px;
+                    top: 3px;
+                }
+                .open {
+                    > a, > a:focus, > a:hover {
+                        background-color: #ffffff;
+                    }
+                    .glyphicon-triangle-bottom:before {
+                        content: "\e253";
+                    }
+
+                    .dropdown-menu {
+                        border-radius: 0;
+                        > li {
+                            a {
+                                padding: 3px 10px;
+                            }
+                            > a:focus, a:hover {
+                                color: @base-color;
+                                background-color: #ffffff;
                             }
                         }
                     }
