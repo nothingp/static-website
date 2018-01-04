@@ -436,6 +436,10 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .box-shadow-line .navbar .nothing-navbar-info .open .glyphicon-triangle-bottom:before {
     content: "\e253";
   }
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li > a:focus,
+  .box-shadow-line .navbar .nothing-navbar-info .open .dropdown-menu > li a:hover {
+    background-color: #ffffff;
+  }
   .box-shadow-line .navbar .nothing-navbar-info > li > a {
     padding-top: 12px;
     padding-bottom: 0;
