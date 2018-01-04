@@ -853,10 +853,6 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .chip-test-navbar {
-    height: 110px;
-    background: #f5f5f5;
-  }
   .product-detail-tabBar {
     background: #2f88c4;
   }
@@ -1033,15 +1029,8 @@ body {
     text-align: center;
     margin-bottom: 15px;
   }
-  .chip-test-footer {
-    height: 777px;
-    background: #f5f5f5;
-  }
 }
 @media screen and (max-width: 767px) {
-  .chip-test-navbar {
-    height: 5rem;
-  }
   .product-detail-tabBar {
     background: #2f88c4;
   }
@@ -1210,9 +1199,5 @@ body {
   .nothing-chip-list .news-sidebar .sidebar-item .form-table .submit-wrap {
     text-align: center;
     margin-bottom: 1.5rem;
-  }
-  .chip-test-footer {
-    height: 44.9rem;
-    background: #f5f5f5;
   }
 }
