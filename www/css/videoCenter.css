@@ -1013,17 +1013,18 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .video-center-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
   }
-  .video-center-panel {
+  .video-center-panel .white-panel {
+    margin: auto;
     max-width: 1280px;
-    margin: 50px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .video-center-panel .col-sm-9 {
     padding-left: 0;
+    padding-right: 20px;
   }
-  .video-center-panel .video-center-panel-left {
+  .video-center-panel .col-sm-3 {
     padding-left: 10px;
-    padding-right: 17.5px;
-  }
-  .video-center-panel .video-center-panel-right {
-    padding-left: 12.5px;
     padding-right: 0;
   }
   .video-center-panel .video-item {
@@ -1057,27 +1058,33 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   }
   .video-center-panel .subscribe-form,
   .video-center-panel .support-form {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
     border: 1px solid #E4E4E4;
-    padding: 1rem;
+    padding: 15px;
   }
   .video-center-panel .subscribe-form .form-group,
   .video-center-panel .support-form .form-group {
-    margin-bottom: 1rem;
-  }
-  .video-center-panel .subscribe-form .form-group .submit-button,
-  .video-center-panel .support-form .form-group .submit-button {
-    height: 32px;
-    width: 100px;
+    margin-bottom: 10px;
   }
   .video-center-panel .subscribe-form label,
   .video-center-panel .support-form label {
     padding: 0;
+    padding-left: 25px;
     text-align: right;
+    margin: 5px auto;
+  }
+  .video-center-panel .subscribe-form .form-control,
+  .video-center-panel .support-form .form-control {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    margin: 5px auto;
+    border-radius: 3px;
   }
   .video-center-panel .subscribe-form .title,
   .video-center-panel .support-form .title {
-    padding-left: 10px;
+    padding-left: 12px;
     position: relative;
     font-size: 2rem;
   }
@@ -1090,7 +1097,8 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     background: #2f88c4;
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 50%;
+    margin-top: -10px;
   }
   .video-center-panel .subscribe-form .title:after,
   .video-center-panel .support-form .title:after {
@@ -1101,13 +1109,21 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     background: #E4E4E4;
     position: absolute;
     left: 0;
-    bottom: -0.5rem;
+    bottom: -10px;
+  }
+  .video-center-panel .subscribe-form .btn.btn-primary,
+  .video-center-panel .support-form .btn.btn-primary {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    margin-top: 20px;
   }
   .video-center-panel .subscribe-form .tips,
   .video-center-panel .support-form .tips {
-    margin: 35px 0;
     font-size: 1.6rem;
     color: #8c8c8c;
+    margin: 32px 0 28px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1151,63 +1167,70 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   .video-center-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
   }
-  .video-center-panel {
-    padding: 1.5rem;
+  .video-center-panel .white-panel {
+    padding: 15px;
   }
-  .video-center-panel .row {
-    padding: 0;
-    margin: 0;
-  }
-  .video-center-panel .row div {
-    padding: 0;
-    margin: 0;
-  }
-  .video-center-panel .row .video-item {
+  .video-center-panel .white-panel .video-item {
     margin-bottom: 1.5rem;
   }
-  .video-center-panel .row .video-item .img-txt {
+  .video-center-panel .white-panel .video-item .img-txt {
     padding-left: 1.5rem;
   }
-  .video-center-panel .row .video-item .txt-title {
+  .video-center-panel .white-panel .video-item .txt-title {
     padding: 0;
     margin: 5px 0;
     font-size: 1.2rem;
     color: #404040;
     line-height: 3rem;
   }
-  .video-center-panel .row .video-item .txt-detail {
+  .video-center-panel .white-panel .video-item .txt-detail {
     padding: 0;
     margin: 0;
     font-size: 1.2rem;
     color: #808080;
   }
-  .video-center-panel .row .btn-primary.btn-block {
+  .video-center-panel .white-panel .btn-primary.btn-block {
     font-size: 1.5rem;
     color: #999;
   }
-  .video-center-panel .row .subscribe-form,
-  .video-center-panel .row .support-form {
+  .video-center-panel .white-panel .col-xs-12 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .video-center-panel .subscribe-form,
+  .video-center-panel .support-form {
     margin-bottom: 1.5rem;
     border: 1px solid #E4E4E4;
     padding: 1rem;
   }
-  .video-center-panel .row .subscribe-form .form-group,
-  .video-center-panel .row .support-form .form-group {
+  .video-center-panel .subscribe-form .form-group,
+  .video-center-panel .support-form .form-group {
     margin-bottom: 1rem;
   }
-  .video-center-panel .row .subscribe-form label,
-  .video-center-panel .row .support-form label {
+  .video-center-panel .subscribe-form label,
+  .video-center-panel .support-form label {
     padding: 0;
-    text-align: center;
+    text-align: right;
   }
-  .video-center-panel .row .subscribe-form .title,
-  .video-center-panel .row .support-form .title {
-    padding-left: .5rem;
-    border-left: .3rem solid #86af49;
+  .video-center-panel .subscribe-form .title,
+  .video-center-panel .support-form .title {
+    padding-left: 1rem;
     position: relative;
   }
-  .video-center-panel .row .subscribe-form .title:after,
-  .video-center-panel .row .support-form .title:after {
+  .video-center-panel .subscribe-form .title:before,
+  .video-center-panel .support-form .title:before {
+    display: block;
+    content: '';
+    width: .3rem;
+    height: 2rem;
+    background: #2f88c4;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1rem;
+  }
+  .video-center-panel .subscribe-form .title:after,
+  .video-center-panel .support-form .title:after {
     display: block;
     content: '';
     width: 100%;
@@ -1215,10 +1238,11 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     background: #E4E4E4;
     position: absolute;
     left: 0;
-    bottom: -0.5rem;
+    bottom: -1rem;
   }
-  .video-center-panel .row .subscribe-form .tips,
-  .video-center-panel .row .support-form .tips {
+  .video-center-panel .subscribe-form .tips,
+  .video-center-panel .support-form .tips {
+    margin: 20px 0;
     font-size: 1.2rem;
     color: #8c8c8c;
   }
