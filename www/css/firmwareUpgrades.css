@@ -28,6 +28,113 @@ body {
 .no-padding {
   padding: 0;
 }
+input[type=checkbox] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 1px solid #999;
+  outline: 0;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8999999;
+}
+input[type=checkbox]:checked {
+  opacity: 0;
+}
+input[type="checkbox"] + .checkbox-span {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+input[type="checkbox"]:checked + .checkbox-span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../images/common/checkbox.png') no-repeat;
+  background-size: 100% 100% ;
+}
+.wrap-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/********
+产品列表、订单中心color项图片
+*****/
+.color-span {
+  display: inline-block;
+  width: 26px;
+  height: 30px;
+  vertical-align: middle;
+  position: relative;
+  top: -5px;
+}
+.airspay-bk {
+  background: url("../images/common/color/airspay/BK.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-c {
+  background: url("../images/common/color/airspay/C.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-gy {
+  background: url("../images/common/color/airspay/GY.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-lc {
+  background: url("../images/common/color/airspay/LC.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-lm {
+  background: url("../images/common/color/airspay/LM.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-m {
+  background: url("../images/common/color/airspay/M.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-r {
+  background: url("../images/common/color/airspay/R.png") no-repeat;
+  background-size: 100% 100%;
+}
+.airspay-y {
+  background: url("../images/common/color/airspay/Y.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-bk {
+  background: url("../images/common/color/laser/BK.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-c {
+  background: url("../images/common/color/laser/C.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-cmy {
+  background: url("../images/common/color/laser/CMY.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-kcmy {
+  background: url("../images/common/color/laser/KCMY.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-m {
+  background: url("../images/common/color/laser/M.png") no-repeat;
+  background-size: 100% 100%;
+}
+.laser-y {
+  background: url("../images/common/color/laser/Y.png") no-repeat;
+  background-size: 100% 100%;
+}
+/********
+产品列表、订单中心color项图片 end
+*****/
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {
@@ -297,12 +404,13 @@ body {
     width: 20px;
     height: 20px;
     color: #ced4d9;
-    font-size: 18px;
+    font-size: 20px;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form form label .img-bg {
     display: inline-block;
     width: 24px;
     height: 24px;
+    margin-top: 5px;
     background: url("../images/subscriptionCenter/company-icon.jpg") no-repeat;
     background-size: 100% auto;
   }

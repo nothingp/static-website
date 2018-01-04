@@ -31,6 +31,7 @@
     </script>
 
     <!-- Custom Theme Style -->
+    <link href="css/base.css" rel="stylesheet">
     <link href="css/orderCenterSetp2.css" rel="stylesheet">
 
     <script>
@@ -85,17 +86,17 @@
 
         </div>
 
-        <div class="productList-content-select-style hidden-xs nopadding clearfix">
-            <div class="col-sm-2 col-md-offset-10 productList-content-select-style-content nopadding clearfix">
+        <div class="productList-content-select-style2 hidden-xs nopadding clearfix">
+            <div class="col-sm-1 col-md-offset-11 productList-content-select-style-content nopadding clearfix">
                 <div class="col-sm-4 nopadding text-right productList-content-select-style-content-left">
                     <span>View:</span>
                 </div>
-                <div class="col-sm-8 nopadding clearfix">
+                <div class="col-sm-8 nopadding clearfix productList-content-select-style-content-right">
                     <div class="col-sm-6 nopadding productList-content-select-style-content-icon style-one text-right">
-                        <span class="glyphicon glyphicon-align-justify active"></span>
+                        <span class=" active"></span>
                     </div>
                     <div class="col-sm-6 nopadding productList-content-select-style-content-icon style-two text-right">
-                        <span class="glyphicon glyphicon-list"></span>
+                        <span class=""></span>
                     </div>
                 </div>
             </div>
@@ -114,7 +115,10 @@
                             <thead>
                             <tr>
                                 <th>
-                                    <input type="checkbox" id="table-select-all-one">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </th>
                                 <th>Apex Code</th>
                                 <th>OEM Code</th>
@@ -128,13 +132,22 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input type="checkbox" class="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td>AJB-LC203</td>
                                 <td>LC203</td>
                                 <td>
                                     <!--<span class="circle blue"></span>-->
-                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                    <span class="color-span airspay-m"></span>
+                                    <!--
+                                    所有的颜色class
+                                    (airspay-bk,airspay-c,airspay-gy,airspay-lc,airspay-lm,airspay-m,airspay-r,airspay-y)
+                                    公共class
+                                    (color-span)
+                                    -->
                                 </td>
                                 <td>EXP</td>
                                 <td>
@@ -150,7 +163,7 @@
                                         </p>
                                     </div>
                                 </td>
-                                <td>
+                                <td class="wrap-buy-num">
                                     <div class="buy-num">
                                         <button class="btn btn-default">
                                             <span class="num-dowm">-</span>
@@ -173,7 +186,10 @@
                         <table class="orderCenter-content-left-form-div-one clearfix">
                             <tr>
                                 <td class="col-sm-1 orderCenter-content-left-form-div-one-left">
-                                    <input type="checkbox" id="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td class="col-sm-10 orderCenter-content-left-form-div-one-middle clearfix">
                                     <div class="col-sm-12 clearfix orderCenter-content-left-form-div-one-middle-up">
@@ -181,13 +197,13 @@
                                             <i>Apex Code</i>
                                             <span>ALC-5050-K-2.2K</span>
                                         </div>
-                                        <div class="col-sm-4 nopaddingright">
+                                        <div class="col-sm-5 nopaddingright">
                                             <i>ALC-5050-K-2.2K</i>
                                             <span>CRG-731H/331H</span>
                                         </div>
-                                        <div class="col-sm-4 nopaddingright">
-                                            <i>CRG-731H/331H</i>
-                                            <span class="glyphicon glyphicon-tint blue"></span>
+                                        <div class="col-sm-3 nopaddingright">
+                                            <i>Color</i>
+                                            <span class="color-span airspay-bk"></span>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 clearfix orderCenter-content-left-form-div-one-middle-down">
@@ -244,7 +260,7 @@
                             <div class="col-xs-2 nopadding">
                                 <h4>Color</h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                    <span class="color-span airspay-c"></span>
                                 </p>
                             </div>
                             <div class="col-xs-2 nopadding">
@@ -271,7 +287,10 @@
                         </div>
                         <div class="orderCenter-content-left-form-mobile-down clearfix">
                             <div class="col-xs-1 orderCenter-content-left-form-mobile-down-left">
-                                <input type="checkbox">
+                                <div class="wrap-checkbox">
+                                    <input type="checkbox" id="table-select-all-one">
+                                    <span class="checkbox-span"></span>
+                                </div>
                             </div>
                             <div class="col-xs-2 orderCenter-content-left-form-mobile-down-middle">
                                 <span class="glyphicon glyphicon-trash"></span>
@@ -304,7 +323,10 @@
                             <thead>
                             <tr>
                                 <th>
-                                    <input type="checkbox" id="table-select-all-two">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </th>
                                 <th>Apex Code</th>
                                 <th>OEM Code</th>
@@ -318,13 +340,16 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input type="checkbox" class="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td>AJB-LC203</td>
                                 <td>LC203</td>
                                 <td>
                                     <!--<span class="circle blue"></span>-->
-                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                    <span class="color-span airspay-gy"></span>
                                 </td>
                                 <td>EXP</td>
                                 <td>
@@ -340,7 +365,91 @@
                                         </p>
                                     </div>
                                 </td>
+                                <td class="wrap-buy-num">
+                                    <div class="buy-num">
+                                        <button class="btn btn-default">
+                                            <span class="num-dowm">-</span>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="btn btn-default">
+                                            <span class="num-up">+</span>
+                                        </button>
+                                    </div>
+                                </td>
                                 <td>
+                                    <span class="glyphicon glyphicon-trash delete"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
+                                </td>
+                                <td>AJB-LC203</td>
+                                <td>LC203</td>
+                                <td>
+                                    <!--<span class="circle blue"></span>-->
+                                    <span class="color-span airspay-gy"></span>
+                                </td>
+                                <td>EXP</td>
+                                <td>
+                                    <div class="printer-models">
+                                        <p>
+                                            HP Color LaserJet Pro M252dn/252n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M277dw/277n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M274n
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="wrap-buy-num">
+                                    <div class="buy-num">
+                                        <button class="btn btn-default">
+                                            <span class="num-dowm">-</span>
+                                        </button>
+                                        <input type="text" value="0">
+                                        <button class="btn btn-default">
+                                            <span class="num-up">+</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash delete"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
+                                </td>
+                                <td>AJB-LC203</td>
+                                <td>LC203</td>
+                                <td>
+                                    <!--<span class="circle blue"></span>-->
+                                    <span class="color-span airspay-y"></span>
+                                </td>
+                                <td>EXP</td>
+                                <td>
+                                    <div class="printer-models">
+                                        <p>
+                                            HP Color LaserJet Pro M252dn/252n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M277dw/277n
+                                        </p>
+                                        <p>
+                                            HP Color LaserJet Pro MFP M274n
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="wrap-buy-num">
                                     <div class="buy-num">
                                         <button class="btn btn-default">
                                             <span class="num-dowm">-</span>
@@ -363,7 +472,10 @@
                         <table class="orderCenter-content-left-form-div-one clearfix">
                             <tr>
                                 <td class="col-sm-1 orderCenter-content-left-form-div-one-left">
-                                    <input type="checkbox" id="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td class="col-sm-10 orderCenter-content-left-form-div-one-middle clearfix">
                                     <div class="col-sm-12 clearfix orderCenter-content-left-form-div-one-middle-up">
@@ -371,13 +483,13 @@
                                             <i>Apex Code</i>
                                             <span>ALC-5050-K-2.2K</span>
                                         </div>
-                                        <div class="col-sm-4 nopaddingright">
+                                        <div class="col-sm-5 nopaddingright">
                                             <i>ALC-5050-K-2.2K</i>
                                             <span>CRG-731H/331H</span>
                                         </div>
-                                        <div class="col-sm-4 nopaddingright">
-                                            <i>CRG-731H/331H</i>
-                                            <span class="glyphicon glyphicon-tint blue"></span>
+                                        <div class="col-sm-3 nopaddingright">
+                                            <i>Color</i>
+                                            <span class="color-span airspay-lc"></span>
                                         </div>
                                     </div>
                                     <div class="col-sm-12 clearfix orderCenter-content-left-form-div-one-middle-down">
@@ -434,7 +546,7 @@
                             <div class="col-xs-2 nopadding">
                                 <h4>Color</h4>
                                 <p>
-                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                    <span class="color-span airspay-lm"></span>
                                 </p>
                             </div>
                             <div class="col-xs-2 nopadding">
@@ -461,7 +573,10 @@
                         </div>
                         <div class="orderCenter-content-left-form-mobile-down clearfix">
                             <div class="col-xs-1 orderCenter-content-left-form-mobile-down-left">
-                                <input type="checkbox">
+                                <div class="wrap-checkbox">
+                                    <input type="checkbox" id="table-select-all-one">
+                                    <span class="checkbox-span"></span>
+                                </div>
                             </div>
                             <div class="col-xs-2 orderCenter-content-left-form-mobile-down-middle">
                                 <span class="glyphicon glyphicon-trash"></span>
@@ -494,12 +609,15 @@
                             <thead>
                             <tr>
                                 <th>
-                                    <input type="checkbox" id="table-select-all-three">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </th>
                                 <th>Category</th>
                                 <th>Apex Code</th>
                                 <th>OEM Code</th>
-                                <th>APrinter Models (for use in)</th>
+                                <th>Printer Models (for use in)</th>
                                 <th>Stock</th>
                                 <th>Package</th>
                                 <th>Quantity</th>
@@ -509,13 +627,15 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input type="checkbox" class="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td>AJB-LC203</td>
                                 <td>LC203</td>
                                 <td>
-                                    <!--<span class="circle blue"></span>-->
-                                    <span class="glyphicon glyphicon-tint blue"></span>
+                                    LC203
                                 </td>
                                 <td>EXP</td>
                                 <td>
@@ -531,7 +651,8 @@
                                         </p>
                                     </div>
                                 </td>
-                                <td>
+                                <td>Box</td>
+                                <td class="wrap-buy-num">
                                     <div class="buy-num">
                                         <button class="btn btn-default">
                                             <span class="num-dowm">-</span>
@@ -554,7 +675,10 @@
                         <table class="orderCenter-content-left-form-div-one clearfix">
                             <tr>
                                 <td class="col-sm-1 orderCenter-content-left-form-div-one-left">
-                                    <input type="checkbox" id="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td class="col-sm-10 orderCenter-content-left-form-div-one-middle clearfix">
                                     <div class="col-sm-12 clearfix orderCenter-content-left-form-div-one-middle-up">
@@ -650,7 +774,10 @@
                         </div>
                         <div class="orderCenter-content-left-form-mobile-down clearfix">
                             <div class="col-xs-1 orderCenter-content-left-form-mobile-down-left">
-                                <input type="checkbox">
+                                <div class="wrap-checkbox">
+                                    <input type="checkbox" id="table-select-all-one">
+                                    <span class="checkbox-span"></span>
+                                </div>
                             </div>
                             <div class="col-xs-2 orderCenter-content-left-form-mobile-down-middle">
                                 <span class="glyphicon glyphicon-trash"></span>
@@ -683,7 +810,10 @@
                             <thead>
                             <tr>
                                 <th>
-                                    <input type="checkbox" id="table-select-all-four">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </th>
                                 <th>Photo</th>
                                 <th>Product</th>
@@ -694,14 +824,17 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input type="checkbox" class="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td>
                                     <img src="./images/subscriptionCenter/product-img.jpg" alt="..">
                                 </td>
                                 <td>AE 0</td>
 
-                                <td>
+                                <td class="wrap-buy-num">
                                     <div class="buy-num">
                                         <button class="btn btn-default">
                                             <span class="num-dowm">-</span>
@@ -724,7 +857,10 @@
                         <table class="orderCenter-content-left-form-div-one clearfix orderCenter-content-left-form-div-unismart">
                             <tr>
                                 <td class="col-sm-1 orderCenter-content-left-form-div-one-left">
-                                    <input type="checkbox" id="">
+                                    <div class="wrap-checkbox">
+                                        <input type="checkbox" id="table-select-all-one">
+                                        <span class="checkbox-span"></span>
+                                    </div>
                                 </td>
                                 <td class="col-sm-10 orderCenter-content-left-form-div-one-middle clearfix">
                                     <div class="col-sm-3">
@@ -765,7 +901,10 @@
                         </div>
                         <div class="orderCenter-content-left-form-mobile-down clearfix">
                             <div class="col-xs-1 orderCenter-content-left-form-mobile-down-left">
-                                <input type="checkbox">
+                                <div class="wrap-checkbox">
+                                    <input type="checkbox" id="table-select-all-one">
+                                    <span class="checkbox-span"></span>
+                                </div>
                             </div>
                             <div class="col-xs-2 orderCenter-content-left-form-mobile-down-middle">
                                 <span class="glyphicon glyphicon-trash"></span>
@@ -791,8 +930,11 @@
         <div class="orderCenter-content-bottom-bar clearfix">
             <div class="col-sm-6 col-xs-7 clearfix nopadding">
                 <div class="select-all-box col-sm-6 col-xs-12 nopadding">
-                    <input type="checkbox" class="select-all">
-                    <span>Select all products</span>
+                    <div class="wrap-checkbox">
+                        <input type="checkbox" id="table-select-all-one1" class="select-all">
+                        <span class="checkbox-span checkbox-all-span"></span>
+                    </div>
+                    <span class="">Select all products</span>
                 </div>
                 <div class="col-sm-6 delete-button-box col-xs-12 nopadding">
                     <span class="glyphicon glyphicon-trash delete"></span>
@@ -837,10 +979,12 @@
         $('.productList-content-left-form-table').show();
     })
 
+//    $(":checkbox + span").removeClass('checkbox-span');
 
     $('.select-all').click(function(){
         if(this.checked){
             $(":checkbox").prop("checked", true);
+//            $(":checkbox + span").addClass('checkbox-span');
         }else{
             $(":checkbox").prop("checked", false);
         }
@@ -853,8 +997,8 @@
             }else{
                 $('table').eq(i).find("input").prop("checked", false);
             }
+//            console.log($("input[type='checkbox']:checked").length);
         });
-
     });
 
     $('.num-dowm').click(function(){

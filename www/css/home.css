@@ -28,6 +28,12 @@ body {
 .no-padding {
   padding: 0;
 }
+.txt-dot {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {
@@ -916,9 +922,9 @@ body {
   }
   .nothing-icons .nothing-icon p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fff;
-    margin-top: 18px;
+    margin-top: 15px;
     padding: 0;
   }
   .nothing-carousel {
