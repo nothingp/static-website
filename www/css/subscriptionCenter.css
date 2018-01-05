@@ -446,7 +446,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     display: inline-block;
     width: 24px;
     height: 32px;
-    background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
+    background: url('../images/subscriptionCenter/bg-new.png') no-repeat 0 0;
     background-size: 100% 100%;
     vertical-align: middle;
     margin-right: 1rem;
