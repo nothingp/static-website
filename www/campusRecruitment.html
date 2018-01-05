@@ -136,7 +136,9 @@
     <!--选择框-->
     <div class="nothing-search">
         <div class="search-input">
-            <input class="input-item" placeholder="Job"/>
+            <input class="input-item" placeholder="Job"
+                   onfocus="this.placeholder=''"
+                   onblur="this.placeholder='Job'"/>
         </div>
         <div class="search-btn">
             <button type="button" class="btn btn-primary">
