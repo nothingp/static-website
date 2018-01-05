@@ -31,7 +31,14 @@ body {
 .no-padding {
   padding: 0;
 }
-input[type=checkbox] {
+.wrap-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrap-checkbox input[type=checkbox] {
   -webkit-appearance: none;
   background-color: transparent;
   border: 1px solid #999;
@@ -42,16 +49,16 @@ input[type=checkbox] {
   left: 0;
   z-index: 8999999;
 }
-input[type=checkbox]:checked {
+.wrap-checkbox input[type=checkbox]:checked {
   opacity: 0;
 }
-input[type="checkbox"] + .checkbox-span {
+.wrap-checkbox input[type="checkbox"] + .checkbox-span {
   position: absolute;
   display: inline-block;
   width: 20px;
   height: 20px;
 }
-input[type="checkbox"]:checked + .checkbox-span {
+.wrap-checkbox input[type="checkbox"]:checked + .checkbox-span {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,16 +68,9 @@ input[type="checkbox"]:checked + .checkbox-span {
   background: url('../images/common/checkbox.png') no-repeat;
   background-size: 100% 100% ;
 }
-input[type="checkbox"]:checked + .checkbox-all-span {
+.wrap-checkbox input[type="checkbox"]:checked + .checkbox-all-span {
   background: url('../images/common/checkbox-all.png') no-repeat;
   background-size: 100% 100% ;
-}
-.wrap-checkbox {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  vertical-align: middle;
 }
 /********
 产品列表、订单中心color项图片

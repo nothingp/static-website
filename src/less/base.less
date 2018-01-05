@@ -64,58 +64,51 @@ body {
     padding: 0;
 }
 
-input[type=checkbox] {
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 1px solid #999;
-    outline: 0;
-    border-radius: 2px;
-    position:absolute;
-    top:0;
-    left:0;
-    //margin-left:-10px;
-    //margin-top:-10px;
-    z-index:8999999;
-}
-
-input[type=checkbox]:checked {
-    opacity: 0;
-}
-input[type="checkbox"]+ .checkbox-span{
-    position:absolute;
-    display:inline-block;
-    width:20px;
-    height:20px;
-}
-input[type="checkbox"]:checked+ .checkbox-span{
-    position:absolute;
-    top:0;
-    left:0;
-    display:inline-block;
-    width:20px;
-    height:20px;
-    //margin-left:-10px;
-    //margin-top:-10px;
-    background:url('../images/common/checkbox.png') no-repeat;
-    background-size:100% 100% ;
-}
-input[type="checkbox"]:checked+ .checkbox-all-span{
-    background:url('../images/common/checkbox-all.png') no-repeat;
-    background-size:100% 100% ;
-}
 .wrap-checkbox{
     position: relative;
     width:20px;
     height:20px;
     display:inline-block;
     vertical-align: middle;
-    //span{
-    //    position:absolute;
-    //    display:inline-block;
-    //    width:20px;
-    //    height:20px;
-    //    background: red;
-    //}
+    input[type=checkbox] {
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: 1px solid #999;
+        outline: 0;
+        border-radius: 2px;
+        position:absolute;
+        top:0;
+        left:0;
+        //margin-left:-10px;
+        //margin-top:-10px;
+        z-index:8999999;
+    }
+
+    input[type=checkbox]:checked {
+        opacity: 0;
+    }
+    input[type="checkbox"]+ .checkbox-span{
+        position:absolute;
+        display:inline-block;
+        width:20px;
+        height:20px;
+    }
+    input[type="checkbox"]:checked+ .checkbox-span{
+        position:absolute;
+        top:0;
+        left:0;
+        display:inline-block;
+        width:20px;
+        height:20px;
+        //margin-left:-10px;
+        //margin-top:-10px;
+        background:url('../images/common/checkbox.png') no-repeat;
+        background-size:100% 100% ;
+    }
+    input[type="checkbox"]:checked+ .checkbox-all-span{
+        background:url('../images/common/checkbox-all.png') no-repeat;
+        background-size:100% 100% ;
+    }
 }
 
 /********
