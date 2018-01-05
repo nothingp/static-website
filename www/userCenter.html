@@ -35,7 +35,11 @@
 
     <script>
         $(function () {
-            $('[data-toggle="popover"]').popover()
+            $('[data-toggle="popover"]').popover();
+            var countryList = $('#countryList').find('li');
+            $(countryList).click(function () {
+                $('#selectCountry').html($(this).find('a').html());
+            })
         })
     </script>
 
