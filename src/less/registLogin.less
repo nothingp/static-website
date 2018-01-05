@@ -134,6 +134,7 @@
                 margin-left: -10%;
                 margin-bottom: 35px;
             }
+
             .bottom-btns {
                 margin-top: 50px;
                 .btn {
@@ -147,13 +148,32 @@
                     }
                 }
             }
+
             .subscription {
                 font-size: 16px;
                 color: #595959;
+                .wrap-checkbox {
+                    width: 18px;
+                    height: 18px;
+                    input {
+                        margin: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    top: -3px;
+                    input[type="checkbox"]:checked + .checkbox-span{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .check-txt {
+                    margin-left: 5px;
+                }
                 .long-txt {
-                    margin-left: 20px;
+                    margin-left: 30px;
                 }
             }
+
             .drag-captcha {
                 width: 310px;
                 height: 35px;

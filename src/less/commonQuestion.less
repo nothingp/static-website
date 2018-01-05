@@ -1,0 +1,323 @@
+@import "variables.less";
+@import "base.less";
+@import "header.less";
+@import "footer.less";
+//公共样式
+
+//pc 展示开始。。。
+@media screen and (min-width: @screen-sm-min) {
+    .common-question-banner {
+        padding: 0;
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    .common-question-tabBar {
+        background: #86af49;
+        nav.navbar-default {
+            width: 1280px;
+            margin: 0 auto;
+            background: #86af49;
+            border: none;
+            .navbar-nav {
+                .active {
+                    a {
+                        color: #fff;
+                        background: #86af49;
+                    }
+                }
+                a {
+                    color: #c5dea4;
+                }
+            }
+            .container-fluid {
+                background: #86af49;
+            }
+        }
+
+    }
+
+    .common-question-panel {
+        width: 1280px;
+        margin: 38px auto 83px;
+        .select-like {
+            padding-left: 0;
+            padding-right: 35px;
+            .btn-lg {
+                background: #fff;
+                padding: 0;
+                font-size: 18px;
+                height: 40px;
+                border-radius: 3px;
+                padding-left: 15px;
+                text-align: left;
+                color: #404040;
+                border: 1px solid #dcdcdc;
+            }
+            .glyphicon.glyphicon-menu-down {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                margin-top: -8px;
+                font-size: 14px;
+            }
+            .dropdown-menu {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                li {
+                    a {
+                        color: #404040;
+                        padding: 0;
+                        padding-left: 20px;
+                        height: 40px;
+                        line-height: 40px;
+                        font-size: 16px;
+                        &:hover {
+                            background: #686868;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .box-content {
+            margin: auto;
+            max-width: 1280px;
+            .col-sm-9 {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+            .col-sm-3 {
+                padding-left: 10px;
+                padding-right: 0;
+            }
+
+        }
+        .firmwareUpgrades-content-left-form-table-page {
+            .firmwareUpgrades-content-left-form-table-page-content {
+                padding: 20px 0;
+                .firmwareUpgrades-content-left-form-table-page-content-num {
+                    padding: 0;
+                    span {
+                        font-size: 14px;
+                        color: #666666;
+                    }
+                    select {
+                        display: inline-block;
+                        width: 50%;
+                    }
+                }
+                .firmwareUpgrades-content-left-form-table-page-content-pages {
+                    padding: 0;
+                    .nopadding {
+                        padding: 0;
+                        padding-top: 5px;
+                        margin-left: 2px;
+                    }
+                    .width15 {
+                        width: 24px;
+                        //display: inline-block;
+                    }
+                    .width25 {
+                        width: 25%;
+                        //display: inline-block;
+                    }
+                    button {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        padding: 0;
+                    }
+                    input {
+                        width: 100%;
+                        height: 24px;
+                        padding: 2px;
+                    }
+                    .showpages {
+                        span {
+                            display: inline-block;
+                            width: 100%;
+                            height: 24px;
+                            line-height: 24px;
+                            text-align: center;
+                            color: #666666;
+                        }
+                    }
+
+                }
+                .firmwareUpgrades-content-left-form-table-page-content-count {
+                    padding-top: 8px;
+                    font-size: 14px;
+                    color: #666666;
+                }
+            }
+        }
+
+    }
+}
+
+//手机展示开始。。。
+@media screen and (max-width: @screen-xs-max) {
+    .common-question-banner {
+        padding: 0;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    .common-question-tabBar {
+        background: #86af49;
+        nav.navbar-default {
+            background: #86af49;
+            border: none;
+            margin-bottom: 0;
+            .navbar-nav {
+                margin-bottom: 0;
+                .active {
+                    a {
+                        color: #fff;
+                        background: #86af49;
+                    }
+                }
+                a {
+                    color: #c5dea4;
+                }
+                .dropdown {
+                    text-align: center;
+                    .dropdown-toggle {
+                        color: #fff;
+                        background: #86af49;
+                        font-size: 1.8rem;
+                        span {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    .dropdown-menu {
+                        li {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            .container-fluid {
+                background: #86af49;
+            }
+        }
+
+    }
+
+    .common-question-panel {
+        .select-like {
+            padding: 0 1rem;
+            .btn-lg {
+                padding: 0;
+                padding-left: 1rem;
+                height: 3rem;
+                border-radius: .3rem;
+                font-size: 1.2rem;
+                text-align: left;
+                border: 1px solid #dcdcdc;
+                background: #fff;
+                color: #595959;
+            }
+            .glyphicon.glyphicon-menu-down {
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: #595959;
+            }
+            .dropdown-menu {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                li {
+                    a {
+                        color: #404040;
+                        padding: 0;
+                        padding-left: 1rem;
+                        height: 4rem;
+                        line-height: 4rem;
+                        font-size: 1.2rem;
+                        &:hover {
+                            background: #686868;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search-bar {
+            position: relative;
+            background: #eee;
+            height: 10rem;
+
+            .phone-top {
+                padding: 0;
+                position: absolute;
+                top: 1.5rem;
+                left: 0;
+
+                .input-group {
+                    padding: 0 1rem;
+                }
+
+                .input-group-addon {
+                    background-color: #fff;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 0;
+                    border-right: 0;
+                    border-bottom-left-radius: .3rem;
+                    border-top-left-radius: .3rem;
+                    color: #a6a6a6;
+                }
+
+                .form-control {
+                    padding: 0 1.5rem 0 0;
+                    height: 3rem;
+                    line-height: 3rem;
+                    font-size: 1.2rem;
+                    color: #a6a6a6;
+                    border: 1px solid #dcdcdc;
+                    border-radius: 0;
+                    border-left: 0;
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                    box-shadow: none;
+                    -webkit-box-shadow: none;
+                    &:focus {
+                        box-shadow: none;
+                        -webkit-box-shadow: none;
+                    }
+                }
+            }
+
+            .phone-bottom {
+                position: absolute;
+                bottom: 1.5rem;
+                left: 0;
+            }
+
+            .btn-primary {
+                width: 100px;
+                padding: 0;
+                font-size: 18px;
+                height: 40px;
+                line-height: 40px;
+            }
+
+        }
+
+        .box-content {
+            padding: 15px;
+
+            .col-xs-12 {
+                padding-right: 1rem;
+                padding-left: 1rem;
+            }
+        }
+    }
+}

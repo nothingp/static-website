@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>常见问题解析</title>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous">
+    </script>
+
+    <!-- Custom Theme Style -->
+    <link href="css/commonQuestion.css" rel="stylesheet">
+
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover();
+            var categoryList = $('#categoryList').find('li');
+            $(categoryList).click(function () {
+                $('#chooseCategory').html($(this).find('a').html());
+            })
+
+            var collapseIn = $('.panel-collapse.collapse').not('.panel-collapse.collapse.in');
+            collapseIn.map(function () {
+                $(this).prev().find('a').addClass('collapsed');
+            })
+        })
+    </script>
+</head>
+
+<body>
+<div class="container-fluid common-question family-light">
+    <div class="box-shadow-line">
+        <nav class="navbar row">
+
+        </nav>
+    </div>
+
+    <!--<div class="nothing-second-menu hidden-xs">-->
+    <!--<div class="nothing-second-menu-content">-->
+    <!--<nav class="navbar navbar-default">-->
+
+    <!--</nav>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div class="common-question-tabBar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="active hidden-xs family-normal">
+                        <a href="#">TECHNICAL SUPPORT <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="hidden-xs"><a href="#">Upgrade Notification</a></li>
+                    <li class="hidden-xs"><a href="#">User Manual</a></li>
+                    <li class="hidden-xs"><a href="#">Download & Drives</a></li>
+                    <li class="hidden-xs"><a href="#">FAQ</a></li>
+                    <li class="hidden-xs"><a href="#">Warranty Information</a></li>
+                    <li class="hidden-xs"><a href="#">Contact Unismart</a></li>
+                    <li class="dropdown hidden-sm hidden-md hidden-lg">
+                        <a href="#" class="dropdown-toggle family-normal" data-toggle="dropdown" role="button"
+                           aria-haspopup="true"
+                           aria-expanded="false">
+                            TECHNICAL SUPPORT <span class="glyphicon glyphicon-menu-down"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Upgrade Notification</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">User Manual</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Download & Drives</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Warranty Information</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Contact Unismart</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="common-question-banner">
+        <img src="./images/commonQuestion/banner.png" class="hidden-xs img-responsive">
+        <img src="./images/commonQuestion/banner.png" class="hidden-sm hidden-md hidden-lg img-responsive">
+    </div>
+
+    <div class="common-question-panel">
+        <!--<div class="dropdown choose-category">-->
+        <!--<button-->
+        <!--class="btn btn-lg dropdown-toggle btn-block"-->
+        <!--type="button"-->
+        <!--data-toggle="dropdown"-->
+        <!--aria-haspopup="true"-->
+        <!--aria-expanded="false"-->
+        <!--&gt;-->
+        <!--<span id="chooseCategory">Category</span>-->
+        <!--<span class="glyphicon glyphicon-menu-down"></span>-->
+        <!--</button>-->
+        <!--<ul class="dropdown-menu" id="categoryList">-->
+        <!--<li value="china"><a href="javascript:;">China</a></li>-->
+        <!--<li value="germany"><a href="javascript:;">Germany</a></li>-->
+        <!--<li value="france"><a href="javascript:;">France</a></li>-->
+        <!--<li value="italy"><a href="javascript:;">Italy</a></li>-->
+        <!--</ul>-->
+        <!--</div>-->
+
+        <div class="row box-content">
+            <div class="col-xs-12 col-sm-9">
+                <div>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-3">
+                <div>
+                    <img src="./images/commonQuestion/img1.png" alt="">
+                    <img src="./images/commonQuestion/img3.png" alt="">
+                </div>
+            </div>
+            <div class="firmwareUpgrades-content-left-form-table-page hidden-xs">
+                <div class="col-sm-6"></div>
+                <div class="firmwareUpgrades-content-left-form-table-page-content col-sm-6">
+                    <div class="firmwareUpgrades-content-left-form-table-page-content-num col-sm-4">
+                        <span>DISPLAY：</span>
+                        <select name="num" id="num" class="selectpicker form-control">
+                            <option>10</option>
+                            <option>20</option>
+                            <option>30</option>
+                        </select>
+                    </div>
+                    <div class="firmwareUpgrades-content-left-form-table-page-content-pages col-sm-5 clearfix">
+                        <div class="col-sm-4 nopadding width15">
+                            <button>
+                                <span class="glyphicon glyphicon-step-backward"></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-4 nopadding width15">
+                            <button>
+                                <span class="glyphicon glyphicon-triangle-left"></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-4 nopadding width25">
+                            <input type="text" value="1">
+                        </div>
+                        <div class="col-sm-4 nopadding width15 showpages">
+                            <span>/1</span>
+                        </div>
+                        <div class="col-sm-4 nopadding width15">
+                            <button>
+                                <span class="glyphicon glyphicon-triangle-right"></span>
+                            </button>
+                        </div>
+                        <div class="col-sm-4 nopadding width15">
+                            <button>
+                                <span class="glyphicon glyphicon-step-forward"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="firmwareUpgrades-content-left-form-table-page-content-count col-sm-3">
+                        <span>4</span>RESULTS
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
