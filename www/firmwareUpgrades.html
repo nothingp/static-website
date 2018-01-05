@@ -114,7 +114,10 @@
                     <div class="input-group">
                         <span class="searcn-icon"></span>
                         <input type="text" class="form-control"
-                               placeholder="Enter Printer Model/Apex Code/OEM Code/Firmware Version">
+                               placeholder="Enter Printer Model/Apex Code/OEM Code/Firmware Version"
+                               onfocus="this.placeholder=''"
+                               onblur="this.placeholder='Enter Printer Model/Apex Code/OEM Code/Firmware Version'"
+                        >
                         <span class="input-group-btn hidden-xs">
                             <button class="btn btn-default" type="button"> search </button>
                           </span>
