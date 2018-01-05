@@ -190,7 +190,7 @@ input[type="checkbox"]:checked + .checkbox-all-span {
   }
   .firmwareUpgrades-content {
     max-width: 1280px;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 50px auto;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-left {
     padding-left: 0;
@@ -371,23 +371,40 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     padding: 0;
     padding-left: 10px;
   }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form {
-    border: 1px solid #dcdcdc;
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form {
+    margin-bottom: 15px;
+    border: 1px solid #E4E4E4;
     padding: 15px;
-    margin-bottom: 30px;
-    margin-top: 10px;
   }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title {
-    font-size: 20px;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 30px;
-    color: #333333;
-    border-bottom: 1px solid #dcdcdc;
-    padding-left: 10px;
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .form-group,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .form-group {
+    margin-bottom: 10px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form label,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form label {
+    padding: 0;
+    padding-left: 25px;
+    text-align: right;
+    margin: 5px auto;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .form-control,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .form-control {
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    margin: 5px auto;
+    border-radius: 3px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .title {
+    padding-left: 12px;
     position: relative;
+    font-size: 2rem;
   }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title:before {
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title:before,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .title:before {
     display: block;
     content: '';
     width: 3px;
@@ -395,43 +412,37 @@ input[type="checkbox"]:checked + .checkbox-all-span {
     background: #2f88c4;
     position: absolute;
     left: 0;
-    top: 5px;
+    top: 50%;
+    margin-top: -10px;
   }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .tips {
-    font-size: 16px;
-    line-height: 18px;
-    color: #999999;
-    margin: 20px 0;
-  }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form form label span {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    color: #ced4d9;
-    font-size: 20px;
-  }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form form label .img-bg {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-top: 5px;
-    background: url("../images/subscriptionCenter/company-icon.jpg") no-repeat;
-    background-size: 100% auto;
-  }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form form .wrap-img-bg {
-    padding-top: 2px;
-  }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form form .right-button {
-    width: 100px;
-    height: 32px;
-  }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .downloag-box {
-    border: none;
-    padding: 0;
-  }
-  .firmwareUpgrades-content .firmwareUpgrades-content-right .downloag-box img {
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .title:after,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .title:after {
+    display: block;
+    content: '';
     width: 100%;
-    height: auto;
+    height: 1px;
+    background: #E4E4E4;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .btn.btn-primary,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .btn.btn-primary {
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .tips,
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .tips {
+    font-size: 1.6rem;
+    color: #8c8c8c;
+    margin: 32px 0 28px;
+  }
+  .firmwareUpgrades-content .firmwareUpgrades-content-right .img-bottom img {
+    border-radius: 5px;
+    width: 100%;
   }
   .subscriptionCenter-list .subscriptionCenter-list-button {
     width: 80px;
