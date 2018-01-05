@@ -76,7 +76,26 @@
                     <div class="col-sm-12"><input type="text" placeholder="Address"></div>
                     <div class="col-sm-6"><input type="text" placeholder="City"></div>
                     <div class="col-sm-6"><input type="text" placeholder="State"></div>
-                    <div class="col-sm-6"><input type="text" placeholder="Country"></div>
+                    <div class="col-sm-6">
+                        <div class="dropdown select-country">
+                            <button
+                                class="btn btn-lg dropdown-toggle btn-block"
+                                type="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <span id="selectCountry">China</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="countryList">
+                                <li value="china"><a href="javascript:;">China</a></li>
+                                <li value="germany"><a href="javascript:;">Germany</a></li>
+                                <li value="france"><a href="javascript:;">France</a></li>
+                                <li value="italy"><a href="javascript:;">Italy</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="col-sm-6"><input type="text" placeholder="ZIP Code"></div>
                     <div class="col-sm-6"><input type="text" placeholder="Phone Number"></div>
                     <div class="col-sm-6"><input type="text" placeholder="E-mail"></div>

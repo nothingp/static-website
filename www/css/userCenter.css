@@ -1015,7 +1015,7 @@ body {
     border: 1px solid #bfbfbf;
     padding-left: 15px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
   .user-center-form .account input::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
@@ -1032,6 +1032,42 @@ body {
   .user-center-form .account input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #8c8c8c;
+  }
+  .user-center-form .account .select-country .btn-lg {
+    background: #fff;
+    padding: 0;
+    font-size: 1.8rem;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 4px;
+    padding-left: 15px;
+    text-align: left;
+    color: #8c8c8c;
+    border-color: #bfbfbf;
+  }
+  .user-center-form .account .select-country .glyphicon.glyphicon-menu-down {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -8px;
+    font-size: 14px;
+  }
+  .user-center-form .account .select-country .dropdown-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .user-center-form .account .select-country .dropdown-menu li a {
+    color: #8c8c8c;
+    padding: 0;
+    padding-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.4rem;
+  }
+  .user-center-form .account .select-country .dropdown-menu li a:hover {
+    color: #fff;
+    background: #686868;
   }
   .user-center-form .form-item-line {
     border-top: 1px solid #ddd;
