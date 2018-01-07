@@ -1022,110 +1022,228 @@ body {
   }
   .common-question-panel {
     width: 1280px;
-    margin: 38px auto 83px;
+    margin: 38px auto 63px;
   }
-  .common-question-panel .select-like {
+  .common-question-panel .box-content {
+    margin: 0;
+    padding: 0;
+  }
+  .common-question-panel .box-content .row {
+    margin: 0;
+    padding: 0;
+  }
+  .common-question-panel .box-content .content-left {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .common-question-panel .box-content .content-left .select-like {
     padding-left: 0;
     padding-right: 35px;
   }
-  .common-question-panel .select-like .btn-lg {
+  .common-question-panel .box-content .content-left .select-like .btn-lg {
     background: #fff;
     padding: 0;
     font-size: 18px;
     height: 40px;
-    border-radius: 3px;
-    padding-left: 15px;
+    padding-left: 17px;
     text-align: left;
-    color: #404040;
-    border: 1px solid #dcdcdc;
+    color: #999999;
+    width: 200px;
+    border-radius: 2px;
+    border: solid 1px #bfbfbf;
   }
-  .common-question-panel .select-like .glyphicon.glyphicon-menu-down {
+  .common-question-panel .box-content .content-left .select-like .glyphicon.glyphicon-menu-down {
     position: absolute;
     top: 50%;
     right: 15px;
     margin-top: -8px;
     font-size: 14px;
   }
-  .common-question-panel .select-like .dropdown-menu {
+  .common-question-panel .box-content .content-left .select-like .dropdown-menu {
     width: 100%;
     margin: 0;
     padding: 0;
   }
-  .common-question-panel .select-like .dropdown-menu li a {
-    color: #404040;
+  .common-question-panel .box-content .content-left .select-like .dropdown-menu li a {
+    color: #999999;
     padding: 0;
     padding-left: 20px;
     height: 40px;
     line-height: 40px;
     font-size: 16px;
   }
-  .common-question-panel .select-like .dropdown-menu li a:hover {
+  .common-question-panel .box-content .content-left .select-like .dropdown-menu li a:hover {
     background: #686868;
     color: #fff;
   }
-  .common-question-panel .box-content {
-    margin: auto;
-    max-width: 1280px;
+  .common-question-panel .box-content .content-left .mar-37 {
+    margin-bottom: 28px;
   }
-  .common-question-panel .box-content .col-sm-9 {
-    padding-left: 0;
-    padding-right: 20px;
+  .common-question-panel .box-content .content-left .mar-b-29 {
+    margin-bottom: 30px;
   }
-  .common-question-panel .box-content .col-sm-3 {
+  .common-question-panel .box-content .content-left .mar-b-60 {
+    margin-bottom: 45px;
+  }
+  .common-question-panel .box-content .content-left .icon-img {
+    width: 75px;
+    height: 75px;
+    background-color: #86af49;
+    border-radius: 4px;
+    border: solid 1px #eeeeee;
+  }
+  .common-question-panel .box-content .content-left .icon-title {
+    margin-top: 6px;
+    margin-bottom: 7px;
+    font-size: 24px;
+    color: #333333;
+  }
+  .common-question-panel .box-content .content-left .value {
+    font-size: 16px;
+    line-height: 18px;
+    color: #8c8c8c;
+  }
+  .common-question-panel .box-content .content-left .select-title {
+    margin-right: 10px;
+    padding: 0;
+    font-size: 18px;
+    color: #666666;
+    height: 40px;
+    line-height: 40px;
+  }
+  .common-question-panel .box-content .content-left .title {
+    font-size: 18px;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  .common-question-panel .box-content .content-left .img-tool {
+    margin-top: 20px;
+  }
+  .common-question-panel .box-content .content-left .panel-title a {
+    position: relative;
+    display: block;
+    margin-left: 7px;
+    font-size: 16px;
+    color: #86af49;
+    padding-right: 15%;
+  }
+  .common-question-panel .box-content .content-left .panel-title a:hover,
+  .common-question-panel .box-content .content-left .panel-title a:focus,
+  .common-question-panel .box-content .content-left .panel-title a:active {
+    text-decoration: none;
+  }
+  .common-question-panel .box-content .content-left .panel-title a:after {
+    border-color: #86af49;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: inline-block;
+    height: 0;
+    padding: 3px;
+    transform: rotate(135deg);
+    width: 0;
+    right: 15%;
+    position: absolute;
+    top: 5px;
+    z-index: 0;
+  }
+  .common-question-panel .box-content .content-left .panel-title a.collapsed {
+    color: #666;
+  }
+  .common-question-panel .box-content .content-left .panel-title a.collapsed:after {
+    border-color: #666;
+    transform: rotate(45deg);
+  }
+  .common-question-panel .box-content .content-left .panel-group {
+    margin-bottom: 10px;
+  }
+  .common-question-panel .box-content .content-left .panel-default {
+    border: none;
+    box-shadow: none;
+  }
+  .common-question-panel .box-content .content-left .panel-default .panel-heading {
+    color: #333;
+    background-color: #fff;
+    border: none;
+  }
+  .common-question-panel .box-content .content-left .panel-default .panel-body {
+    padding: 0 8px;
+    border: none;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well {
+    position: relative;
+    width: 943px;
+    height: 792px;
+    padding: 20px 37px;
+    background-color: #fafafa;
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+    margin: 0;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well .well-txt {
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well .well-img {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well .download-txt {
+    font-size: 18px;
+    color: #666666;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well .pdf-link {
+    text-decoration: underline;
+    font-size: 18px;
+    color: #86af49;
+    margin-left: 5px;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well .close-btn {
+    position: absolute;
+    right: 0;
+    bottom: 14px;
+    font-size: 18px;
+    color: #86af49;
+    width: 90px;
+  }
+  .common-question-panel .box-content .content-left .panel-default .well .close-btn:after {
+    border-color: #86af49;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: inline-block;
+    height: 0;
+    padding: 4px;
+    transform: rotate(-45deg);
+    width: 0;
+    right: 20px;
+    position: absolute;
+    top: 12px;
+    z-index: 0;
+  }
+  .common-question-panel .box-content .content-right {
     padding-left: 10px;
     padding-right: 0;
   }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content {
-    padding: 20px 0;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num {
-    padding: 0;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num span {
-    font-size: 14px;
-    color: #666666;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-num select {
-    display: inline-block;
-    width: 50%;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages {
-    padding: 0;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .nopadding {
-    padding: 0;
-    padding-top: 5px;
-    margin-left: 2px;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width15 {
-    width: 24px;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .width25 {
-    width: 25%;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages button {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages input {
+  .common-question-panel .box-content .content-right .top-img {
     width: 100%;
-    height: 24px;
-    padding: 2px;
+    background-color: #86af49;
+    border-radius: 3px;
+    margin-bottom: 25px;
   }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .showpages span {
-    display: inline-block;
+  .common-question-panel .box-content .content-right .top-bottom {
     width: 100%;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    color: #666666;
-  }
-  .common-question-panel .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-count {
-    padding-top: 8px;
-    font-size: 14px;
-    color: #666666;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: solid 1px rgba(220, 220, 220, 0.2);
+    opacity: 0.2;
   }
 }
 @media screen and (max-width: 767px) {

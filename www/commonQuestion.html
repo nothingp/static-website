@@ -35,14 +35,26 @@
     <script>
         $(function () {
             $('[data-toggle="popover"]').popover();
+
+            var modelList = $('#modelList').find('li');
+            $(modelList).click(function () {
+                $('#selectModel').html($(this).find('a').html());
+            })
+
             var categoryList = $('#categoryList').find('li');
             $(categoryList).click(function () {
-                $('#chooseCategory').html($(this).find('a').html());
+                $('#selectCategory').html($(this).find('a').html());
             })
 
             var collapseIn = $('.panel-collapse.collapse').not('.panel-collapse.collapse.in');
             collapseIn.map(function () {
                 $(this).prev().find('a').addClass('collapsed');
+            })
+
+            var closeBtn = $('.close-btn');
+            $(closeBtn).click(function () {
+                $(this).parent().parent().parent().removeClass('in');
+                $(this).parent().parent().parent().prev().find('a').addClass('collapsed');
             })
         })
     </script>
@@ -109,80 +121,291 @@
     </div>
 
     <div class="common-question-panel">
-        <!--<div class="dropdown choose-category">-->
-        <!--<button-->
-        <!--class="btn btn-lg dropdown-toggle btn-block"-->
-        <!--type="button"-->
-        <!--data-toggle="dropdown"-->
-        <!--aria-haspopup="true"-->
-        <!--aria-expanded="false"-->
-        <!--&gt;-->
-        <!--<span id="chooseCategory">Category</span>-->
-        <!--<span class="glyphicon glyphicon-menu-down"></span>-->
-        <!--</button>-->
-        <!--<ul class="dropdown-menu" id="categoryList">-->
-        <!--<li value="china"><a href="javascript:;">China</a></li>-->
-        <!--<li value="germany"><a href="javascript:;">Germany</a></li>-->
-        <!--<li value="france"><a href="javascript:;">France</a></li>-->
-        <!--<li value="italy"><a href="javascript:;">Italy</a></li>-->
-        <!--</ul>-->
-        <!--</div>-->
-
         <div class="row box-content">
-            <div class="col-xs-12 col-sm-9">
-                <div>
+            <div class="col-xs-12 col-sm-9 content-left">
+                <div class="row mar-b-60">
+                    <div class="col-sm-7 no-padding">
+                        <div class="row mar-37">
+                            <div class="col-sm-2 no-padding">
+                                <img src="./images/commonQuestion/icon.png" class="icon-img">
+                            </div>
+                            <div class="col-sm-10 no-padding">
+                                <h3 class="icon-title">FAQ</h3>
+                                <p class="value family-light">
+                                    Search the frequently asked questions and come up with
+                                    <br> the solution.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row family-light mar-b-29">
+                            <div class="col-sm-4 select-title">
+                                Select a Model
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="dropdown select-like">
+                                    <button
+                                        class="btn btn-lg dropdown-toggle btn-block"
+                                        type="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span id="selectModel">Unismart II</span>
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="modelList">
+                                        <li value="china"><a href="javascript:;">Unismart II</a></li>
+                                        <li value="germany"><a href="javascript:;">Germany</a></li>
+                                        <li value="france"><a href="javascript:;">France</a></li>
+                                        <li value="italy"><a href="javascript:;">Italy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row family-light">
+                            <div class="col-sm-4 select-title">
+                                Select a category
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="dropdown select-like">
+                                    <button
+                                        class="btn btn-lg dropdown-toggle btn-block"
+                                        type="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        <span id="selectCategory">Category</span>
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="categoryList">
+                                        <li value="china"><a href="javascript:;">China</a></li>
+                                        <li value="germany"><a href="javascript:;">Category</a></li>
+                                        <li value="france"><a href="javascript:;">France</a></li>
+                                        <li value="italy"><a href="javascript:;">Italy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="col-sm-5 text-center">
+                        <img src="./images/commonQuestion/img2.png" class="img-tool">
+                    </div>
                 </div>
+
+                <div class="row">
+                    <h3 class="title">
+                        Software installation
+                    </h3>
+                    <div class="panel-group family-light" id="title1" role="tablist">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a role="button"
+                                       data-toggle="collapse"
+                                       data-parent="#title1"
+                                       href="#collapse1"
+                                       aria-expanded="true"
+                                    >
+                                        -Software can be installed, but driver reports error while the software is
+                                        running.
+                                        <span class="down-circle"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse in" role="tabpanel">
+                                <div class="panel-body">
+                                    <div class="well">
+                                        <p class="well-txt">
+                                            A standard operating procedure, or SOP,
+                                            is a document that gives step-by-step instructions on how to complete a
+                                            task.
+                                            These procedures play a key role in business performance,
+                                            giving guidance on how to perform a task,
+                                            who is responsible for it, what resources are needed and and how frequently
+                                            it occurs.
+                                            A group of SOPs,
+                                            say for a department or an organization,
+                                            all come together in a standard operating procedures manual.
+                                            A complete manual should outline all of the organization’s tasks,
+                                            showing how individual functions work separately as well as together.
+                                        </p>
+                                        <div class="well-img">
+                                            <img src="./images/commonQuestion/img4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="download-txt">Attachment Download</p>
+                                            <img src="./images/commonQuestion/pdf.png" alt="">
+                                            <a href="" class="pdf-link">Application form</a>
+                                        </div>
+                                        <span class="close-btn">close</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-group family-light" id="title2" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title">
+                                    <a role="button"
+                                       data-toggle="collapse"
+                                       data-parent="#title2"
+                                       href="#collapse2"
+                                       aria-expanded="true"
+                                    >
+                                        -During installation, there are warnings from antivirus software.
+                                        <span class="down-circle"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body">
+                                    <div class="well">
+                                        <p class="well-txt">
+                                            A standard operating procedure, or SOP,
+                                            is a document that gives step-by-step instructions on how to complete a
+                                            task.
+                                            These procedures play a key role in business performance,
+                                            giving guidance on how to perform a task,
+                                            who is responsible for it, what resources are needed and and how frequently
+                                            it occurs.
+                                            A group of SOPs,
+                                            say for a department or an organization,
+                                            all come together in a standard operating procedures manual.
+                                            A complete manual should outline all of the organization’s tasks,
+                                            showing how individual functions work separately as well as together.
+                                        </p>
+                                        <div class="well-img">
+                                            <img src="./images/commonQuestion/img4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="download-txt">Attachment Download</p>
+                                            <img src="./images/commonQuestion/pdf.png" alt="">
+                                            <a href="" class="pdf-link">Application form</a>
+                                        </div>
+                                        <span class="close-btn">close</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3 class="title">
+                        Client end error
+                    </h3>
+                    <div class="panel-group family-light" id="title3" role="tablist">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title ">
+                                    <a role="button"
+                                       data-toggle="collapse"
+                                       data-parent="#title1"
+                                       href="#collapse3"
+                                       aria-expanded="true"
+                                    >
+                                        -Network connection failed.
+                                        <span class="down-circle"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body">
+                                    <div class="well">
+                                        <p class="well-txt">
+                                            A standard operating procedure, or SOP,
+                                            is a document that gives step-by-step instructions on how to complete a
+                                            task.
+                                            These procedures play a key role in business performance,
+                                            giving guidance on how to perform a task,
+                                            who is responsible for it, what resources are needed and and how frequently
+                                            it occurs.
+                                            A group of SOPs,
+                                            say for a department or an organization,
+                                            all come together in a standard operating procedures manual.
+                                            A complete manual should outline all of the organization’s tasks,
+                                            showing how individual functions work separately as well as together.
+                                        </p>
+                                        <div class="well-img">
+                                            <img src="./images/commonQuestion/img4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="download-txt">Attachment Download</p>
+                                            <img src="./images/commonQuestion/pdf.png" alt="">
+                                            <a href="" class="pdf-link">Application form</a>
+                                        </div>
+                                        <span class="close-btn">close</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3 class="title">
+                        Secondary clients cannot receive emails sent
+                        from the system.
+                    </h3>
+                    <div class="panel-group family-light" id="title5" role="tablist">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab">
+                                <h4 class="panel-title ">
+                                    <a role="button"
+                                       data-toggle="collapse"
+                                       data-parent="#title5"
+                                       href="#collapse5"
+                                       aria-expanded="true"
+                                    >
+                                        -After a secondary customer has been set up, he or she cannot receive e-mails
+                                        containing
+                                        information such as ID and password sent by the Unismart system.
+                                        <span class="down-circle"></span>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse5" class="panel-collapse collapse" role="tabpanel">
+                                <div class="panel-body">
+                                    <div class="well">
+                                        <p class="well-txt">
+                                            A standard operating procedure, or SOP,
+                                            is a document that gives step-by-step instructions on how to complete a
+                                            task.
+                                            These procedures play a key role in business performance,
+                                            giving guidance on how to perform a task,
+                                            who is responsible for it, what resources are needed and and how frequently
+                                            it occurs.
+                                            A group of SOPs,
+                                            say for a department or an organization,
+                                            all come together in a standard operating procedures manual.
+                                            A complete manual should outline all of the organization’s tasks,
+                                            showing how individual functions work separately as well as together.
+                                        </p>
+                                        <div class="well-img">
+                                            <img src="./images/commonQuestion/img4.png" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="download-txt">Attachment Download</p>
+                                            <img src="./images/commonQuestion/pdf.png" alt="">
+                                            <a href="" class="pdf-link">Application form</a>
+                                        </div>
+                                        <span class="close-btn">close</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="col-xs-12 col-sm-3">
+            <div class="col-xs-12 col-sm-3 content-right">
                 <div>
-                    <img src="./images/commonQuestion/img1.png" alt="">
-                    <img src="./images/commonQuestion/img3.png" alt="">
-                </div>
-            </div>
-            <div class="firmwareUpgrades-content-left-form-table-page hidden-xs">
-                <div class="col-sm-6"></div>
-                <div class="firmwareUpgrades-content-left-form-table-page-content col-sm-6">
-                    <div class="firmwareUpgrades-content-left-form-table-page-content-num col-sm-4">
-                        <span>DISPLAY：</span>
-                        <select name="num" id="num" class="selectpicker form-control">
-                            <option>10</option>
-                            <option>20</option>
-                            <option>30</option>
-                        </select>
-                    </div>
-                    <div class="firmwareUpgrades-content-left-form-table-page-content-pages col-sm-5 clearfix">
-                        <div class="col-sm-4 nopadding width15">
-                            <button>
-                                <span class="glyphicon glyphicon-step-backward"></span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4 nopadding width15">
-                            <button>
-                                <span class="glyphicon glyphicon-triangle-left"></span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4 nopadding width25">
-                            <input type="text" value="1">
-                        </div>
-                        <div class="col-sm-4 nopadding width15 showpages">
-                            <span>/1</span>
-                        </div>
-                        <div class="col-sm-4 nopadding width15">
-                            <button>
-                                <span class="glyphicon glyphicon-triangle-right"></span>
-                            </button>
-                        </div>
-                        <div class="col-sm-4 nopadding width15">
-                            <button>
-                                <span class="glyphicon glyphicon-step-forward"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="firmwareUpgrades-content-left-form-table-page-content-count col-sm-3">
-                        <span>4</span>RESULTS
-                    </div>
+                    <img src="./images/commonQuestion/img1.png" class="top-img">
+                    <img src="./images/commonQuestion/img3.png" class="bottom-img">
                 </div>
             </div>
 
