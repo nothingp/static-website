@@ -117,13 +117,14 @@
 
     <div class="common-question-banner">
         <img src="./images/commonQuestion/banner.png" class="hidden-xs img-responsive">
-        <img src="./images/commonQuestion/banner.png" class="hidden-sm hidden-md hidden-lg img-responsive">
+        <img src="./images/commonQuestion/banner-h5.png" class="hidden-sm hidden-md hidden-lg img-responsive">
     </div>
 
     <div class="common-question-panel">
         <div class="row box-content">
             <div class="col-xs-12 col-sm-9 content-left">
-                <div class="row mar-b-60">
+
+                <div class="row mar-b-60 hidden-xs">
                     <div class="col-sm-7 no-padding">
                         <div class="row mar-37">
                             <div class="col-sm-2 no-padding">
@@ -194,98 +195,250 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <h3 class="title">
-                        Software installation
-                    </h3>
-                    <div class="panel-group family-light" id="title1" role="tablist">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab">
-                                <h4 class="panel-title">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#title1"
-                                       href="#collapse1"
-                                       aria-expanded="true"
-                                    >
-                                        -Software can be installed, but driver reports error while the software is
-                                        running.
-                                        <span class="down-circle"></span>
-                                    </a>
-                                </h4>
+                <div class="row mar-b-60 visible-xs">
+                    <div class="col-xs-2">
+                        <img src="./images/commonQuestion/icon-h5.png" class="icon-img img-responsive">
+                    </div>
+                    <div class="col-xs-7">
+                        <h3 class="icon-title">Download & Drives</h3>
+                        <p class="value family-light">
+                            Get the latest drivers and software for your Unismart.
+                        </p>
+                    </div>
+                    <div class="col-xs-3 text-center">
+                        <img src="./images/commonQuestion/img2.png" class="img-tool img-responsive">
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="select-title">
+                            Select a Model
+                        </div>
+                        <div class="dropdown select-like">
+                            <button
+                                class="btn btn-lg dropdown-toggle btn-block"
+                                type="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <span id="selectModel">Unismart II</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                            </button>
+                            <ul class="dropdown-menu" id="modelList">
+                                <li value="china"><a href="javascript:;">Unismart II</a></li>
+                                <li value="germany"><a href="javascript:;">Germany</a></li>
+                                <li value="france"><a href="javascript:;">France</a></li>
+                                <li value="italy"><a href="javascript:;">Italy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden-xs">
+                    <div class="row">
+                        <h3 class="title">
+                            Software installation
+                        </h3>
+                        <div class="panel-group family-light" id="title1" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#title1"
+                                           href="#collapse1"
+                                           aria-expanded="true"
+                                        >
+                                            -Software can be installed, but driver reports error while the software is
+                                            running.
+                                            <span class="down-circle"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <p class="well-txt">
+                                                A standard operating procedure, or SOP,
+                                                is a document that gives step-by-step instructions on how to complete a
+                                                task.
+                                                These procedures play a key role in business performance,
+                                                giving guidance on how to perform a task,
+                                                who is responsible for it, what resources are needed and and how
+                                                frequently
+                                                it occurs.
+                                                A group of SOPs,
+                                                say for a department or an organization,
+                                                all come together in a standard operating procedures manual.
+                                                A complete manual should outline all of the organization’s tasks,
+                                                showing how individual functions work separately as well as together.
+                                            </p>
+                                            <div class="well-img">
+                                                <img src="./images/commonQuestion/img4.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="download-txt">Attachment Download</p>
+                                                <img src="./images/commonQuestion/pdf.png" alt="">
+                                                <a href="" class="pdf-link">Application form</a>
+                                            </div>
+                                            <span class="close-btn">close</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="collapse1" class="panel-collapse collapse in" role="tabpanel">
-                                <div class="panel-body">
-                                    <div class="well">
-                                        <p class="well-txt">
-                                            A standard operating procedure, or SOP,
-                                            is a document that gives step-by-step instructions on how to complete a
-                                            task.
-                                            These procedures play a key role in business performance,
-                                            giving guidance on how to perform a task,
-                                            who is responsible for it, what resources are needed and and how frequently
-                                            it occurs.
-                                            A group of SOPs,
-                                            say for a department or an organization,
-                                            all come together in a standard operating procedures manual.
-                                            A complete manual should outline all of the organization’s tasks,
-                                            showing how individual functions work separately as well as together.
-                                        </p>
-                                        <div class="well-img">
-                                            <img src="./images/commonQuestion/img4.png" alt="">
+                        </div>
+                        <div class="panel-group family-light" id="title2" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#title2"
+                                           href="#collapse2"
+                                           aria-expanded="true"
+                                        >
+                                            -During installation, there are warnings from antivirus software.
+                                            <span class="down-circle"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <p class="well-txt">
+                                                A standard operating procedure, or SOP,
+                                                is a document that gives step-by-step instructions on how to complete a
+                                                task.
+                                                These procedures play a key role in business performance,
+                                                giving guidance on how to perform a task,
+                                                who is responsible for it, what resources are needed and and how
+                                                frequently
+                                                it occurs.
+                                                A group of SOPs,
+                                                say for a department or an organization,
+                                                all come together in a standard operating procedures manual.
+                                                A complete manual should outline all of the organization’s tasks,
+                                                showing how individual functions work separately as well as together.
+                                            </p>
+                                            <div class="well-img">
+                                                <img src="./images/commonQuestion/img4.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="download-txt">Attachment Download</p>
+                                                <img src="./images/commonQuestion/pdf.png" alt="">
+                                                <a href="" class="pdf-link">Application form</a>
+                                            </div>
+                                            <span class="close-btn">close</span>
                                         </div>
-                                        <div>
-                                            <p class="download-txt">Attachment Download</p>
-                                            <img src="./images/commonQuestion/pdf.png" alt="">
-                                            <a href="" class="pdf-link">Application form</a>
-                                        </div>
-                                        <span class="close-btn">close</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="panel-group family-light" id="title2" role="tablist" aria-multiselectable="true">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab">
-                                <h4 class="panel-title">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#title2"
-                                       href="#collapse2"
-                                       aria-expanded="true"
-                                    >
-                                        -During installation, there are warnings from antivirus software.
-                                        <span class="down-circle"></span>
-                                    </a>
-                                </h4>
+
+                    <div class="row">
+                        <h3 class="title">
+                            Client end error
+                        </h3>
+                        <div class="panel-group family-light" id="title3" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title ">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#title1"
+                                           href="#collapse3"
+                                           aria-expanded="true"
+                                        >
+                                            -Network connection failed.
+                                            <span class="down-circle"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <p class="well-txt">
+                                                A standard operating procedure, or SOP,
+                                                is a document that gives step-by-step instructions on how to complete a
+                                                task.
+                                                These procedures play a key role in business performance,
+                                                giving guidance on how to perform a task,
+                                                who is responsible for it, what resources are needed and and how
+                                                frequently
+                                                it occurs.
+                                                A group of SOPs,
+                                                say for a department or an organization,
+                                                all come together in a standard operating procedures manual.
+                                                A complete manual should outline all of the organization’s tasks,
+                                                showing how individual functions work separately as well as together.
+                                            </p>
+                                            <div class="well-img">
+                                                <img src="./images/commonQuestion/img4.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="download-txt">Attachment Download</p>
+                                                <img src="./images/commonQuestion/pdf.png" alt="">
+                                                <a href="" class="pdf-link">Application form</a>
+                                            </div>
+                                            <span class="close-btn">close</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
-                                <div class="panel-body">
-                                    <div class="well">
-                                        <p class="well-txt">
-                                            A standard operating procedure, or SOP,
-                                            is a document that gives step-by-step instructions on how to complete a
-                                            task.
-                                            These procedures play a key role in business performance,
-                                            giving guidance on how to perform a task,
-                                            who is responsible for it, what resources are needed and and how frequently
-                                            it occurs.
-                                            A group of SOPs,
-                                            say for a department or an organization,
-                                            all come together in a standard operating procedures manual.
-                                            A complete manual should outline all of the organization’s tasks,
-                                            showing how individual functions work separately as well as together.
-                                        </p>
-                                        <div class="well-img">
-                                            <img src="./images/commonQuestion/img4.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h3 class="title">
+                            Secondary clients cannot receive emails sent
+                            from the system.
+                        </h3>
+                        <div class="panel-group family-light" id="title5" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title ">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#title5"
+                                           href="#collapse5"
+                                           aria-expanded="true"
+                                        >
+                                            -After a secondary customer has been set up, he or she cannot receive
+                                            e-mails
+                                            containing
+                                            information such as ID and password sent by the Unismart system.
+                                            <span class="down-circle"></span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <p class="well-txt">
+                                                A standard operating procedure, or SOP,
+                                                is a document that gives step-by-step instructions on how to complete a
+                                                task.
+                                                These procedures play a key role in business performance,
+                                                giving guidance on how to perform a task,
+                                                who is responsible for it, what resources are needed and and how
+                                                frequently
+                                                it occurs.
+                                                A group of SOPs,
+                                                say for a department or an organization,
+                                                all come together in a standard operating procedures manual.
+                                                A complete manual should outline all of the organization’s tasks,
+                                                showing how individual functions work separately as well as together.
+                                            </p>
+                                            <div class="well-img">
+                                                <img src="./images/commonQuestion/img4.png" alt="">
+                                            </div>
+                                            <div>
+                                                <p class="download-txt">Attachment Download</p>
+                                                <img src="./images/commonQuestion/pdf.png" alt="">
+                                                <a href="" class="pdf-link">Application form</a>
+                                            </div>
+                                            <span class="close-btn">close</span>
                                         </div>
-                                        <div>
-                                            <p class="download-txt">Attachment Download</p>
-                                            <img src="./images/commonQuestion/pdf.png" alt="">
-                                            <a href="" class="pdf-link">Application form</a>
-                                        </div>
-                                        <span class="close-btn">close</span>
                                     </div>
                                 </div>
                             </div>
@@ -293,122 +446,216 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <h3 class="title">
-                        Client end error
-                    </h3>
-                    <div class="panel-group family-light" id="title3" role="tablist">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab">
-                                <h4 class="panel-title ">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#title1"
-                                       href="#collapse3"
-                                       aria-expanded="true"
-                                    >
-                                        -Network connection failed.
-                                        <span class="down-circle"></span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
-                                <div class="panel-body">
-                                    <div class="well">
-                                        <p class="well-txt">
-                                            A standard operating procedure, or SOP,
-                                            is a document that gives step-by-step instructions on how to complete a
-                                            task.
-                                            These procedures play a key role in business performance,
-                                            giving guidance on how to perform a task,
-                                            who is responsible for it, what resources are needed and and how frequently
-                                            it occurs.
-                                            A group of SOPs,
-                                            say for a department or an organization,
-                                            all come together in a standard operating procedures manual.
-                                            A complete manual should outline all of the organization’s tasks,
-                                            showing how individual functions work separately as well as together.
-                                        </p>
-                                        <div class="well-img">
-                                            <img src="./images/commonQuestion/img4.png" alt="">
+                <div class="visible-xs">
+                    <div class="row">
+                        <h3 class="h5-title">
+                            Technical Support
+                        </h3>
+                        <div class="panel-group family-light" id="titleH5" role="tablist">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#titleH5"
+                                           href="#collapseH51"
+                                           aria-expanded="true"
+                                        >
+                                            How to distinguish cartridge-with-hole and cartridge-without-hole
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseH51" class="panel-collapse collapse in" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <div class="row">
+                                                <div class="col-xs-6 text-center">
+                                                    <img src="./images/commonQuestion/tool1.png" class="img-tool1">
+                                                    <p>Cartridge with hole</p>
+                                                </div>
+                                                <div class="col-xs-6 text-center">
+                                                    <img src="./images/commonQuestion/tool2.png" class="img-tool2">
+                                                    <p>Cartridge without hole</p>
+                                                </div>
+                                            </div>
+                                            <div class="well-txt">
+                                                There are two types of Brother’s cartridges. Judging from
+                                                appearance, they can be named “hole-type” cartridge and
+                                                “non-hole-type”
+                                                cartridge. As the picture shown, a rectangle hole of the cartridge
+                                                appearing
+                                                in red square is “hole-type” cartridge; while no hole appearing
+                                                in red square is “non-hole-type” cartridge. According to this
+                                                noticeable feature, two types of cartridges can be differentiated
+                                                easily.
+                                                In fact,
+                                                there are three portions in the cartridge detected by electrical
+                                                signal, which are respectively first signal blocking portion, second
+                                                signal
+                                                blocking portion, third signal blocking portion. The hole is in the
+                                                second signal blocking portion. When the width of the second
+                                                signal blocking
+                                                portion is narrow, it can be seen as a “hole-type” cartridge;
+                                                while the width of the second signal blocking portion is wide,
+                                                it can be seen as a
+                                                “non-hole-type” cartridge.
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p class="download-txt">Attachment Download</p>
-                                            <img src="./images/commonQuestion/pdf.png" alt="">
-                                            <a href="" class="pdf-link">Application form</a>
-                                        </div>
-                                        <span class="close-btn">close</span>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#titleH5"
+                                           href="#collapseH52"
+                                           aria-expanded="true"
+                                        >
+                                            Difference between starter cartridge and common cartridge
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseH52" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <div class="row">
+                                                <div class="col-xs-6 text-center">
+                                                    <img src="./images/commonQuestion/tool1.png" class="img-tool1">
+                                                    <p>Cartridge with hole</p>
+                                                </div>
+                                                <div class="col-xs-6 text-center">
+                                                    <img src="./images/commonQuestion/tool2.png" class="img-tool2">
+                                                    <p>Cartridge without hole</p>
+                                                </div>
+                                            </div>
+                                            <div class="well-txt">
+                                                There are two types of Brother’s cartridges. Judging from
+                                                appearance, they can be named “hole-type” cartridge and
+                                                “non-hole-type”
+                                                cartridge. As the picture shown, a rectangle hole of the cartridge
+                                                appearing
+                                                in red square is “hole-type” cartridge; while no hole appearing
+                                                in red square is “non-hole-type” cartridge. According to this
+                                                noticeable feature, two types of cartridges can be differentiated
+                                                easily.
+                                                In fact,
+                                                there are three portions in the cartridge detected by electrical
+                                                signal, which are respectively first signal blocking portion, second
+                                                signal
+                                                blocking portion, third signal blocking portion. The hole is in the
+                                                second signal blocking portion. When the width of the second
+                                                signal blocking
+                                                portion is narrow, it can be seen as a “hole-type” cartridge;
+                                                while the width of the second signal blocking portion is wide,
+                                                it can be seen as a
+                                                “non-hole-type” cartridge.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <h4 class="panel-title">
+                                        <a role="button"
+                                           data-toggle="collapse"
+                                           data-parent="#titleH5"
+                                           href="#collapseH53"
+                                           aria-expanded="true"
+                                        >
+                                            Introduction of the optical sensor unit in cartridges
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseH53" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="well">
+                                            <div class="row">
+                                                <div class="col-xs-6 text-center">
+                                                    <img src="./images/commonQuestion/tool1.png" class="img-tool1">
+                                                    <p>Cartridge with hole</p>
+                                                </div>
+                                                <div class="col-xs-6 text-center">
+                                                    <img src="./images/commonQuestion/tool2.png" class="img-tool2">
+                                                    <p>Cartridge without hole</p>
+                                                </div>
+                                            </div>
+                                            <div class="well-txt">
+                                                There are two types of Brother’s cartridges. Judging from
+                                                appearance, they can be named “hole-type” cartridge and
+                                                “non-hole-type”
+                                                cartridge. As the picture shown, a rectangle hole of the cartridge
+                                                appearing
+                                                in red square is “hole-type” cartridge; while no hole appearing
+                                                in red square is “non-hole-type” cartridge. According to this
+                                                noticeable feature, two types of cartridges can be differentiated
+                                                easily.
+                                                In fact,
+                                                there are three portions in the cartridge detected by electrical
+                                                signal, which are respectively first signal blocking portion, second
+                                                signal
+                                                blocking portion, third signal blocking portion. The hole is in the
+                                                second signal blocking portion. When the width of the second
+                                                signal blocking
+                                                portion is narrow, it can be seen as a “hole-type” cartridge;
+                                                while the width of the second signal blocking portion is wide,
+                                                it can be seen as a
+                                                “non-hole-type” cartridge.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+                    <div class="row">
+                        <h3 class="h5-title">Related Document</h3>
+                        <div>
+                            <img src="./images/commonQuestion/pdf-h5.png" class="pdf-img">
+                            <a class="pdf-link">Upgrade Notice of Replacement Chips for Brother I Series</a>
+                        </div>
+                    </div>
 
-                <div class="row">
-                    <h3 class="title">
-                        Secondary clients cannot receive emails sent
-                        from the system.
-                    </h3>
-                    <div class="panel-group family-light" id="title5" role="tablist">
-                        <div class="panel panel-default">
-                            <div class="panel-heading" role="tab">
-                                <h4 class="panel-title ">
-                                    <a role="button"
-                                       data-toggle="collapse"
-                                       data-parent="#title5"
-                                       href="#collapse5"
-                                       aria-expanded="true"
-                                    >
-                                        -After a secondary customer has been set up, he or she cannot receive e-mails
-                                        containing
-                                        information such as ID and password sent by the Unismart system.
-                                        <span class="down-circle"></span>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapse5" class="panel-collapse collapse" role="tabpanel">
-                                <div class="panel-body">
-                                    <div class="well">
-                                        <p class="well-txt">
-                                            A standard operating procedure, or SOP,
-                                            is a document that gives step-by-step instructions on how to complete a
-                                            task.
-                                            These procedures play a key role in business performance,
-                                            giving guidance on how to perform a task,
-                                            who is responsible for it, what resources are needed and and how frequently
-                                            it occurs.
-                                            A group of SOPs,
-                                            say for a department or an organization,
-                                            all come together in a standard operating procedures manual.
-                                            A complete manual should outline all of the organization’s tasks,
-                                            showing how individual functions work separately as well as together.
-                                        </p>
-                                        <div class="well-img">
-                                            <img src="./images/commonQuestion/img4.png" alt="">
-                                        </div>
-                                        <div>
-                                            <p class="download-txt">Attachment Download</p>
-                                            <img src="./images/commonQuestion/pdf.png" alt="">
-                                            <a href="" class="pdf-link">Application form</a>
-                                        </div>
-                                        <span class="close-btn">close</span>
-                                    </div>
+                    <div class="support-form">
+                        <p class="title">Support Center</p>
+                        <p class="tips">
+                            Need some help for product?
+                        </p>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="model" class="col-xs-2 control-label">
+                                    <img src="./images/videoCenter/search-icon.png" alt="">
+                                </label>
+                                <div class="col-xs-10 padding-r-15">
+                                    <input type="text" class="form-control" id="model"
+                                           placeholder="Enter Cartridge Model">
                                 </div>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <div class="text-center">
+                                    <button type="submit" class="submit-button">Search</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
             </div>
-
             <div class="col-xs-12 col-sm-3 content-right">
-                <div>
+                <div class="hidden-xs">
                     <img src="./images/commonQuestion/img1.png" class="top-img">
                     <img src="./images/commonQuestion/img3.png" class="bottom-img">
                 </div>
+                <div class="visible-xs">
+                    <img src="./images/commonQuestion/img1-h5.png" class="top-img">
+                    <img src="./images/commonQuestion/img3-h5.png" class="bottom-img">
+                </div>
             </div>
-
         </div>
     </div>
 </div>
