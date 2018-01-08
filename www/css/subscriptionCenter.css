@@ -304,6 +304,11 @@ body {
     vertical-align: middle;
     margin-right: 20px;
   }
+  .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content h4 img {
+    width: 24px;
+    height: 32px;
+    margin-right: 1rem;
+  }
   .subscriptionCenter-list .subscriptionCenter-list-content .subscriptionCenter-list-content-box .subscriptionCenter-list-content-box-right .subscriptionCenter-list-content-box-right-content p {
     font-size: 12px;
     color: #8c8c8c;
