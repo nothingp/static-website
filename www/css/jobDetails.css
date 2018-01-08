@@ -444,6 +444,7 @@ body {
   }
   .nothing-job-app .partner-list > a {
     margin-right: 30px;
+    display: inline-block;
   }
   .nothing-footer {
     max-width: 1280px;
