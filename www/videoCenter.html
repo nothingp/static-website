@@ -34,13 +34,32 @@
 
     <script>
         $(function () {
-            $('[data-toggle="popover"]').popover()
+            var bodyEle = $('body');
+            var videoModal = $('.video-center-modal');
+            var closeVideoBtn = $('.close-video-btn');
+            var videoImg = $('.img-video').find('img');
+            videoImg.click(function () {
+                $(bodyEle).css({ position: 'fixed' });
+                $(videoModal).find('video').attr({
+                    autoplay: true,
+                    src: $(this).attr("poster"),
+                    poster: $(this).attr("src")
+                });
+                $(videoModal).show();
+            })
+            closeVideoBtn.click(function () {
+                $(bodyEle).css({ position: 'static' });
+                $(videoModal).hide();
+                $(videoModal).find('video').attr({
+                    autoplay: false,
+                });
+            })
         })
     </script>
 </head>
 
 <body>
-<div class="container-fluid video-center">
+<div class="container-fluid video-center family-light">
     <div class="box-shadow-line">
         <nav class="navbar row">
 
@@ -94,15 +113,9 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="row video-item">
                             <div class="col-xs-5 col-sm-12 img-video">
-                                <!--<img src="./images/videoCenter/case01.png" class="img-responsive">-->
-                                <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                                src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                                allowfullscreen="">
-                                        </iframe>
-                                    </div>
-                                </div>
+                                <img src="./images/videoCenter/case01.png"
+                                     poster="https://images-tv.adobe.com/avp/vr/17da0fa7-490c-4daa-a14e-9507b290149a/a938ef1c-e04f-4a91-97c7-041ce1dc712a/a90309c9-92e5-4983-8765-da890b14d0f7_20171005062213.960x540at1200_h264.mp4"
+                                     class="img-responsive">
                             </div>
                             <div class="col-xs-7 col-sm-12 img-txt">
                                 <p class="txt-title">
@@ -120,15 +133,9 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="row video-item">
                             <div class="col-xs-5 col-sm-12 img-video">
-                                <!--<img src="./images/videoCenter/case02.png" class="img-responsive">-->
-                                <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                                src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                                allowfullscreen="">
-                                        </iframe>
-                                    </div>
-                                </div>
+                                <img src="./images/videoCenter/case02.png"
+                                     poster="http://www.w3school.com.cn//i/movie.ogg"
+                                     class="img-responsive">
                             </div>
                             <div class="col-xs-7 col-sm-12 img-txt">
                                 <p class="txt-title">
@@ -148,15 +155,9 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="row video-item">
                             <div class="col-xs-5 col-sm-12 img-video">
-                                <!--<img src="./images/videoCenter/case03.png" class="img-responsive">-->
-                                <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                                src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                                allowfullscreen="">
-                                        </iframe>
-                                    </div>
-                                </div>
+                                <img src="./images/videoCenter/case03.png"
+                                     poster="https://gw.alipayobjects.com/os/rmsportal/nGkbSRjfzHRDrKlDWDrY.mov"
+                                     class="img-responsive">
                             </div>
                             <div class="col-xs-7 col-sm-12 img-txt">
                                 <a href="#">
@@ -177,35 +178,9 @@
                     <div class="col-xs-12 col-sm-6">
                         <div class="row video-item">
                             <div class="col-xs-5 col-sm-12 img-video">
-                                <!--<img src="./images/videoCenter/case04.png" class="img-responsive">-->
-                                <div class="bs-example" data-example-id="responsive-embed-16by9-iframe-youtube">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item"
-                                                src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"
-                                                allowfullscreen="">
-                                        </iframe>
-                                    </div>
-                                </div>
-
-                                <!--<video src="media/bg.mp4"-->
-                                <!--width="100%"-->
-                                <!--controls-->
-                                <!--&gt;</video>-->
-                                <!--<video id="lightbox-anchor_html5_api"-->
-                                <!--autoplay-->
-                                <!--controls-->
-                                <!--data-video-id="5576435246001" data-account="1384193102001"-->
-                                <!--data-interactivityoverrideid="" data-componentid="lightbox-anchor"-->
-                                <!--data-player="NJgI8K0ie" data-embed="default" class="vjs-tech"-->
-                                <!--width="100%"-->
-                                <!--playsinline="playsinline"-->
-                                <!--tabindex="-1"-->
-                                <!--preload="auto"-->
-                                <!--aria-labelledby="vjs-dock-title-1"-->
-                                <!--aria-describedby="vjs-dock-description-2"-->
-                                <!--poster="https://httpscisco-a.akamaihd.net/1384193102001/1384193102001_5583560112001_5576435246001-vs.jpg?pubId=1384193102001&amp;videoId=5576435246001"-->
-                                <!--src="blob:https://www.cisco.com/0f80c1b7-5297-492d-9845-84d6d858136f">-->
-                                <!--</video>-->
+                                <img src="./images/videoCenter/case04.png"
+                                     poster="http://sedn.egret.com/video/egret-com/3d170630.mp4"
+                                     class="img-responsive">
                             </div>
                             <div class="col-xs-7 col-sm-12 img-txt">
                                 <p class="txt-title">
@@ -294,13 +269,41 @@
             </div>
         </div>
     </div>
-</div>
 
-<script>
-    $('.show-more').click(function () {
-        $('.video-center-list-content').toggleClass('show-all-box');
-        $(this).find('span').toggleClass('glyphicon-menu-down').toggleClass('glyphicon-menu-up');
-    });
-</script>
+    <div class="video-center-modal">
+        <div class="video-player">
+            <div class="video-panel">
+                <video allowairplay="Allow" controls></video>
+                <span class="close-video-btn"></span>
+                <div class="share-link">
+                    <span class="share-txt">SHARE TO</span>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <img src="./images/videoCenter/f.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <img src="./images/videoCenter/t.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/feed/" target="_blank">
+                                <img src="./images/videoCenter/in.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" target="_blank">
+                                <img src="./images/videoCenter/u.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+¬
 </body>
 </html>

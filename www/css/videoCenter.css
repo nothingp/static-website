@@ -1052,6 +1052,9 @@ body {
   .video-center-panel .video-item {
     margin-bottom: 1.5rem;
   }
+  .video-center-panel .video-item .img-video {
+    cursor: pointer;
+  }
   .video-center-panel .video-item .img-txt {
     padding-left: 1.5rem;
   }
@@ -1146,6 +1149,84 @@ body {
     font-size: 1.6rem;
     color: #8c8c8c;
     margin: 32px 0 28px;
+  }
+  .video-center-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(10, 10, 10, 0.8);
+    z-index: 99;
+    overflow-y: hidden;
+  }
+  .video-center-modal .video-player {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 100px 60px;
+  }
+  .video-center-modal .video-player video {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .video-center-modal .video-panel {
+    position: relative;
+  }
+  .video-center-modal .close-video-btn {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background: #fff;
+  }
+  .video-center-modal .close-video-btn:after,
+  .video-center-modal .close-video-btn:before {
+    background: #404040;
+    content: "";
+    height: 1rem;
+    width: 1px;
+    right: 1rem;
+    top: 6px;
+    position: absolute;
+    transform: rotate(45deg);
+  }
+  .video-center-modal .close-video-btn:before {
+    transform: rotate(-45deg);
+  }
+  .video-center-modal .share-link {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+  }
+  .video-center-modal .share-link * {
+    margin: 0;
+    padding: 0;
+  }
+  .video-center-modal .share-link .share-txt {
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #fff;
+    height: 37px;
+    line-height: 37px;
+    vertical-align: middle;
+  }
+  .video-center-modal .share-link ul {
+    vertical-align: middle;
+    display: inline-block;
+    list-style: none;
+  }
+  .video-center-modal .share-link ul li {
+    float: left;
+    margin-left: 10px;
   }
 }
 @media screen and (max-width: 767px) {
