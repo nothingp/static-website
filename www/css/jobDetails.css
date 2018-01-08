@@ -442,7 +442,7 @@ body {
   .nothing-job-app .partner-list {
     margin-bottom: 100px;
   }
-  .nothing-job-app .partner-list > img {
+  .nothing-job-app .partner-list > a {
     margin-right: 30px;
   }
   .nothing-footer {
