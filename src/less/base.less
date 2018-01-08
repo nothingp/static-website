@@ -43,6 +43,10 @@ body {
     overflow-y: auto;
 }
 
+.jumbotron p { //字体被加细化了，需要恢复
+    font-weight: normal;
+}
+
 .content-padding {
     padding-left: 20px;
     padding-right: 20px;
@@ -64,11 +68,11 @@ body {
     padding: 0;
 }
 
-.wrap-checkbox{
+.wrap-checkbox {
     position: relative;
-    width:20px;
-    height:20px;
-    display:inline-block;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
     vertical-align: middle;
     input[type=checkbox] {
         -webkit-appearance: none;
@@ -76,40 +80,40 @@ body {
         border: 1px solid #999;
         outline: 0;
         border-radius: 2px;
-        position:absolute;
-        width:100%;
-        height:100%;
-        top:0;
-        left:0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         //margin-left:-10px;
         //margin-top:-10px;
-        z-index:8999999;
+        z-index: 8999999;
     }
 
     input[type=checkbox]:checked {
         opacity: 0;
     }
-    input[type="checkbox"]+ .checkbox-span{
-        position:absolute;
-        display:inline-block;
-        width:20px;
-        height:20px;
+    input[type="checkbox"] + .checkbox-span {
+        position: absolute;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
     }
-    input[type="checkbox"]:checked+ .checkbox-span{
-        position:absolute;
-        top:0;
-        left:0;
-        display:inline-block;
-        width:20px;
-        height:20px;
+    input[type="checkbox"]:checked + .checkbox-span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
         //margin-left:-10px;
         //margin-top:-10px;
-        background:url('../images/common/checkbox.png') no-repeat;
-        background-size:100% 100% ;
+        background: url('../images/common/checkbox.png') no-repeat;
+        background-size: 100% 100%;
     }
-    input[type="checkbox"]:checked+ .checkbox-all-span{
-        background:url('../images/common/checkbox-all.png') no-repeat;
-        background-size:100% 100% ;
+    input[type="checkbox"]:checked + .checkbox-all-span {
+        background: url('../images/common/checkbox-all.png') no-repeat;
+        background-size: 100% 100%;
     }
 }
 
@@ -117,72 +121,87 @@ body {
 产品列表、订单中心color项图片
 *****/
 //背景图片容器
-.color-span{
+.color-span {
     display: inline-block;
-    width:26px;
-    height:30px;
+    width: 26px;
+    height: 30px;
     vertical-align: middle;
     position: relative;
-    top:-5px;
+    top: -5px;
 }
+
 //喷墨水滴状
-.airspay-bk{
+.airspay-bk {
     background: url("../images/common/color/airspay/BK.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-c{
+
+.airspay-c {
     background: url("../images/common/color/airspay/C.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-gy{
+
+.airspay-gy {
     background: url("../images/common/color/airspay/GY.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-lc{
+
+.airspay-lc {
     background: url("../images/common/color/airspay/LC.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-lm{
+
+.airspay-lm {
     background: url("../images/common/color/airspay/LM.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-m{
+
+.airspay-m {
     background: url("../images/common/color/airspay/M.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-r{
+
+.airspay-r {
     background: url("../images/common/color/airspay/R.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.airspay-y{
+
+.airspay-y {
     background: url("../images/common/color/airspay/Y.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
+
 //激光圆形
-.laser-bk{
+.laser-bk {
     background: url("../images/common/color/laser/BK.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.laser-c{
+
+.laser-c {
     background: url("../images/common/color/laser/C.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.laser-cmy{
+
+.laser-cmy {
     background: url("../images/common/color/laser/CMY.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.laser-kcmy{
+
+.laser-kcmy {
     background: url("../images/common/color/laser/KCMY.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.laser-m{
+
+.laser-m {
     background: url("../images/common/color/laser/M.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
-.laser-y{
+
+.laser-y {
     background: url("../images/common/color/laser/Y.png") no-repeat;
-    background-size:100% 100%;
+    background-size: 100% 100%;
 }
+
 /********
 产品列表、订单中心color项图片 end
 *****/

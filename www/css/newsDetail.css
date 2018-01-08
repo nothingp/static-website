@@ -15,6 +15,9 @@ body {
   overflow: hidden;
   overflow-y: auto;
 }
+.jumbotron p {
+  font-weight: normal;
+}
 .content-padding {
   padding-left: 20px;
   padding-right: 20px;
@@ -68,11 +71,11 @@ body {
   width: 20px;
   height: 20px;
   background: url('../images/common/checkbox.png') no-repeat;
-  background-size: 100% 100% ;
+  background-size: 100% 100%;
 }
 .wrap-checkbox input[type="checkbox"]:checked + .checkbox-all-span {
   background: url('../images/common/checkbox-all.png') no-repeat;
-  background-size: 100% 100% ;
+  background-size: 100% 100%;
 }
 /********
 产品列表、订单中心color项图片
