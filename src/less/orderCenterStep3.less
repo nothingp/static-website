@@ -293,19 +293,24 @@
             div {
                 text-align: right;
             }
-            .btn-default {
+            .handle-btn {
+                display: inline-block;
+                text-align: center;
                 width: 134px;
+                height: 37px;
+                line-height: 37px;
                 border-radius: 4px;
                 color: #2f87c4;
-                margin: 0 30px 0 10px;
-            }
-            .btn-primary {
-                width: 134px;
-                border-radius: 4px;
-                border: 1px solid #fff;
-                background: #2f87c4;
-                &:hover {
-                    background: darken(#2f87c4, 10%);
+                border: solid 1px #ffffff;
+                margin-right: 30px;
+                &:first-child {
+                    margin-right: 10px;
+                }
+                background: #fff;
+                &:hover, &:focus {
+                    color: #fff;
+                    text-decoration: none;
+                    background: #2f87c4;
                 }
             }
         }
