@@ -1406,6 +1406,9 @@ body {
     height: 400px;
     border-radius: 0;
   }
+  .nothing-jumbotron-bg.jumbotron p {
+    font-weight: normal;
+  }
   .nothing-jumbotron-bg.jumbotron .bg-media {
     background-image: url(../images/bg.png);
     background-attachment: fixed;
