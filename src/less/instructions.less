@@ -1,0 +1,673 @@
+@import "variables.less";
+@import "base.less";
+
+//公共样式
+
+//pc 展示开始。。。
+@media screen and (min-width: @screen-sm-min) {
+  //768- sm->lg
+  .subscriptionCenter-navbar {
+    height: 110px;
+
+    background: #f5f5f5;
+  }
+
+  //首屏页面
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    height: 280px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .subscriptionCenter-tabBar {
+    //height: 64px;
+    background: rgba(47, 136, 196, 1);
+    nav.navbar-default {
+      //height: 64px;
+      padding: 0 240px;
+      background: rgba(47, 136, 196, 1);
+      border: none;
+      margin-bottom: 0;
+      .navbar-nav {
+        .active {
+          a {
+            color: #fff;
+            background: rgba(47, 136, 196, 1);
+          }
+        }
+        a {
+          color: #a4c7de;
+        }
+        li {
+          //width: 90px;
+        }
+      }
+      .container-fluid {
+        background: rgba(47, 136, 196, 1);
+      }
+    }
+
+  }
+
+  .instructions-content {
+    max-width: 1280px;
+    margin: 50px auto 50px auto;
+    .instructions-content-left {
+      padding-left: 0;
+      padding-right: 20px;
+      .instructions-content-left-header {
+        .instructions-content-left-header-left{
+          .instructions-content-left-header-left-up{
+            margin-bottom:34px;
+            .instructions-content-left-header-left-up-left{
+              width:75px;
+              height:75px;
+              display: inline-block;
+              float:left;
+              margin-right:20px;
+              border-radius: 4px;
+              overflow: hidden;
+              img{
+                width:100%;
+                height:100%;
+              }
+            }
+            .instructions-content-left-header-left-up-right{
+              display: inline-block;
+              float:left;
+              h4{
+                font-family: ﻿CiscoSans;
+                font-size: 24px;
+                font-weight: normal;
+                color: #333333;
+              }
+              p{
+                //font-family: ﻿CiscoSans-ExtraLight;
+                font-size: 16px;
+                line-height: 24px;
+                color: #8c8c8c;
+              }
+            }
+          }
+          .instructions-content-left-header-left-down{
+            .wrap-one{
+              height:40px;
+              line-height:40px;
+              margin-bottom:30px;
+            }
+            .instructions-content-left-header-left-down-left{
+              label{
+                //font-family: ﻿CiscoSans-ExtraLight;
+                font-size: 18px;
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                //line-height: 0px;
+                letter-spacing: 0px;
+                color: #666666;
+                margin-bottom:0;
+              }
+            }
+            .instructions-content-left-header-left-down-right{
+              select{
+                height:40px;
+                max-width:200px;
+              }
+            }
+          }
+        }
+        .instructions-content-left-header-right{
+          .instructions-content-left-header-right-img{
+            width:177px;
+            height:173px;
+            overflow: hidden;
+            margin:20px 0 0 90px;
+            img{
+              width:100%;
+              height:100%;
+            }
+          }
+        }
+      }
+      .firmwareUpgrades-content-left-form {
+        .firmwareUpgrades-content-left-form-search {
+          background: rgba(238, 238, 238, 1);
+          padding: 20px 100px;
+          position: relative;
+          .searcn-icon {
+            position:absolute;
+            top:12px;
+            left:25px;
+            width:18px;
+            height:18px;
+            color:#9e9e9e;
+            z-index: 1111;
+            background: url('../images/subscriptionCenter/search-icons.png') no-repeat 0 0;
+            background-size: 100% 100%;
+          }
+          input {
+            padding-left: 50px;
+            height: 40px;
+            //line-height:40px;
+            font-size: 16px;
+          }
+          button {
+            background: rgba(47, 136, 196, 1);
+            color: #fff;
+            width: 100px;
+            height: 40px;
+          }
+        }
+        .firmwareUpgrades-content-left-form-select {
+          margin-top: 16px;
+          margin-bottom: 2px;
+          .firmwareUpgrades-content-left-form-select-son {
+            .form-group {
+              position: relative;
+              margin-bottom: 0;
+              span {
+                position: absolute;
+                top: 15px;
+                right: 12px;
+                font-size: 14px;
+                color: #5a5a5a;
+              }
+              select {
+                height: 40px;
+                font-size: 16px;
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+              }
+            }
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              padding-right: 0;
+            }
+          }
+        }
+        .firmwareUpgrades-content-left-form-table {
+          table {
+            border-bottom: 1px solid #dcdcdc;
+            margin-bottom: 0;
+            td {
+              padding:0;
+              font-size: 16px;
+              font-weight: normal;
+              font-style: normal;
+              line-height: 75px;
+              color: #666666;
+              text-align: center;
+              .table-yes {
+                color: #26b129;
+              }
+              .table-no {
+                color: #e72e2e;
+              }
+              a{
+                text-decoration:none;
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #666666;
+                &:hover{
+                  color: #86af49;
+                  text-decoration:underline;
+                }
+              }
+              img{
+                //width:100%;
+                //height:100%;
+                //vertical-align: top;
+                width:35px;
+                height:45px;
+              }
+              &:nth-of-type(1){
+                text-align: left;
+                padding-left:30px;
+              }
+            }
+            thead {
+              background: #f5f5f5;
+              tr {
+                line-height: 61px;
+                th {
+                  line-height: 61px;
+                  padding:0;
+                  width: 31px;
+                  height: 12px;
+                  font-weight:normal;
+                  font-family: ﻿CiscoSans;
+                  font-size: 16px;
+                  letter-spacing: 0px;
+                  color: #666666;
+                  text-align: center;
+                  border-bottom: none;
+                }
+              }
+            ;
+            }
+          }
+          .firmwareUpgrades-content-left-form-table-page {
+            .firmwareUpgrades-content-left-form-table-page-content {
+              padding: 20px 0;
+              .firmwareUpgrades-content-left-form-table-page-content-num {
+                padding: 0;
+                span {
+                  font-size: 14px;
+                  color: #666666;
+                }
+                select {
+                  display: inline-block;
+                  width: 50%;
+                  height: 24px;
+                  border-radius: 0;
+                  padding: 2px 6px;
+                  margin-top: 6px;
+                }
+              }
+              .firmwareUpgrades-content-left-form-table-page-content-pages {
+                padding-right: 0;
+                .nopadding {
+                  padding: 0;
+                  padding-top: 5px;
+                  margin-left: 2px;
+                }
+                .width15 {
+                  width: 24px;
+                  //display: inline-block;
+                }
+                .width25 {
+                  width: 25%;
+                  //display: inline-block;
+                }
+                button {
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  padding: 0;
+                  padding-top: 2px;
+                  border-style: none;
+                  background: #fff;
+                  border: 1px solid #999;
+                }
+                input {
+                  width: 100%;
+                  height: 24px;
+                  padding: 4px;
+                  line-height: 24px;
+                }
+                .showpages {
+                  span {
+                    display: inline-block;
+                    width: 100%;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #666666;
+                  }
+                }
+
+              }
+              .firmwareUpgrades-content-left-form-table-page-content-count {
+                padding-top: 8px;
+                font-size: 14px;
+                color: #666666;
+                padding-right: 0;
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    .firmwareUpgrades-content-right {
+      padding: 0;
+      padding-left: 10px;
+      .img-bottom {
+        margin-bottom:30px;
+        img {
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+
+  .subscriptionCenter-footer {
+    height: 777px;
+    background: #f5f5f5;
+  }
+
+}
+
+//手机展示开始。。。
+@media screen and (max-width: @screen-xs-max) {
+  //768-xs
+  .subscriptionCenter-navbar {
+    height: 50px;
+  }
+
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  .subscriptionCenter-tabBar {
+    //height: 64px;
+    background: rgba(47, 136, 196, 1);
+    nav.navbar-default {
+      //height: 64px;
+      background: rgba(47, 136, 196, 1);
+      border: none;
+      margin-bottom: 0;
+      .navbar-nav {
+        margin-bottom: 0;
+        //border-bottom: 1px solid #fff;
+        .active {
+          a {
+            color: #fff;
+            background: rgba(47, 136, 196, 1);
+          }
+        }
+        a {
+          color: #a4c7de;
+        }
+        li {
+
+        }
+        .dropdown {
+          text-align: center;
+          .dropdown-toggle {
+            color: #fff;
+            background: rgba(47, 136, 196, 1);
+            font-size: 1.8rem;
+            span {
+              font-size: 1.4rem;
+            }
+          }
+          .dropdown-menu {
+            li {
+              a {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+      .container-fluid {
+        background: rgba(47, 136, 196, 1);
+      }
+    }
+
+  }
+
+  .firmwareUpgrades-content {
+    padding: 0 2rem 1rem;
+    .firmwareUpgrades-content-left {
+      padding: 0;
+      .firmwareUpgrades-content-left-header {
+        h3 {
+          font-size: 2rem;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #333333;
+          margin-bottom: 3rem;
+        }
+        p {
+          font-size: 1.3rem;
+          letter-spacing: 0px;
+          line-height: 30px;
+          color: #666666;
+          margin-bottom: 90px;
+        }
+      }
+      .firmwareUpgrades-content-left-title {
+        h3 {
+          font-size: 2rem;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #333333;
+          margin-bottom: 5rem;
+        }
+      }
+      .firmwareUpgrades-content-left-form {
+        .firmwareUpgrades-content-left-form-search {
+          background: rgba(238, 238, 238, 1);
+          padding: .5rem 1rem;
+          position: relative;
+          .input-group {
+            width: 100%;
+          }
+          .searcn-icon {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            color: #666;
+            z-index: 1111;
+          }
+          input {
+            padding-left: 3rem;
+            font-size: 1rem;
+            width: 100%;
+          }
+        }
+        .firmwareUpgrades-content-left-form-select {
+          margin-top: 16px;
+          //margin-bottom:2px;
+          .firmwareUpgrades-content-left-form-select-son {
+            .form-group {
+              margin-bottom: .8rem;
+            }
+            .form-group {
+              margin-bottom: .8rem;
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+            padding: 0;
+          }
+        }
+        .firmwareUpgrades-content-left-form-table {
+          table {
+            border-bottom: 1px solid #dcdcdc;
+            margin-bottom: 0;
+            td {
+              font-size: .6rem;
+              font-weight: normal;
+              font-style: normal;
+              color: #666666;
+              text-align: center;
+              .table-yes {
+                color: #26b129;
+              }
+              .table-no {
+                color: #e72e2e;
+              }
+            }
+            thead {
+              background: rgba(238, 238, 238, 1);
+              tr {
+                line-height: 3rem;
+                th {
+                  line-height: 3rem;
+                  //padding:0 1rem;
+                  font-size: .6rem;
+                  font-weight: normal;
+                  font-style: normal;
+                  letter-spacing: 0px;
+                  color: #666666;
+                }
+              }
+            ;
+            }
+          }
+          .firmwareUpgrades-content-left-form-table-page {
+            .firmwareUpgrades-content-left-form-table-page-content {
+              padding: 20px 0;
+              .firmwareUpgrades-content-left-form-table-page-content-num {
+                padding: 0;
+                span {
+                  font-size: 14px;
+                  color: #666666;
+                }
+                select {
+                  display: inline-block;
+                  width: 50%;
+                }
+              }
+              .firmwareUpgrades-content-left-form-table-page-content-pages {
+                padding: 0;
+                .nopadding {
+                  padding: 0;
+                  padding-top: 5px;
+                  margin-left: 2px;
+                }
+                .width15 {
+                  width: 24px;
+                  //display: inline-block;
+                }
+                .width25 {
+                  width: 25%;
+                  //display: inline-block;
+                }
+                button {
+                  display: inline-block;
+                  width: 24px;
+                  height: 24px;
+                  padding: 0;
+                }
+                input {
+                  width: 100%;
+                  height: 24px;
+                  padding: 2px;
+                }
+                .showpages {
+                  span {
+                    display: inline-block;
+                    width: 100%;
+                    height: 24px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #666666;
+                  }
+                }
+
+              }
+              .firmwareUpgrades-content-left-form-table-page-content-count {
+                padding-top: 8px;
+                font-size: 14px;
+                color: #666666;
+              }
+            }
+          }
+          .subscriptionCenter-list-button {
+            width: 100%;
+            height: 4rem;
+            margin: 2rem 0rem;
+            button {
+              width: 100%;
+              height: 100%;
+              background: #fff;
+              border: 1px solid #e5e5e5;
+              i {
+                color: #999;
+                font-style: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+    .firmwareUpgrades-content-right {
+      padding: 0;
+      .subscribe-form,
+      .support-form {
+        margin-bottom: 1.5rem;
+        border: 1px solid #E4E4E4;
+        padding: 1rem;
+        .form-group {
+          margin-bottom: 1rem;
+        }
+        label {
+          padding: 0;
+          text-align: right;
+        }
+        .title {
+          padding-left: 1rem;
+          position: relative;
+          &:before {
+            display: block;
+            content: '';
+            width: .3rem;
+            height: 2rem;
+            background: #2f88c4;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -1rem;
+          }
+          &:after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #E4E4E4;
+            position: absolute;
+            left: 0;
+            bottom: -1rem;
+          }
+        }
+        .tips {
+          margin: 20px 0;
+          font-size: 1.2rem;
+          color: #8c8c8c;
+        }
+      }
+
+      .img-bottom {
+        img {
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  .subscriptionCenter-list {
+    .subscriptionCenter-list-button {
+      width: 80px;
+      height: 25px;
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      bottom: -25px;
+      border-radius: 0px 0px 4px 4px;
+      overflow: hidden;
+      button {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(220, 220, 220, 1);
+        span {
+          color: #fff;
+          font-size: 20px;
+          position: relative;
+          top: -4px;
+        }
+      }
+    }
+  }
+
+  .subscriptionCenter-footer {
+    height: 449px;
+    background: #f5f5f5;
+  }
+}
