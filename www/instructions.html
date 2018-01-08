@@ -46,7 +46,7 @@
 
 <body>
 <div class="container-fluid instructions subscriptionCenter">
-    <div class="subscriptionCenter-navbar">
+    <div class="subscriptionCenter-navbar navbar">
     </div>
 
     <div class="subscriptionCenter-tabBar">
@@ -55,22 +55,26 @@
 
                 <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
                 <ul class="nav navbar-nav">
-                    <li class="active hidden-xs"><a href="#">FIRMWARE UPGRADES <span
+                    <li class="active hidden-xs"><a href="#">TECHNICAL SUPPORT <span
                             class="sr-only">(current)</span></a></li>
-                    <li class="hidden-xs"><a href="#">Apex Support</a></li>
-                    <li class="hidden-xs"><a href="#">Firmware Status</a></li>
-                    <!--<li class="hidden-xs"><a href="#">Newsletters</a></li>-->
+                    <li class="hidden-xs"><a href="#">Upgrade Notification</a></li>
+                    <li class="hidden-xs"><a href="#">Download & Drives</a></li>
+                    <li class="hidden-xs"><a href="#">FAQ</a></li>
+                    <li class="hidden-xs"><a href="#">Warranty Information</a></li>
+                    <li class="hidden-xs"><a href="#">Contact Unismart</a></li>
                     <li class="dropdown hidden-sm hidden-md hidden-lg">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false">SUPPORT <span class="glyphicon glyphicon-menu-down"></span></a>
+                           aria-expanded="false">TECHNICAL SUPPORT <span class="glyphicon glyphicon-menu-down"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">FIRMWARE UPGRADES</a></li>
+                            <li><a href="#">Upgrade Notification</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Apex Support</a></li>
+                            <li><a href="#">Download & Drives</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Firmware Status</a></li>
-                            <!--<li role="separator" class="divider"></li>-->
-                            <!--<li><a href="#">Newsletters</a></li>-->
+                            <li><a href="#">FAQ</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Warranty Information</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Contact Unismart</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -86,10 +90,10 @@
              class="hidden-sm hidden-md hidden-lg img-responsive">
     </div>
 
-    <div class="instructions-content row">
+    <div class="instructions-content row common-question-panel">
 
-        <div class="instructions-content-left col-xs-12 col-sm-9">
-            <div class="instructions-content-left-header clearfix">
+        <div class="instructions-content-left col-xs-12 col-sm-9 ">
+            <div class="instructions-content-left-header clearfix hidden-xs">
                 <div class="instructions-content-left-header-left col-xs-6 no-padding">
                     <div class="instructions-content-left-header-left-up clearfix">
                         <div class="instructions-content-left-header-left-up-left">
@@ -102,27 +106,58 @@
                     </div>
                     <div class="instructions-content-left-header-left-down clearfix">
                         <div class="wrap-one">
-                            <div class="instructions-content-left-header-left-down-left col-xs-6 no-padding">
+                            <div class="instructions-content-left-header-left-down-left col-sm-6 col-xs-12 no-padding">
                                 <label class="family-light">Select a Model</label>
                             </div>
-                            <div class="instructions-content-left-header-left-down-right col-xs-6 no-padding">
-                                <select class="selectpicker form-control">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
+                            <div class="instructions-content-left-header-left-down-right col-sm-6 col-xs-12 no-padding">
+                                <!--<select class="selectpicker form-control">-->
+                                    <!--<option>Mustard</option>-->
+                                    <!--<option>Ketchup</option>-->
+                                    <!--<option>Relish</option>-->
+                                <!--</select>-->
+                                <div class="dropdown select-like">
+                                    <button
+                                            class="btn btn-lg dropdown-toggle btn-block"
+                                            type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                    >
+                                        <span id="selectModel">Unismart II</span>
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="modelList">
+                                        <li value="china"><a href="javascript:;">Unismart II</a></li>
+                                        <li value="germany"><a href="javascript:;">Germany</a></li>
+                                        <li value="france"><a href="javascript:;">France</a></li>
+                                        <li value="italy"><a href="javascript:;">Italy</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="wrap-one">
-                            <div class="instructions-content-left-header-left-down-left col-xs-6 no-padding">
+                        <div class="wrap-one hidden-xs">
+                            <div class="instructions-content-left-header-left-down-left col-sm-6 col-xs-12 no-padding">
                                 <label class="family-light">Select a category</label>
                             </div>
-                            <div class="instructions-content-left-header-left-down-right col-xs-6 no-padding">
-                                <select class="selectpicker form-control">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </select>
+                            <div class="instructions-content-left-header-left-down-right col-sm-6 col-xs-12 no-padding">
+                                <div class="dropdown select-like">
+                                    <button
+                                            class="btn btn-lg dropdown-toggle btn-block"
+                                            type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                    >
+                                        <span id="selectModel2">Unismart II</span>
+                                        <span class="glyphicon glyphicon-menu-down"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" id="modelList2">
+                                        <li value="china"><a href="javascript:;">Unismart II</a></li>
+                                        <li value="germany"><a href="javascript:;">Germany</a></li>
+                                        <li value="france"><a href="javascript:;">France</a></li>
+                                        <li value="italy"><a href="javascript:;">Italy</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -134,7 +169,45 @@
                 </div>
             </div>
 
-            <div class="firmwareUpgrades-content-left-form">
+            <div class="row mar-b-60 visible-xs">
+                <div class="col-xs-2">
+                    <img src="./images/commonQuestion/icon-h5.png" class="icon-img img-responsive">
+                </div>
+                <div class="col-xs-7">
+                    <h3 class="icon-title">Download & Drives</h3>
+                    <p class="value family-light">
+                        Get the latest drivers and software for your Unismart.
+                    </p>
+                </div>
+                <div class="col-xs-3 text-center">
+                    <img src="./images/commonQuestion/img2.png" class="img-tool img-responsive">
+                </div>
+                <div class="col-xs-12">
+                    <div class="select-title">
+                        Select a Model
+                    </div>
+                    <div class="dropdown select-like">
+                        <button
+                                class="btn btn-lg dropdown-toggle btn-block"
+                                type="button"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                        >
+                            <span id="selectModel">Unismart II</span>
+                            <span class="glyphicon glyphicon-menu-down"></span>
+                        </button>
+                        <ul class="dropdown-menu" id="modelList">
+                            <li value="china"><a href="javascript:;">Unismart II</a></li>
+                            <li value="germany"><a href="javascript:;">Germany</a></li>
+                            <li value="france"><a href="javascript:;">France</a></li>
+                            <li value="italy"><a href="javascript:;">Italy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="firmwareUpgrades-content-left-form hidden-xs">
                 <div class="firmwareUpgrades-content-left-form-table">
                     <table class="table table-hover table-responsive">
                         <thead>
@@ -150,7 +223,7 @@
                                     <a href="#">Unismart II System Structure</a>
                                 </td>
                                 <td>
-                                    <img src="./images/subscriptionCenter/bg-new.png" alt="">
+                                    <img src="./images/instructions/pdf-icon.png" alt="">
                                 </td>
                                 <td>2017-07-20</td>
                             </tr>
@@ -159,7 +232,7 @@
                                     <a href="#">Unismart II System Structure</a>
                                 </td>
                                 <td>
-                                    <img src="./images/subscriptionCenter/bg-new.png" alt="">
+                                    <img src="./images/instructions/xls-icon.png" alt="">
                                 </td>
                                 <td>2017-07-20</td>
                             </tr>
@@ -168,7 +241,7 @@
                                     <a href="#">Unismart II System Structure</a>
                                 </td>
                                 <td>
-                                    <img src="./images/subscriptionCenter/bg-new.png" alt="">
+                                    <img src="./images/instructions/doc-icon.png" alt="">
                                 </td>
                                 <td>2017-07-20</td>
                             </tr>
@@ -177,7 +250,7 @@
                                     <a href="#">Unismart II System Structure</a>
                                 </td>
                                 <td>
-                                    <img src="./images/subscriptionCenter/bg-new.png" alt="">
+                                    <img src="./images/instructions/zip-icon.png" alt="">
                                 </td>
                                 <td>2017-07-20</td>
                             </tr>
@@ -186,7 +259,7 @@
                                     <a href="#">Unismart II System Structure</a>
                                 </td>
                                 <td>
-                                    <img src="./images/subscriptionCenter/bg-new.png" alt="">
+                                    <img src="./images/instructions/pdf-icon.png" alt="">
                                 </td>
                                 <td>2017-07-20</td>
                             </tr>
@@ -243,13 +316,79 @@
                     </div>
                 </div>
             </div>
+
+            <div class="firmwareUpgrades-content-left-form-m visible-xs">
+                <div class="firmwareUpgrades-content-left-form-m-one">
+                    <div class="col-xs-2">
+                        <img src="./images/instructions/pdf-icon.png" alt="">
+                    </div>
+                    <div class="col-xs-7">
+                        <span class="family-light">Unismart II System Structure </span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="family-light">2017-07-20</span>
+                    </div>
+                </div>
+                <div class="firmwareUpgrades-content-left-form-m-one">
+                    <div class="col-xs-2">
+                        <img src="./images/instructions/pdf-icon.png" alt="">
+                    </div>
+                    <div class="col-xs-7">
+                        <span class="family-light">Unismart II System Structure </span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="family-light">2017-07-20</span>
+                    </div>
+                </div>
+                <div class="firmwareUpgrades-content-left-form-m-one">
+                    <div class="col-xs-2">
+                        <img src="./images/instructions/pdf-icon.png" alt="">
+                    </div>
+                    <div class="col-xs-7">
+                        <span class="family-light">Unismart II System Structure </span>
+                    </div>
+                    <div class="col-xs-3">
+                        <span class="family-light">2017-07-20</span>
+                    </div>
+                </div>
+                <div class="subscriptionCenter-list-button hidden-sm hidden-md hidden-lg">
+                    <button type="button" class="btn show-more">
+                        <i class="">Learn More</i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="support-form">
+                <p class="title">Support Center</p>
+                <p class="tips">
+                    Need some help for product?
+                </p>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="model" class="col-xs-2 control-label">
+                            <img src="./images/videoCenter/search-icon.png" alt="">
+                        </label>
+                        <div class="col-xs-10 padding-r-15">
+                            <input type="text" class="form-control" id="model"
+                                   placeholder="Enter Cartridge Model">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="text-center">
+                            <button type="submit" class="submit-button">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="firmwareUpgrades-content-right col-xs-12 col-sm-3">
+        <div class="instructions-content-right col-xs-12 col-sm-3">
             <div class="img-bottom">
-                <img src="./images/instructions/right-one.jpg" class="img-responsive">
+                <img src="./images/instructions/right-one.jpg" class="img-responsive top-img hidden-xs">
+                <img src="./images/commonQuestion/img1-h5.png" class="top-img visible-xs">
             </div>
             <div class="img-bottom">
-                <img src="./images/instructions/right-two.jpg" class="img-responsive">
+                <img src="./images/instructions/right-two.jpg" class="img-responsive bottom-img hidden-xs">
+                <img src="./images/commonQuestion/img3-h5.png" class="bottom-img visible-xs">
             </div>
         </div>
 

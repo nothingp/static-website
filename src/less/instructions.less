@@ -26,18 +26,18 @@
 
   .subscriptionCenter-tabBar {
     //height: 64px;
-    background: rgba(47, 136, 196, 1);
+    background: #86af49;
     nav.navbar-default {
       //height: 64px;
       padding: 0 240px;
-      background: rgba(47, 136, 196, 1);
+      background: #86af49;
       border: none;
       margin-bottom: 0;
       .navbar-nav {
         .active {
           a {
             color: #fff;
-            background: rgba(47, 136, 196, 1);
+            background: #86af49;
           }
         }
         a {
@@ -48,7 +48,7 @@
         }
       }
       .container-fluid {
-        background: rgba(47, 136, 196, 1);
+        background: #86af49;
       }
     }
 
@@ -114,9 +114,48 @@
               }
             }
             .instructions-content-left-header-left-down-right{
-              select{
-                height:40px;
-                max-width:200px;
+              .select-like {
+                padding-left: 0;
+                padding-right: 35px;
+                .btn-lg {
+                  background: #fff;
+                  padding: 0;
+                  font-size: 18px;
+                  height: 40px;
+                  padding-left: 17px;
+                  text-align: left;
+                  color: #999999;
+                  width: 200px;
+                  max-width:200px;
+                  border-radius: 2px;
+                  border: solid 1px #bfbfbf;
+                }
+                .glyphicon.glyphicon-menu-down {
+                  position: absolute;
+                  top: 50%;
+                  right: 45px;
+                  margin-top: -8px;
+                  font-size: 14px;
+                }
+                .dropdown-menu {
+                  width: 100%;
+                  margin: 0;
+                  padding: 0;
+                  li {
+                    a {
+                      color: #999999;
+                      padding: 0;
+                      padding-left: 20px;
+                      height: 40px;
+                      line-height: 40px;
+                      font-size: 16px;
+                      &:hover {
+                        background: #686868;
+                        color: #fff;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -350,45 +389,34 @@
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-xs-max) {
-  //768-xs
   .subscriptionCenter-navbar {
-    height: 50px;
-  }
-
-  .subscriptionCenter-banner {
     padding: 0;
     margin-bottom: 0;
     border-radius: 0;
   }
 
   .subscriptionCenter-tabBar {
-    //height: 64px;
-    background: rgba(47, 136, 196, 1);
+    background: #86af49;
     nav.navbar-default {
-      //height: 64px;
-      background: rgba(47, 136, 196, 1);
+      background: #86af49;
       border: none;
       margin-bottom: 0;
       .navbar-nav {
         margin-bottom: 0;
-        //border-bottom: 1px solid #fff;
         .active {
           a {
             color: #fff;
-            background: rgba(47, 136, 196, 1);
+            background: #86af49;
           }
         }
         a {
-          color: #a4c7de;
-        }
-        li {
-
+          color: #c5dea4;
         }
         .dropdown {
           text-align: center;
           .dropdown-toggle {
             color: #fff;
-            background: rgba(47, 136, 196, 1);
+            background: #86af49;
             font-size: 1.8rem;
             span {
               font-size: 1.4rem;
@@ -404,169 +432,105 @@
         }
       }
       .container-fluid {
-        background: rgba(47, 136, 196, 1);
+        background: #86af49;
       }
     }
 
   }
 
-  .firmwareUpgrades-content {
-    padding: 0 2rem 1rem;
-    .firmwareUpgrades-content-left {
+  .common-question-panel {
+    padding: 1.5rem;
+    margin:0;
+    * {
       padding: 0;
-      .firmwareUpgrades-content-left-header {
-        h3 {
-          font-size: 2rem;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #333333;
-          margin-bottom: 3rem;
-        }
-        p {
-          font-size: 1.3rem;
-          letter-spacing: 0px;
-          line-height: 30px;
+      margin: 0;
+    }
+    //.box-content {
+      .instructions-content-left {
+        .select-title {
+          padding: 0;
+          font-size: 18px;
           color: #666666;
-          margin-bottom: 90px;
+          margin-bottom: 1rem;
         }
-      }
-      .firmwareUpgrades-content-left-title {
-        h3 {
-          font-size: 2rem;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #333333;
-          margin-bottom: 5rem;
-        }
-      }
-      .firmwareUpgrades-content-left-form {
-        .firmwareUpgrades-content-left-form-search {
-          background: rgba(238, 238, 238, 1);
-          padding: .5rem 1rem;
-          position: relative;
-          .input-group {
+        .select-like {
+          .btn-lg {
+            background: #fff;
+            padding: 0;
+            font-size: 18px;
+            height: 40px;
+            padding-left: 17px;
+            text-align: left;
+            color: #999999;
             width: 100%;
+            border-radius: 2px;
+            border: solid 1px #bfbfbf;
           }
-          .searcn-icon {
+          .glyphicon.glyphicon-menu-down {
             position: absolute;
-            top: 1rem;
-            left: 1rem;
-            color: #666;
-            z-index: 1111;
+            top: 50%;
+            right: 15px;
+            margin-top: -8px;
+            font-size: 14px;
           }
-          input {
-            padding-left: 3rem;
-            font-size: 1rem;
+          .dropdown-menu {
             width: 100%;
-          }
-        }
-        .firmwareUpgrades-content-left-form-select {
-          margin-top: 16px;
-          //margin-bottom:2px;
-          .firmwareUpgrades-content-left-form-select-son {
-            .form-group {
-              margin-bottom: .8rem;
-            }
-            .form-group {
-              margin-bottom: .8rem;
-              &:last-child {
-                margin-bottom: 0;
+            margin: 0;
+            padding: 0;
+            li {
+              a {
+                color: #999999;
+                padding: 0;
+                padding-left: 20px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                &:hover {
+                  background: #686868;
+                  color: #fff;
+                }
               }
             }
-            padding: 0;
           }
         }
-        .firmwareUpgrades-content-left-form-table {
-          table {
-            border-bottom: 1px solid #dcdcdc;
-            margin-bottom: 0;
-            td {
-              font-size: .6rem;
+
+        .icon-img {
+          background-color: #86af49;
+          border-radius: .4rem;
+          border: solid 1px #eeeeee;
+        }
+        .icon-title {
+          margin: .5rem 0;
+          padding-left: 1rem;
+          font-size: 1.5rem;
+          color: #333333;
+        }
+        .value {
+          padding-left: 1rem;
+          font-size: 1.2rem;
+          line-height: 18px;
+          color: #8c8c8c;
+        }
+
+        .firmwareUpgrades-content-left-form-m{
+          .firmwareUpgrades-content-left-form-m-one{
+            height:8rem;
+            line-height:8rem;
+            background-color: rgba(255, 255, 255, 1);
+            border: solid 1px rgba(229, 229, 229, 1);
+            text-align: center;
+            margin-top:2.5rem;
+            img{
+              width:3.5rem;
+              height:4.5rem;
+            }
+            span{
+              //font-family: ﻿@font-sub-family;
+              font-size: 14px;
               font-weight: normal;
               font-style: normal;
-              color: #666666;
-              text-align: center;
-              .table-yes {
-                color: #26b129;
-              }
-              .table-no {
-                color: #e72e2e;
-              }
-            }
-            thead {
-              background: rgba(238, 238, 238, 1);
-              tr {
-                line-height: 3rem;
-                th {
-                  line-height: 3rem;
-                  //padding:0 1rem;
-                  font-size: .6rem;
-                  font-weight: normal;
-                  font-style: normal;
-                  letter-spacing: 0px;
-                  color: #666666;
-                }
-              }
-            ;
-            }
-          }
-          .firmwareUpgrades-content-left-form-table-page {
-            .firmwareUpgrades-content-left-form-table-page-content {
-              padding: 20px 0;
-              .firmwareUpgrades-content-left-form-table-page-content-num {
-                padding: 0;
-                span {
-                  font-size: 14px;
-                  color: #666666;
-                }
-                select {
-                  display: inline-block;
-                  width: 50%;
-                }
-              }
-              .firmwareUpgrades-content-left-form-table-page-content-pages {
-                padding: 0;
-                .nopadding {
-                  padding: 0;
-                  padding-top: 5px;
-                  margin-left: 2px;
-                }
-                .width15 {
-                  width: 24px;
-                  //display: inline-block;
-                }
-                .width25 {
-                  width: 25%;
-                  //display: inline-block;
-                }
-                button {
-                  display: inline-block;
-                  width: 24px;
-                  height: 24px;
-                  padding: 0;
-                }
-                input {
-                  width: 100%;
-                  height: 24px;
-                  padding: 2px;
-                }
-                .showpages {
-                  span {
-                    display: inline-block;
-                    width: 100%;
-                    height: 24px;
-                    line-height: 24px;
-                    text-align: center;
-                    color: #666666;
-                  }
-                }
-
-              }
-              .firmwareUpgrades-content-left-form-table-page-content-count {
-                padding-top: 8px;
-                font-size: 14px;
-                color: #666666;
-              }
+              font-stretch: normal;
+              color: #595959;
             }
           }
           .subscriptionCenter-list-button {
@@ -585,89 +549,79 @@
             }
           }
         }
-      }
-    }
-    .firmwareUpgrades-content-right {
-      padding: 0;
-      .subscribe-form,
-      .support-form {
-        margin-bottom: 1.5rem;
-        border: 1px solid #E4E4E4;
-        padding: 1rem;
-        .form-group {
-          margin-bottom: 1rem;
-        }
-        label {
-          padding: 0;
-          text-align: right;
-        }
-        .title {
-          padding-left: 1rem;
-          position: relative;
-          &:before {
-            display: block;
-            content: '';
-            width: .3rem;
-            height: 2rem;
-            background: #2f88c4;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            margin-top: -1rem;
+        .support-form {
+          margin: 1.5rem 0;
+          border: 1px solid #E4E4E4;
+          padding: 1rem;
+          .form-group {
+            margin-bottom: 1rem;
           }
-          &:after {
-            display: block;
-            content: '';
-            width: 100%;
-            height: 1px;
-            background: #E4E4E4;
-            position: absolute;
-            left: 0;
-            bottom: -1rem;
+          label {
+            text-align: right;
+          }
+          .title {
+            padding-left: 1rem;
+            position: relative;
+            &:before {
+              display: block;
+              content: '';
+              width: .3rem;
+              height: 2rem;
+              background: #86af49;
+              position: absolute;
+              left: 0;
+              top: 50%;
+              margin-top: -1rem;
+            }
+            &:after {
+              display: block;
+              content: '';
+              width: 100%;
+              height: 1px;
+              background: #E4E4E4;
+              position: absolute;
+              left: 0;
+              bottom: -1rem;
+            }
+          }
+          .tips {
+            margin: 20px 0;
+            font-size: 1.2rem;
+            color: #8c8c8c;
+          }
+          .submit-button {
+            width: 120px;
+            height: 42px;
+            line-height: 42px;
+            background-color: #86af49;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 1.8rem;
+          }
+          .padding-r-15 {
+            padding-right: 1.5rem;
+          }
+          input {
+            padding-left: 1rem;
           }
         }
-        .tips {
-          margin: 20px 0;
-          font-size: 1.2rem;
-          color: #8c8c8c;
-        }
       }
-
-      .img-bottom {
-        img {
+      .instructions-content-right {
+        padding: 0;
+        .top-img {
           width: 100%;
-          border-radius: 5px;
+          background-color: #86af49;
+          border-radius: .3rem;
+          margin-bottom: 1.5rem;
+        }
+        .bottom-img {
+          width: 100%;
+          background-color: #000;
+          border-radius: .5rem;
+          border: solid 1px #e5e5e5;
         }
       }
-    }
-  }
 
-  .subscriptionCenter-list {
-    .subscriptionCenter-list-button {
-      width: 80px;
-      height: 25px;
-      position: absolute;
-      left: 50%;
-      margin-left: -40px;
-      bottom: -25px;
-      border-radius: 0px 0px 4px 4px;
-      overflow: hidden;
-      button {
-        width: 100%;
-        height: 100%;
-        background-color: rgba(220, 220, 220, 1);
-        span {
-          color: #fff;
-          font-size: 20px;
-          position: relative;
-          top: -4px;
-        }
-      }
-    }
-  }
-
-  .subscriptionCenter-footer {
-    height: 449px;
-    background: #f5f5f5;
+    //}
   }
 }
