@@ -200,7 +200,7 @@
             display:inline-block;
             width:48px;
             height:48px;
-            border-radius:50%;
+            //border-radius:50%;
             //border:solid 2px rgba(205, 205, 205, 1);
             vertical-align: middle;
             font-size:24px;
@@ -223,122 +223,228 @@
     }
   }
 
-  .subscriptionCenter-list {
+  .productList-content {
     max-width: 1280px;
     margin: 50px auto;
-    border-top: 1px solid #dcdcdc;
-    border-bottom: 1px solid #dcdcdc;
-    padding-bottom: 60px;
-    position: relative;
-    .subscriptionCenter-list-title{
-      h4{
+    .productList-content-header{
+      h3{
         font-size: 30px;
         font-weight: normal;
-        color: #333333;
-        margin: 40px 0;
+        line-height: 36px;
+        color: #000000;
+        margin-bottom:20px;
+      }
+      .productList-content-header-search{
+        //border-bottom:1px solid rgba(229, 229, 229, 1);
+        padding-bottom:10px;
+        .nopaddingleft{
+          padding-left:0;
+        }
+        .productList-content-header-search-right{
+          .productList-content-header-search-right{
+            .searcn-icon{
+              position:absolute;
+              top:12px;
+              left:25px;
+              color:#666;
+              z-index: 1111;
+            }
+            input{
+              padding-left:30px;
+            }
+          }
+          button{
+            background: rgba(47, 136, 196, 1);
+            color:#fff;
+            width:100px;
+          }
+        }
       }
     }
-    .subscriptionCenter-list-content{
-      transition: 2s;
-      //transition: height 2s;
-      //-webkit-transition: height 2s;
-      //transition: height 1s linear 2s;
-      ///* Firefox 4 */
-      //-moz-transition:height 1s linear 2s;
-      ///* Safari and Chrome */
-      //-webkit-transition:height 1s linear 2s;
-      ///* Opera */
-      //-o-transition:height 1s linear 2s;
-      height:350px;
-      overflow: hidden;
-      .subscriptionCenter-list-content-box{
-        padding: 0;
-        margin-bottom: 40px;
-        .subscriptionCenter-list-content-box-wrap{
-          padding: 0;
-          background-color: rgba(255, 255, 255, 1);
-          box-shadow: 0px 3px 7px 0px
-          rgba(0, 0, 0, 0.35);
-          border: solid 1px rgba(229, 229, 229, 1);
+    .productList-content-left{
+      padding:0;
+      .productList-content-left-header{
+        h3{
+          font-size: 24px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #333333;
+          margin-bottom:41px;
         }
-        .subscriptionCenter-list-content-box-left{
-          //width: 188px;
-          height: 325px;
-          padding: 0;
-          overflow: hidden;
-          img{
-            width: 100%;
-            height: auto;
-          }
+        p{
+          font-size: 18px;
+          letter-spacing: 0px;
+          line-height: 30px;
+          color: #666666;
+          margin-bottom:90px;
         }
-        .subscriptionCenter-list-content-box-right{
-          .subscriptionCenter-list-content-box-right-title{
-            padding-top: 35px;
-            padding-bottom: 22px;
-            border-bottom: solid 1px rgba(229, 229, 229, 1);
-            h4{
-              font-size: 26px;
-              letter-spacing: 0px;
-              color: #333333;
-            }
-            p{
+      }
+      .productList-content-left-title{
+        h3{
+          font-size: 24px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #333333;
+          margin-bottom:60px;
+        }
+      }
+      .productList-content-left-form{
+        .productList-content-left-form-table{
+          table{
+            border-bottom:1px solid #dcdcdc;
+            margin-bottom:0;
+            td{
+              padding-left:20px;
+              padding-right:20px;
               font-size: 16px;
-              color: #595959;
-            }
-          }
-          .subscriptionCenter-list-content-box-right-content{
-            h4{
-              i{
-                display: inline-block;
-                width: 24px;
-                height: 32px;
-                background: url('../images/subscriptionCenter/pdf-bg.png') no-repeat 0 0;
-                background-size: 100% 100%;
-                vertical-align: middle;
-                margin-right:20px;
+              font-weight: normal;
+              font-style: normal;
+              color: #666666;
+              height:140px;
+              line-height: 140px;
+              text-align: center;
+              img{
+                width:40px;
+                height:40px;
               }
-              font-size: 16px;
-              font-weight: normal;
-              color: #595959;
+              .circle{
+                display: inline-block;
+                width:24px;
+                height:24px;
+                -webkit-border-radius:50%;
+                -moz-border-radius:50%;
+                border-radius:50%;
+              }
+              .blue{
+                background: #01b0f1;
+                position:relative;
+                top:6px;
+              }
+              .printer-models{
+                display: inline-block;
+                vertical-align: middle;
+                p{
+                  line-height:30px;
+                  margin-bottom:0;
+                  text-align:left;
+                }
+              }
+              .buy-num{
+                span{
+                  display:inline-block;
+                  width:24px;
+                  height:24px;
+                  float:left;
+                  line-height: 24px;
+                  font-size:16px;
+                  border:1px solid #bebebe;
+                  border-radius:4px;
+                }
+                .num-dowm{
+                  background:#f5f5f5;
+                  color:#969696;
+                }
+                .num-up{
+                  background:#2f87c4;
+                  color:#fff;
+                }
+                input{
+                  display: inline-block;
+                  width:30px;
+                  height:30px;
+                  text-align: center;
+                }
+                button{
+                  width:26px;
+                  height:26px;
+                  margin:0;
+                  padding:0;
+                  border:none;
+                }
+              }
+              .cart-button{
+                width:34px;
+                height:34px;
+                background: url("../images/subscriptionCenter/cart-icon.jpg") no-repeat;
+                background-size: 100% 100%;
+                border:none;
+              }
             }
-            p{
-              font-size: 12px;
-              color: #8c8c8c;
-              margin-bottom: 20px;
-            }
-            .newslist-btn{
-              width: 100%;
-              font-size: 18px;
-              font-weight: normal;
+            thead{
+              background: rgba(238, 238, 238, 1);
+              tr{
+                line-height:61px;
+                th{
+                  line-height:61px;
+                  padding:0 20px;
+                  font-size: 16px;
+                  font-weight: normal;
+                  font-style: normal;
+                  letter-spacing: 0px;
+                  color: #666666;
+                  text-align: center;
+                }
+              };
             }
           }
-        }
-      }
-    }
-    .subscriptionCenter-list-content:hover{
-      //height:500px;
-    }
-    .show-all-box{
-      height:auto;
-    }
-    .subscriptionCenter-list-button{
-      width: 80px;
-      height:25px;
-      position:absolute;
-      left:50%;
-      margin-left:-40px;
-      bottom: -25px;
-      border-radius: 0px 0px 4px 4px;
-      overflow:hidden;
-      button{
-        width:100%;
-        height:100%;
-        background-color: rgba(220, 220, 220, 1);
-        span{
-          color:#fff;
-          font-size: 20px;
-          position:relative;
-          top:-4px;
+          .firmwareUpgrades-content-left-form-table-page{
+            .firmwareUpgrades-content-left-form-table-page-content{
+              padding:20px 0;
+              .firmwareUpgrades-content-left-form-table-page-content-num{
+                padding:0;
+                span{
+                  font-size: 14px;
+                  color: #666666;
+                }
+                select{
+                  display:inline-block;
+                  width:50%;
+                }
+              }
+              .firmwareUpgrades-content-left-form-table-page-content-pages{
+                padding:0;
+                .nopadding{
+                  padding:0;
+                  padding-top:5px;
+                  margin-left:2px;
+                }
+                .width15{
+                  width:24px;
+                  //display: inline-block;
+                }
+                .width25{
+                  width:25%;
+                  //display: inline-block;
+                }
+                button{
+                  display:inline-block;
+                  width:24px;
+                  height:24px;
+                  padding:0;
+                }
+                input{
+                  width:100%;
+                  height:24px;
+                }
+                .showpages{
+                  span{
+                    display: inline-block;
+                    width:100%;
+                    height:24px;
+                    line-height: 24px;
+                    text-align: center;
+                    color:#666666;
+                  }
+                }
+
+              }
+              .firmwareUpgrades-content-left-form-table-page-content-count{
+                padding-top:8px;
+                font-size: 14px;
+                color: #666666;
+              }
+            }
+          }
         }
       }
     }
