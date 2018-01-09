@@ -471,14 +471,14 @@ body {
     padding-right: 0;
     text-align: right;
   }
-  .instructions-content .firmwareUpgrades-content-right {
+  .instructions-content .instructions-content-right {
     padding: 0;
     padding-left: 10px;
   }
-  .instructions-content .firmwareUpgrades-content-right .img-bottom {
+  .instructions-content .instructions-content-right .img-bottom {
     margin-bottom: 30px;
   }
-  .instructions-content .firmwareUpgrades-content-right .img-bottom img {
+  .instructions-content .instructions-content-right .img-bottom img {
     border-radius: 5px;
     width: 100%;
   }
