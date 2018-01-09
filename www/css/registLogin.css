@@ -1161,6 +1161,8 @@ body {
   }
   .regist-login-form .account .subscription .check-txt {
     margin-left: 5px;
+    display: inline-block;
+    padding-right: 70%;
   }
   .regist-login-form .account .subscription .long-txt {
     margin-left: 30px;

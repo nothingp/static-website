@@ -1123,6 +1123,8 @@ body {
   }
   .user-center-form .newsletter .check-txt {
     margin-left: 5px;
+    display: inline-block;
+    padding-right: 70%;
   }
   .user-center-form .newsletter .long-txt {
     margin-left: 30px;

@@ -40,6 +40,24 @@
             $(countryList).click(function () {
                 $('#selectCountry').html($(this).find('a').html());
             })
+
+            var checkTxt = $('.check-txt');
+            var longTxt = $('.long-txt');
+            var input = $('.wrap-checkbox').find('input');
+            checkTxt.click(function () {
+                if ($(input).prop('checked')) {
+                    $(input).prop({ checked: false });
+                } else {
+                    $(input).prop({ checked: true });
+                }
+            })
+            longTxt.click(function () {
+                if ($(input).prop('checked')) {
+                    $(input).prop({ checked: false });
+                } else {
+                    $(input).prop({ checked: true });
+                }
+            })
         })
     </script>
 
