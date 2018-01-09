@@ -424,6 +424,9 @@ body {
     color: #595959;
     margin-bottom: 30px;
   }
+  .nothing-job-app .app-download span:hover {
+    color: #2f88c4;
+  }
   .nothing-job-app .download-btn > button {
     height: 45px;
     background-color: #2f88c4;
