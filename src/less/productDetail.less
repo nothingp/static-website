@@ -153,31 +153,22 @@
                     }
                 }
                 .count-handle {
-                    img {
-                        width: 20px;
-                        height: 20px;
-                        border-radius: 3px;
-                        &.minus {
-                            border: solid 1px #bebebe;
-                        }
-                        &.add {
-                            border: solid 1px #14517b;
-                        }
-                    }
                     input {
                         text-align: center;
-                        margin: 0 5px;
+                        margin: 0 8px;
                         width: 30px;
                         height: 30px;
+                        box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+                        border-radius: 3px;
+                        border: solid 1px #e5e5e5;
+                        &:focus {
+                            outline-offset: 0;
+                            outline: none;
+                        }
                     }
                     .btn-primary {
-                        margin-left: 60px;
-                        img {
-                            width: 30px;
-                            position: relative;
-                            top: -3px;
-                        }
-                        padding: 0;
+                        margin-left: 50px;
+                        padding: 0 20px;
                         background: #2f88c4;
                         height: 40px;
                         line-height: 40px;
@@ -185,6 +176,11 @@
                         border-radius: 4px;
                         font-size: 1.6rem;
                         color: #fff;
+                        img {
+                            position: relative;
+                            top: -3px;
+                            margin-right: 13px;
+                        }
                     }
                 }
             }

@@ -34,7 +34,27 @@
 
     <script>
         $(function () {
-            $('[data-toggle="popover"]').popover()
+            var minus = $('#minus');
+            var add = $('#add');
+            var input = $('#input');
+            $(add).click(function () {
+                var value = Number($(input).val());
+                var finalValue = value + 1;
+                $(input).val(finalValue);
+                if (finalValue > 0) {
+                    $(minus).attr({ src: './images/productDetail/minus-can.png' })
+                }
+            })
+            $(minus).click(function () {
+                var value = Number($(input).val());
+                if (value > 0) {
+                    var finalValue = value - 1;
+                    $(input).val(finalValue);
+                    if (finalValue <= 0) {
+                        $(minus).attr({ src: './images/productDetail/minus.png' });
+                    }
+                }
+            })
         })
     </script>
 </head>
@@ -147,9 +167,9 @@
                     <div class="col-xs-5">Quantity Added</div>
                     <div class="col-xs-7">
                         <div class="count-handle">
-                            <img src="./images/productDetail/minus.png" class="minus">
-                            <input type="text" class="num-cart" value="0">
-                            <img src="./images/productDetail/add.png" class="add">
+                            <img src="./images/productDetail/minus.png" class="minus" id="minus">
+                            <input type="text" class="num-cart" value="0" id="input">
+                            <img src="./images/productDetail/add.png" class="add" id="add">
                             <a class="btn btn-primary family-light">
                                 <img src="./images/productDetail/cart.png" alt=""> Add to Order
                             </a>

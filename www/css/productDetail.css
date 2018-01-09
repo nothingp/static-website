@@ -1127,26 +1127,22 @@ body {
     top: 20px;
     transform: rotate(-45deg);
   }
-  .product-detail-panel .img-show .right-form .count-handle img {
-    width: 20px;
-    height: 20px;
-    border-radius: 3px;
-  }
-  .product-detail-panel .img-show .right-form .count-handle img.minus {
-    border: solid 1px #bebebe;
-  }
-  .product-detail-panel .img-show .right-form .count-handle img.add {
-    border: solid 1px #14517b;
-  }
   .product-detail-panel .img-show .right-form .count-handle input {
     text-align: center;
-    margin: 0 5px;
+    margin: 0 8px;
     width: 30px;
     height: 30px;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    border: solid 1px #e5e5e5;
+  }
+  .product-detail-panel .img-show .right-form .count-handle input:focus {
+    outline-offset: 0;
+    outline: none;
   }
   .product-detail-panel .img-show .right-form .count-handle .btn-primary {
-    margin-left: 60px;
-    padding: 0;
+    margin-left: 50px;
+    padding: 0 20px;
     background: #2f88c4;
     height: 40px;
     line-height: 40px;
@@ -1156,9 +1152,9 @@ body {
     color: #fff;
   }
   .product-detail-panel .img-show .right-form .count-handle .btn-primary img {
-    width: 30px;
     position: relative;
     top: -3px;
+    margin-right: 13px;
   }
   .product-detail-panel .main-title {
     margin: 50px 0 30px 15px;
