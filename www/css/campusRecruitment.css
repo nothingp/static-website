@@ -1185,6 +1185,10 @@ body {
     color: #595959;
     font-size: 14px;
   }
+  .nothing-job-type .type-tp > span:hover,
+  .nothing-job-type .type-btm > span:hover {
+    color: #2f88c4;
+  }
   .nothing-job-type .type-tp > span:first-child,
   .nothing-job-type .type-btm > span:first-child {
     width: 300px;
