@@ -16,10 +16,14 @@
 
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
+    .container-fluid{
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.12);
+
+    }
     //菜单
     .box-shadow-line {
         position: relative;
-
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.12);
         .dropdown.search-top-icon {
             position: static;
             .dropdown-menu {
@@ -244,28 +248,28 @@
                         .dropdown-submenu {
                             width: 45%;
                             height: 50px;
-                            border-right: 1px solid @base-font-color-lightest;
-                            padding: 6px 30px 6px 22px;
-
+                            //border-right: 1px solid @base-font-color-lightest;
+                            padding: 7px 12px 7px 22px;
                             list-style-type: none;
-
                             &:hover {
                                 background: #e5e5e5;
-                                background-clip: content-box;
+                                //background-clip: content-box;
                                 .dropdown-3rdmenu {
                                     display: block;
+                                    border-left: 1px solid @base-font-color-lightest;
                                 }
 
                                 > a {
                                     color: @base-color;
                                     .glyphicon {
+                                        color:#a6a6a6;
                                         display: inherit;
                                     }
                                 }
                             }
 
                             > a {
-                                color: #595959;
+                                color: #666666;
                                 text-decoration: none;
                                 font-size: 1.6rem;
 
@@ -278,7 +282,7 @@
 
                             > p {
                                 font-size: 1.2rem;
-                                color: #595959;
+                                color: #666666;
                             }
 
                             .dropdown-3rdmenu {
@@ -317,6 +321,7 @@
                         }
 
                         .dropdown-menu-image {
+
                             p {
                                 margin-top: 12px;
                                 font-size: 1.2rem;

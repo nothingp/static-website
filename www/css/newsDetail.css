@@ -165,8 +165,12 @@ body {
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {
+  .container-fluid {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+  }
   .box-shadow-line {
     position: relative;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
   }
   .box-shadow-line .dropdown.search-top-icon {
     position: static;
@@ -357,25 +361,25 @@ body {
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu {
     width: 45%;
     height: 50px;
-    border-right: 1px solid #d2d2d2;
-    padding: 6px 30px 6px 22px;
+    padding: 7px 12px 7px 22px;
     list-style-type: none;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover {
     background: #e5e5e5;
-    background-clip: content-box;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover .dropdown-3rdmenu {
     display: block;
+    border-left: 1px solid #d2d2d2;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover > a {
     color: #2f88c6;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu:hover > a .glyphicon {
+    color: #a6a6a6;
     display: inherit;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > a {
-    color: #595959;
+    color: #666666;
     text-decoration: none;
     font-size: 1.6rem;
   }
@@ -386,7 +390,7 @@ body {
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu > p {
     font-size: 1.2rem;
-    color: #595959;
+    color: #666666;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .dropdown .dropdown-menu .dropdown-submenu .dropdown-3rdmenu {
     position: absolute;
