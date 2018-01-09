@@ -1019,9 +1019,8 @@ body {
     margin: 0 45px;
     display: flex;
     height: 230px;
-    background-color: #2f88c4;
     border-radius: 15px;
-    opacity: 0.75;
+    background: rgba(47, 135, 196, 0.75);
   }
   .nothing-banner-img .banner-info-wrap .banner-info .info-img {
     width: 349px;
@@ -1034,6 +1033,7 @@ body {
   }
   .nothing-banner-img .banner-info-wrap .banner-info .info-detail {
     flex: 1;
+    font-family: CiscoSans-Regular;
   }
   .nothing-banner-img .banner-info-wrap .banner-info .info-detail .info-title {
     font-size: 24px;
@@ -1329,9 +1329,8 @@ body {
   .nothing-banner-img .banner-info-wrap .banner-info {
     display: flex;
     height: 11.5rem;
-    background-color: #2f88c4;
     border-radius: .7rem;
-    opacity: 0.75;
+    background: rgba(47, 135, 196, 0.75);
   }
   .nothing-banner-img .banner-info-wrap .banner-info .info-img {
     flex: 1;
@@ -1345,6 +1344,7 @@ body {
   }
   .nothing-banner-img .banner-info-wrap .banner-info .info-detail {
     flex: 2;
+    font-family: CiscoSans-Regular;
   }
   .nothing-banner-img .banner-info-wrap .banner-info .info-detail .info-title {
     font-size: 1.6rem;
