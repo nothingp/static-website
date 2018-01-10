@@ -1307,14 +1307,11 @@ body {
     display: inline-block;
     width: 24px;
     height: 24px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    position: relative;
+    top: 6px;
   }
   .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .blue {
     background: #01b0f1;
-    position: relative;
-    top: 6px;
   }
   .productList-content .productList-content-left .productList-content-left-form .productList-content-left-form-table table td .printer-models {
     display: inline-block;
@@ -1497,10 +1494,8 @@ body {
   .productList-md .product-item .product-info .info-tp .color-item .colorI-wrap .colorI {
     width: 22px;
     height: 22px;
-    background-color: #01b0f1;
     display: block;
     margin-top: 5px;
-    border-radius: 22px;
   }
   .productList-md .product-item .product-info .info-btm {
     margin-top: 30px;
