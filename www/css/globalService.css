@@ -1039,21 +1039,16 @@ body {
     margin: 53px 0;
   }
   .global-service-panel .panel-item {
-    width: 380px;
-    height: 410px;
+    width: 30%;
     border: solid 1px #e5e5e5;
-    margin-right: 70px;
+    margin-right: 5%;
     padding: 15px 20px;
   }
-  .global-service-panel .panel-item:nth-child(4) {
+  .global-service-panel .panel-item:last-child {
     margin-right: 0;
   }
-  .global-service-panel .panel-item img {
-    width: 89px;
-    height: 89px;
-  }
   .global-service-panel .panel-item .color-txt {
-    padding-top: 30px;
+    padding-top: 20px;
     height: 89px;
     padding-left: 13px;
     font-family: CiscoSans;
@@ -1062,7 +1057,7 @@ body {
     color: #86af49;
   }
   .global-service-panel .panel-item .color-txt.more {
-    padding-top: 8px;
+    padding-top: 0;
   }
   .global-service-panel .panel-item .form-item {
     margin: 10px 0 15px;
@@ -1088,10 +1083,6 @@ body {
   }
   .global-service-panel .panel-item .form-bottom {
     margin-top: 56px;
-  }
-  .global-service-panel .panel-item .form-bottom img {
-    width: 18px;
-    height: 25px;
   }
   .global-service-panel .panel-item .form-bottom .float-l {
     float: left;
