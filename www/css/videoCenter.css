@@ -1106,12 +1106,13 @@ body {
   .video-center-panel .support-form .form-group {
     margin-bottom: 10px;
   }
-  .video-center-panel .subscribe-form label,
-  .video-center-panel .support-form label {
+  .video-center-panel .subscribe-form .control-label,
+  .video-center-panel .support-form .control-label {
     padding: 0;
     padding-left: 25px;
     text-align: right;
     margin: 5px auto;
+    line-height: 35px;
   }
   .video-center-panel .subscribe-form .form-control,
   .video-center-panel .support-form .form-control {
