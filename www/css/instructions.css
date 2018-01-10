@@ -262,6 +262,7 @@ body {
   }
   .instructions-content .instructions-content-left .instructions-content-left-header .instructions-content-left-header-left .instructions-content-left-header-left-down .instructions-content-left-header-left-down-right .select-like {
     padding-left: 0;
+    width: 200px;
   }
   .instructions-content .instructions-content-left .instructions-content-left-header .instructions-content-left-header-left .instructions-content-left-header-left-down .instructions-content-left-header-left-down-right .select-like .btn-lg {
     background: #fff;
@@ -271,7 +272,7 @@ body {
     padding-left: 17px;
     text-align: left;
     color: #999999;
-    width: 200px;
+    width: 100%;
     max-width: 200px;
     border-radius: 2px;
     border: solid 1px #bfbfbf;
@@ -441,6 +442,7 @@ body {
   }
   .instructions-content .instructions-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages {
     padding-right: 0;
+    padding-left: 10px;
   }
   .instructions-content .instructions-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .firmwareUpgrades-content-left-form-table-page-content-pages .nopadding {
     padding: 0;
