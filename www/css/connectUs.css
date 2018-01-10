@@ -1055,8 +1055,9 @@ body {
     width: 100%;
     height: 100%;
   }
-  .connect-us-form .account {
-    padding: 0px 140px 100px 140px;
+  .connect-us-form {
+    margin: 0 auto;
+    max-width: 1280px;
   }
   .connect-us-form .account .create-title,
   .connect-us-form .account .create-title-bottom {
