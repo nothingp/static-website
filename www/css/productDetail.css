@@ -1196,6 +1196,7 @@ body {
     margin: 20px 15px;
     font-size: 24px;
     color: #404040;
+    font-weight: 300;
   }
   .product-detail-panel .installation-method .img-explain {
     margin: 20px 0;
@@ -1214,6 +1215,9 @@ body {
     font-size: 16px;
     color: #595959;
     position: relative;
+  }
+  .product-detail-panel .technical-support ul li p {
+    white-space: nowrap;
   }
   .product-detail-panel .technical-support ul li .arrow-right {
     border-color: #595959;
