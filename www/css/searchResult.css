@@ -1034,12 +1034,17 @@ body {
     font-size: 20px;
     color: #999999;
   }
-  .search-product-banner .search-input .icon-wrap {
-    background: #fff;
+  .search-product-banner .search-input .addon {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+    border-right: 0;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
   }
-  .search-product-banner .search-input .icon-wrap .search-icon {
-    padding: 6px 20px;
-    color: #999999;
+  .search-product-banner .search-input .addon img {
+    position: relative;
+    top: -1px;
   }
   .nothing-btn-list {
     height: 70px;

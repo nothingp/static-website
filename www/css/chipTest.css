@@ -1024,6 +1024,31 @@ body {
   .product-detail-tabBar nav.navbar-default .container-fluid {
     background: #2f88c4;
   }
+  .subscriptionCenter-banner {
+    padding: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel {
+    height: 280px;
+    overflow: hidden;
+  }
+  .subscriptionCenter-banner #myCarousel img {
+    width: 100%;
+    height: 280px;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators {
+    left: 90%;
+    bottom: 10px;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators li {
+    background: #fff;
+  }
+  .subscriptionCenter-banner #myCarousel .carousel-indicators .active {
+    width: 24px;
+    height: 12px;
+    border-radius: 6px;
+  }
   .chipTest {
     color: #000000;
     font-size: 30px;
@@ -1049,8 +1074,9 @@ body {
   }
   .nothing-chip-list .chip-list .new-item .item-lf .imgDetail .wrap-img {
     position: relative;
-    width: 440px;
-    height: 440px;
+  }
+  .nothing-chip-list .chip-list .new-item .item-lf .imgDetail .wrap-img:hover .item-info {
+    display: inherit;
   }
   .nothing-chip-list .chip-list .new-item .item-lf .imgDetail .wrap-img .item-info {
     display: none;
@@ -1099,8 +1125,6 @@ body {
     text-decoration: none;
   }
   .nothing-chip-list .chip-list .new-item .item-lf .imgDetail img {
-    width: 440px;
-    height: 440px;
     border: 0;
   }
   .nothing-chip-list .chip-list .new-item .item-lf .titleDetail {

@@ -92,8 +92,11 @@
           .imgDetail{
             .wrap-img{
               position:relative;
-              width:440px;
-              height:440px;
+              &:hover{
+                .item-info{
+                  display:inherit;
+                }
+              }
               .item-info{
                 display:none;
                 position:absolute;
@@ -142,8 +145,6 @@
               }
             }
             img{
-              width: 440px;
-              height: 440px;
               border: 0;
             }
           }
