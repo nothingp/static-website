@@ -1110,7 +1110,7 @@ body {
   }
   .common-question-panel .box-content .content-left .select-like {
     padding-left: 0;
-    padding-right: 35px;
+    width: 200px;
   }
   .common-question-panel .box-content .content-left .select-like .btn-lg {
     background: #fff;
@@ -1120,7 +1120,6 @@ body {
     padding-left: 17px;
     text-align: left;
     color: #999999;
-    width: 200px;
     border-radius: 2px;
     border: solid 1px #bfbfbf;
   }
