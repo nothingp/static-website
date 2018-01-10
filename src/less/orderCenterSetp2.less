@@ -1,5 +1,7 @@
 @import "variables.less";
 @import "base.less";
+@import "header.less";
+@import "footer.less";
 
 
 //公共样式
@@ -7,13 +9,6 @@
 
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
-  //768- sm->lg
-  .subscriptionCenter-navbar {
-    height: 110px;
-
-    background: #f5f5f5;
-  }
-
   //首屏页面
   .subscriptionCenter-banner {
     padding: 0;
@@ -580,23 +575,10 @@
       }
     }
   }
-
-  .subscriptionCenter-footer {
-    height: 777px;
-    background: #f5f5f5;
-  }
-
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-xs-max) {
-  .subscriptionCenter-navbar {
-    height: 50px;
-  }
-  .subscriptionCenter-footer {
-    height: 449px;
-    background: #f5f5f5;
-  }
   .subscriptionCenter-banner {
     padding: 0;
     margin-bottom: 0;

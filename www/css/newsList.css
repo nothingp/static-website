@@ -1007,36 +1007,6 @@ body {
 @media screen and (min-width: 1200px) {
 }
 @media screen and (min-width: 768px) {
-  .nothing-submenu {
-    height: 70px;
-    background-color: #2f88c4;
-  }
-  .nothing-submenu .submenu-wrap {
-    max-width: 1280px;
-    margin: 0 auto;
-  }
-  .nothing-submenu .submenu-wrap .dropdown .btn {
-    display: none;
-  }
-  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu {
-    display: block;
-    border: none;
-    padding: 10px 0;
-    background-color: inherit;
-    box-shadow: none;
-  }
-  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a {
-    background-color: inherit!important;
-    border: none!important;
-    box-shadow: none!important;
-    color: #a4c7de;
-  }
-  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a.active {
-    color: #ffffff;
-  }
-  .nothing-submenu .submenu-wrap .dropdown .dropdown-menu > li > a:hover {
-    color: #ffffff;
-  }
   .subscriptionCenter-banner {
     padding: 0;
     margin-bottom: 0;
@@ -1318,26 +1288,6 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  .nothing-submenu {
-    margin: 0 auto;
-    height: 3.5rem;
-    background-color: #2f88c4;
-  }
-  .nothing-submenu .dropdown {
-    text-align: center;
-    line-height: 3.5rem;
-  }
-  .nothing-submenu .dropdown .dropdown-menu {
-    margin-left: -6rem;
-    margin-top: 0;
-    left: 50%;
-    text-align: center;
-  }
-  .nothing-submenu .dropdown .btn {
-    background-color: inherit;
-    padding: .5rem 2.5rem;
-    color: #fff;
-  }
   .subscriptionCenter-banner {
     padding: 0;
     margin-bottom: 0;
