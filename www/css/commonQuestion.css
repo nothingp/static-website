@@ -1025,7 +1025,7 @@ body {
     background: #86af49;
   }
   .common-question-tabBar nav.navbar-default {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
     background: #86af49;
     border: none;
@@ -1041,7 +1041,7 @@ body {
     background: #86af49;
   }
   .common-question-panel {
-    width: 1280px;
+    max-width: 1280px;
     margin: 38px auto 63px;
   }
   .common-question-panel .box-content {
