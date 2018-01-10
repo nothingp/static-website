@@ -36,7 +36,32 @@
     <script>
         $(function () {
             $('[data-toggle="popover"]').popover()
+            var modelList = $('#modelList').find('li');
+            $(modelList).click(function () {
+                $('#selectModel').html($(this).find('a').html());
+            })
+
+            var categoryList = $('#categoryList').find('li');
+            $(categoryList).click(function () {
+                $('#selectCategory').html($(this).find('a').html());
+            })
         })
+//        $(function () {
+//            $('[data-toggle="popover"]').popover();
+//
+//
+//
+//            var collapseIn = $('.panel-collapse.collapse').not('.panel-collapse.collapse.in');
+//            collapseIn.map(function () {
+//                $(this).prev().find('a').addClass('collapsed');
+//            })
+//
+//            var closeBtn = $('.close-btn');
+//            $(closeBtn).click(function () {
+//                $(this).parent().parent().parent().removeClass('in');
+//                $(this).parent().parent().parent().prev().find('a').addClass('collapsed');
+//            })
+//        })
     </script>
 
     <style>
@@ -148,10 +173,10 @@
                                             aria-haspopup="true"
                                             aria-expanded="false"
                                     >
-                                        <span id="selectModel2">Unismart II</span>
+                                        <span id="selectCategory">Unismart II</span>
                                         <span class="glyphicon glyphicon-menu-down"></span>
                                     </button>
-                                    <ul class="dropdown-menu" id="modelList2">
+                                    <ul class="dropdown-menu" id="categoryList">
                                         <li value="china"><a href="javascript:;">Unismart II</a></li>
                                         <li value="germany"><a href="javascript:;">Germany</a></li>
                                         <li value="france"><a href="javascript:;">France</a></li>

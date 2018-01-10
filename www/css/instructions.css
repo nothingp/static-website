@@ -257,9 +257,11 @@ body {
     color: #666666;
     margin-bottom: 0;
   }
+  .instructions-content .instructions-content-left .instructions-content-left-header .instructions-content-left-header-left .instructions-content-left-header-left-down .instructions-content-left-header-left-down-right {
+    padding-right: 35px;
+  }
   .instructions-content .instructions-content-left .instructions-content-left-header .instructions-content-left-header-left .instructions-content-left-header-left-down .instructions-content-left-header-left-down-right .select-like {
     padding-left: 0;
-    padding-right: 35px;
   }
   .instructions-content .instructions-content-left .instructions-content-left-header .instructions-content-left-header-left .instructions-content-left-header-left-down .instructions-content-left-header-left-down-right .select-like .btn-lg {
     background: #fff;
@@ -277,7 +279,7 @@ body {
   .instructions-content .instructions-content-left .instructions-content-left-header .instructions-content-left-header-left .instructions-content-left-header-left-down .instructions-content-left-header-left-down-right .select-like .glyphicon.glyphicon-menu-down {
     position: absolute;
     top: 50%;
-    right: 45px;
+    right: 15px;
     margin-top: -8px;
     font-size: 14px;
   }
