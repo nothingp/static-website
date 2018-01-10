@@ -16,10 +16,10 @@
     .global-service-panel {
         max-width: 1280px;
         margin: 0 auto 100px;
-        * {
-            padding: 0;
-            margin: 0;
-        }
+        //* {
+        //    padding: 0;
+        //    margin: 0;
+        //}
         .mar-50 {
             margin-top: 50px;
         }
@@ -30,10 +30,11 @@
             margin: 53px 0;
         }
         .panel-item {
-            width: 30%;
             border: solid 1px #e5e5e5;
-            margin-right: 5%;
             padding: 15px 20px;
+            height: 410px;
+            margin-bottom: 20px;
+            position: relative;
             &:last-child {
                 margin-right: 0;
             }
@@ -76,7 +77,10 @@
                 }
             }
             .form-bottom {
-                margin-top: 56px;
+                position: absolute;
+                bottom:10px;
+                height:25px ;
+                width:88%;
                 img {
                     //width: 18px;
                     //height: 25px;
