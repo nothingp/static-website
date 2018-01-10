@@ -1133,6 +1133,9 @@ body {
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-select .firmwareUpgrades-content-left-form-select-son:last-child {
     padding-right: 0;
   }
+  .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table {
+    overflow: scroll;
+  }
   .firmwareUpgrades-content .firmwareUpgrades-content-left .firmwareUpgrades-content-left-form .firmwareUpgrades-content-left-form-table table {
     border-bottom: 1px solid #dcdcdc;
     margin-bottom: 0;
@@ -1249,14 +1252,13 @@ body {
   .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .control-label,
   .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .control-label {
     padding: 0;
-    padding-left: 25px;
+    padding-left: 8%;
     text-align: right;
     margin: 5px auto;
     line-height: 35px;
   }
   .firmwareUpgrades-content .firmwareUpgrades-content-right .subscribe-form .form-control,
   .firmwareUpgrades-content .firmwareUpgrades-content-right .support-form .form-control {
-    width: 200px;
     height: 35px;
     line-height: 35px;
     padding: 0 15px;

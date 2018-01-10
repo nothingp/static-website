@@ -1281,14 +1281,13 @@ body {
   .patent-center-panel .subscribe-form .control-label,
   .patent-center-panel .support-form .control-label {
     padding: 0;
-    padding-left: 25px;
+    padding-left: 8%;
     text-align: right;
     margin: 5px auto;
     line-height: 35px;
   }
   .patent-center-panel .subscribe-form .form-control,
   .patent-center-panel .support-form .form-control {
-    width: 200px;
     height: 35px;
     line-height: 35px;
     padding: 0 15px;
