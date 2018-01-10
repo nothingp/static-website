@@ -82,62 +82,44 @@
     </div>
 
     <!--bannerImg-->
-    <div id="slidershow" class="carousel slide" data-ride="carousel">
-        <!-- 设置图片轮播的顺序 -->
-        <ol class="carousel-indicators">
-            <li class="active" data-target="#slidershow" data-slide-to="0"></li>
-            <li data-target="#slidershow" data-slide-to="1"></li>
-            <li data-target="#slidershow" data-slide-to="2"></li>
-            <li data-target="#slidershow" data-slide-to="4"></li>
-            <li data-target="#slidershow" data-slide-to="5"></li>
-        </ol>
-        <!-- 设置轮播图片 -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
-                <div class="carousel-caption">
-                    <h3>  </h3>
-                    <p>  </p>
+    <div class="subscriptionCenter-banner">
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <!--pc-->
+                    <img src="./images/chipTest/banner-pc.png" alt="First slide" class="hidden-xs img-responsive">
+                    <!--mobile-->
+                    <!--<img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">-->
                 </div>
-            </div>
-            <div class="item">
-                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
-                <div class="carousel-caption">
-                    <h3>  </h3>
-                    <p>  </p>
+                <div class="item">
+                    <img src="./images/chipTest/banner-pc.png" alt="Second slide" class="hidden-xs img-responsive">
+                    <!--<img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">-->
                 </div>
-            </div>
-            <div class="item">
-                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
-                <div class="carousel-caption">
-                    <h3>  </h3>
-                    <p>  </p>
+                <div class="item">
+                    <img src="./images/chipTest/banner-pc.png" alt="Third slide" class="hidden-xs img-responsive">
+                    <!--<img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">-->
                 </div>
-            </div>
-            <div class="item">
-                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
-                <div class="carousel-caption">
-                    <h3>  </h3>
-                    <p>  </p>
+                <div class="item">
+                    <img src="./images/chipTest/banner-pc.png" alt="Third slide" class="hidden-xs img-responsive">
+                    <!--<img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">-->
                 </div>
-            </div>
-            <div class="item">
-                <a href="##"><img src="./images/chipTest/banner-pc.png" alt=""/></a>
-                <div class="carousel-caption">
-                    <h3>  </h3>
-                    <p>  </p>
+                <div class="item">
+                    <img src="./images/chipTest/banner-pc.png" alt="Third slide" class="hidden-xs img-responsive">
+                    <!--<img src="./images/subscriptionCenter/product-list-banner2.jpg" alt="First slide" class="hidden-sm hidden-md hidden-lg img-responsive">-->
                 </div>
             </div>
         </div>
-        <!-- 设置轮播图片控制器 -->
-        <a class="left carousel-control" href="#slidershow" role="button" data-slide="prev">
-            <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
-        </a>
-        <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
-            <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
-        </a>
     </div>
-    <br><br>
+    <br>
 
     <!--Chip Testers-->
     <div class="chipTest content-padding">
@@ -147,7 +129,7 @@
     <div class="nothing-chip-list">
         <div class="row account">
             <div class="clearfix">
-                <div class="col-md-9 no-padding">
+                <div class="col-md-9 col-sm-9 no-padding">
                     <div class="chip-list clearfix">
                         <div class="new-item col-xs-6 no-padding clearfix">
                             <div class="item-lf col-sm-12 no-padding">
@@ -261,7 +243,7 @@
                         <button class="btn col-sm-12 hidden-md hidden-lg">Learn more</button>
                     </div>
                 </div>
-                <div class="col-md-3 no-padding content-left">
+                <div class="col-md-3 col-sm-3 no-padding content-left">
                     <div class="news-sidebar">
                         <div class="sidebar-item">
                             <div class="item-head">

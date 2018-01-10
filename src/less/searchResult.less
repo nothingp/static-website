@@ -54,15 +54,20 @@
         height: 100%;
         border-right: none;
         box-shadow: none;
-        font-family: CiscoSans-ExtraLight;
+        font-family: @family-light;
         font-size: 20px;
         color: #999999;
       }
-      .icon-wrap{
-        background: #fff;
-        .search-icon{
-          padding: 6px 20px;
-          color: #999999;
+      .addon {
+        background-color: #fff;
+        border: 1px solid #dcdcdc;
+        border-radius: 0;
+        border-right: 0;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+        img {
+          position: relative;
+          top: -1px;
         }
       }
     }
@@ -115,21 +120,21 @@
     font-family: CiscoSans-ExtraLight;
     max-width: 1280px;
     margin: 0 auto;
-    .found{
-      &:hover{
-        border: solid 1px #e5e5e5;
+    .found:hover{
+      border: solid 1px #e5e5e5;
+      .found-top{
+        color: #2f88c4;
       }
+    }
+    .found{
       margin-bottom: 10px;
       height: 160px;
-
       .found-top{
         color: #333333;
         font-size: 18px;
         margin-top: 27px;
         margin-left: 30px;
-        &:hover{
-          color: #2f88c4;
-        }
+
       }
       .found-mid{
         font-size: 16px;
@@ -151,21 +156,20 @@
         margin-left: 30px;
       }
     }
+    .found-item:hover{
+      border: solid 1px #e5e5e5;
+      .found-top-item{
+        color: #2f88c4;
+      }
+    }
     .found-item{
       margin-bottom: 30px;
-      &:hover{
-        border: solid 1px #e5e5e5;
-      }
       height: 160px;
-
       .found-top-item{
         color: #333333;
         font-size: 18px;
         margin-top: 27px;
         margin-left: 30px;
-        &:hover{
-          color: #2f88c4;
-        }
       }
       .found-mid-item{
         font-size: 16px;
@@ -187,15 +191,19 @@
         margin-left: 30px;
       }
     }
+    .found-item-list:hover{
+      border: solid 1px #e5e5e5;
+      .found-mid-item-list {
+        .list-top{
+          color: #2f88c4;
+        }
+      }
+    }
     .found-item-list{
       margin-bottom: 30px;
       display: flex;
       margin-left: 20px;
-      &:hover{
-        border: solid 1px #e5e5e5;
-      }
       height: 96px;
-
       .found-top-item-list{
         margin: auto 10px;
         width: 120px;
@@ -220,60 +228,70 @@
 
   .firmwareUpgrades-content-left-form-table-page{
     font-family: CiscoSans-ExtraLight;
-    .firmwareUpgrades-content-left-form-table-page-content{
-      padding:20px 0;
-      .firmwareUpgrades-content-left-form-table-page-content-num{
-        padding:0;
-        span{
-          font-size: 14px;
-          color: #666666;
-        }
-        select{
-          display:inline-block;
-          width:50%;
-        }
-      }
-      .firmwareUpgrades-content-left-form-table-page-content-pages{
-        padding:0;
-        .nopadding{
-          padding:0;
-          padding-top:5px;
-          margin-left:2px;
-        }
-        .width15{
-          width:24px;
-          //display: inline-block;
-        }
-        .width25{
-          width:25%;
-          //display: inline-block;
-        }
-        button{
-          display:inline-block;
-          width:24px;
-          height:24px;
-          padding:0;
-        }
-        input{
-          width:100%;
-          height:24px;
-        }
-        .showpages{
-          span{
-            display: inline-block;
-            width:100%;
-            height:24px;
-            line-height: 24px;
-            text-align: center;
-            color:#666666;
+    .firmwareUpgrades-content-left-form-table-page-content {
+      padding: 20px 0;
+      .table-btm {
+        .productList-table-page {
+
+          .productList-table-page-content {
+            width: 430px;
+            padding: 20px 0;
+            .productList-table-page-content-num {
+              padding: 0;
+              span {
+                font-size: 14px;
+                color: #666666;
+              }
+              select {
+                display: inline-block;
+                width: 50%;
+              }
+            }
+            .productList-table-page-content-pages {
+              padding: 0;
+              .nopadding {
+                padding: 0;
+                padding-top: 5px;
+                margin-left: 2px;
+              }
+              .width15 {
+                width: 24px;
+                //display: inline-block;
+              }
+              .width25 {
+                width: 25%;
+                //display: inline-block;
+              }
+              button {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                padding: 0;
+              }
+              input {
+                width: 100%;
+                height: 24px;
+              }
+              .showpages {
+                span {
+                  display: inline-block;
+                  width: 100%;
+                  height: 24px;
+                  line-height: 24px;
+                  text-align: center;
+                  color: #666666;
+                }
+              }
+
+            }
+            .productList-table-page-content-count {
+              padding-top: 8px;
+              font-size: 14px;
+              color: #666666;
+            }
           }
         }
 
-      }
-      .firmwareUpgrades-content-left-form-table-page-content-count{
-        padding-top:8px;
-        font-size: 14px;
-        color: #666666;
       }
     }
   }
