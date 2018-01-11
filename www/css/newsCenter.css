@@ -1089,6 +1089,11 @@ body {
     margin: 0 auto;
     line-height: 70px;
   }
+  .nothing-btn-list .btn-wrap .btn {
+    height: 30px;
+    padding: 7px 20px;
+    line-height: 0px;
+  }
   .nothing-btn-list .btn-wrap .dropdown {
     display: none;
   }
