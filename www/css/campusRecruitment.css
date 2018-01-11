@@ -1354,10 +1354,6 @@ body {
   .nothing-contact-way .contact-way .email-img {
     padding-left: 50px;
   }
-  .nothing-contact-way .contact-way .email-img > img {
-    width: 61px;
-    height: 41px;
-  }
   .nothing-contact-way .contact-way .phone-content,
   .nothing-contact-way .contact-way .email-content {
     padding: 0;
