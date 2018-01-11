@@ -49,7 +49,7 @@
                 }
                 .info-detail {
                     flex: 1;
-                    font-family:CiscoSans-Regular;
+                    font-family: CiscoSans-Regular;
                     .info-title {
                         font-size: 24px;
                         line-height: 24px;
@@ -212,8 +212,8 @@
                 padding: 0 20px;
                 color: #595959;
                 font-size: 14px;
-                &:hover{
-                    color:#2f88c4;
+                &:hover {
+                    color: #2f88c4;
                 }
             }
             > span:first-child {
@@ -253,7 +253,7 @@
     .nothing-job-list-item {
         font-family: @font-sub-family;
         max-width: 1280px;
-        margin: 0 auto;
+        margin: 0 auto 180px;
         .job-item {
             display: block;
             height: 160px;
@@ -290,7 +290,17 @@
 
     //联系方式
     .nothing-contact-way {
+        position: fixed;
+        bottom: 0;
+        left: 0;
         height: 100px;
+        width: 100%;
+        max-width: 1600px;
+        @media (min-width: 1600px) {
+            left: calc(~"(100% - 1600px)/2");
+            left: -moz-calc(~"(100% - 1600px)/2");
+            left: -webkit-calc(~"(100% - 1600px)/2");
+        }
         background-color: #2f88c4;
         color: #ffffff;
         font-family: @font-sub-family;
@@ -298,9 +308,9 @@
             max-width: 1280px;
             margin: 0 auto;
             .contact-title {
-                line-height: 100px;
+                line-height: 105px;
                 font-size: 24px;
-                font-family: @font-family;
+                font-family: CiscoSans-Regular;
                 padding: 0;
             }
             .phone-img, .email-img {
@@ -309,8 +319,8 @@
                 padding-left: 20px;
                 > img {
                     display: inline-block;
-                    width: 52px;
-                    height: 52px;
+                    //width: 52px;
+                    //height: 52px;
                 }
             }
 
@@ -337,17 +347,21 @@
                 }
             }
             .email-content {
-                padding-left: 30px;
+                padding-left: 35px;
             }
             .close-img {
                 height: 100px;
                 line-height: 100px;
                 text-align: right;
-                padding-right: 30px;
+                padding-right: 0;
                 > img {
                     display: inline-block;
-                    width: 40px;
-                    height: 40px;
+                    //width: 40px;
+                    //height: 40px;
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -385,7 +399,7 @@
                 }
                 .info-detail {
                     flex: 2;
-                    font-family:CiscoSans-Regular;
+                    font-family: CiscoSans-Regular;
                     .info-title {
                         font-size: 1.6rem;
                         line-height: 1.2rem;
@@ -619,7 +633,7 @@
             .contact-title {
                 line-height: 5rem;
                 font-size: 2.4rem;
-                font-family: @font-family;
+                font-family: CiscoSans-Regular;
             }
             .phone-img, .email-img {
                 height: 3.5rem;

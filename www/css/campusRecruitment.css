@@ -1284,7 +1284,7 @@ body {
   .nothing-job-list-item {
     font-family: CiscoSans-ExtraLight;
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0 auto 180px;
   }
   .nothing-job-list-item .job-item {
     display: block;
@@ -1321,7 +1321,12 @@ body {
     font-size: 14px;
   }
   .nothing-contact-way {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     height: 100px;
+    width: 100%;
+    max-width: 1600px;
     background-color: #2f88c4;
     color: #ffffff;
     font-family: CiscoSans-ExtraLight;
@@ -1331,9 +1336,9 @@ body {
     margin: 0 auto;
   }
   .nothing-contact-way .contact-way .contact-title {
-    line-height: 100px;
+    line-height: 105px;
     font-size: 24px;
-    font-family: CiscoSans;
+    font-family: CiscoSans-Regular;
     padding: 0;
   }
   .nothing-contact-way .contact-way .phone-img,
@@ -1345,8 +1350,6 @@ body {
   .nothing-contact-way .contact-way .phone-img > img,
   .nothing-contact-way .contact-way .email-img > img {
     display: inline-block;
-    width: 52px;
-    height: 52px;
   }
   .nothing-contact-way .contact-way .email-img {
     padding-left: 50px;
@@ -1374,18 +1377,27 @@ body {
     line-height: 30px;
   }
   .nothing-contact-way .contact-way .email-content {
-    padding-left: 30px;
+    padding-left: 35px;
   }
   .nothing-contact-way .contact-way .close-img {
     height: 100px;
     line-height: 100px;
     text-align: right;
-    padding-right: 30px;
+    padding-right: 0;
   }
   .nothing-contact-way .contact-way .close-img > img {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+  }
+  .nothing-contact-way .contact-way .close-img > img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1600px) {
+  .nothing-contact-way {
+    left: calc((100% - 1600px)/2);
+    left: -moz-calc((100% - 1600px)/2);
+    left: -webkit-calc((100% - 1600px)/2);
   }
 }
 @media screen and (max-width: 767px) {
@@ -1629,7 +1641,7 @@ body {
   .nothing-contact-way .contact-way .contact-title {
     line-height: 5rem;
     font-size: 2.4rem;
-    font-family: CiscoSans;
+    font-family: CiscoSans-Regular;
   }
   .nothing-contact-way .contact-way .phone-img,
   .nothing-contact-way .contact-way .email-img {
