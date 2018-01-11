@@ -1144,41 +1144,62 @@ body {
     text-align: right;
     padding-right: 70px;
   }
-  .orderCenter-content .productList-content-select-style {
+  .orderCenter-content .productList-content-select-style2 {
     height: 100px;
     line-height: 100px;
   }
-  .orderCenter-content .productList-content-select-style .nopadding {
+  .orderCenter-content .productList-content-select-style2 .nopadding {
     padding: 0;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-left span {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-left {
+    margin-left: -40%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-left span {
     font-size: 18px;
     color: #666666;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon:hover {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right {
+    margin-left: 34%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one {
+    margin-left: -15%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one span {
+    background: url("../images/common/style1-new.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one .active {
+    background: url("../images/common/style1-a-new.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two {
+    margin-left: 15%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two span {
+    background: url("../images/common/style2-new.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two .active {
+    background: url("../images/common/style2-a-new.png");
+    background-size: 100% 100%;
+  }
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-icon:hover {
     cursor: pointer;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-icon span {
     display: inline-block;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: solid 2px #cdcdcd;
+    width: 36px;
+    height: 36px;
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
   }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon span:before {
+  .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-icon span:before {
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -12px;
     margin-top: -13px;
-  }
-  .orderCenter-content .productList-content-select-style .productList-content-select-style-content .productList-content-select-style-content-icon .active {
-    color: #fff;
-    background: #2f87c4;
-    border: none;
   }
   .orderCenter-content .panel-list {
     display: none;
@@ -1524,15 +1545,23 @@ body {
     background: #2f87c4;
     text-align: center;
   }
-  .orderCenter-content .order-center-btns .btn-default {
+  .orderCenter-content .order-center-btns .handle-btn {
+    display: inline-block;
     width: 45%;
+    height: 3rem;
+    line-height: 3rem;
     border-radius: .4rem;
     color: #2f87c4;
+    background: #fff;
+    border: solid 1px #ffffff;
   }
-  .orderCenter-content .order-center-btns .btn-primary {
-    width: 45%;
-    border-radius: .4rem;
+  .orderCenter-content .order-center-btns .handle-btn:first-child {
+    margin-right: 5%;
+  }
+  .orderCenter-content .order-center-btns .handle-btn:hover,
+  .orderCenter-content .order-center-btns .handle-btn:focus {
+    color: #fff;
+    text-decoration: none;
     background: #2f87c4;
-    border: 1px solid #fff;
   }
 }
