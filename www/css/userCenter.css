@@ -1079,6 +1079,10 @@ body {
   .user-center-form .form-label {
     font-size: 30px;
     color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 0;
   }
   .user-center-form .account input {
     height: 42px;
