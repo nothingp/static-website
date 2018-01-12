@@ -1111,15 +1111,8 @@ body {
     border-radius: 3px;
     border: solid 1px #2f88c4;
     color: #2f87c4;
-    padding: 0 15px;
-    line-height: 28px;
   }
   .nothing-btn-list .btn-wrap > .btn.btn-active {
-    background-color: #2f87c4;
-    border: solid 1px #2f88c4;
-    color: #fff;
-  }
-  .nothing-btn-list .btn-wrap > .btn:hover {
     background-color: #2f87c4;
     border: solid 1px #2f88c4;
     color: #fff;

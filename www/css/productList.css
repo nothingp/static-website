@@ -1607,7 +1607,7 @@ body {
     box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.18);
   }
   .productList-table-page .productList-table-page-content {
-    padding: 20px 0;
+    padding: 20px 0 20px 50px;
   }
   .productList-table-page .productList-table-page-content .productList-table-page-content-num {
     padding: 0;
