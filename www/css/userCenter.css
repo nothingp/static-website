@@ -1284,6 +1284,45 @@ body {
     /* Internet Explorer 10-11 */
     color: #737373;
   }
+  .user-center-form .account .select-country {
+    margin-bottom: 3rem;
+  }
+  .user-center-form .account .select-country .btn-lg {
+    background: #fff;
+    padding: 0;
+    font-size: 1.4rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: .2rem;
+    padding-left: 1.5rem;
+    text-align: left;
+    color: #737373;
+    border-color: #bfbfbf;
+  }
+  .user-center-form .account .select-country .glyphicon.glyphicon-menu-down {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    margin-top: -0.6rem;
+    font-size: 1.4rem;
+  }
+  .user-center-form .account .select-country .dropdown-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .user-center-form .account .select-country .dropdown-menu li a {
+    color: #8c8c8c;
+    padding: 0;
+    padding-left: 1rem;
+    height: 3.3rem;
+    line-height: 3.3rem;
+    font-size: 1.4rem;
+  }
+  .user-center-form .account .select-country .dropdown-menu li a:hover {
+    color: #fff;
+    background: #686868;
+  }
   .user-center-form .security {
     margin: 0;
   }
@@ -1320,6 +1359,23 @@ body {
     margin: 0;
     font-size: 1.6rem;
     color: #595959;
+  }
+  .user-center-form .newsletter .wrap-checkbox {
+    width: 18px;
+    height: 18px;
+    top: -3px;
+  }
+  .user-center-form .newsletter .wrap-checkbox input {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .user-center-form .newsletter .wrap-checkbox input[type="checkbox"]:checked + .checkbox-span {
+    width: 100%;
+    height: 100%;
+  }
+  .user-center-form .newsletter .long-txt {
+    padding-left: 23px;
   }
   .user-center-form .order {
     margin: 0;
