@@ -1152,17 +1152,19 @@ body {
     padding: 0;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-left {
-    margin-left: -40%;
+    float: right;
+    margin-right: 20px;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-left span {
     font-size: 18px;
     color: #666666;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right {
-    margin-left: 34%;
+    float: right;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one {
-    margin-left: -15%;
+    margin-right: 10px;
+    float: right;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-one span {
     background: url("../images/common/style1-new.png");
@@ -1173,7 +1175,7 @@ body {
     background-size: 100% 100%;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two {
-    margin-left: 15%;
+    float: right;
   }
   .orderCenter-content .productList-content-select-style2 .productList-content-select-style-content .productList-content-select-style-content-right .style-two span {
     background: url("../images/common/style2-new.png");
@@ -1537,7 +1539,6 @@ body {
     font-size: 1.4rem;
   }
   .orderCenter-content .form .select-country .dropdown-menu li a:hover {
-    color: #fff;
     background: #686868;
   }
   .orderCenter-content .order-center-btns {

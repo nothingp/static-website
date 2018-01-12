@@ -84,65 +84,71 @@
                 }
             }
         }
-        .productList-content-select-style2 {
-            height: 100px;
-            line-height: 100px;
-            .nopadding {
-                padding: 0;
+        .productList-content-select-style2{
+            height:100px;
+            line-height:100px;
+            .nopadding{
+                padding:0;
             }
-            .productList-content-select-style-content {
-                .productList-content-select-style-content-left {
-                    margin-left: -40%;
-                    span {
+            .productList-content-select-style-content{
+                .productList-content-select-style-content-left{
+                    float:right;
+                    //margin-left:-40%;
+                    margin-right:20px;
+                    span{
                         font-size: 18px;
                         color: #666666;
                     }
                 }
-                .productList-content-select-style-content-right {
-                    margin-left: 34%;
-                    .style-one {
-                        margin-left: -15%;
-                        span {
+                .productList-content-select-style-content-right{
+                    //margin-left:34%;
+                    float:right;
+                    .style-one{
+                        //margin-left:-15%;
+                        margin-right:10px;
+                        float:right;
+                        span{
                             background: url("../images/common/style1-new.png");
                             background-size: 100% 100%;
                         }
-                        .active {
+                        .active{
                             background: url("../images/common/style1-a-new.png");
                             background-size: 100% 100%;
                         }
                     }
-                    .style-two {
-                        margin-left: 15%;
-                        span {
+                    .style-two{
+                        //margin-left:15%;
+                        float:right;
+                        span{
                             background: url("../images/common/style2-new.png");
                             background-size: 100% 100%;
                         }
-                        .active {
+                        .active{
                             background: url("../images/common/style2-a-new.png");
                             background-size: 100% 100%;
                         }
                     }
                 }
-                .productList-content-select-style-content-icon {
-                    &:hover {
+                .productList-content-select-style-content-icon{
+                    &:hover{
                         cursor: pointer;
                     }
 
-                    span {
-                        display: inline-block;
-                        width: 36px;
-                        height: 36px;
+                    span{
+                        display:inline-block;
+                        width:36px;
+                        height:36px;
                         //border-radius:50%;
                         //border:solid 2px rgba(205, 205, 205, 1);
                         vertical-align: middle;
-                        font-size: 20px;
-                        color: #666;
-                        &:before {
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            margin-left: -12px;
-                            margin-top: -13px;
+                        font-size:20px;
+                        color:#666;
+                        &:before{
+                            position:absolute;
+                            top:50%;
+                            left:50%;
+                            margin-left:-12px;
+                            margin-top:-13px;
                         }
                     }
                     //.active{
@@ -528,7 +534,6 @@
                             line-height: 3.3rem;
                             font-size: 1.4rem;
                             &:hover {
-                                color: #fff;
                                 background: #686868;
                             }
                         }
