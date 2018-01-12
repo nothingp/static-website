@@ -1076,6 +1076,11 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  font-family: CiscoSans-ExtraLight;
+  .search-product-navbar {
+    height: 110px;
+    background: #f5f5f5;
+  }
   .search-product-banner {
     position: relative;
     overflow: hidden;
@@ -1136,6 +1141,7 @@ body {
     padding: 15px 25px;
   }
   .nothing-btn-list {
+    font-family: CiscoSans;
     margin: 0 auto;
     height: 70px;
     border-bottom: 1px solid #e5e5e5;
@@ -1144,11 +1150,6 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     line-height: 70px;
-  }
-  .nothing-btn-list .btn-wrap .btn {
-    height: 30px;
-    padding: 7px 20px;
-    line-height: 0px;
   }
   .nothing-btn-list .btn-wrap .dropdown {
     display: none;
@@ -1202,6 +1203,7 @@ body {
     padding-top: 0;
   }
   .nothing-result-list .list-sidebar .panel-group .panel-item .panel-heading .panel-title {
+    font-family: CiscoSans;
     font-size: 16px;
     color: #333333;
   }
@@ -1252,7 +1254,7 @@ body {
   }
   .nothing-result-list .list-sidebar .list-body > ul > li {
     cursor: pointer;
-    padding: 0;
+    padding: 0 0 0 15px;
     border: none;
     line-height: 30px;
     font-size: 14px;
@@ -1326,17 +1328,25 @@ body {
     min-width: 160px;
     text-align: center;
   }
-  .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle img {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
+  .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle .minus {
+    width: 21px;
+    height: 21px;
+    line-height: 10px;
+    padding: 0;
+    background-color: #f5f5f5;
     border-radius: 3px;
-  }
-  .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle img.minus {
     border: solid 1px #bebebe;
+    color: #666666;
   }
-  .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle img.add {
+  .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle .add {
+    width: 21px;
+    height: 21px;
+    line-height: 10px;
+    padding: 0;
+    background-color: #2f87c4;
+    border-radius: 3px;
     border: solid 1px #14517b;
+    color: #ffffff;
   }
   .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle input {
     text-align: center;
@@ -1345,7 +1355,7 @@ body {
     height: 30px;
   }
   .nothing-result-list .list-table .table-top .product-item .product-inner .count-wrap .count-handle > img:last-child {
-    margin-left: 20px;
+    margin-left: 30px;
   }
   .nothing-result-list .list-table .table-top .product-item .product-inner:hover {
     box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.15);
@@ -1355,8 +1365,8 @@ body {
     display: block;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content {
-    width: 430px;
-    padding: 20px 0;
+    padding: 0 0 80px;
+    width: 478px;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num {
     padding: 0;
@@ -1368,9 +1378,13 @@ body {
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num select {
     display: inline-block;
     width: 50%;
+    height: 24px;
+    border-radius: 0;
+    padding: 2px 6px;
+    margin-top: 6px;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages {
-    padding: 0;
+    padding-right: 0;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .nopadding {
     padding: 0;
@@ -1388,10 +1402,16 @@ body {
     width: 24px;
     height: 24px;
     padding: 0;
+    padding-top: 2px;
+    border-style: none;
+    background: #fff;
+    border: 1px solid #999;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages input {
     width: 100%;
     height: 24px;
+    padding: 4px;
+    line-height: 24px;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .showpages span {
     display: inline-block;
@@ -1408,6 +1428,10 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
+  font-family: CiscoSans-ExtraLight;
+  .search-product-navbar {
+    height: 5rem;
+  }
   .search-product-banner {
     position: relative;
     overflow: hidden;
@@ -1468,6 +1492,7 @@ body {
     padding: 15px 25px;
   }
   .nothing-btn-list {
+    font-family: CiscoSans;
     margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
   }
