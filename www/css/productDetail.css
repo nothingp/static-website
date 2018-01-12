@@ -1140,8 +1140,7 @@ body {
   }
   .product-detail-panel .img-show .right-form .col-xs-5,
   .product-detail-panel .img-show .right-form .col-xs-7 {
-    height: 65px;
-    line-height: 65px;
+    padding: 23px 15px 18px;
   }
   .product-detail-panel .img-show .right-form .col-xs-5 {
     font-size: 1.8rem;
@@ -1150,6 +1149,9 @@ body {
   .product-detail-panel .img-show .right-form .col-xs-7 {
     font-size: 1.6rem;
     color: #666;
+  }
+  .product-detail-panel .img-show .right-form .pad-30 {
+    padding-right: 30px;
   }
   .product-detail-panel .img-show .right-form .more-info {
     position: relative;
