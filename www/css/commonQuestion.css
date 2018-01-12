@@ -1108,6 +1108,10 @@ body {
     padding-left: 0;
     padding-right: 0;
   }
+  .common-question-panel .box-content .content-left .padding-margin {
+    padding-left: 20px;
+    margin-left: -5px;
+  }
   .common-question-panel .box-content .content-left .select-like {
     padding-left: 0;
     width: 200px;
