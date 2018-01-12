@@ -1345,14 +1345,10 @@ body {
   .nothing-contact-way .contact-way .email-img {
     height: 100px;
     line-height: 100px;
-    padding-left: 20px;
   }
   .nothing-contact-way .contact-way .phone-img > img,
   .nothing-contact-way .contact-way .email-img > img {
     display: inline-block;
-  }
-  .nothing-contact-way .contact-way .email-img {
-    padding-left: 50px;
   }
   .nothing-contact-way .contact-way .phone-content,
   .nothing-contact-way .contact-way .email-content {
@@ -1371,9 +1367,6 @@ body {
   .nothing-contact-way .contact-way .phone-content > span:last-child,
   .nothing-contact-way .contact-way .email-content > span:last-child {
     line-height: 30px;
-  }
-  .nothing-contact-way .contact-way .email-content {
-    padding-left: 35px;
   }
   .nothing-contact-way .contact-way .close-img {
     height: 100px;
