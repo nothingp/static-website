@@ -328,7 +328,7 @@ body {
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
     padding: 0;
     text-align: center;
-    margin: 13px 20px;
+    margin: 13px 15px;
     display: inline-block;
   }
   .box-shadow-line .navbar .nothing-navbar-menu .nav .open > a,
@@ -639,6 +639,14 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (min-width: 992px) {
+  .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
+    padding: 0;
+    text-align: center;
+    margin: 13px 30px;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .box-shadow-line .navbar .nothing-navbar-menu .nav > li > a {
     padding: 0;
     text-align: center;
