@@ -207,6 +207,7 @@ body {
   .instructions-content {
     max-width: 1280px;
     margin: 50px auto 50px auto;
+    padding: 0;
   }
   .instructions-content .instructions-content-left {
     padding-left: 0;
