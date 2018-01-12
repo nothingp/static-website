@@ -1159,7 +1159,7 @@ body {
     color: #595959;
     margin-bottom: 30px;
   }
-  .nothing-job-app .app-download span:hover {
+  .nothing-job-app .app-download span {
     color: #2f88c4;
   }
   .nothing-job-app .download-btn > button {
