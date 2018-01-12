@@ -1173,7 +1173,8 @@ body {
   .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right button {
     background: #2f88c4;
     color: #fff;
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     border-radius: 4px;
     height: 40px;
   }
@@ -1252,7 +1253,7 @@ body {
   .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right button {
     background: #2f88c4;
     color: #fff;
-    width: 100px;
+    max-width: 100px;
   }
   .productList-content .productList-content-left {
     padding: 0;
