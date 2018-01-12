@@ -1220,15 +1220,20 @@ body {
     background-color: #fafafa;
     border-radius: 3px;
     border: solid 1px #dcdcdc;
+    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
     padding-left: 20px;
-    color: #666;
-    font-size: 20px;
     font-family: CiscoSans-ExtraLight;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #404040;
   }
   .nothing-search .search-input > input::-webkit-input-placeholder {
-    font-size: 20px;
-    color: #666;
     font-family: CiscoSans-ExtraLight;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #404040;
   }
   .nothing-search .search-btn > button {
     width: 134px;
