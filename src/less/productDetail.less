@@ -170,18 +170,25 @@
                         }
                     }
                     .btn-primary {
-                        margin-left: 50px;
+                        margin-left: 10%;
                         padding: 0 20px;
                         background: #2f88c4;
                         height: 40px;
                         line-height: 40px;
-                        width: 180px;
+                        width: 43%;
                         border-radius: 4px;
                         font-size: 1.6rem;
                         color: #fff;
+                        span {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: inline-block;
+                            width: 65%;
+                        }
                         img {
                             position: relative;
-                            top: -3px;
+                            top: -16px;
                             margin-right: 13px;
                         }
                     }
@@ -200,9 +207,11 @@
         .related-product {
             img {
                 width: 179px;
-                height: 179px;
                 padding: 40px;
                 border: 1px solid #eee;
+                @media (max-width: 1000px) {
+                    padding: 10px;
+                }
             }
             .text-center {
                 font-size: 1.6rem;
@@ -241,6 +250,8 @@
                     color: #595959;
                     position: relative;
                     p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         white-space: nowrap;
                     }
                     .arrow-right {
@@ -281,6 +292,8 @@
                 color: #404040;
                 text-align: center;
                 border-bottom: 1px solid #eee;
+                //overflow: hidden;
+                //text-overflow: ellipsis;
                 white-space: nowrap;
             }
 
@@ -411,18 +424,60 @@
                     font-size: 1.4rem;
                     color: #666;
                 }
-                .count-handle {
-                    img {
-                        width: 2rem;
-                        height: 2rem;
-                        border-radius: .3rem;
-                        &.minus {
-                            border: solid 1px #bebebe;
+                .more-info {
+                    position: relative;
+                    .hover-show {
+                        display: none;
+                    }
+                    .more-arrow {
+                        border-color: #999;
+                        border-style: solid;
+                        border-width: 2px 2px 0 0;
+                        content: "";
+                        display: inline-block;
+                        height: 0;
+                        padding: .3rem;
+                        transform: rotate(135deg);
+                        width: 0;
+                        margin-left: 2rem;
+                        position: absolute;
+                        top: 60%;
+                        right: .5rem;
+                    }
+                    .pad-30 {
+                        display: none;
+                    }
+                    &:hover {
+                        .normal-show {
+                            display: none;
                         }
-                        &.add {
-                            border: solid 1px #14517b;
+                        .hover-show {
+                            border: 1px solid #e4e4e4;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            background: #fff;
+                            z-index: 99;
+                            display: block;
+                            padding: .5rem 1rem;
+                            p {
+                                line-height: normal;
+                                margin: 0;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+                            .more-arrow {
+                                display: none;
+                                top: 1rem;
+                                transform: rotate(-45deg);
+                            }
                         }
                     }
+                }
+
+                .count-handle {
                     input {
                         text-align: center;
                         margin: 0 .5rem;
@@ -435,9 +490,9 @@
                         left: 0;
                         top: 11rem;
                         img {
-                            width: 3rem;
                             position: relative;
                             top: -.3rem;
+                            left: -10px;
                         }
                         padding: 0;
                         background: #2f88c4;
@@ -462,6 +517,7 @@
 
         .related-product {
             img {
+                margin: auto;
                 padding: 1.5rem;
                 border: 1px solid #eee;
             }
