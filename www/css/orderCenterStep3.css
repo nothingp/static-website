@@ -1238,7 +1238,6 @@ body {
   }
   .orderCenter-content .table-list .row {
     margin: 0;
-    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.item {
     width: 5%;
@@ -1247,18 +1246,30 @@ body {
   .orderCenter-content .table-list .col-sm-2.category {
     width: 15%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.code {
     width: 10%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.oem-code {
     width: 10%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.color {
     width: 5%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.color .colorI {
     display: inline-block;
@@ -1268,19 +1279,27 @@ body {
   .orderCenter-content .table-list .col-sm-1.yield {
     width: 10%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.region {
     width: 10%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-3.printer {
     width: 25%;
     padding: 0;
-    white-space: normal;
   }
   .orderCenter-content .table-list .col-sm-1.quantity {
     width: 10%;
     padding: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .head {
     height: 60px;
