@@ -1289,6 +1289,8 @@ body {
     position: relative;
   }
   .product-detail-panel .technical-support ul li p {
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
   }
   .product-detail-panel .technical-support ul li .arrow-right {
