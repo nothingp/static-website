@@ -207,9 +207,11 @@
         .related-product {
             img {
                 width: 179px;
-                height: 179px;
                 padding: 40px;
                 border: 1px solid #eee;
+                @media (max-width: 1000px) {
+                    padding: 10px;
+                }
             }
             .text-center {
                 font-size: 1.6rem;
