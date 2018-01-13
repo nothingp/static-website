@@ -1231,8 +1231,14 @@ body {
   .orderCenter-content .panel-list .row-item .label-item {
     font-weight: 700;
   }
+  .orderCenter-content .panel-list .row-item .colorI {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+  }
   .orderCenter-content .table-list .row {
     margin: 0;
+    white-space: nowrap;
   }
   .orderCenter-content .table-list .col-sm-1.item {
     width: 5%;
@@ -1254,6 +1260,11 @@ body {
     width: 5%;
     padding: 0;
   }
+  .orderCenter-content .table-list .col-sm-1.color .colorI {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+  }
   .orderCenter-content .table-list .col-sm-1.yield {
     width: 10%;
     padding: 0;
@@ -1265,6 +1276,7 @@ body {
   .orderCenter-content .table-list .col-sm-3.printer {
     width: 25%;
     padding: 0;
+    white-space: normal;
   }
   .orderCenter-content .table-list .col-sm-1.quantity {
     width: 10%;
