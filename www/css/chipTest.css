@@ -1166,7 +1166,7 @@ body {
   }
   .nothing-chip-list .chip-list .new-item .item-lf .imgDetail .wrap-img .item-info p {
     color: #fff;
-    font-family: 'CiscoSans-ExtraLight';
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .chip-list .new-item .item-lf .imgDetail .wrap-img .item-info .item-info-content {
     font-size: 16px;
@@ -1209,61 +1209,44 @@ body {
     margin: 40px 0 75px 0;
     font-family: CiscoSans-ExtraLight;
   }
-  .nothing-chip-list .news-sidebar .img-bg-item .img-bg {
-    display: flex;
-    margin-top: 30px;
-    height: 250px;
-    border: 1px solid #fff;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-image: url("../images/chipTest/bg2.png");
-  }
-  .nothing-chip-list .news-sidebar .img-bg-item .img-bg .img-left {
-    display: inline-block;
-    margin-top: 100px;
-  }
-  .nothing-chip-list .news-sidebar .img-bg-item .img-bg .img-left img {
-    width: 100px;
-    height: 45px;
-    margin-left: 45px;
-  }
-  .nothing-chip-list .news-sidebar .img-bg-item .img-bg .img-left .img-left-botttom {
-    margin-top: 30px;
-  }
-  .nothing-chip-list .news-sidebar .img-bg-item .img-bg .img-right {
-    display: inline-block;
-    margin: 100px 0 0 25px;
-  }
-  .nothing-chip-list .news-sidebar .img-bg-item .img-bg .img-right img {
-    width: 110px;
-    height: 130px;
+  .nothing-chip-list .news-sidebar {
+    padding: 0 0 0 10px;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item {
+    cursor: pointer;
     margin-top: 30px;
-    padding: 0 10px;
+    padding: 0 10px 20px;
     background-color: #ffffff;
     border: solid 1px #e5e5e5;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-head {
     border-bottom: 1px solid #d2d2d2;
+    height: 45px;
+    line-height: 53px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-head > h6 {
-    display: block;
-    padding-left: 10px;
+    margin: 0;
+    display: inline-block;
+    padding-left: 7px;
     border-left: 3px solid #2f88c4;
     font-size: 20px;
     color: #404040;
   }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp {
     position: relative;
     display: flex;
-    height: 60px;
+    height: 50px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .img-wrap {
     border-radius: 5px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .img-wrap > img {
-    margin: 14px;
+    margin: 5px 9px 0 5px;
     display: inline-block;
     line-height: 60px;
     width: 32px;
@@ -1274,7 +1257,7 @@ body {
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .info > span:first-child {
     font-size: 14px;
-    line-height: 30px;
+    padding-top: 2px;
     color: #404040;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .info > span:last-child {
@@ -1293,18 +1276,21 @@ body {
     height: 100%;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-md {
-    padding: 0 10px;
+    padding: 0 5px;
     font-size: 12px;
     line-height: 16px;
     color: #666666;
   }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-md span:last-child {
+    color: #2f88c4;
+  }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm {
     display: flex;
-    height: 35px;
-    padding-top: 8px;
+    height: 43px;
+    padding-top: 15px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm .img-wrap {
-    padding-left: 10px;
+    padding-left: 5px;
     flex: 1;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm .img-wrap > img {
@@ -1317,11 +1303,11 @@ body {
     line-height: 25px;
     text-align: right;
     font-size: 12px;
-    color: #92c1e0;
+    color: #ced4d9;
     padding-right: 10px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-info {
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-info > span {
     display: block;
@@ -1334,7 +1320,7 @@ body {
     font-size: 14px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-table {
-    margin-top: 30px;
+    margin-top: 25px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-table .input-group {
     padding: 0 20px;
@@ -1344,9 +1330,31 @@ body {
     background-color: inherit;
     border: none;
   }
+  .nothing-chip-list .news-sidebar .sidebar-item .form-table .input-group .input-group-addon .form-control {
+    max-width: 200px;
+    height: 35px;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .form-table .input-group .input-group-addon .searchIcon {
+    margin-top: -5px;
+  }
   .nothing-chip-list .news-sidebar .sidebar-item .form-table .submit-wrap {
     text-align: center;
-    margin-bottom: 15px;
+    padding: 11px 0 15px;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .form-table .submit-wrap > .btn {
+    border: none;
+    padding: 0;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #2f88c4;
+    border-radius: 4px;
+  }
+  .nothing-chip-list .news-sidebar .img-bottom {
+    padding-top: 30px;
+  }
+  .nothing-chip-list .news-sidebar .img-bottom img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1000px) {

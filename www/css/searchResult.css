@@ -1076,46 +1076,65 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .search-product-banner {
+  .search-result-banner {
+    font-family: CiscoSans-ExtraLight;
     position: relative;
     overflow: hidden;
     height: 300px;
   }
-  .search-product-banner .banner-bg {
+  .search-result-banner .banner-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 300px;
     background-image: url(../images/searchResult/banner-bg.png);
+    background-size: 100% 100%;
   }
-  .search-product-banner .search-input {
+  .search-result-banner .search-input {
     margin: 125px auto;
     height: 50px;
     box-shadow: 6px 10px 35px 0px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
-    width: 800px;
   }
-  .search-product-banner .search-input > input {
+  .search-result-banner .search-input > input {
     width: 100%;
     height: 100%;
     border-right: none;
     box-shadow: none;
-    font-family: CiscoSans-ExtraLight;
+  }
+  .search-result-banner .search-input > input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    padding-top: 5px;
     font-size: 20px;
     color: #999999;
   }
-  .search-product-banner .search-input .addon {
-    background-color: #fff;
-    border: 1px solid #dcdcdc;
-    border-radius: 0;
-    border-right: 0;
-    border-bottom-left-radius: 3px;
-    border-top-left-radius: 3px;
+  .search-result-banner .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
   }
-  .search-product-banner .search-input .addon img {
-    position: relative;
-    top: -1px;
+  .search-result-banner .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
+  }
+  .search-result-banner .search-input > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
+  }
+  .search-result-banner .search-input .icon-wrap {
+    background: #fff;
+    padding: 0;
+  }
+  .search-result-banner .search-input .icon-wrap > img {
+    width: 70px;
+    height: 50px;
+    padding: 15px 25px;
   }
   .nothing-btn-list {
     height: 70px;
@@ -1241,10 +1260,14 @@ body {
     margin-left: 20px;
     height: 96px;
   }
-  .found-list .found-item-list .found-top-item-list {
+  .found-list .found-item-list .found-top-item-list,
+  .found-list .found-item-list .found-top-item-list-diff {
     margin: auto 10px;
     width: 120px;
     text-align: center;
+  }
+  .found-list .found-item-list .found-top-item-list-diff img {
+    width: 100%;
   }
   .found-list .found-item-list .found-mid-item-list {
     margin: auto 30px;
@@ -1259,52 +1282,55 @@ body {
     font-size: 16px;
     margin-top: 10px;
   }
-  .firmwareUpgrades-content-left-form-table-page {
-    font-family: CiscoSans-ExtraLight;
+  .productList-table-page .productList-table-page-content {
+    padding: 20px 0 20px 50px;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content {
-    padding: 20px 0;
-  }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content {
-    width: 430px;
-    padding: 20px 0;
-  }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-num {
     padding: 0;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num span {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-num span {
     font-size: 14px;
     color: #666666;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num select {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-num select {
     display: inline-block;
     width: 50%;
+    height: 24px;
+    border-radius: 0;
+    padding: 2px 6px;
+    margin-top: 6px;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages {
-    padding: 0;
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages {
+    padding-right: 0;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .nopadding {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages .nopadding {
     padding: 0;
     padding-top: 5px;
     margin-left: 2px;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .width15 {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages .width15 {
     width: 24px;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .width25 {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages .width25 {
     width: 25%;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages button {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages button {
     display: inline-block;
     width: 24px;
     height: 24px;
     padding: 0;
+    padding-top: 2px;
+    border-style: none;
+    background: #fff;
+    border: 1px solid #999;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages input {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages input {
     width: 100%;
     height: 24px;
+    padding: 4px;
+    line-height: 24px;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .showpages span {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-pages .showpages span {
     display: inline-block;
     width: 100%;
     height: 24px;
@@ -1312,35 +1338,72 @@ body {
     text-align: center;
     color: #666666;
   }
-  .firmwareUpgrades-content-left-form-table-page .firmwareUpgrades-content-left-form-table-page-content .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-count {
+  .productList-table-page .productList-table-page-content .productList-table-page-content-count {
     padding-top: 8px;
     font-size: 14px;
     color: #666666;
   }
 }
 @media screen and (max-width: 767px) {
-  .nothing-banner-img {
+  .search-result-banner {
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .search-result-banner .banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 14rem;
-    background-repeat: no-repeat;
+    background-image: url(../images/searchResult/banner-bg.png);
     background-size: 100% 100%;
-    background-image: url(../images/searchResult/banner.png);
-    text-align: center;
-    line-height: 14rem;
   }
-  .nothing-banner-img input {
-    height: 3rem;
-    font-size: 1rem;
+  .search-result-banner .search-input {
+    margin: 5.5rem auto;
+    height: 2.5rem;
+    box-shadow: 0.2rem 0.5rem 1.7rem 0 rgba(0, 0, 0, 0.5);
+    border-radius: .2rem;
+  }
+  .search-result-banner .search-input > input {
     width: 100%;
-    padding-left: 2rem;
+    height: 100%;
+    border-right: none;
+    box-shadow: none;
   }
-  .nothing-banner-img .glyphicon {
-    background-color: #FFF;
-    padding: .8rem;
-    font-size: 2rem;
-    border: none;
-    margin-left: -4rem;
-    color: #737373;
+  .search-result-banner .search-input > input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    padding-top: .2rem;
+    font-size: 20px;
+    color: #999999;
+  }
+  .search-result-banner .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
+  }
+  .search-result-banner .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
+  }
+  .search-result-banner .search-input > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    padding-top: 5px;
+    font-size: 20px;
+    color: #999999;
+  }
+  .search-result-banner .search-input .icon-wrap {
+    background: #fff;
+    padding: 0;
+  }
+  .search-result-banner .search-input .icon-wrap > img {
+    width: 70px;
+    height: 50px;
+    padding: 15px 25px;
   }
   .nothing-btn-list {
     margin: 0 auto;
@@ -1421,16 +1484,19 @@ body {
     display: flex;
     border: solid 1px #e5e5e5;
   }
-  .found-list .found-item-list .found-top-item-list {
+  .found-list .found-item-list .found-top-item-list,
+  .found-list .found-item-list .found-top-item-list-diff {
     margin: auto 1rem;
     width: 6rem;
     text-align: center;
   }
-  .found-list .found-item-list .found-top-item-list img {
+  .found-list .found-item-list .found-top-item-list img,
+  .found-list .found-item-list .found-top-item-list-diff img {
     width: 6rem;
     margin: 1rem 0;
   }
-  .found-list .found-item-list .found-top-item-list .found-img img {
+  .found-list .found-item-list .found-top-item-list .found-img img,
+  .found-list .found-item-list .found-top-item-list-diff .found-img img {
     width: 3rem;
   }
   .found-list .found-item-list .found-mid-item-list {

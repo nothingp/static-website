@@ -30,43 +30,58 @@
     //  }
     //
     //}
-    .search-product-banner {
+    .search-result-banner{
+        font-family: @font-sub-family;
         position: relative;
         overflow: hidden;
         height: 300px;
-        .banner-bg {
+        .banner-bg{
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 300px;
             background-image: url(../images/searchResult/banner-bg.png);
+            background-size: 100% 100%;
         }
-        .search-input {
+        .search-input{
             margin: 125px auto;
             height: 50px;
             box-shadow: 6px 10px 35px 0px rgba(0, 0, 0, 0.5);
             border-radius: 2px;
-            width: 800px;
-            > input {
+            >input{
                 width: 100%;
                 height: 100%;
                 border-right: none;
                 box-shadow: none;
-                font-family: @font-sub-family;
-                font-size: 20px;
-                color: #999999;
+                &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
             }
-            .addon {
-                background-color: #fff;
-                border: 1px solid #dcdcdc;
-                border-radius: 0;
-                border-right: 0;
-                border-bottom-left-radius: 3px;
-                border-top-left-radius: 3px;
-                img {
-                    position: relative;
-                    top: -1px;
+            .icon-wrap{
+                background: #fff;
+                padding: 0;
+                >img{
+                    width: 70px;
+                    height: 50px;
+                    padding: 15px 25px;
                 }
             }
         }
@@ -202,11 +217,16 @@
             display: flex;
             margin-left: 20px;
             height: 96px;
-            .found-top-item-list {
+            .found-top-item-list, .found-top-item-list-diff {
                 margin: auto 10px;
                 width: 120px;
                 text-align: center;
 
+            }
+            .found-top-item-list-diff{
+                img{
+                    width: 100%;
+                }
             }
             .found-mid-item-list {
                 margin: auto 30px;
@@ -224,72 +244,72 @@
         }
     }
 
-    .firmwareUpgrades-content-left-form-table-page {
-        font-family: CiscoSans-ExtraLight;
-        .firmwareUpgrades-content-left-form-table-page-content {
-            padding: 20px 0;
-            .table-btm {
-                .productList-table-page {
+    .productList-table-page{
 
-                    .productList-table-page-content {
-                        width: 430px;
-                        padding: 20px 0;
-                        .productList-table-page-content-num {
-                            padding: 0;
-                            span {
-                                font-size: 14px;
-                                color: #666666;
-                            }
-                            select {
-                                display: inline-block;
-                                width: 50%;
-                            }
-                        }
-                        .productList-table-page-content-pages {
-                            padding: 0;
-                            .nopadding {
-                                padding: 0;
-                                padding-top: 5px;
-                                margin-left: 2px;
-                            }
-                            .width15 {
-                                width: 24px;
-                                //display: inline-block;
-                            }
-                            .width25 {
-                                width: 25%;
-                                //display: inline-block;
-                            }
-                            button {
-                                display: inline-block;
-                                width: 24px;
-                                height: 24px;
-                                padding: 0;
-                            }
-                            input {
-                                width: 100%;
-                                height: 24px;
-                            }
-                            .showpages {
-                                span {
-                                    display: inline-block;
-                                    width: 100%;
-                                    height: 24px;
-                                    line-height: 24px;
-                                    text-align: center;
-                                    color: #666666;
-                                }
-                            }
-
-                        }
-                        .productList-table-page-content-count {
-                            padding-top: 8px;
-                            font-size: 14px;
-                            color: #666666;
-                        }
+        .productList-table-page-content{
+            padding:20px 0 20px 50px;
+            .productList-table-page-content-num{
+                padding:0;
+                span{
+                    font-size: 14px;
+                    color: #666666;
+                }
+                select{
+                    display:inline-block;
+                    width:50%;
+                    height:24px;
+                    border-radius:0;
+                    padding:2px 6px;
+                    margin-top:6px;
+                }
+            }
+            .productList-table-page-content-pages{
+                padding-right:0;
+                .nopadding{
+                    padding:0;
+                    padding-top:5px;
+                    margin-left:2px;
+                }
+                .width15{
+                    width:24px;
+                    //display: inline-block;
+                }
+                .width25{
+                    width:25%;
+                    //display: inline-block;
+                }
+                button{
+                    display:inline-block;
+                    width:24px;
+                    height:24px;
+                    padding:0;
+                    padding-top:2px;
+                    border-style:none;
+                    background:#fff;
+                    border:1px solid #999;
+                }
+                input{
+                    width:100%;
+                    height:24px;
+                    padding:4px;
+                    line-height:24px;
+                }
+                .showpages{
+                    span{
+                        display: inline-block;
+                        width:100%;
+                        height:24px;
+                        line-height: 24px;
+                        text-align: center;
+                        color:#666666;
                     }
                 }
 
+            }
+            .productList-table-page-content-count{
+                padding-top:8px;
+                font-size: 14px;
+                color: #666666;
             }
         }
     }
@@ -300,27 +320,60 @@
 @media screen and (max-width: @screen-xs-max) {
     //768-xs
     //bannerImg
-    .nothing-banner-img {
-        width: 100%;
+    .search-result-banner{
+        position: relative;
+        overflow: hidden;
         height: 14rem;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-image: url(../images/searchResult/banner.png);
-        text-align: center;
-        line-height: 14rem;
-        input {
-            height: 3rem;
-            font-size: 1rem;
+        font-family: @font-sub-family;
+        .banner-bg{
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding-left: 2rem;
+            height: 14rem;
+            background-image: url(../images/searchResult/banner-bg.png);
+            background-size: 100% 100%;
         }
-        .glyphicon {
-            background-color: #FFF;
-            padding: .8rem;
-            font-size: 2rem;
-            border: none;
-            margin-left: -4rem;
-            color: #737373;
+        .search-input{
+            margin: 5.5rem auto;
+            height: 2.5rem;
+            box-shadow: .2rem .5rem 1.7rem 0 rgba(0, 0, 0, 0.5);
+            border-radius: .2rem;
+            >input{
+                width: 100%;
+                height: 100%;
+                border-right: none;
+                box-shadow: none;
+                &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    padding-top: .2rem;
+                    font-size: 20px;
+                    color: #999999;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    padding-top: 5px;
+                    font-size: 20px;
+                    color: #999999;
+                }
+            }
+            .icon-wrap{
+                background: #fff;
+                padding: 0;
+                >img{
+                    width: 70px;
+                    height: 50px;
+                    padding: 15px 25px;
+                }
+            }
         }
     }
 
@@ -388,7 +441,7 @@
             margin-bottom: 1rem;
             display: flex;
             border: solid 1px #e5e5e5;
-            .found-top-item-list {
+            .found-top-item-list, .found-top-item-list-diff{
                 margin: auto 1rem;
                 width: 6rem;
                 text-align: center;
