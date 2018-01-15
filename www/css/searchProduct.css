@@ -1381,10 +1381,12 @@ body {
     padding: 0;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num span {
+    font-family: CiscoSans-ExtraLight;
     font-size: 14px;
     color: #666666;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-num select {
+    font-family: CiscoSans-ExtraLight;
     display: inline-block;
     width: 50%;
     height: 24px;
@@ -1417,12 +1419,14 @@ body {
     border: 1px solid #999;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages input {
+    font-family: CiscoSans-ExtraLight;
     width: 100%;
     height: 24px;
     padding: 4px;
     line-height: 24px;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-pages .showpages span {
+    font-family: CiscoSans-ExtraLight;
     display: inline-block;
     width: 100%;
     height: 24px;
@@ -1431,6 +1435,7 @@ body {
     color: #666666;
   }
   .nothing-result-list .list-table .table-btm .productList-table-page .productList-table-page-content .productList-table-page-content-count {
+    font-family: CiscoSans-ExtraLight;
     padding-top: 8px;
     font-size: 14px;
     color: #666666;
