@@ -1097,6 +1097,7 @@ body {
   }
   .search-product-banner .search-input {
     margin: 125px auto;
+    max-width: 800px;
     height: 50px;
     box-shadow: 6px 10px 35px 0px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
@@ -1137,7 +1138,7 @@ body {
   }
   .search-product-banner .search-input .icon-wrap > img {
     width: 70px;
-    height: 50px;
+    height: 48px;
     padding: 15px 25px;
   }
   .nothing-btn-list {
@@ -1271,7 +1272,7 @@ body {
   }
   .nothing-result-list .list-sidebar .list-body > ul > li .badge {
     color: #666666;
-    padding: 5px 10px;
+    padding: 7px 10px;
     font-size: 14px;
     background-color: transparent;
   }
