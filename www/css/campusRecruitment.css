@@ -1237,11 +1237,36 @@ body {
     color: #404040;
   }
   .nothing-search .search-input > input::-webkit-input-placeholder {
-    font-family: CiscoSans-ExtraLight;
+    /* WebKit, Blink, Edge */
     font-size: 20px;
     font-weight: 300;
     font-stretch: normal;
-    color: #404040;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-search .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-search .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-search .search-input > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-search .search-btn > button {
     width: 134px;
@@ -1547,6 +1572,38 @@ body {
     box-shadow: inset 0 0 0.1rem 0 rgba(0, 0, 0, 0.15);
     border-radius: .1rem;
     border: solid 1px #dcdcdc;
+  }
+  .nothing-search .search-input > input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    font-size: 2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-search .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    font-size: 2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-search .search-input > input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    font-size: 2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-search .search-input > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    color: #3F403F;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-search .search-btn {
     position: absolute;

@@ -182,13 +182,39 @@
                 font-weight: 300;
                 font-stretch: normal;
                 color: #404040;
-            }
-            > input::-webkit-input-placeholder {
-                font-family: CiscoSans-ExtraLight;
-                font-size: 20px;
-                font-weight: 300;
-                font-stretch: normal;
-                color: #404040;
+
+                &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    font-size: 20px;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
             }
         }
         .search-btn {
@@ -530,6 +556,38 @@
                 box-shadow: inset 0 0 .1rem 0 rgba(0, 0, 0, 0.15);
                 border-radius: .1rem;
                 border: solid 1px #dcdcdc;
+                &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                    font-size: 2rem;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    font-size: 2rem;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    font-size: 2rem;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    font-size: 2rem;
+                    font-weight: 300;
+                    font-stretch: normal;
+                    color: #3F403F;
+
+                    font-family: @font-sub-family;
+                }
             }
         }
         .search-btn {
