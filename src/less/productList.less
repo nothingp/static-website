@@ -86,6 +86,7 @@
     max-width: 1280px;
     margin: 50px auto;
     .productList-content-header{
+      font-family: @font-sub-family;
       border-bottom:1px solid #e5e5e5;
       h3{
         font-size: 30px;
@@ -227,254 +228,6 @@
     }
   }
 
-  .productList-content {
-    max-width: 1280px;
-    margin: 50px auto;
-    .productList-content-header{
-      h3{
-        font-size: 30px;
-        font-weight: normal;
-        line-height: 36px;
-        color: #000000;
-        margin-bottom:20px;
-      }
-      .productList-content-header-search{
-        //border-bottom:1px solid rgba(229, 229, 229, 1);
-        padding-bottom:10px;
-        .nopaddingleft{
-          padding-left:0;
-        }
-        .productList-content-header-search-right{
-          .productList-content-header-search-right{
-            .searcn-icon{
-              position:absolute;
-              top:13px;
-              left:25px;
-              color:#666;
-              z-index: 1111;
-            }
-            input{
-              padding-left:30px;
-            }
-          }
-          button{
-            background: rgba(47, 136, 196, 1);
-            color:#fff;
-            max-width:100px;
-          }
-        }
-      }
-    }
-    .productList-content-left{
-      padding:0;
-      .productList-content-left-header{
-        h3{
-          font-size: 24px;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #333333;
-          margin-bottom:41px;
-        }
-        p{
-          font-size: 18px;
-          letter-spacing: 0px;
-          line-height: 30px;
-          color: #666666;
-          margin-bottom:90px;
-        }
-      }
-      .productList-content-left-title{
-        h3{
-          font-size: 24px;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #333333;
-          margin-bottom:60px;
-        }
-      }
-      .productList-content-left-form{
-        .productList-content-left-form-table{
-          table{
-            border-bottom:1px solid #dcdcdc;
-            margin-bottom:0;
-            .wrap-buy-num{
-              position:relative;
-            }
-            tr{
-              &:hover{
-                background:#fff;
-              }
-            }
-            td{
-              padding-left:20px;
-              padding-right:20px;
-              font-size: 16px;
-              font-weight: normal;
-              font-style: normal;
-              color: #666666;
-              height:140px;
-              line-height: 140px;
-              text-align: center;
-              img{
-                width:40px;
-                height:40px;
-              }
-              .circle{
-                display: inline-block;
-                width:24px;
-                height:24px;
-                position:relative;
-                top:6px;
-                //-webkit-border-radius:50%;
-                //-moz-border-radius:50%;
-                //border-radius:50%;
-              }
-              .blue{
-                background: #01b0f1;
-                //position:relative;
-                //top:6px;
-              }
-              .printer-models{
-                display: inline-block;
-                vertical-align: middle;
-                p{
-                  line-height:30px;
-                  margin-bottom:0;
-                  text-align:left;
-                }
-              }
-              .buy-num{
-                position:absolute;
-                top:50%;
-                margin-top:-70px;
-                right:-20%;
-                width:130%;
-                span{
-                  display:inline-block;
-                  width:24px;
-                  height:24px;
-                  float:left;
-                  line-height: 24px;
-                  font-size:16px;
-                  border:1px solid #bebebe;
-                  border-radius:4px;
-                }
-                .num-dowm{
-                  background:#f5f5f5;
-                  color:#969696;
-                }
-                .num-up{
-                  background:#2f87c4;
-                  color:#fff;
-                }
-                input{
-                  display: inline-block;
-                  width:30px;
-                  height:30px;
-                  text-align: center;
-                }
-                button{
-                  width:26px;
-                  height:26px;
-                  margin:0;
-                  padding:0;
-                  border:none;
-                }
-              }
-              .cart-button{
-                width:34px;
-                height:34px;
-                background: url("../images/subscriptionCenter/cart-icon.jpg") no-repeat;
-                background-size: 100% 100%;
-                border:none;
-              }
-            }
-            thead{
-              background: #f5f5f5;
-              tr{
-                line-height:61px;
-                th{
-                  line-height:61px;
-                  padding:0 20px;
-                  font-size: 16px;
-                  font-weight: normal;
-                  font-style: normal;
-                  letter-spacing: 0px;
-                  color: #666666;
-                  text-align: center;
-                  border-bottom:none;
-                }
-              }
-            }
-            .no-border{
-              td{
-                border:none;
-              }
-            }
-          }
-          .firmwareUpgrades-content-left-form-table-page{
-            .firmwareUpgrades-content-left-form-table-page-content{
-              padding:20px 0;
-              .firmwareUpgrades-content-left-form-table-page-content-num{
-                padding:0;
-                span{
-                  font-size: 14px;
-                  color: #666666;
-                }
-                select{
-                  display:inline-block;
-                  width:50%;
-                }
-              }
-              .firmwareUpgrades-content-left-form-table-page-content-pages{
-                padding:0;
-                .nopadding{
-                  padding:0;
-                  padding-top:5px;
-                  margin-left:2px;
-                }
-                .width15{
-                  width:24px;
-                  //display: inline-block;
-                }
-                .width25{
-                  width:25%;
-                  //display: inline-block;
-                }
-                button{
-                  display:inline-block;
-                  width:24px;
-                  height:24px;
-                  padding:0;
-                }
-                input{
-                  width:100%;
-                  height:24px;
-                }
-                .showpages{
-                  span{
-                    display: inline-block;
-                    width:100%;
-                    height:24px;
-                    line-height: 24px;
-                    text-align: center;
-                    color:#666666;
-                  }
-                }
-
-              }
-              .firmwareUpgrades-content-left-form-table-page-content-count{
-                padding-top:8px;
-                font-size: 14px;
-                color: #666666;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
   //产品列表
   .productList-md{
     .product-item{
@@ -504,11 +257,13 @@
           .flex-item{
             flex: 1;
             >p{
+              font-family: @font-family;
               font-size: 18px;
               line-height: 36px;
               color: #666666;
             }
             >span{
+              font-family: @font-sub-family;
               display: inline-block;
               font-size: 16px;
               line-height: 36px;
@@ -554,6 +309,7 @@
             overflow: hidden;
           }
           .info-detail{
+            font-family: @font-sub-family;
             flex: 1;
             font-size: 16px;
             line-height: 36px;
@@ -813,6 +569,7 @@
           color: #666666;
         }
         .info-detail{
+          font-family: @font-sub-family;
           color: #656665;
           font-size: 1.4rem;
         }
@@ -881,7 +638,7 @@
           color: #666666;
         }
         >span{
-
+          font-family: @font-sub-family;
         }
         .colorI{
           width: 1.1rem;
