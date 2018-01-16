@@ -895,9 +895,6 @@ body {
     height: 25px;
     width: 25px;
   }
-  .nothing-footer .subMenu-container .sub-menu-arrow:hover {
-    background: #b4b4b4;
-  }
   .nothing-footer .subMenu-container .sub-menu-arrow span {
     border-color: #8e9299;
     border-style: solid;
@@ -1454,6 +1451,7 @@ body {
     margin: 30px 0;
     font-size: 1.6rem;
     color: #666666;
+    box-shadow: none;
   }
   .nothing-solution-container .solution-link {
     font-size: 1.6rem;
