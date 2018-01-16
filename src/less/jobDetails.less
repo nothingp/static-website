@@ -3,274 +3,262 @@
 @import "header.less";
 @import "footer.less";
 
-@media screen and (min-width: @screen-lg-min) {
-  //1200
-  //.container-fluid {
-  //    font-family: @font-family;
-  //    padding-left: 120px;
-  //    padding-right: 120px;
-  //}
-}
-
-@media screen and (min-width: @screen-md-min) {
-
-}
-
 //pc 展示开始。。。
 @media screen and (min-width: @screen-sm-min) {
-  //职位详情
-  .nothing-job-detail-wrap{
-    height: 560px;
-    background-color: #E9F2F9;
-    font-family: @font-sub-family;
-    .job-detail{
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 20px 15px;
-      .detail-title{
-        height: 80px;
-        line-height: 80px;
-        >span:first-child{
-          font-size: 28px;
-          color: #2f88c4;
-          font-family: @font-family;
+    //职位详情
+    .nothing-job-detail-wrap {
+        height: 560px;
+        background-color: #E9F2F9;
+        font-family: @font-sub-family;
+        .job-detail {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 20px 15px;
+            @media (max-width: 870px) {
+                padding: 0 15px;
+            }
+            .detail-title {
+                height: 80px;
+                line-height: 80px;
+                > span:first-child {
+                    font-size: 28px;
+                    color: #2f88c4;
+                    font-family: @font-family;
+                }
+                > span:last-child {
+                    margin-left: 30px;
+                    font-size: 16px;
+                    color: #737373;
+                }
+            }
+            .detail-company {
+                > span {
+                    display: inline-block;
+                    height: 40px;
+                    font-size: 16px;
+                    line-height: 40px;
+                    color: #264b80;
+                }
+                > span:first-child {
+                    color: #264b80;
+                }
+                > span:last-child {
+                    margin-left: 70px;
+                }
+            }
+            .detail-area {
+                height: 40px;
+                font-size: 16px;
+                line-height: 30px;
+                color: #264b80;
+            }
+            .detail-request {
+                color: #595959;
+                margin-bottom: 30px;
+                > h6 {
+                    font-size: 16px;
+                    font-family: @font-family;
+                }
+            }
+            .detail-time {
+                height: 40px;
+                line-height: 40px;
+                font-size: 16px;
+                color: #595959;
+            }
+            .detail-share {
+                margin-top: 30px;
+                > span {
+                    font-size: 18px;
+                    color: #737373;
+                    margin-right: 10px;
+                }
+                > img {
+                    width: 25px;
+                    height: 25px;
+                    margin: 0 10px;
+                }
+            }
         }
-        >span:last-child{
-          margin-left: 30px;
-          font-size: 16px;
-          color: #737373;
-        }
-      }
-      .detail-company{
-        >span{
-          display: inline-block;
-          height: 40px;
-          font-size: 16px;
-          line-height: 40px;
-          color: #264b80;
-        }
-        >span:first-child{
-          color: #264b80;
-        }
-        >span:last-child{
-          margin-left: 70px;
-        }
-      }
-      .detail-area{
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        line-height: 30px;
-        color: #264b80;
-      }
-      .detail-request{
-        color: #595959;
-        margin-bottom: 30px;
-        >h6{
-          font-size: 16px;
-          font-family: @font-family;
-        }
-      }
-      .detail-time{
-        height: 40px;
-        line-height: 40px;
-        font-size: 16px;
-        color: #595959;
-      }
-      .detail-share{
-        margin-top: 30px;
-        >span{
-          font-size: 18px;
-          color: #737373;
-          margin-right: 10px;
-        }
-        >img{
-          width: 25px;
-          height: 25px;
-          margin: 0 10px;
-        }
-      }
     }
-  }
 
-  //job app
-  .nothing-job-app{
-    max-width: 1280px;
-    font-family: @font-sub-family;
-    margin: 0 auto;
-    padding-left: 15px;
-    .app-title{
-      height: 120px;
-      line-height: 120px;
-      font-size: 28px;
-      color: #262626;
+    //job app
+    .nothing-job-app {
+        max-width: 1280px;
+        font-family: @font-sub-family;
+        margin: 0 auto;
+        padding-left: 15px;
+        .app-title {
+            height: 120px;
+            line-height: 120px;
+            font-size: 28px;
+            color: #262626;
+        }
+        .app-download {
+            font-size: 16px;
+            line-height: 30px;
+            color: #595959;
+            margin-bottom: 30px;
+            span {
+                color: #2f88c4;
+            }
+        }
+        .download-btn {
+            > button {
+                height: 45px;
+                background-color: #2f88c4;
+                border-radius: 6px;
+                border: none;
+                font-size: 16px;
+                color: #ffffff;
+                padding: 0 20px;
+            }
+        }
+        .app-info {
+            height: 80px;
+            font-size: 16px;
+            line-height: 80px;
+            color: #8c8c8c;
+        }
+        .partner-list {
+            margin-bottom: 100px;
+            > a {
+                margin-right: 30px;
+                display: inline-block;
+            }
+        }
     }
-    .app-download{
-      font-size: 16px;
-      line-height: 30px;
-      color: #595959;
-      margin-bottom: 30px;
-      span{
-        color:#2f88c4;
-      }
-    }
-    .download-btn{
-      >button{
-        height: 45px;
-        background-color: #2f88c4;
-        border-radius: 6px;
-        border: none;
-        font-size: 16px;
-        color: #ffffff;
-        padding: 0 20px;
-      }
-    }
-    .app-info{
-      height: 80px;
-      font-size: 16px;
-      line-height: 80px;
-      color: #8c8c8c;
-    }
-    .partner-list{
-      margin-bottom: 100px;
-      >a{
-        margin-right: 30px;
-        display: inline-block;
-      }
-    }
-  }
 }
 
 //手机展示开始。。。
 @media screen and (max-width: @screen-xs-max) {
 
-  //职位详情
-  .nothing-job-detail-wrap{
-    background-color: #E9F2F9;
-    font-family: @font-sub-family;
-    .job-detail{
-      padding: 1rem .7rem;
-      .detail-title{
-        height: 4rem;
-        line-height: 4rem;
-        >span:first-child{
-          font-size: 2.4rem;
-          color: #2f88c4;
-          font-family: @font-family;
+    //职位详情
+    .nothing-job-detail-wrap {
+        background-color: #E9F2F9;
+        font-family: @font-sub-family;
+        .job-detail {
+            padding: 1rem .7rem 2rem;
+            .detail-title {
+                height: 4rem;
+                line-height: 4rem;
+                > span:first-child {
+                    font-size: 2.4rem;
+                    color: #2f88c4;
+                    font-family: @font-family;
+                }
+                > span:last-child {
+                    margin-left: 1.5rem;
+                    font-size: 1.2rem;
+                    color: #737373;
+                }
+            }
+            .detail-company {
+                > span {
+                    display: inline-block;
+                    height: 2rem;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                    color: #264b80;
+                }
+                > span:first-child {
+                    color: #264b80;
+                }
+                > span:last-child {
+                }
+            }
+            .detail-area {
+                height: 2rem;
+                font-size: 1.6rem;
+                line-height: 1.5rem;
+                color: #264b80;
+            }
+            .detail-request {
+                color: #595959;
+                margin-bottom: 1.5rem;
+                > h6 {
+                    font-size: 1.6rem;
+                    font-family: @font-family;
+                }
+            }
+            .detail-time {
+                height: 2rem;
+                line-height: 2rem;
+                font-size: 1.6rem;
+                color: #595959;
+            }
+            .detail-share {
+                margin-top: 1.5rem;
+                > span {
+                    font-size: 1.5rem;
+                    color: #737373;
+                    margin-right: .5rem;
+                }
+                > img {
+                    width: 1.2rem;
+                    height: 1.2rem;
+                    margin: 0 .5rem;
+                }
+            }
         }
-        >span:last-child{
-          margin-left: 1.5rem;
-          font-size: 1.2rem;
-          color: #737373;
-        }
-      }
-      .detail-company{
-        >span{
-          display: inline-block;
-          height: 2rem;
-          font-size: 1.6rem;
-          line-height: 2rem;
-          color: #264b80;
-        }
-        >span:first-child{
-          color: #264b80;
-        }
-        >span:last-child{
-        }
-      }
-      .detail-area{
-        height: 2rem;
-        line-height: 2rem;
-        font-size: 1.6rem;
-        line-height: 1.5rem;
-        color: #264b80;
-      }
-      .detail-request{
-        color: #595959;
-        margin-bottom: 1.5rem;
-        >h6{
-          font-size: 1.6rem;
-          font-family: @font-family;
-        }
-      }
-      .detail-time{
-        height: 2rem;
-        line-height: 2rem;
-        font-size: 1.6rem;
-        color: #595959;
-      }
-      .detail-share{
-        margin-top: 1.5rem;
-        >span{
-          font-size: 1.5rem;
-          color: #737373;
-          margin-right: .5rem;
-        }
-        >img{
-          width: 1.2rem;
-          height: 1.2rem;
-          margin: 0 .5rem;
-        }
-      }
     }
-  }
 
-  //job app
-  .nothing-job-app{
-    padding-left: .7rem;
-    font-family: @font-sub-family;
-    .app-title{
-      height: 6rem;
-      line-height: 6rem;
-      font-size: 2.8rem;
-      color: #262626;
+    //job app
+    .nothing-job-app {
+        padding-left: .7rem;
+        font-family: @font-sub-family;
+        .app-title {
+            height: 6rem;
+            line-height: 6rem;
+            font-size: 2.8rem;
+            color: #262626;
+        }
+        .app-download {
+            font-size: 1.6rem;
+            line-height: 1.5rem;
+            color: #595959;
+            margin-bottom: 1.5rem;
+        }
+        .download-btn {
+            padding: 0 1rem;
+            > button {
+                width: 100%;
+                height: 3.5rem;
+                background-color: #2f88c4;
+                border-radius: .3rem;
+                border: none;
+                font-size: 1.6rem;
+                color: #ffffff;
+            }
+        }
+        .app-info {
+            height: 6rem;
+            font-size: 1.6rem;
+            line-height: 6rem;
+            color: #8c8c8c;
+        }
+        .partner-list {
+            margin-bottom: 5rem;
+            > img {
+                margin-right: 1.5rem;
+            }
+        }
     }
-    .app-download{
-      font-size: 1.6rem;
-      line-height: 1.5rem;
-      color: #595959;
-      margin-bottom: 1.5rem;
-    }
-    .download-btn{
-      padding: 0 1rem;
-      >button{
-        width: 100%;
-        height: 3.5rem;
-        background-color: #2f88c4;
-        border-radius: .3rem;
-        border: none;
-        font-size: 1.6rem;
-        color: #ffffff;
-      }
-    }
-    .app-info{
-      height: 6rem;
-      font-size: 1.6rem;
-      line-height: 6rem;
-      color: #8c8c8c;
-    }
-    .partner-list{
-      margin-bottom: 5rem;
-      >img{
-        margin-right: 1.5rem;
-      }
-    }
-  }
 }
 
 //文字省略
-.text-dot{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.text-dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 //文字换行省略
-.multi-line-dot{
-  overflow : hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+.multi-line-dot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 

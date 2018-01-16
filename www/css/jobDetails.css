@@ -1075,8 +1075,6 @@ body {
     background-image: url(../images/concern/youtube-color.png);
   }
 }
-@media screen and (min-width: 1200px) {
-}
 @media screen and (min-width: 768px) {
   .nothing-job-detail-wrap {
     height: 560px;
@@ -1117,7 +1115,6 @@ body {
   }
   .nothing-job-detail-wrap .job-detail .detail-area {
     height: 40px;
-    line-height: 40px;
     font-size: 16px;
     line-height: 30px;
     color: #264b80;
@@ -1193,13 +1190,18 @@ body {
     display: inline-block;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 870px) {
+  .nothing-job-detail-wrap .job-detail {
+    padding: 0 15px;
+  }
+}
 @media screen and (max-width: 767px) {
   .nothing-job-detail-wrap {
     background-color: #E9F2F9;
     font-family: CiscoSans-ExtraLight;
   }
   .nothing-job-detail-wrap .job-detail {
-    padding: 1rem .7rem;
+    padding: 1rem .7rem 2rem;
   }
   .nothing-job-detail-wrap .job-detail .detail-title {
     height: 4rem;
@@ -1227,7 +1229,6 @@ body {
   }
   .nothing-job-detail-wrap .job-detail .detail-area {
     height: 2rem;
-    line-height: 2rem;
     font-size: 1.6rem;
     line-height: 1.5rem;
     color: #264b80;
