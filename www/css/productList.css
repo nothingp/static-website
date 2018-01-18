@@ -1194,13 +1194,17 @@ body {
     /* Internet Explorer 10-11 */
     color: #c2c2c2;
   }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .search-btn {
+    padding-left: 4px;
+  }
   .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right button {
-    background: #2f88c4;
-    color: #fff;
-    border-radius: 4px;
-    height: 40px;
-    font-size: 18px;
     width: 120px;
+    height: 40px;
+    background-color: #2f88c4;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
   }
   .productList-content .productList-content-select-style {
     height: 100px;
