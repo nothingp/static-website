@@ -139,9 +139,23 @@
               background-size: 100% 100%;
             }
             input{
-              padding-left:30px;
+              font-size: 14px;
+              color: #c2c2c2;
+              padding-left:38px;
               border-radius: 4px;
               height:40px;
+              &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                color: #c2c2c2;
+              }
+              &::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                color: #c2c2c2;
+              }
+              &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                color: #c2c2c2;
+              }
+              &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #c2c2c2;
+              }
             }
           }
           button{
@@ -233,14 +247,41 @@
   //产品列表
   .productList-md{
     .product-item{
+      .cart-btn{
+        .cart-img{
+          display: inline-block;
+        }
+        .cart-img-hover{
+          display: none;
+        }
+      }
+      &:hover{
+        .product-buy{
+          .cart-btn{
+            >button {
+              background-color: #2f87c4;
+              >span{
+                color: #ffffff;
+              }
+              .cart-img{
+                display: none;
+              }
+              .cart-img-hover{
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
       display: flex;
       background-color: #ffffff;
       border: solid 1px #e5e5e5;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
       .product-img{
         padding: 50px 0;
         margin: 50px 0;
         flex: 1;
+        max-width: 212px;
         border-right: 1px solid #e5e5e5;
         >img{
           margin: 0 auto;
@@ -251,8 +292,18 @@
       }
       .product-info{
         flex: 3;
-        padding-left: 30px;
+        padding-left: 70px;
         padding-right: 30px;
+        .font1{
+          font-family: CiscoSans;
+          font-size: 18px;
+          color: #666666;
+        }
+        .font2{
+          font-family: CiscoSans-ExtraLight;
+          font-size: 18px;
+          color: #8B8C8B;
+        }
         .info-tp{
           margin-top: 20px;
           display: flex;
@@ -351,6 +402,14 @@
             font-size: 24px;
             line-height: 40px;
             color: #333333;
+            border-left: solid 1px #b5b5b5;
+            border-right: solid 1px #b5b5b5;
+            >input{
+              border: none;
+              border-radius: initial;
+              height: 100%;
+              font-size: 20px;
+            }
           }
           .counter-add{
             flex: 1;
@@ -363,17 +422,17 @@
 
         .cart-btn{
           >button{
-            margin-top: 100px;
-            height: 40px;
+            margin-top: 110px;
             background-color: #ffffff;
             border-radius: 4px;
             border: solid 1px #2f87c4;
-            padding: 15px 10px 40px;
+            padding: 17px 14px 16px 20px;
             width: 100%;
             >img{
-              width: 30px;
-              height: 30px;
-              margin-right: 4px;
+              width: 21px;
+              height: 21px;
+              margin-right: 9px;
+              margin-top: -7px;
             }
             >span{
               font-size: 18px;
@@ -623,6 +682,13 @@
             font-size: 2.4rem;
             line-height: 4.5rem;
             color: #333333;
+            border-left: solid 1px #b5b5b5;
+            border-right: solid 1px #b5b5b5;
+            >input{
+              border: none;
+              border-radius: initial;
+              height: 100%;
+            }
           }
           .counter-add{
             font-size: 2.4rem;

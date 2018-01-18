@@ -1172,9 +1172,27 @@ body {
     background-size: 100% 100%;
   }
   .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right input {
-    padding-left: 30px;
+    font-size: 14px;
+    color: #c2c2c2;
+    padding-left: 38px;
     border-radius: 4px;
     height: 40px;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right input::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: #c2c2c2;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right input::-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #c2c2c2;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #c2c2c2;
+  }
+  .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right .productList-content-header-search-right input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #c2c2c2;
   }
   .productList-content .productList-content-header .productList-content-header-search .productList-content-header-search-right button {
     background: #2f88c4;
@@ -1247,12 +1265,31 @@ body {
     display: flex;
     background-color: #ffffff;
     border: solid 1px #e5e5e5;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
+  }
+  .productList-md .product-item .cart-btn .cart-img {
+    display: inline-block;
+  }
+  .productList-md .product-item .cart-btn .cart-img-hover {
+    display: none;
+  }
+  .productList-md .product-item:hover .product-buy .cart-btn > button {
+    background-color: #2f87c4;
+  }
+  .productList-md .product-item:hover .product-buy .cart-btn > button > span {
+    color: #ffffff;
+  }
+  .productList-md .product-item:hover .product-buy .cart-btn > button .cart-img {
+    display: none;
+  }
+  .productList-md .product-item:hover .product-buy .cart-btn > button .cart-img-hover {
+    display: inline-block;
   }
   .productList-md .product-item .product-img {
     padding: 50px 0;
     margin: 50px 0;
     flex: 1;
+    max-width: 212px;
     border-right: 1px solid #e5e5e5;
   }
   .productList-md .product-item .product-img > img {
@@ -1263,8 +1300,18 @@ body {
   }
   .productList-md .product-item .product-info {
     flex: 3;
-    padding-left: 30px;
+    padding-left: 70px;
     padding-right: 30px;
+  }
+  .productList-md .product-item .product-info .font1 {
+    font-family: CiscoSans;
+    font-size: 18px;
+    color: #666666;
+  }
+  .productList-md .product-item .product-info .font2 {
+    font-family: CiscoSans-ExtraLight;
+    font-size: 18px;
+    color: #8B8C8B;
   }
   .productList-md .product-item .product-info .info-tp {
     margin-top: 20px;
@@ -1362,6 +1409,14 @@ body {
     font-size: 24px;
     line-height: 40px;
     color: #333333;
+    border-left: solid 1px #b5b5b5;
+    border-right: solid 1px #b5b5b5;
+  }
+  .productList-md .product-item .product-buy .counter .counter-num > input {
+    border: none;
+    border-radius: initial;
+    height: 100%;
+    font-size: 20px;
   }
   .productList-md .product-item .product-buy .counter .counter-add {
     flex: 1;
@@ -1371,18 +1426,18 @@ body {
     color: #ffffff;
   }
   .productList-md .product-item .product-buy .cart-btn > button {
-    margin-top: 100px;
-    height: 40px;
+    margin-top: 110px;
     background-color: #ffffff;
     border-radius: 4px;
     border: solid 1px #2f87c4;
-    padding: 15px 10px 40px;
+    padding: 17px 14px 16px 20px;
     width: 100%;
   }
   .productList-md .product-item .product-buy .cart-btn > button > img {
-    width: 30px;
-    height: 30px;
-    margin-right: 4px;
+    width: 21px;
+    height: 21px;
+    margin-right: 9px;
+    margin-top: -7px;
   }
   .productList-md .product-item .product-buy .cart-btn > button > span {
     font-size: 18px;
@@ -1594,6 +1649,13 @@ body {
     font-size: 2.4rem;
     line-height: 4.5rem;
     color: #333333;
+    border-left: solid 1px #b5b5b5;
+    border-right: solid 1px #b5b5b5;
+  }
+  .productList-sm .product-item .product-btm .counter .counter-num > input {
+    border: none;
+    border-radius: initial;
+    height: 100%;
   }
   .productList-sm .product-item .product-btm .counter .counter-add {
     font-size: 2.4rem;
