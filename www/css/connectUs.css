@@ -1134,17 +1134,17 @@ body {
     display: flex;
   }
   .connect-us-form .account .detail .detail-btm .img-wrap {
-    margin-right: 20px;
+    width: 10%;
   }
   .connect-us-form .account .detail .detail-btm .detail-center {
-    font-size: 18px;
+    font-size: 17px;
     color: #666666;
-    width: 50px;
-    margin-right: 20px;
+    width: 15%;
   }
   .connect-us-form .account .detail .detail-btm .detail-right {
-    font-size: 18px;
+    font-size: 17px;
     color: #666666;
+    width: 75%;
   }
   .connect-us-form .account .right {
     margin-bottom: 100px;
@@ -1338,7 +1338,7 @@ body {
     display: flex;
   }
   .connect-us-form .account .detail .detail-btm .img-wrap {
-    margin-right: 2rem;
+    width: 2.1rem;
   }
   .connect-us-form .account .detail .detail-btm .detail-center {
     width: 4rem;
