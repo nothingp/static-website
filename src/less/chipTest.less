@@ -317,7 +317,7 @@
                     .input-group {
                         padding: 0 20px;
                         .input-group-addon {
-                            padding: 6px 20px 6px 0;
+                            padding: 0 20px 6px 0;
                             background-color: inherit;
                             border: none;
                         }
@@ -349,6 +349,7 @@
                 }
             }
         }
+        &:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
 
     }
 }
@@ -543,7 +544,7 @@
                     .input-group {
                         padding: 0 1rem;
                         .input-group-addon {
-                            padding: .6rem 2rem .6rem 0;
+                            padding: 0 2rem .6rem 0;
                             background-color: inherit;
                             border: none;
                         }
@@ -571,6 +572,8 @@
                 }
             }
         }
+        &:after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+
     }
 
 }
