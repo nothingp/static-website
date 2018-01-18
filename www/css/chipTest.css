@@ -1228,6 +1228,7 @@ body {
     line-height: 53px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-head > h6 {
+    font-family: CiscoSans-ExtraLight;
     margin: 0;
     display: inline-block;
     padding-left: 7px;
@@ -1287,6 +1288,7 @@ body {
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .info > span {
     display: block;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .info > span:first-child {
     font-size: 14px;
@@ -1313,6 +1315,10 @@ body {
     font-size: 12px;
     line-height: 16px;
     color: #666666;
+    font-family: CiscoSans-ExtraLight;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-md > span {
+    color: #2886C6;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm {
     display: flex;
@@ -1330,6 +1336,7 @@ body {
     height: 13px;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm .time {
+    font-family: CiscoSans-ExtraLight;
     line-height: 25px;
     text-align: right;
     font-size: 12px;
@@ -1342,6 +1349,7 @@ body {
   .nothing-chip-list .news-sidebar .sidebar-item .form-info > span {
     display: block;
     color: #8c8c8c;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-info > span:first-child {
     font-size: 16px;
@@ -1359,10 +1367,12 @@ body {
     padding: 0 20px 6px 0;
     background-color: inherit;
     border: none;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-table .input-group .form-control {
     max-width: 200px;
     height: 35px;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-table .submit-wrap {
     text-align: center;
@@ -1376,6 +1386,7 @@ body {
     line-height: 32px;
     background-color: #2f88c4;
     border-radius: 4px;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .img-bottom {
     margin-top: 30px;
@@ -1481,6 +1492,7 @@ body {
     border-bottom: 1px solid #d2d2d2;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-head > h6 {
+    font-family: CiscoSans-ExtraLight;
     display: block;
     padding-left: 1rem;
     border-left: 3px solid #2f88c4;
@@ -1506,6 +1518,7 @@ body {
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .info > span {
     display: block;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp .info > span:first-child {
     font-size: 1.4rem;
@@ -1528,10 +1541,14 @@ body {
     height: 100%;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-md {
+    font-family: CiscoSans-ExtraLight;
     padding: 0 1rem;
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: #999999;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-md > span {
+    color: #2886C6;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm {
     display: flex;
@@ -1549,6 +1566,7 @@ body {
     height: 1.3rem;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm .time {
+    font-family: CiscoSans-ExtraLight;
     line-height: 2.5rem;
     text-align: right;
     font-size: 1.4rem;
@@ -1560,6 +1578,7 @@ body {
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-info > span {
     color: #8c8c8c;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-info > span:first-child {
     font-size: 1.6rem;
@@ -1577,6 +1596,7 @@ body {
     padding: 0 2rem .6rem 0;
     background-color: inherit;
     border: none;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .sidebar-item .form-table .submit-wrap {
     text-align: center;
@@ -1590,6 +1610,7 @@ body {
     line-height: 1.6rem;
     background-color: #2f88c4;
     border-radius: .2rem;
+    font-family: CiscoSans-ExtraLight;
   }
   .nothing-chip-list .news-sidebar .img-bottom {
     margin-top: 2rem;
