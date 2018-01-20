@@ -52,8 +52,30 @@
   }
 
   .nav-btn-list{
-    padding: 30px 50px 20px 50px;
+    padding: 20px 0 10px;
     color: #e5e5e5 ;
+    .nav-wrap{
+      .nav-tabs{
+        >li{
+          >a{
+            font-family: CiscoSans;
+            font-size: 18px;
+            color: #999999;
+            cursor: pointer;
+          }
+          >a:hover{
+            background-color: transparent;
+            border-color: transparent;
+            color: #2f88c4;
+          }
+          &.active>a{
+            border: none;
+            color: #2f88c4;
+            border-bottom: 2px solid #2f88c4;
+          }
+        }
+      }
+    }
     .nav-btn-wrap{
       a:hover{
         color: #2f88c4;
@@ -86,11 +108,13 @@
         display: none;
       }
       >.btn{
+        font-family: CiscoSans;
         display: inline-block;
         margin-left: 20px;
         border-radius: 3px;
         border: solid 1px #2f88c4;
         color: #2f87c4;
+        padding: 4px 20px;
         &.btn-active{
           background-color: #2f87c4;
           border: solid 1px #2f88c4;
