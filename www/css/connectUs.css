@@ -1193,8 +1193,10 @@ body {
     height: 40px;
   }
   .connect-us-form .account .select-country.open > button {
+    box-shadow: 0px -1px 10px 0px rgba(15, 91, 166, 0.8), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
     border-radius: 3px 3px 0px 0px;
-    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    border: 1px solid #2886C6;
+    border-bottom: none;
   }
   .connect-us-form .account .select-country .btn-lg:hover {
     border-color: #2f88c4;
@@ -1223,8 +1225,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    box-shadow: 0px 3px 7px 0px rgba(15, 91, 166, 0.5), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 10px 0px rgba(15, 91, 166, 0.8), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
     border-radius: 0px 0px 3px 3px;
+    border: 1px solid #2886C6;
+    border-top: none;
   }
   .connect-us-form .account .select-country .dropdown-menu li a {
     color: #2f88c4;
