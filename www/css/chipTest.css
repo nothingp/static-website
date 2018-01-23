@@ -1502,6 +1502,18 @@ body {
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail {
     position: relative;
   }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .hover {
+    display: none;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .inactive {
+    display: inline-block;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm .img-wrap .hover {
+    display: none;
+  }
+  .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-btm .img-wrap .inactive {
+    display: inline-block;
+  }
   .nothing-chip-list .news-sidebar .sidebar-item .item-detail .detail-tp {
     display: flex;
     height: 6rem;
