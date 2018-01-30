@@ -31,28 +31,82 @@
     </script>
 
     <!-- Custom Theme Style -->
+    <link href="css/base.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
 
     <script>
-        // $(function () {
-        //     $('[data-toggle="popover"]').popover()
-        // })
-               $(document).ready(function(){
-                   dropdownOpen();//调用
-               });
-               /**
-                * 鼠标划过就展开子菜单，免得需要点击才能展开
-                */
-               function dropdownOpen() {
-                   var $dropdownLi = $('li.dropdown');
-                   $dropdownLi.mouseover(function() {
-                       $(this).addClass('open');
-                   }).mouseout(function() {
-                       var ele = $(this);
-                       //setTimeout(function(){ele.removeClass('open')},3000);
-                       $(this).removeClass('open');
-                   });
-               }
+        $(document).ready(function () {
+            dropdownOpen();//调用
+        });
+
+        /**
+         * 鼠标划过就展开子菜单，免得需要点击才能展开
+         */
+        function dropdownOpen() {
+            var $dropdownLi = $('li.dropdown');
+            $dropdownLi.mouseover(function () {
+                $(this).addClass('open');
+            }).mouseout(function () {
+                var ele = $(this);
+                $(this).removeClass('open');
+            });
+        }
+
+        $(function () {
+            function IsPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone",
+                    "SymbianOS", "Windows Phone",
+                    "iPad", "iPod"];
+                var flag = true;
+                for (var v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                return flag;
+            }
+
+            if (IsPC()) {
+                var footerArrowLink = $('.subMenu-container').find('.sub-menu-arrow');
+                $(footerArrowLink).hover(function () {
+                    $(this).next().show();
+                }).mouseleave(function () {
+                    $(this).next().hide();
+                })
+
+                var footerCloseLink = $('.subMenu-container').find('.close-icon');
+                $(footerCloseLink).click(function () {
+                    $(this).parent().hide();
+                })
+
+                $('.subMenu-container-list').mouseover(function () {
+                    $(this).show();
+                });
+
+                $('.subMenu-container-list').mouseleave(function () {
+                    $(this).hide();
+                });
+            } else {
+                var footerTitles = $('.footer-close-title');
+
+                $(footerTitles).click(function () {
+                    var footerItemList = $('.item-list');
+                    var footerTitleActive = $('.footer-close-title.active');
+                    $(footerItemList).hide();
+                    if ($(this).hasClass('active')) {
+                        $(footerTitleActive).removeClass('active');
+                        $(this).removeClass('active');
+                        $(this).next().hide();
+                    } else {
+                        $(footerTitleActive).removeClass('active');
+                        $(this).addClass('active');
+                        $(this).next().show();
+                    }
+                })
+            }
+        })
     </script>
 
     <style>
@@ -65,16 +119,14 @@
 
     <div class="box-shadow-line">
         <nav class="navbar row">
-            <!-- Brand and toggle get grouped for better mobile display -->
-
             <div class="navbar-1280">
                 <div class="navbar-header">
                     <button
-                        type="button"
-                        class="nothing-navbar-button navbar-toggle collapsed "
-                        data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1"
-                        aria-expanded="false"
+                            type="button"
+                            class="nothing-navbar-button navbar-toggle collapsed "
+                            data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false"
                     >
                         <span class="sr-only">Toggle navigation111</span>
                         <span class="icon-bar"></span>
@@ -88,13 +140,11 @@
                         </a>
                     </div>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right nothing-navbar-info hidden-xs">
-                        <li>
+                        <li class="order-cart">
                             <a href="#">
-                                <img src="../build/images/cart-order.png" alt=""/>
-                                &nbsp;Order
+                                <img src="../www/images/home/cart.png" alt=""/>Order
                             </a>
                         </li>
                         <li class="line"><a href="./registLogin.html">Login</a></li>
@@ -122,7 +172,9 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5 ">
                                             <li class="dropdown-submenu">
-                                                <a href="#">Awards<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">Awards<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">Awards & Qualifications</a></li>
@@ -132,7 +184,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -142,7 +196,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -165,9 +221,10 @@
                                         <div class="dropdown-menu-title col-md-offset-1 col-md-2 col-sm-3 hidden-xs">
                                             ABOUT US
                                         </div>
-                                        <div class="dropdown-menu-xs col-md-5 col-sm-5">
+                                        <div class="dropdown-menu-xs col-md-3 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -177,7 +234,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -187,7 +246,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -212,7 +273,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -222,7 +284,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -232,7 +296,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -258,7 +324,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -268,7 +335,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -278,7 +347,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -303,7 +374,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -313,7 +385,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -323,7 +397,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -349,7 +425,8 @@
                                         </div>
                                         <div class="dropdown-menu-xs col-md-5 col-sm-5">
                                             <li class="dropdown-submenu">
-                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">二级<span class="glyphicon glyphicon-menu-right hidden-xs"
+                                                                    aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">三级1</a></li>
@@ -359,7 +436,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">2Company Profile</a></li>
@@ -369,7 +448,9 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown-submenu">
-                                                <a href="#">About Apex<span class="glyphicon glyphicon-menu-right hidden-xs" aria-hidden="true"></span></a>
+                                                <a href="#">About Apex<span
+                                                        class="glyphicon glyphicon-menu-right hidden-xs"
+                                                        aria-hidden="true"></span></a>
                                                 <p class="hidden-xs">This is Apexmic</p>
                                                 <ul class="dropdown-3rdmenu">
                                                     <li><a href="#">3Company Profile</a></li>
@@ -401,8 +482,11 @@
                     </div>
                 </div>
                 <div class="dropdown-menu" role="menu">
-                    <span class="glyphicon glyphicon-remove"></span>
-                    <input type="text" placeholder="Search">
+                    <span class="search-close-icon"></span>
+                    <input type="text" placeholder="Search"
+                           onfocus="this.placeholder=''"
+                           onblur="this.placeholder='Search'"
+                    >
                 </div>
             </div>
         </nav>
